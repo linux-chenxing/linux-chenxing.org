@@ -1,1 +1,36 @@
 # linux-chenxing
+
+## Intro
+
+This is intended to be a repository for info on the MStar/SigmaStar SoCs.
+The name is a parody of linux-sunxi for Allwinner SoCs. MStar in Chinese is
+chenxing and the newer SigmaStar name is xingchen.
+
+This will probably never get as big as linux-sunxi so github pages should be
+more than enough.
+
+Before MStar was bought out by MediaTek the company offered a wide range
+of SoCs focused at STB and camera applications. Since the company was
+bought by MediaTek the camera SoC part of the company has been spun out
+into the fully owned subsidiary called Sigmastar. The camera SoCs that are 
+now marketed by Sigmastar will be the main focus here.
+
+# SoCs
+
+## MIPS based
+
+MStar used to make a lot of MIPS based SoCs for STBs. These aren't that
+interesting in themselves but the IP blocks used in the MIPS SoCs were
+carried forward to the later ARM chips so any datasheets that can be found
+for the MIPS SoCs might help with reverse engineering the current ARM based
+ones.
+
+## ARM based
+
+### Infinity IP camera family
+
+#### Infinity 1
+
+#### Infinity 3
+
+#### Infinity 6
