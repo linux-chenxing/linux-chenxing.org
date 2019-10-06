@@ -28,9 +28,11 @@ ones.
 ## ARM based
 
 ### Infinity IP camera family
-
 #### Infinity 1
-
+- MSC313 - Cortex A7 + 64MB DDR2 in a QFN80
 #### Infinity 3
-
+- MSC313E - Cortex A7 + 64MB DDR2 in a QFN80
+- MSC316DC - Cortex A7 + 128MB DDR3 in a QFN88
 #### Infinity 6
+- SSC326D - Cortex A7 + 128MB DDR3
+- SSC328Q - Cortex A7 + 256MB DDR3
