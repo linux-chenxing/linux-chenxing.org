@@ -33,8 +33,8 @@ ones.
 - MSC313 - Cortex A7 + 64MB DDR2 in a QFN80
 
 #### [Infinity 3](infinity3)
-- MSC313E - Cortex A7 + 64MB DDR2 in a QFN80
-- MSC316DC - Cortex A7 + 128MB DDR3 in a QFN88
+- [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
+- [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 
 #### [Infinity 6](infinity6)
 - SSC326D - Cortex A7 + 128MB DDR3
