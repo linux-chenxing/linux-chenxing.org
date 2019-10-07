@@ -37,5 +37,5 @@ ones.
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 
 #### [Infinity 6](infinity6)
-- SSC326D - Cortex A7 + 128MB DDR3
-- SSC328Q - Cortex A7 + 256MB DDR3
+- [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3
+- [SSC328Q](infinity6#ssc328q) - Cortex A7 + 256MB DDR3
