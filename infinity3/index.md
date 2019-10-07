@@ -2,7 +2,14 @@
 
 ## MSC313E
 
+### Block Diagram
+
 ![MSC313E block diagram](msc313e_blockdiagram.png)
+
+### Known devices
+
+#### Xiaomi Cameras
+- Mijia 360 1080p (MJSXJ02CM)
 
 ## MSC316DC
 
