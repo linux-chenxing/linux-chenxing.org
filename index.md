@@ -44,4 +44,4 @@ ones.
 
 ### Misc
 
-- [MSB2521](misc#msb2521) - ARM9 based SatNav on a chip
+- [MSB2521](misc#msb2521.md) - ARM9 based SatNav on a chip
