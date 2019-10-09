@@ -7,3 +7,8 @@
 ## SSC328Q
 
 ![SSC328Q block diagram](ssc328q_blockdiagram.png)
+
+
+### Known Devices
+
+- MC800L IP board camera module. [vendor page](https://www.xonz-cctv.com/product/ti-solution-ip91/)
