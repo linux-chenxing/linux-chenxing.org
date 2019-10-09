@@ -43,7 +43,7 @@ ones.
 ### Misc
 
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
-- MSB2531
+- MSB2531 - Cortex A7 SatNav on a chip
 
 # IP blocks
 
