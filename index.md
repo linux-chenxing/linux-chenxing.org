@@ -25,6 +25,8 @@ carried forward to the later ARM chips so any datasheets that can be found
 for the MIPS SoCs might help with reverse engineering the current ARM based
 ones.
 
+
+
 ## ARM based
 
 ### Infinity IP camera family
@@ -39,3 +41,7 @@ ones.
 #### [Infinity 6](infinity6)
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3
 - [SSC328Q](infinity6#ssc328q) - Cortex A7 + 256MB DDR3
+
+### Misc
+
+- [MSB2521](misc#msb2521) - ARM9 based SatNav on a chip
