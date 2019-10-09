@@ -4,9 +4,15 @@
 
 - MIU - memory interface unit
 - RIU - register interface unit
-- AESDMA
+
+# DMA
+
 - BDMA
 - CMDQ
+
+# Crypto
+
+- AESDMA
 
 ## Ethernet
 
