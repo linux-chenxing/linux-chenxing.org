@@ -25,8 +25,6 @@ carried forward to the later ARM chips so any datasheets that can be found
 for the MIPS SoCs might help with reverse engineering the current ARM based
 ones.
 
-
-
 ## ARM based
 
 ### Infinity IP camera family
@@ -45,3 +43,7 @@ ones.
 ### Misc
 
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
+
+# IP blocks
+
+See [IP](ip).
