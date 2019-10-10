@@ -27,6 +27,10 @@ ones.
 
 ## ARM based
 
+### Cedric Family
+
+- MST786 - Dual core Cortex A9 tablet SoC
+
 ### Infinity IP camera family
 
 #### Infinity 1
