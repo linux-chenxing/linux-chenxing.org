@@ -29,7 +29,7 @@ ones.
 
 ### Cedric Family
 
-- MST786 - Dual core Cortex A9 tablet SoC
+- [MST786](cedric#mst786) - Dual core Cortex A9 tablet SoC
 
 ### Infinity IP camera family
 
