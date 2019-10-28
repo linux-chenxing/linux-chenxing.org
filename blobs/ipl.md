@@ -2,6 +2,8 @@
 
 ## First stage IPL loaded by the bootrom
 
+This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
+
 - First 4 bytes are an ARM instruction to jump somewhere else in the IPL binary like a reset vector.
    This also seems to be generally used to switch from ARM to Thumb execution.
 - Second 4 bytes are "IPL_"
