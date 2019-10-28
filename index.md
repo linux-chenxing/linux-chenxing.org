@@ -15,6 +15,10 @@ bought by MediaTek the camera SoC part of the company has been spun out
 into the fully owned subsidiary called Sigmastar. The camera SoCs that are 
 now marketed by Sigmastar will be the main focus here.
 
+It's worth noting that the MStar/Sigmastar camera SoCs seem to be derived
+from the SoCs made by Alpha Imaging Technology which was merged into MStar
+at some point.
+
 # SoCs
 
 ## MIPS based
