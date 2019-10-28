@@ -9,4 +9,4 @@
 
 ## Second stage IPL loaded by the first stage IPL
 
-The header format is the same as the first stage IPL but the second 4 bytes are IPLC
+The header format is the same as the first stage IPL but the second 4 bytes are "IPLC"
