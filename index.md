@@ -55,6 +55,10 @@ ones.
 
 ### Mercury family
 
+#### [Mercury 2]
+
+- AIT8328/MSC8328
+
 #### [Mercury 5](mercury5)
 
 - [SSC8336N](mercury5#ssc8336n)
