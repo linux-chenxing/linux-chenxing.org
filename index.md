@@ -44,6 +44,12 @@ ones.
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3
 - [SSC328Q](infinity6#ssc328q) - Cortex A7 + 256MB DDR3
 
+### Mercury family
+
+#### [Mercury 5](mercury5)
+
+- [SSC8336N](mercury5#ssc8336n)
+
 ### Misc
 
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
