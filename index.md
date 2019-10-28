@@ -65,3 +65,7 @@ ones.
 See [IP](ip).
 
 # ISP/Debug Tool
+
+# Blob headers, layouts
+
+- [IPL](blobs/ipl.md) - First/Second stage bootloaders
