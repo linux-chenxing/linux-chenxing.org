@@ -25,6 +25,11 @@ carried forward to the later ARM chips so any datasheets that can be found
 for the MIPS SoCs might help with reverse engineering the current ARM based
 ones.
 
+### STB
+
+- MSD7818
+- MSD7828
+
 ## ARM based
 
 ### Cedric Family
