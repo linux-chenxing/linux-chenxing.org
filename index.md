@@ -77,3 +77,4 @@ See [IP](ip).
 # Blob headers, layouts
 
 - [IPL](blobs/ipl.md) - First/Second stage bootloaders
+- [MXPT](blobs/mxpt.md) - Partition table used for SPI NOR
