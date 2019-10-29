@@ -1,0 +1,1 @@
+# MXPT partition table
