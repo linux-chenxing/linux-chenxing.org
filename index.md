@@ -57,11 +57,12 @@ ones.
 
 #### Mercury 2
 
-- AIT8328/MSC8328
+- AIT8328/MSC8328 - Probably ARM9
 
 #### [Mercury 5](mercury5)
 
-- [SSC8336N](mercury5#ssc8336n)
+- [SSC8336N](mercury5#ssc8336n) - Probably Cortex A7
+- [SCC8339D](mercury5#ssc8339d) - Probably in this family, probably Cortex A7
 
 ### Misc
 
