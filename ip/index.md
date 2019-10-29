@@ -6,6 +6,7 @@
 
 - MIU - memory interface unit
 - RIU - register interface unit
+- IMI - "internal memory interface"? interface for embedded SRAM
 
 # DMA
 
