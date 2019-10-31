@@ -50,14 +50,14 @@ ones.
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 
 #### [Infinity 5](infinity5)
-- [SSC328Q](infinity5#ssc328q) - Cortex A7 + 128MB DDR3 (this might be i6)
-- [SSC329Q](infinity5#ssc329q) - Cortex A7 + 128MB DDR3 + NPU (this might be i6)
+- [SSC328Q](infinity5#ssc328q) - Cortex A7 + 256MB DDR3 (this might be i6)
+- [SSC329Q](infinity5#ssc329q) - Cortex A7 + 256MB DDR3 + NPU (this might be i6)
 
 #### [Infinity 6](infinity6)
-- [SSC325](infinity6#ssc325) - Cortex A7
-- [SSC325DE](infinity6ssc325de) - Cortex A7
+- [SSC325](infinity6#ssc325) - Cortex A7 + 64MB DDR2
+- [SSC325DE](infinity6ssc325de) - Cortex A7 + 128MB DDR3
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
-- [SSC327DE](infinity6#ssc327de) - Cortex A7
+- [SSC327DE](infinity6#ssc327de) - Cortex A7 + 128MB DDR3
 
 ### Mercury family
 
