@@ -49,9 +49,11 @@ ones.
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 
+#### [Infinity 5](infinity5)
+- [SSC328Q](infinity6#ssc328q) - Cortex A7 + 128MB DDR3 (this might be i6)
+
 #### [Infinity 6](infinity6)
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3
-- [SSC328Q](infinity6#ssc328q) - Cortex A7 + 256MB DDR3
 
 ### Mercury family
 
