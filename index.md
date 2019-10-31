@@ -79,3 +79,7 @@ See [IP](ip).
 
 - [IPL](blobs/ipl.md) - First/Second stage bootloaders
 - [MXPT](blobs/mxpt.md) - Partition table used for SPI NOR
+
+## Sources of firmwares for reverse engineering
+
+- [Anjvision firmwares](http://www.anjvision.com:8021/firmware/)
