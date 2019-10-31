@@ -18,6 +18,10 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 ![MSC313E block diagram](msc313e_blockdiagram.png)
 
+#### Documentation
+
+- [Data-brief](msc313e_pb_v03.pdf)
+
 #### Known devices
 
 ##### Breadbee
@@ -35,7 +39,13 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 ### MSC316DC(DM?)
 
+#### Block Diagram
+
 ![MSC316DC block diagram](msc316dc_blockdiagram.png)
+
+#### Documentation
+
+- [Data-brief](msc316dc_pb_v03.pdf)
 
 #### Known devices
 
