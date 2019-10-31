@@ -83,3 +83,11 @@ See [IP](ip).
 ## Sources of firmwares for reverse engineering
 
 - [Anjvision firmwares](http://www.anjvision.com:8021/firmware/)
+
+To get the device tree out of the kernel you can use binwalk + [extract-dtb](https://github.com/PabloCastellano/extract-dtb.git) and dtc.
+
+```
+binwalk -x <firmware.bin>
+extract-dtb.py <extracted firmware dir><uncompressed kernel blob>
+dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
+```
