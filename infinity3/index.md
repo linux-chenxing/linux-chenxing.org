@@ -20,6 +20,9 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 #### Known devices
 
+##### Breadbee
+- BreadBee. [github](https://github.com/breadbee/breadbee)
+
 ##### Xiaomi Cameras
 
 - Mijia 360 1080p (MJSXJ02CM)
