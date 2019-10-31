@@ -2,7 +2,7 @@
 
 ## Intro
 
-This is intended to be a repository for info on the MStar/SigmaStar SoCs.
+This is intended to be a repository for info on the MStar/[SigmaStar](http://www.sigmastarsemi.com) SoCs.
 The name is a parody of linux-sunxi for Allwinner SoCs. MStar in Chinese is
 chenxing and the newer SigmaStar name is xingchen.
 
