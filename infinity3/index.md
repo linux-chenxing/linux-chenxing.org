@@ -5,6 +5,7 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 ## Specs
 
 - 800MHz(1GHz OC) Cortex A7
+- 16KB Boot ROM
 
 ## IP blocks
 
