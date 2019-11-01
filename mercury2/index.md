@@ -3,4 +3,4 @@
 ## Chips
 
 ### AIT8328/MSC8328
-- [Datasheet](CPU AIT8328 datasheet.pdf)
+- [Datasheet](CPU%20AIT8328%20datasheet.pdf)
