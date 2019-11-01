@@ -61,9 +61,9 @@ ones.
 
 ### Mercury family
 
-#### Mercury 2
+#### [Mercury 2](mercury2)
 
-- AIT8328/MSC8328 - Probably ARM9
+- [AIT8328/MSC8328](mercury2#msc8328) - Probably ARM9
 
 #### [Mercury 5](mercury5)
 
