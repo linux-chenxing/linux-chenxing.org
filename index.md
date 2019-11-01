@@ -42,8 +42,8 @@ ones.
 
 ### Infinity IP camera family
 
-#### Infinity 1
-- MSC313 - Cortex A7 + 64MB DDR2 in a QFN80
+#### [Infinity 1](infinity1)
+- [MSC313](infinity1#msc313) - Cortex A7 + 64MB DDR2 in a QFN80
 
 #### [Infinity 3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
