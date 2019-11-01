@@ -14,6 +14,11 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 ### MSC313E
 
+#### Boot ROM Tag
+```
+MVX1##I3g4f6d5e0CMN_ROM######XVM
+```
+
 #### Block Diagram
 
 ![MSC313E block diagram](msc313e_blockdiagram.png)
