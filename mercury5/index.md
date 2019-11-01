@@ -5,6 +5,7 @@ The mercury 5 family seems to be targetted at dash recorders. So far all of the 
 # Specs
 
 - Probably a 800MHz Cortex A7
+- 32KB Boot ROM
 - 128KB SRAM (based on where the boot rom sets the stack pointer)
 
 ## Chips
@@ -12,6 +13,9 @@ The mercury 5 family seems to be targetted at dash recorders. So far all of the 
 ### SSC8336N
 
 #### Boot ROM Tag
+
+This is slighly interesting. Presumably I3 is infinity3 so maybe this chip's ROM is a hacked up. 
+
 ```
 MVX1##I3gb83f2cbCMN_ROM######XVM
 ```
