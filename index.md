@@ -81,8 +81,9 @@ See [IP](ip).
 
 # ISP/Debug Tool
 
-# Blob headers, layouts
+# Blobs, headers, layouts
 
+- [BootROM](blobs/bootrom.mb) - Baked in BootROM
 - [IPL](blobs/ipl.md) - First/Second stage bootloaders
 - [MXPT](blobs/mxpt.md) - Partition table used for SPI NOR
 
