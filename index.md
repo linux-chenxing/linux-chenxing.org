@@ -83,7 +83,7 @@ See [IP](ip).
 
 # Blobs, headers, layouts
 
-- [BootROM](blobs/bootrom.mb) - Baked in BootROM
+- [BootROM](blobs/bootrom.md) - Baked in BootROM
 - [IPL](blobs/ipl.md) - First/Second stage bootloaders
 - [MXPT](blobs/mxpt.md) - Partition table used for SPI NOR
 
