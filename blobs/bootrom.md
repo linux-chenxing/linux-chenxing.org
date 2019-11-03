@@ -10,3 +10,5 @@ At the end of the Boot ROM there for infinity 3 forward there seems to be an ASC
 ## Messages
 
  - E:CD - This seems to be related to the boot ROM trying to load the IPL from SD but the card not being present. On MSC313e (infinity 3) this message is always present before booting from SPI NOR. Maybe because there aren't enough pins to have a strap for booting from SD so it always tries.
+ - E:I
+ - E:F
