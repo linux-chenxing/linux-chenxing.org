@@ -11,6 +11,11 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 - Ethernet; Cadence based EMAC
 
+## Vendor Code
+
+- [u-boot](https://github.com/fifteenhex/uboot_msc313e)
+- [kernel](https://github.com/fifteenhex/linux_msc313e)
+
 ## Chips
 
 ### MSC313E
