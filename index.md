@@ -81,6 +81,8 @@ See [IP](ip).
 
 # ISP/Debug Tool
 
+See [ISP](isp).
+
 # Blobs, headers, layouts
 
 - [BootROM](blobs/bootrom.md) - Baked in BootROM
