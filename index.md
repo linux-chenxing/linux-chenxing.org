@@ -64,6 +64,7 @@ ones.
 #### [Mercury 2](mercury2)
 
 - [AIT8328/MSC8328](mercury2#msc8328) - Probably ARM9
+- [AIT8428](mercury2#ait8428) - Probably ARM9
 
 #### [Mercury 5](mercury5)
 
