@@ -1,6 +1,6 @@
 # Boot ROM
 
-When the SoC is powered on the Boot ROM starts and tries to load the IPL from somewhere and tries to jump into it.
+When the SoC is powered on the Boot ROM starts and tries to load the [IPL](ipl) from somewhere and tries to jump into it.
 The Boot ROM outputs some limited messages at 38400 baud. All of the IPLs so far use 115200 baud so this results in the Boot ROM messages showing as junk before the IPL output.
 
 ## Boot Media
