@@ -12,7 +12,7 @@ There seem to be some strap pins to tell the boot rom which media to boot from. 
 
 ## Tags
 
-At the end of the Boot ROM there for infinity 3 forward there seems to be an ASCII tag that contains the git hash the ROM was built from.
+At the end of the Boot ROM for infinity 3 forward there seems to be an ASCII tag that contains the git hash the ROM was built from.
 
 ## Messages
 
