@@ -8,7 +8,7 @@ The Boot ROM outputs some limited messages at 38400 baud. All of the IPLs so far
 There seem to be some strap pins to tell the boot rom which media to boot from. Booting from SD card, NAND and SPI NOR are apparently supported.
 
 - Booting from SD card involves putting a file called IPL on the SD card in a FAT16 partition (partition type 0x4,0x6 or 0xe).
-- Booting from SPI NOR involves putting the IPL at an address in the SPI NOR at an address that seems to be specific to the SoC
+- Booting from SPI NOR involves putting the IPL at an address in the SPI NOR that seems to be specific to the SoC
 
 ## Tags
 
