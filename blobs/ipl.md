@@ -9,9 +9,14 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 - Second 4 bytes are "IPL_"
 - Third 4 bytes are the size of the IPL
 
-For mercury this *seems* to be located at 0x1000 in SPI NOR.
+### mercury5 notes
 
-For infinity this is located at 0x4000 in SPI NOR.
+- This *seems* to be located at 0x1000 in SPI NOR or the file IPL on an SD card in a fat16 partition.
+- The vendor IPL loads a kernel image from the file RTS on an SD card in a fat16 partition.
+
+### infinity notes
+
+- Located at 0x4000 in SPI NOR.
 
 ## Second stage IPL loaded by the first stage IPL
 
