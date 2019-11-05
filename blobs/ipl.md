@@ -12,7 +12,7 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 ### mercury5 notes
 
 - This *seems* to be located at 0x1000 in SPI NOR or the file IPL on an SD card in a fat16 partition.
-- The vendor IPL loads a kernel image from the file RTS on an SD card in a fat16 partition.
+- The vendor IPL loads a kernel image from the file RTS on an SD card in a fat16 partition. It seems to load to 0x20008000 (in DDR) and jumps there.
 
 ### infinity3 notes
 
