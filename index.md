@@ -23,7 +23,8 @@ at some point.
 
 ## u-boot
 
-|           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR | 
+|           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
+|-----------|---------------------------------|--------------------------|
 | infinity3 | yes                             | yes                      |
 | mercury5  | yes                             | yes                      |
 
