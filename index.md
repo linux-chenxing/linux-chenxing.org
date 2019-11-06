@@ -19,6 +19,16 @@ It's worth noting that the MStar/Sigmastar camera SoCs seem to be derived
 from the SoCs made by Alpha Imaging Technology which was merged into MStar
 at some point.
 
+# Porting Progress Matrix
+
+## u-boot
+
+|           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR | 
+| infinity3 | yes                             | yes                      |
+| mercury5  | yes                             | yes                      |
+
+## linux
+
 # SoCs
 
 ## MIPS based
