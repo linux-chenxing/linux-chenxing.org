@@ -6,11 +6,24 @@
 
 ## Bus Glue
 
-### MIU - memory interface unit
+### MIU
 
-### RIU - register interface unit
+MIU or "memory interface unit" is a multiport DDR controller that is wired to the CPU(s)
+and DMA capable perpherials like USB, Ethernet and so on.
 
-### IMI - "internal memory interface"? interface for embedded SRAM
+### RIU
+
+RIU of "register interface unit" is a brige between the CPU and perpherial registers.
+It's fairly straight forward for the most part with one annoying quirk; 32 bit registers
+are split into two 16 bit locations that are spaced 4 bytes apart. This means that
+any existing drivers that expect 32 bit registers aligned to 4 bytes needs to have a quirk
+added to read the two 16 bit parts and stitch them back together.
+
+### IMI
+
+IMI or "internal memory interface"? interface for embedded SRAM. It seems to have multiple
+ports so the CPU and some perpherials are able to access the SRAM but not a lot is known about
+that yet.
 
 ## Timers
 
@@ -22,7 +35,7 @@
 
 BDMA or "Byte DMA" is a simple A -> B DMA engine. It's mainly used to
 move data from the memory mapped SPI NOR into main memory so the CPU
-doesn't have to do it.
+doesn't have to do it. It also apparently supports doing CRC calculations.
 
 #### Support Matrix
 
@@ -32,6 +45,10 @@ doesn't have to do it.
 | infinity3 |        | yes   |
 
 ### CMDQ
+
+CMDQ or "command queue" is a descriptor list based DMA engine that seems
+to be intended to be used to tie the parts of the camera pipeline together
+so that the CPU doesn't need to be involved.
 
 #### Support Matrix
 
