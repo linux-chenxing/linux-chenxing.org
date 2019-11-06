@@ -117,6 +117,17 @@ Serial seems to be a standard Designware UART with one of the registers in a dif
 
 ## spi-nor
 
+spi-nor functionality is made of 3 different IP blocks; ISP, FSP and QSP.
+These are all basically slightly different SPI masters.
+
+- ISP is the simplest and seems to be for doing basic SPI transactions
+- FSP allows for parts of an SPI transaction come from registers, like the opcode and address, while
+  other parts are read direcly from memory. This seems to be for doing fast zero copy writes.
+- QSP seems to implement the memory mapped interface that allows the CPU and BDMA to read from flash
+  as if it was memory.
+
+### Support Matrix
+
 |           | u-boot | linux |
 |-----------|--------|-------|
 | infinity  | yes    | yes   |
