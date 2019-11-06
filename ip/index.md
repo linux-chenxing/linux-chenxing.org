@@ -82,6 +82,8 @@ doesn't have to do it.
 
 ## spi
 
+## pwm
+
 ## spi-nor
 
 |           | u-boot | linux |
