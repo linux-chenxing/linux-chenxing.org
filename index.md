@@ -25,6 +25,7 @@ at some point.
 
 |           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
 |-----------|---------------------------------|--------------------------|
+| infinity  | yes                             | yes                      |
 | infinity3 | yes                             | yes                      |
 | mercury5  | yes                             | yes                      |
 
