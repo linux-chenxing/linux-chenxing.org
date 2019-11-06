@@ -6,9 +6,11 @@
 
 ## Bus Glue
 
-- MIU - memory interface unit
-- RIU - register interface unit
-- IMI - "internal memory interface"? interface for embedded SRAM
+### MIU - memory interface unit
+
+### RIU - register interface unit
+
+### IMI - "internal memory interface"? interface for embedded SRAM
 
 ## Timers
 
@@ -31,6 +33,8 @@ doesn't have to do it.
 
 ### CMDQ
 
+#### Support Matrix
+
 |           | u-boot | linux |
 |-----------|--------|-------|
 | infinity  |        | wip   |
@@ -38,7 +42,9 @@ doesn't have to do it.
 
 ## Crypto
 
-- AESDMA
+### AESDMA
+
+#### Support Matrix
 
 |           | u-boot | linux |
 |-----------|--------|-------|
@@ -48,7 +54,9 @@ doesn't have to do it.
 
 ## Ethernet
 
-- Cadence EMAC
+### Cadence EMAC
+
+#### Support Matrix
 
 |           | u-boot | linux |
 |-----------|--------|-------|
@@ -61,12 +69,18 @@ doesn't have to do it.
 
 ### SAR
 
+#### Support Matrix
+
 |           | u-boot | linux |
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
 
 ## Serial
+
+Serial seems to be a standard Designware UART with one of the registers in a different location.
+
+#### Support Matrix
 
 |           | u-boot | linux |
 |-----------|--------|-------|
