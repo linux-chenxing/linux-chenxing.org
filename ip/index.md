@@ -103,6 +103,7 @@ Serial seems to be a standard Designware UART with one of the registers in a dif
 |-----------|--------|-------|
 | infinity  | yes    | yes   |
 | infinity3 | yes    | yes   |
+| mercury5  | yes    | yes   |
 
 ## i2c
 
