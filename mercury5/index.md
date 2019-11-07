@@ -4,7 +4,7 @@ The mercury 5 family seems to be targetted at dash recorders. So far all of the 
 
 # Specs
 
-- Probably a 800MHz Cortex A7
+- Probably a 800MHz Cortex A7 (Main ID register is 0x410fc075, confirms cortex A7)
 - 32KB Boot ROM
 - 128KB SRAM (based on where the boot rom sets the stack pointer)
 
