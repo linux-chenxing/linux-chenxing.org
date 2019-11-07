@@ -27,9 +27,17 @@ at some point.
 |-----------|---------------------------------|--------------------------|
 | infinity  | yes                             | yes                      |
 | infinity3 | yes                             | yes                      |
+| infinity6 | wip                             | wip                      |
 | mercury5  | yes                             | yes                      |
 
 ## linux
+
+|           | boots to buildroot shell  |
+|-----------|---------------------------|
+| infinity  | yes                       |
+| infinity3 | yes                       |
+| infinity6 | wip                       |
+| mercury5  | close                     |
 
 # SoCs
 
