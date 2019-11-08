@@ -32,12 +32,12 @@ at some point.
 
 ## linux
 
-|           | boots to buildroot shell  |
-|-----------|---------------------------|
-| infinity  | yes                       |
-| infinity3 | yes                       |
-| infinity6 | wip                       |
-| mercury5  | close                     |
+|           | boots to shell from initramfs | boots to shell from local storage | full system from local storage with network etc |
+|-----------|-------------------------------|-----------------------------------|-------------------------------------------------|
+| infinity  | yes                           | yes                               | yes                                             |
+| infinity3 | yes                           | yes                               | yes                                             |
+| infinity6 | wip                           | wip                               | yes                                             |
+| mercury5  | close                         | wip                               | yes                                             |
 
 # SoCs
 
