@@ -43,10 +43,12 @@ at some point.
 
 |           | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | databrief acquired | datasheet acquired |
 |-----------|------------------------|-----------------|-----------------|--------------|--------------------|--------------------|
-| infinity  | yes                    | yes             | yes             | yes[0]       |                    |                    |
+| infinity1 | yes                    | yes             | yes             | yes[0]       |                    |                    |
 | infinity3 | yes                    | yes             | yes             | yes[0]       | yes                |                    |
 | infinity6 | yes                    |                 | yes             |              |                    |                    |
 | mercury5  | yes                    | yes             | yes             |              |                    |                    |
+
+- [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
 
 # SoCs
 
