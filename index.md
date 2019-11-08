@@ -37,7 +37,7 @@ at some point.
 | infinity  | yes                           | yes                               | yes                                             |
 | infinity3 | yes                           | yes                               | yes                                             |
 | infinity6 | wip                           | wip                               | wip                                             |
-| mercury5  | close                         | wip                               | wip                                             |
+| mercury5  | yes                           | wip                               | wip                                             |
 
 # Reverse Engineering Progress
 
