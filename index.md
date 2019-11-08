@@ -39,6 +39,15 @@ at some point.
 | infinity6 | wip                           | wip                               | wip                                             |
 | mercury5  | close                         | wip                               | wip                                             |
 
+# Reverse Engineering Progress
+
+|           | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | databrief acquired | datasheet acquired |
+|-----------|------------------------|-----------------|-----------------|--------------|--------------------|--------------------|
+| infinity  | yes                    | yes             | yes             | yes[0]       |                    |                    |
+| infinity3 | yes                    | yes             | yes             | yes[0]       | yes                |                    |
+| infinity6 | yes                    |                 | yes             |              |                    |                    |
+| mercury5  | yes                    | yes             | yes             |              |                    |                    |
+
 # SoCs
 
 ## MIPS based
