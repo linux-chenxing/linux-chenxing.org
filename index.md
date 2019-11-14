@@ -86,7 +86,7 @@ ones.
 
 #### [Infinity 6](infinity6)
 - [SSC325](infinity6#ssc325) - Cortex A7 + 64MB DDR2
-- [SSC325DE](infinity6ssc325de) - Cortex A7 + 128MB DDR3
+- [SSC325DE](infinity6#ssc325de) - Cortex A7 + 128MB DDR3
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
 - [SSC327DE](infinity6#ssc327de) - Cortex A7 + 128MB DDR3
 
