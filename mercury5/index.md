@@ -16,6 +16,8 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 
 #### Pinout
 
+128 Pin QFN
+
 
 
 #### Boot ROM Tag
