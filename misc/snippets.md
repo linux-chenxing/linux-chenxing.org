@@ -2,7 +2,7 @@
 
 ## Dump out PM GPIO registers
 
-'''
+```
 GPIO_BASE=1F001E00; \
 for GPIO in `seq 0 127`; do \
     offset=`echo "obase=16;$GPIO*4" | bc`; \
@@ -10,4 +10,4 @@ for GPIO in `seq 0 127`; do \
     echo "$address ($offset)"; \
     devmem 0x$address 16; \
 done
-'''
+```
