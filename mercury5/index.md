@@ -14,6 +14,10 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 
 ### SSC8336N
 
+#### Pinout
+
+
+
 #### Boot ROM Tag
 
 This is slighly interesting. Presumably I3 is infinity3 so maybe this chip's ROM is a hacked up. 
