@@ -18,6 +18,20 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 
 128 Pin QFN
 
+| #   | name         |
+|-----|--------------|
+| 73  | camera mipi? |
+| 74  | camera mipi? |
+| 75  | camera mipi? |
+| 76  | camera mipi? |
+| 77  | camera mipi? |
+| 78  | camera mipi? |
+| 79  | camera mipi? |
+| 80  | camera mipi? |
+| 81  | camera mipi? |
+| 82  | camera mipi? |
+| 127 | xtal         |
+| 128 | xtal         |
 
 
 #### Boot ROM Tag
