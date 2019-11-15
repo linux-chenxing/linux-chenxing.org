@@ -111,6 +111,7 @@ Serial seems to be a standard Designware UART with one of the registers in a dif
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
+| mercury5  |        | yes   |
 
 ## spi
 
@@ -133,7 +134,7 @@ These are all basically slightly different SPI masters.
 |-----------|--------|-------|
 | infinity  | yes    | yes   |
 | infinity3 | yes    | yes   |
-| mercury5  | yes    |       |
+| mercury5  | yes    | wip   |
 
 ## SD/SDIO
 
