@@ -99,7 +99,7 @@ ones.
 
 #### [Mercury 5](mercury5)
 
-- [SSC8336N](mercury5#ssc8336n) - Cortex A7 + 64MB DDR2
+- [SSC8336N](mercury5#ssc8336n) - Cortex A7 + 64MB DDR2 in a 128 pin QFN
 - [SSC8339D](mercury5#ssc8339d) - Probably in this family, probably Cortex A7
 
 ### Misc
