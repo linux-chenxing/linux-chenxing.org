@@ -20,6 +20,8 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 
 | #   | name         |
 |-----|--------------|
+| 9   | usb          |
+| 10  | usb          |
 | 73  | camera mipi? |
 | 74  | camera mipi? |
 | 75  | camera mipi? |
