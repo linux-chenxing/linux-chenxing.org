@@ -22,6 +22,13 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 |-----|--------------|
 | 9   | usb          |
 | 10  | usb          |
+| 27  | pm spi cs    |
+| 28  | pm spi di    |
+| 29  | pm spi wp    |
+| 30  | pm spi do    |
+| 31  | pm spi clk   |
+| 32  | pm spi hold  |
+| 63  | 3v3          |
 | 73  | camera mipi? |
 | 74  | camera mipi? |
 | 75  | camera mipi? |
