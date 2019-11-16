@@ -4,6 +4,10 @@
 
 ## Clock
 
+### pll gates
+
+### clkgen muxes
+
 ## Bus Glue
 
 ### MIU
