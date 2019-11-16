@@ -39,7 +39,7 @@ that yet.
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
-| mercury5  |        |       |
+| mercury5  |        | yes   |
 
 ## DMA
 
