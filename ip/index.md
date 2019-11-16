@@ -10,7 +10,15 @@
 
 ### cpuclk
 
-This is used for dynamically scaling the CPU frequency
+This (probably) a PLL that is used for dynamically scaling the CPU frequency.
+
+#### Support Matrix
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | yes   |
 
 ## Bus Glue
 
