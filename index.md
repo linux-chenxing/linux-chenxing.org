@@ -48,10 +48,13 @@ at some point.
 | infinity3  |                        |                 |                 | yes[0]       |                    |                    |
 | - msc313e  | yes                    | yes             | yes             |              | yes                |                    |
 | - msc316dc | yes                    |                 |                 |              | yes                |                    |
+| - msc316q  |                        |                 |                 |              | yes                |                    |
+| - msc318   |                        |                 |                 |              | yes                |                    |
 | infinity6  |                        |                 |                 |              |                    |                    |
 | - ssc325   | yes                    |                 | yes             |              |                    |                    |
 | mercury5   |                        |                 |                 |              |                    |                    |
 | - ssc8836n | yes                    | yes             | yes             |              |                    |                    |
+| - ssc8339d |                        |                 |                 |              | yes                |                    |
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
 
