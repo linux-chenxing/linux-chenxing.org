@@ -8,6 +8,8 @@
 
 ### clkgen muxes
 
+These are 16 bit registers that contain clock muxes for one or more peripherals usually grouped, i.e. uart0 and uart1.
+
 ### cpuclk
 
 This (probably) a PLL that is used for dynamically scaling the CPU frequency.
