@@ -2,6 +2,16 @@
 
 ## Interrupt controllers
 
+## Pinmux
+
+### Support Matrix
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        |       |
+
 ## Clock
 
 ### pll gates
