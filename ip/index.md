@@ -87,6 +87,7 @@ doesn't have to do it. It also apparently supports doing CRC calculations.
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
+| mercury5  |        | yes   |
 
 ### CMDQ
 
