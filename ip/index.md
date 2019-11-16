@@ -8,6 +8,10 @@
 
 ### clkgen muxes
 
+### cpuclk
+
+This is used for dynamically scaling the CPU frequency
+
 ## Bus Glue
 
 ### MIU
