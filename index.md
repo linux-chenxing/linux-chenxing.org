@@ -41,12 +41,17 @@ at some point.
 
 # Reverse Engineering Progress
 
-|           | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | databrief acquired | datasheet acquired |
-|-----------|------------------------|-----------------|-----------------|--------------|--------------------|--------------------|
-| infinity1 | yes                    | yes             | yes             | yes[0]       |                    |                    |
-| infinity3 | yes                    | yes             | yes             | yes[0]       | yes                |                    |
-| infinity6 | yes                    |                 | yes             |              |                    |                    |
-| mercury5  | yes                    | yes             | yes             |              |                    |                    |
+|            | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | databrief acquired | datasheet acquired |
+|------------|------------------------|-----------------|-----------------|--------------|--------------------|--------------------|
+| infinity1  |                        |                 |                 | yes[0]       |                    |                    |
+| - msc313   | yes                    | yes             | yes             |              |                    |                    |
+| infinity3  |                        |                 |                 | yes[0]       |                    |                    |
+| - msc313e  | yes                    | yes             | yes             |              | yes                |                    |
+| - msc316dc | yes                    |                 |                 |              | yes                |                    |
+| infinity6  |                        |                 |                 |              |                    |                    |
+| - ssc325   | yes                    |                 | yes             |              |                    |                    |
+| mercury5   |                        |                 |                 |              |                    |                    |
+| - ssc8836n | yes                    | yes             | yes             |              |                    |                    |
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
 
