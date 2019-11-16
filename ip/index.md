@@ -33,6 +33,14 @@ that yet.
 
 ## RTC
 
+### Support Matrix
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        |       |
+
 ## DMA
 
 ### BDMA
