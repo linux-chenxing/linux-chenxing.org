@@ -183,7 +183,14 @@ These are all basically slightly different SPI masters.
 
 ## SD/SDIO
 
+There seem to be many versions or revions of the SD/SDIO block. Some versions seem to also support memory stick etc.
+
+### *v5* as seen in i3 and m5
+
 |           | u-boot | linux |
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
+| mercury5  |        | yes[0]|
+
+0 - interrupt wiring isn't known yet so it is slow as hell.
