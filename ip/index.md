@@ -24,7 +24,7 @@
 
 ### sleep intc
 
-32 interrupts forwarded to the IRQ int via a single interrupt
+32 interrupts forwarded to the IRQ intc via a single interrupt
 
 |           | u-boot | linux |
 |-----------|--------|-------|
@@ -209,7 +209,7 @@ These are all basically slightly different SPI masters.
 |-----------|--------|-------|
 | infinity  | yes    | yes   |
 | infinity3 | yes    | yes   |
-| mercury5  | yes    | wip   |
+| mercury5  | yes    | yes   |
 
 ## SD/SDIO
 
