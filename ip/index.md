@@ -2,6 +2,36 @@
 
 ## Interrupt controllers
 
+### IRQ intc
+
+64 interrupts forwarded to the GIC
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | yes   |
+
+### FIQ intc
+
+32 interrupts forwarded to the GIC as FIQs
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | yes   |
+
+### sleep intc
+
+32 interrupts forwarded to the IRQ int via a single interrupt
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | yes   |
+
 ## Pinmux
 
 ### Support Matrix
