@@ -173,6 +173,7 @@ so that the CPU doesn't need to be involved.
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
+| mercury5  |        | yes   |
 
 ## Serial
 
