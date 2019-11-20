@@ -157,6 +157,12 @@ so that the CPU doesn't need to be involved.
 
 ## USB
 
+### UTMI
+
+### BC
+
+### USBC
+
 ## ADC
 
 ### SAR
