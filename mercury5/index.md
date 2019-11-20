@@ -31,6 +31,12 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 61  | i2c0         |
 | 62  | i2c0         |
 | 63  | 3v3          |
+| 67  | sd dat1      |
+| 68  | sd dat0      |
+| 69  |              |
+| 70  |              |
+| 71  | sd dat3      |
+| 72  | sd dat2      |
 | 73  | camera mipi? |
 | 74  | camera mipi? |
 | 75  | camera mipi? |
@@ -41,6 +47,9 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 80  | camera mipi? |
 | 81  | camera mipi? |
 | 82  | camera mipi? |
+| 83  |              |
+| 84  | i2c?         |
+| 85  | i2c?         |
 | 127 | xtal         |
 | 128 | xtal         |
 
