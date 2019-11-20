@@ -28,8 +28,8 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 30  | pm spi do    |
 | 31  | pm spi clk   |
 | 32  | pm spi hold  |
-| 61  | i2c          |
-| 62  | i2c          |
+| 61  | i2c1         |
+| 62  | i2c1         |
 | 63  | 3v3          |
 | 73  | camera mipi? |
 | 74  | camera mipi? |
