@@ -40,9 +40,9 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 18  |              | 82  | camera mipi? |
 | 19  |              | 83  |              |
 | 20  |              | 84  | i2c?         |
-| 21  |              | 85  | i2c?         |
+| 21  | 32khz xtal?  | 85  | i2c?         |
 | 22  |              | 86  |              |
-| 23  |              | 87  |              |
+| 23  | 32khz xtal?  | 87  |              |
 | 24  |              | 88  |              |
 | 25  |              | 89  |              |
 | 26  |              | 90  |              |
