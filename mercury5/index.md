@@ -59,8 +59,8 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 37  |              | 101 |              |
 | 38  |              | 102 |              |
 | 39  |              | 103 |              |
-| 40  |              | 104 |              |
-| 41  |              | 105 |              |
+| 40  | pm uart tx   | 104 |              |
+| 41  | pm uart rx   | 105 |              |
 | 42  |              | 106 |              |
 | 43  |              | 107 |              |
 | 44  |              | 108 |              |
