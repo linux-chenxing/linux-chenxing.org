@@ -99,7 +99,7 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 
 - [vendor page](https://www.70mai.com/en/70mai-dash-cam-lite/?gclid=EAIaIQobChMIzsLkl6y_5QIVEz5gCh1UOg9eEAAYASAAEgLvffD_BwE) 
 - [fcc.io internal photos](https://fccid.io/2AOK9-MIDRIVED08/Internal-Photos/internal-photos-4351132)
-- injoinc ip6303 pmic on i2c0@0x30
+- injoinc ip6303 pmic on i2c0@0x30 (custom i2c address and default voltages)
 - mma7660(?) accelerometer on i2c0@0x1d
 
 
