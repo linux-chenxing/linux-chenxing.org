@@ -32,7 +32,7 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 10  | usb          | 74  | camera mipi? |
 | 11  |              | 75  | camera mipi? |
 | 12  |              | 76  | camera mipi? |
-| 13  |              | 77  | camera mipi? |
+| 13  | vcore?       | 77  | camera mipi? |
 | 14  |              | 78  | camera mipi? |
 | 15  |              | 79  | camera mipi? |
 | 16  |              | 80  | camera mipi? |
@@ -63,11 +63,11 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 41  | pm uart rx   | 105 |              |
 | 42  |              | 106 |              |
 | 43  |              | 107 |              |
-| 44  |              | 108 |              |
+| 44  | vddr?        | 108 |              |
 | 45  |              | 109 |              |
-| 46  |              | 110 |              |
-| 47  |              | 111 |              |
-| 48  |              | 112 |              |
+| 46  | vddr?        | 110 |              |
+| 47  | vddr?        | 111 |              |
+| 48  | vddr?        | 112 |              |
 | 49  |              | 113 |              |
 | 50  |              | 114 |              |
 | 51  |              | 115 |              |
