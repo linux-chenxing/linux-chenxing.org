@@ -46,7 +46,7 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 24  |              | 88  |              |
 | 25  |              | 89  |              |
 | 26  |              | 90  |              |
-| 27  | pm spi cs    | 91  |              |
+| 27  | pm spi cs    | 91  |?power supply?|
 | 28  | pm spi di    | 92  |              |
 | 29  | pm spi wp    | 93  |              |
 | 30  | pm spi do    | 94  |              |
@@ -82,8 +82,8 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 60  |              | 124 |              |
 | 61  | i2c0         | 125 |              |
 | 62  | i2c0         | 126 |              |
-| 63  | 3v3          | 127 | xtal         |
-| 64  |              | 128 | xtal         |
+| 63  |              | 127 | xtal         |
+| 64  | 3v3          | 128 | xtal         |
 
 #### Boot ROM Tag
 
