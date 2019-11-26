@@ -89,6 +89,8 @@ ones.
 #### [Infinity 3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
+- [MSC316Q](infinity3) - Cortex A7 + 128MB DDR3 in a 256 ball BGA
+- [MSC318](infinity3) - Cortex A7 + 128MB DDR3 in a 324 ball BGA 
 
 #### [Infinity 5](infinity5)
 - [SSC328Q](infinity5#ssc328q) - Cortex A7 + 256MB DDR3 (this might be i6)
