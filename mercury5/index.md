@@ -1,6 +1,6 @@
 # Mercury 5
 
-The mercury 5 family seems to be targetted at dash recorders. So far all of the devices that have been obtained have been running something that seems to be based on uC/OSII and not Linux.
+The mercury 5 family seems to be targetted at dash recorders. So far all of the devices that have been obtained have been running something that seems to be based on eCOS and not Linux.
 
 The mercury 5 seems to be very close to the [infinity3](/infinity3).
 
