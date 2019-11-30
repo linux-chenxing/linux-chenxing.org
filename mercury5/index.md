@@ -101,7 +101,7 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 - [fcc.io internal photos](https://fccid.io/2AOK9-MIDRIVED08/Internal-Photos/internal-photos-4351132)
 - injoinc ip6303 pmic on i2c0@0x30 (custom i2c address and default voltages)
 - mma7660(?) accelerometer on i2c0@0x1d
-- [ST7701S](http://www.startek-lcd.com/res/starteklcd/pdres/201705/20170512144242904.pdf) LCD
+- [ST7701S](http://www.startek-lcd.com/res/starteklcd/pdres/201705/20170512144242904.pdf) based 480x640 LCD
 
 
 ### SSC8339D
