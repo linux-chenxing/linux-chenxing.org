@@ -102,6 +102,7 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 - injoinc ip6303 pmic on i2c0@0x30 (custom i2c address and default voltages)
 - mma7660(?) accelerometer on i2c0@0x1d
 - [ST7701S](http://www.startek-lcd.com/res/starteklcd/pdres/201705/20170512144242904.pdf) based 480x640 LCD
+- Realtek 8188FTV usb wifi, probably RL-UM12BS-8188FTV-V3.0
 
 
 ### SSC8339D
