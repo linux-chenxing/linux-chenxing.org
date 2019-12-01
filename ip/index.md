@@ -231,3 +231,10 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 | mercury5  |        | yes[0]|
 
 0 - interrupt wiring isn't known yet so it is slow as hell.
+
+## Display pipeline
+
+### GOP
+
+
+## Video Encoder/Decoder
