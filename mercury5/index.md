@@ -26,8 +26,8 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | 4   |              | 68  | sd dat0      |
 | 5   |              | 69  | sd cmd or clk|
 | 6   |              | 70  | sd cmd or clk|
-| 7   |              | 71  | sd dat3      |
-| 8   |              | 72  | sd dat2      |
+| 7   | usb          | 71  | sd dat3      |
+| 8   | usb          | 72  | sd dat2      |
 | 9   | usb          | 73  | camera mipi? |
 | 10  | usb          | 74  | camera mipi? |
 | 11  |              | 75  | camera mipi? |
