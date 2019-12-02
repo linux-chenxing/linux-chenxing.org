@@ -162,21 +162,51 @@ so that the CPU doesn't need to be involved.
 This is the USB PHY. It's probably a Faraday design to go with the Faraday EHCI host but this isn't confirmed.
 This also supplies the clocks for the UHC and OTG so it's not safe to access them before enabling the clocks here first.
 
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | wip   |
+
 ### BC
 
 This seems to be a way of presenting the right resistor values on the data lines to trigger chargers into supplying more current.
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        |       |
+| infinity3 |        |       |
+| mercury5  |        |       |
 
 ### USBC
 
 This seems to be essentially a mux that sits between the UTMI and the UHC and OTG blocks so that UTMI can be connected to the right block for the current role the port is in.
 
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | wip   |
+
 ### UHC
 
 This is a usb host controller that seems to be based on a Faraday design. It's a broken-EHCI controller.
 
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | wip   |
+
 ### OTG
 
 This seems to be an musb USB device controller.
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | wip   |
+| infinity3 |        | wip   |
+| mercury5  |        | wip   |
 
 ## ADC
 
