@@ -279,5 +279,8 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 
 ### GOP
 
+## Camera
 
 ## Video Encoder/Decoder
+
+## Audio
