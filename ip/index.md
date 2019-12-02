@@ -163,6 +163,12 @@ so that the CPU doesn't need to be involved.
 
 ### USBC
 
+### UHC
+
+This is a usb host controller that seems to be based on a Faraday design.
+
+### OTG
+
 ## ADC
 
 ### SAR
