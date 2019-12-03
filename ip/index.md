@@ -297,9 +297,14 @@ This is a frontend for the ISP that allows it to interface with a MIPI CSI senso
 
 ## Video Encoder/Decoder
 
-### MFE 
+### MFE
 
 "Multi-Format Encoder".
+
+- Infinity1 is apparently "mfe5"
+- Infinity3 is apparently "mfe6"
+ 
+### VFE 
 
 - Infinity1 is apparently "h2v1"
 - Infinity3 is apparently "h2v3"
