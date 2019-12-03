@@ -281,7 +281,7 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 
 ### LPLL 
 
-LinePLL? Seems to be a PLL for generating the base clock for PNL.
+Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 
 ### PNL
 
