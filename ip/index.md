@@ -279,6 +279,14 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 
 ### GOP
 
+### LPLL 
+
+LinePLL? Seems to be a PLL for generating the base clock for PNL.
+
+### PNL
+
+PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or MIPI.
+
 ## Camera
 
 ### ISP
