@@ -166,7 +166,7 @@ This also supplies the clocks for the UHC and OTG so it's not safe to access the
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
-| mercury5  |        | wip   |
+| mercury5  |        | yes   |
 
 ### BC
 
@@ -186,7 +186,7 @@ This seems to be essentially a mux that sits between the UTMI and the UHC and OT
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
-| mercury5  |        | wip   |
+| mercury5  |        | yes   |
 
 ### UHC
 
@@ -196,7 +196,7 @@ This is a usb host controller that seems to be based on a Faraday design. It's a
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
-| mercury5  |        | wip   |
+| mercury5  |        | yes   |
 
 ### OTG
 
