@@ -281,6 +281,31 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 
 ## Camera
 
+### ISP
+
+This is the main camera sensor interface block. It can either take input from a parallel sensor or from the CSI and in turn a MIPI CSI sensor.
+
+### CSI
+
+This is a frontend for the ISP that allows it to interface with a MIPI CSI sensor.
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  | n/a    | wip   |
+| infinity3 | n/a    | wip   |
+| mercury5  | n/a    | wip   |
+
 ## Video Encoder/Decoder
+
+### MFE 
+
+"Multi-Format Encoder".
+
+- Infinity1 is apparently "h2v1"
+- Infinity3 is apparently "h2v3"
+
+### JPE
+
+Hardware JPEG encoder
 
 ## Audio
