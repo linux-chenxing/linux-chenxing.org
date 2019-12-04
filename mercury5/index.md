@@ -12,6 +12,10 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 
 ## Chips
 
+### SSC8336
+
+Probably the same chip as the SSC8336N but in QFP instead of QFN.
+
 ### SSC8336N
 
 #### Pinout
