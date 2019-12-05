@@ -6,9 +6,12 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 
 # Specs
 
-- Probably a 800MHz Cortex A7 (Main ID register is 0x410fc075, confirms cortex A7)
+- Probably a 800MHz Cortex A7
 - 32KB Boot ROM
 - 128KB SRAM (based on where the boot rom sets the stack pointer)
+- MIPI DSI for an LCD panel
+- 1 or 2 MIPI CSI for cameras
+- Most if not all of the peripherals from the [infinity3](/infinity3/).
 
 ## Chips
 
