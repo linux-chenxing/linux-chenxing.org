@@ -25,7 +25,7 @@ Probably the same chip as the SSC8336N but in QFP instead of QFN. Pinout seems t
 
 #### Pinout
 
-128 Pin QFN
+128 Pin QFP/QFN
 
 | #   | name         | #   | name         |
 |-----|--------------|-----|--------------|
@@ -72,16 +72,16 @@ Probably the same chip as the SSC8336N but in QFP instead of QFN. Pinout seems t
 | 41  | pm uart rx   | 105 |              |
 | 42  |              | 106 |              |
 | 43  |              | 107 |              |
-| 44  | vddr?        | 108 |              |
-| 45  |              | 109 |              |
-| 46  | vddr?        | 110 |              |
-| 47  | vddr?        | 111 |              |
-| 48  | vddr?        | 112 |              |
-| 49  |              | 113 |              |
-| 50  |              | 114 |              |
-| 51  |              | 115 |              |
-| 52  |              | 116 |              |
-| 53  |              | 117 |              |
+| 44  | vddr?        | 108 | mipi dsi d0p |
+| 45  |              | 109 | mipi dsi d0n |
+| 46  | vddr?        | 110 | mipi dsi d1p |
+| 47  | vddr?        | 111 | mipi dsi d1n |
+| 48  | vddr?        | 112 | mipi dsi clkp|
+| 49  |              | 113 | mipi dsi clkn|
+| 50  |              | 114 | mipi dsi d2p |
+| 51  |              | 115 | mipi dsi d2n |
+| 52  |              | 116 | mipi dsi d3p |
+| 53  |              | 117 | mipi dsi d3n |
 | 54  |              | 118 |              |
 | 55  |              | 119 |              |
 | 56  |              | 120 |              |
