@@ -279,7 +279,7 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 
 ### GOP
 
-"Graphics Output Path"
+"Graphics Output Path". This is a framebuffer.
 
 ### LPLL 
 
