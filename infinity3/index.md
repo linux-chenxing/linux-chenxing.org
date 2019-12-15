@@ -20,6 +20,8 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 ### MSC313E
 
+- chipid : 0xc2
+
 #### Boot ROM Tag
 ```
 MVX1##I3g4f6d5e0CMN_ROM######XVM
@@ -49,6 +51,8 @@ MVX1##I3g4f6d5e0CMN_ROM######XVM
 - AM200E3 IP board camera module. [vendor page](https://www.xonz-cctv.com/product/mstar-solution-mc200e/)
 
 ### MSC316DC(DM?)
+
+- chipid : 0xc2 (same as the msc313e, detecting what DDR config to use in u-boot is going to be annoying :()
 
 #### Block Diagram
 
