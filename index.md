@@ -53,7 +53,7 @@ at some point.
 | - msc316q  |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
 | - msc318   |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
 | infinity6  |                        |                 |                 |              |                                     |                                          |
-| - ssc325   | yes                    |                 | yes             |              |                                     |                                          |
+| - ssc325   | yes                    | yes             | yes             |              |                                     |                                          |
 | mercury5   |                        |                 |                 |              |                                     |                                          |
 | - ssc8336  | yes                    |                 | yes             |              |                                     |                                          |
 | - ssc8336n | yes                    | yes             | yes             |              |                                     |                                          |
