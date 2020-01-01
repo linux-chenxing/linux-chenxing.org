@@ -11,3 +11,7 @@ The vendor kernel for these seems to be 4.9.84.
 
 ![SSC326D block diagram](ssc326d_blockdiagram.png)
 
+### BootROM tag
+
+```MVX1##I6g4d97980CMN_ROM######XVM```
+
