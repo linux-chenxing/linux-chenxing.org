@@ -9,7 +9,10 @@ The vendor kernel for these seems to be 4.9.84.
 
 ## SSC326D
 
+- Chip id: 0xef
+
 ![SSC326D block diagram](ssc326d_blockdiagram.png)
+
 
 ### BootROM tag
 
