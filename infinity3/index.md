@@ -14,6 +14,7 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 ### Efuse 
 
 - 0x18/0x1c - "sidd", seems to be some sort of current measurement that is used to controller whether the core voltage can be scaled.
+- 0x20 - seems to be related to the type of in-package memory
 
 
 ## Vendor Code
