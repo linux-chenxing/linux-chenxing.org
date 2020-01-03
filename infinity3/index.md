@@ -15,7 +15,14 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 Known locations
 
-- 0x14 - checked by ipl
+|      | 15 | 14 | 13 | 12 |  11 | 10  | 9 | 8 |  7  |  6  |  5  | 4 | 3 | 2 | 1 | 0 |
+|------|----|----|----|----|-----|-----|---|---|-----|-----|-----|---|---|---|---|---|
+| 0x14 |    |    |    |    | ipl | ipl |   |   | ipl | ipl | ipl |   |   |   |   |   |
+|      |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   |
+|      |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   |
+
+- ipl; checked by ipl
+
 - 0x18/0x1c - "sidd", seems to be some sort of current measurement that is used to control whether the core voltage can be scaled.
 - 0x20
 
