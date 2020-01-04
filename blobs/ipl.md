@@ -36,9 +36,9 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 
 #### Version capability/feature matrix
 
-| version               | msc313 | msc313e | msc316dc | checks IPLC chksum | notes |
-|-----------------------|--------|---------|----------|--------------------|-------|
-| I6gf1d3932IPL         |        |         |          |                    |       |
+| version               | ssc325 | checks IPLC chksum | notes |
+|-----------------------|--------|--------------------|-------|
+| I6gf1d3932IPL         |        |                    |       |
 
 ## Second stage IPL loaded by the first stage IPL
 
