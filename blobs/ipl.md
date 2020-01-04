@@ -38,7 +38,7 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 
 | version               | ssc325 | checks IPLC chksum | notes |
 |-----------------------|--------|--------------------|-------|
-| I6gf1d3932IPL         |        |                    |       |
+| I6gf1d3932IPL         | y      |                    |       |
 
 ## Second stage IPL loaded by the first stage IPL
 
