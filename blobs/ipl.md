@@ -25,7 +25,6 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 |-----------------------|--------|---------|----------|--------------------|-------|
 | I3g0c706bbIPL_QFN64MW | y      | y       | n[0]     | n                  |       |
 | I3gd156225IPL_EFUSE   | ?      | y       | y        | y                  |[1]    |
-| I6gf1d3932IPL         |        |         |          |                    |       |
 
 - 0 - Runs but can't init the DRAM
 - 1 - Makes extensive use of magic numbers in the efuse area, this version can apparently
@@ -34,6 +33,12 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 ### infinity6 notes
 
 - Located at 0x0 in SPI NOR.
+
+#### Version capability/feature matrix
+
+| version               | msc313 | msc313e | msc316dc | checks IPLC chksum | notes |
+|-----------------------|--------|---------|----------|--------------------|-------|
+| I6gf1d3932IPL         |        |         |          |                    |       |
 
 ## Second stage IPL loaded by the first stage IPL
 
