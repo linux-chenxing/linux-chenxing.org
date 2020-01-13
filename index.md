@@ -50,13 +50,13 @@ at some point.
 |            | msc313d  | 1638B      |                        |                 |                 |              |                                     |                                          |
 | infinity3  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
 |            | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
-|            | msc316dc |            | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
+|            | msc316dc | 1929S      | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
 |            | msc316q  |            |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
 |            | msc318   |            |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
 | infinity6  |          |            |                        |                 |                 |              |                                     |                                          |
 |            | ssc325   |            | yes                    | yes             | yes             |              |                                     |                                          |
 | mercury5   |          |            |                        |                 |                 |              |                                     |                                          |
-|            | ssc8336  |            | yes                    |                 | yes             |              |                                     |                                          |
+|            | ssc8336  | 1915S      | yes                    |                 | yes             |              |                                     |                                          |
 |            | ssc8336n |            | yes                    | yes             | yes             |              |                                     |                                          |
 |            | ssc8339d |            |                        |                 |                 |              | yes                                 |                                          |
 
