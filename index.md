@@ -41,23 +41,23 @@ at some point.
 
 # Reverse Engineering Progress
 
-|            | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | product brief acquired              | datasheet acquired                       |
-|------------|------------------------|-----------------|-----------------|--------------|-------------------------------------|------------------------------------------|
-| cedric     |                        |                 |                 |              |                                     |                                          |
-| - mst786   |                        |                 |                 |              |                                     | [yes](cedric/mst786_ds_v01maite_new.pdf) |
-| infinity1  |                        |                 |                 | yes[0]       |                                     |                                          |
-| - msc313   | yes                    | yes             |                 |              |                                     |                                          |
-| infinity3  |                        |                 |                 | yes[0]       |                                     |                                          |
-| - msc313e  | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
-| - msc316dc | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
-| - msc316q  |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
-| - msc318   |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
-| infinity6  |                        |                 |                 |              |                                     |                                          |
-| - ssc325   | yes                    | yes             | yes             |              |                                     |                                          |
-| mercury5   |                        |                 |                 |              |                                     |                                          |
-| - ssc8336  | yes                    |                 | yes             |              |                                     |                                          |
-| - ssc8336n | yes                    | yes             | yes             |              |                                     |                                          |
-| - ssc8339d |                        |                 |                 |              | yes                                 |                                          |
+|            |          | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | product brief acquired              | datasheet acquired                       |
+|------------|----------|------------------------|-----------------|-----------------|--------------|-------------------------------------|------------------------------------------|
+| cedric     |          |                        |                 |                 |              |                                     |                                          |
+|            | mst786   |                        |                 |                 |              |                                     | [yes](cedric/mst786_ds_v01maite_new.pdf) |
+| infinity1  |          |                        |                 |                 | yes[0]       |                                     |                                          |
+|            | msc313   | yes                    | yes             |                 |              |                                     |                                          |
+| infinity3  |          |                        |                 |                 | yes[0]       |                                     |                                          |
+|            | msc313e  | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
+|            | msc316dc | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
+|            | msc316q  |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
+|            | msc318   |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
+| infinity6  |          |                        |                 |                 |              |                                     |                                          |
+|            | ssc325   | yes                    | yes             | yes             |              |                                     |                                          |
+| mercury5   |          |                        |                 |                 |              |                                     |                                          |
+|            | ssc8336  | yes                    |                 | yes             |              |                                     |                                          |
+|            | ssc8336n | yes                    | yes             | yes             |              |                                     |                                          |
+|            | ssc8339d |                        |                 |                 |              | yes                                 |                                          |
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
 
