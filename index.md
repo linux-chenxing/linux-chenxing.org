@@ -57,7 +57,7 @@ at some point.
 |            | ssc325   |            | yes                    | yes             | yes             |              |                                     |                                          |
 | mercury5   |          |            |                        |                 |                 |              |                                     |                                          |
 |            | ssc8336  | 1915S      | yes                    |                 | yes             |              |                                     |                                          |
-|            | ssc8336n |            | yes                    | yes             | yes             |              |                                     |                                          |
+|            | ssc8336n | 1918S      | yes                    | yes             | yes             |              |                                     |                                          |
 |            | ssc8339d |            |                        |                 |                 |              | yes                                 |                                          |
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
