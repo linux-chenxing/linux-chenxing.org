@@ -56,7 +56,7 @@ at some point.
 | infinity6  |          |            |                        |                 |                 |              |                                     |                                          |
 |            | ssc325   |            | yes                    | yes             | yes             |              |                                     |                                          |
 | mercury2   |          |            | yes                    |                 |                 |              |                                     |                                          |
-|            | msc8328  |            |                        |                 | yes             |              |                                     |                                          |
+|            | msc8328  | 1744       |                        |                 | yes             |              |                                     |                                          |
 | mercury5   |          |            |                        |                 |                 |              |                                     |                                          |
 |            | ssc8336  | 1915S      | yes                    |                 | yes             |              |                                     |                                          |
 |            | ssc8336n | 1918S      | yes                    | yes             | yes             |              |                                     |                                          |
