@@ -55,6 +55,8 @@ at some point.
 |            | msc318   |            |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
 | infinity6  |          |            |                        |                 |                 |              |                                     |                                          |
 |            | ssc325   |            | yes                    | yes             | yes             |              |                                     |                                          |
+| mercury2   |          |            | yes                    |                 |                 |              |                                     |                                          |
+|            | msc8328  |            |                        |                 | yes             |              |                                     |                                          |
 | mercury5   |          |            |                        |                 |                 |              |                                     |                                          |
 |            | ssc8336  | 1915S      | yes                    |                 | yes             |              |                                     |                                          |
 |            | ssc8336n | 1918S      | yes                    | yes             | yes             |              |                                     |                                          |
