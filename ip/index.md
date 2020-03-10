@@ -338,3 +338,7 @@ BACH is a fairly generic DMA engine with a DAC attached audio block.
 | infinity  | n/a    | wip   |
 | infinity3 | n/a    | wip   |
 | mercury5  | n/a    | wip   |
+
+## Misc
+
+### Mailbox
