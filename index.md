@@ -94,6 +94,7 @@ ones.
 #### Infinity 2
 
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
+- [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
 
 #### [Infinity 3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
