@@ -52,10 +52,10 @@ The vendor kernel for these seems to be 4.9.84.
 | 35 | xtali     | 79 |           |
 | 36 | xtalo     | 80 |           |
 | 37 |           | 81 |           |
-| 38 |           | 82 |           |
-| 39 |           | 83 |           |
-| 40 |           | 84 | usb_dm    |
-| 41 |           | 85 | usb_dp    |
+| 38 | eth_rn    | 82 |           |
+| 39 | eth_rp    | 83 |           |
+| 40 | eth_tx    | 84 | usb_dm    |
+| 41 | eth_tp    | 85 | usb_dp    |
 | 42 |           | 86 |           |
 | 43 | fuart_rx  | 87 |           |
 | 44 | fuart_tx  | 88 |           |
