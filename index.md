@@ -91,6 +91,10 @@ ones.
 - [MSC313](infinity1#msc313) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC313D](infinity1#msc313d) - Probably a Cortex A7 + 128MB DDR3 in a BGA
 
+#### Infinity 2
+
+- part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
+
 #### [Infinity 3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
