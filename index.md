@@ -91,7 +91,7 @@ ones.
 - [MSC313](infinity1#msc313) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC313D](infinity1#msc313d) - Probably a Cortex A7 + 128MB DDR3 in a BGA
 
-#### Infinity 2
+#### [Infinity 2](infinity2)
 
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
