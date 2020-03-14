@@ -9,6 +9,8 @@ The vendor kernel for these seems to be 4.9.84.
 
 ## SSC325
 
+- [Sigmastar page](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=378&lcid=55&pid=)
+
 - Chip id: 0xef
 
 ### Pinout
@@ -67,5 +69,7 @@ The vendor kernel for these seems to be 4.9.84.
 ```MVX1##I6g4d97980CMN_ROM######XVM```
 
 ## SSC326D
+
+- [Sigmastar page](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=380&lcid=55&pid=)
 
 ![SSC326D block diagram](ssc326d_blockdiagram.png)
