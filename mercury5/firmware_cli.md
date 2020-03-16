@@ -122,3 +122,21 @@ List of CLI commands:
  goputest                           -- OSD Draw GOP1 Test Function
  PrintGOPBanks                      -- OSD Draw GOP1 Test Function
  ```
+
+## mipi menu
+
+```
+List of CLI commands:
+ PrintCmd                           -- Print cmd set 
+ BankRead                           -- Read bank info
+ RB                                 -- Read bank info
+ regw                               -- Write  MIPI Digital/CMDQ Reg used 
+ regwb                              -- General Function
+ ws                                 -- General Function
+ wp                                 -- Write packet by user defined 
+ read                               -- Read reg from panel control
+ clkon                              -- Set MIPI clock on
+ clkoff                             -- Set MIPI clock off
+ mode                               -- Change Video mode (HS) or Cmd mode (LP)
+ phy                                -- Update PHY setting 
+``
