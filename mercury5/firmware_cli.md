@@ -123,6 +123,15 @@ List of CLI commands:
  PrintGOPBanks                      -- OSD Draw GOP1 Test Function
  ```
 
+## i2c menu
+
+```
+List of CLI commands:
+ bus                                -- I2c I2C
+ tst                                -- I2c I2C
+```
+
+
 ## mipi menu
 
 ```
