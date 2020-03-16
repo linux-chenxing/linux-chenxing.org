@@ -130,7 +130,15 @@ List of CLI commands:
  bus                                -- I2c I2C
  tst                                -- I2c I2C
 ```
+## decscl
 
+```
+List of CLI commands:
+ REG                                -- Register R/W
+ HVSP                               -- Hvsp
+ VIP                                -- VIP
+ SRAMDUMP                           -- VIP
+```
 
 ## mipi menu
 
