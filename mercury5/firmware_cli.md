@@ -130,6 +130,17 @@ List of CLI commands:
  bus                                -- I2c I2C
  tst                                -- I2c I2C
 ```
+
+## pnl
+
+```
+List of CLI commands:
+ LCDRW                              -- LCD bank Reg Read/Write
+ RGBCFG                             -- RGB Panel setting
+ PLCFG                              -- RGB Panel setting
+ ShowBank                           -- RGB Panel setting
+```
+
 ## decscl
 
 ```
