@@ -83,3 +83,32 @@ List of CLI commands:
  [decscl]                           -- Dec SCL
  [mipi]                             -- Menu DISP
  ```
+## dip menu
+
+```
+List of CLI commands:
+ move0                              -- move 420sp
+ move1                              -- move 420t16x32
+ move2                              -- move 422
+ s0                                 -- 420sp scale
+ s1                                 -- 420t16x32 scale
+ s2                                 -- 422 scale
+ r0                                 -- 420sp r 90
+ r1                                 -- 420t16x32 r 90
+ r2                                 -- 422 r 90
+ clip                               -- img clip
+ cc0                                -- cc_420sp_2_420tile16x32
+ cc1                                -- cc_420tile16x32_2_420sp
+ cc2                                -- cc_420sp_2_420tile32x16
+ cc3                                -- cc_420tile32x16_2_420sp
+ cc4                                -- cc_420sp_2_420tile32x32
+ cc5                                -- cc_420tile32x32_2_420sp
+ cc6                                -- cc_422_2_420sp
+ cc7                                -- cc_422_2_420tile16x32
+ cc8                                -- cc_420tile16x32_2_422
+ cc9                                -- cc_420sp_2_422
+ osdb0                              -- osdb 420sp
+ rreg                               -- read reg
+ wreg                               -- write reg
+ test                               -- test
+ ```
