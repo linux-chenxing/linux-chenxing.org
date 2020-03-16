@@ -131,6 +131,20 @@ List of CLI commands:
  tst                                -- I2c I2C
 ```
 
+## vif
+
+```
+List of CLI commands:
+ VIF_INIT                           -- VIF test0
+ FS_TASK_CREATE                     -- VIF test1
+ FE_TASK_CREATE                     -- VIF test2
+ FS_TASK_END                        -- VIF test3
+ FE_TASK_END                        -- VIF test4
+ VIF_INTS_EVENT                     -- VIF test5
+ VIF_DEINIT                         -- VIF test6
+ VIF_AUTO_TEST                      -- VIF test7
+```
+
 ## pnl
 
 ```
