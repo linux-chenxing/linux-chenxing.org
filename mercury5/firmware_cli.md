@@ -131,6 +131,32 @@ List of CLI commands:
  tst                                -- I2c I2C
 ```
 
+## isp
+
+```
+List of CLI commands:
+ run                                -- Initialize ISP
+ stop                               -- Initialize ISP
+ patgen                             -- Initialize ISP
+ raw_wdma                           -- Initialize ISP
+ raw_wdma2                          -- Initialize ISP
+ ae_stats                           -- Initialize ISP
+ awb_stats                          -- Initialize ISP
+ dbg                                -- Initialize ISP
+ prt                                -- Initialize ISP
+ iq_ut                              -- Initialize ISP
+ ae_ut                              -- Initialize ISP
+ awb_ut                             -- Initialize ISP
+ rotate                             -- Initialize ISP
+ ints                               -- Initialize ISP
+ dbgbuf                             -- Initialize ISP
+ csi                                -- Initialize ISP
+ histo_stats                        -- Initialize ISP
+ mload                              -- Initialize ISP
+ mload_R                            -- Initialize ISP
+ hdr_stats                          -- Initialize ISP
+```
+
 ## vif
 
 ```
