@@ -112,3 +112,13 @@ List of CLI commands:
  wreg                               -- write reg
  test                               -- test
  ```
+## gop menu
+
+```
+List of CLI commands:
+ Gen                                -- General Function
+ gop0                               -- OSD Draw GOP0 Test Function
+ gop1                               -- OSD Draw GOP1 Test Function
+ goputest                           -- OSD Draw GOP1 Test Function
+ PrintGOPBanks                      -- OSD Draw GOP1 Test Function
+ ```
