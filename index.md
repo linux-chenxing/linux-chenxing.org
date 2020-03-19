@@ -162,3 +162,7 @@ binwalk -e <firmware.bin>
 extract-dtb.py <extracted firmware dir><uncompressed kernel blob>
 dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
 ```
+
+# Links
+
+- [aiwinn](http://www.aiwinn.com/) - seems to supply a bunch of AI enabled things based on SigmaStar SoCs
