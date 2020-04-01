@@ -150,9 +150,10 @@ See [ISP](isp).
 - [IPL](blobs/ipl.md) - First/Second stage bootloaders
 - [MXPT](blobs/mxpt.md) - Partition table used for SPI NOR
 
-# Vendor Kernels
+# Vendor uboot, kernels..
 
-- [Old 3.18.30 based kernel for Taobao sourced SDK](https://github.com/fifteenhex/linux_msc313e)
+- [Old 2015.01 based uboot from Taobao sourced SDK](https://github.com/fifteenhex/uboot_msc313e)
+- [Old 3.18.30 based kernel from Taobao sourced SDK](https://github.com/fifteenhex/linux_msc313e)
 - [Recent 4.9.84 based kernel](https://github.com/fifteenhex/linux-ssc325)
 
 ## Sources of firmwares for reverse engineering
