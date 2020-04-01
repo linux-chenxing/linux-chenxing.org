@@ -56,6 +56,7 @@ at some point.
 |            | msc316q  |            |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
 |            | msc318   |            |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
 | infinity6  |          |            |                        |                 |                 |              |                                     |                                          |
+|            | ssc323   | 1928S      |                        |                 |                 |              |                                     |
 |            | ssc325   |            | yes                    | yes             | yes             |              |                                     |                                          |
 | mercury2   |          |            | yes                    |                 |                 |              |                                     |                                          |
 |            | msc8328  | 1744       |                        |                 | yes             |              |                                     |                                          |
@@ -110,6 +111,7 @@ ones.
 - [SSC329Q](infinity5#ssc329q) - Cortex A7 + 256MB DDR3 + NPU (this might be i6)
 
 #### [Infinity 6](infinity6)
+- [SSC323](infiinty6#ssc323) - Cortex A7?? + ?? DDR2?? in a ??
 - [SSC325](infinity6#ssc325) - Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325DE](infinity6#ssc325de) - Cortex A7 + 128MB DDR3 in a QFN88
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
