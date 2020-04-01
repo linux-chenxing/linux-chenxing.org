@@ -152,6 +152,7 @@ See [ISP](isp).
 
 # Vendor Kernels
 
+[Old 3.18.30 based kernel for Taobao sourced SDK](https://github.com/fifteenhex/linux_msc313e)
 [Recent 4.9.84 based kernel](https://github.com/fifteenhex/linux-ssc325)
 
 ## Sources of firmwares for reverse engineering
