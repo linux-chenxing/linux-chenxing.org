@@ -56,7 +56,8 @@ at some point.
 |            | msc316q  |            |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
 |            | msc318   |            |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
 | infinity6  |          |            |                        |                 |                 |              |                                     |                                          |
-|            | ssc323   | 1928S      |                        |                 |                 |              |                                     |
+|            | ssc323   | 1928S      |                        |                 |                 |              |                                     |                                          |
+|            |          | 1936J      |                        |                 |                 |              |                                     |                                          |
 |            | ssc325   |            | yes                    | yes             | yes             |              |                                     |                                          |
 | mercury2   |          |            | yes                    |                 |                 |              |                                     |                                          |
 |            | msc8328  | 1744       |                        |                 | yes             |              |                                     |                                          |
