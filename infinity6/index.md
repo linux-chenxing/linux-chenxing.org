@@ -7,6 +7,12 @@ The vendor kernel for these seems to be 4.9.84.
 
 - 16KB Boot ROM
 
+## SSC323
+
+### Known devices
+
+- [IMILAB Home Security Camera A1](https://fccid.io/2APA9-IPC019E/Internal-Photos/Internal-Photos-4644200)
+
 ## SSC325
 
 - [Sigmastar page](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=378&lcid=55&pid=)
