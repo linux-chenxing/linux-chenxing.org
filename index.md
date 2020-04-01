@@ -111,7 +111,7 @@ ones.
 - [SSC329Q](infinity5#ssc329q) - Cortex A7 + 256MB DDR3 + NPU (this might be i6)
 
 #### [Infinity 6](infinity6)
-- [SSC323](infiinty6#ssc323) - Cortex A7?? + ?? DDR2?? in a ??
+- [SSC323](infinity6#ssc323) - Cortex A7?? + ?? DDR2?? in a ??
 - [SSC325](infinity6#ssc325) - Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325DE](infinity6#ssc325de) - Cortex A7 + 128MB DDR3 in a QFN88
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
