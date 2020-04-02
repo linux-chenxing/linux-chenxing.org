@@ -283,6 +283,14 @@ This display pipeline(s) are made up of a bunch of different blocks that can be 
 
 Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/mediatek/mtk_dsi.c) based on [this header](https://github.com/fifteenhex/linux_mstar_3.18/blob/another_codedrop/drivers/mstar/driver/hal/infinity2/mipi_dsi/inc/reg_mipi_dsi.h).
 
+
+
+```
+ -----      ----------      ------
+| PNL | -> | MIPI DSI | -> | DPHY |
+ -----      ----------      ------
+```
+
 ### GOP
 
 "Graphics Output Path". This is a simple framebuffer that uses a chunk of system memory.
