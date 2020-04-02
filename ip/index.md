@@ -342,3 +342,7 @@ BACH is a fairly generic DMA engine with a DAC attached audio block.
 ## Misc
 
 ### Mailbox
+
+### AI/NN
+
+Some chips seem to contain a [CEVA XM6](https://www.ceva-dsp.com/product/ceva-xm6/).
