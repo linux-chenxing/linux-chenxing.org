@@ -1,5 +1,7 @@
 # Mercury2
 
+Firmware is apparently based on uC/OS-II.
+
 ## Chips
 
 ### AIT8328/MSC8328

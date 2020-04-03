@@ -11,6 +11,22 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 - Ethernet; Cadence based EMAC
 
+### Efuse 
+
+Known locations
+
+|      | 15 | 14 | 13 | 12 |  11 | 10  | 9 | 8 |  7  |  6  |  5  | 4 | 3 | 2 | 1 | 0 | msc313e | msc313dc |
+|------|----|----|----|----|-----|-----|---|---|-----|-----|-----|---|---|---|---|---|---------|----------|
+| 0x14 |    |    |    |    | ipl | ipl |   |   | ipl | ipl | ipl |   |   |   |   |   | 0x420   | 0x440    |
+|      |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   |         |          |
+|      |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   |         |          |
+
+- ipl; checked by ipl
+
+- 0x18/0x1c - "sidd", seems to be some sort of current measurement that is used to control whether the core voltage can be scaled.
+- 0x20
+
+
 ## Vendor Code
 
 - [u-boot](https://github.com/fifteenhex/uboot_msc313e)
@@ -19,6 +35,8 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 ## Chips
 
 ### MSC313E
+
+- chipid : 0xc2
 
 #### Boot ROM Tag
 ```
@@ -49,6 +67,8 @@ MVX1##I3g4f6d5e0CMN_ROM######XVM
 - AM200E3 IP board camera module. [vendor page](https://www.xonz-cctv.com/product/mstar-solution-mc200e/)
 
 ### MSC316DC(DM?)
+
+- chipid : 0xc2 (same as the msc313e, detecting what DDR config to use in u-boot is going to be annoying :()
 
 #### Block Diagram
 
