@@ -13,6 +13,20 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 - 1 or 2 MIPI CSI for cameras
 - Most if not all of the peripherals from the [infinity3](/infinity3/).
 
+## Boot pin strapping
+
+| mode              | pm_spi_hld | pm_spi_sdo | pm_spi_sck |
+|-------------------|------------|------------|------------|
+| SPI NAND (no ecc) | 0          | 0          | 0          |
+| SLC NAND          | 0          | 0          | 1          |
+| UART              | 0          | 1          | 0          |
+| EMMC              | 0          | 1          | 1          |
+| SDIO 3.0 (SD card | 1          | 0          | 0          |
+| SPI NAND (ecc)    | 1          | 0          | 1          |
+| SPI Nor           | 1          | 1          | 0          |
+| USB device        | 1          | 1          | 1          |
+
+
 ## Chips
 
 ### SSC8336
