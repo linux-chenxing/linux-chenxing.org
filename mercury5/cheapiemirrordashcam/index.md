@@ -1,5 +1,7 @@
 # Cheapie mirror dashcam
 
+![cheapiemirrordashcam](inaction_thumb.jpg)
+
 ## Components
 
 - Probably [GT911](https://www.distec.de/fileadmin/pdf/produkte/Touchcontroller/DDGroup/GT911_Datasheet.pdf) touch screen controller.
