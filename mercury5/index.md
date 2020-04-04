@@ -25,6 +25,8 @@ Probably the same chip as the SSC8336N but in QFP instead of QFN. Pinout seems t
 
 - [Super cheapie ebay mirror dash cam](cheapiemirrordashcam)
 
+![cheapiemirrordashcam](cheapiemirrordashcam/inaction_thumb.jpg)
+
 ### SSC8336N
 
 - Chip id: 0xee
