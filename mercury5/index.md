@@ -107,7 +107,7 @@ Probably the same chip as the SSC8336N but in QFP instead of QFN. Pinout seems t
 
 #### Boot ROM Tag
 
-This is slighly interesting. Presumably I3 is infinity3 so maybe this chip's ROM is a hacked up. 
+This is slighly interesting. Presumably I3 is infinity3 so maybe this chip's ROM is a hacked up version of the infinity3 one?
 
 ```
 MVX1##I3gb83f2cbCMN_ROM######XVM
@@ -126,3 +126,5 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 
 
 ### SSC8339D
+
+Have a data brief but no real world devices yet.
