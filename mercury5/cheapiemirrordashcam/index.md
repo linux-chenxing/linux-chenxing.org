@@ -11,7 +11,7 @@
 ## Components
 
 - Probably [GT911](https://www.distec.de/fileadmin/pdf/produkte/Touchcontroller/DDGroup/GT911_Datasheet.pdf) touch screen controller.
-- RN6752M - CVBS to MIPI CSI bridge?
+- RN6752M - CVBS to MIPI CSI bridge? [some info](https://blog.csdn.net/wode1212008/article/details/75221699)
 
 ## Where to buy
 
