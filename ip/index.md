@@ -305,6 +305,12 @@ PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or M
 
 ## Camera
 
+```
+ -------
+|  vif  | ->
+ -------
+```
+
 ### ISP
 
 This is the main camera sensor interface block. It can either take input from a parallel sensor or from the CSI and in turn a MIPI CSI sensor.
