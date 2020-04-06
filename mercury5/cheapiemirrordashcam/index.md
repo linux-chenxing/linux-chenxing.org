@@ -11,7 +11,7 @@
 ## Components
 
 - Probably [GT9271](https://focuslcds.com/content/GT9271.pdf) touch screen controller.
-- RN6752M - CVBS to MIPI CSI bridge? [some info](https://blog.csdn.net/wode1212008/article/details/75221699)
+- RN6752M - CVBS to BT656 bridge? [some info](https://blog.csdn.net/wode1212008/article/details/75221699)
 
 ## Where to buy
 
