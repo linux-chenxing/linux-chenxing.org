@@ -76,6 +76,14 @@ Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 
 ## Bus Glue
 
+### L3 Bridge/AXI interface
+
+There is some fabric between the CPU, other bus masters and the memory.
+Some magic bits in here are used to flush pending cpu writes to memory
+so other bus masters can see them.
+
+[Rought register descriptions](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_axi.h)
+
 ### MIU
 
 MIU or "memory interface unit" is a multiport DDR controller that is wired to the CPU(s)
