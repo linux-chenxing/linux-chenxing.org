@@ -317,9 +317,13 @@ PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or M
 The pipeline for the m5 seems to look like this:
 
 ```
- -------      -----      ------
-|  VIF  | -> | CSI | -> | DPHY |
- -------      -----      ------
+          
+ -------         -----      ------
+|  VIF  | <-X-- | CSI | <- | DPHY |
+ -------    |    -----      ------
+            |    -------
+             \- | BT656 |
+                 -------
 ```
 
 There seems to be 3 "vif" blocks. Then two csi blocks and two dphys. The sr0 dphy seems to only support two lanes. The sr1 dphy supports 4.
