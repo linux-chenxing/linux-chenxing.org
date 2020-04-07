@@ -328,7 +328,7 @@ There seems to be 3 "vif" blocks. Then two csi blocks and two dphys. The sr0 dph
 
 vif, video interface?, seems to also be called "sensor" seems to be the sink for the video after it's come from mipi or somewhere else.
 
-(Rough register descriptions)[https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/isp/inc/mercury5_reg_vif.h]
+[Rough register descriptions](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/isp/inc/mercury5_reg_vif.h)
 
 ### ISP
 
