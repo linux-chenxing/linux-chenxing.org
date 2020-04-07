@@ -70,6 +70,10 @@ This (probably) a PLL that is used for dynamically scaling the CPU frequency.
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
 
+### LPLL 
+
+Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
+
 ## Bus Glue
 
 ### MIU
@@ -294,10 +298,6 @@ Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blo
 ### GOP
 
 "Graphics Output Path". This is a simple framebuffer that uses a chunk of system memory.
-
-### LPLL 
-
-Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 
 ### PNL
 
