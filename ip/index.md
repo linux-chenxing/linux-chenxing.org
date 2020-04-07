@@ -357,6 +357,8 @@ This is a frontend for the ISP that allows it to interface with a MIPI CSI senso
 - Infinity1 is apparently "mfe5"
 - Infinity3 is apparently "mfe6"
  
+[Rough register descriptions](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/mfe/inc/hal_mfe_reg.h)
+ 
 ### VFE 
 
 - Infinity1 is apparently "h2v1"
