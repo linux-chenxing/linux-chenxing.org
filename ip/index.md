@@ -306,9 +306,9 @@ PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or M
 ## Camera
 
 ```
- -------
-|  vif  | ->
- -------
+ -------      -----      ------
+|  VIF  | -> | CSI | -> | DPHY |
+ -------      -----      ------
 ```
 
 ### ISP
