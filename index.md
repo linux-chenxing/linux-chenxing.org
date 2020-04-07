@@ -156,6 +156,10 @@ See [ISP](isp).
 - [Old 3.18.30 based kernel from Taobao sourced SDK](https://github.com/fifteenhex/linux_msc313e)
 - [Recent 4.9.84 based kernel](https://github.com/fifteenhex/linux-ssc325)
 
+# Vendor SDKs
+
+- [Mercury5](https://github.com/longyanjun2020/SDK_pulbic)
+
 ## Sources of firmwares for reverse engineering
 
 - [Anjvision firmwares](http://www.anjvision.com:8021/firmware/)
