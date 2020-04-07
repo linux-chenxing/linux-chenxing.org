@@ -368,6 +368,8 @@ This is a frontend for the ISP that allows it to interface with a MIPI CSI senso
 
 Hardware JPEG encoder
 
+[Rough register descriptions](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/jpe/pub/hal_jpe_reg.h)
+
 ## Audio
 
 ### BACH
