@@ -137,6 +137,9 @@ CMDQ or "command queue" is a descriptor list based DMA engine that seems
 to be intended to be used to tie the parts of the camera pipeline together
 so that the CPU doesn't need to be involved.
 
+Note: This seems to live in the "RIU" register address space and maybe can't see
+the system memory.
+
 #### Support Matrix
 
 |           | u-boot | linux |
