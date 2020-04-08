@@ -13,7 +13,7 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 - 1 or 2 MIPI CSI for cameras
 - Most if not all of the peripherals from the [infinity3](/infinity3/).
 
-## Boot pin strapping
+# Boot pin strapping
 
 | mode              | pm_spi_hld | pm_spi_sdo | pm_spi_sck |
 |-------------------|------------|------------|------------|
@@ -26,6 +26,9 @@ The mercury 5 seems to be very close to the [infinity3](/infinity3).
 | SPI Nor           | 1          | 1          | 0          |
 | USB device        | 1          | 1          | 1          |
 
+# Memory Map
+
+[A very rough memory map](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/cpu_mem_map_mercury5.h). Note that the register locations are in "RIU bank" format. They need to be shifted left once and have 0x1f000000 added to get the cpu address.
 
 ## Chips
 
