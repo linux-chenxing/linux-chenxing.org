@@ -11,16 +11,16 @@
 
 ## bank 1 - control/DMA registers
 
-| offset | name                            | 15          | 14            | 13             | 12 | 11          | 10          | 9          | 8          | 7        | 6        | 5            | 4        | 3        | 2        | 1        | 0        |
-|--------|---------------------------------|-------------|---------------|----------------|----|-------------|-------------|------------|------------|----------|----------|--------------|----------|----------|----------|----------|----------|
-| 0x000  | enable ctrl                     |             |               |                |    | bp_adc_hpf2 | bp_adc_hpf1 |            |            |          |          |              |          |          |          |          |          |
-| 0x004  | sr0 sel                         | cic_1_sel   | cic_1_sel     |                |    | cic_3_sel   | cic_3_sel   | writer_sel | writer_sel | src1_sel | src1_sel | src1_sel     | src1_sel | src2_sel | src2_sel | src2_sel | src2_sel |
-| 0x008  | ???                             |             |               |                |    |             |             |            |            |          |          |              |          |          |          |          |          |
-| 0x00c  | mux0 sel                        |             |               |                |    |             |             |            |            |          |          | mmc1 src sel |          |          |          |          |          |
-| 0x010  | mux1 sel                        |             |               |                |    |             |             |            |            |          |          |              |          |          |          |          |          |
-| 0x014  | mix1 sel                        |             |               |                |    |             |             |            |            |          |          |              |          |          |          |          |          |
-| 0x1d4  | dma test ctrl 5 (sine wave gen) | sine gen en | sine gen left | sine gen right |    |             |             |            |            | gain     | gain     | gain         | gain     | freq     | freq     | freq     | freq     |
-|        |                                 |             |               |                |    |             |             |            |            |          |          |              |          |          |          |          |          |
+| offset | name                            | 15          | 14            | 13             | 12        | 11          | 10          | 9          | 8          | 7        | 6        | 5            | 4        | 3        | 2        | 1        | 0        |
+|--------|---------------------------------|-------------|---------------|----------------|-----------|-------------|-------------|------------|------------|----------|----------|--------------|----------|----------|----------|----------|----------|
+| 0x000  | enable ctrl                     |             |               |                |           | bp_adc_hpf2 | bp_adc_hpf1 |            |            |          |          |              |          |          |          |          |          |
+| 0x004  | sr0 sel                         | cic_1_sel   | cic_1_sel     |                |           | cic_3_sel   | cic_3_sel   | writer_sel | writer_sel | src1_sel | src1_sel | src1_sel     | src1_sel | src2_sel | src2_sel | src2_sel | src2_sel |
+| 0x008  | ???                             |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
+| 0x00c  | mux0 sel                        |             |               |                |           |             |             |            |            |          |          | mmc1 src sel |          |          |          |          |          |
+| 0x010  | mux1 sel                        | adc_hpf_n   | adc_hpf_n     | adc_hpf_n      | adc_hpf_n |             |             |            |            |          |          |              |          |          |          |          |          |
+| 0x014  | mix1 sel                        |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
+| 0x1d4  | dma test ctrl 5 (sine wave gen) | sine gen en | sine gen left | sine gen right |           |             |             |            |            | gain     | gain     | gain         | gain     | freq     | freq     | freq     | freq     |
+|        |                                 |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
 
 ## bank 2 
 
