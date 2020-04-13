@@ -379,6 +379,8 @@ Hardware JPEG encoder
 
 BACH is a fairly generic DMA engine with a DAC attached audio block.
 
+[Reverse engineering](bach.md)
+
 #### Support Matrix
 
 |           | u-boot | linux |
