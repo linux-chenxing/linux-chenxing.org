@@ -19,6 +19,8 @@
 | 0x00c  | mux0 sel                        |             |               |                |           |             |             |            |            |          |          | mmc1 src sel |          |          |          |          |          |
 | 0x010  | mux1 sel                        | adc_hpf_n   | adc_hpf_n     | adc_hpf_n      | adc_hpf_n |             |             |            |            |          |          |              |          |          |          |          |          |
 | 0x014  | mix1 sel                        |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
+| 0x090  | adc dpga cfg1                   |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
+| 0x094  | adc dpga cfg2                   |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
 | 0x1d4  | dma test ctrl 5 (sine wave gen) | sine gen en | sine gen left | sine gen right |           |             |             |            |            | gain     | gain     | gain         | gain     | freq     | freq     | freq     | freq     |
 |        |                                 |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
 
