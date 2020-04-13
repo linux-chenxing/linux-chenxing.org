@@ -1,5 +1,14 @@
 # Bach
 
+## Bank address for infinity3/mercury5
+
+[detailed here](https://github.com/fifteenhex/SDK_pulbic/blob/c1436fa7446457e8d6547874d27ee4e34be150cf/Mercury5/proj/sc/driver/hal/mercury/audio/inc/hal_bach.h#L41)
+
+0x1f2a0400
+0x1f2a0600
+0x1f2a0800
+0x1f206800
+
 ## bank 0
 
 | offset | name                            | 15          | 14            | 13             | 12 | 11 | 10 | 9 | 8 | 7    | 6    | 5            | 4    | 3    | 2    | 1    | 0    |
