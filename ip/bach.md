@@ -17,7 +17,7 @@
 | 0x1d4  | dma test ctrl 5 (sine wave gen) | sine gen en | sine gen left | sine gen right |    |    |    |   |   | gain | gain | gain         | gain | freq | freq | freq | freq |
 |        |                                 |             |               |                |    |    |    |   |   |      |      |              |      |      |      |      |      |
 
-## bank 1
+## bank 1 - DMA registers
 
 | offset | name   | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--------|--------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|
