@@ -1,0 +1,584 @@
+
+IPL g3a3974e
+D-1e
+HW Reset
+miupll_233MHz
+MIU0 zq=0x003a
+miu_init done 
+miu_bw_set
+utmi_1_init done
+utmi_2_init done
+utmi_3_init done
+usbpll init done......
+clk_init done 
+P1 USB_rterm trim=0x0000
+P1 USB_HS_TX_CURRENT trim=0x0000
+P2P3 USB_rterm trim=0x0000
+P2P3 USB_HS_TX_CURRENT trim=0x0001
+PM_vol_bgap trim=0x0006
+GCR_SAR_DATA trim=0x0191
+ETH 10T output swing trim=0x0000
+ETH 100T output swing trim=0x0010
+ETH RX input impedance trim=0x0000
+ETH TX output impedance trim=0x0000
+MIPI_HS_RTERM trim=0x0001
+MIPI_LP_RTERM trim=0x0000
+TX_current trimming trim[0x1A]=0x004e
+TX_current trimming trim[0x1B]=0x004e
+TX_current trimming trim[0x1C]=0x004e
+HDMI2TX Rterm trim=0x0000
+HDMI2TX_Ibias_CH0 trim=0x0019
+HDMI2TX_Ibias_CH1 trim=0x001b
+HDMI2TX_Ibias_CH2 trim=0x0019
+HDMI2TX_Ibias_CH3 trim=0x0018
+128MB
+BIST0_0001-OK
+Enable MMU and CACHE
+Load IPL_CUST from NOR
+offset:00004990
+crc OK
+
+IPL_CUST g3a3974e
+MXP found at 0x0000c000
+runUBOOT()
+[SPI_NOR]
+ -Verify UBOOT CRC32 passed!
+ -Decompress UBOOT XZ
+  decomp_size=0x0008d314
+Disable MMU and D-cache before jump to UBOOT�
+
+U-Boot 2015.01 (Nov 28 2019 - 19:49:44)
+
+Version: I2gb9f1299
+I2C:   ready
+DRAM:  
+gpio debug MHal_GPIO_Pad_Set: pin=26
+gpio[26] is 0
+gpio debug MHal_GPIO_Pad_Set: pin=90
+gpio[90] is 0
+gpio debug MHal_GPIO_Pad_Set: pin=44
+gpio[44] is 1
+gpio debug MHal_GPIO_Pad_Set: pin=16
+gpio[16] is 1
+WARNING: Caches not enabled
+MMC:   MStar SD/MMC: 0
+nor_flash_mxp allocated success!!
+Flash is detected (0x0C05, 0x20, 0x70, 0x18)
+Not support quad mode!!!
+SF: Detected nor0 with total size 16 MiB
+MXP found at mxp_offset[1]=0x0000C000, size=0x1000
+can not found mxp record: UBOOT_ENV
+Flash is detected (0x0C05, 0x20, 0x70, 0x18)
+SF: Detected nor0 with total size 16 MiB
+In:    serial
+Out:   serial
+Err:   serial
+Net:   MAC Address 00:30:1B:BA:02:DB
+Auto-Negotiation...
+AN failLink Status Speed:10 Full-duplex:0
+Status Error!
+sstar_emac
+save env for kernel
+can not found mxp record: UBOOT_ENV
+Flash is detected (0x0C05, 0x20, 0x70, 0x18)
+SF: Detected nor0 with total size 16 MiB
+Erasing SPI flash..._spi_flash_erase: addr 0x4f000, len 0x1000 (cost 21 ms)
+Writing to SPI flash..._spi_flash_write to 0x4f000, len 0x1000 from 0x234ebe80 100%(cost 11 ms)
+done
+gpio debug MHal_GPIO_Pad_Set: pin=30
+gpio[30] is 1
+do_display 1643, argc =1
+LOGO in flash offset=0x64800 size=0x9000
+InBuf:(234f2e68), IN(234f2e88 8fe0), OUT:(7500000, 400000), DISP(780 438 32), Interface:3
+do_display 1740:: In(234f2e88 8fe0), Out(7500000 400000), Disp(1920 1080 50) Interface:3
+_BootLogoJpdCtrl 1318::  Create Decompress struct
+_BootLogoJpdCtrl 1326::  Set memory buffer as source
+_BootLogoJpdCtrl 1338::  Read the JPEG header
+_BootLogoJpdCtrl 1351::  Initiate JPEG decompression
+_BootLogoJpdCtrl 1365::  Image is 1280 by 720 with 3 components
+_BootLogoJpdCtrl 1377:: BmpBuffer: 0x2350ee58
+_BootLogoJpdCtrl 1390:: Start reading scanlines
+_BootLogoJpdCtrl 1400:: Done reading scanlines
+_BootLogoJpdCtrl 1405:: End of decompression
+_BootLogoYuv444ToYuv420 1270:: 444 To 422, In:2350ee58, Out:27500000, Width:1280, Height:720
+DrvDispIfInitPanelConfig 542, u8Size:14
+_HalDispIfSetClkSet 2773, Mop(1, 320000000), Hdmi(1, 0), Dac(1, 0), Disp432(1, 432000000), Disp216(1, 216000000)
+HalDispColorSetColorCorrectMatrix 1185 Id:0, 
+ 1061 -33 -3 
+ -37 1126 -64 
+ -56 20 1059 
+HalDispColorSetColorCorrectMatrix 1185 Id:1, 
+ 1061 -33 -3 
+ -37 1126 -64 
+ -56 20 1059 
+HalDispColorSeletYuvToRgbMatrix 1232 Id:0, 
+ 1836 1192 0 
+ -547 1192 -218 
+ 0 1192 2166 
+HalDispColorSeletYuvToRgbMatrix 1232 Id:1, 
+ 1836 1192 0 
+ -547 1192 -218 
+ 0 1192 2166 
+HalDispColorAdjustHCS 1246 Id:1, Hue=50, Sat=128, Con=128
+SetVideoContrastMatrix 940 Id:1, Con=128, RCon=128, GCon=128 BCon=128
+HalDispColorAdjustBrightness 1237 Id:1, Brightness=128
+__HalDispIfSetTimingTable 425, Time:480P60, TimingTblId:0, Common=1
+__DrvDispCtxBindInputPortWidthVidLayer 69, VideId=0, (234ef6a8) InputPort:0, (234ef788)Bind
+_HalDispIfSetInputPortInit 1372, init Port_id:0
+_HalDispIfGetInfoDeviceBackGroundColor 645, BgColor:ffffff
+_HalDispIfGetInfoDeviceEnable 596, Enable:0
+_HalDispIfGetInfoDeviceInterface 685, Interface:UNKNOWN, DeviceContain:5
+_HalDispIfGetInfoDeviceOutputTiming 733, H(44 148 192 1920 2640) V(5 36 41 1080 1125) Fps:50, Ssc(0 0)
+__HalDispIfSetTimingTable 425, Time:1080P50, TimingTblId:7, Common=0
+_HalDispIfGetInfoDeviceEnable 596, Enable:1
+_DrvDispIfTransInputPortAttrToHal 415, Rect(0 0 1920 1080) Src(1280 720)
+_HalDispIfGetInfoInputPortAttr 1586, video_id=0, Port_id:0 settings
+_HalDispIfGetInfoInputPortAttr 1592, Disp(0 0 1920 1080) Src(1280 720)
+_HalDispIfSetMopgLineBufOrder 1617, set MOPG_id=0 Hst=0
+_HalDispIfSetMopgLineBufOrder 1728, MOPG num=1 in use
+[0] ID=0, Win_st=0, order=0, attred=0
+_DrvDispIfTransInputPortFrameDataToHal 385, Pixel:YUV_MST_420, Compress:NONE, Title:NONE, (7500000, 75e1000, 0), (1280 0 0)
+_HalDispIfGetInfoInputPortFlip 1930, Fmt:YUV_MST_420, PhyAddr(07500000, 075e1000, 00000000), Stride(1280 0 0)
+_HalDispIfGetInfoInputPortEnable 1511, video_id=0, Port_id:0 settings
+_HalDispIfGetInfoInputPortEnable 1513, En:1
+_HalDispIfSetMopgWinIsUsedForLbstart 1534, MOPG num=1 in use, set gop=0, en=1
+[0] ID=0, Win_st=0, order=0, attred=1
+_BootLogoHdmitxCtrl 1583
+DrvHdmitxIfSetHpdConfig 1040
+_HalHdmitxIfGetHpdConfig 856, Hpd GpioNum=26
+DrvHdmitxIfSetMute 817
+_HalHdmitxIfGetInfoMuteConfig 513, Vidoe:0, Audio:0, AvMute:1
+_HalHdmitxIfGetInfoMuteConfig 533, enType:7, Vidoe:0, Audio:0, AvMute:1
+
+MDrv_HDMITx_SetAVMUTE 
+DrvHdmitxIfSetSignal 841
+_HalHdmitxIfGetInfoSignalConfig 480, Signal=0
+DrvHdmitxIfSetAttr 763
+_HalHdmitxIfGetInfoAttrConfig 364, Video(1, HDMI 24 Bits RGB444 RGB444 1920x1080p50), Audio(1, 48K CH_2 PCM PCM)
+MDrv_HDMITx_SetHDMITxMode: HDMI mode = 2 
+B InColor = 0, OutColor = 0
+MDrv_HDMITx_SetHDMITxMode: HDMI mode = 2 
+DrvHdmitxIfSetSignal 841
+_HalHdmitxIfGetInfoSignalConfig 480, Signal=1
+DrvHdmitxIfSetMute 817
+_HalHdmitxIfGetInfoMuteConfig 513, Vidoe:0, Audio:0, AvMute:1
+_HalHdmitxIfGetInfoMuteConfig 533, enType:7, Vidoe:1, Audio:1, AvMute:0
+
+MDrv_HDMITx_ClearAVMUTE 
+gpio debug MHal_GPIO_Pad_Set: pin=90
+gpio[90] is 1
+check factory info...
+Flash is detected (0x0C05, 0x20, 0x70, 0x18)
+SF: Detected nor0 with total size 16 MiB
+SF: 2048 bytes @ 0x6d800 Read: OK
+copying flash to 0x21000000
+
+Flash is detected (0x0C05, 0x20, 0x70, 0x18)
+SF: Detected nor0 with total size 16 MiB
+SF: 16777216 bytes @ 0x0 Read: OK
+verifying kernel and romfs partition...
+ok
+Flash is detected (0x0C05, 0x20, 0x70, 0x18)
+SF: Detected nor0 with total size 16 MiB
+SF: 2097152 bytes @ 0x80200 Read: OK
+##  Booting kernel from Legacy Image at 20008000 ...
+   Image Name:   Linux-4.9.84
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    1620080 Bytes = 1.5 MiB
+   Load Address: 20008000
+   Entry Point:  20008000
+   Verifying Checksum ... OK
+   Loading Kernel Image ... OK
+atags:0x20000000
+
+Starting kernel ...
+
+Booting Linux on physical CPU 0x0
+Linux version 4.9.84 (jenkins@Sohocilnx2) (gcc version 4.9.4 (Buildroot 2017.08-gc7bbae9-dirty) ) #1 SMP PREEMPT Thu Nov 28 20:26:05 CST 2019
+CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=50c5387d
+CPU: div instructions available: patching division code
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+early_atags_to_fdt() success
+OF: fdt:Machine model: INFINITY2M SSC010A-S01A-S
+LXmem is 0x7a00000 PHYS_OFFSET is 0x20000000
+Add mem start 0x20000000 size 0x7a00000!!!!
+
+LX_MEM  = 0x20000000, 0x7a00000
+LX_MEM2 = 0x0, 0x0
+LX_MEM3 = 0x0, 0x0
+EMAC_LEN= 0x0
+DRAM_LEN= 0x0
+deal_with_reserve_mma_heap memblock_reserve success mma_config[0].reserved_start=
+0x21c00000
+
+deal_with_reserve_mma_heap memblock_reserve success mma_config[1].reserved_start=
+0x27080000
+
+cma: Reserved 2 MiB at 0x26e00000
+Memory policy: Data cache writealloc
+percpu: Embedded 13 pages/cpu @c703f000 s22040 r8192 d23016 u53248
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 19359
+Kernel command line: console=ttyS0,115200n8r androidboot.console=ttyS0 rootfstype=squashfs root=/dev/mtdblock6 init=/etc/preinit resolution=DACOUT_1080P_60 LX_MEM=0x7a1
+PID hash table entries: 512 (order: -1, 2048 bytes)
+Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Memory: 71932K/78336K available (2107K kernel code, 261K rwdata, 564K rodata, 156K init, 140K bss, 4356K reserved, 2048K cma-reserved)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xc7800000 - 0xff800000   ( 896 MB)
+    lowmem  : 0xc0000000 - 0xc7080000   ( 112 MB)
+    modules : 0xbf800000 - 0xc0000000   (   8 MB)
+      .text : 0xc0008000 - 0xc0217028   (2109 kB)
+      .init : 0xc02c3000 - 0xc02ea000   ( 156 kB)
+      .data : 0xc02ea000 - 0xc032b4c0   ( 262 kB)
+       .bss : 0xc032d000 - 0xc0350078   ( 141 kB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Preemptible hierarchical RCU implementation.
+        Build-time adjustment of leaf fanout to 32.
+        RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=2
+NR_IRQS:16 nr_irqs:16 16
+ms_init_main_intc: np->name=ms_main_intc, parent=gic
+ms_init_pm_intc: np->name=ms_pm_intc, parent=ms_main_intc
+ss_init_gpi_intc: np->name=ms_gpi_intc, parent=ms_main_intc
+Find CLK_cpupll_clk, hook ms_cpuclk_ops
+[ms_cpuclk_init] vid-num: 2
+arm_arch_timer: Architected cp15 timer(s) running at 6.00MHz (virt).
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1623fa770, max_idle_ns: 440795202238 ns
+sched_clock: 56 bits at 6MHz, resolution 166ns, wraps every 4398046511055ns
+Switching to timer-based delay loop, resolution 166ns
+Console: colour dummy device 80x30
+console [ttyS0] enabled
+Calibrating delay loop (skipped), value calculated using timer frequency.. 12.00 BogoMIPS (lpj=60000)
+pid_max: default: 4096 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+CPU: Testing write buffer coherency: ok
+CPU0: update cpu_capacity 1024
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x20008240 - 0x20008270
+CPU1: update cpu_capacity 1024
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Brought up 2 CPUs
+SMP: Total of 2 processors activated (24.00 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 16 (order: -2, 1024 bytes)
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+
+
+Version : MVX4##I2M#g#######KL_LX409##[BR:g]#XVM
+
+GPIO: probe end[ss_gpi_intc_domain_alloc] hw:42 -> v:44
+[MS_PM_INTC] hw:20 -> v:52
+[Padmux]reset Pad_47(reg 0x101e03; mask0x70) to GPIO(org: UART0_MODE_1)
+[Padmux]reset Pad_87(reg 0x101e09; mask0x7) to I2C1_MODE_2(org: I2C0_MODE_1)
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+clocksource: Switched to clocksource arch_sys_counter
+NET: Registered protocol family 2
+TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+TCP bind hash table entries: 1024 (order: 2, 20480 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+UDP hash table entries: 128 (order: 0, 6144 bytes)
+UDP-Lite hash table entries: 128 (order: 0, 6144 bytes)
+NET: Registered protocol family 1
+workingset: timestamp_bits=30 max_order=15 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+io scheduler noop registered
+io scheduler deadline registered (default)
+!!!! create sata delay thread
+begin to run sata delay thread
+libphy: Fixed MDIO Bus: probed
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Mstar_ehc_init version:20180309
+Sstar-ehci-2 H.W init
+CHIP_FUNCTION SET. ID=4, param=65537
+Titania3_series_start_ehc start
+[USB] config miu select [70] [e8] [ef] [ef]
+[USB] enable miu lower bound address subtraction
+[USB] init squelch level 0x2
+[USB] no platform_data, device tree coming
+[USB][EHC] dma coherent_mask 0xffffffffffffffff mask 0xffffffffffffffff
+BC disable 
+[USB] soc:Sstar-ehci-2 irq --> 39
+Sstar-ehci-2 soc:Sstar-ehci-2: EHCI Host Controller
+Sstar-ehci-2 soc:Sstar-ehci-2: new USB bus registered, assigned bus number 1
+Sstar-ehci-2 soc:Sstar-ehci-2: irq 39, io mem 0xfd285000
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: EHCI Host Controller
+usb usb1: Manufacturer: Linux 4.9.84 ehci_hcd
+usb usb1: SerialNumber: mstar
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+Sstar-ehci-1 H.W init
+CHIP_FUNCTION SET. ID=4, param=1
+Titania3_series_start_ehc start
+[USB] config miu select [70] [e8] [ef] [ef]
+[USB] enable miu lower bound address subtraction
+[USB] init squelch level 0x2
+[USB] no platform_data, device tree coming
+[USB][EHC] dma coherent_mask 0xffffffffffffffff mask 0xffffffffffffffff
+BC disable 
+[USB] soc:Sstar-ehci-1 irq --> 38
+Sstar-ehci-1 soc:Sstar-ehci-1: EHCI Host Controller
+Sstar-ehci-1 soc:Sstar-ehci-1: new USB bus registered, assigned bus number 2
+Sstar-ehci-1 soc:Sstar-ehci-1: irq 38, io mem 0xfd284800
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: EHCI Host Controller
+usb usb2: Manufacturer: Linux 4.9.84 ehci_hcd
+usb usb2: SerialNumber: mstar
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+Sstar-ehci-3 H.W init
+CHIP_FUNCTION SET. ID=4, param=131073
+Titania3_series_start_ehc start
+[USB] config miu select [70] [e8] [ef] [ef]
+[USB] enable miu lower bound address subtraction
+[USB] init squelch level 0x2
+[USB] no platform_data, device tree coming
+[USB][EHC] dma coherent_mask 0xffffffffffffffff mask 0xffffffffffffffff
+BC disable 
+[USB] soc:Sstar-ehci-3 irq --> 56
+Sstar-ehci-3 soc:Sstar-ehci-3: EHCI Host Controller
+Sstar-ehci-3 soc:Sstar-ehci-3: new USB bus registered, assigned bus number 3
+Sstar-ehci-3 soc:Sstar-ehci-3: irq 56, io mem 0xfd286400
+usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb3: Product: EHCI Host Controller
+usb usb3: Manufacturer: Linux 4.9.84 ehci_hcd
+usb usb3: SerialNumber: mstar
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 1 port detected
+usbcore: registered new interface driver usb-storage
+mousedev: PS/2 mouse device common for all mice
+i2c /dev entries driver
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+1f221000.uart0: ttyS0 at MMIO 0x0 (irq = 30, base_baud = 10800000) is a unknown
+1f221200.uart1: ttyS1 at MMIO 0x0 (irq = 31, base_baud = 10800000) is a unknown
+1f220400.uart2: ttyS2 at MMIO 0x0 (irq = 33, base_baud = 10800000) is a unknown
+1f221400.uart2: ttyS3 at MMIO 0x0 (irq = 34, base_baud = 10800000) is a unknown
+MSYS: DMEM request: [emac0_buff]:0x00000812
+MSYS: DMEM request: [emac0_buff]:0x00000812 success, CPU phy:@0x26E4D000, virt:@0xC6E4D000
+libphy: mdio: probed
+mdio_bus mdio-bus@emac0: /soc/emac0/mdio-bus@emac0/ethernet-phy@0 has invalid PHY address
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 0
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 1
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 2
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 3
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 4
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 5
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 6
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 7
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 8
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 9
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 10
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 11
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 12
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 13
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 14
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 15
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 16
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 17
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 18
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 19
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 20
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 21
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 22
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 23
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 24
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 25
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 26
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 27
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 28
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 29
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 30
+mdio_bus mdio-bus@emac0: scan phy ethernet-phy at address 31
+[emac_phy_connect][3132] connected mac emac0 to PHY at mdio-bus@emac0:00 [uid=11112222, driver=SStar 10/100 Ethernet Phy]
+MSYS: DMEM request: [emac1_buff]:0x00000812
+MSYS: DMEM request: [emac1_buff]:0x00000812 success, CPU phy:@0x26E4E000, virt:@0xC6E4E000
+libphy: mdio: probed
+mdio_bus mdio-bus@emac1: /soc/emac1/mdio-bus@emac1/ethernet-phy@1 has invalid PHY address
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 0
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 1
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 2
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 3
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 4
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 5
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 6
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 7
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 8
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 9
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 10
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 11
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 12
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 13
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 14
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 15
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 16
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 17
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 18
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 19
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 20
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 21
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 22
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 23
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 24
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 25
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 26
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 27
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 28
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 29
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 30
+mdio_bus mdio-bus@emac1: scan phy ethernet-phy at address 31
+[emac_phy_connect][3132] connected mac emac1 to PHY at mdio-bus@emac1:00 [uid=00000000, driver=Generic PHY]
+ms_rtcpwc 1f006800.rtcpwc: rtc core: registered 1f006800.rtcpwc as rtc0
+MSYS: DMEM request: [BDMA_FSP_WBUFF]:0x00010040
+MSYS: DMEM request: [BDMA_FSP_WBUFF]:0x00010040 success, CPU phy:@0x26E50000, virt:@0xC6E50000
+[Ser flash] phys=0x26e50000, virt=0xc6e50000, bus=0x06e50000 len:0x10040
+[FSP] Flash is detected (0x0F00, 0x20, 0x70, 0x18) ver1.1
+[FSP] 1-1-4 QUAD_READ MODE
+flash mtd device :c6683428
+mtd .name = NOR_FLASH, .size = 0x01000000 (16MiB)
+ .erasesize = 0x00010000 .numeraseregions = 0
+Searching for RedBoot partition table
+8 RedBoot partitions found on MTD device NOR_FLASH
+Creating 8 MTD partitions on "NOR_FLASH":
+0x000000000000-0x00000006d800 : "factory_boot"
+mtd: partition "factory_boot" doesn't end on an erase block -- force read-only
+0x00000006d800-0x00000006e000 : "factory_info"
+mtd: partition "factory_info" doesn't start on an erase block boundary -- force read-only
+0x00000006e000-0x000000070000 : "art"
+mtd: partition "art" doesn't start on an erase block boundary -- force read-only
+0x000000070000-0x000000080000 : "config"
+0x000000080000-0x000001000000 : "normal_boot"
+0x000000080200-0x00000020bc00 : "kernel"
+mtd: partition "kernel" doesn't start on an erase block boundary -- force read-only
+0x00000020bc00-0x000000da0000 : "rootfs"
+mtd: partition "rootfs" doesn't start on an erase block boundary -- force read-only
+0x000000080000-0x000001000000 : "firmware"
+[ms_cpufreq_init] Current clk=998244352
+CurrentVoltageCore = 900
+[ss_ahci_init]
+[SATA] Virtual IRQ: 50
+[SATA] phy_mode =2
+SATA_TX_R50 trim=0x0015
+SATA_RX_R50 trim=0x0011
+SATA_TX_R50_IBIAS trim=0x001F
+[SATA0] Clock : ON
+ahci ahci.0: AHCI 0001.0300 32 slots 1 ports 6 Gbps 0x1 impl platform mode
+ahci ahci.0: flags: ncq sntf pm led clo only pmp fbs pio slum part ccc apst 
+ahci ahci.0: port 0 is not capable of FBS
+scsi host0: ahci
+ata1: SATA max UDMA/133 mmio [mem 0xfd345000-0xfd34507e] port 0x100 irq 50
+!!!!!!!!!!!!!!!!!!!!!!!!!!vga_edid_init start
+vga device register success
+NET: Registered protocol family 17
+ThumbEE CPU extension supported.
+Registering SWP/SWPB emulation handler
+ms_rtcpwc 1f006800.rtcpwc: setting system clock to 2020-04-14 08:40:29 UTC (1586853629)
+slp_flash_init device :c6683428
+Registered character driver slp_flash_chrdev
+ata1: SATA link down (SStatus 0 SControl 300)
+VFS: Mounted root (squashfs filesystem) readonly on device 31:6.
+devtmpfs: mounted
+Freeing unused kernel memory: 156K
+This architecture does not have kernel memory protection.
+random: preinit: uninitialized urandom read (4 bytes read)
+random: busybox: uninitialized urandom read (4 bytes read)
+random: busybox: uninitialized urandom read (4 bytes read)
+random: awk: uninitialized urandom read (4 bytes read)
+random: busybox: uninitialized urandom read (4 bytes read)
+random: grep: uninitialized urandom read (4 bytes read)
+random: grep: uninitialized urandom read (4 bytes read)
+random: grep: uninitialized urandom read (4 bytes read)
+random: hotplug2: uninitialized urandom read (4 bytes read)
+random: udevtrigger: uninitialized urandom read (4 bytes read)
+- preinit -
+uci config[playback] was changed, renew uc zone
+start write config partition... done
+- init -
+Start system with release mode, wont generate coredump file
+
+Please press Enter to activate this console. mhal: loading out-of-tree module taints kernel.
+mhal: module license 'PROPRIETARY' taints kernel.
+Disabling lock debugging due to kernel taint
+mhal driver init
+jpe driver probed
+module [sys] init
+MI_SYSCFG_SetupMmapLoader default_config_path:/config/config_tool, argv1:/config/load_mmap,argv2:/config/mmap.ini
+Function = init_glob_miu_kranges, Line = 603, Insert KProtect for LX @ MIU: 0
+Function = init_glob_miu_kranges, Line = 612, [INIT] for LX0 kprotect: from 0x20000000 to 0x27A00000, using block 0
+config...... strPath:/config/config_tool, argv0:/config/load_config
+function:parese_Cmdline,pCmd_Section:0x7a00000
+MM
+U_
+MM
+A    miu=0,sz=2400000  reserved_start=21c00000
+[MDrv_MMU_SetRegion] not support , chipId = 1 
+r_front->miuBlockIndex:0,r_front->start_cpu_bus_pa:0x20000000,r_front->start_cpu_bus_pa+r_front->length:0x21c00000
+r_back->miuBlockIndex:1,r_back->start_cpu_bus_pa:0x24000000,r_back->start_cpu_bus_pa+r_back->length:0x27a00000
+mi_sys_mma_allocator_create success, heap_base_addr=21c00000 length=2400000 
+mm
+a_
+he
+ap
+_n
+am
+e0
+    miu=0,sz=980000  reserved_start=27080000
+r_front->miuBlockIndex:1,r_front->start_cpu_bus_pa:0x24000000,r_front->start_cpu_bus_pa+r_front->length:0x27080000
+mi_sys_mma_allocator_create success, heap_base_addr=27080000 length=980000 
+ NO resolution match in /proc/timer_list!
+ Please check CONFIG_HZ commit in kernel
+Sigmastar Module version: project_commit.d76d329 sdk_commit.a3d79c1 build_time.20191102155043
+module [ai] init
+module [ao] init
+module [gfx] init
+GE_EnableDynaClkGate
+ MI_Moduledev_RegisterDev  
+module [rgn] init
+module [divp] init
+module [disp] init
+module [vdisp] init
+module [hdmi] init
+module [panel] init
+module [vdec] init
+[GOP]HalGopUpdateGwinParam 718: GOP_id=011 not support
+[GOP]HalGopSetArgb1555Alpha 1203: GOPId=0x11 not support
+[GOP]HalGopSetArgb1555Alpha 1203: GOPId=0x11 not support
+reg=0x1F003410 clk=12000000, period=0x1387
+reg=0x1F003408 clk=12000000, u32Duty=0x9c3
+register pwm buzzer ok
+[ss_gpi_intc_domain_alloc] hw:10 -> v:60
+======gpio_keys_isr:irq=60 gpio=25 state=1=====
+fuse init (API version 7.26)
+ln: /etc/localtime: File exists
+service: file '/sbin/syswdt' is not executable
+watchdog started
+===Fixtime:Sync RTC time to System===
+Tue Apr 14 08:40:36 UTC 2020
+syn_system_time-484: synchronize system time success
+Failed to connect to ubus
+uci config[system] was changed, renew uc zone
+start write config partition... done
+interface
+interface
+[CFG_MAC]user did not configured wan mac, use default.
+uci config[network] was changed, renew uc zone
+start write config partition... done
+uci config[protocol] was changed, renew uc zone
+start write config partition... done
+uci: Entry not found (wireless)
+
+NVR login: 
+NVR login: 
