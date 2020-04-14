@@ -1,4 +1,6 @@
-#MSR620 / SSR621D
+# MSR620 / SSR621D
+
+- Chip id: 0xf0
 
 # Known Devices
 
