@@ -50,7 +50,7 @@ at some point.
 |            | msc313d  | 1638B      |                        |                 |                 |              |                                     |                                          |
 | infinity2  |          |            |                        |                 |                 |              |                                     |                                          |
 |            | msr620   |            |                        |                 |                 |              |                                     |                                          |
-|            | ssr621d  | 1945S      |                        |                 |                 |              |                                     |                                          |
+|            | ssr621d  | 1945S      | yes                    |                 |                 |              |                                     |                                          |
 | infinity3  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
 |            | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
 |            | msc316dc | 1929S      | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
