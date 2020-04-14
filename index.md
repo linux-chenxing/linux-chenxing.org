@@ -50,6 +50,7 @@ at some point.
 |            | msc313d  | 1638B      |                        |                 |                 |              |                                     |                                          |
 | infinity2  |          |            |                        |                 |                 |              |                                     |                                          |
 |            | msr620   |            |                        |                 |                 |              |                                     |                                          |
+|            | ssr621d  | 1945S      |                        |                 |                 |              |                                     |                                          |
 | infinity3  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
 |            | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
 |            | msc316dc | 1929S      | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
@@ -98,6 +99,7 @@ ones.
 #### [Infinity 2](infinity2)
 
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
+- SSR621D - Cortex A? 128MB DDR3? in QFN<lots of pins>
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
 - [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag)
 
