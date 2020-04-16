@@ -23,12 +23,13 @@ at some point.
 
 ## u-boot
 
-|           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
-|-----------|---------------------------------|--------------------------|
-| infinity  | yes                             | yes                      |
-| infinity3 | yes                             | yes                      |
-| infinity6 | wip                             | wip                      |
-| mercury5  | yes                             | yes                      |
+|            | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
+|------------|---------------------------------|--------------------------|
+| infinity   | yes                             | yes                      |
+| infinity2m | wip                             | wip                      |
+| infinity3  | yes                             | yes                      |
+| infinity6  | wip                             | wip                      |
+| mercury5   | yes                             | yes                      |
 
 ## linux
 
@@ -53,6 +54,7 @@ at some point.
 |            | ssr621d  | 1945S      | yes                    | yes             | yes             |              |                                     |                                          |
 | infinity3  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
 |            | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
+|            |          | 1916S      |                        |                 |                 |              |                                     |                                          |
 |            | msc316dc | 1929S      | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
 |            | msc316q  |            |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
 |            | msc318   |            |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
@@ -119,6 +121,8 @@ ones.
 - [SSC325DE](infinity6#ssc325de) - Cortex A7 + 128MB DDR3 in a QFN88
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
 - [SSC327DE](infinity6#ssc327de) - Cortex A7 + 128MB DDR3
+
+- Infinity 6e seems to be a dual core variation in this family
 
 ### Mercury family
 
