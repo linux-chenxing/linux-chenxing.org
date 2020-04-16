@@ -161,6 +161,7 @@ See [ISP](isp).
 # Vendor SDKs
 
 - [Mercury5](https://github.com/longyanjun2020/SDK_pulbic)
+- [Probably Infinity2 NVR](https://github.com/ZYCX8888/Democode-TAKOYAKI-BETA001-0312)
 
 ## Sources of firmwares for reverse engineering
 
