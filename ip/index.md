@@ -255,6 +255,8 @@ Serial seems to be a standard Designware UART with one of the registers in a dif
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
 
+[Rough register descriptions](https://github.com/fifteenhex/linux_mstar_3.18/blob/e424e92e5442490e2f19b6d18464be3730e0678c/drivers/mstar/i2c/infinity/mhal_iic_reg.h#L208)
+
 ## spi
 
 ## pwm
