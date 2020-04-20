@@ -170,6 +170,10 @@ the system memory.
 | infinity  | yes    | yes   |
 | infinity3 | yes    | yes   |
 
+### GMAC
+
+- infinity2m has something called a GMAC. Might be a Cadence GEM.
+
 ## USB
 
 ### UTMI
