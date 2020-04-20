@@ -231,6 +231,8 @@ This seems to be an musb USB device controller.
 
 ### SAR
 
+This seems to be a fairly standard ADC. Channel 7 is an on-die [temp sensor](https://github.com/fifteenhex/linux-ssc325/blob/89341c7012404c72e192f198b2ea6405ec80d15d/drivers/sstar/cpufreq/infinity3-cpufreq.c#L222).
+
 #### Support Matrix
 
 |           | u-boot | linux |
