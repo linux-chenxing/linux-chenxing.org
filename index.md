@@ -101,7 +101,7 @@ ones.
 #### [Infinity 2](infinity2)
 
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
-- SSR621D - Dual Cortex A7 or A9 (TBC) 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
+- SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
 - [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag)
 
