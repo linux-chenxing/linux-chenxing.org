@@ -254,11 +254,15 @@ This seems to be a fairly standard ADC. Channel 7 is an on-die [temp sensor](htt
 | 0x40    | reg_pm_dmy    |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
 | 0x44    | gpio ctrl     |        |         |    |    | CH3_OEN | CH2_OEN | CH1_OEN | CH0_OEN |       |            |              |                   | CH3_EN         | CH2_EN              | CH1_EN              | CH0_EN              |
 | 0x48    | gpio data     |        |         |    |    | CH3_IN  | CH2_IN  | CH1_IN  | CH0_IN  |       |            |              |                   | CH3_OUT        | CH2_OUT             | CH1_OUT             | CH0_OUT             |   
+| 0x50    | int mask      |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x54    | int clear     |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x58    | int force     |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x5c    | int status    |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x60    | cmp out rdy   |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
 | 0x64    | vref sel      |        |         |    |    |         |         |         |         |       | ch7        |              |                   |                |                     |                     |                     |
 |         |               |        |         |    |    |         |         |         |         |       | 0 - avdd?  |              |                   |                |                     |                     |                     |
 |         |               |        |         |    |    |         |         |         |         |       | 1 - 2v     |              |                   |                |                     |                     |                     |
 | 0x118   | ch7 data      |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-|         |               |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
 |         |               |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
 
 
@@ -268,15 +272,6 @@ CH?_IN bits represent the gpio input level
 CH?_OUT bits set the gpio output level
 
 ```
- 0x50 - int mask
- 0x54 - int clear
- 0x58 - int force
-0x5c - int status
-
- 0x60 - cmp out rdy?
-
- 0x64 - vref sel
-
  * # devmem 0x1f0018bc
  * 	0x00000000
  * # devmem 0x1f001cbc
