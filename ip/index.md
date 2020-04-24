@@ -1,5 +1,20 @@
 # IP blocks
 
+## PM controller
+
+Mostly a mystery.
+
+### PM GPIO
+
+pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before it can be set.
+It is probably meant to drive a mosfet or something to turn off the ARM CPU power.
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | yes   |
+
 ## Interrupt controllers
 
 ### IRQ intc
