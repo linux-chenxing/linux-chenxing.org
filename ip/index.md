@@ -1,19 +1,33 @@
 # IP blocks
 
-## PM controller
+## PM domain
 
 Mostly a mystery.
 
-### PM GPIO
+[Register map](pm_regmap.md)
 
-pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before it can be set.
-It is probably meant to drive a mosfet or something to turn off the ARM CPU power.
+### sleep intc
+
+32 interrupts forwarded to the IRQ intc via a single interrupt
 
 |           | u-boot | linux |
 |-----------|--------|-------|
 | infinity  |        | yes   |
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
+
+### PM GPIO
+
+pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before it can be set.
+
+|           | u-boot | linux |
+|-----------|--------|-------|
+| infinity  |        | yes   |
+| infinity3 |        | yes   |
+| mercury5  |        | yes   |
+
+
+
 
 ## Interrupt controllers
 
@@ -37,15 +51,7 @@ It is probably meant to drive a mosfet or something to turn off the ARM CPU powe
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
 
-### sleep intc
 
-32 interrupts forwarded to the IRQ intc via a single interrupt
-
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
 
 ## Pinmux
 
