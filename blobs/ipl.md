@@ -20,6 +20,7 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 ### infinity3 notes
 
 - Located at 0x4000 in SPI NOR.
+- At least infinity BootROM accepts the image that does not have "IPL_" string at offset 0x4. In this case it will not take the size of the image from the halfword at offset 0x8 but will assume it is 0x9f00 and will continue the boot process.
 
 ### authentication notes
 
