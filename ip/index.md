@@ -67,6 +67,24 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 ### pll gates
 
+```
+/*
+ * - 0x1c0(0x70) - pll gater lock
+ *     1     |     0
+ *  off lock | on lock
+ *
+ *  once a bit is set here it cannot be unset.
+ *
+ * - 0x1c4(0x71) - pll force on bits
+ * - 0x1c8(0x72) - pll force off bits
+ * - 0x1cc(0x73) - pll en rd bits
+ *      15   |       14  |     13   |     12   |     11   |     10   |     9    |     8
+ *  pll rv1  |  mpll 86  | mpll 124 | mpll 123 | mpll 144 | mpll 172 | mpll 216 | mpll 288
+ *      7    |     6     |     5    |     4    |     3    |     2    |     1    |     0
+ *  mpll 345 | mpll 432  | utmi 480 | utmi 240 | utmi 192 | utmi 160 | upll 320 | upll 384
+*/
+```
+
 ### clkgen muxes
 
 These are 16 bit registers that contain clock muxes for one or more peripherals usually grouped, i.e. uart0 and uart1.
