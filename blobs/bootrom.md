@@ -8,7 +8,8 @@ The Boot ROM outputs some limited messages at 38400 baud. All of the IPLs so far
 There seem to be some strap pins to tell the boot rom which media to boot from. Booting from eMMC, SD card, NAND and SPI NOR are apparently supported.
 
 - For mercury5 booting from SD card involves putting a file called IPL on the SD card in a FAT16 partition (partition type 0x4,0x6 or 0xe).
-- Booting from SPI NOR involves putting the IPL at an address in the SPI NOR that seems to be specific to the SoC
+- Booting from SPI NOR involves putting the IPL at an address in the SPI NOR that seems to be specific to the SoC:
+  * For infinity 3 the address is 0x4000
 
 ## Tags
 
