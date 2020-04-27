@@ -67,6 +67,10 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 ### pll gates
 
+This is a pretty weird thing. The force on/off bits seem to be to turn outputs on and off but
+currently they don't seem to actually do anything.. The "en rd bits" update when a consumer of a
+clock is turned on.
+
 ```
 /*
  * - 0x1c0(0x70) - pll gater lock
