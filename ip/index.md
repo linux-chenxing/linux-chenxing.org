@@ -332,7 +332,17 @@ CH?_OUT bits set the gpio output level
 
 ## Serial
 
-Serial seems to be a standard Designware UART with one of the registers in a different location.
+Serial seems to be a standard Designware UART with USR register in a different location (at offset 0x38). The usual 8250 registers are at offsets divisible by 8 (the reg-shift is 3). So:
+- **0x00** - THR, RBR, DLL
+- **0x08** - IER, DLH
+- **0x10** - IIR, FCR
+- **0x18** - LCR
+- **0x20** - MCR
+- **0x28** - LSR
+- **0x30** - MSR
+- **0x38** - USR
+
+There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0 of it and then sets it back to 1 before configuring UART so it is resetting something.
 
 #### Support Matrix
 
