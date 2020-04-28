@@ -55,6 +55,8 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 ## Pinmux
 
+[More details](pinctrl.md)
+
 ### Support Matrix
 
 |           | u-boot | linux |
