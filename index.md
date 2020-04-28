@@ -150,6 +150,12 @@ See [IP](ip).
 
 See [ISP](isp).
 
+# Injoinic PMICs
+
+Injoinic seem to be the recommended PMIC vendor for these chips. Maybe like the Allwinner/Xpowers relationship?
+- [Injoinic PMICs](injoinicpmics/index.md)
+
+
 # Blobs, headers, layouts
 
 - [BootROM](blobs/bootrom.md) - Baked in BootROM
