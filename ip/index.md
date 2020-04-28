@@ -2,13 +2,17 @@
 
 ## PM domain
 
-Mostly a mystery.
+Mostly a mystery. Hardware in this area is kept alive even when the chip is in deep sleep.
+For infinity3 and mercury5 at least PM domain blocks are easy to see because they mapped 
+to 0x1f00xxxx.
+
 
 [Register map](pm_regmap.md)
 
 ### sleep intc
 
-32 interrupts forwarded to the IRQ intc via a single interrupt
+32 interrupts forwarded to the IRQ intc via a single interrupt. 
+This is mostly for the pm gpio interrupts.
 
 |           | u-boot | linux |
 |-----------|--------|-------|
