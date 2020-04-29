@@ -156,6 +156,18 @@ ports so the CPU and some perpherials are able to access the SRAM but not a lot 
 that yet.
 
 ## Timers
+Appart from the ARMv7 builtin timer, there are 3 SoC specific timer peripherals at 0x1f006040, 0x1f006080 and 0x1f0060c0. They are running at 12MHz. Each timer has its interrupt but they are not yet supported by the linux driver.
+
+Registermap:
+
+| Offset | Name  | Comment |
+| ---    | ---   | ---     |
+| 0x00   | CTRL  | bit0 - ~oe <BR> bit1 - trig <BR> bit3 - clear <BR> bit4 - capture <BR> bit8 - int |
+| 0x08   | MAX_L | Low 16 bits of the max value |
+| 0x0c   | MAX_H | High 16 bits of the max value |
+| 0x10   | CNT_L | Low 16 bits of the counter |
+| 0x14   | CNT_H | High 16 bits of the counter |
+
 
 ## RTC
 
