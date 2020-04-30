@@ -179,7 +179,7 @@ Registermap:
 | ---    | ---   | ---     |
 | 0x00   | CTRL  | bit fileds below |
 | bit 0  | CTRL_SOFT_RSTZ | it is set to 1 by the driver, not sure what it means |
-| bit 1  | CTRL_CNT_EN    | start the counter?? set to 1 in the probe of driver |
+| bit 1  | CTRL_CNT_EN    | start the counter?? set to 1 in the probe of driver [0] |
 | bit 2  | CTRL_WRAP_EN | ?? |
 | bit 3  | CTRL_LOAD_EN | should read back in a loop to ensure HW latch, needed to set RTC_LOAD_VAL |
 | bit 4  | CTRL_READ_EN | should read back in a loop to ensure HW latch, needed to read RTC_CNT_VAL |
@@ -195,6 +195,7 @@ Registermap:
 | 0x20   | RTC_CNT_VAL_L   | low 16bits of counter |
 | 0x24   | RTC_CNT_VAL_H   | high 16bits of counter |
 
+Note [0]: IPL expects this bit to be set after a software reset - otherwise it assumes a HW reset happened. The only difference is in the messages printed and the fact that bit 1 in RSTLEN of WDT is cleared in software reset case, though.
 
 ### Support Matrix
 
