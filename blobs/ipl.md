@@ -27,6 +27,23 @@ This is usually copied from memory mapped SPI NOR into the internal SRAM (IMI).
 In case authentication is performed, a 256 bytes are expected just after normal IPL image. Those bytes are passed through crypto peripheral (0x1f224480 - 0x1f2244af) starting from the last byte till the first one. 256 bytes value seams to be computed out of which 32 last are taken.
 A SHA256 value of the IPL image is calculated by other part of crypto engine (0x1f224400 - 0x1f22445f) and its result is compared with the hash explained above.
 
+### deep sleep notes
+
+The IPL checks the 0x1f001c48 regiter value and if it is 0xBEBE, the board may be comming back from deep sleep, otherwise it will determine the type of reset (WDT, HW or SW). If 0xBEBE is found:
+* PM_GPIO4 is configured as input
+* 0x1f001cdc and 0x1f001c48 are set to 0
+* bits 2 and 3 of 0x1f001c70 are cleared
+* bit 31 of 0x1f001c24 is checked, if it is 1, a return from deep sleep is peformed:
+  * ... TBD
+  * UTMI is configured (what is UT Memory Interface??)
+  * CPUCLK and L3 bridge is configured ... TBD
+  * clkgen muxes are configured ... TBD
+  * MIU is configured .. TBD
+  * registers 0x1f20248c, 0x1f2024cc, 0x1f20250c, 0x1f20254c, 0x1f20220c, 0x1f20224c, 0x1f2023cc are zeroed
+  * register 0x1f20243c is written 0x8c08
+  * the unknown peripheral at 0x1f0040XX is being configured
+  * the jump address is taken from 0x1f001cf0 and 0x1f001cec
+
 #### Version capability/feature matrix
 
 | version               | msc313 | msc313e | msc316dc | checks IPLC chksum | notes |
