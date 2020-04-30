@@ -171,6 +171,31 @@ Registermap:
 
 ## RTC
 
+Base address is 0x1f202400 (on infinity3). Can be a wakeup source, can generate alarm interrupt, does not seem to have an eeprom.
+
+Registermap:
+
+| Offset | Name  | Comment |
+| ---    | ---   | ---     |
+| 0x00   | CTRL  | bit fileds below |
+| bit 0  | CTRL_SOFT_RSTZ | it is set to 1 by the driver, not sure what it means |
+| bit 1  | CTRL_CNT_EN    | start the counter?? set to 1 in the probe of driver |
+| bit 2  | CTRL_WRAP_EN | ?? |
+| bit 3  | CTRL_LOAD_EN | should read back in a loop to ensure HW latch, needed to set RTC_LOAD_VAL |
+| bit 4  | CTRL_READ_EN | should read back in a loop to ensure HW latch, needed to read RTC_CNT_VAL |
+| bit 5  | CTRL_INT_MASK | mask alarm interrupt  (when RTC_MATCH_VAL reached) |
+| bit 6  | CTRL_FORCE | force an alarm interrupt maybe? |
+| bit 7  | CTRL_INT_CLEAR |  set to clear the interrupt status |
+| 0x04   | RTC_FREQ_CW_L  | low 16bits of clock frequency divider value |
+| 0x08   | RTC_FREQ_CW_H  | high 16bits of clock frequency divider value |
+| 0x0C   | RTC_LOAD_VAL_L | low 16bits for the load value (to change the current time), set LOAD_EN after changing this, the driver also zeroes this after the LOAD_EN_BIT was set |
+| 0x10   | RTC_LOAD_VAL_H | hih 16bits for the load value (to change the current time), see the note above |
+| 0x14   | RTC_MATCH_VAL_L | low 16bits of match value (for alarm) |
+| 0x18   | RTC_MATCH_VAL_H | high 16bits of match value (for alarm) |
+| 0x20   | RTC_CNT_VAL_L   | low 16bits of counter |
+| 0x24   | RTC_CNT_VAL_H   | high 16bits of counter |
+
+
 ### Support Matrix
 
 |           | u-boot | linux |
