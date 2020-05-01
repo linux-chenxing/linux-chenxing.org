@@ -29,11 +29,13 @@ A SHA256 value of the IPL image is calculated by other part of crypto engine (0x
 
 ### deep sleep notes
 
-The IPL checks the 0x1f001c48 regiter value and if it is 0xBEBE, the board may be comming back from deep sleep, otherwise it will determine the type of reset (WDT, HW or SW). If 0xBEBE is found:
+The IPL checks the 0x1f001c48 regiter value and if it is 0xBABE,
+the board may be coming back from deep sleep, otherwise it will determine the type of reset (WDT, HW or SW). 
+If 0xBABE is found:
 * PM_GPIO4 is configured as input
 * 0x1f001cdc and 0x1f001c48 are set to 0
 * bits 2 and 3 of 0x1f001c70 are cleared
-* bit 31 of 0x1f001c24 is checked, if it is 1, a return from deep sleep is peformed:
+* bit 31 of 0x1f001c24 is checked, if it is 1, a return from deep sleep is peformed: (I think it's bit 15, all of the registers are only 16 bits wide)
   * ... TBD
   * UTMI is configured (what is UT Memory Interface??) - UTMI is the usb phy
   * CPUCLK and L3 bridge is configured ... TBD
