@@ -2,14 +2,14 @@
 
 [m5](https://github.com/longyanjun2020/SDK_pulbic/blob/47d85255220f39de1b13e5f2a68b24e49e179f07/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_chiptop.h)
 
-| offset | name  | 15 | 14 | 13 | 12 | 11 | 10 | 9           | 8     | 7 | 6 | 5           | 4     | 3 | 2 | 1               | 0     |
-|--------|-------|----|----|----|----|----|----|-------------|-------|---|---|-------------|-------|---|---|-----------------|-------|
-| 0x0c   | uarts |    |    |    |    |    |    | UART1       | UART1 |   |   | UART0       | UART0 |   |   | FUART           | FUART |
-|        |       |    |    |    |    |    |    | 0x0         |       |   |   | 0x0         |       |   |   | 0x0 - disabled? |       |
-|        |       |    |    |    |    |    |    | 0x1         |       |   |   | 0x1         |       |   |   | 0x1 - fuart     |       |
-|        |       |    |    |    |    |    |    | 0x2 - FUART |       |   |   | 0x2 - FUART |       |   |   | 0x2             |       |
-|        |       |    |    |    |    |    |    | 0x3         |       |   |   | 0x3         |       |   |   | 0x3             |       |
-
+| offset | name  | 15 | 14 | 13 | 12 | 11 | 10 | 9           | 8     | 7 | 6 | 5           | 4       | 3 | 2  | 1               | 0     |
+|--------|-------|----|----|----|----|----|----|-------------|-------|---|---|-------------|---------|---|----|-----------------|-------|
+| 0x0c   | uarts |    |    |    |    |    |    | UART1       | UART1 |   |   | UART0       | UART0   |   |    | FUART           | FUART |
+|        |       |    |    |    |    |    |    | 0x0         |       |   |   | 0x0         |         |   |    | 0x0 - disabled? |       |
+|        |       |    |    |    |    |    |    | 0x1         |       |   |   | 0x1         |         |   |    | 0x1 - fuart     |       |
+|        |       |    |    |    |    |    |    | 0x2 - FUART |       |   |   | 0x2 - FUART |         |   |    | 0x2             |       |
+|        |       |    |    |    |    |    |    | 0x3         |       |   |   | 0x3         |         |   |    | 0x3             |       |
+| 0x18   | sr    |    |    |    |    |    |    |             |       |   |   | SR I2C?     | SR I2C? |   | SR | SR              | SR    |
 ```
 /*
  * There seems to be one main pinmux block in the chip at 0x1f203C00.
@@ -18,10 +18,6 @@
  *
  * A pin becomes GPIO if all of the different functions that can be applied to the
  * pin are disabled.
- *
- * 0x18 - SR
- *    5 4    | 3 | 2 1 0
- *  SR I2C?  | 0 |  SR
  *
  * 0x1c - PWM (maybe valid for the MSC313E only)
  *
