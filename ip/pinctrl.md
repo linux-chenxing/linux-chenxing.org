@@ -1,5 +1,7 @@
 # Pinctrl
 
+[m5](https://github.com/longyanjun2020/SDK_pulbic/blob/47d85255220f39de1b13e5f2a68b24e49e179f07/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_chiptop.h)
+
 ```
 /*
  * There seems to be one main pinmux block in the chip at 0x1f203C00.
