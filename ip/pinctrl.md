@@ -18,6 +18,9 @@
 | 0x20   | sd/sdio/nand |               |      |               |      |               |      |               | SDIO       |                 |      |                 |         |                |      |                 |       |
 |        |              |               |      |               |      |               |      |               | 0x0        |                 |      |                 |         |                |      |                 |       |
 |        |              |               |      |               |      |               |      |               | 0x1 - sdio |                 |      |                 |         |                |      |                 |       |
+| 0x24   | i2c          |               |      |               |      |               |      |               |            |                 |      | I2C1            | I2C1    |                |      | IC20            | IC20  |
+|        |              |               |      |               |      |               |      |               |            |                 |      | 0x0             |         |                |      | 0x0             |       |
+|        |              |               |      |               |      |               |      |               |            |                 |      | 0x1 - i2c1      |         |                |      | 0x1 - i2c0      |       |
 
 ```
 /*
@@ -29,11 +32,6 @@
  * pin are disabled.
  *
  * 0x24 - I2C
- * 15 - 12 | 7 | 5 4             | 3 2 | 1 0
- *         |   | I2C1            |  ?  | I2C0
- *         |   | 0x0 - disabled? |     | 0x0 - disabled?
- *             | 0x1 - i2c1      |     | 0x1 - i2c0
- *
  * For mercury5 the i2c1 setting here doesn't seem to actually
  * do anything
  *
