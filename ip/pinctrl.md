@@ -21,6 +21,11 @@
 | 0x24   | i2c          |               |      |               |      |               |      |               |            |                 |      | I2C1            | I2C1    |                |      | IC20            | IC20  |
 |        |              |               |      |               |      |               |      |               |            |                 |      | 0x0             |         |                |      | 0x0             |       |
 |        |              |               |      |               |      |               |      |               |            |                 |      | 0x1 - i2c1      |         |                |      | 0x1 - i2c0      |       |
+| 0x30   | spi          |               |      |               |      |               |      |               |            |                 |      | SPI1            | SPI1    |                |      | SPI0            | SPI0  |
+|        |              |               |      |               |      |               |      |               |            |                 |      |                 |         |                |      | 0x0             |       |
+|        |              |               |      |               |      |               |      |               |            |                 |      |                 |         |                |      | 0x1             |       |
+|        |              |               |      |               |      |               |      |               |            |                 |      |                 |         |                |      | 0x2             |       |
+|        |              |               |      |               |      |               |      |               |            |                 |      |                 |         |                |      | 0x3 - fuart     |       |
 
 ```
 /*
@@ -34,14 +39,6 @@
  * 0x24 - I2C
  * For mercury5 the i2c1 setting here doesn't seem to actually
  * do anything
- *
- * 0x30 - SPI
- * 6 | 5 4  | 3 2 | 1 0
- * ? | SPI1 |  ?  | SPI0
- *                | 0x0 - disabled ?
- *                | 0x1 - ??
- *                | 0x2 - ??
- *                | 0x3 - fuart
  *
  * 0x3c - JTAG, ETHERNET (TTL, CCIR)
  * 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 |        2        | 1 0
