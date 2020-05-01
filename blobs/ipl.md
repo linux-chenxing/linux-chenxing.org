@@ -43,7 +43,7 @@ If 0xBABE is found:
   * MIU is configured .. TBD
   * registers 0x1f20248c, 0x1f2024cc, 0x1f20250c, 0x1f20254c, 0x1f20220c, 0x1f20224c, 0x1f2023cc are zeroed
   * register 0x1f20243c is written 0x8c08
-  * the unknown peripheral at 0x1f0040XX is being configured
+  * the unknown peripheral at 0x1f0040XX is being configured (efuse)
   * the jump address is taken from 0x1f001cf0 and 0x1f001cec
   
   https://github.com/fifteenhex/linux_mstar_3.18/blob/taobao_sdk/arch/arm/mach-mstar/infinity3/sram.S
