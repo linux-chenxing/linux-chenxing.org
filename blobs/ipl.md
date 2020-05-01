@@ -35,9 +35,9 @@ If 0xBABE is found:
 * PM_GPIO4 is configured as input
 * 0x1f001cdc and 0x1f001c48 are set to 0
 * bits 2 and 3 of 0x1f001c70 are cleared
-* bit 31 of 0x1f001c24 is checked, if it is 1, a return from deep sleep is peformed: (I think it's bit 15, all of the registers are only 16 bits wide)
+* bit ~~31~~ 15 of 0x1f001c24 is checked, if it is ~~1~~ 0, a return from deep sleep is peformed: (I think it's bit 15, all of the registers are only 16 bits wide; true, I didn't notice there is SXTH there, also the logic is the other way around after all)
   * ... TBD
-  * UTMI is configured (what is UT Memory Interface??) - UTMI is the usb phy
+  * UTMI (USB PHY) is configured
   * CPUCLK and L3 bridge is configured ... TBD
   * clkgen muxes are configured ... TBD
   * MIU is configured .. TBD
