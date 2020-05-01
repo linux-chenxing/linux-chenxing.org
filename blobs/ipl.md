@@ -35,7 +35,7 @@ The IPL checks the 0x1f001c48 regiter value and if it is 0xBEBE, the board may b
 * bits 2 and 3 of 0x1f001c70 are cleared
 * bit 31 of 0x1f001c24 is checked, if it is 1, a return from deep sleep is peformed:
   * ... TBD
-  * UTMI is configured (what is UT Memory Interface??)
+  * UTMI is configured (what is UT Memory Interface??) - UTMI is the usb phy
   * CPUCLK and L3 bridge is configured ... TBD
   * clkgen muxes are configured ... TBD
   * MIU is configured .. TBD
@@ -43,6 +43,10 @@ The IPL checks the 0x1f001c48 regiter value and if it is 0xBEBE, the board may b
   * register 0x1f20243c is written 0x8c08
   * the unknown peripheral at 0x1f0040XX is being configured
   * the jump address is taken from 0x1f001cf0 and 0x1f001cec
+  
+  https://github.com/fifteenhex/linux_mstar_3.18/blob/taobao_sdk/arch/arm/mach-mstar/infinity3/sram.S
+  
+  https://github.com/fifteenhex/linux_mstar_3.18/blob/taobao_sdk/drivers/mstar/pm/ms_pm.c
 
 #### Version capability/feature matrix
 
