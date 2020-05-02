@@ -2,6 +2,8 @@
 
 Probably only for infinity/mercury5
 
+## PM Ctrl registers - 0x1f001c00
+
 | offset | name             | 15         | 14 | 13 | 12 | 11                 | 10 | 9 | 8 | 7 | 6 | 5 | 4             | 3               | 2                 | 1   | 0 | Notes                           |
 |--------|------------------|------------|----|----|----|--------------------|----|---|---|---|---|---|---------------|-----------------|-------------------|-----|---|---------------------------------|
 | 0x20   | wake up source   |            |    |    |    |                    |    |   |   |   |   |   | rtc           |                 | wol               | sar |   |                                 |
@@ -12,3 +14,13 @@ Probably only for infinity/mercury5
 | 0xbc   |                  |            |    |    |    |                    |    |   |   |   |   |   |               | temp sensor en? |                   |     |   |                                 |
 | 0xec   | resume address l |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   |                                 |
 | 0xf0   | resume address h |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   |                                 |
+
+## mystery block - 0x1f007800?
+
+The vendor pm suspend code does something here but the bootrom and ipl don't touch it.
+
+| offset | name | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | Notes                                          |
+|--------|------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|------------------------------------------------|
+| 0x40   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | 0x0010 when booted, can write 0x00F9           |
+| 0x44   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | 0x0001 when booted, can write 0xFFFF           |
+| 0x48   |      |    |    |    |    |    |    |   |   |   | x | x |   |   |   |   |   | 0x0000 when booted, writing locks up processor |
