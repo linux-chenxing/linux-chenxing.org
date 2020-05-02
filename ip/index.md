@@ -141,6 +141,8 @@ so other bus masters can see them.
 MIU or "memory interface unit" is a multiport DDR controller that is wired to the CPU(s)
 and DMA capable perpherials like USB, Ethernet and so on.
 
+[More info](miu.md)
+
 ### RIU
 
 RIU of "register interface unit" is a brige between the CPU and perpherial registers.
