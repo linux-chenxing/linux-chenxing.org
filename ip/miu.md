@@ -12,6 +12,18 @@
 |--------|---------|-----------|---------------------|--------------------|-----------------------|------|------|-----|----------------------|---|---|-----------------------|-------------|------------|-----------|------------|-------------------------|
 | 0x0    | config0 | init done | single command done | enter self refresh | enter deep power down | rasz | casz | wez | issue single command |   |   | turn off auto refresh | turn on odt | dram reset | enable cs | enable cke | auto initial dram cycle |
 
+
+## IPL DDR2 init cycle
+
+- clear config0
+- delay
+- set dram cs and reset in config0
+- delay
+- enable cke in config0
+- delay
+- turn on odt and trigger initial cycle in config0
+- big delay
+
 ```
 /*
  * MSC313 MIU (memory interface unit?) - multiport ddr controller
