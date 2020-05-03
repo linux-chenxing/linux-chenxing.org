@@ -32,6 +32,18 @@
 | 0x14c  | uart sel       | UART1                 | UART1 | UART1         | UART1   | UART0         | UART0 | UART0         | UART0       | FUART           | FUART | FUART           | FUART   | PM_UART        | PM_UART | PM_UART         | PM_UART |
 
 ```
+ * These might be internal dram pins
+ * 0xe0 - ipl sets to 0xffff
+ * 0xe4 - ipl sets to 0x3
+ * 0xe8 - ipl sets to 0xffff
+ * 0xec - ipl sets to 0x3
+ * 0xf0 - ipl sets to 0
+ * 0xf4 - ipl sets to 0
+ ```
+ Wrong ... seems resetting the sensor pads.
+
+
+```
 /*
  * There seems to be one main pinmux block in the chip at 0x1f203C00.
  * It looks like it controls the pins on a group basis and not by
@@ -64,14 +76,7 @@
  *        pull en?      |          drv: 0?
  *  d3, d2, d1, d0, cmd | clk, d3, d2, d1, d0, cmd
  *
- * These might be internal dram pins
- * 0xe0 - ipl sets to 0xffff
- * 0xe4 - ipl sets to 0x3
- * 0xe8 - ipl sets to 0xffff
- * 0xec - ipl sets to 0x3
- * 0xf0 - ipl sets to 0
- * 0xf4 - ipl sets to 0
- * 0x14c - uart sel
+
  *
  * Mercury 5 notes:
  *
