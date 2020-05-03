@@ -18,6 +18,7 @@ Probably only for infinity/mercury5
 | 0xdc   |                  |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   | some pm code writes 0xa5 here      |
 | 0xec   | resume address l |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   |                                    |
 | 0xf0   | resume address h |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   |                                    |
+| 0xf4   |                  |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   | ipl sets to zero                   |
 
 ## mystery block - 0x1f007800?
 
