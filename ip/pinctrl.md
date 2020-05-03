@@ -29,6 +29,7 @@
 | 0xcc   | FUART conf     |                       |      | pull up       | pull up |               |      | pull enable   | pull enable |                 |      | ie?             | ie?     |                |      | drive           | drive |
 | 0xd4   | drive strength |                       |      |               |         |               |      | UART1         | UART1       |                 |      | UART0           | UART0   |                |      |                 | PWM0  |
 | 0x140  |                | set all pins as input |      |               |         |               |      |               |             |                 |      |                 |         |                |      |                 |       |
+| 0x14c  | uart sel       |                       |      |               |         |               |      |               |             |                 |      |                 |         | PM_UART        | PM_UART| PM_UART       | PM_UART |
 
 ```
 /*
