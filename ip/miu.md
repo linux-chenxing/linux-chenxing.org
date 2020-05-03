@@ -1,5 +1,17 @@
 # MIU
 
+## Analog
+
+| offset | name | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+|--------|------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|
+|        |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
+
+## Digital
+
+| offset | name    | 15        | 14                  | 13                 | 12                    | 11   | 10   | 9   | 8                    | 7 | 6 | 5                     | 4           | 3          | 2         | 1          | 0                       |
+|--------|---------|-----------|---------------------|--------------------|-----------------------|------|------|-----|----------------------|---|---|-----------------------|-------------|------------|-----------|------------|-------------------------|
+| 0x0    | config0 | init done | single command done | enter self refresh | enter deep power down | rasz | casz | wez | issue single command |   |   | turn off auto refresh | turn on odt | dram reset | enable cs | enable cke | auto initial dram cycle |
+
 ```
 /*
  * MSC313 MIU (memory interface unit?) - multiport ddr controller
@@ -24,10 +36,6 @@
  *
  * 0x1f202400
  * In the MSB2521 datasheet this is called MIU_DIG, miu digital?
- * 0x000 - config0
- *         13         |      5           |
- * enter self refresh | auto refresh off |
- *
  * 0x004 - config1
  *   15   |   14   | 13    |   12   |   7 - 6  | 5 - 4   |   3 - 2     |   1 - 0
  * cko_en | adr_en | dq_en | cke_en | columns  | banks   | bus width   | dram type
