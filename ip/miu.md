@@ -8,14 +8,14 @@
 
 ## Digital
 
-| offset | name    | 15        | 14                  | 13                 | 12                    | 11   | 10   | 9   | 8                    | 7        | 6       | 5                     | 4           | 3            | 2         | 1          | 0                       |
-|--------|---------|-----------|---------------------|--------------------|-----------------------|------|------|-----|----------------------|----------|---------|-----------------------|-------------|--------------|-----------|------------|-------------------------|
-| 0x0    | config0 | init done | single command done | enter self refresh | enter deep power down | rasz | casz | wez | issue single command |          |         | turn off auto refresh | turn on odt | dram reset   | enable cs | enable cke | auto initial dram cycle |
-| 0x4    | config1 | cko en    | address en          | dq enable          | cke enable            |      |      |     |                      | columns  | columns | banks                 | banks       | bus width    | bus width | dram type  | dram type               |
-|        |         |           |                     |                    |                       |      |      |     |                      | 0x0 - 8  |         | 0x0 - 2               |             | 0x0 - 16 bit |           | 0x0 - SDR  |                         |
-|        |         |           |                     |                    |                       |      |      |     |                      | 0x1 - 9  |         | 0x1 - 4               |             | 0x1 - 32 bit |           | 0x1 - DDR  |                         |
-|        |         |           |                     |                    |                       |      |      |     |                      | 0x2 - 10 |         | 0x2 - 8               |             | 0x2 - 64bit  |           | 0x2 - DDR2 |                         |
-|        |         |           |                     |                    |                       |      |      |     |                      |          |         |                       |             |              |           | 0x3 - DDR3 |                         |
+| offset | name    | 15        | 14                  | 13                 | 12                    | 11   | 10   | 9          | 8                    | 7        | 6       | 5                     | 4           | 3            | 2         | 1          | 0                       |
+|--------|---------|-----------|---------------------|--------------------|-----------------------|------|------|------------|----------------------|----------|---------|-----------------------|-------------|--------------|-----------|------------|-------------------------|
+| 0x0    | config0 | init done | single command done | enter self refresh | enter deep power down | rasz | casz | wez        | issue single command |          |         | turn off auto refresh | turn on odt | dram reset   | enable cs | enable cke | auto initial dram cycle |
+| 0x4    | config1 | cko en    | address en          | dq enable          | cke enable            |      |      | data ratio | data ratio           | columns  | columns | banks                 | banks       | bus width    | bus width | dram type  | dram type               |
+|        |         |           |                     |                    |                       |      |      | 0x0 - 1x   |                      | 0x0 - 8  |         | 0x0 - 2               |             | 0x0 - 16 bit |           | 0x0 - SDR  |                         |
+|        |         |           |                     |                    |                       |      |      | 0x1 - 2x   |                      | 0x1 - 9  |         | 0x1 - 4               |             | 0x1 - 32 bit |           | 0x1 - DDR  |                         |
+|        |         |           |                     |                    |                       |      |      | 0x2 - 4x   |                      | 0x2 - 10 |         | 0x2 - 8               |             | 0x2 - 64bit  |           | 0x2 - DDR2 |                         |
+|        |         |           |                     |                    |                       |      |      | 0x3 - 8x   |                      |          |         |                       |             |              |           | 0x3 - DDR3 |                         |
 
 ## IPL DDR2 init cycle
 
