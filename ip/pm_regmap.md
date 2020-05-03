@@ -12,6 +12,7 @@ Probably only for infinity/mercury5
 | 0x70   |                  |            |    |    |    |                    |    |   |   |   |   |   | ir in is gpio | isoen2gpio4?    | link wkint2gpio4? |     |   |                                    |
 | 0xb8   |                  |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   | write 0x79 to trigger a reset      |
 | 0xbc   |                  |            |    |    |    |                    |    |   |   |   |   |   |               | temp sensor en? |                   |     |   |                                    |
+| 0xc0   |                  |            |    |    |    |                    |    |   |   |   |   |   | ipl sets      |                 |                   |     |   |                                    |
 | 0xcc   |                  |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   | power down code writes 0x9fe8 here |
 | 0xc8   |                  |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   | power down code writes 0x9fe8 here |
 | 0xdc   |                  |            |    |    |    |                    |    |   |   |   |   |   |               |                 |                   |     |   | some pm code writes 0xa5 here      |
