@@ -9,7 +9,6 @@
 |        |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
 ## Digital
-
 | offset | name    | 15        | 14                  | 13                 | 12                    | 11         | 10         | 9          | 8                    | 7           | 6           | 5                     | 4           | 3            | 2           | 1           | 0                       |
 |--------|---------|-----------|---------------------|--------------------|-----------------------|------------|------------|------------|----------------------|-------------|-------------|-----------------------|-------------|--------------|-------------|-------------|-------------------------|
 | 0x0    | config0 | init done | single command done | enter self refresh | enter deep power down | rasz       | casz       | wez        | issue single command |             |             | turn off auto refresh | turn on odt | dram reset   | enable cs   | enable cke  | auto initial dram cycle |
@@ -19,6 +18,7 @@
 |        |         |           |                     |                    |                       |            |            | 0x2 - 4x   |                      | 0x2 - 10    |             | 0x2 - 8               |             | 0x2 - 64bit  |             | 0x2 - DDR2  |                         |
 |        |         |           |                     |                    |                       |            |            | 0x3 - 8x   |                      |             |             |                       |             |              |             | 0x3 - DDR3  |                         |
 | 0x14   |         |           |                     | TRC timing         | TRC timing            | TRC timing | TRC timing | TRC timing | TRC timing           | TRTP timing | TRTP timing | TRTP timing           | TRTP timing | TRRD timing  | TRRD timing | TRRD timing | TRRD timing             |
+| 0x3c   | sw_rst  |           |                     |                    |                       |            |            |            |                      | g3_rst      | g2_rst      | g1_rst                | g0_rst      |              |             |             | miu_rst                 |
 
 ## IPL DDR2 init cycle
 
