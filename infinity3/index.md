@@ -11,20 +11,6 @@ The infinity 3 family are seemingly focused towards IP camera applications.
 
 - Ethernet; Cadence based EMAC
 
-### Efuse 
-
-Known locations
-
-|      | 15 | 14 | 13 | 12 |  11 | 10  | 9 | 8 |  7  |  6  |  5  | 4 | 3 | 2 | 1 | 0 | msc313e | msc313dc |
-|------|----|----|----|----|-----|-----|---|---|-----|-----|-----|---|---|---|---|---|---------|----------|
-| 0x14 |    |    |    |    | ipl | ipl |   |   | ipl | ipl | ipl |   |   |   |   |   | 0x0420  | 0x440    |
-| 0x20 |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   | 0x019c  |          |
-| 0x24 |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   | 0x058f  |          |
-| 0x28 |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   | 0x0a51  |          |
-| 0x2c |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   | 0x0010  |          |
-|      |    |    |    |    |     |     |   |   |     |     |     |   |   |   |   |   |         |          |
-
-
 - ipl; checked by ipl
 
 - 0x18/0x1c - "sidd", seems to be some sort of current measurement that is used to control whether the core voltage can be scaled.
