@@ -30,7 +30,9 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
 
+### EFUSE
 
+[more info](efuse.md)
 
 
 ## Interrupt controllers
