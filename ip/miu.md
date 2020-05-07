@@ -250,3 +250,8 @@
 1f206200: 0000 0000 0000 0000 0000 0000 022c 0000    ............,...
 1f206210: 8010 0000 0000 0000 0000 0000 0000 0000    ................
 ```
+
+# M5 Register layout
+
+The i3 and m5 layous seem to differ a lot. The M5 IPL uses a bunch of tables to work out where stuff is.
+
