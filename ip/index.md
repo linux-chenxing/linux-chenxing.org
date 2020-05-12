@@ -128,6 +128,10 @@ This (probably) a PLL that is used for dynamically scaling the CPU frequency.
 
 Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 
+#### MCM
+
+"memory clock manager"?
+
 ## Bus Glue
 
 ### L3 Bridge/AXI interface
