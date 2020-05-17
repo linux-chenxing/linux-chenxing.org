@@ -1,5 +1,13 @@
 # MIU
 
+## Packaged DRAM config
+
+- For i3 this is encoded into the efuse area
+- For m5 there is a register in the gpio block that read to work out which tables to use.
+
+For SSC8336N the value is 0xf
+
+
 [dig registers](https://github.com/longyanjun2020/SDK_pulbic/blob/47d85255220f39de1b13e5f2a68b24e49e179f07/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_dmc.h)
 
 ## Analog
