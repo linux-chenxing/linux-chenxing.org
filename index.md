@@ -33,12 +33,12 @@ at some point.
 
 ## linux
 
-|           | boots to shell from initramfs | boots to shell from local storage | full system from local storage with network etc |
-|-----------|-------------------------------|-----------------------------------|-------------------------------------------------|
-| infinity  | yes                           | yes                               | yes                                             |
-| infinity3 | yes                           | yes                               | yes                                             |
-| infinity6 | wip                           | wip                               | wip                                             |
-| mercury5  | yes                           | wip                               | wip                                             |
+|           | boots to shell from initramfs | boots to shell from local storage | full system from local storage with network etc | boots without blobs (no vendor IPL) |
+|-----------|-------------------------------|-----------------------------------|-------------------------------------------------|-------------------------------------|
+| infinity  | yes                           | yes                               | yes                                             |                                     |
+| infinity3 | yes                           | yes                               | yes                                             |                                     |
+| infinity6 | wip                           | wip                               | wip                                             |                                     |
+| mercury5  | yes                           | yes                               | yes                                             | yes                                 |
 
 # Reverse Engineering Progress
 
