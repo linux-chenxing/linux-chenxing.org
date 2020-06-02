@@ -104,6 +104,19 @@ This is a pretty weird thing;
 
 These are 16 bit registers that contain clock muxes for one or more peripherals usually grouped, i.e. uart0 and uart1.
 
+```
+              ---\
+             |    \
+ pll input - |     \     ---\
+ pll input - |      |---|    \
+ pll input - |     /    |     \
+             |    /     |      |---- output
+              ---/      |     /
+ xtal ----------------- |    /
+                         ---/
+```
+
+
 #### Support Matrix
 
 |           | u-boot | linux |
