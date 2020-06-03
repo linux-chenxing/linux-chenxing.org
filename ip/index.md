@@ -107,14 +107,17 @@ These are 16 bit registers that contain clock muxes for one or more peripherals 
 The muxes generally seemed to configured as diagramed below. There is one mux that takes inputs that are from the non-pm domain and then another mux that uses either the selected clock or a clock that is in the always on domain. The vendor code calls this "deglitching".
 
 ```
-              ---\
-             |    \
- pll input - |     \     ---\
- pll input - |      |---|    \
- pll input - |     /    |     \
-             |    /     |      |---- output
-              ---/      |     /
- xtal ------------------|    /
+          pll select  deglitch
+             | |          |
+             | |          |
+            -----\        |
+            |     \       |
+pll input - |      \     ---\
+pll input - |       |---|    \
+pll input - |      /    |     \
+            |     /     |      |---- output
+            -----/      |     /
+xtal -------------------|    /
                          ---/
                           |
                           |
