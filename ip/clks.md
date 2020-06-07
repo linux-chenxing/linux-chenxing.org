@@ -1,5 +1,13 @@
 ## Clock
 
+### MPLL
+
+Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
+
+### UPLL
+
+This seems to generate 320MHz and 384MHz clocks for the USB phys/controllers
+
 ### pll gates
 
 This is a pretty weird thing;
