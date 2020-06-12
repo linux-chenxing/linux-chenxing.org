@@ -13,4 +13,4 @@ The SDCard should contain a FAT16 partition (Id 6) with following files:
 - ipl - first stage bootloader
 - rtk - u-boot + kernel + initramfs
 
-See the [breadbee_dev repo](https://github.com/breadbee/breadbee_dev/) for more information.
+See the [breadbee_dev repo](https://github.com/breadbee/breadbee_dev/) and/or the [genimage from buildroot-mercury5](https://github.com/fifteenhex/buildroot_mercury5/blob/master/br2midrive08/board/70mai/midrive08/genimage.cfg) for more information.
