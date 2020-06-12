@@ -185,6 +185,11 @@ extract-dtb.py <extracted firmware dir><uncompressed kernel blob>
 dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
 ```
 
+# Development boards
+
+- [Breadbee](https://github.com/breadbee/breadbee/) (Infinity3 - msc313e)
+- [70mai Midrive D08 a.k.a Dash Cam Lite](boards/dashcamlite.md) (Mercury5)
+
 # Links
 
 - [aiwinn](http://www.aiwinn.com/) - seems to supply a bunch of AI enabled things based on SigmaStar SoCs
