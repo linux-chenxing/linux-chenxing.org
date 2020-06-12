@@ -5,3 +5,12 @@ see [the producer page](https://www.70mai.com/en/70mai-dash-cam-lite/).
 
 The camera can be rack open to get access to 3.3V UART pins and a "boot from SD" push button next to it:
 ![UART pins](70mai_dashcamlite_uart.png)
+
+The battery can be disconnected and the board can be powered up from micro USB port. You can run your IPL/SPL/U-Boot/Linux by writing it to the SDCard and holding the "boot from SD" push button while powering the board up.
+
+## SDCard content
+The SDCard should contain a FAT16 partition (Id 6) with following files:
+- ipl - first stage bootloader
+- rtk - u-boot + kernel + initramfs
+
+See the [breadbee_dev repo](https://github.com/breadbee/breadbee_dev/) for more information.
