@@ -71,6 +71,10 @@ at some point.
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
 
+# Mainlining progress
+
+See [mainlining](mainlining.md)
+
 # SoCs
 
 ## MIPS based
