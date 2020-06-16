@@ -141,6 +141,11 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 - [ST7701S](http://www.startek-lcd.com/res/starteklcd/pdres/201705/20170512144242904.pdf) based 480x640 LCD
 - Realtek 8188FTV usb wifi, probably RL-UM12BS-8188FTV-V3.0
 
+###### Tips
+
+- Inside the camera, next to the battery connector there is a button that tells the camera to boot from SD card. This might be accessible externally but it's not much use without the UART.
+
+- A buildroot setup that creates bootable SD cards can be found [here](https://github.com/fifteenhex/buildroot_mercury5).
 
 ### SSC8339D
 
