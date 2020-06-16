@@ -132,7 +132,11 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 
 #### Known Devices 
 
-##### 70mai Smart dash cam 
+##### 70mai Midrive D06 drive recorder
+
+- [fcc.io internal photos](https://fccid.io/2AOK9-MIDRIVED06/Internal-Photos/internal-photos-4252299)
+
+##### 70mai Midrive D08 Smart dash cam 
 
 - [vendor page](https://www.70mai.com/en/70mai-dash-cam-lite/?gclid=EAIaIQobChMIzsLkl6y_5QIVEz5gCh1UOg9eEAAYASAAEgLvffD_BwE) 
 - [fcc.io internal photos](https://fccid.io/2AOK9-MIDRIVED08/Internal-Photos/internal-photos-4351132)
@@ -146,6 +150,7 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 - Inside the camera, next to the battery connector there is a button that tells the camera to boot from SD card. This might be accessible externally but it's not much use without the UART.
 
 - A buildroot setup that creates bootable SD cards can be found [here](https://github.com/fifteenhex/buildroot_mercury5).
+
 
 ### SSC8339D
 
