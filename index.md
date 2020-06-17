@@ -147,6 +147,7 @@ ones.
 - MSB2531 - Cortex A7 SatNav on a chip
 - SSD201 - Cortex A7
 - SSD202D - Cortex A7
+- SSC337DE - 128 pin? AI enabled.
 
 # Non-SoC chips
 
