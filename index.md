@@ -154,6 +154,10 @@ See [IP](ip).
 
 See [ISP](isp).
 
+# Non-SoC chips
+
+- SSW101B - Seems to be a wifi chipset.
+
 # Injoinic PMICs
 
 Injoinic seem to be the recommended PMIC vendor for these chips. Maybe like the Allwinner/Xpowers relationship?
