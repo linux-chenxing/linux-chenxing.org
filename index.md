@@ -145,14 +145,8 @@ ones.
 
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
 - MSB2531 - Cortex A7 SatNav on a chip
-
-# IP blocks
-
-See [IP](ip).
-
-# ISP/Debug Tool
-
-See [ISP](isp).
+- SSD201 - Cortex A7
+- SSD202D - Cortex A7
 
 # Non-SoC chips
 
@@ -163,6 +157,13 @@ See [ISP](isp).
 Injoinic seem to be the recommended PMIC vendor for these chips. Maybe like the Allwinner/Xpowers relationship?
 - [Injoinic PMICs](injoinicpmics/index.md)
 
+# IP blocks
+
+See [IP](ip).
+
+# ISP/Debug Tool
+
+See [ISP](isp).
 
 # Blobs, headers, layouts
 
