@@ -15,7 +15,7 @@ The are no latches so you should be able to lift the cover with ease. Disconnect
 
 ## SDCard content
 The SDCard should contain a FAT16 partition (Id 6) with following files:
-- ipl - first stage bootloader
-- rtk - u-boot + kernel + initramfs
+- ipl - first stage bootloader - can be vendor one or U-Boot SPL ([m5iplwork branch of this fork](https://github.com/breadbee/u-boot/tree/m5iplwork))
+- rtk (in case of using the vendor IPL) - u-boot (possibly with kernel and initramfs if you want them to be loaded at one go)
 
 See the [breadbee_dev repo](https://github.com/breadbee/breadbee_dev/) and/or the [genimage from buildroot-mercury5](https://github.com/fifteenhex/buildroot_mercury5/blob/master/br2midrive08/board/70mai/midrive08/genimage.cfg) for more information.
