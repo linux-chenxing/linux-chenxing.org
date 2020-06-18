@@ -148,6 +148,7 @@ ones.
 - SSD201 - Cortex A7
 - SSD202D - Cortex A7
 - SSC337DE - 128 pin? AI enabled.
+  - MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
 
 # Non-SoC chips
 
