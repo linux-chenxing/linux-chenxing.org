@@ -151,7 +151,7 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 
 - A buildroot setup that creates bootable SD cards can be found [here](https://github.com/fifteenhex/buildroot_mercury5).
 
-[More info here](boards/dashcamlite.md)
+[More info here](../boards/dashcamlite.md)
 
 ### SSC8339D
 
