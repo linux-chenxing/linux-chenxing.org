@@ -126,11 +126,11 @@ ones.
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
 - [SSC327DE](infinity6#ssc327de) - Cortex A7 + 128MB DDR3
 
-#### [Infinity 6b0]
+#### [Infinity 6b0]()
 
 - [SSC335]() - probably Cortex A7 + xxx + in a QFN88
 
-#### [Infinity 6e]
+#### [Infinity 6e]()
 
 - Infinity 6e seems to be a dual core variation in this family
 
