@@ -136,7 +136,7 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 
 - [fcc.io internal photos](https://fccid.io/2AOK9-MIDRIVED06/Internal-Photos/internal-photos-4252299)
 
-##### 70mai Midrive D08 Smart dash cam 
+##### [70mai Midrive D08 Smart dash cam](../boards/dashcamlite.md)
 
 - [vendor page](https://www.70mai.com/en/70mai-dash-cam-lite/?gclid=EAIaIQobChMIzsLkl6y_5QIVEz5gCh1UOg9eEAAYASAAEgLvffD_BwE) 
 - [fcc.io internal photos](https://fccid.io/2AOK9-MIDRIVED08/Internal-Photos/internal-photos-4351132)
