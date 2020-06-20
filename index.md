@@ -104,6 +104,10 @@ ones.
 
 #### [Infinity 2](infinity2)
 
+- part numbers not known. there are some references in the SDKs etc to infinity2.
+
+#### [Infinity 2m](infinity2m)
+
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
 - SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
@@ -114,6 +118,10 @@ ones.
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 - [MSC316Q](infinity3) - Cortex A7 + 128MB DDR3 in a 256 ball BGA
 - [MSC318](infinity3) - Cortex A7 + 128MB DDR3 in a 324 ball BGA 
+
+#### Infinity 4
+
+Doesn't seem to exist.
 
 #### [Infinity 5](infinity5)
 - [SSC328Q](infinity5#ssc328q) - Cortex A7 + 256MB DDR3 (this might be i6)
