@@ -106,7 +106,7 @@ ones.
 
 - part numbers not known. there are some references in the SDKs etc to infinity2.
 
-#### [Infinity 2m](infinity2m)
+#### [Infinity 2m](infinity2)
 
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
 - SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
