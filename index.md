@@ -49,7 +49,7 @@ at some point.
 | infinity1  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
 |            | msc313   | 1647B      | yes                    | yes             |                 |              |                                     |                                          |
 |            | msc313d  | 1638B      |                        |                 |                 |              |                                     |                                          |
-| infinity2  |          |            |                        |                 |                 |              |                                     |                                          |
+| infinity2m |          |            |                        |                 |                 |              |                                     |                                          |
 |            | msr620   |            |                        |                 |                 |              |                                     |                                          |
 |            | ssr621d  | 1945S      | yes                    | yes             | yes             |              |                                     |                                          |
 | infinity3  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
