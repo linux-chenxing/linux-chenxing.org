@@ -112,6 +112,8 @@ ones.
 - SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
 - [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag)
+- SSD201?
+- SSD202?
 
 #### [Infinity 3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
