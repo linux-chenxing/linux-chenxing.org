@@ -51,6 +51,7 @@ at some point.
 |            | msc313d  | 1638B      |                        |                 |                 |              |                                     |                                          |
 | infinity2m |          |            |                        |                 |                 |              |                                     |                                          |
 |            | msr620   |            |                        |                 |                 |              |                                     |                                          |
+|            | msr620q  | 1717S      |                        |                 |                 |              |                                     |                                          |
 |            | ssr621d  | 1945S      | yes                    | yes             | yes             |              |                                     |                                          |
 | infinity3  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
 |            | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
