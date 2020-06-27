@@ -91,7 +91,7 @@ ones.
 - MSD7818
 - MSD7828
 
-## ARM based
+## 32bit ARM based
 
 ### Cedric Family
 
@@ -166,6 +166,10 @@ Doesn't seem to exist.
 - SSD202D - Cortex A7
 - SSC337DE - 128 pin? AI enabled.
   - MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
+
+# 64bit ARM based
+
+According to the code that is in the wild and SigmaStars page there are some Cortex-A53 based chips.
 
 # Non-SoC chips
 
