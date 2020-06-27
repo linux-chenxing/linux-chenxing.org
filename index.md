@@ -23,13 +23,13 @@ at some point.
 
 ## u-boot
 
-|                       | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
-|-----------------------|---------------------------------|--------------------------|
-| infinity              | yes                             | yes                      |
-| infinity2m            | wip                             | wip                      |
-| infinity3             | yes                             | yes                      |
-| infinity6             | wip                             | wip                      |
-| [mercury5](#mercury5) | yes                             | yes                      |
+|                           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
+|---------------------------|---------------------------------|--------------------------|
+| [infinity1](#infinity1)   | yes                             | yes                      |
+| [infinity2m](#infinity2m) | wip                             | wip                      |
+| [infinity3](#infinity3)   | yes                             | yes                      |
+| [infinity6](#infinity6)   | wip                             | wip                      |
+| [mercury5](#mercury5)     | yes                             | yes                      |
 
 ## linux
 
@@ -99,15 +99,15 @@ ones.
 
 ### Infinity IP camera family
 
-#### [Infinity 1](infinity1)
+#### [Infinity1](infinity1)
 - [MSC313](infinity1#msc313) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC313D](infinity1#msc313d) - Probably a Cortex A7 + 128MB DDR3 in a BGA
 
-#### [Infinity 2](infinity2)
+#### [Infinity2](infinity2)
 
 - part numbers not known. there are some references in the SDKs etc to infinity2.
 
-#### [Infinity 2m](infinity2)
+#### [Infinity2m](infinity2)
 
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
 - SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
@@ -116,7 +116,7 @@ ones.
 - SSD201?
 - SSD202?
 
-#### [Infinity 3](infinity3)
+#### [Infinity3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 - [MSC316Q](infinity3) - Cortex A7 + 128MB DDR3 in a 256 ball BGA
@@ -126,33 +126,33 @@ ones.
 
 Doesn't seem to exist.
 
-#### [Infinity 5](infinity5)
+#### [Infinity5](infinity5)
 - [SSC328Q](infinity5#ssc328q) - Cortex A7 + 256MB DDR3 (this might be i6)
 - [SSC329Q](infinity5#ssc329q) - Cortex A7 + 256MB DDR3 + NPU (this might be i6)
 
-#### [Infinity 6](infinity6)
+#### [Infinity6](infinity6)
 - [SSC323](infinity6#ssc323) - probably Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325](infinity6#ssc325) - Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325DE](infinity6#ssc325de) - Cortex A7 + 128MB DDR3 in a QFN88
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
 - [SSC327DE](infinity6#ssc327de) - Cortex A7 + 128MB DDR3
 
-#### [Infinity 6b0]()
+#### [Infinity6b0](infinity6)
 
 - [SSC335]() - probably Cortex A7 + xxx + in a QFN88
 
-#### [Infinity 6e]()
+#### [Infinity 6e](infinity6)
 
 - Infinity 6e seems to be a dual core variation in this family
 
 ### Mercury family
 
-#### [Mercury 2](mercury2)
+#### [Mercury2](mercury2)
 
 - [AIT8328/MSC8328](mercury2#msc8328) - Probably ARM9
 - [AIT8428](mercury2#ait8428) - Probably ARM9
 
-#### [Mercury 5](mercury5)
+#### [Mercury5](mercury5)
 
 - [SSC8336](mercury5#ssc8336) - Probably Cortex A7 + 64MB DDR2 in a QFP128
 - [SSC8336N](mercury5#ssc8336n) - Cortex A7 + 64MB DDR2 in a 128 pin QFN
