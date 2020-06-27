@@ -23,13 +23,13 @@ at some point.
 
 ## u-boot
 
-|            | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
-|------------|---------------------------------|--------------------------|
-| infinity   | yes                             | yes                      |
-| infinity2m | wip                             | wip                      |
-| infinity3  | yes                             | yes                      |
-| infinity6  | wip                             | wip                      |
-| mercury5   | yes                             | yes                      |
+|                       | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
+|-----------------------|---------------------------------|--------------------------|
+| infinity              | yes                             | yes                      |
+| infinity2m            | wip                             | wip                      |
+| infinity3             | yes                             | yes                      |
+| infinity6             | wip                             | wip                      |
+| [mercury5](#mercury5) | yes                             | yes                      |
 
 ## linux
 
