@@ -59,6 +59,8 @@ when each type of chip was produced.
 |                           | msr620   |            |                        |                 |                 |              |                                     |                                          |
 |                           | msr620q  | 1717S      |                        |                 |                 |              |                                     |                                          |
 |                           | ssr621d  | 1945S      | yes                    | yes             | yes             |              |                                     |                                          |
+|                           | ssd201   |            |                        |                 |                 |              | partial                             |
+|                           | ssd202   |            |                        |                 |                 |              | partial                             |
 | [infinity3](#infinity3)   |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
 |                           | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
 |                           |          | 1916S      |                        |                 |                 |              |                                     |                                          |
