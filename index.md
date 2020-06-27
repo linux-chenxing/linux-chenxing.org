@@ -42,6 +42,12 @@ at some point.
 
 # Reverse Engineering Progress
 
+This table is an attempt to collect all of the different part numbers for
+the different families and the resources that have been found to reverse engineer each of them.
+
+If possible the data codes will have the earliest known date code so that we can tell roughly
+when each type of chip was produced.
+
 | family                    | part     | date codes | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | product brief acquired              | datasheet acquired                       |
 |---------------------------|----------|------------|------------------------|-----------------|-----------------|--------------|-------------------------------------|------------------------------------------|
 | [cedric](#cedric)         |          |            |                        |                 |                 |              |                                     |                                          |
