@@ -101,6 +101,10 @@ ones.
 
 ## 32bit ARM based
 
+### Napoli?
+
+- [MSO9810]() - Quad Core ARM Cortex-A9
+
 ### Cedric Family
 
 - [MST786](cedric#mst786) - Dual core Cortex A9 automotive (head unit) SoC
