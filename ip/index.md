@@ -2,13 +2,17 @@
 
 ## PM domain
 
-Mostly a mystery.
+Mostly a mystery. Hardware in this area is kept alive even when the chip is in deep sleep.
+For infinity3 and mercury5 at least PM domain blocks are easy to see because they mapped 
+to 0x1f00xxxx.
+
 
 [Register map](pm_regmap.md)
 
 ### sleep intc
 
-32 interrupts forwarded to the IRQ intc via a single interrupt
+32 interrupts forwarded to the IRQ intc via a single interrupt. 
+This is mostly for the pm gpio interrupts.
 
 |           | u-boot | linux |
 |-----------|--------|-------|
@@ -26,7 +30,9 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
 
+### EFUSE
 
+[more info](efuse.md)
 
 
 ## Interrupt controllers
@@ -55,6 +61,8 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 ## Pinmux
 
+[More details](pinctrl.md)
+
 ### Support Matrix
 
 |           | u-boot | linux |
@@ -63,62 +71,9 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 | infinity3 |        | yes   |
 | mercury5  |        | wip   |
 
-## Clock
+## Clocks
 
-### pll gates
-
-This is a pretty weird thing;
-- The force on bits start on as 0xffff
-- The force off bits start as 0x0.
-- A gate apparently stays on if it is forced on or something is using it and it's not forced off
-- A gate with get turned off if it is force off or nothing is using it and it's not forced on
-- the "en rd bits" update when a consumer of a clock is turned on.
-
-```
-/*
- * - 0x1c0(0x70) - pll gater lock
- *     1     |     0
- *  off lock | on lock
- *
- *  once a bit is set here it cannot be unset.
- *
- * - 0x1c4(0x71) - pll force on bits
- * - 0x1c8(0x72) - pll force off bits
- * - 0x1cc(0x73) - pll en rd bits
- *      15   |       14  |     13   |     12   |     11   |     10   |     9    |     8
- *  pll rv1  |  mpll 86  | mpll 124 | mpll 123 | mpll 144 | mpll 172 | mpll 216 | mpll 288
- *      7    |     6     |     5    |     4    |     3    |     2    |     1    |     0
- *  mpll 345 | mpll 432  | utmi 480 | utmi 240 | utmi 192 | utmi 160 | upll 320 | upll 384
-*/
-```
-
-### clkgen muxes
-
-These are 16 bit registers that contain clock muxes for one or more peripherals usually grouped, i.e. uart0 and uart1.
-
-#### Support Matrix
-
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
-
-### cpuclk
-
-This (probably) a PLL that is used for dynamically scaling the CPU frequency.
-
-#### Support Matrix
-
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
-
-### LPLL 
-
-Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
+See [clks](clks.md). 
 
 ## Bus Glue
 
@@ -135,6 +90,8 @@ so other bus masters can see them.
 MIU or "memory interface unit" is a multiport DDR controller that is wired to the CPU(s)
 and DMA capable perpherials like USB, Ethernet and so on.
 
+[More info](miu.md)
+
 ### RIU
 
 RIU of "register interface unit" is a brige between the CPU and perpherial registers.
@@ -150,8 +107,46 @@ ports so the CPU and some perpherials are able to access the SRAM but not a lot 
 that yet.
 
 ## Timers
+Appart from the ARMv7 builtin timer, there are 3 SoC specific timer peripherals at 0x1f006040, 0x1f006080 and 0x1f0060c0. They are running at 12MHz. Each timer has its interrupt but they are not yet supported by the linux driver.
+
+Registermap:
+
+| Offset | Name  | Comment |
+| ---    | ---   | ---     |
+| 0x00   | CTRL  | bit0 - ~oe <BR> bit1 - trig <BR> bit3 - clear <BR> bit4 - capture <BR> bit8 - int |
+| 0x08   | MAX_L | Low 16 bits of the max value |
+| 0x0c   | MAX_H | High 16 bits of the max value |
+| 0x10   | CNT_L | Low 16 bits of the counter |
+| 0x14   | CNT_H | High 16 bits of the counter |
+
 
 ## RTC
+
+Base address is 0x1f202400 (on infinity3). Can be a wakeup source, can generate alarm interrupt, does not seem to have an eeprom.
+
+Registermap:
+
+| Offset | Name  | Comment |
+| ---    | ---   | ---     |
+| 0x00   | CTRL  | bit fileds below |
+| bit 0  | CTRL_SOFT_RSTZ | it is set to 1 by the driver, not sure what it means |
+| bit 1  | CTRL_CNT_EN    | start the counter?? set to 1 in the probe of driver [0] |
+| bit 2  | CTRL_WRAP_EN | ?? |
+| bit 3  | CTRL_LOAD_EN | should read back in a loop to ensure HW latch, needed to set RTC_LOAD_VAL |
+| bit 4  | CTRL_READ_EN | should read back in a loop to ensure HW latch, needed to read RTC_CNT_VAL |
+| bit 5  | CTRL_INT_MASK | mask alarm interrupt  (when RTC_MATCH_VAL reached) |
+| bit 6  | CTRL_FORCE | force an alarm interrupt maybe? |
+| bit 7  | CTRL_INT_CLEAR |  set to clear the interrupt status |
+| 0x04   | RTC_FREQ_CW_L  | low 16bits of clock frequency divider value |
+| 0x08   | RTC_FREQ_CW_H  | high 16bits of clock frequency divider value |
+| 0x0C   | RTC_LOAD_VAL_L | low 16bits for the load value (to change the current time), set LOAD_EN after changing this, the driver also zeroes this after the LOAD_EN_BIT was set |
+| 0x10   | RTC_LOAD_VAL_H | hih 16bits for the load value (to change the current time), see the note above |
+| 0x14   | RTC_MATCH_VAL_L | low 16bits of match value (for alarm) |
+| 0x18   | RTC_MATCH_VAL_H | high 16bits of match value (for alarm) |
+| 0x20   | RTC_CNT_VAL_L   | low 16bits of counter |
+| 0x24   | RTC_CNT_VAL_H   | high 16bits of counter |
+
+Note [0]: IPL expects this bit to be set after a software reset - otherwise it assumes a HW reset happened. The only difference is in the messages printed and the fact that bit 1 in RSTLEN of WDT is cleared in software reset case, though.
 
 ### Support Matrix
 
@@ -197,6 +192,42 @@ the system memory.
 
 ### AESDMA
 
+The AESDMA peripheral seems to be able to perform following operations:
+- AES
+- RSA
+- SHA-1 / SHA-256
+- RND (random generator)
+
+RND block registermap:
+
+| Offset | Name  | Comment |
+| ---    | ---   | ---     |
+| 0x00   | CTRL | bit7 - enable/initialize? |
+| 0x08   | VALUE | The output value. Ready when STATUS[0] is 1 |
+| 0x0C   | STATUS | bit0 - ready |
+
+SHA block registermap:
+
+| Offset | Name  | Comment |
+| ---    | ---   | ---     |
+| 0x20   | CTRL  |         |
+| bit 1  | CTRL_FIRE_ONCE | write 1 to fire once, |
+| bit 6  | CTRL_CLR  | 
+| bit 9  | CTRL_MODE | 0 = SHA-1 <BR> 1 = SHA-256 |
+| bit 13 | CTRL_INIT_HASH | enable/disable initial hash value |
+| bit 14 | CTRL_MANUAL | |
+| 0x28   | BUF_ADDR_L | |
+| 0x2C   | BUF_ADDR_H | |
+| 0x30   | BUF_LEN_L  | |
+| 0x34   | BUF_LEN_H  | |
+| 0x38   | BUF_ADDR_L | |
+| 0x3C   | STATUS | bit 0 = ready, bit 1 - busy ?|
+| 0x40-0x5f | VALUE | When reading - the output value, when writing - initial hash value (big endian) |
+| 0xB8   | WORD_CNT_L | count in 4-byte words, lower 16 bits |
+| 0xBC   | WORD_CNT_H | higher 16 bits |
+
+On infinity3 the base address is 0x1f224400
+
 #### Support Matrix
 
 |           | u-boot | linux |
@@ -207,6 +238,29 @@ the system memory.
 [rough register descriptions](https://github.com/fifteenhex/linux-ssc325/blob/v4.9.84-sigmastar/drivers/sstar/crypto/hal/infinity3/halAESDMA.h)
 
 ## Ethernet
+
+### 100mbit phy
+
+| offset | name                 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | default | working value | writeable | msc313 | msc313e |
+|--------|----------------------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|---------|---------------|-----------|--------|---------|
+| 0x74   |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0xe4   | lpbk enable set to 0 |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         | 0x4a0         |           | x      | x       |
+| 0x29c  | det max              |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         | 0x24c         |           | x      | x       |
+| 0x2a0  | det min              |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         | 0x160         |           | x      | x       |
+| 0x2e0  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x2ec  | snr len              |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         | 0x1800        |           | x      | x       |
+| 0x368  | gain shift           |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         | 0x0002        |           | x      | x       |
+| 0x374  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x388  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x398  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x3f8  | ldo power down?      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         | 0x0000        | 0xffff    | x      | x       |
+| 0x460  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x470  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x500  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x514  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x540  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x588  |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
+| 0x5e4  | 200 gat              |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
 
 ### Cadence EMAC
 
@@ -332,7 +386,17 @@ CH?_OUT bits set the gpio output level
 
 ## Serial
 
-Serial seems to be a standard Designware UART with one of the registers in a different location.
+Serial seems to be a standard Designware UART with USR register in a different location (at offset 0x38). The usual 8250 registers are at offsets divisible by 8 (the reg-shift is 3). So:
+- **0x00** - THR, RBR, DLL
+- **0x08** - IER, DLH
+- **0x10** - IIR, FCR
+- **0x18** - LCR
+- **0x20** - MCR
+- **0x28** - LSR
+- **0x30** - MSR
+- **0x38** - USR
+
+There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0 of it and then sets it back to 1 before configuring UART so it is resetting something.
 
 #### Support Matrix
 

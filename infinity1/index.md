@@ -2,6 +2,11 @@
 
 For now see [infinity3](/infinity3/).
 
+Differences from i3:
+- PWM hardware is different
+- Etherney phy power on is different
+- SRAM is apprently 88k
+
 ## Chips
 
 ### MSC313

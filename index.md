@@ -23,53 +23,66 @@ at some point.
 
 ## u-boot
 
-|            | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
-|------------|---------------------------------|--------------------------|
-| infinity   | yes                             | yes                      |
-| infinity2m | wip                             | wip                      |
-| infinity3  | yes                             | yes                      |
-| infinity6  | wip                             | wip                      |
-| mercury5   | yes                             | yes                      |
+|                           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
+|---------------------------|---------------------------------|--------------------------|
+| [infinity1](#infinity1)   | yes                             | yes                      |
+| [infinity2m](#infinity2m) | wip                             | wip                      |
+| [infinity3](#infinity3)   | yes                             | yes                      |
+| [infinity6](#infinity6)   | wip                             | wip                      |
+| [mercury5](#mercury5)     | yes                             | yes                      |
 
 ## linux
 
-|           | boots to shell from initramfs | boots to shell from local storage | full system from local storage with network etc |
-|-----------|-------------------------------|-----------------------------------|-------------------------------------------------|
-| infinity  | yes                           | yes                               | yes                                             |
-| infinity3 | yes                           | yes                               | yes                                             |
-| infinity6 | wip                           | wip                               | wip                                             |
-| mercury5  | yes                           | wip                               | wip                                             |
+|                         | boots to shell from initramfs | boots to shell from local storage | full system from local storage with network etc | boots without blobs (no vendor IPL) |
+|-------------------------|-------------------------------|-----------------------------------|-------------------------------------------------|-------------------------------------|
+| [infinity1](#infinity1) | yes                           | yes                               | yes                                             |                                     |
+| [infinity3](#infinity3) | yes                           | yes                               | yes                                             |                                     |
+| [infinity6](#infinity6) | wip                           | wip                               | wip                                             |                                     |
+| [mercury5](#mercury5)   | yes                           | yes                               | yes                                             | yes                                 |
 
 # Reverse Engineering Progress
 
-| family     | part     | date codes | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | product brief acquired              | datasheet acquired                       |
-|------------|----------|------------|------------------------|-----------------|-----------------|--------------|-------------------------------------|------------------------------------------|
-| cedric     |          |            |                        |                 |                 |              |                                     |                                          |
-|            | mst786   |            |                        |                 |                 |              |                                     | [yes](cedric/mst786_ds_v01maite_new.pdf) |
-| infinity1  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
-|            | msc313   | 1647B      | yes                    | yes             |                 |              |                                     |                                          |
-|            | msc313d  | 1638B      |                        |                 |                 |              |                                     |                                          |
-| infinity2  |          |            |                        |                 |                 |              |                                     |                                          |
-|            | msr620   |            |                        |                 |                 |              |                                     |                                          |
-|            | ssr621d  | 1945S      | yes                    | yes             | yes             |              |                                     |                                          |
-| infinity3  |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
-|            | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
-|            |          | 1916S      |                        |                 |                 |              |                                     |                                          |
-|            | msc316dc | 1929S      | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
-|            | msc316q  |            |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
-|            | msc318   |            |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
-| infinity6  |          |            |                        |                 |                 |              |                                     |                                          |
-|            | ssc323   | 1928S      |                        |                 |                 |              |                                     |                                          |
-|            |          | 1936J      |                        |                 |                 |              |                                     |                                          |
-|            | ssc325   | 1937S      | yes                    | yes             | yes             |              |                                     |                                          |
-| mercury2   |          |            | yes                    |                 |                 |              |                                     |                                          |
-|            | msc8328  | 1744       |                        |                 | yes             |              |                                     |                                          |
-| mercury5   |          |            |                        |                 |                 |              |                                     |                                          |
-|            | ssc8336  | 1915S      | yes                    |                 | yes             |              |                                     |                                          |
-|            | ssc8336n | 1918S      | yes                    | yes             | yes             |              |                                     |                                          |
-|            | ssc8339d |            |                        |                 |                 |              | yes                                 |                                          |
+This table is an attempt to collect all of the different part numbers for
+the different families and the resources that have been found to reverse engineer each of them.
+
+If possible the data codes will have the earliest known date code so that we can tell roughly
+when each type of chip was produced.
+
+| family                    | part     | date codes | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | product brief acquired              | datasheet acquired                       |
+|---------------------------|----------|------------|------------------------|-----------------|-----------------|--------------|-------------------------------------|------------------------------------------|
+| [cedric](#cedric)         |          |            |                        |                 |                 |              |                                     |                                          |
+|                           | mst786   |            |                        |                 |                 |              |                                     | [yes](cedric/mst786_ds_v01maite_new.pdf) |
+| [infinity1](#infinity1)   |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
+|                           | msc313   | 1647B      | yes                    | yes             |                 |              |                                     |                                          |
+|                           | msc313d  | 1638B      |                        |                 |                 |              |                                     |                                          |
+| [infinity2m](#infinity2m) |          |            |                        |                 |                 |              |                                     |                                          |
+|                           | msr620   |            |                        |                 |                 |              |                                     |                                          |
+|                           | msr620q  | 1717S      |                        |                 |                 |              |                                     |                                          |
+|                           | ssr621d  | 1945S      | yes                    | yes             | yes             |              |                                     |                                          |
+|                           | ssd201   |            |                        |                 |                 |              | partial                             |
+|                           | ssd202   |            |                        |                 |                 |              | partial                             |
+| [infinity3](#infinity3)   |          |            |                        |                 |                 | yes[0]       |                                     |                                          |
+|                           | msc313e  | 1744B      | yes                    | yes             | yes             |              | [yes](infinity3/msc313e_pb_v03.pdf) |                                          |
+|                           |          | 1916S      |                        |                 |                 |              |                                     |                                          |
+|                           | msc316dc | 1929S      | yes                    | same as msc313e | yes             |              | [yes](infinity3/msc316dc_pb_v03.pdf)|                                          |
+|                           | msc316q  |            |                        |                 |                 |              | [yes](infinity3/msc316q_pb_v01.pdf) |                                          |
+|                           | msc318   |            |                        |                 |                 |              | [yes](infinity3/msc318_pb_v03.pdf)  |                                          |
+| [infinity6](#infinity6)   |          |            |                        |                 |                 |              |                                     |                                          |
+|                           | ssc323   | 1928S      |                        |                 |                 |              |                                     |                                          |
+|                           |          | 1936J      |                        |                 |                 |              |                                     |                                          |
+|                           | ssc325   | 1937S      | yes                    | yes             | yes             |              |                                     |                                          |
+| [mercury2](#mercury2)     |          |            | yes                    |                 |                 |              |                                     |                                          |
+|                           | msc8328  | 1744       |                        |                 | yes             |              |                                     |                                          |
+| [mercury5](#mercury5)     |          |            |                        |                 |                 |              |                                     |                                          |
+|                           | ssc8336  | 1915S      | yes                    |                 | yes             |              |                                     |                                          |
+|                           | ssc8336n | 1918S      | yes                    | yes             | yes             |              |                                     |                                          |
+|                           | ssc8339d | 1838A      |                        |                 |                 |              | yes                                 |                                          |
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
+
+# Mainlining progress
+
+See [mainlining](mainlining.md)
 
 # SoCs
 
@@ -86,7 +99,11 @@ ones.
 - MSD7818
 - MSD7828
 
-## ARM based
+## 32bit ARM based
+
+### Napoli?
+
+- [MSO9810]() - Quad Core ARM Cortex-A9
 
 ### Cedric Family
 
@@ -94,44 +111,60 @@ ones.
 
 ### Infinity IP camera family
 
-#### [Infinity 1](infinity1)
+#### [Infinity1](infinity1)
 - [MSC313](infinity1#msc313) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC313D](infinity1#msc313d) - Probably a Cortex A7 + 128MB DDR3 in a BGA
 
-#### [Infinity 2](infinity2)
+#### [Infinity2](infinity2)
+
+- part numbers not known. there are some references in the SDKs etc to infinity2.
+
+#### [Infinity2m](infinity2)
 
 - part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
 - SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
 - [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag)
+- SSD201?
+- SSD202?
 
-#### [Infinity 3](infinity3)
+#### [Infinity3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 - [MSC316Q](infinity3) - Cortex A7 + 128MB DDR3 in a 256 ball BGA
 - [MSC318](infinity3) - Cortex A7 + 128MB DDR3 in a 324 ball BGA 
 
-#### [Infinity 5](infinity5)
+#### Infinity 4
+
+Doesn't seem to exist.
+
+#### [Infinity5](infinity5)
 - [SSC328Q](infinity5#ssc328q) - Cortex A7 + 256MB DDR3 (this might be i6)
 - [SSC329Q](infinity5#ssc329q) - Cortex A7 + 256MB DDR3 + NPU (this might be i6)
 
-#### [Infinity 6](infinity6)
+#### [Infinity6](infinity6)
 - [SSC323](infinity6#ssc323) - probably Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325](infinity6#ssc325) - Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325DE](infinity6#ssc325de) - Cortex A7 + 128MB DDR3 in a QFN88
 - [SSC326D](infinity6#ssc326d) - Cortex A7 + 128MB DDR3 + NPU
 - [SSC327DE](infinity6#ssc327de) - Cortex A7 + 128MB DDR3
 
+#### [Infinity6b0](infinity6)
+
+- [SSC335]() - probably Cortex A7 + xxx + in a QFN88
+
+#### [Infinity 6e](infinity6)
+
 - Infinity 6e seems to be a dual core variation in this family
 
 ### Mercury family
 
-#### [Mercury 2](mercury2)
+#### [Mercury2](mercury2)
 
 - [AIT8328/MSC8328](mercury2#msc8328) - Probably ARM9
 - [AIT8428](mercury2#ait8428) - Probably ARM9
 
-#### [Mercury 5](mercury5)
+#### [Mercury5](mercury5)
 
 - [SSC8336](mercury5#ssc8336) - Probably Cortex A7 + 64MB DDR2 in a QFP128
 - [SSC8336N](mercury5#ssc8336n) - Cortex A7 + 64MB DDR2 in a 128 pin QFN
@@ -141,6 +174,23 @@ ones.
 
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
 - MSB2531 - Cortex A7 SatNav on a chip
+- SSD201 - Cortex A7
+- SSD202D - Cortex A7
+- SSC337DE - 128 pin? AI enabled.
+  - MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
+
+# 64bit ARM based
+
+According to the code that is in the wild and SigmaStars page there are some Cortex-A53 based chips.
+
+# Non-SoC chips
+
+- SSW101B - Seems to be a wifi chipset.
+
+# Injoinic PMICs
+
+Injoinic seem to be the recommended PMIC vendor for these chips. Maybe like the Allwinner/Xpowers relationship?
+- [Injoinic PMICs](injoinicpmics/index.md)
 
 # IP blocks
 
@@ -149,12 +199,6 @@ See [IP](ip).
 # ISP/Debug Tool
 
 See [ISP](isp).
-
-# Injoinic PMICs
-
-Injoinic seem to be the recommended PMIC vendor for these chips. Maybe like the Allwinner/Xpowers relationship?
-- [Injoinic PMICs](injoinicpmics/index.md)
-
 
 # Blobs, headers, layouts
 
@@ -184,6 +228,11 @@ binwalk -e <firmware.bin>
 extract-dtb.py <extracted firmware dir><uncompressed kernel blob>
 dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
 ```
+
+# Development boards
+
+- [Breadbee](https://github.com/breadbee/breadbee/) (Infinity3 - msc313e)
+- [70mai Midrive D08 a.k.a Dash Cam Lite](boards/dashcamlite.md) (Mercury5)
 
 # Links
 
