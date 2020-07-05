@@ -121,10 +121,11 @@ ones.
 
 #### [Infinity2m](infinity2)
 
-- part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
-- SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
-- SSD201?
-- SSD202?
+references to infinity2m in SDK. seems to be a multi-core part.
+
+- [SSR621D](infinity2#ssr621d) - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
+- [SSD201](infinity2m#ssd201) - Dual Cortex A7 with 64MB of DDR2 in QFN128
+- [SSD202](infinity2m#ssd202) - Dual Cortex A7 with 128MB of DDR3 in a QFN128
 
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=) Maybe "k6lite" family
 - [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) Maybe "k6" family
