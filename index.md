@@ -129,7 +129,7 @@ references to infinity2m in SDK. seems to be a multi-core part.
 
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=) Maybe "k6lite" family
 - [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) Maybe "k6" family
-  - [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag)
+  - [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag) (based on MSR630 being in the source paths in the kernel binary)
 
 #### [Infinity3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
