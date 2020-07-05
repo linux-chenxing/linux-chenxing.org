@@ -12,7 +12,11 @@
 
 # SSD201
 
+- [Data brief](infinity2/SSD201_pb_S_v01.pdf)
+
 # SSD202
+
+- [Data brief](infinity2/SSD202D_pb_S_v01.pdf)
 
 # SSD201/SSD202
 
