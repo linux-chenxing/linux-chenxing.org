@@ -178,6 +178,7 @@ Doesn't seem to exist.
 - SSD202D - Cortex A7
 - SSC337DE - 128 pin? AI enabled.
   - MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
+- [MSW8535N](misc/MSW8535N_Datasheet.pdf) - ARM9 based feature phone chip?
 
 # 64bit ARM based
 
