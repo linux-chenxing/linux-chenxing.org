@@ -189,7 +189,7 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 
 # Non-SoC chips
 
-- SSW101B - Seems to be a wifi chipset.
+- SSW101B - Seems to be a wifi chip, maybe based on the same core as the XR819. See [xradio](https://github.com/fifteenhex/xradio).
 
 # Injoinic PMICs
 
