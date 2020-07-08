@@ -121,12 +121,15 @@ ones.
 
 #### [Infinity2m](infinity2)
 
-- part numbers not known, references to infinity2m in SDK. seems to be a multi-core part.
-- SSR621D - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
-- [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=)
-- [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag)
-- SSD201?
-- SSD202?
+references to infinity2m in SDK. seems to be a multi-core part.
+
+- [SSR621D](infinity2#ssr621d) - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
+- [SSD201](infinity2#ssd201) - Dual Cortex A7 with 64MB of DDR2 in QFN128
+- [SSD202](infinity2#ssd202) - Dual Cortex A7 with 128MB of DDR3 in a QFN128
+
+- [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=) Maybe "k6lite" family
+- [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) Maybe "k6" family
+  - [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag) (based on MSR630 being in the source paths in the kernel binary)
 
 #### [Infinity3](infinity3)
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
@@ -178,6 +181,7 @@ Doesn't seem to exist.
 - SSD202D - Cortex A7
 - SSC337DE - 128 pin? AI enabled.
   - MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
+- [MSW8535N](misc/MSW8535N_Datasheet.pdf) - ARM9 based feature phone chip?
 
 # 64bit ARM based
 
@@ -185,7 +189,7 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 
 # Non-SoC chips
 
-- SSW101B - Seems to be a wifi chipset.
+- SSW101B - Seems to be a wifi chip, maybe based on the same core as the XR819. See [xradio](https://github.com/fifteenhex/xradio).
 
 # Injoinic PMICs
 

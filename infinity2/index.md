@@ -10,6 +10,14 @@
 
 [vendor page](https://www.tp-link.com.cn/product_1497.html#tag)
 
+# SSD201
+
+- [Data brief](SSD201_pb_S_v01.pdf)
+
+# SSD202
+
+- [Data brief](SSD202D_pb_S_v01.pdf)
+
 # SSD201/SSD202
 
 ## Pinout
