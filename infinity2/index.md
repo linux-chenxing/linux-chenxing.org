@@ -20,6 +20,12 @@
 
 # SSD201/SSD202
 
+# Known Devices
+
+## SSD201_HT_V2
+
+[see](ssd201_ht_v2/)
+
 ## Pinout
 
 | #  | name         | #  | name        | #  | name      | #   | name           |
