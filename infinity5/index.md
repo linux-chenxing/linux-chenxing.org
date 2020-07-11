@@ -5,6 +5,8 @@ The vendor kernel for these seems to be 4.9.84.
 
 ## SSC328Q
 
+- Chip id 0xed
+
 ![SSC328Q block diagram](ssc328q_blockdiagram.png)
 
 ### Known Devices
