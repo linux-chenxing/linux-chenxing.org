@@ -118,7 +118,8 @@ ones.
 
 #### [Infinity2](infinity2)
 
-- part numbers not known. there are some references in the SDKs etc to infinity2.
+- part numbers not known. there are some references in the SDKs etc to infinity2 and it seems
+  to be dual Cortex A9
 
 #### [Infinity2m](infinity2)
 
