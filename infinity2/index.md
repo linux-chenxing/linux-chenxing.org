@@ -1,7 +1,5 @@
 # MSR620 / SSR621D
 
-- Chip id: 0xf0
-
 # Known Devices
 
 ## TL-NVR6108C-B
@@ -10,15 +8,20 @@
 
 [vendor page](https://www.tp-link.com.cn/product_1497.html#tag)
 
-# SSD201
+# SSD201/SSD202
+
+Seems to be all of the base stuff the other chips have with an extra ethernet
+controller, a video decoder intead of encoder etc.
+
+- Chip id: 0xf0
+
+## SSD201
 
 - [Data brief](SSD201_pb_S_v01.pdf)
 
-# SSD202
+## SSD202
 
 - [Data brief](SSD202D_pb_S_v01.pdf)
-
-# SSD201/SSD202
 
 # Known Devices
 
