@@ -557,3 +557,9 @@ BACH is a fairly generic DMA engine with a DAC attached audio block.
 ### AI/NN
 
 Some chips seem to contain a [CEVA XM6](https://www.ceva-dsp.com/product/ceva-xm6/).
+
+### SMP glue
+
+For the infinity2, 2m and 6e where there is a second core there are registers to set
+the entry address for the secondary core and then a register that presumably unlocks
+the reset line of the second core and lets it go.
