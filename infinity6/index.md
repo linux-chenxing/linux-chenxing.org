@@ -79,3 +79,14 @@ The vendor kernel for these seems to be 4.9.84.
 - [Sigmastar page](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=380&lcid=55&pid=)
 
 ![SSC326D block diagram](ssc326d_blockdiagram.png)
+
+## SSC335
+
+### SSC335DE
+
+## SSC337
+
+- Chip id: 0xf2
+
+### SSC337DE
+
