@@ -158,8 +158,8 @@ Doesn't seem to exist.
 
 #### [Infinity6b0](infinity6)
 
-- [SSC335DE]() - probably Cortex A7 +  ?? + in a QFN88
-- [SSC337DE]() - probably Cortex A7 +  128MB DDR3 + in a QFN128
+- [SSC335DE](infinity6#ssc335) - probably Cortex A7 +  ?? + in a QFN88
+- [SSC337DE](infinity6#ssc337) - probably Cortex A7 +  128MB DDR3 + in a QFN128
 
 #### [Infinity 6e](infinity6)
 
