@@ -46,7 +46,7 @@ at some point.
 This table is an attempt to collect all of the different part numbers for
 the different families and the resources that have been found to reverse engineer each of them.
 
-If possible the data codes will have the earliest known date code so that we can tell roughly
+If possible the data codes will have the earliest and latest known date codes so that we can tell roughly
 when each type of chip was produced.
 
 | family                    | part     | date codes | sample device acquired | boot rom dumped | firmware dumped | SDK acquired | product brief acquired              | datasheet acquired                       |
@@ -78,6 +78,7 @@ when each type of chip was produced.
 | [mercury5](#mercury5)     |          |            |                        |                 |                 |              |                                     |                                          |
 |                           | ssc8336  | 1915S      | yes                    |                 | yes             |              |                                     |                                          |
 |                           | ssc8336n | 1918S      | yes                    | yes             | yes             |              |                                     |                                          |
+|                           |          | 1936S      |                        |                 |                 |              |                                     |                                          |
 |                           | ssc8339d | 1838A      |                        |                 |                 |              | yes                                 |                                          |
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
