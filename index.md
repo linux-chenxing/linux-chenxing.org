@@ -89,6 +89,8 @@ See [mainlining](mainlining.md)
 
 # SoCs
 
+Spotted a chip that isn't here? Please see [adding new chips](addingnewchips.md).
+
 ## MIPS based
 
 MStar used to make a lot of MIPS based SoCs for STBs. These aren't that
