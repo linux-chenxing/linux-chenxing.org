@@ -72,6 +72,7 @@ when each type of chip was produced.
 |                           | ssc323   | 1928S      |                        |                 |                 |              |                                     |                                          |
 |                           |          | 1936J      |                        |                 |                 |              |                                     |                                          |
 |                           | ssc325   | 1937S      | yes                    | yes             | yes             |              |                                     |                                          |
+| [infinity6b0](#infinity6) | ssc335   |            |                        |                 |                 |              |                                     |                                          |
 | [mercury2](#mercury2)     |          |            | yes                    |                 |                 |              |                                     |                                          |
 |                           | msc8328  | 1744       |                        |                 | yes             |              |                                     |                                          |
 | [mercury5](#mercury5)     |          |            |                        |                 |                 |              |                                     |                                          |
@@ -156,7 +157,7 @@ Doesn't seem to exist.
 
 #### [Infinity6b0](infinity6)
 
-- [SSC335]() - probably Cortex A7 + xxx + in a QFN88
+- [SSC335DE]() - probably Cortex A7 + 128MB + in a QFN88
 
 #### [Infinity 6e](infinity6)
 
