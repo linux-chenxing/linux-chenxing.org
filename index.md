@@ -164,6 +164,7 @@ Doesn't seem to exist.
 
 - [SSC335DE](infinity6#ssc335) - probably Cortex A7 +  ?? + in a QFN88
 - [SSC337DE](infinity6#ssc337) - probably Cortex A7 +  128MB DDR3 + in a QFN128
+-- MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
 
 #### [Infinity 6e](infinity6)
 
@@ -186,10 +187,6 @@ Doesn't seem to exist.
 
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
 - MSB2531 - Cortex A7 SatNav on a chip
-- SSD201 - Cortex A7
-- SSD202D - Cortex A7
-- SSC337DE - 128 pin? AI enabled.
-  - MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
 - [MSW8535N](misc/MSW8535N_Datasheet.pdf) - ARM9 based feature phone chip?
 
 # 64bit ARM based
