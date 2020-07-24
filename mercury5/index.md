@@ -135,6 +135,7 @@ MVX1##I3gb83f2cbCMN_ROM######XVM
 ##### 70mai Midrive D06 drive recorder
 
 - [fcc.io internal photos](https://fccid.io/2AOK9-MIDRIVED06/Internal-Photos/internal-photos-4252299)
+- Almost the same as the D08 just without the screen.
 
 ##### [70mai Midrive D08 Smart dash cam](../boards/dashcamlite.md)
 
