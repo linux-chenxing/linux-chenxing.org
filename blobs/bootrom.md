@@ -22,8 +22,12 @@ At the end of the Boot ROM for infinity 3 forward there seems to be an ASCII tag
  - E:F - This seems to mean that the MBR, partition with the IPL etc isn't right.
  - NF - Seems to mean the IPL file was not found in the FAT16 partition
  - F1 - Seems to mean the first IPL block couldn't be loaded
- 
- ## Dumping
+
+## SMP
+
+For SMP systems all cores boot the same boot ROM but all CPUs other than 0 stop in a loop that waits for an interrupt and checks if the boot address and magic number are valid. When an interrupt comes and the registers are valid the secondary CPU will jump to the address.
+
+## Dumping
  
  Enable capture in minicom and then at the u-boot prompt enter
  
