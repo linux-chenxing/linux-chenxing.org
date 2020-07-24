@@ -22,3 +22,16 @@ At the end of the Boot ROM for infinity 3 forward there seems to be an ASCII tag
  - E:F - This seems to mean that the MBR, partition with the IPL etc isn't right.
  - NF - Seems to mean the IPL file was not found in the FAT16 partition
  - F1 - Seems to mean the first IPL block couldn't be loaded
+ 
+ ## Dumping
+ 
+ Enable capture in minicom and then at the u-boot prompt enter
+ 
+ ```
+ md.b 0x0 0x8000
+ ```
+ Then clean up the header and footer of the capture so there are no extra lines and use [uboot-mdb-dump](https://github.com/gmbnomis/uboot-mdb-dump) to turn the dump into a binary. Make sure the binary has a tag at the end. Some ROMs are 16KB and some are 32KB so check the 32KB dump to see if it repeats and turncate it with dd if needed like so:
+ 
+ ```
+ dd if=bootrom.bin of=fixed_bootrom.bin bs=1024 count=16
+ ```
