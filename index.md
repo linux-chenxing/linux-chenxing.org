@@ -36,7 +36,7 @@ at some point.
 |                          | boots to shell from initramfs | boots to shell from local storage | full system from local storage with network etc | boots without blobs (no vendor IPL) | smp |
 |--------------------------|-------------------------------|-----------------------------------|-------------------------------------------------|-------------------------------------|-----|
 | [infinity1](#infinity1)  | yes                           | yes                               | yes                                             |                                     |     |
-| [infinity2m](#infinity2) | yes                           |                                   |                                                 |                                     | wip |
+| [infinity2m](#infinity2) | yes                           |                                   |                                                 |                                     | yes |
 | [infinity3](#infinity3)  | yes                           | yes                               | yes                                             |                                     |     |
 | [infinity6](#infinity6)  | wip                           | wip                               | wip                                             |                                     |     |
 | [mercury5](#mercury5)    | yes                           | yes                               | yes                                             | yes                                 |     |
