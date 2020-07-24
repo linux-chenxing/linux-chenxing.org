@@ -29,6 +29,7 @@ at some point.
 | [infinity2m](#infinity2m) | wip                             | wip                      |
 | [infinity3](#infinity3)   | yes                             | yes                      |
 | [infinity6](#infinity6)   | wip                             | wip                      |
+| [infinity6b0](#infinity6) | wip                             | wip                      |
 | [mercury5](#mercury5)     | yes                             | yes                      |
 
 ## linux
@@ -39,6 +40,7 @@ at some point.
 | [infinity2m](#infinity2) | yes                           |                                   |                                                 |                                     | yes |
 | [infinity3](#infinity3)  | yes                           | yes                               | yes                                             |                                     |     |
 | [infinity6](#infinity6)  | wip                           | wip                               | wip                                             |                                     |     |
+| [infinity6b0](#infinity6)| yes                           | wip                               | wip                                             |                                     |     |
 | [mercury5](#mercury5)    | yes                           | yes                               | yes                                             | yes                                 |     |
 
 # Reverse Engineering Progress
