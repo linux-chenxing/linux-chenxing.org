@@ -47,15 +47,15 @@ controller, a video decoder intead of encoder etc.
 | 12 | VDD          | 44 | VDDIO_DATA  | 76 | VDDP_1    |               | 108 | ETH_RP         |
 | 13 | AVDD_XTAL    | 45 | VDDIO_DATA  | 77 | VDD       |               | 109 | ETH_TN         |
 | 14 | XTAL_IN      | 46 | AVDDIO_DRAM | 78 | VDD       |               | 110 | ETH_TP         |
-| 15 | XTAL_OUT     | 47 | AVSSIO_DQ   | 79 | TTL16     |               | 111 | DP_P2          |
-| 16 | SE_XTAL_OUT  | 48 | AVDD_PLL    | 80 | TTL17     |               | 112 | DM_P2          |
+| 15 | XTAL_OUT     | 47 | AVSSIO_DQ   | 79 | TTL16     | mdio?         | 111 | DP_P2          |
+| 16 | SE_XTAL_OUT  | 48 | AVDD_PLL    | 80 | TTL17     | mdc?          | 112 | DM_P2          |
 | 17 | AVDD_RTC     | 49 | DVDD_DDR    | 81 | TTL18     |               | 113 | AVDD_USB       |
 | 18 | XTAL_IN_32K  | 50 | DVDD_DDR_RX | 82 | TTL19     |               | 114 | AVDD_AUD       |
 | 19 | XTAL_OUT_32K | 51 | VDD         | 83 | TTL20     | rmii_rxd0?    | 115 | AUD_LINEOUT_R0 |
 | 20 | SAR_GPIO2    | 52 | FUART_RX    | 84 | TTL21     | rmii_rxd1?    | 116 | AUD_LINEOUT_L0 |
 | 21 | SAR_GPIO1    | 53 | FUART_TX    | 85 | TTL22     | rmii_txd0?    | 117 | AUD_MICCM0     |
 | 22 | SAR_GPIO0    | 54 | FUART_CTS   | 86 | TTL23     | rmii_txd1?    | 118 | AUD_MICIN0     |
-| 23 | AVDD_NODIE   | 55 | FUART_RTS   | 87 | TTL24     |               | 119 | AUD_VRM_DAC    |
+| 23 | AVDD_NODIE   | 55 | FUART_RTS   | 87 | TTL24     | rmii_txen?    | 119 | AUD_VRM_DAC    |
 | 24 | GND_EFUSE    | 56 | TTL0        | 88 | TTL25     |               | 120 | AUD_VAG        |
 | 25 | VDD          | 57 | TTL1        | 89 | TTL26     |               | 121 | GPIO4          |
 | 26 | PM_SPI_CZ    | 58 | TTL2        | 90 | TTL27     |               | 122 | GPIO5          |
