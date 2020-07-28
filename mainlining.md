@@ -18,8 +18,10 @@ The current patcheset is at V4 and can be seen on [patchwork](https://patchwork.
 
 Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting now works.
 
-## Round 3: Push i2m/SMP support?
+## Round 3: Interrupt controllers?
 
-## Round 4: Interrupt controllers?
+**PREPARING**
 
-## Round 5: Clocks?
+## Round 4: Clocks?
+
+## Round 5: Push i2m/SMP support?
