@@ -37,6 +37,8 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 ## Interrupt controllers
 
+[more info](intc.md)
+
 ### IRQ intc
 
 64 interrupts forwarded to the GIC
