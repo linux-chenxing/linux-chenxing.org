@@ -22,6 +22,14 @@ Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting n
 
 **PREPARING**
 
-## Round 4: Clocks?
+- RFC sent
+
+## Round 4: Initial clocks
+
+Try to add push the DT nodes for as many of the fixed clocks a possible.
+
+## Round 5: MPLL
+
+## Round 6: DW uart quirk + wiring for mstar
 
 ## Round 5: Push i2m/SMP support?
