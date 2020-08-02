@@ -192,21 +192,17 @@ the system memory.
 
 ## Crypto
 
-### AESDMA
+### RNG
 
-The AESDMA peripheral seems to be able to perform following operations:
-- AES
-- RSA
-- SHA-1 / SHA-256
-- RND (random generator)
+RNG block registermap:
 
-RND block registermap:
-
-| Offset | Name  | Comment |
-| ---    | ---   | ---     |
-| 0x00   | CTRL | bit7 - enable/initialize? |
-| 0x08   | VALUE | The output value. Ready when STATUS[0] is 1 |
+| Offset | Name   | Comment |
+|--------|--------| ---     |
+| 0x00   | CTRL   | bit7 - enable/initialize? |
+| 0x08   | VALUE  | The output value. Ready when STATUS[0] is 1 |
 | 0x0C   | STATUS | bit0 - ready |
+
+### SHA
 
 SHA block registermap:
 
@@ -227,6 +223,10 @@ SHA block registermap:
 | 0x40-0x5f | VALUE | When reading - the output value, when writing - initial hash value (big endian) |
 | 0xB8   | WORD_CNT_L | count in 4-byte words, lower 16 bits |
 | 0xBC   | WORD_CNT_H | higher 16 bits |
+
+### RSA
+
+### AESDMA
 
 On infinity3 the base address is 0x1f224400
 
