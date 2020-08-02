@@ -14,18 +14,18 @@ RNG block registermap:
 
 SHA block registermap:
 
-| Offset    | Name       | 15 | 14          | 13             | 12 | 11 | 10 | 9         | 8 | 7 | 6        | 5 | 4 | 3 | 2    | 1              | 0 | Comment                                                                          |
-|-----------|------------|----|-------------|----------------|----|----|----|-----------|---|---|----------|---|---|---|------|----------------|---|----------------------------------------------------------------------------------|
-| 0x20      | CTRL       |    | CTRL_MANUAL | CTRL_INIT_HASH |    |    |    | CTRL_MODE |   |   | CTRL_CLR |   |   |   |      | CTRL_FIRE_ONCE |   | write 1 to fire once,  0 = SHA-1  1 = SHA-256  enable/disable initial hash value |
-| 0x28      | BUF_ADDR_L |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   |                                                                                  |
-| 0x2C      | BUF_ADDR_H |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   |                                                                                  |
-| 0x30      | BUF_LEN_L  |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   |                                                                                  |
-| 0x34      | BUF_LEN_H  |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   |                                                                                  |
-| 0x38      | BUF_ADDR_L |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   |                                                                                  |
-| 0x3C      | STATUS     |    |             |                |    |    |    |           |   |   |          |   |   |   | BUSY | READY          |   |                                                                                  |
-| 0x40-0x5f | VALUE      |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   | When reading - the output value, when writing - initial hash value (big endian)  |
-| 0xB8      | WORD_CNT_L |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   | count in 4-byte words, lower 16 bits                                             |
-| 0xBC      | WORD_CNT_H |    |             |                |    |    |    |           |   |   |          |   |   |   |      |                |   | higher 16 bits                                                                   |
+| Offset    | Name       | 15 | 14          | 13             | 12 | 11 | 10 | 9         | 8 | 7    | 6        | 5    | 4 | 3 | 2    | 1              | 0 | Comment                                                                          |
+|-----------|------------|----|-------------|----------------|----|----|----|-----------|---|------|----------|------|---|---|------|----------------|---|----------------------------------------------------------------------------------|
+| 0x20      | CTRL       |    | CTRL_MANUAL | CTRL_INIT_HASH |    |    |    | CTRL_MODE |   |      | CTRL_CLR |      |   |   |      | CTRL_FIRE_ONCE |   | write 1 to fire once,  0 = SHA-1  1 = SHA-256  enable/disable initial hash value |
+| 0x28      | SRC_L      |    |             |                |    |    |    |           |   |      |          |      |   |   |      |                |   |                                                                                  |
+| 0x2C      | SRC_H      |    |             |                |    |    |    |           |   |      |          |      |   |   |      |                |   |                                                                                  |
+| 0x30      | LEN_L      |    |             |                |    |    |    |           |   |      |          |      |   |   |      |                |   |                                                                                  |
+| 0x34      | LEN_H      |    |             |                |    |    |    |           |   |      |          |      |   |   |      |                |   |                                                                                  |
+| 0x38      | MIUSEL     |    |             |                |    |    |    |           |   | MIU0 |          | MIU1 |   |   |      |                |   |                                                                                  |
+| 0x3C      | STATUS     |    |             |                |    |    |    |           |   |      |          |      |   |   | BUSY | READY          |   |                                                                                  |
+| 0x40-0x5f | VALUE      |    |             |                |    |    |    |           |   |      |          |      |   |   |      |                |   | When reading - the output value, when writing - initial hash value (big endian)  |
+| 0xB8      | WORD_CNT_L |    |             |                |    |    |    |           |   |      |          |      |   |   |      |                |   | count in 4-byte words, lower 16 bits                                             |
+| 0xBC      | WORD_CNT_H |    |             |                |    |    |    |           |   |      |          |      |   |   |      |                |   | higher 16 bits                                                                   |
 
 ### RSA
 
