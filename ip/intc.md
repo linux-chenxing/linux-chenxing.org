@@ -1,5 +1,8 @@
 # non-pm interrupt controllers
 
+According to a developer at MediaTek this is the same IP as is in some MediaTek chips.
+See this [thread](https://lore.kernel.org/linux-arm-kernel/654a81dcefb3024d762ff338d4bd7f14@kernel.org/T/#m9afc5a57195be881661dcf6ea77a1e299f36d9f6).
+
 ```
 /* The MSC313 contains two interrupt controllers that are almost identical.
  * The first one handles "FIQ" interrupts and the second handles "IRQ"
