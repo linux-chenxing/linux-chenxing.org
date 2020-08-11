@@ -259,3 +259,7 @@ dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
 
 - [aiwinn](http://www.aiwinn.com/) - seems to supply a bunch of AI enabled things based on SigmaStar SoCs
 
+## Buying chips
+
+See [wheretobuy](wheretobuy.md)
+
