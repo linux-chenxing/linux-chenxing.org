@@ -200,6 +200,10 @@ Doesn't seem to exist.
 
 According to the code that is in the wild and SigmaStars page there are some Cortex-A53 based chips.
 
+# MediaTek chips that contain have some MStar heritage
+
+- MT53xx
+
 # Non-SoC chips
 
 - SSW101B - Seems to be a wifi chip, maybe based on the same core as the XR819. See [xradio](https://github.com/fifteenhex/xradio).
@@ -254,3 +258,4 @@ dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
 # Links
 
 - [aiwinn](http://www.aiwinn.com/) - seems to supply a bunch of AI enabled things based on SigmaStar SoCs
+
