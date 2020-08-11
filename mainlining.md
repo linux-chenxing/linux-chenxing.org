@@ -23,6 +23,7 @@ Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting n
 **PREPARING**
 
 - RFC sent
+- MediaTek are pushing a driver for the same intc so we'll be using that instead.
 
 ## Round 4: Initial clocks
 
