@@ -213,6 +213,12 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 Injoinic seem to be the recommended PMIC vendor for these chips. Maybe like the Allwinner/Xpowers relationship?
 - [Injoinic PMICs](injoinicpmics/index.md)
 
+# Silan chips
+
+Silan MEMs accelerometers seem to be used for a lot of the dash cam devices.
+
+- [Silan chips](silanchips/)
+
 # IP blocks
 
 See [IP](ip).
