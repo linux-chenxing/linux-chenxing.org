@@ -217,7 +217,7 @@ Injoinic seem to be the recommended PMIC vendor for these chips. Maybe like the 
 
 Silan MEMs accelerometers seem to be used for a lot of the dash cam devices.
 
-- [Silan chips](silanchips/)
+- [Silan chips](silan/)
 
 # IP blocks
 
