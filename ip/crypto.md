@@ -4,11 +4,11 @@
 
 RNG block registermap:
 
-| Offset | Name   | Comment |
-|--------|--------| ---     |
-| 0x00   | CTRL   | bit7 - enable/initialize? |
-| 0x08   | VALUE  | The output value. Ready when STATUS[0] is 1 |
-| 0x0C   | STATUS | bit0 - ready |
+| Offset | Name   | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7       | 6 | 5 | 4 | 3 | 2 | 1            | 0      | Comment                                     |
+|--------|--------|----|----|----|----|----|----|---|---|---------|---|---|---|---|---|--------------|--------|---------------------------------------------|
+| 0x00   | CTRL   |    |    |    |    |    |    |   |   | enable? |   |   |   |   |   | 1 by default |        |                                             |
+| 0x08   | VALUE  |    |    |    |    |    |    |   |   |         |   |   |   |   |   |              |        | The output value. Ready when STATUS[0] is 1 |
+| 0x0C   | STATUS |    |    |    |    |    |    |   |   |         |   |   |   |   |   |              | ready? |                                             |
 
 ### SHA
 
