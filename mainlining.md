@@ -20,17 +20,12 @@ Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting n
 
 ## Round 3: Interrupt controllers?
 
-**PREPARING**
+**WAITING**
 
-- RFC sent
-- MediaTek are pushing a driver for the same intc so we'll be using that instead.
+- MediaTek are pushing a driver for the same intc. Waiting for that to merge before pushing the DTS parts we need.
 
-## Round 4: Initial clocks
+## Round 4: Initial clocks, MPLL, PLL gater, clock gates
 
-Try to add push the DT nodes for as many of the fixed clocks a possible.
+## Round 5: DW uart quirk + wiring for mstar
 
-## Round 5: MPLL
-
-## Round 6: DW uart quirk + wiring for mstar
-
-## Round 5: Push i2m/SMP support?
+## Round 6: Push i2m/SMP support?
