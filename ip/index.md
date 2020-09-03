@@ -105,6 +105,7 @@ added to read the two 16 bit parts and stitch them back together.
 For some peripherals there seems to be a second way to access the registers that uses the same
 offsets as the RIU but presents 32bit wide registers. For example on i3 the emac is present
 as split registers at ```0x1f2a2000``` and 32bit wide registers with the same offsets at ```0x1f343c00```.
+For i1 only the split interface exists.
 
 ### IMI
 
