@@ -23,11 +23,15 @@ controller, a video decoder intead of encoder etc.
 
 - [Data brief](SSD202D_pb_S_v01.pdf)
 
-# Known Devices
+## Known Devices
 
-## SSD201_HT_V2
+### SSD201_HT_V2
 
 [see](ssd201_ht_v2/)
+
+### [ido-som2d01](http://www.wireless-tag.cn/portfolio/ido-som2d01-2/)
+
+Cheap solder down IoT module.
 
 ## Pinout
 
