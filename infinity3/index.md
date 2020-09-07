@@ -67,6 +67,7 @@ MVX1##I3g4f6d5e0CMN_ROM######XVM
 #### Documentation
 
 - [Data-brief](msc316dc_pb_v03.pdf)
+- [Pinout](pinouts.md#88-pin-qfn)
 
 #### Known devices
 
