@@ -9,7 +9,7 @@ The vendor kernel for these seems to be 4.9.84.
 
 ## SSC323
 
-- Single Cortex A7 with 64MB of DDR
+- Single Cortex A7 with 64MB of DDR2
 - Apparently no ethernet.
 - [pinout](pinouts.md#88-pin-qfn)
 
@@ -17,12 +17,11 @@ The vendor kernel for these seems to be 4.9.84.
 
 - [IMILAB Home Security Camera A1](https://fccid.io/2APA9-IPC019E/Internal-Photos/Internal-Photos-4644200)
 
-## SSC325
+## SSC325(D)
 
 - [Sigmastar page](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=378&lcid=55&pid=)
-
+- Single Cortex A7 with 64MB of DDR2 or 128MB of DDR3
 - Chip id: 0xef
-
 - [pinout](pinouts.md#88-pin-qfn)
 
 ### BootROM tag
@@ -44,4 +43,3 @@ The vendor kernel for these seems to be 4.9.84.
 - Chip id: 0xf2
 
 ### SSC337DE
-
