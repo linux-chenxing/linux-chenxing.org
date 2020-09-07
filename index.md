@@ -195,6 +195,7 @@ Doesn't seem to exist.
 - SSC8668G
 - SSC8539
 - SSA520
+- SSD203D
 
 # 64bit ARM based
 
