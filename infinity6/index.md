@@ -9,6 +9,10 @@ The vendor kernel for these seems to be 4.9.84.
 
 ## SSC323
 
+- Single Cortex A7 with 64MB of DDR
+- Apparently no ethernet.
+- [pinout](pinouts.md#88-pin-qfn)
+
 ### Known devices
 
 - [IMILAB Home Security Camera A1](https://fccid.io/2APA9-IPC019E/Internal-Photos/Internal-Photos-4644200)
