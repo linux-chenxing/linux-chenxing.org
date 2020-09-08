@@ -190,7 +190,7 @@ Doesn't seem to exist.
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
 - MSB2531 - Cortex A7 SatNav on a chip
 - [MSW8535N](misc/MSW8535N_Datasheet.pdf) - ARM9 based feature phone chip?
-- SSC8629D
+- SSC8629D - AI enabled
 - SSC8629Q
 - SSC8668G
 - SSC8539
