@@ -1,5 +1,18 @@
 ## Clock
 
+### Clock Tree
+
+```
+       
+         |-----\    |-------\
+         |      |---| cpupll |  
+         |      |   |-------/
+  xtal---| mpll |
+         |      |
+         |      |
+         |-----/
+```
+
 ### MPLL
 
 Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
