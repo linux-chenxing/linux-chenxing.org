@@ -29,6 +29,14 @@
 
 Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
 
+| offset        | 15 | 14 | 13                    | 12                    | 11 | 10 | 9                   | 8                   | 7                    | 6                    | 5                    | 4                    | 3                    | 2                    | 1                    | 0                    | notes |
+|---------------|----|----|-----------------------|-----------------------|----|----|---------------------|---------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|-------|
+| test?         |    |    |                       |                       |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      |                      |       |
+| power control |    |    |                       |                       |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      | mpll_pd              |       |
+| config 1      |    |    |                       |                       |    |    | mpll_loop_div_first | mpll_loop_div_first |                      |                      | mpll_input_div_first | mpll_input_div_first |                      |                      |                      |                      |       |
+| config 2      |    |    | mpll_output_div_first | mpll_output_div_first |    |    |                     |                     | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second |       |
+| status        |    |    |                       | mpll_lock             |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      |                      |       |
+
 ### UPLL
 
 This seems to generate 320MHz and 384MHz clocks for the USB phys/controllers
