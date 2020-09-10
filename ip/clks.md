@@ -37,16 +37,18 @@ This is a rough guess.
 
 Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
 
-| offset        | 15 | 14 | 13                    | 12                    | 11 | 10 | 9                   | 8                   | 7                    | 6                    | 5                    | 4                    | 3                    | 2                    | 1                    | 0                    | notes |
-|---------------|----|----|-----------------------|-----------------------|----|----|---------------------|---------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|-------|
-| test?         |    |    |                       |                       |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      |                      |       |
-| power control |    |    |                       |                       |  ? |  ? | ?                   | ?                   |                      |                      |                      |                      |                      |                      |                      | mpll_pd              |       |
-| config 1      |    |    |                       |                       |    |    | mpll_loop_div_first | mpll_loop_div_first |                      |                      | mpll_input_div_first | mpll_input_div_first |                      |                      |                      |                      |       |
-| config 2      |    |    | mpll_output_div_first | mpll_output_div_first |    |    |                     |                     | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second |       |
-| status        |    |    |                       | mpll_lock             |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      |                      |       |
+| name          | offset | 15 | 14 | 13                    | 12                    | 11 | 10 | 9                   | 8                   | 7                    | 6                    | 5                    | 4                    | 3                    | 2                    | 1                    | 0                    | notes |
+|---------------|--------|----|----|-----------------------|-----------------------|----|----|---------------------|---------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|-------|
+| test?         | 0x0    |    |    |                       |                       |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      |                      |       |
+| power control | 0x4    |    |    |                       |                       | ?  | ?  | ?                   | ?                   |                      |                      |                      |                      |                      |                      |                      | mpll_pd              |       |
+| config 1      | 0x8    |    |    |                       |                       |    |    | mpll_loop_div_first | mpll_loop_div_first |                      |                      | mpll_input_div_first | mpll_input_div_first |                      |                      |                      |                      |       |
+| config 2      | 0xc    |    |    | mpll_output_div_first | mpll_output_div_first |    |    |                     |                     | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second |       |
+| status        | 0x10   |    |    |                       | mpll_lock             |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      |                      |       |
 
 The main frequency of the PLL is calculated like this ```((f_input / input_div_first) * (loop_div_first * loop_div_second)) / output_div_first```.
 Default settings seem to be to give a 432MHz output. Power control should contain bit to power on various dividers that generate the other mpll outputs.
+
+M5 coming out of reset has bits 11 to 8 in the power control register set high.
 
 ### UPLL
 
