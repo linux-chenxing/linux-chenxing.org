@@ -233,6 +233,8 @@ See [Crypto](crypto.md)
 
 ### Cadence EMAC
 
+This seems to be the same as the version in the AT92RM200. [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-1768-32-bit-ARM920T-Embedded-Microprocessor-AT91RM9200_Datasheet.pdf)
+
 #### Support Matrix
 
 |           | u-boot | linux |
