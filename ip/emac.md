@@ -18,6 +18,5 @@ code for the AT91RM200
   registers are also accessible unsplit via XIU.
 
 - AT91RM200 datasheet says the RX descriptor counter wraps at 1024
-  descriptors if there isn't a wrap marked descriptor. This version
-  of the IP always wraps at the 8th descriptor and never fills more
-  if provided.
+  descriptors if there isn't a wrap marked descriptor. In this version
+  of the IP the counter wraps at the 8th descriptor.
