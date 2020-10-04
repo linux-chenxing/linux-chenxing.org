@@ -13,7 +13,7 @@ code for the AT91RM200
 
 ## Known differences from the AT91RM200
 
-- Registers have the weird split and spacing because of the bus they
+- Registers have the weird split and spacing because they
   are connected to the CPU via RIU. For the MSC313e and beyond the
   registers are also accessible unsplit via XIU.
 
