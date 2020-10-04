@@ -233,7 +233,12 @@ See [Crypto](crypto.md)
 
 ### Cadence EMAC
 
-This seems to be the same as the version in the AT92RM200. [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-1768-32-bit-ARM920T-Embedded-Microprocessor-AT91RM9200_Datasheet.pdf)
+[More details](emac.md)
+
+Based on the comments for the registers in the vendor code
+this seems to be the same as the version in the AT91RM200
+as they match up almost exactly with the comments for some
+official code for the AT91RM200.
 
 #### Support Matrix
 
