@@ -18,14 +18,16 @@ The current patcheset is at V4 and can be seen on [patchwork](https://patchwork.
 
 Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting now works.
 
-## Round 3: Interrupt controllers?
+## Round 3: Interrupt controllers
 
-**WAITING**
-
-- MediaTek are pushing a driver for the same intc. Waiting for that to merge before pushing the DTS parts we need.
+**DONE** 5.10
 
 ## Round 4: Initial clocks, MPLL, PLL gater, clock gates
 
 ## Round 5: DW uart quirk + wiring for mstar
 
 ## Round 6: Push i2m/SMP support?
+
+## Round 7: Pinctrl?
+
+## Round 8: GPIO??
