@@ -96,16 +96,18 @@ and DMA capable perpherials like USB, Ethernet and so on.
 
 ### RIU
 
-RIU of "register interface unit" is a brige between the CPU and perpherial registers.
+RIU or "register interface unit" is a brige between the CPU and perpherial registers.
 It's fairly straight forward for the most part with one annoying quirk; 32 bit registers
 are split into two 16 bit locations that are spaced 4 bytes apart. This means that
 any existing drivers that expect 32 bit registers aligned to 4 bytes needs to have a quirk
 added to read the two 16 bit parts and stitch them back together.
 
-For some peripherals there seems to be a second way to access the registers that uses the same
-offsets as the RIU but presents 32bit wide registers. For example on i3 the emac is present
-as split registers at ```0x1f2a2000``` and 32bit wide registers with the same offsets at ```0x1f343c00```.
-For i1 only the split interface exists.
+### XIU
+
+XIU, may eXtended interface unit?, seems to be a second way to access the registers that uses the same
+offsets as the RIU but presents 32bit wide registers for selected blocks like the EMAC and USB.
+For example on i3 the EMAC is present as split registers at ```0x1f2a2000``` and 32bit wide registers
+with the same offsets at ```0x1f343c00```. For i1 only the split interface exists.
 
 ### IMI
 
