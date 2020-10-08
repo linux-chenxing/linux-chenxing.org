@@ -12,7 +12,7 @@ to 0x1f00xxxx.
 ### sleep intc
 
 32 interrupts forwarded to the IRQ intc via a single interrupt. 
-This is mostly for the pm gpio interrupts.
+This is mostly for the pm / interrupts.
 
 |           | u-boot | linux |
 |-----------|--------|-------|
@@ -539,3 +539,13 @@ Some chips seem to contain a [CEVA XM6](https://www.ceva-dsp.com/product/ceva-xm
 For the infinity2, 2m and 6e where there is a second core there are registers to set
 the entry address for the secondary core and then a register that presumably unlocks
 the reset line of the second core and lets it go.
+
+## GPIO
+
+```
+/*
+ * gpio data registers seem to be laid out like this in the gpio block
+ *  5   |  4  | 3 | 2 | 1 | 0
+ * ~OEN | OUT | 0 | 0 | 0 | IN
+ */
+ ```
