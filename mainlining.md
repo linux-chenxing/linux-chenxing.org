@@ -12,22 +12,24 @@
 
 The current patcheset is at V4 and can be seen on [patchwork](https://patchwork.kernel.org/cover/11607257/) or [on msc313_mainlining branch on github](https://github.com/fifteenhex/linux/commits/msc313_mainlining). With those patches you can boot your [Breadbee](https://github.com/breadbee/breadbee/) or [70mai Dash Cam](boards/dashcamlite.md) boards with the serial console and initramfs. Not much more is working at this stage, though, not even a reset.
 
-## Round 2: Push as much trivial DTS stuff as possibleg
+## Round 2: Push as much trivial DTS stuff as possible
 
 **DONE**
 
 Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting now works.
 
-## Round 3: Interrupt controllers
+## Round 3: non-PM interrupt controllr
 
 **DONE** 5.10
 
-## Round 4: Initial clocks, MPLL, PLL gater, clock gates
+## Round 9: GPIO
 
-## Round 5: DW uart quirk + wiring for mstar
+**Pushed** - Hoping 5.10
 
-## Round 6: Push i2m/SMP support?
+## Round 5: Initial clocks, MPLL, PLL gater, clock gates
 
-## Round 7: Pinctrl?
+## Round 6: DW uart quirk + wiring for mstar
 
-## Round 8: GPIO??
+## Round 7: Push i2m/SMP support?
+
+## Round 8: Pinctrl?
