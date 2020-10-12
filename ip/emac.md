@@ -21,3 +21,11 @@ code for the AT91RM200
   descriptors if there isn't a wrap marked descriptor. For some reason
   or other in u-boot at least you can just use any old number of descriptors.
   8 works, 16 doesn't work, 32 works, 64 works, 96 works, 128 works.
+
+- There are some extra registers after the documented ones that are called "JULIAN".
+
+| name        | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0                          | notes            |
+|-------------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|----------------------------|------------------|
+| julian 0100 |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |                            | select mii/rmii? |
+| julian 0104 |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   | software descriptor enable |                  |
+| julian 0108 |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |                            |                  |
