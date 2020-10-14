@@ -212,6 +212,8 @@ See [Crypto](crypto.md)
 
 ### 100mbit phy
 
+This PHY is weird in that it's registers are visible via MDIO and memory mapped. 0x00 - 0x7c are visible as MII registers 0 - 31.
+
 | offset | name                 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | default | working value | writeable | msc313 | msc313e |
 |--------|----------------------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|---------|---------------|-----------|--------|---------|
 | 0x74   |                      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |               |           |        | x       |
