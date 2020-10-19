@@ -24,6 +24,22 @@ This is mostly for the pm / interrupts.
 
 pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before it can be set.
 
+
+```
+/*
+ * MStar PM GPIO
+ *
+ * 15 - 12 | 11 - 0 |      9       |    8       |    7     |    6    | 5 |    4     | 3 | 2  |  1  |  0
+ *    ?    |    0   | INVERTED IN? | INT STATUS | INT TYPE | INT CLR | ? | INT MASK | ? | IN | OUT | OEN
+ *         |        |     ro?      |   ro?      |          |   wo    |   |          |   |    |     |
+ *
+ * bit 9 reacts to the pin being pulled up and down
+ *
+ * Reset value is 0x0215
+ *
+ */
+ ```
+
 |           | u-boot | linux |
 |-----------|--------|-------|
 | infinity  |        | yes   |
