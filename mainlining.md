@@ -20,18 +20,22 @@ The current patcheset is at V4 and can be seen on [patchwork](https://patchwork.
 
 Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting now works.
 
-## Round 3: non-PM interrupt controllr
+## Round 3: non-PM interrupt controller
 
 **DONE** 5.10
 
-## Round 9: GPIO
+## Round 4: GPIO
 
-**Pushed** - Hoping 5.10
+**Pushed** - probably 5.11
 
-## Round 5: Initial clocks, MPLL, PLL gater, clock gates
+## Round 5: pm intc
 
-## Round 6: DW uart quirk + wiring for mstar
+## Round 6: pm gpio
 
-## Round 7: Push i2m/SMP support?
+## Round 7: Initial clocks, MPLL, PLL gater, clock gates
 
-## Round 8: Pinctrl?
+## Round 8: DW uart quirk + wiring for mstar
+
+## Round 9: Push i2m/SMP support?
+
+## Round 10: Pinctrl?
