@@ -50,6 +50,10 @@ Default settings seem to be to give a 432MHz output. Power control should contai
 
 M5 coming out of reset has bits 11 to 8 in the power control register set high.
 
+The IPL code writes to the upper byte of the power control register twice.
+- Once before switching the uart clock from the boot clock (xtal/2 IIRC), writes all zeros
+- Once before configuring the cpu pll, again writes all zeros. Making sure the out the cpu needs is on?
+
 ### UPLL
 
 This seems to generate 320MHz and 384MHz clocks for the USB phys/controllers
