@@ -37,6 +37,8 @@ This is a rough guess.
 
 Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
 
+- note: How did I come up with this table? :/
+
 | name          | offset | 15 | 14 | 13                    | 12                    | 11 | 10 | 9                   | 8                   | 7                    | 6                    | 5                    | 4                    | 3                    | 2                    | 1                    | 0                    | notes |
 |---------------|--------|----|----|-----------------------|-----------------------|----|----|---------------------|---------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|-------|
 | test?         | 0x0    |    |    |                       |                       |    |    |                     |                     |                      |                      |                      |                      |                      |                      |                      |                      |       |
@@ -53,6 +55,14 @@ M5 coming out of reset has bits 11 to 8 in the power control register set high.
 The IPL code writes to the upper byte of the power control register twice.
 - Once before switching the uart clock from the boot clock (xtal/2 IIRC), writes all zeros
 - Once before configuring the cpu pll, again writes all zeros. Making sure the out the cpu needs is on?
+
+Post IPL the i3 registers look like this:
+
+```
+=> md.w 0x1f206000 0x10
+1f206000: 0110 0000 0000 0000 0100 0000 1412 0000    ................
+1f206010: 9410 0000 0000 0000 0000 0000 0000 0000    ................
+```
 
 ### UPLL
 
