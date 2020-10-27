@@ -64,6 +64,16 @@ Post IPL the i3 registers look like this:
 1f206010: 9410 0000 0000 0000 0000 0000 0000 0000    ................
 ```
 
+At power up on the M5
+
+```
+mpll: 0 - 0110
+mpll: 4 - 0f00
+mpll: 8 - 0100
+mpll: c - 1412
+mpll: 10 - 8410
+```
+
 https://github.com/schreibikus/wenshuai.xi/blob/7906c437f42aabfc8ac2e103efac3e885030f0cd/Mstar_code/mboot/sboot/chip/kaiser/script_MainPll_ARMPLL_UPLL_otp.inc#L33
 
 ### UPLL
