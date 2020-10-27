@@ -49,7 +49,7 @@ Seems to mean "Main PLL". This is the main source of clocks for peripherals. Out
 | config 2      | 0xc    |    |    | mpll_output_div_first | mpll_output_div_first |    | ?  | ?                   | ?                   | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second | mpll_loop_div_second |       |
 | status        | 0x10   | ?  |    |                       | mpll_lock             |    | ?  |                     |                     |                      | ?                    | ?                    | ?                    | ?                    | ?                    | ?                    | ?                    |       |
 
-Most ?'s a bits that are writable but are of unknown function.
+Most ?'s are bits that are writable but are of unknown function.
 
 The main frequency of the PLL is calculated like this ```((f_input / input_div_first) * (loop_div_first * loop_div_second)) / output_div_first```.
 Default settings seem to be to give a 432MHz output. Power control should contain bit to power on various dividers that generate the other mpll outputs.
