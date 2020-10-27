@@ -78,6 +78,10 @@ mpll: 10 - 8410
 
 Bit 12 of 0x10 goes high some time after clearing the top bits of 0x4. Hence it's probably the pll lock bit.
 
+0x8 - clears to 0x0, write 0xffff results in 0x0331
+0xc - clears to 0x0, write 0xffff results in 0x37ff
+0x10 - clears to 0x0 if not powered up, clears to 0x1000 if powered up (bit 12 is r/o), writes 0x847f
+
 https://github.com/schreibikus/wenshuai.xi/blob/7906c437f42aabfc8ac2e103efac3e885030f0cd/Mstar_code/mboot/sboot/chip/kaiser/script_MainPll_ARMPLL_UPLL_otp.inc#L33
 
 ### UPLL
