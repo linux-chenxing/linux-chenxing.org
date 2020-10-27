@@ -37,7 +37,7 @@ This is a rough guess.
 
 Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
 
-- note: How did I come up with this table? :/
+- note: How did I come up with this table? :/ -- based on the register descriptions for the mst786.
 - note: This is entirely a guess based on needing a 864mhz pll frequency and watching what the bits do on the hardware.
         This seems to have the registers shifted to the right by 8 bits compared to the layouts of other mplls that have code in some of the sdks on github.
 
