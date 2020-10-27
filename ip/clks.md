@@ -38,6 +38,8 @@ This is a rough guess.
 Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
 
 - note: How did I come up with this table? :/
+- note: This is entirely a guess based on needing a 864mhz pll frequency and watching what the bits do on the hardware.
+        This seems to have the registers shifted to the right by 8 bits compared to the layouts of other mplls that have code in some of the sdks on github.
 
 | name          | offset | 15 | 14 | 13                    | 12                    | 11 | 10 | 9                   | 8                   | 7                    | 6                    | 5                    | 4                    | 3                    | 2                    | 1                    | 0                    | notes |
 |---------------|--------|----|----|-----------------------|-----------------------|----|----|---------------------|---------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|-------|
