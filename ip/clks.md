@@ -86,6 +86,14 @@ Bit 12 of 0x10 goes high some time after clearing the top bits of 0x4. Hence it'
 
 https://github.com/schreibikus/wenshuai.xi/blob/7906c437f42aabfc8ac2e103efac3e885030f0cd/Mstar_code/mboot/sboot/chip/kaiser/script_MainPll_ARMPLL_UPLL_otp.inc#L33
 
+2 - 432
+3 - 288
+4 - 216
+5 - 172.8
+6 - 144
+7 - 123.4
+10 - 86.4
+
 ### UPLL
 
 This seems to generate 320MHz and 384MHz clocks for the USB phys/controllers
