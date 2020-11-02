@@ -13,7 +13,7 @@ RNG block registermap:
 
 ### SHA
 
-This is a hardware SHA-1/SHA256 unit.
+This is a hardware SHA1/SHA256 unit.
 
 Clock is comes from the same mux as "aesdma"
 
