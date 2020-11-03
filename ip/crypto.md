@@ -56,7 +56,6 @@ SHA block registermap:
 | 0x15c  | DST START H |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
 | 0x160  | DST END L   |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
 | 0x164  | DST END H   |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
-| 0x1e4  |             |    |    |    |    |    |    |         |        |       | KEY_SEL    | KEY_SEL |   |         |        |   |   |         |
 | 0x19c  | KEY         |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
 | 0x1a0  | KEY         |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
 | 0x1a4  | KEY         |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
@@ -73,6 +72,7 @@ SHA block registermap:
 | 0x1d0  | IV          |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
 | 0x1d4  | IV          |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
 | 0x1d8  | IV          |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
+| 0x1e4  | KEY CONFIG  |    |    |    |    |    |    |         |        |       | KEY_SEL    | KEY_SEL |   |         |        |   |   |         |
 | 0x1fc  | STATUS      |    |    |    |    |    |    |         |        |       |            |         |   |         |        |   |   |         |
 
 
