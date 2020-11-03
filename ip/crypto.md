@@ -75,6 +75,7 @@ For infinity2m and infinity6 seem to support 256 bit keys. Everything else seems
 | 0x1d0  | IV          |    |    |           |           |    |    |         |         |        |            |         |   |         |        |   |          |         |
 | 0x1d4  | IV          |    |    |           |           |    |    |         |         |        |            |         |   |         |        |   |          |         |
 | 0x1d8  | IV          |    |    |           |           |    |    |         |         |        |            |         |   |         |        |   |          |         |
+| 0x1dc  | ENG3_CTRL_S |    |    | KEYLEN    | KEYLEN    |    |    |         |         |        |            |         |   |         |        |   |          |         |
 | 0x1e4  | KEY CONFIG  |    |    |           |           |    |    |         |         |        | KEY_SEL    | KEY_SEL |   |         |        |   |          |         |
 | 0x1fc  | STATUS      |    |    |           |           |    |    |         |         |        |            |         |   |         |        |   | DMA_DONE |         |
 
@@ -87,5 +88,11 @@ KEY_SEL:
   - 0b00 - Cipher Key
   - 0b01 - EFUSE key
   - 0b10 - HW key
+  
+KEYLEN:
+  Probably i2m and i6 only
+  - 0b00 - 128
+  - 0b01 - 192
+  - 0b10 - 256
 
 On infinity3 the base address is 0x1f224400
