@@ -44,6 +44,8 @@ SHA block registermap:
 
 ### AESDMA
 
+For infinity2m and infinity6 seem to support 256 bit keys. Everything else seems to only support 128 bit keys.
+
 | Offset | Name        | 15 | 14 | 13        | 12        | 11 | 10 | 9       | 8       | 7      | 6          | 5       | 4 | 3       | 2      | 1 | 0        | Comment |
 |--------|-------------|----|----|-----------|-----------|----|----|---------|---------|--------|------------|---------|---|---------|--------|---|----------|---------|
 | 0x140  | CONFIG 0    |    |    |           |           |    |    |         | FOUT_EN | RESET  |            |         |   |         |        |   |          |         |
