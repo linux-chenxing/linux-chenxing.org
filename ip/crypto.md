@@ -46,10 +46,10 @@ SHA block registermap:
 
 For infinity2m and infinity6 seem to support 256 bit keys. Everything else seems to only support 128 bit keys.
 
-| Offset | Name        | 15 | 14 | 13        | 12        | 11      | 10 | 9       | 8       | 7      | 6          | 5       | 4 | 3       | 2      | 1 | 0        | Comment |
-|--------|-------------|----|----|-----------|-----------|---------|----|---------|---------|--------|------------|---------|---|---------|--------|---|----------|---------|
-| 0x140  | CONFIG 0    |    |    |           |           |         |    |         | FOUT_EN | RESET  |            |         |   |         |        |   |          |         |
-| 0x144  | CONFIG 0    |    |    | CHAINMODE | CHAINMODE |         |    | DECRYPT | AES_EN  |        |            |         |   | TDES_EN | DES_EN |   |          |         |
+| Offset | Name        | 15 | 14 | 13        | 12        | 11      | 10 | 9       | 8       | 7      | 6          | 5       | 4 | 3       | 2      | 1 | 0        | Comment          |
+|--------|-------------|----|----|-----------|-----------|---------|----|---------|---------|--------|------------|---------|---|---------|--------|---|----------|------------------|
+| 0x140  | CTRL0       |    |    |           |           |         |    |         | FOUT_EN | RESET  |            |         |   |         |        |   |          | Can write 0xffff |
+| 0x144  | CTRL1       |    |    | CHAINMODE | CHAINMODE |         |    | DECRYPT | AES_EN  |        |            |         |   | TDES_EN | DES_EN |   |          |         |
 | 0x148  | SRC L       |    |    |           |           |         |    |         |         |        |            |         |   |         |        |   |          |         |
 | 0x14c  | SRC H       |    |    |           |           |         |    |         |         |        |            |         |   |         |        |   |          |         |
 | 0x150  | XIU LEN L   |    |    |           |           |         |    |         |         |        |            |         |   |         |        |   |          |         |
