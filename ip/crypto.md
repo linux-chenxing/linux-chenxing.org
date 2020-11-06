@@ -34,13 +34,21 @@ SHA block registermap:
 
 ### RSA
 
-| Offset | Name | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | Comment |
-|--------|------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|---------|
-| 0x80   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |
-| 0x84   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |
-| 0x88   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |
-| 0x9c   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |
-| 0xa0   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |         |
+| Offset | Name       | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3                 | 2             | 1          | 0           | Comment |
+|--------|------------|----|----|----|----|----|----|---|---|---|---|---|---|-------------------|---------------|------------|-------------|---------|
+| 0x80   |            |    |    |    |    |    |    |   |   |   |   |   |   |                   |               |            | IND32_START |         |
+| 0x84   | IND32      |    |    |    |    |    |    |   |   |   |   |   |   | ACCESS_AUTO_START | ADDR_AUTO_INC | WRITE      |             |         |
+| 0x88   | ADDR       |    |    |    |    |    |    |   |   |   |   |   |   |                   |               |            |             |         |
+| 0x8c   | DATA_L     |    |    |    |    |    |    |   |   |   |   |   |   |                   |               |            |             |         |
+| 0x90   | DATA_H     |    |    |    |    |    |    |   |   |   |   |   |   |                   |               |            |             |         |
+| 0x9c   |            |    |    |    |    |    |    |   |   |   |   |   |   |                   |               | INT_CLR    | EXP_START   |         |
+| 0xa0   | KEY_TYPE   |    |    |    |    |    |    |   |   |   |   |   |   |                   | SEL_PUBLIC_KEY| SEL_HW_KEY | RST         |         |
+| 0xa4   | STATUS     |    |    |    |    |    |    |   |   |   |   |   |   |                   |               | DONE       | BUSY        |         |
+
+ADDR seems to be a pointer to internal sram that is loaded indirectly via data_l and data_h
+
+IND32_START - seems to trigger indirect loading.
+
 
 ### AESDMA
 
