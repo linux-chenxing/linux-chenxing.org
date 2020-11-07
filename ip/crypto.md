@@ -49,6 +49,10 @@ ADDR seems to be a pointer to internal sram that is loaded indirectly via data_l
 
 IND32_START - seems to trigger indirect loading.
 
+E - 0x00
+N - 0x40
+A - 0x80
+Z - 0xC0
 
 ### AESDMA
 
