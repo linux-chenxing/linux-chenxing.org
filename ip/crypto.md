@@ -34,18 +34,18 @@ SHA block registermap:
 
 ### RSA
 
-| Offset | Name       | 15  | 14  | 13  | 12  | 11  | 10  | 9   | 8   | 7 | 6 | 5 | 4 | 3                 | 2             | 1          | 0           | Comment |
-|--------|------------|-----|-----|-----|-----|-----|-----|-----|-----|---|---|---|---|-------------------|---------------|------------|-------------|---------|
-| 0x80   |            |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            | IND32_START |         |
-| 0x84   | IND32      |     |     |     |     |     |     |     |     |   |   |   |   | ACCESS_AUTO_START | ADDR_AUTO_INC | WRITE      |             |         |
-| 0x88   | ADDR       |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
-| 0x8c   | DATA_L     |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
-| 0x90   | DATA_H     |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
-| 0x94   | FILE OUT?  |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
-| 0x98   | FILE OUT?  |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
-| 0x9c   |            |     |     |     |     |     |     |     |     |   |   |   |   |                   |               | INT_CLR    | EXP_START   |         |
-| 0xa0   | KEY_CONFIG | LEN | LEN | LEN | LEN | LEN | LEN | LEN | LEN |   |   |   |   |                   | SEL_PUBLIC_KEY| SEL_HW_KEY | RST         |         |
-| 0xa4   | STATUS     |     |     |     |     |     |     |     |     |   |   |   |   |                   |               | DONE       | BUSY        |         |
+| Offset | Name       | 15  | 14  | 13  | 12  | 11  | 10  | 9   | 8   | 7 | 6 | 5 | 4 | 3                 | 2              | 1          | 0           |    | Comment |
+|--------|------------|-----|-----|-----|-----|-----|-----|-----|-----|---|---|---|---|-------------------|----------------|------------|-------------|----|---------|
+| 0x80   |            |     |     |     |     |     |     |     |     |   |   |   |   |                   |                |            | IND32_START |    |         |
+| 0x84   | IND32      |     |     |     |     |     |     |     |     |   |   |   |   | ACCESS_AUTO_START | ADDR_AUTO_INC  | WRITE      |             |    |         |
+| 0x88   | ADDR       |     |     |     |     |     |     |     |     |   |   |   |   |                   |                |            |             |    |         |
+| 0x8c   | DATA_L     |     |     |     |     |     |     |     |     |   |   |   |   |                   |                |            |             |    |         |
+| 0x90   | DATA_H     |     |     |     |     |     |     |     |     |   |   |   |   |                   |                |            |             |    |         |
+| 0x94   | FILE OUT?  |     |     |     |     |     |     |     |     |   |   |   |   |                   |                |            |             |    |         |
+| 0x98   | FILE OUT?  |     |     |     |     |     |     |     |     |   |   |   |   |                   |                |            |             |    |         |
+| 0x9c   |            |     |     |     |     |     |     |     |     |   |   |   |   |                   |                | INT_CLR    | EXP_START   |    |         |
+| 0xa0   | KEY_CONFIG | LEN | LEN | LEN | LEN | LEN | LEN | LEN | LEN |   |   |   |   |                   | SEL_PUBLIC_KEY | SEL_HW_KEY | RST         |    |         |
+| 0xa4   | STATUS     |     |     |     |     |     |     |     |     |   |   |   |   | ?                 | ?              | DONE       | BUSY        | RO |         |
 
 ADDR seems to be a pointer to internal sram that is loaded indirectly via data_l and data_h
 
