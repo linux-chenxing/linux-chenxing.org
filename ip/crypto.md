@@ -56,7 +56,7 @@ N - 0x40
 A - 0x80
 Z - 0xC0
 
-LEN - Apparently defaults to 0x3f in the 
+LEN - Apparently defaults to 0x3f if the hardware key is selected.
 
 ### AESDMA
 
