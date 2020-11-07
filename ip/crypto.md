@@ -41,6 +41,8 @@ SHA block registermap:
 | 0x88   | ADDR       |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
 | 0x8c   | DATA_L     |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
 | 0x90   | DATA_H     |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
+| 0x94   | FILE OUT?  |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
+| 0x98   | FILE OUT?  |     |     |     |     |     |     |     |     |   |   |   |   |                   |               |            |             |         |
 | 0x9c   |            |     |     |     |     |     |     |     |     |   |   |   |   |                   |               | INT_CLR    | EXP_START   |         |
 | 0xa0   | KEY_CONFIG | LEN | LEN | LEN | LEN | LEN | LEN | LEN | LEN |   |   |   |   |                   | SEL_PUBLIC_KEY| SEL_HW_KEY | RST         |         |
 | 0xa4   | STATUS     |     |     |     |     |     |     |     |     |   |   |   |   |                   |               | DONE       | BUSY        |         |
