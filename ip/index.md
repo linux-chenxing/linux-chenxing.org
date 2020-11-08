@@ -555,6 +555,11 @@ Seems to be 64 bytes of registers that survive reset.
 The boot rom seems to use the first word to track something.
 The values from 0xc0 to 0xff are constantly changing.
 
+The vendor kernel writes the location of the kernel log buffer into there. Presumably so that
+the log can be read out in the case of a crash?
+
+After writing 0xffff to every word and resetting to see what values get changed before u-boot:
+
 ```
 => md.w 0x1f200800 0x80
 1f200800: a002 0000 ffff 0000 ffff 0000 ffff 0000    ................
