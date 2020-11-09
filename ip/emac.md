@@ -11,6 +11,8 @@ code for the AT91RM200
 
 [AT91RM200 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-1768-32-bit-ARM920T-Embedded-Microprocessor-AT91RM9200_Datasheet.pdf)
 
+[Recent register header](https://github.com/m-zjj/myzr-gateway-info/blob/master/kernel/drivers/sstar/emac/hal/infinity3/mhal_emac.h)
+
 ## Known differences from the AT91RM200
 
 - Registers have the weird split and spacing because they
