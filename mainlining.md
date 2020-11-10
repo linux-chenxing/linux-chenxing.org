@@ -28,11 +28,13 @@ Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting n
 
 **Pushed** - probably 5.11
 
-## Round 5: pm intc
+## Round 5: Initial clocks, MPLL, PLL gater, clock gates
 
-## Round 6: pm gpio
+** Cleaning up ** - Maybe fixed clocks and MPLL for 5.11?
 
-## Round 7: Initial clocks, MPLL, PLL gater, clock gates
+## Round 6: pm intc
+
+## Round 7: pm gpio
 
 ## Round 8: DW uart quirk + wiring for mstar
 
