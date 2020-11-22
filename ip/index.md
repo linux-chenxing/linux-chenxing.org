@@ -344,30 +344,32 @@ This seems to be a fairly standard ADC. Channel 7 is an on-die [temp sensor](htt
 
 *note* these seem to be slightly different for older chips. The listing here is for the infinity/mercury5.
 
-| address | name          | 15     | 14      | 13 | 12 | 11      | 10      | 9       | 8       | 7     | 6          | 5            | 4                 | 3              | 2                   | 1                   | 0                   |
-|---------|---------------|--------|---------|----|----|---------|---------|---------|---------|-------|------------|--------------|-------------------|----------------|---------------------|---------------------|---------------------|
-| 0x0     | ctrl          |        | load en |    |[0] | nch en  | sel     | freerun | adc pd  | start | digital pd | mode         | single channel en | level trigger  | single channel mask | single channel mask | single channel mask |
-| 0x4     | sample period |        |         |    |    |         |         |         |         |       |            | 0 - one shot |                   |                |                     |                     |                     |
-|         |               |        |         |    |    |         |         |         |         |       |            | 1 - free run |                   |                |                     |                     |                     |
-| 0x40    | reg_pm_dmy    |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-| 0x44    | gpio ctrl     |        |         |    |    | CH3_OEN | CH2_OEN | CH1_OEN | CH0_OEN |       |            |              |                   | CH3_EN         | CH2_EN              | CH1_EN              | CH0_EN              |
-| 0x48    | gpio data     |        |         |    |    | CH3_IN  | CH2_IN  | CH1_IN  | CH0_IN  |       |            |              |                   | CH3_OUT        | CH2_OUT             | CH1_OUT             | CH0_OUT             |   
-| 0x50    | int mask      |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-| 0x54    | int clear     |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-| 0x58    | int force     |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-| 0x5c    | int status    |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-| 0x60    | cmp out rdy   |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-| 0x64    | vref sel      |        |         |    |    |         |         |         |         |       | ch7        |              |                   |                |                     | ch1                 |                     |
-|         |               |        |         |    |    |         |         |         |         |       | 0 - 2.0v   |              |                   |                |                     | 0 - 2.0v            |                     |
-|         |               |        |         |    |    |         |         |         |         |       | 1 - avdd   |              |                   |                |                     | 1 - avdd            |                     |
-| 0x118   | ch7 data      |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
-|         |               |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| address | name               | 15     | 14      | 13 | 12 | 11      | 10      | 9       | 8       | 7     | 6          | 5            | 4                 | 3              | 2                   | 1                   | 0                   |
+|---------|--------------------|--------|---------|----|----|---------|---------|---------|---------|-------|------------|--------------|-------------------|----------------|---------------------|---------------------|---------------------|
+| 0x0     | ctrl               |        | load en |    |[0] | nch en  | sel     | freerun | adc pd  | start | digital pd | mode         | single channel en | level trigger  | single channel mask | single channel mask | single channel mask |
+| 0x4     | sample period      |        |         |    |    |         |         |         |         |       |            | 0 - one shot |                   |                |                     |                     |                     |
+|         |                    |        |         |    |    |         |         |         |         |       |            | 1 - free run |                   |                |                     |                     |                     |
+| 0x40    | reg_pm_dmy         |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x44    | gpio ctrl          |        |         |    |    | CH3_OEN | CH2_OEN | CH1_OEN | CH0_OEN |       |            |              |                   | CH3_EN         | CH2_EN              | CH1_EN              | CH0_EN              |
+| 0x48    | gpio data          |        |         |    |    | CH3_IN  | CH2_IN  | CH1_IN  | CH0_IN  |       |            |              |                   | CH3_OUT        | CH2_OUT             | CH1_OUT             | CH0_OUT             |   
+| 0x50    | int mask           |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x54    | int clear          |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x58    | int force          |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x5c    | int status         |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x60    | cmp out rdy        |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x64    | vref sel           |        |         |    |    |         |         |         |         |       | ch7        |              |                   |                |                     | ch1                 |                     |
+|         |                    |        |         |    |    |         |         |         |         |       | 0 - 2.0v   |              |                   |                |                     | 0 - 2.0v            |                     |
+|         |                    |        |         |    |    |         |         |         |         |       | 1 - avdd   |              |                   |                |                     | 1 - avdd            |                     |
+| 0x118   | ch7 data           |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
+| 0x180   | INT_DIRECT2TOP_SEL |        |         |    |    |         |         |         |         |       |            |              |                   |                |                     |                     |                     |
 
 
 CH?_EN bits control if the pin is an ADC pin or GPIO, 1 = ADC, 0 = GPIO
 CH?_OEN bits control the gpio direction, 1 = input, 0 = output
 CH?_IN bits represent the gpio input level
 CH?_OUT bits set the gpio output level
+
+INT_DIRECT2TOP_SEL -- this seems to select which interrupt comes straight to the CPU. It seems to default to 0x2 which means writing 0x4 to force interrupt causes an interrupt.
 
 ```
  * # devmem 0x1f0018bc
