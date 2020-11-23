@@ -1,15 +1,17 @@
 # PM Regmap
 
-Probably only for infinity/mercury5
+The following is probably only for infinity/mercury5. The headers for different chips look very similar so there is probably a lot in common but it's hard to say.
 
-## PM Ctrl registers - 0x1f001c00
+## PM sleep registers - 0x1f001c00
+
+This block contains a ton of random bits that control how the "PM" domain that stays powered up even when the chip is sleeping.
 
 | offset | name             | 15         | 14 | 13 | 12           | 11                 | 10 | 9 | 8 | 7 | 6 | 5 | 4                 | 3               | 2                 | 1                 | 0 | default | Notes                                      |
 |--------|------------------|------------|----|----|--------------|--------------------|----|---|---|---|---|---|-------------------|-----------------|-------------------|-------------------|---|---------|--------------------------------------------|
-| 0x10   | int status       |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         |                                            |
-| 0x20   | wake up source   |            |    |    |              |                    |    |   |   |   |   |   | wkint rtc mask    |                 | wkint wol mask    | wkint sar mask    |   |         | bottom 8 bits are "wake up int controller" |
-| 0x24   |                  | power down |    |    | hk uart sel? | disable pm_uart rx |    |   |   |   |   |   | wkint rtc pol     |                 | wkint wol pol     | wkint sar pol     |   |         | bottom 8 bits are "wake up int controller" |
-| 0x38   |                  |            |    |    |              |                    |    |   |   |   |   |   | wkint rtc status? |                 | wkint rtc status? | wkint rtc status? |   |         | bottom 8 bits are "wake up int controller" |
+| 0x10   | int status[0]    |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         |                                            |
+| 0x20   | wkint mask[1]    |            |    |    |              |                    |    |   |   |   |   |   | wkint rtc mask    |                 | wkint wol mask    | wkint sar mask    |   |         | bottom 8 bits are "wake up int controller" |
+| 0x24   | wkint intpol     | power down |    |    | hk uart sel? | disable pm_uart rx |    |   |   |   |   |   | wkint rtc pol     |                 | wkint wol pol     | wkint sar pol     |   |         | bottom 8 bits are "wake up int controller" |
+| 0x38   | wkint intstatus  |            |    |    |              |                    |    |   |   |   |   |   | wkint rtc status? |                 | wkint rtc status? | wkint rtc status? |   |         | bottom 8 bits are "wake up int controller" |
 | 0x48   | pm_lock          |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         | write 0xbabe to unlock pm_gpio4            |
 | 0x70   |                  |            |    |    |              |                    |    |   |   |   |   |   | ir in is gpio     | isoen2gpio4?    | link wkint2gpio4? |                   |   |         |                                            |
 | 0x80   | mcu, spi clkgen  |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         |                                            |
@@ -22,6 +24,9 @@ Probably only for infinity/mercury5
 | 0xec   | resume address l |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         |                                            |
 | 0xf0   | resume address h |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         |                                            |
 | 0xf4   |                  |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   | 0x003f  | ipl sets to zero                           |
+
+0 - This is the status of interrupts from the pm gpio block. The pmsleep->arm interrupt is OR'd with this.
+1 - wkint is another interrupt controller that seems to output a single wakeup interrupt and is OR'd with the pmsleep->arm interrupt
 
 ## mystery block - 0x1f007800?
 
