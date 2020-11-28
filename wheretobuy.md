@@ -17,5 +17,5 @@ Since some sites reported on the Breadbee the MSC313E is available on ebay.
 ## TaoBao
 
 The MSC313 and MSC313E sometimes appear on TaoBao.
-At the time of writing the SSC325 is available from numberous sellers.
+At the time of writing the SSC325 is available from numerous sellers.
 The SSD201 and SS202 is also availabe.
