@@ -326,11 +326,12 @@ This seems to be a fairly standard ADC. Channel 7 is an on-die [temp sensor](htt
 
 #### Support Matrix
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
+|            | u-boot | linux |
+|------------|--------|-------|
+| infinity   |        | yes   |
+| infinity2m |        | yes   |
+| infinity3  |        | yes   |
+| mercury5   |        | yes   |
 
 #### Registers
 
