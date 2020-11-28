@@ -345,7 +345,7 @@ This seems to be a fairly standard ADC. Channel 7 is an on-die [temp sensor](htt
 | 0x40    | reg_pm_dmy         |    |         |    |     |         |         |         |         |       |            |              |                   |               |                     |                     |                     |   |
 | 0x44    | gpio ctrl          |    |         |    |     | CH3_OEN | CH2_OEN | CH1_OEN | CH0_OEN |       |            |              |                   | CH3_EN        | CH2_EN              | CH1_EN              | CH0_EN              |   |
 | 0x48    | gpio data          |    |         |    |     | CH3_IN  | CH2_IN  | CH1_IN  | CH0_IN  |       |            |              |                   | CH3_OUT       | CH2_OUT             | CH1_OUT             | CH0_OUT             |   |
-| 0x50    | int mask           |    |         |    |     |         |         |         |         |       |            |              |                   |               |                     |                     |                     |   |
+| 0x50    | int mask           |    |         |    |     |         |         |         |    ?    |   ?   |     ?      |      ?       |       ?           |      ?        |          ?          |       ?             |         ?           |   |
 | 0x54    | int clear          |    |         |    |     |         |         |         |         |       |            |              |                   |               |                     |                     |                     |   |
 | 0x58    | int force          |    |         |    |     |         |         |         |         |       |            |              |                   |               |                     |                     |                     |   |
 | 0x5c    | int status         |    |         |    |     |         |         |         |         |       |            |              |                   |               |                     |                     |                     |   |
@@ -373,6 +373,9 @@ INT_DIRECT2TOP_SEL -- this seems to select which interrupt comes straight to the
  * This seems to be power down for the temp sensor
  * # devmem 0x1f001cbc 16 0x4
 ```
+
+On the midrived06 the interrupt on bit 8 triggers when connecting the battery. The battery channel itself is connected to the first sar channel.
+
 
 ## Serial
 
