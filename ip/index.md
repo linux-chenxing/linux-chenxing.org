@@ -374,7 +374,10 @@ INT_DIRECT2TOP_SEL -- this seems to select which interrupt comes straight to the
  * # devmem 0x1f001cbc 16 0x4
 ```
 
-On the midrived06 the interrupt on bit 8 triggers when connecting the battery. The battery channel itself is connected to the first sar channel.
+- On the midrived06 the interrupt on bit 8 triggers when connecting the battery.
+  The battery channel itself is connected to the first sar channel.
+  The interrupt comes via the sar wakeup interrupt.
+  For breadbee it's been impossible to get any interrupts to trigger after boot.
 
 
 ## Serial
