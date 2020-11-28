@@ -59,23 +59,15 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 64 interrupts forwarded to the GIC
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
+|           | u-boot | linux | u-boot mainlined | linux mainlined                                                                    |
+|-----------|--------|-------|------------------|------------------------------------------------------------------------------------|
+| infinity  |        | yes   |                  | [yes](https://github.com/torvalds/linux/blob/master/drivers/irqchip/irq-mst-intc.c)|
+| infinity3 |        | yes   |                  |                                                                                    |
+| mercury5  |        | yes   |                  |                                                                                    |
 
 ### FIQ intc
 
-32 interrupts forwarded to the GIC as FIQs
-
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
-
-
+32 interrupts forwarded to the GIC as FIQs. Basically the same as the above.
 
 ## Pinmux
 
