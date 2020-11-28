@@ -122,6 +122,9 @@ ones.
 ### Infinity IP camera family
 
 #### [Infinity1](infinity1)
+
+- IP camera chips with video encoder and camera interface
+
 - [MSC313](infinity1#msc313) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC313D](infinity1#msc313d) - Probably a Cortex A7 + 128MB DDR3 in a BGA
 
@@ -129,10 +132,12 @@ ones.
 
 - part numbers not known. there are some references in the SDKs etc to infinity2 and it seems
   to be dual Cortex A9
+- Probably for the recording side i.e. has a video decoder and no camera interface.
 
 #### [Infinity2m](infinity2)
 
-references to infinity2m in SDK. seems to be a multi-core part.
+- Closer tothe the infinity6 chips than the infinity2.
+- Probably a replacement for the recording side, has video decoder, framebuffer etc.
 
 - [SSR621D](infinity2#ssr621d) - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
 - [SSD201](infinity2#ssd201) - Dual Cortex A7 with 64MB of DDR2 in QFN128
@@ -143,6 +148,9 @@ references to infinity2m in SDK. seems to be a multi-core part.
   - [TL-NVR6104C-4PX](https://www.tp-link.com.cn/product_1388.html#tag) (based on MSR630 being in the source paths in the kernel binary)
 
 #### [Infinity3](infinity3)
+
+- Updated version of the infinity1
+
 - [MSC313E](infinity3#msc313e) - Cortex A7 + 64MB DDR2 in a QFN80
 - [MSC316DC](infinity3#msc316dc) - Cortex A7 + 128MB DDR3 in a QFN88
 - [MSC316Q](infinity3) - Cortex A7 + 128MB DDR3 in a 256 ball BGA
@@ -153,10 +161,16 @@ references to infinity2m in SDK. seems to be a multi-core part.
 Doesn't seem to exist.
 
 #### [Infinity5](infinity5)
+
+- Seems to be a version of the infinity3 that can handle higher resoltion sensors.
+
 - [SSC328Q](infinity5#ssc328q) - Cortex A7 + 256MB DDR3 (this might be i6)
 - [SSC329Q](infinity5#ssc329q) - Cortex A7 + 256MB DDR3 + NPU (this might be i6)
 
 #### [Infinity6](infinity6)
+
+- Updated version of the infinity3.
+
 - [SSC323](infinity6#ssc323) - probably Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325](infinity6#ssc325) - Cortex A7 + 64MB DDR2 in a QFN88
 - [SSC325DE](infinity6#ssc325de) - Cortex A7 + 128MB DDR3 in a QFN88
@@ -177,10 +191,14 @@ Doesn't seem to exist.
 
 #### [Mercury2](mercury2)
 
+- Dash camera SoC.
+
 - [AIT8328/MSC8328](mercury2#msc8328) - Probably ARM9
 - [AIT8428](mercury2#ait8428) - Probably ARM9
 
 #### [Mercury5](mercury5)
+
+- Dash camera SoC based on the infinity3.
 
 - [SSC8336](mercury5#ssc8336) - Probably Cortex A7 + 64MB DDR2 in a QFP128
 - [SSC8336N](mercury5#ssc8336n) - Cortex A7 + 64MB DDR2 in a 128 pin QFN
