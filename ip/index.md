@@ -59,11 +59,12 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 64 interrupts forwarded to the GIC
 
-|           | u-boot | linux | u-boot mainlined | linux mainlined                                                                    |
-|-----------|--------|-------|------------------|------------------------------------------------------------------------------------|
-| infinity  |        | yes   |                  | [yes](https://github.com/torvalds/linux/blob/master/drivers/irqchip/irq-mst-intc.c)|
-| infinity3 |        | yes   |                  |                                                                                    |
-| mercury5  |        | yes   |                  |                                                                                    |
+|            | u-boot | linux | u-boot mainlined | linux mainlined                                                                     |
+|------------|--------|-------|------------------|-------------------------------------------------------------------------------------|
+| infinity   |        | yes   |                  | [yes](https://github.com/torvalds/linux/blob/master/drivers/irqchip/irq-mst-intc.c) |
+| infinity2m |        | yes   |                  | [yes](https://github.com/torvalds/linux/blob/master/drivers/irqchip/irq-mst-intc.c) |
+| infinity3  |        | yes   |                  | [yes](https://github.com/torvalds/linux/blob/master/drivers/irqchip/irq-mst-intc.c) |
+| mercury5   |        | yes   |                  | [yes](https://github.com/torvalds/linux/blob/master/drivers/irqchip/irq-mst-intc.c) |
 
 ### FIQ intc
 
@@ -75,11 +76,12 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 ### Support Matrix
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | wip   |
+|            | u-boot | linux   |
+|------------|--------|---------|
+| infinity   |        | yes     |
+| infinity2m |        | partial |
+| infinity3  |        | yes     |
+| mercury5   |        | wip     |
 
 ## Clocks
 
@@ -183,11 +185,12 @@ doesn't have to do it. It also apparently supports doing CRC calculations.
 
 #### Support Matrix
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
+|            | u-boot | linux | number of channels |
+|------------|--------|-------|--------------------|
+| infinity   |        | yes   | 2                  |
+| infinity2m |        | yes   | 4                  |
+| infinity3  |        | yes   | 2                  |
+| mercury5   |        | yes   | 2                  |
 
 ### CMDQ
 
@@ -214,7 +217,9 @@ See [Crypto](crypto.md)
 | block | family     | u-boot | linux |
 |-------|------------|--------|-------|
 | RNG   | infinity   |        | yes   |
+|       | infinity2m |        | yes   |
 |       | infinity3  |        | yes   |
+|       | mercury5   |        | yes   |
 
 ## Ethernet
 
@@ -254,10 +259,11 @@ official code for the AT91RM200.
 
 #### Support Matrix
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  | yes    | yes   |
-| infinity3 | yes    | yes   |
+|            | u-boot | linux | notes                                             |
+|------------|--------|-------|---------------------------------------------------|
+| infinity   | yes    | yes   |                                                   |
+| infinity2m | yes    | yes   | integrated phy port works, port with phy untested |
+| infinity3  | yes    | yes   |                                                   |
 
 ### GMAC
 
@@ -408,11 +414,12 @@ There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0
 
 ## i2c
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
+|            | u-boot | linux |
+|------------|--------|-------|
+| infinity   |        | yes   |
+| infinity2m |        | yes   |
+| infinity3  |        | yes   |
+| mercury5   |        | yes   |
 
 [Rough register descriptions](https://github.com/fifteenhex/linux_mstar_3.18/blob/e424e92e5442490e2f19b6d18464be3730e0678c/drivers/mstar/i2c/infinity/mhal_iic_reg.h#L208)
 
@@ -534,6 +541,12 @@ Hardware JPEG encoder
 
 [Rough register descriptions](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/jpe/pub/hal_jpe_reg.h)
 https://github.com/github188/sdk-2/blob/master/mhal/i2/jpe/hal/pub/hal_jpe_ios.h
+
+### VPU
+
+Video decoder?
+
+https://github.com/ZYCX8888/Democode-TAKOYAKI-BETA001-0312/tree/d5841ab9fde1771b72aa842fc48a01bb832d4a0a/sdk/verify/feature/vdec/cnm_sw
 
 ## Audio
 
