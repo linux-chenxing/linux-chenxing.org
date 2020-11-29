@@ -452,11 +452,12 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 
 ### *v5* as seen in i3 and m5
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
+|            | u-boot | linux | notes                |
+|------------|--------|-------|----------------------|
+| infinity   |        | yes   |                      |
+| infinity2m |        | yes   | need pinctrl support |
+| infinity3  |        | yes   |                      |
+| mercury5   |        | yes   |                      |
 
 ## Display pipeline
 
