@@ -15,6 +15,7 @@ This block contains a ton of random bits that control how the "PM" domain that s
 | 0x48   | pm_lock          |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         | write 0xbabe to unlock pm_gpio4            |
 | 0x70   |                  |            |    |    |              |                    |    |   |   |   |   |   | ir in is gpio     | isoen2gpio4?    | link wkint2gpio4? |                   |   |         |                                            |
 | 0x80   | mcu, spi clkgen  |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         |                                            |
+| 0xa4   | resets           |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         |                                            |
 | 0xb8   |                  |            |    |    |              |                    |    |   |   |   |   |   |                   |                 |                   |                   |   |         | write 0x79 to trigger a reset              |
 | 0xbc   |                  |            |    |    |              |                    |    |   |   |   |   |   |                   | temp sensor en? |                   |                   |   |         |                                            |
 | 0xc0   |                  |            |    |    |              |                    |    |   |   |   |   |   | ipl sets          |                 |                   | x                 | x | 0x003   |                                            |
@@ -27,6 +28,8 @@ This block contains a ton of random bits that control how the "PM" domain that s
 
 0 - This is the status of interrupts from the pm gpio block. The pmsleep->arm interrupt is OR'd with this.
 1 - wkint is another interrupt controller that seems to output a single wakeup interrupt and is OR'd with the pmsleep->arm interrupt
+
+0xa4, i2m can write 0xff80
 
 ## mystery block - 0x1f007800?
 
