@@ -40,4 +40,8 @@ Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting n
 
 ## Round 9: Push i2m/SMP support?
 
+** Pushed **
+
+https://patchwork.kernel.org/bundle/dgp/mstar%20-%20infinity2m%20SMP/
+
 ## Round 10: Pinctrl?
