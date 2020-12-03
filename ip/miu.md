@@ -264,6 +264,7 @@ For SSC8336N the value is 0xf
 The i3 and m5 layous seem to differ a lot. The M5 IPL uses a bunch of tables to work out where stuff is.
 
 Offsets from 0x1f00000
+
 | offset   | name          | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |----------|---------------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|
 | 0x202004 | dunno         |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
