@@ -336,3 +336,7 @@ Offsets from 0x1f00000
 | 0x202F60 | dunno         |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 | 0x2023CC | group 7 mask? |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 |          |               |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
+
+# i2m
+
+i2m has a bonus thing called MMU. No idea what it does.
