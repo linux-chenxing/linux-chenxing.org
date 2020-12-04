@@ -555,6 +555,8 @@ https://github.com/ZYCX8888/Democode-TAKOYAKI-BETA001-0312/tree/d5841ab9fde1771b
 
 BACH is a fairly generic DMA engine with a DAC attached audio block.
 
+Also known as "Cleveland Haydn" or Haydn
+
 [Reverse engineering](bach.md)
 
 #### Support Matrix
