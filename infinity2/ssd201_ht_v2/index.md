@@ -12,3 +12,4 @@ This seems to be an official dev board. It's available from taobao for ~$200.
 
 - SGM4890 Audio Amp
 - FS35ND01G SPI NAND 1Gbit
+- 1838T IR receiver
