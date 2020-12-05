@@ -11,3 +11,4 @@ This seems to be an official dev board. It's available from taobao for ~$200.
 - SSW101B connected via USB for WiFi
 
 - SGM4890 Audio Amp
+- FS35ND01G SPI NAND 1Gbit
