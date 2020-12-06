@@ -1,5 +1,7 @@
 # Infinity3 pinouts
 
+https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be0fdaf273/drivers/sstar/gpio/infinity3/mhal_pinmux.c
+
 ## 80 pin QFN
 
 | #  | Name           | #  | Name       | #  | Name     | #  | Name        |
