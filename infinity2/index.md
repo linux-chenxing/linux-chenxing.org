@@ -35,6 +35,8 @@ Cheap solder down IoT module.
 
 ## Pinout
 
+https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be0fdaf273/drivers/sstar/gpio/infinity2m/mhal_pinmux.c
+
 | #  | name         | #  | name        | #  | name      | alt functions | #   | name           |            |
 |----|--------------|----|-------------|----|-----------|---------------|-----|----------------|------------|
 | 1  | GPIO12       | 33 | PM_RESET    | 65 | TTL6      |               | 97  | SD_D2          |            |
