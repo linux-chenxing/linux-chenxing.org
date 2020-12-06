@@ -1,6 +1,9 @@
 # SSD201_HT_V2
 
-This seems to be an official dev board. It's available from taobao for ~$200.
+This seems to be an official dev board.
+It's available from taobao for ~$200.
+
+The vendor provided a copy of the SDK but no schematics or chip documentation.
 
 ![board](board.jpg)
 
@@ -13,3 +16,5 @@ This seems to be an official dev board. It's available from taobao for ~$200.
 - FS35ND01G SPI NAND 1Gbit
 - 1838T IR receiver
 - Goodix 911 touchscreen
+- i2c0 mode4 on jp3
+- spi0 mode5 on jp4
