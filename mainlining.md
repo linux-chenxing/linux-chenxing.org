@@ -26,11 +26,14 @@ Bunch of purely DTS stuff. Adds SRAM, PMU and reboot support so that resetting n
 
 ## Round 4: GPIO
 
-**Pushed**
+**DONE** 5.11
 
 https://patchwork.kernel.org/bundle/dgp/mstar%20-%20msc313%20gpio/
 
+
 ## Round 5: Initial clocks, MPLL, PLL gater, clock gates
+
+** MPLL Pushed ** 
 
 ** Cleaning up ** - Maybe fixed clocks and MPLL for 5.11?
 
