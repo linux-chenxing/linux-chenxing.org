@@ -33,6 +33,10 @@ controller, a video decoder intead of encoder etc.
 
 Cheap solder down IoT module.
 
+### [widora](https://github.com/widora/SSD202)
+
+Widora are apparently designing a board.
+
 ## Pinout
 
 https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be0fdaf273/drivers/sstar/gpio/infinity2m/mhal_pinmux.c
