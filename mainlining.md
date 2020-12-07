@@ -50,3 +50,5 @@ https://patchwork.kernel.org/bundle/dgp/mstar%20-%20msc313%20gpio/
 https://patchwork.kernel.org/bundle/dgp/mstar%20-%20infinity2m%20SMP/
 
 ## Round 10: Pinctrl?
+
+** Cleaning up **
