@@ -31,6 +31,12 @@ controller, a video decoder intead of encoder etc.
 
 ### [ido-som2d01](http://www.wireless-tag.cn/portfolio/ido-som2d01-2/)
 
+### GW300
+
+*probably*
+
+http://myzr.com.cn/public/index/index/product/id/115.html
+
 Cheap solder down IoT module.
 
 ### [widora](https://github.com/widora/SSD202)
