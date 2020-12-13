@@ -31,6 +31,30 @@ This block contains a ton of random bits that control how the "PM" domain that s
 
 0xa4, i3 and i2m can write 0xff80
 
+### Resets experiments
+
+Should be unlock die domain reset and fire, cause everything to lock up and power consumption to drop from 115ma to 15ma.
+
+```
+=> mw.w 0x1f001cb4 b8d4
+=> mw.w 0x1f001ca4 0x0800
+```
+
+- Not setting the password stops anything happening so the password is right.
+- The reset fire bit needs to be cleared and set again after setting the password. Firing and then setting the password does nothing.
+- Setting the bits in the top of the reset register doesn't stop the reset from happening.
+
+ARM cpu reset
+
+```
+=> mw.w 0x1f001cb0 0xb8d3
+=> mw.w 0x1f001ca4 0x400
+```
+
+- Not setting the password stop anything happening so the password is right.
+- Setting the top bits in the reset register causes everything to lock up. Reset held low? Power consumption only drops to 110ma from 115ma
+
+
 ## mystery block - 0x1f007800?
 
 The vendor pm suspend code does something here but the bootrom and ipl don't touch it.
