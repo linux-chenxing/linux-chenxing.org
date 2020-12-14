@@ -54,6 +54,35 @@ ARM cpu reset
 - Not setting the password stop anything happening so the password is right.
 - Setting the top bits in the reset register causes everything to lock up. Reset held low? Power consumption only drops to 110ma from 115ma
 
+8051 reset
+
+```
+mw.w 0x1f001ca4 0x1000
+```
+
+-- Consumption jumps from ~115ma to ~120ma
+
+```
+-- => md.w 0x1f0021f8 0x4
+1f0021f8: 3fac 0000 ff00 0000                        .?......
+```
+
+This value starts changing. This apparently the 8051 program counter.
+
+
+```
+mw.w 0x1f001ca4 0x0000
+```
+
+-- Consumption returns to ~115ma
+
+```
+mw.w 0x1f001cac 0x829f
+```
+
+-- Does nothing apparently. Reset bit above doesn't care.
+
+
 
 ## mystery block - 0x1f007800?
 
