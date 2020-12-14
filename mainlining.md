@@ -6,7 +6,9 @@
 
 [Linux v5.9 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_9_rebase) - Linux 5.9 with a mess of patches on top. Frozen. This is for validating that rebasing, cleaning up etc for 5.10 hasn't busted anything.
 
-[Linux v5.10 Dirty work tree](https://github.com/fifteenhex/linux/tree/mstar_dev_v5_10) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
+[Linux v5.10 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_10_rebase) - Linux 5.10 with slightly less of a mess of patches on top. Frozen. This if for validating that rebase, cleaning up etc for 5.11 hasn't busted anything
+
+[Linux v5.11 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_11_rebase) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
 
 ## Round 1: Initial support (arch definition, basic DTS, UART)
 
@@ -49,6 +51,8 @@ https://patchwork.kernel.org/bundle/dgp/mstar%20-%20mpll/
 ** Pushed **
 
 https://patchwork.kernel.org/bundle/dgp/mstar%20-%20infinity2m%20SMP/
+
+5.11?
 
 ## Round 10: Pinctrl?
 
