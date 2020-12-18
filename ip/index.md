@@ -6,8 +6,8 @@ Mostly a mystery. Hardware in this area is kept alive even when the chip is in d
 For infinity3 and mercury5 at least PM domain blocks are easy to see because they mapped 
 to 0x1f00xxxx.
 
-[Register map](pm_regmap.md)
-[PM51 - 8051 MCU in the PM domain](pm51.md)
+- [Register map](pm_regmap.md)
+- [PM51 - 8051 MCU in the PM domain](pm51.md)
 
 
 ### sleep intc
