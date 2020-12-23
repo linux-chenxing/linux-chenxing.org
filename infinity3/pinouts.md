@@ -40,8 +40,8 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 | 7  | AVDDIO_DRAM    | 29 | PM_SPI_DO                                  | 51 | SR_IO02   | 73 | SPI0_DO     |
 | 8  | VDDIO_DATA     | 30 | PM_SPI_CK                                  | 52 | SR_IO03   | 74 | PWM0        |
 | 9  | VDDIO_DATA     | 31 | PM_SPI_HLD                                 | 53 | SR_IO04   | 75 | PWM1        |
-| 10 | AVDD_PLL       | 32 | PM_LED0                                    | 54 | SR_IO05   | 76 | VDD         |
-| 11 | DVDD_DDR_RX    | 33 | PM_LED1                                    | 55 | SR_IO06   | 77 | SD_CLK      |
+| 10 | AVDD_PLL       | 32 | [PM_LED0](/ip/commonpins.md#pm_led0)       | 54 | SR_IO05   | 76 | VDD         |
+| 11 | DVDD_DDR_RX    | 33 | [PM_LED1](/ip/commonpins.md#pm_led1)       | 55 | SR_IO06   | 77 | SD_CLK      |
 | 12 | SAR_GPIO3      | 34 | AVDD_XTAL                                  | 56 | SR_IO07   | 78 | SD_CMD      |
 | 13 | SAR_GPIO2      | 35 | XTAL_IN                                    | 57 | SR_IO08   | 79 | SD_D0       |
 | 14 | SAR_GPIO1      | 36 | XTAL_OUT                                   | 58 | SR_IO09   | 80 | SD_D1       |
