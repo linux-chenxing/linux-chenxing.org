@@ -12,9 +12,9 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 | 4  | VDD          |               | 36 | GPIO47                                     |               | 68 | TTL9      |               | 100 | GPIO1                                | eth1_mdc, i2s_bck  |
 | 5  | GPIO85       |               | 37 | GPIO48                                     |               | 69 | TTL10     |               | 101 | GPIO2                                | i2c1_scl           |
 | 6  | GPIO86       |               | 38 | [UART1_RX](/ip/commonpins.md#uart1_rx)     |               | 70 | TTL11     |               | 102 | GPIO3                                | i2c1_sda           |
-| 7  | DMIC_R       |               | 39 | [UART1_TX](/ip/commonpins.md#uart1_tx)     | ttl_de        | 71 | TTL12     |               | 103 | [PM_LED0](/ip/commonpins.md#pm_led0) |                    |
-| 8  | DMIC_L       |               | 40 | VDDIO_DATA                                 |               | 72 | TTL13     |               | 104 | [PM_LED1](/ip/commonpins.md#pm_led1) |                    |
-| 9  | DMIC_CLK     |               | 41 | AVDDIO_DRAM                                |               | 73 | TTL14     |               | 105 | VDD                                  |                    |
+| 7  | DMIC_R       | dmic_d1²      | 39 | [UART1_TX](/ip/commonpins.md#uart1_tx)     | ttl_de        | 71 | TTL12     |               | 103 | [PM_LED0](/ip/commonpins.md#pm_led0) |                    |
+| 8  | DMIC_L       | dmic_d0²      | 40 | VDDIO_DATA                                 |               | 72 | TTL13     |               | 104 | [PM_LED1](/ip/commonpins.md#pm_led1) |                    |
+| 9  | DMIC_CLK     | dmic_clk²     | 41 | AVDDIO_DRAM                                |               | 73 | TTL14     |               | 105 | VDD                                  |                    |
 | 10 | GPIO90       |               | 42 | VDD                                        |               | 74 | TTL15     |               | 106 | AVDD_ETH                             |                    |
 | 11 | VDDP_0       |               | 43 | VDDIO_DATA                                 |               | 75 | AVDD1     |               | 107 | ETH_RN                               |                    |
 | 12 | VDD          |               | 44 | VDDIO_DATA                                 |               | 76 | VDDP_1    |               | 108 | ETH_RP                               |                    |
