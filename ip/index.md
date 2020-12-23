@@ -658,6 +658,13 @@ the reset line of the second core and lets it go.
 
 ## GPIO
 
+|            | u-boot | linux     |
+|------------|--------|-----------|
+| infinity   |        | mainlined |
+| infinity2m |        | yes       |
+| infinity3  |        | mainlined |
+| mercury5   | n/a    | wip       |
+
 ```
 /*
  * gpio data registers seem to be laid out like this in the gpio block
