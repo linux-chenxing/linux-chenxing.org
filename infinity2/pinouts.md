@@ -6,7 +6,7 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 
 | #  | name         | alt functions | #  | name                                       | alt functions | #  | name      | alt functions | #   | name                                 | alt functions      |
 |----|--------------|---------------|----|--------------------------------------------|---------------|----|-----------|---------------|-----|--------------------------------------|--------------------|
-| 1  | GPIO12       | pwm3          | 33 | [PM_RESET](/ip/commonpins.md#pm_reset)     |               | 65 | TTL6      |               | 97  | SD_D2                                |                    |
+| 1  | GPIO12       | pwm3³         | 33 | [PM_RESET](/ip/commonpins.md#pm_reset)     |               | 65 | TTL6      |               | 97  | SD_D2                                |                    |
 | 2  | GPIO13       |               | 34 | [PM_UART_RX](/ip/commonpins.md#pm_uart_rx) |               | 66 | TTL7      |               | 98  | VDDP_1                               |                    |
 | 3  | GPIO14       |               | 35 | [PM_UART_TX](/ip/commonpins.md#pm_uart_tx) |               | 67 | TTL8      |               | 99  | GPIO0                                | eth1_mdio, i2s_wck |
 | 4  | VDD          |               | 36 | GPIO47                                     |               | 68 | TTL9      |               | 100 | GPIO1                                | eth1_mdc, i2s_bck  |
