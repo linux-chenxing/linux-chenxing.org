@@ -46,3 +46,7 @@ Cheap solder down IoT module.
 ##### [widora](https://github.com/widora/SSD202)
 
 Widora are apparently designing a board.
+
+##### Pinout
+
+See [pinouts](pinouts.md).
