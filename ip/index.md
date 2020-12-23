@@ -656,6 +656,13 @@ For the infinity2, 2m and 6e where there is a second core there are registers to
 the entry address for the secondary core and then a register that presumably unlocks
 the reset line of the second core and lets it go.
 
+|            | u-boot | linux     |
+|------------|--------|-----------|
+| infinity   |        | n/a       |
+| infinity2m |        | mainlined |
+| infinity3  |        | n/a       |
+| mercury5   | n/a    | n/a       |
+
 ## GPIO
 
 |            | u-boot | linux     |
