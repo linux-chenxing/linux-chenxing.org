@@ -34,6 +34,10 @@ The vendor kernel for these seems to be 4.9.84.
 
 ![SSC326D block diagram](ssc326d_blockdiagram.png)
 
+## SSC333
+
+[Databrief](ssc333_pb_v01.pdf)
+
 ## SSC335
 
 ### SSC335DE
