@@ -30,10 +30,10 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 | 22 | SAR_GPIO0    |               | 54 | FUART_CTS                                  | ttl_ck        | 86 | TTL23     | rmii_txd1?    | 118 | AUD_MICIN0                           |                    |
 | 23 | AVDD_NODIE   |               | 55 | FUART_RTS                                  | ttl_dout[0]   | 87 | TTL24     | rmii_txen?    | 119 | AUD_VRM_DAC                          |                    |
 | 24 | GND_EFUSE    |               | 56 | TTL0                                       | ttl_          | 88 | TTL25     |               | 120 | AUD_VAG                              |                    |
-| 25 | VDD          |               | 57 | TTL1                                       |               | 89 | TTL26     |               | 121 | GPIO4                                |                    |
-| 26 | PM_SPI_CZ    |               | 58 | TTL2                                       |               | 90 | TTL27     |               | 122 | GPIO5                                |                    |
-| 27 | PM_SPI_CK    |               | 59 | TTL3                                       |               | 91 | PM_SD_CDZ |               | 123 | GPIO6                                |                    |
-| 28 | PM_SPI_DI    |               | 60 | TTL4                                       |               | 92 | SD_D1     |               | 124 | GPIO7                                |                    |
+| 25 | VDD          |               | 57 | TTL1                                       |               | 89 | TTL26     |               | 121 | GPIO4                                | pwm0               |
+| 26 | PM_SPI_CZ    |               | 58 | TTL2                                       |               | 90 | TTL27     |               | 122 | GPIO5                                | pwm1               |
+| 27 | PM_SPI_CK    |               | 59 | TTL3                                       |               | 91 | PM_SD_CDZ |               | 123 | GPIO6                                | i2c0_scl           |
+| 28 | PM_SPI_DI    |               | 60 | TTL4                                       |               | 92 | SD_D1     |               | 124 | GPIO7                                | i2c0_sda           |
 | 29 | PM_SPI_DO    |               | 61 | TTL5                                       |               | 93 | SD_D0     |               | 125 | UART2_RX                             | spi0_mode5         |
 | 30 | PM_SPI_HLD   |               | 62 | DP_P1                                      |               | 94 | SD_CLK    |               | 126 | UART2_TX                             | spi0_mode5         |
 | 31 | PM_SPI_WPZ   |               | 63 | DM_P1                                      |               | 95 | SD_CMD    |               | 127 | GPIO10                               | spi0_mode5         |
