@@ -42,7 +42,11 @@ The vendor kernel for these seems to be 4.9.84.
 
 [Databrief](ssc335_pb_v03.pdf)
 
-### SSC335DE
+## SSC335DE
+
+## SSC336
+
+[Databrief](ssc336d_ssc336q_pb_v03.pdf)
 
 ## SSC337
 
