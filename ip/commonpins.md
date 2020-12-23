@@ -9,3 +9,7 @@
 ## PM_LED0
 
 ## PM_LED1
+
+## UART1_RX
+
+## UART1_TX
