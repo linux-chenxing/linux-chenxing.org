@@ -11,8 +11,8 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 | 3  | GPIO14       |               | 35 | [PM_UART_TX](/ip/commonpins.md#pm_uart_tx) |               | 67 | TTL8      |               | 99  | GPIO0                                | eth1_mdio, i2s_wck |
 | 4  | VDD          |               | 36 | GPIO47                                     |               | 68 | TTL9      |               | 100 | GPIO1                                | eth1_mdc, i2s_bck  |
 | 5  | GPIO85       |               | 37 | GPIO48                                     |               | 69 | TTL10     |               | 101 | GPIO2                                | i2c1_scl           |
-| 6  | GPIO86       |               | 38 | UART1_RX                                   |               | 70 | TTL11     |               | 102 | GPIO3                                | i2c1_sda           |
-| 7  | DMIC_R       |               | 39 | UART1_TX                                   | ttl_de        | 71 | TTL12     |               | 103 | [PM_LED0](/ip/commonpins.md#pm_led0) |                    |
+| 6  | GPIO86       |               | 38 | [UART1_RX](/ip/commonpins.md#uart1_rx)     |               | 70 | TTL11     |               | 102 | GPIO3                                | i2c1_sda           |
+| 7  | DMIC_R       |               | 39 | [UART1_TX](/ip/commonpins.md#uart1_tx)     | ttl_de        | 71 | TTL12     |               | 103 | [PM_LED0](/ip/commonpins.md#pm_led0) |                    |
 | 8  | DMIC_L       |               | 40 | VDDIO_DATA                                 |               | 72 | TTL13     |               | 104 | [PM_LED1](/ip/commonpins.md#pm_led1) |                    |
 | 9  | DMIC_CLK     |               | 41 | AVDDIO_DRAM                                |               | 73 | TTL14     |               | 105 | VDD                                  |                    |
 | 10 | GPIO90       |               | 42 | VDD                                        |               | 74 | TTL15     |               | 106 | AVDD_ETH                             |                    |
@@ -29,7 +29,7 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 | 21 | SAR_GPIO1    |               | 53 | FUART_TX                                   | ttl_hsync     | 85 | TTL22     | rmii_txd0?    | 117 | AUD_MICCM0                           |                    |
 | 22 | SAR_GPIO0    |               | 54 | FUART_CTS                                  | ttl_ck        | 86 | TTL23     | rmii_txd1?    | 118 | AUD_MICIN0                           |                    |
 | 23 | AVDD_NODIE   |               | 55 | FUART_RTS                                  | ttl_dout[0]   | 87 | TTL24     | rmii_txen?    | 119 | AUD_VRM_DAC                          |                    |
-| 24 | GND_EFUSE    |               | 56 | TTL0                                       |               | 88 | TTL25     |               | 120 | AUD_VAG                              |                    |
+| 24 | GND_EFUSE    |               | 56 | TTL0                                       | ttl_          | 88 | TTL25     |               | 120 | AUD_VAG                              |                    |
 | 25 | VDD          |               | 57 | TTL1                                       |               | 89 | TTL26     |               | 121 | GPIO4                                |                    |
 | 26 | PM_SPI_CZ    |               | 58 | TTL2                                       |               | 90 | TTL27     |               | 122 | GPIO5                                |                    |
 | 27 | PM_SPI_CK    |               | 59 | TTL3                                       |               | 91 | PM_SD_CDZ |               | 123 | GPIO6                                |                    |
