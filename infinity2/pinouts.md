@@ -4,6 +4,9 @@
 
 https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be0fdaf273/drivers/sstar/gpio/infinity2m/mhal_pinmux.c
 
+- Note: This might not be accurate
+- Subscript == mux value for function.
+
 | #  | name         | alt functions        | #  | name                                       | alt functions                                                            | #  | name               | alt functions                                                                                                                 | #   | name                                 | alt functions                             |
 |----|--------------|----------------------|----|--------------------------------------------|--------------------------------------------------------------------------|----|--------------------|-------------------------------------------------------------------------------------------------------------------------------|-----|--------------------------------------|-------------------------------------------|
 | 1  | GPIO12       | pwm3<sup>3</sup>     | 33 | [PM_RESET](/ip/commonpins.md#pm_reset)     |                                                                          | 65 | TTL6               | mipi_tx_p_ch0<sup>1/2</sup> ttl_dout2<sup>7/10</sup> ttl_dout4<sup>12/13</sup> ttl_dout6<sup>1</sup>                          | 97  | SD_D2<sup>1</sup>                    |                                           |
