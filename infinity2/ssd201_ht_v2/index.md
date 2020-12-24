@@ -10,7 +10,7 @@ The vendor provided a copy of the SDK but no schematics or chip documentation.
 ## Hardware
 
 - SigmaStar SSD201 or SSD202 SoC
-- IC Plus IP101GR PHY for the second eithernet.
+- IC Plus [IP101GR](https://datasheet.lcsc.com/szlcsc/IC-Plus-IP101GR_C79324.pdf) PHY for the second eithernet.
 - SSW101B connected via USB for WiFi
 - SGM4890 Audio Amp
 - FS35ND01G SPI NAND 1Gbit
