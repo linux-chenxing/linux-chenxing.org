@@ -485,6 +485,10 @@ Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blo
 
 PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or MIPI.
 
+|            | u-boot | linux |
+|------------|--------|-------|
+| infinity2m |        | wip   |
+
 ## Camera
 
 The pipeline for the m5 seems to look like this:
