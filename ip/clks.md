@@ -183,6 +183,21 @@ This (probably) a PLL that is used for dynamically scaling the CPU frequency.
 
 Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 
+```
+ *
+ * 0x100 - 15 |   13    |       12     |     11     |   10    |     9     |     8      |     3      | 2 - 0
+ *         pd | en_mini | fifo_div5_en | dual_lp_en | en_fifo | en_scalar | sdiv2p5_en | sdiv3p5_en | ictrl
+ *
+ * 0x104 -    11 - 8    |     5 - 4    |     1 - 0
+ *         loop_div_sec | loop_div_fst | input_div_fst
+ *
+ * 0x108 -      10 - 8  |       7 - 4    |     1 - 0
+ *             fifo_div | scalar_div_sec | scalar_div_fst
+ *
+ * 0x10c -     4        |  2 - 0
+ *       skew_en_fixclk | skew_div
+ ```
+
 #### MCM
 
 "memory clock manager"?
