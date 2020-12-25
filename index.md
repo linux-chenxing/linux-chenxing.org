@@ -91,6 +91,10 @@ when each type of chip was produced.
 |                           | ssc8336n | 1918S      |              | yes                    | yes             | yes             |              |                                      |                                          |
 |                           |          | 1936S      |              |                        |                 |                 |              |                                      |                                          |
 |                           | ssc8339d | 1838A      |              |                        |                 |                 |              | yes                                  |                                          |
+| misc                      |          |            |              |                        |                 |                 |              |                                      |                                          |
+|                           | ssa330d  |            |              |                        |                 |                 |              | [yes](/misc/SSA330D.pdf)             |                                          |
+|                           | ssa530g  |            |              |                        |                 |                 |              | [yes](/misc/SSA530G.pdf)             |                                          |
+|                           | ssd222   |            |              |                        |                 |                 |              | [yes](/misc/SSD222.pdf)              |                                          |
 
 - [0] SDK seems to actually be for the infinity1 but the infinity3 is very similar
 - [List up of some newer chips with process size info](http://bbs.16rd.com/thread-568161-1-1.html)
