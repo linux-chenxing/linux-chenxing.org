@@ -18,3 +18,4 @@ The vendor provided a copy of the SDK but no schematics or chip documentation.
 - Goodix 911 touchscreen
 - i2c0 mode4 on jp3
 - spi0 mode5 on jp4
+- 24bit 7 inch LCD panel
