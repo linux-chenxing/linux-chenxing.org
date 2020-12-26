@@ -5,6 +5,8 @@
 - LongSung M5710 LTE cat 1 module.
 - ISL1208 RTC
 
+- q3, gpio85, pin5
+
 lsusb
 
 ```
