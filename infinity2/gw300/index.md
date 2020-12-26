@@ -7,6 +7,7 @@
 - SIPEX 3232EE RS232 transceiver.
 
 - q3, gpio85, pin5
+- q4 - gpio13, pin2
 
 lsusb
 
