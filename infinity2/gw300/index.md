@@ -3,6 +3,7 @@
 ## Hardware
 
 - LongSung M5710 LTE cat 1 module.
+- ISL1208 RTC
 
 lsusb
 
