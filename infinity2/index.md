@@ -35,13 +35,14 @@ controller, a video decoder intead of encoder etc.
 
 ##### [ido-som2d01](http://www.wireless-tag.cn/portfolio/ido-som2d01-2/)
 
+Cheap solder down IoT module.
+
 ##### GW300
 
-*probably*
+GW300 is a SSD201 and the GW302 is a SSD202D
 
-http://myzr.com.cn/public/index/index/product/id/115.html
-
-Cheap solder down IoT module.
+[vendor page](http://myzr.com.cn/public/index/index/product/id/115.html)
+[tear down etc](gw300)
 
 ##### [widora](https://github.com/widora/SSD202)
 
