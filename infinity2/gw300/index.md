@@ -9,6 +9,7 @@
   - CONFIG_USB_SERIAL_OPTION
 - ISL1208 RTC
 - SIPEX 3232EE RS232 transceiver.
+- SP3485 RS485 transceiver.
 
 - q3, gpio85, pin5
 - q4 - gpio13, pin2
