@@ -13,6 +13,11 @@
 - q3, gpio85, pin5
 - q4 - gpio13, pin2
 
+- p5
+  - 2 t1out
+  - 3 r1in
+  - 4 gnd
+
 lsusb
 
 ```
