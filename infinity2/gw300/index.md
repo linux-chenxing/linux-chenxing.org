@@ -14,7 +14,8 @@
 - q3, gpio85, pin5
 - q4 - gpio13, pin2
 
-- p5
+- p5: seems to be another RS232 serial port
+  - 1 ??? 
   - 2 t1out
   - 3 r1in
   - 4 gnd
