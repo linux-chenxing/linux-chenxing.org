@@ -15,6 +15,7 @@
   - 2 t1out
   - 3 r1in
   - 4 gnd
+- dip socket might be for a DTMF generator?
 
 lsusb
 
