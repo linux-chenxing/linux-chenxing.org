@@ -1,5 +1,7 @@
 # GW300
 
+![board](board_in_case.jpg)
+
 ## Hardware
 
 - LongSung M5710 LTE cat 1 module.
