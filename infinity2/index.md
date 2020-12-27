@@ -41,8 +41,8 @@ Cheap solder down IoT module.
 
 GW300 is a SSD201 and the GW302 is a SSD202D
 
-[vendor page](http://myzr.com.cn/public/index/index/product/id/115.html)
-[tear down etc](gw300)
+- [vendor page](http://myzr.com.cn/public/index/index/product/id/115.html)
+- [tear down etc](gw300)
 
 ##### [widora](https://github.com/widora/SSD202)
 
