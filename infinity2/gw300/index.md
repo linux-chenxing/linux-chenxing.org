@@ -4,6 +4,7 @@
 
 ## Hardware
 
+- Winbond 128MiB SPI NAND 
 - LongSung M5710 LTE cat 1 module.
   - CONFIG_USB_NET_RNDIS_HOST
   - CONFIG_USB_SERIAL_OPTION
