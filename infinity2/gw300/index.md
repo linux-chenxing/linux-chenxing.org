@@ -535,3 +535,23 @@ Bus 002 Device 001: ID 1d6b:0002
 [   15.280380] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 [   40.152574] sd_vdd: disabling
 ```
+
+Output after pressing the LTE modem's power button.
+Needs this patch: https://lore.kernel.org/lkml/20201227031716.1343300-1-daniel@0x0f.com/
+
+```
+# gpioset 0 17=1
+# [   45.562552] usb 1-1: new high-speed USB device number 2 using fotg210-hcd
+[   45.783618] cdc_acm 1-1:1.0: ttyACM0: USB ACM device
+[   48.148858] usb 1-1: USB disconnect, device number 2
+[   53.832544] usb 1-1: new high-speed USB device number 3 using fotg210-hcd
+[   54.033136] usb 1-1: config 1 has an invalid interface number: 5 but max is 4
+[   54.040395] usb 1-1: config 1 has no interface number 3
+[   54.052515] rndis_host 1-1:1.0 usb0: register 'rndis_host' at usb-1f284800.uhc-1, RNDIS device, 86:9b:f1:2f:48:01
+[   54.064447] option 1-1:1.2: GSM modem (1-port) converter detected
+[   54.070857] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[   54.078353] option 1-1:1.4: GSM modem (1-port) converter detected
+[   54.084820] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[   54.092208] option 1-1:1.5: GSM modem (1-port) converter detected
+[   54.098782] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+```
