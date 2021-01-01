@@ -2,6 +2,10 @@
 
 # infinity2m
 
+## Specs
+
+- Only 64KB of internal SRAM
+
 ## MSR620 / SSR621D
 
 ### Known Devices
