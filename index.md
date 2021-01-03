@@ -147,7 +147,7 @@ ones.
 
 #### [Infinity2m](infinity2)
 
-- Closer tothe the infinity6 chips than the infinity2.
+- Closer to the [infinity6](#infinity6) chips than the infinity2.
 - Probably a replacement for the recording side, has video decoder, framebuffer etc.
 
 - [SSR621D](infinity2#ssr621d) - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
