@@ -21,7 +21,7 @@ at some point.
 
 ## FAQ
 
-- Q: Is there an IRC, discord or something for discussion?
+- Q: Is there an IRC channel, discord or something for discussion?
 - A: Please use githubs [dicussion feature](https://github.com/linux-chenxing/linux-chenxing.org/discussions) for now.
 
 # Porting Progress Matrix
