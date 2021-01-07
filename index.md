@@ -19,6 +19,11 @@ It's worth noting that the MStar/Sigmastar camera SoCs seem to be derived
 from the SoCs made by Alpha Imaging Technology which was merged into MStar
 at some point.
 
+## FAQ
+
+- Q: Is there an IRC, discord or something for discussion?
+- A: Please use githubs [dicussion feature](https://github.com/linux-chenxing/linux-chenxing.org/discussions) for now.
+
 # Porting Progress Matrix
 
 ## u-boot
