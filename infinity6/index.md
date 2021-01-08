@@ -53,3 +53,5 @@ The vendor kernel for these seems to be 4.9.84.
 - Chip id: 0xf2
 
 ### SSC337DE
+
+[Databrief](SSC337D_brief_datasheet.pdf)
