@@ -537,7 +537,9 @@ Bus 002 Device 001: ID 1d6b:0002
 ```
 
 Output after pressing the LTE modem's power button.
-Needs this patch: https://lore.kernel.org/lkml/20201227031716.1343300-1-daniel@0x0f.com/
+
+- Needs this patch: https://lore.kernel.org/lkml/20201227031716.1343300-1-daniel@0x0f.com/
+  - Queued for 5.12
 
 ```
 # gpioset 0 17=1
