@@ -65,7 +65,7 @@ at some point.
 |                           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR | load u-boot from SPI NAND | load u-boot from SD |
 |---------------------------|---------------------------------|--------------------------|---------------------------|---------------------|
 | [infinity1](#infinity1)   | yes                             | yes                      |                           |                     |
-| [infinity2m](#infinity2m) | wip                             | wip                      | almost                    |                     |
+| [infinity2m](#infinity2m) | yes                             | wip                      | almost                    |                     |
 | [infinity3](#infinity3)   | yes                             | yes                      |                           |                     |
 | [infinity5](#infinity5)   | wip                             | wip                      |                           |                     |
 | [infinity6](#infinity6)   | wip                             | wip                      |                           |                     |
