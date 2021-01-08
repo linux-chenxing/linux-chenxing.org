@@ -26,14 +26,25 @@ at some point.
 
 - Q: Is this the official support site for MStar/SigmaStar?
 - A: No. There is no relationship between this site and the vendor. This is a
-     "community" (community meaning one fat guy with a multimeter right now) effort.
+     "community" (community meaning one fat guy with a multimeter right now) research
+     effort.
+
+- Q: If I pay you money will you support me using the official SDKs?
+- A: No.
 
 - Q: Is there an IRC channel, discord or something for discussion?
-- A: Please use githubs [dicussion feature](https://github.com/linux-chenxing/linux-chenxing.org/discussions) for now.
+- A: Please use github's [dicussion feature](https://github.com/linux-chenxing/linux-chenxing.org/discussions) for now.
 
 - Q: Should I upload SDKs and post links here?
 - A: Please don't. Extract the parts that are licensed in a friendly way
-    (i.e. GPLv2) and them onto github or somewhere.
+    (i.e. GPLv2 or BSD) and push them onto github or somewhere and link that instead.
+    
+    The exception to this rule is where the SDK has already been leaked to github.
+    For example there are some copies of the SDKs that seem to have been uploaded by
+    manufacturers that are actually trying to comply with the licenses covering the kernel, u-boot etc
+    and uploaded the entire SDK.
+
+    Basically, if someone else leaks their copy of an SDK that's their problem.
 
 - Q: Should I upload datasheets or other references here?
 - A: Maybe. If they are already easy to download then putting them here for non-profit educational/research
