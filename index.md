@@ -62,14 +62,15 @@ at some point.
 
 ## u-boot
 
-|                           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR |
-|---------------------------|---------------------------------|--------------------------|
-| [infinity1](#infinity1)   | yes                             | yes                      |
-| [infinity2m](#infinity2m) | wip                             | wip                      |
-| [infinity3](#infinity3)   | yes                             | yes                      |
-| [infinity6](#infinity6)   | wip                             | wip                      |
-| [infinity6b0](#infinity6) | wip                             | wip                      |
-| [mercury5](#mercury5)     | yes                             | yes                      |
+|                           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR | load u-boot from SPI NAND | load u-boot from SD |
+|---------------------------|---------------------------------|--------------------------|---------------------------|---------------------|
+| [infinity1](#infinity1)   | yes                             | yes                      |                           |                     |
+| [infinity2m](#infinity2m) | wip                             | wip                      | almost                    |                     |
+| [infinity3](#infinity3)   | yes                             | yes                      |                           |                     |
+| [infinity5](#infinity5)   | wip                             | wip                      |                           |                     |
+| [infinity6](#infinity6)   | wip                             | wip                      |                           |                     |
+| [infinity6b0](#infinity6) | wip                             | wip                      |                           |                     |
+| [mercury5](#mercury5)     | yes                             | yes                      |                           | yes                 |
 
 ## linux
 
