@@ -2,9 +2,8 @@
 
 ## Intro
 
-This is intended to be a repository for info on the MStar/[SigmaStar](http://www.sigmastarsemi.com) SoCs.
-The name is a parody of linux-sunxi for Allwinner SoCs. MStar in Chinese is
-chenxing and the newer SigmaStar name is xingchen.
+This is intended to be a repository for info on the MStar/[SigmaStar](http://www.sigmastarsemi.com) SoCs
+and the associated mainling effort.
 
 This will probably never get as big as linux-sunxi so github pages should be
 more than enough.
@@ -21,8 +20,30 @@ at some point.
 
 ## FAQ
 
+- Q: Why linux-chenxing?
+- A: The name is a parody of linux-sunxi for Allwinner SoCs. MStar in Chinese is
+     chenxing and the newer SigmaStar name is xingchen.
+
+- Q: Is this the official support site for MStar/SigmaStar?
+- A: No. There is no relationship between this site and the vendor. This is a
+     "community" (community meaning one fat guy with a multimeter right now) effort.
+
 - Q: Is there an IRC channel, discord or something for discussion?
 - A: Please use githubs [dicussion feature](https://github.com/linux-chenxing/linux-chenxing.org/discussions) for now.
+
+- Q: Should I upload SDKs and post links here?
+- A: Please don't. Extract the parts that are licensed in a friendly way
+    (i.e. GPLv2) and them onto github or somewhere.
+
+- Q: Should I upload datasheets or other references here?
+- A: Maybe. If they are already easy to download then putting them here for educational purposes
+     might be ok. (I'm not a lawyer)
+     Materials that are behind an NDA wall like those in the SDKs might be interesting but
+     most of the information they contain can be worked out from the kernel sources or about
+     stuff contained the proprietary modules we don't really care about anyways.
+
+- Q: Why is Tux orange and why does he have a stalk and leaf sticking out of his head?
+- A: The SigmaStar logo is an orange isn't it? Looks like one to me.
 
 # Porting Progress Matrix
 
