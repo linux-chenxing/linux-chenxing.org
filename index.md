@@ -36,8 +36,10 @@ at some point.
     (i.e. GPLv2) and them onto github or somewhere.
 
 - Q: Should I upload datasheets or other references here?
-- A: Maybe. If they are already easy to download then putting them here for educational purposes
-     might be ok. (I'm not a lawyer)
+- A: Maybe. If they are already easy to download then putting them here for non-profit educational/research
+     purposes should be ok. IANAL but as far as I can tell github is in the US and
+     [fair use](https://www.copyright.gov/title17/92chap1.html#107) applies.
+
      Materials that are behind an NDA wall like those in the SDKs might be interesting but
      most of the information they contain can be worked out from the kernel sources or about
      stuff contained the proprietary modules we don't really care about anyways.
