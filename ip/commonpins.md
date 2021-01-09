@@ -25,3 +25,8 @@ micro controller.
 ## UART1_RX
 
 ## UART1_TX
+
+## SPI0_CZ
+## SPI0_CK
+## SPI0_DI
+## SPI0_DO
