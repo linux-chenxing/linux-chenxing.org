@@ -22,6 +22,16 @@ micro controller.
 
 ## PM_LED1
 
+## PWM0
+## PWM1
+## PWM3
+## PWM4
+## PWM5
+## PWM6
+## PWM7
+
+PWM pins.
+
 ## UART1_RX
 
 ## UART1_TX
