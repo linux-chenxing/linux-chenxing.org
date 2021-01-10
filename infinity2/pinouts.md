@@ -2,7 +2,7 @@
 
 ## 128 QFN (SSD201/SSD202D)
 
-[vendor pinmux](https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be0fdaf273/drivers/sstar/gpio/infinity2m/mhal_pinmux.c)
+[vendor padmux table](https://github.com/linux-chenxing/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be0fdaf273/drivers/sstar/gpio/infinity2m/padmux_tables.c)
 
 - Note: This might not be accurate
 - Subscript == mux value for function.
