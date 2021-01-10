@@ -4,28 +4,28 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 
 ## 80 pin QFN
 
-| #  | Name                                       | #  | Name       | alt functions    | #  | Name     | #  | Name                                             | alt functions |
-|----|--------------------------------------------|----|------------|------------------|----|----------|----|--------------------------------------------------|---------------|
-| 1  | AUD_MICCM0                                 | 21 | PM_GPIO4   |                  | 41 | I2C1_SCL | 61 | VDD                                              |               |
-| 2  | AUD_LINEOUT_L0                             | 22 | PM_SPI_CZ  |                  | 42 | I2C1_SDA | 62 | VDDP_3                                           |               |
-| 3  | AVDDIO_DRAM                                | 23 | PM_SPI_DI  |                  | 43 | VDDP_2   | 63 | [SPI0_CZ](/ip/commonpins.md#spi0_cz)<sup>1</sup> |               |
-| 4  | VDDIO_CMD                                  | 24 | PM_SPI_WPZ |                  | 44 | SR_IO02  | 64 | [SPI0_CK](/ip/commonpins.md#spi0_ck)<sup>1</sup> |               |
-| 5  | VDD                                        | 25 | PM_SPI_DO  |                  | 45 | SR_IO03  | 65 | [SPI0_DI](/ip/commonpins.md#spi0_di)<sup>1</sup> |               |
-| 6  | VDDIO_DATA                                 | 26 | PM_SPI_CK  |                  | 46 | SR_IO04  | 66 | [SPI0_DO](/ip/commonpins.md#spi0_d0)<sup>1</sup> |               |
-| 7  | AVDD_PLL                                   | 27 | AVDD_XTAL  |                  | 47 | SR_IO05  | 67 | VDD                                              |               |
-| 8  | DVDD_DDR_RX                                | 28 | XTAL_IN    |                  | 48 | SR_IO06  | 68 | SD_CLK                                           |               |
-| 9  | SAR_GPIO3                                  | 29 | XTAL_OUT   |                  | 49 | SR_IO07  | 69 | SD_CMD                                           |               |
-| 10 | SAR_GPIO2                                  | 30 | AVDD_ETH   |                  | 50 | SR_IO08  | 70 | SD_D0                                            |               |
-| 11 | SAR_GPIO1                                  | 31 | ETH_RN     |                  | 51 | SR_IO09  | 71 | SD_D1                                            |               |
-| 12 | SAR_GPIO0                                  | 32 | ETH_RP     |                  | 52 | SR_IO10  | 72 | SD_D2                                            |               |
-| 13 | DVDD_NODIE                                 | 33 | ETH_TN     |                  | 53 | SR_IO11  | 73 | SD_D3                                            |               |
-| 14 | AVDD_NODIE                                 | 34 | ETH_TP     |                  | 54 | SR_IO12  | 74 | AVDD_USB                                         |               |
-| 15 | PM_SD_CDZ                                  | 35 | VDDP_1     |                  | 55 | SR_IO13  | 75 | USB_DM                                           |               |
-| 16 | PM_IRIN                                    | 36 | FUART_RX   | spi0<sup>3</sup> | 56 | SR_IO14  | 76 | USB_DP                                           |               |
-| 17 | [PM_RESET](/ip/commonpins.md#pm_reset)     | 37 | FUART_TX   | spi0<sup>3</sup> | 57 | SR_IO15  | 77 | AVDD_AUD                                         |               |
-| 18 | [PM_UART_RX](/ip/commonpins.md#pm_uart_rx) | 38 | FUART_CTS  | spi0<sup>3</sup> | 58 | SR_IO16  | 78 | AUD_VAG                                          |               |
-| 19 | [PM_UART_TX](/ip/commonpins.md#pm_uart_tx) | 39 | FUART_RTS  | spi0<sup>3</sup> | 59 | SR_IO17  | 79 | AUD_VRM_ADC                                      |               |
-| 20 | GND_EFUSE                                  | 40 | VDD        |                  | 60 | VDD      | 80 | AUD_MICIN0                                       |               |
+| #  | Name                                       | alt functions    | #  | Name       | alt functions    | #  | Name     | alt functions | #  | Name                                             | alt functions |
+|----|--------------------------------------------|------------------|----|------------|------------------|----|----------|---------------|----|--------------------------------------------------|---------------|
+| 1  | AUD_MICCM0                                 |                  | 21 | PM_GPIO4   |                  | 41 | I2C1_SCL |               | 61 | VDD                                              |               |
+| 2  | AUD_LINEOUT_L0                             |                  | 22 | PM_SPI_CZ  |                  | 42 | I2C1_SDA |               | 62 | VDDP_3                                           |               |
+| 3  | AVDDIO_DRAM                                |                  | 23 | PM_SPI_DI  |                  | 43 | VDDP_2   |               | 63 | [SPI0_CZ](/ip/commonpins.md#spi0_cz)<sup>1</sup> |               |
+| 4  | VDDIO_CMD                                  |                  | 24 | PM_SPI_WPZ |                  | 44 | SR_IO02  |               | 64 | [SPI0_CK](/ip/commonpins.md#spi0_ck)<sup>1</sup> |               |
+| 5  | VDD                                        |                  | 25 | PM_SPI_DO  |                  | 45 | SR_IO03  |               | 65 | [SPI0_DI](/ip/commonpins.md#spi0_di)<sup>1</sup> |               |
+| 6  | VDDIO_DATA                                 |                  | 26 | PM_SPI_CK  |                  | 46 | SR_IO04  |               | 66 | [SPI0_DO](/ip/commonpins.md#spi0_d0)<sup>1</sup> |               |
+| 7  | AVDD_PLL                                   |                  | 27 | AVDD_XTAL  |                  | 47 | SR_IO05  |               | 67 | VDD                                              |               |
+| 8  | DVDD_DDR_RX                                |                  | 28 | XTAL_IN    |                  | 48 | SR_IO06  |               | 68 | SD_CLK                                           |               |
+| 9  | SAR_GPIO3                                  |                  | 29 | XTAL_OUT   |                  | 49 | SR_IO07  |               | 69 | SD_CMD                                           |               |
+| 10 | SAR_GPIO2                                  |                  | 30 | AVDD_ETH   |                  | 50 | SR_IO08  |               | 70 | SD_D0                                            |               |
+| 11 | SAR_GPIO1                                  |                  | 31 | ETH_RN     |                  | 51 | SR_IO09  |               | 71 | SD_D1                                            |               |
+| 12 | SAR_GPIO0                                  |                  | 32 | ETH_RP     |                  | 52 | SR_IO10  |               | 72 | SD_D2                                            |               |
+| 13 | DVDD_NODIE                                 |                  | 33 | ETH_TN     |                  | 53 | SR_IO11  |               | 73 | SD_D3                                            |               |
+| 14 | AVDD_NODIE                                 |                  | 34 | ETH_TP     |                  | 54 | SR_IO12  |               | 74 | AVDD_USB                                         |               |
+| 15 | PM_SD_CDZ                                  |                  | 35 | VDDP_1     |                  | 55 | SR_IO13  |               | 75 | USB_DM                                           |               |
+| 16 | PM_IRIN                                    |                  | 36 | FUART_RX   | spi0<sup>3</sup> | 56 | SR_IO14  |               | 76 | USB_DP                                           |               |
+| 17 | [PM_RESET](/ip/commonpins.md#pm_reset)     |                  | 37 | FUART_TX   | spi0<sup>3</sup> | 57 | SR_IO15  |               | 77 | AVDD_AUD                                         |               |
+| 18 | [PM_UART_RX](/ip/commonpins.md#pm_uart_rx) |                  | 38 | FUART_CTS  | spi0<sup>3</sup> | 58 | SR_IO16  |               | 78 | AUD_VAG                                          |               |
+| 19 | [PM_UART_TX](/ip/commonpins.md#pm_uart_tx) |                  | 39 | FUART_RTS  | spi0<sup>3</sup> | 59 | SR_IO17  |               | 79 | AUD_VRM_ADC                                      |               |
+| 20 | GND_EFUSE                                  |                  | 40 | VDD        |                  | 60 | VDD      |               | 80 | AUD_MICIN0                                       |               |
 
 ## 88 pin QFN
 
