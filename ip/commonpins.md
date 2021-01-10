@@ -19,8 +19,9 @@ These pins can also be mux'd between uart0 and "hk uart" which should be the uar
 micro controller.
 
 ## PM_LED0
-
 ## PM_LED1
+
+These are generally used for the ethernet indicator LEDs.
 
 ## PWM0
 ## PWM1
