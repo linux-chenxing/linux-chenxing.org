@@ -1,5 +1,7 @@
 # Infinity 6 pinouts
 
+[vendor pinmux table](https://github.com/linux-chenxing/linux-ssc325/blob/mijia_camera_mstar323/drivers/sstar/gpio/infinity6/mhal_pinmux.c)
+
 ## 88 pin QFN
 
 * Note: This is very close to the 88 pin QFN for i3. Only pin 60 and 61 seem to differ.
