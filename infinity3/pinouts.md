@@ -23,8 +23,8 @@ https://github.com/fifteenhex/linux-ssc325/blob/93240ba80ed1eff069eaca968e5b02be
 | 15 | PM_SD_CDZ                                  |                  | 35 | VDDP_1     |                                   | 55 | SR_IO13  |               | 75 | USB_DM                                           |                  |
 | 16 | PM_IRIN                                    |                  | 36 | FUART_RX   | spi0<sup>3</sup> pwm0<sup>3</sup> | 56 | SR_IO14  |               | 76 | USB_DP                                           |                  |
 | 17 | [PM_RESET](/ip/commonpins.md#pm_reset)     |                  | 37 | FUART_TX   | spi0<sup>3</sup> pwm1<sup>3</sup> | 57 | SR_IO15  |               | 77 | AVDD_AUD                                         |                  |
-| 18 | [PM_UART_RX](/ip/commonpins.md#pm_uart_rx) |                  | 38 | FUART_CTS  | spi0<sup>3</sup> pwm2<sup>3</sup> | 58 | SR_IO16  |               | 78 | AUD_VAG                                          |                  |
-| 19 | [PM_UART_TX](/ip/commonpins.md#pm_uart_tx) |                  | 39 | FUART_RTS  | spi0<sup>3</sup> pwm3<sup>3</sup> | 59 | SR_IO17  |               | 79 | AUD_VRM_ADC                                      |                  |
+| 18 | [PM_UART_RX](/ip/commonpins.md#pm_uart_rx) |                  | 38 | FUART_CTS  | spi0<sup>3</sup> pwm2<sup>2</sup> | 58 | SR_IO16  |               | 78 | AUD_VAG                                          |                  |
+| 19 | [PM_UART_TX](/ip/commonpins.md#pm_uart_tx) |                  | 39 | FUART_RTS  | spi0<sup>3</sup> pwm3<sup>2</sup> | 59 | SR_IO17  |               | 79 | AUD_VRM_ADC                                      |                  |
 | 20 | GND_EFUSE                                  |                  | 40 | VDD        |                                   | 60 | VDD      |               | 80 | AUD_MICIN0                                       |                  |
 
 ## 88 pin QFN
