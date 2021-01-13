@@ -42,6 +42,8 @@ controller, a video decoder intead of encoder etc.
 
 Cheap solder down IoT module.
 
+[online doc](http://doc.industio.com/docs/ssd20x-system/page_0)
+
 ##### GW300
 
 GW300 is a SSD201 and the GW302 is a SSD202D
