@@ -26,6 +26,44 @@ controller, a video decoder intead of encoder etc.
 
 ### SSD201
 
+IPL output:
+
+```
+IPL g5da0ceb
+D-1d
+HW Reset
+miupll_166MHz
+miu_bw_set
+utmi_1_init done
+utmi_2_init done
+utmi_3_init done
+usbpll init done......
+cpupll init done
+SPI 54M
+clk_init done 
+P1 USB_rterm trim=0x0001
+P1 USB_HS_TX_CURRENT trim=0x0002
+P2 USB_rterm trim=0x0001
+P2 USB_HS_TX_CURRENT trim=0x0001
+P3 USB_rterm trim=0x0001
+P3 USB_HS_TX_CURRENT trim=0x0001
+PM_vol_bgap trim=0x0002
+GCR_SAR_DATA trim=0x0190
+ETH 10T output swing trim=0x0010
+ETH 100T output swing trim=0x0010
+ETH RX input impedance trim=0x0000
+ETH TX output impedance trim=0x0000
+MIPI_HS_RTERM trim=0x0001
+MIPI_LP_RTERM trim=0x0000
+64MB
+BIST0_0001-OK
+Enable MMU and CACHE
+Load IPL_CUST from SPINAND
+unable to find IDX for part type:0001
+[I]m7
+Checksum OK
+```
+
 - [Data brief](SSD201_pb_S_v01.pdf)
 
 ### SSD202
