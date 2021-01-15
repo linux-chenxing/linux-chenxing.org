@@ -17,7 +17,7 @@
 
 [vendor page](https://www.tp-link.com.cn/product_1497.html#tag)
 
-## SSD201/SSD202
+## SSD201/SSD202D
 
 Seems to be all of the base stuff the other chips have with an extra ethernet
 controller, a video decoder intead of encoder etc.
@@ -66,7 +66,7 @@ Checksum OK
 
 - [Data brief](SSD201_pb_S_v01.pdf)
 
-### SSD202
+### SSD202D
 
 - [Data brief](SSD202D_pb_S_v01.pdf)
 
