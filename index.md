@@ -192,7 +192,7 @@ ones.
 
 - [SSR621D](infinity2#ssr621d) - Dual Cortex A7 128MB DDR3(TBC) in QFN128 with HDMI, VGA, SATA
 - [SSD201](infinity2#ssd201) - Dual Cortex A7 with 64MB of DDR2 in QFN128
-- [SSD202](infinity2#ssd202) - Dual Cortex A7 with 128MB of DDR3 in a QFN128
+- [SSD202D](infinity2#ssd202d) - Dual Cortex A7 with 128MB of DDR3 in a QFN128
 
 - [MSR620?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=390&lcid=53&pid=) Maybe "k6lite" family
 - [MSR630?](http://www.sigmastarsemi.com/en/products/info.aspx?itemid=391&lcid=53&pid=) Maybe "k6" family
