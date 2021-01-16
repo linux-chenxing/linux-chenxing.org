@@ -278,9 +278,9 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 # Non-SoC chips
 
 - SSW101B - Seems to be a wifi chip, maybe based on the same core as the XR819.
-  See [xradio](https://github.com/fifteenhex/xradio).
-  [Driver code](https://github.com/fifteenhex/sigmastar-ssw101b-driver)
-  [Maybe the same as this](https://www.altobeam.com/en/contents/72/6.html)
+  - See [xradio](https://github.com/fifteenhex/xradio).
+  - [Driver code](https://github.com/fifteenhex/sigmastar-ssw101b-driver)
+  - [Maybe the same as this](https://www.altobeam.com/en/contents/72/6.html)
 
 # Injoinic PMICs
 
