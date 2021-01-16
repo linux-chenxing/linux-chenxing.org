@@ -281,6 +281,7 @@ According to the code that is in the wild and SigmaStars page there are some Cor
   - See [xradio](https://github.com/fifteenhex/xradio).
   - [Driver code](https://github.com/fifteenhex/sigmastar-ssw101b-driver)
   - [Maybe the same as this](https://www.altobeam.com/en/contents/72/6.html)
+  - [Driver that looks really similar...](https://github.com/BPI-SINOVOIP/BPI-S905X3-Android9/tree/master/hardware/wifi/atbm/atbm602x)
 
 # Injoinic PMICs
 
