@@ -45,5 +45,6 @@
 ## Boot strap pins
 
 | boot device | PM_SPI_CK | PM_SPI_DI | PM_SPI_WPZ |
+|-------------|-----------|-----------|------------|
 | SPI NOR     | 0         | 0         | 0          |
 | SPI NAND    | 1         | 1         | 1          |
