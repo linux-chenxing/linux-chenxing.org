@@ -21,4 +21,5 @@ At the time of writing the SSC325 is available from numerous sellers.
 The SSD201 and SS202 is also availabe.
 
 - [HanC](https://shop458148949.taobao.com/) - Has the SSD201/SSD202D, the official Sigmastar eval board and an SSW101B based wifi module
+- [16RD.com mall](https://shop260932201.taobao.com/) - Has various Sigmastar devkits. The Honestar SSD202D board was purchased from here. Note they don't seem to actually have anything in stock and they take weeks and weeks to send stuff out.
 
