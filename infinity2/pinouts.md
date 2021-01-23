@@ -41,3 +41,9 @@
 | 30 | PM_SPI_HLD   |                      | 62 | DP_P1                                      |                                                                          | 94 | SD_CLK<sup>1</sup> | i2c1_scl<sup>5</sup> i2s_bck<sup>3</sup>                                                                                      | 126 | UART2_TX                             | spi0_ck<sup>5</sup>                       |
 | 31 | PM_SPI_WPZ   |                      | 63 | DM_P1                                      |                                                                          | 95 | SD_CMD<sup>1</sup> | i2c1_sda<sup>5</sup> i2s_sdi<sup>3</sup>                                                                                      | 127 | GPIO10                               | spi0_di<sup>5</sup>                       |
 | 32 | PM_IRIN      |                      | 64 | AVDD_USB                                   |                                                                          | 96 | SD_D3<sup>1</sup>  | i2s_sdo<sup>3</sup>                                                                                                           | 128 | GPIO11                               | spi0_do<sup>5</sup>                       |
+
+## Boot strap pins
+
+| boot device | PM_SPI_CK | PM_SPI_DI | PM_SPI_WPZ |
+| SPI NOR     | 0         | 0         | 0          |
+| SPI NAND    | 1         | 1         | 1          |
