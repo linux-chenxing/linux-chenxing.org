@@ -19,3 +19,6 @@ Since some sites reported on the Breadbee the MSC313E is available on ebay.
 The MSC313 and MSC313E sometimes appear on TaoBao.
 At the time of writing the SSC325 is available from numerous sellers.
 The SSD201 and SS202 is also availabe.
+
+[HanC](https://shop458148949.taobao.com/) -- Has the SSD201/SSD202D, the official Sigmastar eval board and an SSW101B based wifi module
+
