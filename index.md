@@ -62,15 +62,19 @@ at some point.
 
 ## u-boot
 
-|                           | load u-boot SPL from vendor IPL | load u-boot from SPI NOR | load u-boot from SPI NAND | load u-boot from SD |
-|---------------------------|---------------------------------|--------------------------|---------------------------|---------------------|
-| [infinity1](#infinity1)   | yes                             | yes                      |                           |                     |
-| [infinity2m](#infinity2m) | yes                             | wip                      | almost                    |                     |
-| [infinity3](#infinity3)   | yes                             | yes                      |                           |                     |
-| [infinity5](#infinity5)   | wip                             | wip                      |                           |                     |
-| [infinity6](#infinity6)   | wip                             | wip                      |                           |                     |
-| [infinity6b0](#infinity6) | wip                             | wip                      |                           |                     |
-| [mercury5](#mercury5)     | yes                             | yes                      |                           | yes                 |
+For most chips u-boot is loaded by loading the SPL as IPL-CUST from the IPL so that blob is needed.
+The mercury5 however can boot with the u-boot SPL as the IPL so now blobs are required.
+Getting the other chips to boot without the vendor IPL is mostly a case of doing the DDR setup in the SPL.
+
+|                           | load u-boot SPL from boot ROM | load u-boot SPL from vendor IPL | load u-boot from SPI NOR | load u-boot from SPI NAND | load u-boot from SD |
+|---------------------------|-------------------------------|---------------------------------|--------------------------|---------------------------|---------------------|
+| [infinity1](#infinity1)   |                               | yes                             | yes                      |                           |                     |
+| [infinity2m](#infinity2m) |                               | yes                             | wip                      | yes                       |                     |
+| [infinity3](#infinity3)   |                               | yes                             | yes                      |                           |                     |
+| [infinity5](#infinity5)   |                               | wip                             | wip                      |                           |                     |
+| [infinity6](#infinity6)   |                               | wip                             | wip                      |                           |                     |
+| [infinity6b0](#infinity6) |                               | wip                             | wip                      |                           |                     |
+| [mercury5](#mercury5)     | yes, SD                       | yes                             | yes                      |                           | yes                 |
 
 ## linux
 
