@@ -6,6 +6,8 @@
 
 - Dual Cortex A7
 - Only 64KB of internal SRAM
+- 16KB boot ROM
+- Boot from SPI NOR or SPI NAND
 
 ## MSR620 / SSR621D
 
