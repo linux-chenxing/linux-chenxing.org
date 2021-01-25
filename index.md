@@ -340,6 +340,7 @@ dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
 
 - [aiwinn](http://www.aiwinn.com/) - seems to supply a bunch of AI enabled things based on SigmaStar SoCs
 - [comake.online](http://comake.online/) - Sigmastar's new open forum.
+- [WhyCan SSD20X section](https://whycan.com/f_52.html)
 
 ## Buying chips
 
