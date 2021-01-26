@@ -270,6 +270,7 @@ Doesn't seem to exist.
 - SSC8539
 - SSA520
 - SSD203D
+- SSD210 - Dual Cortex A7 QFN68
 
 # 64bit ARM based
 
