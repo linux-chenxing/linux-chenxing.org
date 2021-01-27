@@ -28,6 +28,7 @@ code for the AT91RM200
   - 8 works, 96 doesn't work.
 
 - There are some extra registers after the documented ones that are called "JULIAN".
+  These are only visable via the RIU interface. The XIU only exposes the standard registers.
 
 | name        | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0                          | notes            |
 |-------------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|----------------------------|------------------|
