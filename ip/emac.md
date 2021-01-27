@@ -21,8 +21,11 @@ code for the AT91RM200
 
 - AT91RM200 datasheet says the RX descriptor counter wraps at 1024
   descriptors if there isn't a wrap marked descriptor. For some reason
-  or other in u-boot at least you can just use any old number of descriptors.
-  8 works, 16 doesn't work, 32 works, 64 works, 96 works, 128 works.
+  or other in u-boot at least you can' just use any old number of descriptors.
+  
+  For the i1/i3:
+  - 8 works, 16 doesn't work, 32 works, 64 works, 96 works, 128 works.
+  - 8 works, 96 doesn't work.
 
 - There are some extra registers after the documented ones that are called "JULIAN".
 
