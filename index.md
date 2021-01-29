@@ -63,7 +63,7 @@ at some point.
 ## u-boot
 
 For most chips u-boot is loaded by loading the SPL as IPL-CUST from the IPL so that blob is needed.
-The mercury5 however can boot with the u-boot SPL as the IPL so now blobs are required.
+The mercury5 however can boot with the u-boot SPL as the IPL so no blobs are required.
 Getting the other chips to boot without the vendor IPL is mostly a case of doing the DDR setup in the SPL.
 
 |                           | load u-boot SPL from boot ROM | load u-boot SPL from vendor IPL | load u-boot from SPI NOR | load u-boot from SPI NAND | load u-boot from SD |
