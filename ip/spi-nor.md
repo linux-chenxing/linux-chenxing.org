@@ -1,11 +1,33 @@
 # SPI Memory controllers
 
-To make things really fun we have 3 blocks each with their own clocking:
+All known chips contain a set of SPI controllers that are responsible for
+driving an SPI NOR or NAND chip connected to the PM SPI pin.
+
+There seems to be one controller called "ISP", another called "FSP" and
+finally "QSPI".
+
+There seems to be three ways to *read* flash content:
+
+- By manually sending commands via the ISP like a standard SPI controller.
+- By accessing 0x14000000. This triggers a read and the data is visable to the CPU. This seems to be called "XIU" read.
+  Which block actually implements this isn't known yet.
+- By programming the BDMA controller to do a read from flash directly into system memory.
+  Which block actually implements this isn't known yet.
+  
+There seems to be two ways to *write* flash content:
+
+- By manually sending commands via the ISP like a standard SPI controller.
+- By creating command streams that can DMA data from system memory with the FSP.
+
+To make things really fun all of these blocks seem to have their own clock setup:
 
 - ISP - Clock is divided from the CPU source 432MHz clock, doesn't seem to care about the mux at 0x1f2070c8
 - FSP - 
-- QSPI - Messing with the clkgen mux at 0x1f2070c8 can break the CPU interface at 0x14000000. BDMA seems to work just fine.
+- QSPI -
 
+Messing with the clkgen mux at 0x1f2070c8 can break the CPU interface at 0x14000000. BDMA seems to work just fine.
+
+Maybe the hardware looks something like this?
 
 ```
  ------
@@ -20,21 +42,7 @@ To make things really fun we have 3 blocks each with their own clocking:
 
 
 ```
-/*
- * The vendor source for the SPI NOR interface has register definitions
- * for tons of different things so it's hard to work out what is actually
- * in the chip and what is a left over from another driver they copied and
- * hacked up. I know for sure the ISP block exists and works as a sort of
- * SPI NOR focused SPI master controller. Another block that is mentioned
- * in the driver is FSP which seems to be another SPI master controller but
- * with big transaction buffers so that you can read and write in large chunks.
- * The registers for that block don't seem to be writable though.
- * Somehow the SPI NOR is also readable via a memory mapped area. I'm not sure
- * how that actually works or where it's configured. It seems to be a function of
- * the FSP block as the vendor driver maps the memory mapped region based on a define
- * that selects the FSP "direct read mode".
- * The bootrom seems to use it to load the IPL so it might be configured right
- * after exiting reset.
+
  *
  * ISP registers
  *
