@@ -2,9 +2,9 @@
 
 To make things really fun we have 3 blocks each with their own clocking:
 
-- ISP - Clock is divided from the CPU source 432MHz clock
+- ISP - Clock is divided from the CPU source 432MHz clock, doesn't seem to care about the mux at 0x1f2070c8
 - FSP - 
-- QSPI - 
+- QSPI - Messing with the clkgen mux at 0x1f2070c8 can break it. 
 
 
 
