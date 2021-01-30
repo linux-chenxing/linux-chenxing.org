@@ -41,7 +41,8 @@ Maybe the hardware looks something like this?
  ------
 ```
 
-
+[FSP registers](https://github.com/longyanjun2020/SDK_pulbic/blob/47d85255220f39de1b13e5f2a68b24e49e179f07/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_fsp_spi.h)
+[QSPI registers](https://github.com/longyanjun2020/SDK_pulbic/blob/47d85255220f39de1b13e5f2a68b24e49e179f07/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_qspi.h)
 
 ```
 
