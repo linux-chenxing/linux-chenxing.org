@@ -25,7 +25,9 @@ To make things really fun all of these blocks seem to have their own clock setup
 - FSP - 
 - QSPI -
 
-Messing with the clkgen mux at 0x1f2070c8 can break the CPU interface at 0x14000000. BDMA seems to work just fine.
+
+- Messing with the clkgen mux at 0x1f2070c8 can break the CPU interface at 0x14000000. BDMA seems to work just fine.
+- Messing with the clkgen mux at 0x1f001c80 can break the BDMA interface
 
 Maybe the hardware looks something like this?
 
