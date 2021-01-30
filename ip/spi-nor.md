@@ -2,9 +2,9 @@
 
 To make things really fun we have 3 blocks each with their own clocking:
 
-ISP - Clock is divided from the CPU source 432MHz clock
-FSP - 
-QSPI - 
+- ISP - Clock is divided from the CPU source 432MHz clock
+- FSP - 
+- QSPI - 
 
 
 
