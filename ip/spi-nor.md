@@ -4,7 +4,18 @@ To make things really fun we have 3 blocks each with their own clocking:
 
 - ISP - Clock is divided from the CPU source 432MHz clock, doesn't seem to care about the mux at 0x1f2070c8
 - FSP - 
-- QSPI - Messing with the clkgen mux at 0x1f2070c8 can break it. 
+- QSPI - Messing with the clkgen mux at 0x1f2070c8 can break the CPU interface at 0x14000000. BDMA seems to work just fine.
+
+
+```
+ ------
+| ISP  |-\
+ ------   |   ---------------      -------------------
+| FSP  | ----| ?? bus arb ?? | -- | SPI NOR/NAND chip |
+ ------   |   ---------------      -------------------
+| QSPI |-/
+ ------
+```
 
 
 
