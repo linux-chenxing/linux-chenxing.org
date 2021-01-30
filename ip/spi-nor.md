@@ -1,3 +1,13 @@
+# SPI Memory controllers
+
+To make things really fun we have 3 blocks each with their own clocking:
+
+ISP - Clock is divided from the CPU source 432MHz clock
+FSP - 
+QSPI - 
+
+
+
 ```
 /*
  * The vendor source for the SPI NOR interface has register definitions
