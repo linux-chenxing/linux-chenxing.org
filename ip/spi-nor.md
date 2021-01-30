@@ -1,7 +1,7 @@
 # SPI Memory controllers
 
 All known chips contain a set of SPI controllers that are responsible for
-driving an SPI NOR or NAND chip connected to the PM SPI pin.
+driving an SPI NOR or NAND chip connected to the PM SPI pins.
 
 There seems to be one controller called "ISP", another called "FSP" and
 finally "QSPI".
