@@ -441,11 +441,14 @@ These are all basically slightly different SPI masters.
 
 ### Support Matrix
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  | yes    | yes   |
-| infinity3 | yes    | yes   |
-| mercury5  | yes    | yes   |
+|            | u-boot | linux |
+|------------|--------|-------|
+| infinity   | yes    | yes   |
+| infinity2m | yes    | yes   |
+| infinity3  | yes    | yes   |
+| mercury5   | yes    | yes   |
+
+[More info](spi-nor.md)
 
 ## SD/SDIO
 
