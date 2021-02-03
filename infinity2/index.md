@@ -138,6 +138,7 @@ Widora are apparently designing a board.
 ##### m5stack
 
 unitv2
+ - CoreChips SR9900A http://www.corechip-sz.com/enproductsview.asp?id=25
 
 ##### Pinout
 
