@@ -433,10 +433,12 @@ There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0
 spi-nor functionality is made of 3 different IP blocks; ISP, FSP and QSP.
 These are all basically slightly different SPI masters.
 
-- ISP is the simplest and seems to be for doing basic SPI transactions
+- ISP (In System Programmer?) is the simplest and seems to be capable of doing
+  basic SPI transactions and might be what is visible on the i2c debug interface.
+  It contains a register that allows for resetting the CPU.
 - FSP allows for parts of an SPI transaction come from registers, like the opcode and address, while
   other parts are read direcly from memory. This seems to be for doing fast zero copy writes.
-- QSP seems to implement the memory mapped interface that allows the CPU and BDMA to read from flash
+- QSPI seems to implement the memory mapped interface that allows the CPU and BDMA to read from flash
   as if it was memory.
 
 ### Support Matrix
