@@ -135,6 +135,10 @@ GW300 is a SSD201 and the GW302 is a SSD202D
 
 Widora are apparently designing a board.
 
+##### m5stack
+
+unitv2
+
 ##### Pinout
 
 See [pinouts](pinouts.md).
