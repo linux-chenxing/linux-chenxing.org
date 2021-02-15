@@ -8,7 +8,9 @@
 
 [Linux v5.10 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_10_rebase) - Linux 5.10 with slightly less of a mess of patches on top. Frozen. This if for validating that rebase, cleaning up etc for 5.11 hasn't busted anything
 
-[Linux v5.11 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_11_rebase) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
+[Linux v5.11 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_11_rebase) - Linux 5.11 with patch soup. Frozen.
+
+[Linux v5.12 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_12_rebase) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
 
 ## Round 1: Initial support (arch definition, basic DTS, UART)
 
@@ -38,7 +40,8 @@ https://patchwork.kernel.org/bundle/dgp/mstar%20-%20msc313%20gpio/
 ** MPLL Pushed ** 
 https://patchwork.kernel.org/bundle/dgp/mstar%20-%20mpll/
 
-** Cleaning up ** - Maybe fixed clocks and MPLL for 5.11?
+** v2 pushed **
+** in clk-next** 5.12?
 
 ## Round 6: pm intc
 
@@ -48,11 +51,9 @@ https://patchwork.kernel.org/bundle/dgp/mstar%20-%20mpll/
 
 ## Round 9: Push i2m/SMP support?
 
-** Pushed **
-
 https://patchwork.kernel.org/bundle/dgp/mstar%20-%20infinity2m%20SMP/
 
-5.11?
+**DONE** 5.11
 
 ## Round 10: Pinctrl?
 
