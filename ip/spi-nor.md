@@ -133,3 +133,7 @@ Maybe the hardware looks something like this?
  * wrap_en | dummy_en | addr2_en |
  */
  ```
+ 
+ # misc findings
+ 
+ Using the cpu interface: The SPI command used to do the read comes form the read mode register in QSPI
