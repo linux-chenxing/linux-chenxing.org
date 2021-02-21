@@ -133,8 +133,24 @@ Maybe the hardware looks something like this?
  * wrap_en | dummy_en | addr2_en |
  */
  ```
- 
- # misc findings
+
+# misc findings
  
  - Using the cpu interface: The SPI command used to do the read comes from the read mode register in QSPI
  - Messing with the read mode register in QSPI register has some effect to BDMA reads too. Lock ups and destroying the flash contents right now.
+
+```
+$ md5sum /dev/mtd0
+f8a994631cf2943fca8ceab1cdc0126f  /dev/mtd0
+$ echo 3 > /proc/sys/vm/drop_caches 
+[  160.959159] sh (175): drop_caches: 3
+$ devmem 0x1f002fc8 16 0xa
+$ md5sum /dev/mtd0
+f17072fbb71420715a7469352766252a  /dev/mtd0
+$ devmem 0x1f002fc8 16 0x2
+$ echo 3 > /proc/sys/vm/drop_caches 
+[  178.665619] sh (175): drop_caches: 3
+$ md5sum /dev/mtd0
+f8a994631cf2943fca8ceab1cdc0126f  /dev/mtd0
+```
+QSPI readmode register does seem to change what BDMA uses. Switching to quad mode changes the md5 sum.
