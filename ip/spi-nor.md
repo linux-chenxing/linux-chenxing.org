@@ -136,4 +136,5 @@ Maybe the hardware looks something like this?
  
  # misc findings
  
- Using the cpu interface: The SPI command used to do the read comes form the read mode register in QSPI
+ - Using the cpu interface: The SPI command used to do the read comes from the read mode register in QSPI
+ - Messing with the read mode register in QSPI register has some effect to BDMA reads too. Lock ups and destroying the flash contents right now.
