@@ -1,6 +1,6 @@
-## Clock
+# Clocks
 
-### Clock Tree
+## Clock Tree
 
 This is a rough guess.
 
@@ -33,7 +33,7 @@ This is a rough guess.
           |-----/
 ```
 
-### MPLL
+## MPLL
 
 Seems to mean "Main PLL". This is the main source of clocks for peripherals. Outside of the PM domain.
 
@@ -100,11 +100,11 @@ https://github.com/schreibikus/wenshuai.xi/blob/7906c437f42aabfc8ac2e103efac3e88
 
 10 - 86.4
 
-### UPLL
+## UPLL
 
 This seems to generate 320MHz and 384MHz clocks for the USB phys/controllers
 
-### pll gates
+## pll gates
 
 This is a pretty weird thing;
 - The force on bits start on as 0xffff
@@ -131,7 +131,7 @@ This is a pretty weird thing;
 */
 ```
 
-### clkgen muxes
+## clkgen muxes
 
 [listing of the muxes](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_clkgen.h)
 
@@ -167,11 +167,11 @@ xtal -------------------|    /
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
 
-### cpuclk
+## cpuclk
 
 This (probably) a PLL that is used for dynamically scaling the CPU frequency.
 
-#### Support Matrix
+### Support Matrix
 
 |           | u-boot | linux |
 |-----------|--------|-------|
@@ -179,7 +179,7 @@ This (probably) a PLL that is used for dynamically scaling the CPU frequency.
 | infinity3 |        | yes   |
 | mercury5  |        | yes   |
 
-### LPLL 
+## LPLL 
 
 Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 
@@ -198,6 +198,6 @@ Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
  *       skew_en_fixclk | skew_div
  ```
 
-#### MCM
+## MCM
 
 "memory clock manager"?
