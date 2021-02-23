@@ -41,7 +41,7 @@ https://patchwork.kernel.org/bundle/dgp/mstar%20-%20msc313%20gpio/
 https://patchwork.kernel.org/bundle/dgp/mstar%20-%20mpll/
 
 ** v2 pushed **
-** in clk-next** 5.12?
+** in clk-next** Driver is in 5.12. DTS bits are missing
 
 ## Round 6: pm intc
 
@@ -55,6 +55,10 @@ https://patchwork.kernel.org/bundle/dgp/mstar%20-%20infinity2m%20SMP/
 
 **DONE** 5.11
 
-## Round 10: Pinctrl?
+## Round 10: CPU PLL
+
+** pushed **
+
+## Round 11: Pinctrl?
 
 ** Cleaning up **
