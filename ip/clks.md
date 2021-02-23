@@ -104,6 +104,13 @@ https://github.com/schreibikus/wenshuai.xi/blob/7906c437f42aabfc8ac2e103efac3e88
 
 This seems to generate 320MHz and 384MHz clocks for the USB phys/controllers
 
+| address | name | 15        | 14        | 13        | 12        | 11        | 10        | 9         | 8         | 7         | 6         | 5         | 4         | 3             | 2             | 1         | 0                | notes |
+|---------|------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|---------------|---------------|-----------|------------------|-------|
+| 0x0     |      |           |           |           |           |           |           |           |           | enxtal    |           | enfrun    | enddisc   |               |               | pd        |                  |       |
+| 0x4     |      |           |           |           |           |           |           |           |           | en_prdt   |           |           |           |               |               |           |                  |       |
+| 0x8     |      | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test | upll_test     | upll_test     | upll_test | upll_test        |       |
+| 0x1c    |      |           |           |           |           |           |           |           |           |           |           |           |           | pd_clk0_audio | clk_upll_192m | en_prdt2  | clk0_upll_384_en |       |
+
 ## pll gates
 
 This is a pretty weird thing;
