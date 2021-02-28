@@ -209,6 +209,10 @@ the system memory.
 | infinity  |        | wip   |
 | infinity3 |        | wip   |
 
+### URDMA
+
+Per-uart DMA controller. Present on "FUART" uarts.
+
 ## Crypto
 
 See [Crypto](crypto.md)
