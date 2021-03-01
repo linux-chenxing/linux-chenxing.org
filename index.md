@@ -28,6 +28,10 @@ at some point.
 - A: No. There is no relationship between this site and the vendor. This is a
      "community" (community meaning one fat guy with a multimeter right now) research
      effort.
+     
+- Q: Have you reached out to the vendor to get more information?
+- A: Yes, they said without an NDA and project in place they cannot help.
+     Signing an NDA would be a bad idea for code that is going mainline.
 
 - Q: If I pay you money will you support me using the official SDKs?
 - A: No.
