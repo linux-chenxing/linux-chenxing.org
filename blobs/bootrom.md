@@ -10,6 +10,7 @@ There seem to be some strap pins to tell the boot rom which media to boot from. 
 - For mercury5 booting from SD card involves putting a file called IPL on the SD card in a FAT16 partition (partition type 0x4,0x6 or 0xe).
 - Booting from SPI NOR involves putting the IPL at an address in the SPI NOR that seems to be specific to the SoC:
   * For infinity 3 the address is 0x4000
+- Booting from SPI NAND seems to invole some metadata being put into the first "golden" block of the NAND so that the bootrom can reliably load the IPL from NAND. There seems to be some support for backup blocks. The metadata seems to be dependant on the type of chip being used and there is a tool to generate the right metadata from a list of chips. However, there also seem to be generic data that can be loaded that allows the boot rom to load the IPL but maybe doesn't handle bad blocks.
 
 ## Tags
 
