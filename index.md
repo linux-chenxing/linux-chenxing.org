@@ -317,6 +317,7 @@ See [ISP](isp).
 - [BootROM](blobs/bootrom.md) - Baked in BootROM
 - [IPL](blobs/ipl.md) - First/Second stage bootloaders
 - [MXPT](blobs/mxpt.md) - Partition table used for SPI NOR
+- [CIS](blobs/cis.md) - "Chip information structure"? first block for SPI NAND.
 
 # Vendor uboot, kernels..
 
