@@ -8,12 +8,12 @@ QFN 68 Pinout
 | 4  | PM_SPI_DI      | 21 | DVDD_DDR_RX | 38 |        | 55 | AVDD_USB    |
 | 5  | PM_SPI_DO      | 22 | AVDD??      | 39 |        | 56 | VDD         |
 | 6  | PM_SPI_HLD     | 23 | AVDDIO_DRAM | 40 |        | 57 | RESET       |
-| 7  | PM_SPI_WPZ     | 24 |             | 41 | VDDP_2 | 58 | PM_UART_TX  |
-| 8  |                | 25 | AVDDIO_DRAM | 42 |        | 59 | PM_UART_RX  |
-| 9  |                | 26 | VDD         | 43 |        | 60 | SAR_GPIO2   |
-| 10 |                | 27 |             | 44 |        | 61 | SAR_GPIO1   |
-| 11 |                | 28 | AVDDIO_DRAM | 45 |        | 62 | SAR_GPIO0   |
-| 12 |                | 29 | TTL0        | 46 |        | 63 | AVDD_XTAL   |
+| 7  | PM_SPI_WPZ     | 24 | VDDIO_DATA  | 41 | VDDP_2 | 58 | PM_UART_TX  |
+| 8  |                | 25 | AVDDIO_DRAM | 42 | TTL13  | 59 | PM_UART_RX  |
+| 9  |                | 26 | VDD         | 43 | TTL14  | 60 | SAR_GPIO2   |
+| 10 |                | 27 | VDDIO_MCLK  | 44 | TTL15  | 61 | SAR_GPIO1   |
+| 11 |                | 28 | AVDDIO_DRAM | 45 | TTL16  | 62 | SAR_GPIO0   |
+| 12 |                | 29 | TTL0        | 46 | TTL17  | 63 | AVDD_XTAL   |
 | 13 |                | 30 | TTL1        | 47 | TTL18  | 64 | XTAL_IN     |
 | 14 |                | 31 | TTL2        | 48 | TTL19  | 65 | XTAL_OUT    |
 | 15 |                | 32 | TTL3        | 49 | TTL20  | 66 | AVDD_AUD    |
