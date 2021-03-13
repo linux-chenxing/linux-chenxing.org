@@ -19,3 +19,8 @@ QFN 68 Pinout
 | 15 |                | 32 | TTL3        | 49 | TTL20  | 66 | AVDD_AUD    |
 | 16 |                | 33 | TTL4        | 50 | TTL21  | 67 | AUD_VAG     |
 | 17 |                | 34 | TTL5        | 51 | VDD    | 68 | AUD_VRM_DAC |
+
+# Known devices
+
+[Widora](https://sns.widora.io/topic/767/ssd210-demo%E6%9D%BF-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%87%86%E5%A4%87%E7%82%B9%E5%B1%8F)
+
