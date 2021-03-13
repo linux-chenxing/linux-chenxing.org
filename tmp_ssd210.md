@@ -1,5 +1,7 @@
 QFN 68 Pinout
 
+** WARNING WARNING This was worked out by looking at a blurry image **
+
 | #  | name           | #  | name        | #  | name       | #  | name        |
 |----|----------------|----|-------------|----|------------|----|-------------|
 | 1  | AUD_LINEOUT_L0 | 18 | SR_IO?      | 35 | TTL?       | 52 | VDD         |
