@@ -79,6 +79,7 @@ Getting the other chips to boot without the vendor IPL is mostly a case of doing
 | [infinity6](#infinity6)   |                               | wip                             | wip                      |                           |                     |
 | [infinity6b0](#infinity6) |                               | wip                             | wip                      |                           |                     |
 | [mercury5](#mercury5)     | yes, SD                       | yes                             | yes                      |                           | yes                 |
+| [pioneer3](#pioneer3)     |                               |                                 |                          |                           |                     |
 
 ## linux
 
@@ -91,6 +92,7 @@ Getting the other chips to boot without the vendor IPL is mostly a case of doing
 | [infinity6](#infinity6)  | wip                           | wip                               | wip                                             |                                     |     |
 | [infinity6b0](#infinity6)| yes                           | wip                               | wip                                             |                                     |     |
 | [mercury5](#mercury5)    | yes                           | yes                               | yes                                             | yes                                 |     |
+| [pioneer3](#pioneer3)    |                               |                                   |                                                 |                                     |     |
 
 # Data Mining Progress
 
