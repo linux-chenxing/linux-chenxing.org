@@ -247,7 +247,7 @@ Doesn't seem to exist.
 
 - Infinity 6e seems to be a dual core variation in this family
 
-### P3???
+### Pioneer3
 
 - [SSD210](tmp_ssd210.md) - Dual Cortex A7 QFN68
 
