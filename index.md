@@ -247,6 +247,10 @@ Doesn't seem to exist.
 
 - Infinity 6e seems to be a dual core variation in this family
 
+### P3???
+
+- [SSD210](tmp_ssd210.md) - Dual Cortex A7 QFN68
+
 ### Mercury family
 
 #### [Mercury2](mercury2)
@@ -275,7 +279,6 @@ Doesn't seem to exist.
 - SSC8539
 - SSA520
 - SSD203D
-- SSD210 - Dual Cortex A7 QFN68
 
 # 64bit ARM based
 
