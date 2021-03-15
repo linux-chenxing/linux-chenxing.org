@@ -11,15 +11,15 @@ QFN 68 Pinout
 | 5  | PM_SPI_DO      | 22 | AVDD??      | 39 | TTL11      | 56 | VDD         |
 | 6  | PM_SPI_HLD     | 23 | AVDDIO_DRAM | 40 | VDDP_2     | 57 | RESET       |
 | 7  | PM_SPI_WPZ     | 24 | VDDIO_DATA  | 41 | TTL12      | 58 | PM_UART_TX  |
-| 8  |                | 25 | AVDDIO_DRAM | 42 | TTL13      | 59 | PM_UART_RX  |
-| 9  |                | 26 | VDD         | 43 | TTL14      | 60 | SAR_GPIO2   |
-| 10 |                | 27 | VDDIO_MCLK  | 44 | TTL15      | 61 | SAR_GPIO1   |
-| 11 |                | 28 | AVDDIO_DRAM | 45 | TTL16      | 62 | SAR_GPIO0   |
-| 12 |                | 29 | TTL0        | 46 | TTL17      | 63 | AVDD_XTAL   |
-| 13 |                | 30 | TTL1        | 47 | TTL18      | 64 | XTAL_IN     |
-| 14 |                | 31 | TTL2        | 48 | TTL19      | 65 | XTAL_OUT    |
-| 15 |                | 32 | TTL3        | 49 | TTL20      | 66 | AVDD_AUD    |
-| 16 |                | 33 | TTL4        | 50 | TTL21      | 67 | AUD_VAG     |
+| 8  | VDD?           | 25 | AVDDIO_DRAM | 42 | TTL13      | 59 | PM_UART_RX  |
+| 9  | SR_IO?         | 26 | VDD         | 43 | TTL14      | 60 | SAR_GPIO2   |
+| 10 | SR_IO?         | 27 | VDDIO_MCLK  | 44 | TTL15      | 61 | SAR_GPIO1   |
+| 11 | SR_IO?         | 28 | AVDDIO_DRAM | 45 | TTL16      | 62 | SAR_GPIO0   |
+| 12 | SR_IO?         | 29 | TTL0        | 46 | TTL17      | 63 | AVDD_XTAL   |
+| 13 | SR_IO?         | 30 | TTL1        | 47 | TTL18      | 64 | XTAL_IN     |
+| 14 | SR_IO?         | 31 | TTL2        | 48 | TTL19      | 65 | XTAL_OUT    |
+| 15 | SR_IO?         | 32 | TTL3        | 49 | TTL20      | 66 | AVDD_AUD    |
+| 16 | SR_IO?         | 33 | TTL4        | 50 | TTL21      | 67 | AUD_VAG     |
 | 17 |                | 34 | TTL5        | 51 | VDD        | 68 | AUD_VRM_DAC |
 
 # Known devices
