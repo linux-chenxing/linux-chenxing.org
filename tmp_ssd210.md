@@ -1,4 +1,10 @@
-QFN 68 Pinout
+# SSD210
+
+- Dual Cortex A7
+- 64MB DDR2
+- .35mm (?) 68 (+ exposed pad) pin QFN 
+
+## QFN 68 Pinout
 
 ** WARNING WARNING This was worked out by looking at a blurry image **
 
