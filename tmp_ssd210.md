@@ -2,7 +2,7 @@
 
 - Dual Cortex A7
 - 64MB DDR2
-- .35mm (?) 68 (+ exposed pad) pin QFN 
+- .35mm pitch (?) 68 (+ exposed pad) pin QFN 
 
 ## QFN 68 Pinout
 
