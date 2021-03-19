@@ -1,10 +1,15 @@
-# SSD210
+# Pioneer3
+
+This seems to be a family that have both video capture hardware and display hardware.
+
+## SSD210
 
 - Dual Cortex A7
 - 64MB DDR2
+- 64KB SRAM (based on usb loader IPL size)
 - .35mm pitch (?) 68 (+ exposed pad) pin QFN 
 
-## QFN 68 Pinout
+### QFN 68 Pinout
 
 ** WARNING WARNING This was worked out by looking at a blurry image **
 
