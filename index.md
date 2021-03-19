@@ -253,7 +253,7 @@ Doesn't seem to exist.
 
 ### Pioneer3
 
-- [SSD210](tmp_ssd210.md) - Dual Cortex A7 QFN68
+- [SSD210](pioneer3#ssd210) - Dual Cortex A7 QFN68
 
 ### Mercury family
 
