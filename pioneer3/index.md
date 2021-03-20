@@ -7,7 +7,8 @@ This seems to be a family that have both video capture hardware and display hard
 - Dual Cortex A7
 - 64MB DDR2
 - 64KB SRAM (based on usb loader IPL size)
-- .35mm pitch (?) 68 (+ exposed pad) pin QFN 
+- .35mm pitch (?) 68 (+ exposed pad) pin QFN
+- xx KB Boot ROM with support for booting from SPI NOR, SPI NAND, USB 
 
 ### QFN 68 Pinout
 
