@@ -1,6 +1,10 @@
 # ido-som2d01
 
-lsusb output
+
+
+## Misc
+
+### lsusb output
 
 ```
 # lsusb 
