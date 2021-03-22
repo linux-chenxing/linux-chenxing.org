@@ -1,5 +1,15 @@
 # ido-som2d01
 
+## Quick start
+
+### Wiring
+
+The minimum you need to wire up to get something going is:
+- SYS_3V3 (1)
+- GND1 (2)
+- PM_UART_RX (25)
+- PM_UART_TX (26)
+
 ## Datasheets etc
 
 [Datasheet](IDO-SOM2D01-Datasheet-CN.pdf)
