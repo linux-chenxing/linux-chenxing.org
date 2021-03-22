@@ -5,10 +5,10 @@
 ### Wiring
 
 The minimum you need to wire up to get something going is:
-- SYS_3V3 (1)
-- GND1 (2)
-- PM_UART_RX (25)
-- PM_UART_TX (26)
+- SYS_3V3 (1) - Connect to a 3.3v supply
+- GND1 (2) - Connect to ground
+- PM_UART_RX (25) - Connect TX on your usb->serial adapter
+- PM_UART_TX (26) - Connect RX on your usb->serial adapter
 
 ## Datasheets etc
 
