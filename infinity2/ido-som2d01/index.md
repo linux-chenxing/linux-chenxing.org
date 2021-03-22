@@ -10,6 +10,14 @@ The minimum you need to wire up to get something going is:
 - PM_UART_RX (25) - Connect TX on your usb->serial adapter
 - PM_UART_TX (26) - Connect RX on your usb->serial adapter
 
+### Flashing
+
+See [ISP](isp)
+
+- You need to write the "GCIS" to 0x0
+- You need to write the IPL to 0x140000
+- You need to write the u-boot SPL to 0x200000
+
 ## Datasheets etc
 
 These are available from the vendors site, mirrored here so they don't disappear.
