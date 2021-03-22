@@ -1,6 +1,8 @@
 # ido-som2d01
 
+## Datasheets etc
 
+[Datasheet](IDO-SOM2D01-Datasheet-CN.pdf)
 
 ## Misc
 
