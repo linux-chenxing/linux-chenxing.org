@@ -12,7 +12,10 @@ The minimum you need to wire up to get something going is:
 
 ## Datasheets etc
 
+These are available from the vendors site, mirrored here so they don't disappear.
+
 [Datasheet](IDO-SOM2D01-Datasheet-CN.pdf)
+[Hardware design guide](IDO-SOM2D01硬件设计手册.pdf)
 
 ## Misc
 
