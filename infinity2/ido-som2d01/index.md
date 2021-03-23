@@ -23,7 +23,7 @@ See [ISP](isp)
 These are available from the vendors site, mirrored here so they don't disappear.
 
 - [Datasheet (Chinese)](IDO-SOM2D01-Datasheet-CN.pdf)
-- [Datasheet (Chinese)](IDO-SOM2D01-Datasheet-EN.pdf)
+- [Datasheet (English)](IDO-SOM2D01-Datasheet_EN.pdf)
 - [Hardware design guide (Chinese)](IDO-SOM2D01硬件设计手册.pdf)
 
 ## Misc
