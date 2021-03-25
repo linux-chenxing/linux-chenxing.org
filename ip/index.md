@@ -498,8 +498,11 @@ PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or M
 |------------|--------|-------|
 | infinity2m |        | wip   |
 
-https://github.com/linux-chenxing/uboot_msc313e/tree/ssd20x_sdk/drivers/mstar/panel
-https://github.com/linux-chenxing/uboot_msc313e/tree/ssd20x_sdk/drivers/mstar/disp
+
+
+- https://github.com/linux-chenxing/uboot_msc313e/tree/ssd20x_sdk/drivers/mstar/panel
+
+- https://github.com/linux-chenxing/uboot_msc313e/tree/ssd20x_sdk/drivers/mstar/disp
 
 ## Camera
 
