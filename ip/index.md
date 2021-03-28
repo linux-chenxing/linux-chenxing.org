@@ -471,7 +471,10 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 
 ## Display pipeline
 
-This display pipeline(s) are made up of a bunch of different blocks that can be changed/mixed together and then thrown out of an output. The vendor code for this area is a complete mess so it's going to be very hard to work out how to use any of it.
+This display pipeline(s) are made up of a bunch of different blocks that can be changed/mixed together and then thrown out of an output.
+The vendor code for this area is a complete mess so it's going to be very hard to work out how to use any of it.
+
+[More info](display.md)
 
 For a mipi display on the m5 the pipeline seems to look like this:
 
