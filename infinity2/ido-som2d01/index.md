@@ -1,5 +1,11 @@
 # ido-som2d01
 
+## Specs
+
+- SSD201 or SSD202D
+- 128MB SPI NAND
+- Sigmastar Wifi
+
 ## Quick start
 
 ### Wiring
