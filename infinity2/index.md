@@ -121,8 +121,8 @@ Checksum OK
 
 Cheap solder down IoT module.
 
-[online doc](http://doc.industio.com/docs/ssd20x-system/page_0)
-[local info](ido-som2d01/)
+- [online doc from the vendor](http://doc.industio.com/docs/ssd20x-system/page_0)
+- [local info](ido-som2d01/)
 
 ##### GW300
 

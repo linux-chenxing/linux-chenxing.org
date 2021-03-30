@@ -32,6 +32,8 @@ This block contains a ton of random bits that control how the "PM" domain that s
 
 0xa4, i3 and i2m can write 0xff80
 
+-- [0x196 - PNL ip version for i2m?](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/src/hal_pnl.c#L739) 
+
 ### Resets experiments
 
 Should be unlock die domain reset and fire, cause everything to lock up and power consumption to drop from 115ma to 15ma.
