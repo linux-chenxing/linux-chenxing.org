@@ -252,6 +252,13 @@ Doesn't seem to exist.
 
 - Infinity 6e seems to be a dual core variation in this family
 
+These seem to be i6e based on the build tag found in a kernel image for the SSC8629
+
+- SSC8629D - AI enabled
+- SSC8629G
+  - 70mai A800S https://fccid.io/2AOK9-A800S/Internal-Photos/Internal-Photos-5061810
+- SSC8629Q
+
 ### Pioneer3
 
 - [SSD210](pioneer3#ssd210) - Dual Cortex A7 QFN68
@@ -278,10 +285,6 @@ Doesn't seem to exist.
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
 - MSB2531 - Cortex A7 SatNav on a chip
 - [MSW8535N](misc/MSW8535N_Datasheet.pdf) - ARM9 based feature phone chip?
-- SSC8629D - AI enabled
-- SSC8629G
-  - 70mai A800S https://fccid.io/2AOK9-A800S/Internal-Photos/Internal-Photos-5061810
-- SSC8629Q
 - SSC8668G
 - SSC8539
 - SSA520
