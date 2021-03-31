@@ -293,12 +293,12 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 
 - SSC8826D - 2 * Cortex A53, QFN
 - SSC8826Q - 2 * Cortex A53, QFN
-- SSC8836Q - 2 * Cortex A53, TQFP
-- SSC8838G - 2 * Cortex A53, BGA
+- SSC8836Q - Cortex A53, LQFP
+- SSC8838G - Cortex A53, BGA
 - SSC8526 - 2 * Cortex A53, BGA
 - SSD268G - 2 * Cortex A53
 - SSD261Q - 2 * Cortex A53
-- SSR910Q - 2 * Cortex A53, TQFP
+- SSR910Q - 2 * Cortex A53, LQFP
 - SSR920G - 2 * Cortex A53, BGA
 
 
