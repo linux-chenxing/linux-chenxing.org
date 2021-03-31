@@ -127,12 +127,15 @@ Maybe the hardware looks something like this?
  * 0xd | 4eb?   | ?
  *
  * 0x1e8 - chip select
- *
- * 0x1f4 - function select
- *    13   |    12    |    11    |
- * wrap_en | dummy_en | addr2_en |
  */
  ```
+
+## QSPI Registers
+
+| offset | name            | 15 | 14 | 13      | 12       | 11       | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+|--------|-----------------|----|----|---------|----------|----------|----|---|---|---|---|---|---|---|---|---|---|
+| 0x1f4  | function select |    |    | wrap_en | dummy_en | addr2_en |    |   |   |   |   |   |   |   |   |   |   |
+|        |                 |    |    |         |          |          |    |   |   |   |   |   |   |   |   |   |   |
 
 # misc findings
  
