@@ -115,15 +115,7 @@ Maybe the hardware looks something like this?
  * 0x1c8 - Read mode
  *
  *        3 - 0
- * val | mode   | spi command
- * 0x0 |        | 0x03
- * 0x1 | fast   | 0x0b
- * 0x2 | 1_1_2  | 0x3b
- * 0x3 | 1_2_2  | 0xbb
- * 0xa | 1_1_4  | 0x6b
- * 0xb | 1_4_4  | 0xeb
- * 0xc |        | 0x0b
- * 0xd | 4eb?   | ?
+
  *
  * 0x1e8 - chip select
  */
@@ -131,11 +123,25 @@ Maybe the hardware looks something like this?
 
 ## QSPI Registers
 
-| offset | name            | 15 | 14 | 13      | 12       | 11       | 10 | 9 | 8 | 7 | 6 | 5 | 4             | 3 | 2            | 1            | 0            | notes                                                                       |
-|--------|-----------------|----|----|---------|----------|----------|----|---|---|---|---|---|---------------|---|--------------|--------------|--------------|-----------------------------------------------------------------------------|
-| 0x1c0  | clock           |    |    |         |          |          |    |   |   |   |   |   | user_dummy_en |   | dummy cycles | dummy cycles | dummy cycles | dummy cycles:</br> 0x1 - 4</br> 0x3 - 2</br> 0x7 - 1                        |
-| 0x1f4  | function select |    |    | wrap_en | dummy_en | addr2_en |    |   |   |   |   |   |               |   |              |              |              | addr2_en:</br> 0 - 3 byte address (NOR)</br> 1 - 2 byte address (NAND)</br> |
-|        |                 |    |    |         |          |          |    |   |   |   |   |   |               |   |              |              |              |                                                                             |
+| offset | name            | 15 | 14 | 13      | 12       | 11       | 10 | 9 | 8 | 7 | 6 | 5 | 4             | 3         | 2            | 1            | 0            | notes                                                                       |
+|--------|-----------------|----|----|---------|----------|----------|----|---|---|---|---|---|---------------|-----------|--------------|--------------|--------------|-----------------------------------------------------------------------------|
+| 0x1c0  | clock           |    |    |         |          |          |    |   |   |   |   |   | user_dummy_en |           | dummy cycles | dummy cycles | dummy cycles | dummy cycles:</br> 0x1 - 4</br> 0x3 - 2</br> 0x7 - 1                        |
+| 0x1c8  | read mode       |    |    |         |          |          |    |   |   |   |   |   |               | read mode | read mode    | read mode    | read mode    |                                                                             |
+| 0x1f4  | function select |    |    | wrap_en | dummy_en | addr2_en |    |   |   |   |   |   |               |           |              |              |              | addr2_en:</br> 0 - 3 byte address (NOR)</br> 1 - 2 byte address (NAND)</br> |
+|        |                 |    |    |         |          |          |    |   |   |   |   |   |               |           |              |              |              |                                                                             |
+
+### Read mode 
+
+| val | mode   | spi command |
+|-----|--------|-------------|
+| 0x0 |        | 0x03        |
+| 0x1 | fast   | 0x0b        |
+| 0x2 | 1_1_2  | 0x3b        |
+| 0x3 | 1_2_2  | 0xbb        |
+| 0xa | 1_1_4  | 0x6b        |
+| 0xb | 1_4_4  | 0xeb        |
+| 0xc |        | 0x0b        |
+| 0xd | 4eb?   | ?           |
 
 # misc findings
  
