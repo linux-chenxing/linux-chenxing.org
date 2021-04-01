@@ -109,14 +109,6 @@ Maybe the hardware looks something like this?
  *
  * 0x150 - wrap val
  *
- *
- * 0x1c4 - chip select timing
- *
- * 0x1c8 - Read mode
- *
- *        3 - 0
-
- *
  * 0x1e8 - chip select
  */
  ```
@@ -126,6 +118,7 @@ Maybe the hardware looks something like this?
 | offset | name            | 15 | 14 | 13      | 12       | 11       | 10 | 9             | 8 | 7 | 6 | 5 | 4             | 3         | 2            | 1            | 0            | notes                                                                       |
 |--------|-----------------|----|----|---------|----------|----------|----|---------------|---|---|---|---|---------------|-----------|--------------|--------------|--------------|-----------------------------------------------------------------------------|
 | 0x1c0  | clock           |    |    |         |          |          |    | addr_cont_dis |   |   |   |   | user_dummy_en |           | dummy cycles | dummy cycles | dummy cycles | dummy cycles:</br> 0x1 - 4</br> 0x3 - 2</br> 0x7 - 1                        |
+| 0x1c4  | cs timing       |    |    |         |          |          |    |               |   |   |   |   |               |           |              |              |              |                                                                             |
 | 0x1c8  | read mode       |    |    |         |          |          |    |               |   |   |   |   |               | read mode | read mode    | read mode    | read mode    |                                                                             |
 | 0x1f4  | function select |    |    | wrap_en | dummy_en | addr2_en |    |               |   |   |   |   |               |           |              |              |              | addr2_en:</br> 0 - 3 byte address (NOR)</br> 1 - 2 byte address (NAND)</br> |
 |        |                 |    |    |         |          |          |    |               |   |   |   |   |               |           |              |              |              |                                                                             |
