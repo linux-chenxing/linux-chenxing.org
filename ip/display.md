@@ -1,6 +1,12 @@
 # Display Pipeline
 
-## i2m offsets
+## Reverse engineering notes
+
+### Interesting things
+
+- [u-boot boot splash screen display init](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/common/cmd_bootlogo.c#L1129)
+
+### i2m offsets
 
 - [0x1F206600 - LPLL](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L19)
 - [0x1F225000 - DISPLAY_TOP](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L22)
