@@ -29,6 +29,12 @@ code for the AT91RM200
   For the i2m:
   - 8 works, 96 doesn't work.
 
+The TSR register has some new bits
+
+| name        | 15 | 14 | 13 | 12        | 11        | 10        | 9         | 8    | 7    | 6 | 5 | 4 | 3 | 2 | 1 | 0                          | notes            |
+|-------------|----|----|----|-----------|-----------|-----------|-----------|------|------|---|---|---|---|---|---|----------------------------|------------------|
+| TSR         |    |    |    | FIFO4IDLE | FIFO3IDLE | FIFO2IDLE | FIFO1IDLE | FBNQ | TBNQ |   |   |   |   |   |   |                            |                  |
+
 - There are some extra registers after the documented ones that are called "JULIAN".
   These are only visable via the RIU interface. The XIU only exposes the standard registers.
 
