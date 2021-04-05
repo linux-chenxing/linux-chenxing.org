@@ -24,7 +24,9 @@ code for the AT91RM200
   or other in u-boot at least you can' just use any old number of descriptors.
   
   For the i1/i3:
-  - 8 works, 16 doesn't work, 32 works, 64 works, 96 works, 128 works.
+  - 8 works, 16 doesn't work, 32 works, 64 works, 96 works, 128 works
+  
+  For the i2m:
   - 8 works, 96 doesn't work.
 
 - There are some extra registers after the documented ones that are called "JULIAN".
@@ -35,3 +37,5 @@ code for the AT91RM200
 | julian 0100 |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |                            | select mii/rmii? |
 | julian 0104 |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   | software descriptor enable |                  |
 | julian 0108 |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |                            |                  |
+
+- TAR/TCR seem to load the descriptor address and length into a 4 deep FIFO so that frames can be queued while transmission is on going. 
