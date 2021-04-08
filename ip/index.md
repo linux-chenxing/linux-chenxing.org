@@ -213,9 +213,9 @@ the system memory.
 
 Per-uart DMA controller. Present on "FUART" uarts.
 
-### MOVDMA
+### MOVEDMA
 
-MOVDMA is a new DMA controller that seems to have appeared in newer infinity parts.
+MOVEDMA is a new DMA controller that seems to have appeared in newer infinity parts.
 It seems to be used for DMA driven SPI.
 
 |            | u-boot | linux |
