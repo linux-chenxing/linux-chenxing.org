@@ -213,6 +213,17 @@ the system memory.
 
 Per-uart DMA controller. Present on "FUART" uarts.
 
+### MOVDMA
+
+MOVDMA is a new DMA controller that seems to have appeared in newer infinity parts.
+It seems to be used for DMA driven SPI.
+
+|            | u-boot | linux |
+|------------|--------|-------|
+| infinity   |        | NA?   |
+| infinity2m |        |       |
+| infinity3  |        | NA?   |
+
 ## Crypto
 
 See [Crypto](crypto.md)
