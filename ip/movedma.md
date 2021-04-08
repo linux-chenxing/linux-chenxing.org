@@ -34,7 +34,9 @@
 | 0xb8   | dma_probe_h                |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
 | 0xbc   | dma_bist_fail_rd           |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
 | 0xc0   |                            |    |    |    |    |    |    |   |   |   |   |   |   | dma_move0_dst_miu_sel | dma_move0_src_miu_sel | dma_move0_miu_sel_en |                 |       |
-|        |                            |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
-|        |                            |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
-|        |                            |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
-|        |                            |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
+| 0x100  | dma_cmdq_irq_mask          |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
+| 0x104  | dma_cmdq_irq_force         |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
+| 0x108  | dma_cmdq_irq_clr           |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
+| 0x10c  | dma_cmdq_irq_select        |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
+| 0x110  | dma_cmdq_irq_final_status  |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
+| 0x114  | dma_cmdq_irq_raw_status    |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |       |
