@@ -1,5 +1,9 @@
 # IDO-SBC2D70
 
+## Specs
+
+- goodix gt911 ts controller
+
 ## Notes
 
 - The shipped u-boot has the shell locked out. Reading the environment in, manually setting bootdelay to non-zero and writing it back did not work. Reading the environment, deleting bootcmd and writing that back works.
