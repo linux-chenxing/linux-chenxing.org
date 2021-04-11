@@ -124,6 +124,10 @@ Cheap solder down IoT module.
 - [online doc from the vendor](http://doc.industio.com/docs/ssd20x-system/page_0)
 - [local info](ido-som2d01/)
 
+##### IDO-SBC2D70
+
+- [local info](ido-sbc2d70/)
+
 ##### GW300
 
 GW300 is a SSD201 and the GW302 is a SSD202D
