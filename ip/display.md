@@ -363,6 +363,8 @@ Wireless-tag# md.w 0x1F2A5000 0x100
 
 ## GOP
 
+GOP should be used for framebuffers from what I can tell but this doesn't seem the case for the bootlogo as the registers are not changing.
+
 - 0x1f246200
 - 0x1f246400
 - 0x1f246600
