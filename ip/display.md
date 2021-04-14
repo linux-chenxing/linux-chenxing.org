@@ -788,6 +788,7 @@ Wireless-tag# md.w 0x1f246200 0x600
 | 0x20   |                   |    |    |    |    | gw_vsize      | gw_vsize  | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize   |       |
 | 0x2c   | Luma DMA priority |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
 | 0x54   | gw_hext           |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
+| 0x100  | //h40 set 4tap    |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
 
 before
 
