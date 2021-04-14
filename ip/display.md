@@ -868,6 +868,8 @@ after
 
 - MOPG bank 1 - 0x1f280c00
 
+window 1?
+
 before
 
 ```
@@ -943,6 +945,8 @@ after
 ```
 
 - MOPG bank 2 - 0x1f280e00
+
+window 2?
 
 before:
 
