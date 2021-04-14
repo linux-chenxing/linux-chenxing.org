@@ -776,13 +776,18 @@ Wireless-tag# md.w 0x1f246200 0x600
 
 - MOPG bank 0 - 0x1f280a00
 
-| offset | name | 15 | 14 | 13 | 12 | 11       | 10        | 9        | 8        | 7        | 6        | 5        | 4        | 3        | 2        | 1        | 0        | notes |
-|--------|------|----|----|----|----|----------|-----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|-------|
-| 0x0    |      |    |    |    |    |          |           |          |          |          |          |          |          |          |          |          | swreset  |       |
-| 0x4    |      |    |    |    |    |          | win size? |          |          |          |          |          |          |          |          |          |          |       |
-| 0x1c   |      |    |    |    |    | gw_hsize | gw_hsize  | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize |       |
-| 0x20   |      |    |    |    |    | gw_vsize | gw_vsize  | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize |       |
-
+| offset | name              | 15 | 14 | 13 | 12 | 11            | 10        | 9        | 8        | 7        | 6        | 5        | 4          | 3          | 2          | 1          | 0          | notes |
+|--------|-------------------|----|----|----|----|---------------|-----------|----------|----------|----------|----------|----------|------------|------------|------------|------------|------------|-------|
+| 0x0    |                   |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            | swreset    |       |
+| 0x4    |                   |    |    |    |    | auto blanking | win size? | clk_gop  | clk_miu  |          |          |          |            |            |            |            |            |       |
+| 0xc    |                   |    |    |    |    |               |           |          |          |          |          |          | pipe_delay | pipe_delay | pipe_delay | pipe_delay | pipe_delay |       |
+| 0x10   | ymd_thd           |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
+| 0x14   | cdma_thd          |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
+| 0x18   | Luma DMA priority |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
+| 0x1c   |                   |    |    |    |    | gw_hsize      | gw_hsize  | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize   | gw_hsize   | gw_hsize   | gw_hsize   | gw_hsize   |       |
+| 0x20   |                   |    |    |    |    | gw_vsize      | gw_vsize  | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize   |       |
+| 0x2c   | Luma DMA priority |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
+| 0x54   | gw_hext           |    |    |    |    |               |           |          |          |          |          |          |            |            |            |            |            |       |
 - MOPG bank 1 - 0x1f280c00
 - MOPG bank 2 - 0x1f280e00
 - MOPS - 0x1f281000
