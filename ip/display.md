@@ -774,6 +774,12 @@ Wireless-tag# md.w 0x1f246200 0x600
 
 ## MOP??
 
+- MOPG bank 0 - 0x1f280a00
+- MOPG bank 1 - 0x1f280c00
+- MOPG bank 2 - 0x1f280e00
+- MOPS - 0x1f281000
+- MOP ROT - 0x1f281a00
+
 ## MOAR dumps
 
 before
