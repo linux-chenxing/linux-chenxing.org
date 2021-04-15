@@ -20,6 +20,14 @@ The vendor provided a copy of the SDK but no schematics or chip documentation.
 - spi0 mode5 on jp4
 - 24bit 7 inch LCD panel
 
+### lsusb
+
+```
+Bus 002 Device 006: ID 1b20:8888                                                                                                                        
+Bus 001 Device 001: ID 1d6b:0002                                                                                                                                                                                                          
+Bus 002 Device 001: ID 1d6b:0002
+```
+
 ## Reg dumps
 
 LPLL
