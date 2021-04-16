@@ -261,7 +261,10 @@ These seem to be i6e based on the build tag found in a kernel image for the SSC8
 
 ### Pioneer3
 
+This seems to be an evolution of the infinity2m chips.
+
 - [SSD210](pioneer3#ssd210) - Dual Cortex A7 QFN68
+- [SSD212](pinoeer3#ssd212) - Dual Crotex A7 QFN128
 
 ### Mercury family
 
