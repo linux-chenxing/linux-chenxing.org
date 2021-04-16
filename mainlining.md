@@ -41,7 +41,7 @@ https://patchwork.kernel.org/bundle/dgp/mstar%20-%20msc313%20gpio/
 https://patchwork.kernel.org/bundle/dgp/mstar%20-%20mpll/
 
 ** v2 pushed **
-** in clk-next** Driver is in 5.12. DTS bits are missing
+** in clk-next** Driver is in 5.12. DTS bits are missing, queued for 5.13
 
 ## Round 6: pm intc
 
