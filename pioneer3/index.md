@@ -2,6 +2,10 @@
 
 This seems to be a family that have both video capture hardware and display hardware.
 
+## SDK
+
+The SDK family is `ikayaki`.
+
 ## SSD210
 
 - Dual Cortex A7
