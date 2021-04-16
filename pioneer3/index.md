@@ -36,9 +36,31 @@ The SDK family is `ikayaki`.
 | 16 | SR_IO07        | bt656_dout[5], pspi1_cs | VDDP_1       | 33 | TTL4        | spi0_cz                  | VDDP_2       | 50 | TTL21       | i2c1_sda0            | VDDP_2       | 67 | AUD_VAG     |               |              |
 | 17 | VDDP_1_3318    |                         |              | 34 | TTL5        | spi0_ck                  | VDDP_2       | 51 | VDD         |                      |              | 68 | AUD_VRM_DAC |               |              |
 
-# strap pins 
+## Boot strap pins
 
-pm_spi_do?
+| USB bootloader        | PM_SPI_HLD              |
+|-----------------------|-------------------------|
+| USB bootloader        | 0 - boot device ignored |
+| Normal boot           | 1                       |
+
+| boot device           | PM_SPI_DO               | PM_SPI_CK |
+|-----------------------|-------------------------|-----------|
+| SPI NAND or SD        | 0                       | 1         |
+| SPI NAND only         | 0                       | 0         |
+| SPI NOR or SD         | 1                       | 0         |
+| SPI NOR only          | 1                       | 1         |
+
+Yes, the PM_SPI_CK seems weird.
+
+| secure boot           | PM_SPI_DI               |
+|-----------------------|-------------------------|
+| on                    | 0                       |
+| off                   | 1                       |
+
+| boot mode             | PM_SPI_WPZ              |
+|-----------------------|-------------------------|
+| ???                   | 0                       |
+| ROM                   | 1                       |
 
 # Known devices
 
