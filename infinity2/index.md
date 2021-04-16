@@ -123,6 +123,7 @@ Cheap solder down IoT module.
 
 - [online doc from the vendor](http://doc.industio.com/docs/ssd20x-system/page_0)
 - [local info](ido-som2d01/)
+- [Raspberry Pi style board](https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-22922295238.13.376753d5S4NXzN&id=642882871788)
 
 ##### IDO-SBC2D70
 
