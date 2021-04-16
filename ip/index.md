@@ -504,6 +504,13 @@ Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blo
 
 "Graphics Output Path". This is a simple framebuffer that uses a chunk of system memory.
 
+### MOP
+
+"?mozaic? Output Path". This is a unit that allowed for descrambling censored adult videos.. not really.
+
+This apparently allows tiling up to 16 inputs. So maybe you could have 16 frames coming from somewhere and then tile them and display them all at once.
+Maybe for a tiled CCTV display?
+
 ### PNL
 
 PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or MIPI.
