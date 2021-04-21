@@ -1,4 +1,4 @@
-# Where to buy chips
+# Where to buy chips, modules, boards..
 
 Getting the MStar/SigmaStar chips is pretty difficult but not impossible.
 Note that most of the chips seem to have a minimum order quantity of 2080 so if you want less than that you will need to find someone that is selling left overs.
