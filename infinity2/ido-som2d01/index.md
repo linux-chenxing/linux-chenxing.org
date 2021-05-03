@@ -18,7 +18,7 @@ The minimum you need to wire up to get something going is:
 
 ### Flashing
 
-See [ISP](isp)
+See [ISP](/isp)
 
 - You need to write the "GCIS" to 0x0
 - You need to write the IPL to 0x140000
