@@ -145,6 +145,10 @@ Widora are apparently designing a board.
 unitv2
  - CoreChips SR9900A http://www.corechip-sz.com/enproductsview.asp?id=25
 
+##### Yet another SSD202D 7inch display
+
+https://item.taobao.com/item.htm?spm=a230r.1.14.125.35d915f7J4vCkg&id=643200464062&ns=1&abbucket=5#detail
+
 ##### Pinout
 
 See [pinouts](pinouts.md).
