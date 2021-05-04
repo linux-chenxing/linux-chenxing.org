@@ -690,6 +690,8 @@ And m5:
 
 Some chips seem to contain a [CEVA XM6](https://www.ceva-dsp.com/product/ceva-xm6/).
 
+Some chips seem to contain a "DLA" module that comes from cambricon.
+
 ### SMP glue
 
 For the infinity2, 2m and 6e where there is a second core there are registers to set
