@@ -23,6 +23,11 @@ See [ISP](/isp)
 - You need to write the "GCIS" to 0x0
 - You need to write the IPL to 0x140000
 - You need to write the u-boot SPL to 0x200000
+- For my setup u-boot and everything else is then in a ubi partition that consumes the rest of the flash.
+
+### Prebuilt binaries
+
+- See [here](https://github.com/fifteenhex/buildroot_idosom2d01)
 
 ## Datasheets etc
 
