@@ -2,7 +2,7 @@
 
 ## Git trees
 
-[Mainline staging tree](https://github.com/fifteenhex/linux/tree/msc313_mainlining) - This tree contains cleaned up patches that have/will be trying to enter mainline. This will get rebased but only for new versions of a patch series.
+[Mainline staging tree](https://github.com/fifteenhex/linux/tree/msc313_mainlining) - This tree contains cleaned up patches that have/will be trying to enter mainline. This will get rebased but only for new versions of a patch series or on top of torvalds/master.
 
 [Linux v5.9 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_9_rebase) - Linux 5.9 with a mess of patches on top. Frozen. This is for validating that rebasing, cleaning up etc for 5.10 hasn't busted anything.
 
