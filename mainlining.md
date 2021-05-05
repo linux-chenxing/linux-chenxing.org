@@ -10,7 +10,9 @@
 
 [Linux v5.11 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_11_rebase) - Linux 5.11 with patch soup. Frozen.
 
-[Linux v5.12 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_12_rebase) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
+[Linux v5.12 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_12_rebase) - Linux 5.12 with patch soup. Frozen.
+
+[Linux v5.13 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_13_rebase) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
 
 ## Round 1: Initial support (arch definition, basic DTS, UART)
 
