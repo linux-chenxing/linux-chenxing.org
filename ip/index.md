@@ -323,6 +323,7 @@ This seems to be essentially a mux that sits between the UTMI and the UHC and OT
 ### UHC
 
 This is a usb host controller that seems to be based on a Faraday design. It's a broken-EHCI controller.
+Seems to be called "FUSBH200".
 
 |            | u-boot | linux |
 |------------|--------|-------|
