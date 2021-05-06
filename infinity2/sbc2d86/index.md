@@ -8,3 +8,5 @@ Thiny ssd202d based board with a 4 inch screen.
 - HYM8563 RTC
 - ES7243 - "High Performance Stereo Audio ADC"
 - Unisound US516P6
+- FS35ND02G
+- SSW101B
