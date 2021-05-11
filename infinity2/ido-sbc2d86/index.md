@@ -13,7 +13,7 @@ Thiny ssd202d based board with a 4 inch screen.
   - LPA4871(?) mono amp
 - FS35ND02G - SPI NAND
 - SSW101B - Crappy WiFi
-- WT5105 - BLE
+- WT5105 - BLE (phyplus62xx series?)
 - NS4150B - Audio amp
 - SY7201 (DQCRA) - LED driver
 - SY6280 (COCPK) - Power switch
