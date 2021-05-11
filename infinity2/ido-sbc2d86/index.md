@@ -14,3 +14,11 @@ Thiny ssd202d based board with a 4 inch screen.
 - FS35ND02G - SPI NAND
 - SSW101B - Crappy WiFi
 - WT5105 - BLE
+
+```
+# gpioset 0 16=0
+[ 1099.114719] usb 1-1: USB disconnect, device number 2
+# gpioset 0 16=1
+# [ 1177.169962] usb 1-1: new high-speed USB device number 3 using fotg210-hcd
+[ 1177.371156] usb 1-1: Dual-Role OTG device on non-HNP port
+```
