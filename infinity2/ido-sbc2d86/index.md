@@ -25,6 +25,10 @@ Thiny ssd202d based board with a 4 inch screen.
 - GPIO5 - backlight control?
 - GPIO47?? - vbus control for external usb
 
+## Connectors
+
+- J4 i2c is i2c0, shared with RTC.
+
 ## Notes
 
 ```
