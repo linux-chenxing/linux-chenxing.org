@@ -16,11 +16,14 @@ Thiny ssd202d based board with a 4 inch screen.
 - WT5105 - BLE
 - NS4150B - Audio amp
 - SY7201 (DQCRA) - LED driver
+- SY6280 (COCPK) - Power switch
 
 
 ## Pins
 
-- GPIO5 - backlight control
+- GPIO4 - backlight control?
+- GPIO5 - backlight control?
+- GPIO47?? - vbus control for external usb
 
 ## Notes
 
