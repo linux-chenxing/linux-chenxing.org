@@ -14,6 +14,7 @@ Thiny ssd202d based board with a 4 inch screen.
 - FS35ND02G - SPI NAND
 - SSW101B - Crappy WiFi
 - WT5105 - BLE
+- NS4150B - Audio amp
 
 ```
 # gpioset 0 16=0
