@@ -15,6 +15,12 @@ Thiny ssd202d based board with a 4 inch screen.
 - SSW101B - Crappy WiFi
 - WT5105 - BLE
 - NS4150B - Audio amp
+- SY7201 (DQCRA) - LED driver
+
+
+## Pins
+
+- GPIO5 - backlight control
 
 ```
 # gpioset 0 16=0
