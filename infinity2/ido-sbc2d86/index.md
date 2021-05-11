@@ -22,6 +22,8 @@ Thiny ssd202d based board with a 4 inch screen.
 
 - GPIO5 - backlight control
 
+## Notes
+
 ```
 # gpioset 0 16=0
 [ 1099.114719] usb 1-1: USB disconnect, device number 2
