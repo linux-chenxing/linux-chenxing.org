@@ -30,3 +30,10 @@
 | 20 | PM_IRIN        | 42 | VDDP_1     | 64 | SR_IO15        | 86 | AVDD_AUD    |
 | 21 | PM_RESET       | 43 | FUART_RX   | 65 | SR_IO16        | 87 | AUD_VAG     |
 | 22 | PM_UART_RX     | 44 | FUART_TX   | 66 | SR_IO17        | 88 | AUD_VRM_ADC |
+
+| boot device           | PM_SPI_DO               | PM_SPI_CK |
+|-----------------------|-------------------------|-----------|
+| SPI NAND or SD        | 0                       | 1         |
+| SPI NAND only         | 0                       | 0         |
+| SPI NOR or SD         | 1                       | 0         |
+| SPI NOR only          | 1                       | 1         |
