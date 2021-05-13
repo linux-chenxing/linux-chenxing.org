@@ -24,6 +24,7 @@ Thiny ssd202d based board with a 4 inch screen.
 - GPIO4 - backlight control?
 - GPIO5 - backlight control?
 - GPIO47?? - vbus control for external usb
+- GPIO11 - external usb power control
 
 ## Connectors
 
