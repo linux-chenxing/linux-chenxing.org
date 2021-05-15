@@ -48,6 +48,11 @@ The vendor kernel for these seems to be 4.9.84.
 
 [Databrief](ssc336d_ssc336q_pb_v03.pdf)
 
+## SSC336Q
+- Chip id: 0xf1
+- dual core.
+- Machine model: INFINITY6E SSC012B-S01A
+
 ## SSC337
 
 - Chip id: 0xf2
