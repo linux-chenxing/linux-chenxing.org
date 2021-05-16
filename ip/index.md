@@ -450,6 +450,36 @@ There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0
 | infinity3  |        | yes   | 8        |
 |            |        |       |          |
 
+```
+/*
+ *
+ * There are channels at
+ * 0x1f003400
+ * 0x1f003480
+ * 0x1f003500
+ * 0x1f003580
+ * 0x1f003600
+ * 0x1f003680
+ * ..
+ *
+ *         reset value     writable bits
+
+0x0  -  0               0xFFFF
+0x4  -  0               0x3
+0x8  -  0               0xFFFF -- duty
+0xc  -  0               0x3
+0x10 -  0               0xFFFF -- period
+0x14 -  0               0x3
+0x18 -  0               0xFFFF -- clk div
+
+
+0x1c -  0               0x1F
+
+    4    |
+polarity |
+ */
+ ```
+
 ## spi-nor
 
 spi-nor functionality is made of 3 different IP blocks; ISP, FSP and QSP.
