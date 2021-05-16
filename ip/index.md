@@ -444,6 +444,12 @@ There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0
 
 ## pwm
 
+|            | u-boot | linux | channels |
+|------------|--------|-------|----------|
+| infinity2m |        | yes   | 4        |
+| infinity3  |        | yes   | 8        |
+|            |        |       |          |
+
 ## spi-nor
 
 spi-nor functionality is made of 3 different IP blocks; ISP, FSP and QSP.
