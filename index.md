@@ -78,6 +78,7 @@ Getting the other chips to boot without the vendor IPL is mostly a case of doing
 | [infinity5](#infinity5)   |                               | wip                             | wip                      |                           |                     |
 | [infinity6](#infinity6)   |                               | wip                             | wip                      |                           |                     |
 | [infinity6b0](#infinity6) |                               | wip                             | wip                      |                           |                     |
+| [infinity6e](#infinity6)  |                               |                                 |                          |                           |                     |
 | [mercury5](#mercury5)     | yes, SD                       | yes                             | yes                      |                           | yes                 |
 | [pioneer3](#pioneer3)     |                               |                                 |                          |                           |                     |
 
@@ -91,6 +92,7 @@ Getting the other chips to boot without the vendor IPL is mostly a case of doing
 | [infinity5](#infinity5)  |                               |                                   |                                                 |                                     |     |
 | [infinity6](#infinity6)  | wip                           | wip                               | wip                                             |                                     |     |
 | [infinity6b0](#infinity6)| yes                           | wip                               | wip                                             |                                     |     |
+| [infinity6e](#infinity6) |                               |                                   |                                                 |                                     |     |
 | [mercury5](#mercury5)    | yes                           | yes                               | yes                                             | yes                                 |     |
 | [pioneer3](#pioneer3)    |                               |                                   |                                                 |                                     |     |
 
