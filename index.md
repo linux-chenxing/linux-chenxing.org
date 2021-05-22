@@ -235,6 +235,7 @@ Doesn't seem to exist.
 
 - [SSC328Q](infinity5#ssc328q) - Cortex A7 + 256MB DDR3 (this might be i6)
 - [SSC329Q](infinity5#ssc329q) - Cortex A7 + 256MB DDR3 + NPU (this might be i6)
+- [SSA520D](infinity5#ssa520d) - 64MB DDR2? BGA
 
 #### [Infinity6](infinity6)
 
