@@ -138,6 +138,7 @@ when each type of chip was produced.
 |                           | ssc337de |            | 28nm         | yes                    |                 |                 |              |                                       |                                          |
 |                           | ssc338q  |            | 22nm         |                        |                 |                 |              |                                       |                                          |
 |                           | ssc338g  |            | 22nm         |                        |                 |                 |              |                                       |                                          |
+| [infinity6e](#infinity6e) |          |            |              |                        |                 |                 |              |                                       |                                          |
 |                           | ssc339g  |            | 22nm         |                        |                 |                 |              |                                       |                                          |
 | [mercury2](#mercury2)     |          |            |              | yes                    |                 |                 |              |                                       |                                          |
 |                           | msc8328  | 1744       |              |                        |                 | yes             |              |                                       |                                          |
@@ -256,6 +257,8 @@ Doesn't seem to exist.
 #### [Infinity 6e](infinity6)
 
 - Infinity 6e seems to be a dual core variation in this family
+
+- [SSC339G](infinity6#ssc339)
 
 These seem to be i6e based on the build tag found in a kernel image for the SSC8629
 
