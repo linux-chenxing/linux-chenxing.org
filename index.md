@@ -258,7 +258,7 @@ Doesn't seem to exist.
 
 - Infinity 6e seems to be a dual core variation in this family
 
-- [SSC339G](infinity6#ssc339)
+- [SSC339G](infinity6#ssc339) - Dual Cortex A7
 
 These seem to be i6e based on the build tag found in a kernel image for the SSC8629
 
