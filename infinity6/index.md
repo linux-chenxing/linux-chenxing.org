@@ -49,9 +49,11 @@ The vendor kernel for these seems to be 4.9.84.
 [Databrief](ssc336d_ssc336q_pb_v03.pdf)
 
 ## SSC336Q
+
 - Chip id: 0xf1
 - dual core.
 - Machine model: INFINITY6E SSC012B-S01A
+- BROM (32Kb) Tag MVX4######gce02feaI6e_ROM####XVM
 
 ## SSC337
 
@@ -61,11 +63,22 @@ The vendor kernel for these seems to be 4.9.84.
 
 [Databrief](SSC337D_brief_datasheet.pdf)
 
+### SSC30KQ
+
+- Infinity6e 
+- Chip id: 0xf1
+- dual core.
+- RAM 256MB
+- Machine model: INFINITY6E SSC012B-S01A
+- BROM (32Kb) Tag MVX4######gce02feaI6e_ROM####XVM
+
 ### SSC339G
 
 - Infinity6e 
 
-Boot log:
+<details>
+<summary>Boot log:</summary>
+ 
 
 ```
 IPL 1fb0433
@@ -328,3 +341,5 @@ Registering SWP/SWPB emulation handler
 ms_rtcpwc 1f006800.rtcpwc: setting system clock to 1970-01-04 12:36:05 UTC (304565)
 This architecture does not have kernel memory protection.`
 ```
+
+</details>
