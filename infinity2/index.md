@@ -158,6 +158,10 @@ unitv2
 
 https://item.taobao.com/item.htm?spm=a230r.1.14.125.35d915f7J4vCkg&id=643200464062&ns=1&abbucket=5#detail
 
+##### Yet another SSD201/SSD202D solder down module
+
+https://www.geniatech.com/product/som20x/
+
 ##### Pinout
 
 See [pinouts](pinouts.md).
