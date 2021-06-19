@@ -20,9 +20,9 @@ The minimum you need to wire up to get something going is:
 
 See [ISP](/isp)
 
-- You need to write the "GCIS" to 0x0
-- You need to write the IPL to 0x140000
-- You need to write the u-boot SPL to 0x200000
+- You need to write the "GCIS" to 0x0 (Set the base shift to zero, in the erase bit select to erase the whole chip)
+- You need to write the IPL to 0x140000 (Set the base shift to 0x140000, disable the erase option)
+- You need to write the u-boot SPL to 0x200000 (Set the base shift to 0x200000, disable the erase option)
 - For my setup u-boot and everything else is then in a ubi partition that consumes the rest of the flash.
 
 ### Prebuilt binaries
