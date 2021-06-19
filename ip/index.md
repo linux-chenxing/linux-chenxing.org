@@ -513,7 +513,7 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 |            | u-boot | linux | notes                |
 |------------|--------|-------|----------------------|
 | infinity   |        | yes   |                      |
-| infinity2m |        | yes   | need pinctrl support |
+| infinity2m |        | yes   |                      |
 | infinity3  |        | yes   |                      |
 | mercury5   |        | yes   |                      |
 
