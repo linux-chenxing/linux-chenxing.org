@@ -329,6 +329,7 @@ https://wemp.app/posts/1d5e4d06-dab5-408d-8349-7721957ca66e
   - [Driver code](https://github.com/fifteenhex/sigmastar-ssw101b-driver)
   - [Maybe the same as this](https://www.altobeam.com/en/contents/72/6.html)
   - [Driver that looks really similar...](https://github.com/BPI-SINOVOIP/BPI-S905X3-Android9/tree/master/hardware/wifi/atbm/atbm602x)
+  - Maybe the same chip as ATBM6032
 
 # Injoinic PMICs
 
