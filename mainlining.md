@@ -12,7 +12,11 @@
 
 [Linux v5.12 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_12_rebase) - Linux 5.12 with patch soup. Frozen.
 
-[Linux v5.13 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_13_rebase) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
+[Linux v5.13 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_13_rebase) - Linux 5.13-rc? with patch soup. Frozen.
+
+[Linux v5.13 clock refactoring tree](https://github.com/fifteenhex/linux/tree/mstar_v5_13_rebase_clockrefactoring) - Linux 5.13 with patch soup and the reworked clock driver. Frozen.
+
+[Linux v5.14 tree](https://github.com/fifteenhex/linux/tree/mstar_v5_14) - This tree contains the most hardware support but is also a complete mess. Rebasing happens often here.
 
 ## Round 1: Initial support (arch definition, basic DTS, UART)
 
