@@ -886,6 +886,7 @@ after
 | 0x38   | v scale    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
 
 8 windows per bank?
+NV12 format?
 
 
 
