@@ -562,6 +562,8 @@ PaNeL? Seems to be incharge of driving LCDs either via a parallel interface or M
 
 - https://github.com/linux-chenxing/uboot_msc313e/tree/ssd20x_sdk/drivers/mstar/disp
 
+- https://wx.comake.online/doc/d8clf27cnes2-SSD20X/customer/development/software/Px/en/display/P2/panel.html - Some register info
+
 ## Camera
 
 The pipeline for the m5 seems to look like this:
