@@ -1,5 +1,7 @@
 # linux-chenxing
 
+[Github project](https://github.com/linux-chenxing)
+
 ## Intro
 
 This is intended to be a repository for info on the MStar/[SigmaStar](http://www.sigmastarsemi.com) SoCs
