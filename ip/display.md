@@ -875,15 +875,15 @@ after
 | 0xc    | yaddr h?   |    |    |    |    | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
 | 0x10   | caddr l?   | x  | x  | x  | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  | C data address right shifted 4 |
 | 0x14   | caddr h?   |    |    |    |    | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
-| 0x18   | hst        |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x1c   | hend       |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x20   | vst        |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x24   | vend       |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x28   | pitch?     |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x2c   | src width  |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x30   | src height |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x34   | h scale    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
-| 0x38   | v scale    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |                                |
+| 0x18   | hst        |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x1c   | hend       |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x20   | vst        |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x24   | vend       |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x28   | pitch?     |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x2c   | src width  |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x30   | src height |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x34   | h scale    |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
+| 0x38   | v scale    |    |    |    | x  | x  | x  | x | x | x | x | x | x | x | x | x | x  |                                |
 
 8 windows per bank?
 NV12 format?
