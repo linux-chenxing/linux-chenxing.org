@@ -2,6 +2,14 @@
 
 ## Reverse engineering notes
 
+## i2m ideas
+
+We have 2 types of "framebuffer".
+MOP - Does lots of NV12 formatted windows. 16 of them
+ -- There seems to be some rotation hardware too?
+GOP - Seems to be able to handle higher colour depth framebuffers? One window per unit? i2m seems to have 2 GOP
+"Take the Takoyaki platform as an example. It has 2 GOPs, and each one supports the management of 1 gwin, as shown in the figure below:"
+
 ### Interesting things
 
 - [u-boot boot splash screen display init](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/common/cmd_bootlogo.c#L1129)
