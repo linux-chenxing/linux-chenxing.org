@@ -106,11 +106,14 @@ Wireless-tag# md.w 0x1F206600 0x100
 ```
 
 
-| offset   | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | notes       |
-|----------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|-------------|
-| 0x0      | x  | x  | x  | x  | x  | x  | x | x |   |   |   |   |   |   |   |   | resets?     |
-| 0xC0 (?) |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   | x | fifo reset? |
-| 0xC8 (?) |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   | x | DispToDsiMd |
+| offset   | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3         | 2         | 1         | 0        | notes       |
+|----------|----|----|----|----|----|----|---|---|---|---|---|---|-----------|-----------|-----------|----------|-------------|
+| 0x0      | x  | x  | x  | x  | x  | x  | x | x |   |   |   |   |           |           |           |          | resets?     |
+| 0x1c     |    |    |    |    |    |    |   |   |   |   |   |   | patgenmd? | patgenmd? | patgenmd? | macesrc? |             |
+| 0x28     |    |    |    |    |    |    |   |   |   |   |   |   |           |           | dacmux?   |          |             |
+| 0x54     |    |    |    |    |    |    |   |   |   |   |   |   |           |           | fpllen?   |          |             |
+| 0xC0 (?) |    |    |    |    |    |    |   |   |   |   |   |   |           |           |           | x        | fifo reset? |
+| 0xC8 (?) |    |    |    |    |    |    |   |   |   |   |   |   |           |           |           | x        | DispToDsiMd |
 
 - [0x1F225200 - DISPLAY_TOP_OP2](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L23)
 
