@@ -5,9 +5,11 @@
 ## i2m ideas
 
 We have 2 types of "framebuffer".
-MOP - Does lots of NV12 formatted windows. 16 of them
+
+- MOP - Does lots of NV12 formatted windows. 16 of them
  -- There seems to be some rotation hardware too?
-GOP - Seems to be able to handle higher colour depth framebuffers? One window per unit? i2m seems to have 2 GOP
+ 
+- GOP - Seems to be able to handle higher colour depth framebuffers? One window per unit? i2m seems to have 2 GOP
 "Take the Takoyaki platform as an example. It has 2 GOPs, and each one supports the management of 1 gwin, as shown in the figure below:"
 
 ### Interesting things
