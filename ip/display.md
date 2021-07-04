@@ -691,7 +691,7 @@ Wireless-tag# md.w 0x1f246200 0x600
 
 ## MOP??
 
-- MOPG bank 0 - 0x1f280a00
+- [MOPG bank 0 - 0x1f280a00](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/disp/hal/infinity2m/inc/hal_disp_reg.h#L33)
 
 | offset | name              | 15 | 14 | 13 | 12       | 11            | 10        | 9        | 8        | 7        | 6        | 5        | 4          | 3          | 2          | 1          | 0          | notes |
 |--------|-------------------|----|----|----|----------|---------------|-----------|----------|----------|----------|----------|----------|------------|------------|------------|------------|------------|-------|
@@ -895,7 +895,7 @@ after:
 1f280ff0: 0000 0000 1000 0000 1000 0000 0000 0000    ................
 ```
 
-- MOPS - 0x1f281000
+- [MOPS 0x1f281000](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/disp/hal/infinity2m/inc/hal_disp_reg.h#L33)
 
 before
 
