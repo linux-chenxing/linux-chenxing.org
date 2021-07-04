@@ -88,8 +88,6 @@ Wireless-tag# md.w 0x1F206600 0x100
 
 - [0x1F225000 - DISPLAY_TOP](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L22)
 
-i2m before bootsplash
-
 ``` diff
 2,3c2,3
 < 1f225000: 0100 0000 0000 0000 0000 0000 ffff 0000    ................
