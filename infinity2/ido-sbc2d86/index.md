@@ -5,7 +5,8 @@ Thiny ssd202d based board with a 4 inch screen.
 ## Hardware
 
 - SigmaStar SSD202D
-- FRD720X720BK 4 inch LCD - MIPI?
+- [TG040H02-CT-V 4](https://www.panelook.cn/TG040H02-CT-V1-4inch-TFT-display-720-720-IPS-LCD-450cd-m-sup2-30PINS-MIPI-Square-LCD-detail_107480.html) inch 720 x 720 LCD module.
+  - FRD720X720BK 4 inch LCD - MIPI?
   - Goodix touchpanel controller
 - HYM8563 RTC
 - ES7243 - "High Performance Stereo Audio ADC"
