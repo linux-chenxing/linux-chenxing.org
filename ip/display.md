@@ -693,19 +693,20 @@ Wireless-tag# md.w 0x1f246200 0x600
 
 - [MOPG bank 0 - 0x1f280a00](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/disp/hal/infinity2m/inc/hal_disp_reg.h#L33)
 
-| offset | name              | 15 | 14 | 13 | 12       | 11            | 10        | 9        | 8        | 7        | 6        | 5        | 4          | 3          | 2          | 1          | 0          | notes |
-|--------|-------------------|----|----|----|----------|---------------|-----------|----------|----------|----------|----------|----------|------------|------------|------------|------------|------------|-------|
-| 0x0    |                   |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            | swreset    |       |
-| 0x4    |                   |    |    |    |          | auto blanking | win size? | clk_gop  | clk_miu  |          |          |          |            |            |            |            |            |       |
-| 0xc    |                   |    |    |    |          |               |           |          |          |          |          |          | pipe_delay | pipe_delay | pipe_delay | pipe_delay | pipe_delay |       |
-| 0x10   | ymd_thd           |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |            |       |
-| 0x14   | cdma_thd          |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |            |       |
-| 0x18   | Luma DMA priority |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |            |       |
-| 0x1c   |                   |    |    |    | gw_hsize | gw_hsize      | gw_hsize  | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize   | gw_hsize   | gw_hsize   | gw_hsize   | gw_hsize   |       |
-| 0x20   |                   |    |    |    | gw_vsize | gw_vsize      | gw_vsize  | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize   |       |
-| 0x2c   | Luma DMA priority |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |            |       |
-| 0x54   | gw_hext           |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |            |       |
-| 0x100  | //h40 set 4tap    |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |            |       |
+| offset | name              | 15 | 14 | 13 | 12       | 11            | 10        | 9        | 8        | 7        | 6        | 5        | 4          | 3          | 2          | 1          | 0               | notes |
+|--------|-------------------|----|----|----|----------|---------------|-----------|----------|----------|----------|----------|----------|------------|------------|------------|------------|-----------------|-------|
+| 0x0    |                   |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            | swreset         |       |
+| 0x4    |                   |    |    |    |          | auto blanking | win size? | clk_gop  | clk_miu  |          |          |          |            |            |            |            |                 |       |
+| 0xc    |                   |    |    |    |          |               |           |          |          |          |          |          | pipe_delay | pipe_delay | pipe_delay | pipe_delay | pipe_delay      |       |
+| 0x10   | ymd_thd           |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |                 |       |
+| 0x14   | cdma_thd          |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |                 |       |
+| 0x18   | Luma DMA priority |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |                 |       |
+| 0x1c   |                   |    |    |    | gw_hsize | gw_hsize      | gw_hsize  | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize | gw_hsize   | gw_hsize   | gw_hsize   | gw_hsize   | gw_hsize        |       |
+| 0x20   |                   |    |    |    | gw_vsize | gw_vsize      | gw_vsize  | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize   | gw_vsize        |       |
+| 0x2c   | Luma DMA priority |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |                 |       |
+| 0x30   |                   |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            | vsync irq mask? |       |
+| 0x54   | gw_hext           |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |                 |       |
+| 0x100  | //h40 set 4tap    |    |    |    |          |               |           |          |          |          |          |          |            |            |            |            |                 |       |
 
 before
 
