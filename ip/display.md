@@ -686,6 +686,24 @@ Wireless-tag# md.w 0x1f246200 0x600
 1f246df0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
 ```
 
+```
+original firmware
+
+root@OpenWrt:/# devmem 0x1f246800
+0x0000C408
+root@OpenWrt:/# devmem 0x1f246200
+0x00004500
+
+mainline with u-boot logo
+
+devmem 0x1f246800
+0x00004009
+# devmem 0x1f246200
+0x00004001
+# 
+```
+
+
 ## OSD
 
 - 0x1f243000
