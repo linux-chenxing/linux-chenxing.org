@@ -284,6 +284,7 @@ Wireless-tag# md.w 0x1F2A5000 0x100
 
 GOP should be used for framebuffers from what I can tell but this doesn't seem the case for the bootlogo as the registers are not changing.
 
+https://github.com/linux-chenxing/uboot_msc313e/blob/6bf9b364ea16d79444c4a9c6f99bacc266b17a12/drivers/mstar/rgn/hal/infinity2m/inc/hal_gop_reg.h#L204
 - 0x1f246200
 - 0x1f246400
 - 0x1f246600
