@@ -71,6 +71,19 @@ pm_gpio4 on infinity3 (maybe others) is weird and needs to be "unlocked" before 
 
 32 interrupts forwarded to the GIC as FIQs. Basically the same as the above.
 
+## GPI gpio interrupt controller
+
+Seems to be new for i2m and i6. This seems to be another interrupt controller for GPIO interrupts that are forwarded via a single interrupt to the GIC.
+
+### Support Matrix
+
+|            | u-boot | linux   |
+|------------|--------|---------|
+| infinity   |        | N/A     |
+| infinity2m |        | wip     |
+| infinity3  |        | N/A     |
+| mercury5   |        | N/A     |
+
 ## Pinmux
 
 [More details](pinctrl.md)
