@@ -302,6 +302,8 @@ This seems to be an evolution of the infinity2m chips.
 - SSC8539
 - SSA520
 - SSD203D
+- SSD221 SSD9221 
+  - https://web.archive.org/web/20210715144141/https://item.taobao.com/item.htm?spm=a230r.1.14.87.42b915f765wP7M&id=650844830905&ns=1&abbucket=18
 
 # 64bit ARM based
 
