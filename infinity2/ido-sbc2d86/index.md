@@ -2,6 +2,8 @@
 
 Thiny ssd202d based board with a 4 inch screen.
 
+![boardandlcd](front_thumb.jpg)
+
 ## Hardware
 
 - SigmaStar SSD202D
