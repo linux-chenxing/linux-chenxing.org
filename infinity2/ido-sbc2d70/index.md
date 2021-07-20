@@ -6,6 +6,8 @@
 
 ## Specs
 
+- som2d01 SoM
+- CC0702I50R 1024x600 panel
 - goodix gt911 ts controller
 
 ## Notes
