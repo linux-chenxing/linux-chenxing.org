@@ -1,5 +1,9 @@
 # IDO-SBC2D70
 
+![board_screen](board_with_screen_thumb.jpg)
+
+![board_components](board_components_thumb.jpg)
+
 ## Specs
 
 - goodix gt911 ts controller
