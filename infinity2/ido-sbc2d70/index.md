@@ -9,6 +9,7 @@
 - som2d01 SoM
 - [Shenzhen ChenChen CC0702I50R 1024x600 panel](https://detail.1688.com/offer/610075231091.html?spm=a262i4.9164788.zhaohuo-list-offerlist.18.1031647dTg94vk)
 - goodix gt911 ts controller
+- NS4205 amp
 
 ## Notes
 
