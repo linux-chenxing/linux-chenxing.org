@@ -659,6 +659,13 @@ Also known as "Cleveland Haydn" or Haydn
 | infinity  | n/a    | wip   |
 | infinity3 | n/a    | wip   |
 | mercury5  | n/a    | wip   |
+ 
+ 
+## SATA
+ 
+Seems to be AHCI.
+ 
+https://github.com/linux-chenxing/linux-ssc325/tree/takoyaki_dls00v017/drivers/sstar/sata_host
 
 ## Misc
 
