@@ -96,3 +96,30 @@ Wireless-tag# md.w 0x1f206800 0x100
 1f2069e0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
 1f2069f0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
 ```
+
+#### i2m, ido openwrt after boot
+
+```
+root@OpenWrt:/# devmem 0x1f206800
+0x00000204
+root@OpenWrt:/# devmem 0x1f206804
+0x00000000
+root@OpenWrt:/# devmem 0x1f206808
+0x00000080
+root@OpenWrt:/# devmem 0x1f20680c
+0x00001FFF
+root@OpenWrt:/# devmem 0x1f206810
+0x00000000
+root@OpenWrt:/# devmem 0x1f206814
+0x00000000
+root@OpenWrt:/# devmem 0x1f206818
+0x00000000
+root@OpenWrt:/# devmem 0x1f20681c
+0x00000000
+root@OpenWrt:/# devmem 0x1f206880
+0x000000C0
+root@OpenWrt:/# devmem 0x1f206884
+0x00000F0F
+root@OpenWrt:/#
+```
+
