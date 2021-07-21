@@ -384,6 +384,15 @@ extract-dtb.py <extracted firmware dir><uncompressed kernel blob>
 dtc -I dtb -O dts -o out.dts <extracted dtb that looks right>
 ```
 
+# Dumping out registers from running vendor kernels
+
+This works for dumping out a bank under wireless tag's openwrt:
+
+```
+BASE=0x1f206800; for X in `seq 0 127`; do A=$(($BASE + (4 * $X))); V=`devmem $A`; printf "0x%X - %s\n" $A $V; done
+```
+
+
 # Development boards
 
 - [Breadbee](https://github.com/breadbee/breadbee/) (Infinity3 - msc313e)
