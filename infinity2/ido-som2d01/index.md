@@ -39,6 +39,8 @@ These are available from the vendors site, mirrored here so they don't disappear
 
 ## Misc
 
+- [FCC testing](https://fccid.io/2AFOS-IDO-SOM2D01/)
+
 ### lsusb output
 
 ```
