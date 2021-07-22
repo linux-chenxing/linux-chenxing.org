@@ -527,4 +527,5 @@ Before and after playing the weird video
 ---
 > 0x1F206884 - 0x00008787
 ```
+0x00 - bit 4 and bit 11 set
 
