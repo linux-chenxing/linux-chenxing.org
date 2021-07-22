@@ -528,4 +528,7 @@ Before and after playing the weird video
 > 0x1F206884 - 0x00008787
 ```
 0x00 - bit 4 and bit 11 set
+0x04 - bit 4 and bit 5 set
+0x0c - bit 1, 3, 4, 6, bit 9 to 12 cleared.
+0x20 - bit 12, 13 set
 
