@@ -28,7 +28,7 @@
 |        |                                 |             |               |                |           |             |             |            |            |          |          |              |          |          |          |          |          |
 
 sr0 sel - src1 sel seems to control the clock for the DMA reader
-
+dma test ctrl 5 - setting the sinewave gen enables cuts the playing audio but nothing audible comes out.
 
 ## bank 2 
 
