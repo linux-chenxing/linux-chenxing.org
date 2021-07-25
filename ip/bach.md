@@ -59,7 +59,11 @@
 | 0x188  | dma2 ctrl14                     |                    |                   |                    |                   |                |                 |                 |                  |          |             |               |                    |                 |                        |          |          |
 | 0x18c  | dma2 ctrl15                     |                    |                   |                    |                   |                |                 |                 |                  |          |             |               |                    |                 |                        |          |          |
 | 0x1d4  | dma test ctrl 5 (sine wave gen) | sine gen en        | sine gen left     | sine gen right     |                   |                |                 |                 |                  | gain     | gain        | gain          | gain               | freq            | freq                   | freq     | freq     |
-|        |                                 |                    |                   |                    |                   |                |                 |                 |                  |          |             |               |                    |                 |                        |          |          |
+| 0x1d8  |                                 |                    |                   |                    |                   |                |                 |                 |                  |          |             |               |                    |                 |                        |          |          |
+| 0x1dc  | dma test ctrl 7                 |                    |                   |                    |                   |                |                 |                 |                  |          |             |               |                    |                 |                        |          |          |
+|        |                                 | dma1 rd mono       | dma1 wr mono      | dma1 rd mono copy  |                   |                |                 |                 |                  |          |             |               |                    |                 |                        |          |          |
+
+
 - sr0 sel - src1 sel seems to control the clock for the DMA reader
 - dma test ctrl 5 - setting the sinewave gen enables cuts the playing audio but nothing audible comes out.
 
