@@ -1,5 +1,8 @@
 # Bach
 
+The register listings available are for "cedric" and "infinity". The two seem totally different.
+This page is about infinity.
+
 ## Bank address for infinity3/mercury5
 
 [detailed here](https://github.com/fifteenhex/SDK_pulbic/blob/c1436fa7446457e8d6547874d27ee4e34be150cf/Mercury5/proj/sc/driver/hal/mercury/audio/inc/hal_bach.h#L41)
