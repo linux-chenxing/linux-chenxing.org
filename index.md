@@ -96,6 +96,7 @@ Getting the other chips to boot without the vendor IPL is mostly a case of doing
 | [infinity6b0](#infinity6)| yes                           | wip                               | wip                                             |                                     |     |
 | [infinity6e](#infinity6) |                               |                                   |                                                 |                                     |     |
 | [mercury5](#mercury5)    | yes                           | yes                               | yes                                             | yes                                 |     |
+| [mercury6](#mercury6)    |                               |                                   |                                                 |                                     |     |
 | [pioneer3](#pioneer3)    |                               |                                   |                                                 |                                     |     |
 
 # Data Mining Progress
@@ -293,6 +294,10 @@ This seems to be an evolution of the infinity2m chips.
 - [SSC8336N](mercury5#ssc8336n) - Cortex A7 + 64MB DDR2 in a 128 pin QFN
 - [SSC8339D](mercury5#ssc8339d) - Probably in this family, Cortex A7 + 128MB(?) DDR3(?) in a 268 ball BGA
 
+#### [Mercury6](mercury6)
+
+- SSD268G - 2 * Cortex A53
+
 ### Misc
 
 - [MSB2521](misc/msb2521.md) - ARM9 based SatNav on a chip
@@ -314,7 +319,6 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 - SSC8836Q - Cortex A53, LQFP
 - SSC8838G - Cortex A53, BGA
 - SSC8526 - 2 * Cortex A53, BGA
-- SSD268G - 2 * Cortex A53
 - SSD261Q - 2 * Cortex A53
 - SSR910Q - 2 * Cortex A53, LQFP
 - SSR920G - 2 * Cortex A53, BGA
