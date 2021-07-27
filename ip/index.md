@@ -183,12 +183,15 @@ Note [0]: IPL expects this bit to be set after a software reset - otherwise it a
 
 ### Support Matrix
 
-|           | u-boot | linux |
-|-----------|--------|-------|
-| infinity  |        | yes   |
-| infinity3 |        | yes   |
-| mercury5  |        | yes   |
+|            | u-boot | linux |
+|------------|--------|-------|
+| infinity   |        | yes   |
+| infinity2m |        | yes   |
+| infinity3  |        | yes   |
+| mercury5   |        | yes   |
 
+## RTCPWC
+ 
 ## DMA
 
 ### BDMA
