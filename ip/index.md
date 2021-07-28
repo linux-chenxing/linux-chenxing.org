@@ -195,7 +195,7 @@ Note [0]: IPL expects this bit to be set after a software reset - otherwise it a
  https://github.com/linux-chenxing/linux-ssc325/blob/takoyaki_dls00v017/drivers/sstar/rtc/reg/reg_rtcpwc.h
  https://github.com/linux-chenxing/linux-ssc325/blob/pudding_clc03v002/drivers/sstar/sar_key/adc-keys.c
  
-| offset | name         | 15      | 14      | 13      | 12      | 11      | 10      | 9       | 8       | 7      | 6       | 5       | 4       | 3       | 2       | 1       | 0      | notes                         |
+ | offset | name         | 15      | 14      | 13      | 12      | 11      | 10      | 9       | 8       | 7      | 6       | 5       | 4       | 3       | 2       | 1       | 0      | notes                         |
 |--------|--------------|---------|---------|---------|---------|---------|---------|---------|---------|--------|---------|---------|---------|---------|---------|---------|--------|-------------------------------|
 | 0x0    |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
 | 0x4    |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
@@ -214,7 +214,7 @@ Note [0]: IPL expects this bit to be set after a software reset - otherwise it a
 | 0x34   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
 | 0x38   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
 | 0x3c   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
-| 0x40   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x40   |              |         |         |         |         |         |         |         | rst     |        |         |         |         |         |         |         |        |                               |
 | 0x44   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
 | 0x48   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
 | 0x4c   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
