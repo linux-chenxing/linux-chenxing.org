@@ -195,18 +195,20 @@ Note [0]: IPL expects this bit to be set after a software reset - otherwise it a
  https://github.com/linux-chenxing/linux-ssc325/blob/takoyaki_dls00v017/drivers/sstar/rtc/reg/reg_rtcpwc.h
  https://github.com/linux-chenxing/linux-ssc325/blob/pudding_clc03v002/drivers/sstar/sar_key/adc-keys.c
  
-| offset | name         | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3   | 2 | 1 | 0 | notes |
-|--------|--------------|----|----|----|----|----|----|---|---|---|---|---|---|-----|---|---|---|-------|
-| 0x0    |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x4    |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x8    |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0xc    | iso ctrl     |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x10   |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x12   |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x14   |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x18   |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x1c   |              |    |    |    |    |    |    |   |   |   |   |   |   |     |   |   |   |       |
-| 0x20   | iso ctrl ack |    |    |    |    |    |    |   |   |   |   |   |   | ack |   |   |   |       | 
+| offset | name         | 15      | 14      | 13      | 12      | 11      | 10      | 9       | 8       | 7      | 6       | 5       | 4       | 3       | 2       | 1       | 0      | notes                         |
+|--------|--------------|---------|---------|---------|---------|---------|---------|---------|---------|--------|---------|---------|---------|---------|---------|---------|--------|-------------------------------|
+| 0x0    |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x4    |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x8    |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0xc    | iso ctrl     |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x10   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x12   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x14   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x18   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x1c   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x20   | iso ctrl ack |         |         |         |         |         |         |         |         |        |         |         |         | ack     |         |         |        |                               |
+| 0x24   |              | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata | need to confirm how many bits |
+| 0x28   |              | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata | see above                     |
  
 ## DMA
 
