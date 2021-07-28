@@ -207,8 +207,18 @@ Note [0]: IPL expects this bit to be set after a software reset - otherwise it a
 | 0x18   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
 | 0x1c   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
 | 0x20   | iso ctrl ack |         |         |         |         |         |         |         |         |        |         |         |         | ack     |         |         |        |                               |
-| 0x24   |              | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata | need to confirm how many bits |
-| 0x28   |              | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata | see above                     |
+| 0x24   | rddata_l     | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata | rddata  | rddata  | rddata  | rddata  | rddata  | rddata  | rddata | need to confirm how many bits |
+| 0x28   | rddata_h     | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata | rddata? | rddata? | rddata? | rddata? | rddata? | rddata? | rddata | see above                     |
+| 0x2c   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x30   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x34   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x38   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x3c   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x40   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x44   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x48   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x4c   |              |         |         |         |         |         |         |         |         |        |         |         |         |         |         |         |        |                               |
+| 0x50   | testbus      |         |         |         |         |         |         |         |         |        |         |         |         |         |         | clk_1k  | iso_en |                               |
  
 ## DMA
 
