@@ -220,6 +220,13 @@ Note [0]: IPL expects this bit to be set after a software reset - otherwise it a
 | 0x4c   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                               |
 | 0x50   | testbus      |         |         |         |         |         |         |         |         |        |         |         |          |            |         | clk_1k  | iso_en |                               |
  
+|            | u-boot | linux        |
+|------------|--------|--------------|
+| infinity   |        | no hardware? |
+| infinity2m |        | wip          |
+| infinity3  |        | no hardware? |
+| mercury5   |        | no hardware? |
+ 
 ## DMA
 
 ### BDMA
