@@ -219,6 +219,8 @@ Note [0]: IPL expects this bit to be set after a software reset - otherwise it a
 | 0x48   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0x4c   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0x50   | testbus      |         |         |         |         |         |         |         |         |        |         |         |          |            |         | clk_1k  | iso_en |                                                                                     |
+
+- Some of the vendor code says that the internal `sw0` and `sw1` registers are used for the resume address when resuming. These seem to be 16bits each, so you need both to get a 32bit address. 
  
 |            | u-boot | linux        |
 |------------|--------|--------------|
