@@ -202,8 +202,7 @@ https://github.com/linux-chenxing/linux-ssc325/blob/pudding_clc03v002/drivers/ss
 | 0x8    |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0xc    | iso ctrl     |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0x10   | wrdata_l     | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata | wrdata  | wrdata  | wrdata   | wrdata     | wrdata  | wrdata  | wrdata |                                                                                     |
-| 0x12   | wrdata_h     | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata | wrdata  | wrdata  | wrdata   | wrdata     | wrdata  | wrdata  | wrdata |                                                                                     |
-| 0x14   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
+| 0x14   | wrdata_h     | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata  | wrdata | wrdata  | wrdata  | wrdata   | wrdata     | wrdata  | wrdata  | wrdata |                                                                                     |
 | 0x18   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0x1c   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0x20   | iso ctrl ack |         |         |         |         |         |         |         |         |        |         |         |          | ack        |         |         |        |                                                                                     |
@@ -220,7 +219,7 @@ https://github.com/linux-chenxing/linux-ssc325/blob/pudding_clc03v002/drivers/ss
 | 0x4c   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0x50   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |         |         |        |                                                                                     |
 | 0x54   | testbus      |         |         |         |         |         |         |         |         |        |         | clk_1k  |          |            |         |         | iso_en |                                                                                     |
-
+ 
 - Some of the vendor code says that the internal `sw0` and `sw1` registers are used for the resume address when resuming. These seem to be 16bits each, so you need both to get a 32bit address. 
  
 |            | u-boot | linux        |
