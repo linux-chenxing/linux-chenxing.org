@@ -67,3 +67,8 @@ Yes, the PM_SPI_CK seems weird.
 [Widora](https://sns.widora.io/topic/767/ssd210-demo%E6%9D%BF-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%87%86%E5%A4%87%E7%82%B9%E5%B1%8F)
 
 ## SSD212
+
+
+### SSC9212
+
+- [Local notes](ssc9212.md)
