@@ -554,6 +554,7 @@ These are all basically slightly different SPI masters.
 | infinity2m | yes    | yes   |
 | infinity3  | yes    | yes   |
 | mercury5   | yes    | yes   |
+| pioneer3   |        | yes   | 
 
 [More info](spi-nor.md)
 
