@@ -83,6 +83,7 @@ Seems to be new for i2m and i6. This seems to be another interrupt controller fo
 | infinity2m |        | wip     |
 | infinity3  |        | N/A     |
 | mercury5   |        | N/A     |
+| pioneer3   |        | wip     |
 
 ## Pinmux
 
