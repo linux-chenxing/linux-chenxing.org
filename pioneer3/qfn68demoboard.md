@@ -9,6 +9,6 @@
 
 ## Reverse engineering notes
 
--- For the SSC9211 SD card power is connected to "GPIO 24", which is "TTL7" (I think) on the SSD210 diagram.
-   gpio register that changes when u-boot toggles it is 0x2d8.
+- For the SSC9211 SD card power is connected to "GPIO 24", which is "TTL7" (I think) on the SSD210 diagram.
+  gpio register that changes when u-boot toggles it is 0x2d8.
    
