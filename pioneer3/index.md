@@ -69,6 +69,6 @@ Yes, the PM_SPI_CK seems weird.
 ## SSD212
 
 
-### SSC9212
+### SSC9211
 
-- [Local notes](ssc9212.md)
+- [Local notes](ssc9211.md)
