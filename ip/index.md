@@ -396,6 +396,10 @@ This seems to be an musb USB device controller.
 | infinity3 |        | wip   |
 | mercury5  |        | wip   |
 
+### USB3
+ 
+ Seems to be DWC3
+ 
 ## ADC
 
 ### SAR
