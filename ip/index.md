@@ -499,6 +499,10 @@ There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0
 [Rough register descriptions](https://github.com/fifteenhex/linux_mstar_3.18/blob/e424e92e5442490e2f19b6d18464be3730e0678c/drivers/mstar/i2c/infinity/mhal_iic_reg.h#L208)
 
 ## spi
+ 
+## pspi
+ 
+Pixel(?) SPI. New in pioneer3
 
 ## pwm
 
