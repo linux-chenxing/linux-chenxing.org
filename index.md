@@ -269,6 +269,7 @@ These seem to be i6e based on the build tag found in a kernel image for the SSC8
 - SSC8629D - AI enabled
 - SSC8629G
   - 70mai A800S https://fccid.io/2AOK9-A800S/Internal-Photos/Internal-Photos-5061810
+  - VIA M360-M800 https://fccid.io/NCI-M360-M800/
 - SSC8629Q
 
 ### Pioneer3
