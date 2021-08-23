@@ -237,6 +237,8 @@ https://github.com/linux-chenxing/linux-ssc325/blob/pudding_clc03v002/drivers/ss
 BDMA or "Byte DMA" is a simple A -> B DMA engine. It's mainly used to
 move data from the memory mapped SPI NOR into main memory so the CPU
 doesn't have to do it. It also apparently supports doing CRC calculations.
+ 
+[more info](bdma.md)
 
 #### Support Matrix
 
