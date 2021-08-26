@@ -144,6 +144,7 @@ GW300 is a SSD201 and the GW302 is a SSD202D
 
 - [vendor page](http://www.myzr.com.cn/public/index/index/product/id/115.html)
 - [tear down etc](gw300)
+- [module](http://www.myzr.com.cn/public/indexen/index/product/id/141.html)
 
 ##### [widora](https://github.com/widora/SSD202)
 
