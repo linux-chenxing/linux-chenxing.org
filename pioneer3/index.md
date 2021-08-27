@@ -68,6 +68,7 @@ Yes, the PM_SPI_CK seems weird.
 
 ## SSD212
 
+- [sv50pd](sv50pd)
 
 ### SSC9211
 
