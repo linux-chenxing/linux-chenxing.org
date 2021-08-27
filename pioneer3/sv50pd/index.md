@@ -8,6 +8,10 @@
 
 - zbit [ZB25VQ128](ZB25VQ128.pdf) 128MBit SPI NOR
 
+## Notes
+
+- pm uart is on the test pads on the back of the board under where the SoC is on the component side.
+
 ## Vendor firmware kernel log
 
 ```
