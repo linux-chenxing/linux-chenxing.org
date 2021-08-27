@@ -6,7 +6,7 @@
 
 ## Specs
 
-- zbit ZB25VQ128 128MBit SPI NOR
+- zbit [ZB25VQ128](ZB25VQ128.pdf) 128MBit SPI NOR
 
 ## Vendor firmware kernel log
 
