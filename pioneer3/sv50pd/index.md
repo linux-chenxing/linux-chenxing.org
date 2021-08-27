@@ -4,6 +4,10 @@
 
 ![board_back](board_back_thumb.jpg)
 
+## Specs
+
+- zbit ZB25VQ128 128MBit SPI NOR
+
 ## Vendor firmware kernel log
 
 ```
