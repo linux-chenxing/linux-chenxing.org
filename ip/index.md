@@ -581,6 +581,7 @@ There seem to be many versions or revions of the SD/SDIO block. Some versions se
 | infinity2m |        | yes   |                      |
 | infinity3  |        | yes   |                      |
 | mercury5   |        | yes   |                      |
+| pioneer 3  |        | yes   |                      |
 
 ## Display pipeline
 
