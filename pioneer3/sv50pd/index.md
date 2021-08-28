@@ -6,7 +6,11 @@
 
 ## Specs
 
+- SSD212 (Cortex A7 * 2 ~1GHz, 64MB DDR2)
 - zbit [ZB25VQ128](ZB25VQ128.pdf) 128MBit SPI NOR
+- PWM beeper
+- SD card slot
+- RGB panel/i2c touch screen interface
 
 ## Notes
 
