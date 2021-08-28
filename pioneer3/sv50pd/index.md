@@ -37,7 +37,7 @@
 | 19 | scl0       | sr_gpio04      | 26 | tx2        |           |
 | 20 | sda0       | sr_gpio05      | 25 | rx1        |           |
 | 21 | scl1       | sr_gpio06      | 24 | tx1        |           |
-| 22 | sda1       | sr_gpio07      | 23 | pwm        |           |
+| 22 | sda1       | sr_gpio07      | 23 | pwm        | key_gpio3 |
 
 ## Vendor firmware kernel log
 
