@@ -30,14 +30,14 @@
 | 12 | a7         |           | 33 | rn         |           |
 | 13 | r          |           | 32 | wen        |           |
 | 14 | l          |           | 31 | furts      |           |
-| 15 | cs         |           | 30 | fucts      |           |
-| 16 | clk        |           | 29 | furx       |           |
-| 17 | si         |           | 28 | futx       |           |
-| 18 | so         |           | 27 | rx2        |           |
-| 19 | scl0       |           | 26 | tx2        |           |
-| 20 | sda0       |           | 25 | rx1        |           |
-| 21 | scl1       |           | 24 | tx1        |           |
-| 22 | sda1       |           | 23 | pwm        |           |
+| 15 | cs         | sr_gpio00 | 30 | fucts      |           |
+| 16 | clk        | sr_gpio01 | 29 | furx       |           |
+| 17 | si         | sr_gpio02 | 28 | futx       |           |
+| 18 | so         | sr_gpio03 | 27 | rx2        |           |
+| 19 | scl0       | sr_gpio04 | 26 | tx2        |           |
+| 20 | sda0       | sr_gpio05 | 25 | rx1        |           |
+| 21 | scl1       | sr_gpio06 | 24 | tx1        |           |
+| 22 | sda1       | sr_gpio07 | 23 | pwm        |           |
 
 ## Vendor firmware kernel log
 
