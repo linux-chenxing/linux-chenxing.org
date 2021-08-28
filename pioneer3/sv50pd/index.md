@@ -14,30 +14,30 @@
 
 ## Pinout
 
-| #  | board name | chip name | #  | board name | chip name |
-|----|------------|-----------|----|------------|-----------|
-| 1  | id         |           | 44 | 5v         |           |
-| 2  | dm         |           | 43 | 5v         |           |
-| 3  | dp         |           | 42 | gnd        |           |
-| 4  | gnd        |           | 41 | a8         |           |
-| 5  | a0         |           | 40 | spen       |           |
-| 6  | a1         |           | 39 | adc        |           |
-| 7  | a2         |           | 38 | d1         |           |
-| 8  | a3         |           | 37 | d0         |           |
-| 9  | a4         |           | 36 | tp         |           |
-| 10 | a5         |           | 35 | tn         |           |
-| 11 | a6         |           | 34 | rp         |           |
-| 12 | a7         |           | 33 | rn         |           |
-| 13 | r          |           | 32 | wen        |           |
-| 14 | l          |           | 31 | furts      |           |
-| 15 | cs         | sr_gpio00 | 30 | fucts      |           |
-| 16 | clk        | sr_gpio01 | 29 | furx       |           |
-| 17 | si         | sr_gpio02 | 28 | futx       |           |
-| 18 | so         | sr_gpio03 | 27 | rx2        |           |
-| 19 | scl0       | sr_gpio04 | 26 | tx2        |           |
-| 20 | sda0       | sr_gpio05 | 25 | rx1        |           |
-| 21 | scl1       | sr_gpio06 | 24 | tx1        |           |
-| 22 | sda1       | sr_gpio07 | 23 | pwm        |           |
+| #  | board name | chip name      | #  | board name | chip name |
+|----|------------|----------------|----|------------|-----------|
+| 1  | id         |                | 44 | 5v         |           |
+| 2  | dm         |                | 43 | 5v         |           |
+| 3  | dp         |                | 42 | gnd        |           |
+| 4  | gnd        |                | 41 | a8         |           |
+| 5  | a0         | gpio0          | 40 | spen       |           |
+| 6  | a1         | gpio1          | 39 | adc        |           |
+| 7  | a2         | gpio2          | 38 | d1         |           |
+| 8  | a3         | gpio3          | 37 | d0         |           |
+| 9  | a4         | gpio4          | 36 | tp         |           |
+| 10 | a5         | gpio5          | 35 | tn         |           |
+| 11 | a6         | gpio6          | 34 | rp         |           |
+| 12 | a7         | gpio7          | 33 | rn         |           |
+| 13 | r          | aud_lineout_r0 | 32 | wen        |           |
+| 14 | l          | aud_lineout_l0 | 31 | furts      |           |
+| 15 | cs         | sr_gpio00      | 30 | fucts      |           |
+| 16 | clk        | sr_gpio01      | 29 | furx       |           |
+| 17 | si         | sr_gpio02      | 28 | futx       |           |
+| 18 | so         | sr_gpio03      | 27 | rx2        |           |
+| 19 | scl0       | sr_gpio04      | 26 | tx2        |           |
+| 20 | sda0       | sr_gpio05      | 25 | rx1        |           |
+| 21 | scl1       | sr_gpio06      | 24 | tx1        |           |
+| 22 | sda1       | sr_gpio07      | 23 | pwm        |           |
 
 ## Vendor firmware kernel log
 
