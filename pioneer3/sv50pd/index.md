@@ -19,15 +19,15 @@
 | 1  | id         | sd_gpio1       | 44 | 5v         |           |
 | 2  | dm         |                | 43 | 5v         |           |
 | 3  | dp         |                | 42 | gnd        |           |
-| 4  | gnd        |                | 41 | a8         |           |
+| 4  | gnd        |                | 41 | a8         | gpio8?    |
 | 5  | a0         | gpio0          | 40 | spen       |           |
 | 6  | a1         | gpio1          | 39 | adc        |           |
 | 7  | a2         | gpio2          | 38 | d1         |           |
 | 8  | a3         | gpio3          | 37 | d0         |           |
-| 9  | a4         | gpio4          | 36 | tp         |           |
-| 10 | a5         | gpio5          | 35 | tn         |           |
-| 11 | a6         | gpio6          | 34 | rp         |           |
-| 12 | a7         | gpio7          | 33 | rn         |           |
+| 9  | a4         | gpio4          | 36 | tp         | eth_tp    |
+| 10 | a5         | gpio5          | 35 | tn         | eth_tn    |
+| 11 | a6         | gpio6          | 34 | rp         | eth_rp    |
+| 12 | a7         | gpio7          | 33 | rn         | eth_rn    |
 | 13 | r          | aud_lineout_r0 | 32 | wen        |           |
 | 14 | l          | aud_lineout_l0 | 31 | furts      |           |
 | 15 | cs         | sr_gpio00      | 30 | fucts      |           |
