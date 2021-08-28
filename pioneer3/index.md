@@ -68,6 +68,7 @@ Yes, the PM_SPI_CK seems weird.
 
 ## SSD212
 
+- [pinout](SSD212_pinout.png)
 - [sv50pd](sv50pd)
 
 ### SSC9211
