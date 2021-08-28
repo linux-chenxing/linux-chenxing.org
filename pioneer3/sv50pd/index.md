@@ -28,7 +28,7 @@
 | 10 | a5         | gpio5          | 35 | tn         | eth_tn    |
 | 11 | a6         | gpio6          | 34 | rp         | eth_rp    |
 | 12 | a7         | gpio7          | 33 | rn         | eth_rn    |
-| 13 | r          | aud_lineout_r0 | 32 | wen        |           |
+| 13 | r          | aud_lineout_r0 | 32 | wen        | sd_gpio0  |
 | 14 | l          | aud_lineout_l0 | 31 | furts      |           |
 | 15 | cs         | sr_gpio00      | 30 | fucts      |           |
 | 16 | clk        | sr_gpio01      | 29 | furx       |           |
