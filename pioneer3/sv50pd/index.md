@@ -19,7 +19,7 @@
 | 1  | id         | sd_gpio1       | 44 | 5v         |           |
 | 2  | dm         |                | 43 | 5v         |           |
 | 3  | dp         |                | 42 | gnd        |           |
-| 4  | gnd        |                | 41 | a8         | gpio8?    |
+| 4  | gnd        |                | 41 | a8         | gpio8     |
 | 5  | a0         | gpio0          | 40 | spen       |           |
 | 6  | a1         | gpio1          | 39 | adc        | sar_gpio0 |
 | 7  | a2         | gpio2          | 38 | d1         | eth_led1  |
