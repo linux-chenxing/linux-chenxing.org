@@ -21,9 +21,9 @@
 | 3  | dp         |                | 42 | gnd        |           |
 | 4  | gnd        |                | 41 | a8         | gpio8?    |
 | 5  | a0         | gpio0          | 40 | spen       |           |
-| 6  | a1         | gpio1          | 39 | adc        |           |
-| 7  | a2         | gpio2          | 38 | d1         |           |
-| 8  | a3         | gpio3          | 37 | d0         |           |
+| 6  | a1         | gpio1          | 39 | adc        | sar_gpio0 |
+| 7  | a2         | gpio2          | 38 | d1         | eth_led1  |
+| 8  | a3         | gpio3          | 37 | d0         | eth_led0  |
 | 9  | a4         | gpio4          | 36 | tp         | eth_tp    |
 | 10 | a5         | gpio5          | 35 | tn         | eth_tn    |
 | 11 | a6         | gpio6          | 34 | rp         | eth_rp    |
