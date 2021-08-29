@@ -1,4 +1,4 @@
-# ISP/Debug tool
+# ISP
 
 The chips have an i2c slave behind the uart pins that seems to work even when the uart is on.
 
@@ -17,6 +17,12 @@ $ i2cdetect -y 0
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 70: -- -- -- -- -- -- -- -- 
 ```
+
+# Debug tool
+
+- FTDI FT2232D
+- NXP 74HC08D
+- Atmel 93C56A
 
 # ISP protocol
 
