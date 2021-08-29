@@ -20,6 +20,8 @@ $ i2cdetect -y 0
 
 # Debug tool
 
+![isp tool front](debugtool_front_thumb.jpg)
+
 - FTDI FT2232D
 - NXP 74HC08D
 - Atmel 93C56A
