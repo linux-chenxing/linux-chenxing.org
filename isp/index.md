@@ -23,8 +23,8 @@ $ i2cdetect -y 0
 ![isp tool front](debugtool_front_thumb.jpg)
 
 - FTDI FT2232D
-- NXP 74HC08D
-- Atmel 93C56A
+- NXP 74HC08D (Quad 2-input AND gate)
+- Atmel 93C56A (2Kb EEPROM)
 
 # ISP protocol
 
