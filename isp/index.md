@@ -29,7 +29,9 @@ $ i2cdetect -y 0
 # Homebrew
 
 - Adafruit 5v trinket.
-- https://github.com/harbaum/I2C-Tiny-USB/tree/master/digispark
+- [i2c-tiny-usb](https://github.com/harbaum/I2C-Tiny-USB/tree/master/digispark)
+- [flashrom](https://github.com/flashrom/flashrom)
+- ```make CONFIG_MSTARDDC_SPI=yes CONFIG_ENABLE_LIBPCI_PROGRAMMERS=no```
 
 # ISP protocol
 
