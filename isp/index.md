@@ -39,6 +39,10 @@ These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and 
   - Same deal as flashrom, very slow!
   - Good enough to write the required blobs and u-boot.
 
-# ISP protocol
+# ISP SPI protocol
 
 Some details on the SPI over i2c protocol are [here](http://boeglin.org/blog/index.php?entry=Flashing-a-BenQ-Z-series-for-free%40dom%40). The same windows tool is used for all MStar chips it seems so this is probably valid across the board.
+
+# ISP DEBUG protocol
+
+- synchronization string is "SERDB".
