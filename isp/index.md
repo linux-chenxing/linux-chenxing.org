@@ -18,6 +18,8 @@ $ i2cdetect -y 0
 70: -- -- -- -- -- -- -- -- 
 ```
 
+These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and probably everything else.
+
 # Debug tool
 
 ![isp tool front](debugtool_front_thumb.jpg)
@@ -30,8 +32,9 @@ $ i2cdetect -y 0
 
 - Adafruit 5v trinket.
 - [i2c-tiny-usb](https://github.com/harbaum/I2C-Tiny-USB/tree/master/digispark)
-- [flashrom](https://github.com/flashrom/flashrom)
-- ```make CONFIG_MSTARDDC_SPI=yes CONFIG_ENABLE_LIBPCI_PROGRAMMERS=no```
+- [flashrom](https://github.com/flashrom/flashrom) - If you have SPI NOR flash
+  - ```make CONFIG_MSTARDDC_SPI=yes CONFIG_ENABLE_LIBPCI_PROGRAMMERS=no```
+- [SNANDer fork with mstarddc support](https://github.com/fifteenhex/SNANDer/tree/mstar) for SPI NOR or NAND.
 
 # ISP protocol
 
