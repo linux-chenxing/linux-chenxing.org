@@ -43,6 +43,185 @@ These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and 
 
 Some details on the SPI over i2c protocol are [here](http://boeglin.org/blog/index.php?entry=Flashing-a-BenQ-Z-series-for-free%40dom%40). The same windows tool is used for all MStar chips it seems so this is probably valid across the board.
 
+The 0x49 i2c slave is the SPI bridge to the flash.
+
 # ISP DEBUG protocol
 
+- Lives on the 0x59 slave
 - synchronization string is "SERDB".
+
+Reading a bank of registers looks like this:
+
+```
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Data write: 45
+i2c-1: Data write: 52
+i2c-1: Data write: 44
+i2c-1: Data write: 42
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 81
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 83
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 84
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 7F
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 35
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 71
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 34
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 45
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Data write: 45
+i2c-1: Data write: 52
+i2c-1: Data write: 44
+i2c-1: Data write: 42
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 81
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 83
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 84
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 7F
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 35
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 71
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 10
+i2c-1: Data write: 00
+i2c-1: Data write: 00
+i2c-1: Data write: 1E
+i2c-1: Data write: CF
+i2c-1: Read
+i2c-1: Address read: B3
+i2c-1: Data read: 00
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 10
+i2c-1: Data write: 00
+i2c-1: Data write: 00
+i2c-1: Data write: 1E
+i2c-1: Data write: CC
+i2c-1: Read
+i2c-1: Address read: B3
+i2c-1: Data read: F5
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 10
+i2c-1: Data write: 00
+i2c-1: Data write: 00
+i2c-1: Data write: 1E
+i2c-1: Data write: CD
+i2c-1: Read
+i2c-1: Address read: B3
+i2c-1: Data read: 00
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 34
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 45
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Data write: 45
+i2c-1: Data write: 52
+i2c-1: Data write: 44
+i2c-1: Data write: 42
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 81
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 83
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 84
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 7F
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 35
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 71
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Data write: 45
+i2c-1: Data write: 52
+i2c-1: Data write: 44
+i2c-1: Data write: 42
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 81
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 83
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 84
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 7F
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 35
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 71
+i2c-1: Write
+i2c-1: Address write: B2
+i2c-1: Data write: 10
+i2c-1: Data write: 00
+i2c-1: Data write: 00
+i2c-1: Data write: 30
+i2c-1: Data write: 00
+i2c-1: Read
+i2c-1: Address read: B3
+i2c-1: Data read: 00
+i2c-1: Data read: 00
+i2c-1: Data read: 00
+i2c-1: Data read: 00
+i2c-1: Data read: 00
+i2c-1: Data read: 09
+i2c-1: Data read: FF
+i2c-1: Data read: FF
+```
