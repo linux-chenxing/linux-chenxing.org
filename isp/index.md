@@ -53,6 +53,8 @@ The 0x49 i2c slave is the SPI bridge to the flash.
 Reading a bank of registers looks like this:
 
 ```
+Writing "SERDB"
+
 i2c-1: Write
 i2c-1: Address write: B2
 i2c-1: Data write: 53
@@ -60,6 +62,9 @@ i2c-1: Data write: 45
 i2c-1: Data write: 52
 i2c-1: Data write: 44
 i2c-1: Data write: 42
+---
+Setting up something? Memory dump also has this sequence
+
 i2c-1: Write
 i2c-1: Address write: B2
 i2c-1: Data write: 81
@@ -87,6 +92,9 @@ i2c-1: Data write: 34
 i2c-1: Write
 i2c-1: Address write: B2
 i2c-1: Data write: 45
+---
+"SERDB" again
+
 i2c-1: Write
 i2c-1: Address write: B2
 i2c-1: Data write: 53
@@ -94,6 +102,10 @@ i2c-1: Data write: 45
 i2c-1: Data write: 52
 i2c-1: Data write: 44
 i2c-1: Data write: 42
+
+---
+Another common senquence between register dump and mem dump
+
 i2c-1: Write
 i2c-1: Address write: B2
 i2c-1: Data write: 81
@@ -116,6 +128,9 @@ i2c-1: Write
 i2c-1: Address write: B2
 i2c-1: Data write: 71
 i2c-1: Write
+---
+Common between reg dump and memdump
+
 i2c-1: Address write: B2
 i2c-1: Data write: 10
 i2c-1: Data write: 00
@@ -123,9 +138,14 @@ i2c-1: Data write: 00
 i2c-1: Data write: 1E
 i2c-1: Data write: CF
 i2c-1: Read
+---
+Common
+
 i2c-1: Address read: B3
 i2c-1: Data read: 00
 i2c-1: Write
+---
+Common
 i2c-1: Address write: B2
 i2c-1: Data write: 10
 i2c-1: Data write: 00
@@ -133,9 +153,13 @@ i2c-1: Data write: 00
 i2c-1: Data write: 1E
 i2c-1: Data write: CC
 i2c-1: Read
+---
+common
 i2c-1: Address read: B3
 i2c-1: Data read: F5
 i2c-1: Write
+---
+common
 i2c-1: Address write: B2
 i2c-1: Data write: 10
 i2c-1: Data write: 00
@@ -143,15 +167,23 @@ i2c-1: Data write: 00
 i2c-1: Data write: 1E
 i2c-1: Data write: CD
 i2c-1: Read
+---
+common
 i2c-1: Address read: B3
 i2c-1: Data read: 00
 i2c-1: Write
+---
+common
 i2c-1: Address write: B2
 i2c-1: Data write: 34
 i2c-1: Write
+---
+common
 i2c-1: Address write: B2
 i2c-1: Data write: 45
 i2c-1: Write
+---
+common
 i2c-1: Address write: B2
 i2c-1: Data write: 53
 i2c-1: Data write: 45
@@ -159,6 +191,53 @@ i2c-1: Data write: 52
 i2c-1: Data write: 44
 i2c-1: Data write: 42
 i2c-1: Write
+---
+common
+i2c-1: Address write: B2
+i2c-1: Data write: 81
+i2c-1: Write
+---
+common
+i2c-1: Address write: B2
+i2c-1: Data write: 83
+i2c-1: Write
+---
+common
+i2c-1: Address write: B2
+i2c-1: Data write: 84
+i2c-1: Write
+---
+common
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Write
+---
+common
+i2c-1: Address write: B2
+i2c-1: Data write: 7F
+i2c-1: Write
+---
+common
+i2c-1: Address write: B2
+i2c-1: Data write: 35
+i2c-1: Write
+---
+common
+i2c-1: Address write: B2
+i2c-1: Data write: 71
+i2c-1: Write
+---
+*** reg dump and mem dump diverge here ***
+---
+"SERDB"
+i2c-1: Address write: B2
+i2c-1: Data write: 53
+i2c-1: Data write: 45
+i2c-1: Data write: 52
+i2c-1: Data write: 44
+i2c-1: Data write: 42
+i2c-1: Write
+---
 i2c-1: Address write: B2
 i2c-1: Data write: 81
 i2c-1: Write
@@ -180,34 +259,10 @@ i2c-1: Write
 i2c-1: Address write: B2
 i2c-1: Data write: 71
 i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 53
-i2c-1: Data write: 45
-i2c-1: Data write: 52
-i2c-1: Data write: 44
-i2c-1: Data write: 42
-i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 81
-i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 83
-i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 84
-i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 53
-i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 7F
-i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 35
-i2c-1: Write
-i2c-1: Address write: B2
-i2c-1: Data write: 71
-i2c-1: Write
+---
+
+This looks like a command and then bank 0x30?
+
 i2c-1: Address write: B2
 i2c-1: Data write: 10
 i2c-1: Data write: 00
@@ -215,6 +270,10 @@ i2c-1: Data write: 00
 i2c-1: Data write: 30
 i2c-1: Data write: 00
 i2c-1: Read
+---
+
+Register values?
+
 i2c-1: Address read: B3
 i2c-1: Data read: 00
 i2c-1: Data read: 00
