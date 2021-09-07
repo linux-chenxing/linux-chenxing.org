@@ -5,7 +5,7 @@
 - SSD210 or SSC9211, seem to be pin to pin compatible.
 - SPI NOR
 - SPI NAND
-- Leadchip LC9226 PMIC (http://www.leadchip.com.cn/productinfo/442517.html)
+- Leadchip LC9226 PMIC [datasheet](LC9226 Datasheet V1.0.pdf) (http://www.leadchip.com.cn/productinfo/442517.html)
 
 
 ## Reverse engineering notes
