@@ -64,13 +64,18 @@ Yes, the PM_SPI_CK seems weird.
 
 # Known devices
 
-[Widora](https://sns.widora.io/topic/767/ssd210-demo%E6%9D%BF-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%87%86%E5%A4%87%E7%82%B9%E5%B1%8F)
+- [Widora](https://sns.widora.io/topic/767/ssd210-demo%E6%9D%BF-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%87%86%E5%A4%87%E7%82%B9%E5%B1%8F)
+- [qfn68demo](qfn68demo)
 
 ## SSD212
 
 - [pinout](SSD212_pinout.png)
 - [sv50pd](sv50pd)
 
-### SSC9211
+## SSC9211
 
 - [Local notes](ssc9211.md)
+
+### Known devices
+
+- [qfn68demo](qfn68demo)
