@@ -1,5 +1,7 @@
 # QFN68 Demoboard
 
+![board](board_thumb.jpg)
+
 ## Hardware specs
 
 - SSD210 or SSC9211, seem to be pin to pin compatible.
