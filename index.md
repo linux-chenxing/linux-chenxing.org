@@ -272,7 +272,7 @@ These seem to be i6e based on the build tag found in a kernel image for the SSC8
   - VIA M360-M800 https://fccid.io/NCI-M360-M800/
 - SSC8629Q
 
-### [Pioneer3#pioneer3]
+### [Pioneer3](pioneer3)
 
 This seems to be an evolution of the infinity2m chips.
 
