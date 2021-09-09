@@ -820,6 +820,8 @@ the reset line of the second core and lets it go.
 ## GPIO
 
 ### Version 1
+
+- 0x1f207800
  
 |            | u-boot | linux     |
 |------------|--------|-----------|
@@ -838,13 +840,18 @@ the reset line of the second core and lets it go.
  
  ### Version 2
 
+- 0x1f207c00
+ 
 Pioneer3 has a slightly different GPIO that is in a new location.
 This new version apparently supports setting pull down, drive strength etc.
+ 
+| bit      | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7              | 6 | 5               | 4           | 3 | 2             | 1   | 0  |
+|----------|----|----|----|----|----|----|---|---|----------------|---|-----------------|-------------|---|---------------|-----|----|
+| function |    |    |    |    |    |    |   |   | drive strength |   | pull something? | pull enable |   | output enable | out | in |
  
 |            | u-boot | linux     |
 |------------|--------|-----------|
 | pioneer3   | n/a    | wip       |
 
-```
-```
+
  
