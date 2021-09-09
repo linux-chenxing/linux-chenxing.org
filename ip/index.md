@@ -819,6 +819,8 @@ the reset line of the second core and lets it go.
 
 ## GPIO
 
+### Version 1
+ 
 |            | u-boot | linux     |
 |------------|--------|-----------|
 | infinity   |        | mainlined |
@@ -833,3 +835,16 @@ the reset line of the second core and lets it go.
  * ~OEN | OUT | 0 | 0 | 0 | IN
  */
  ```
+ 
+ ### Version 2
+
+Pioneer3 has a slightly different GPIO that is in a new location.
+This new version apparently supports setting pull down, drive strength etc.
+ 
+|            | u-boot | linux     |
+|------------|--------|-----------|
+| pioneer3   | n/a    | wip       |
+
+```
+```
+ 
