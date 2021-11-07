@@ -311,7 +311,7 @@ This seems to be an evolution of the infinity2m chips.
 - SSC8668G
 - SSC8539
 - SSA520
-- SSD203D
+- SSD203D - probably same die as the ssd201/ssd202d but with HDMI. Seems it was used in some TV dongles.
 - SSD221 SSD9221 
   - https://web.archive.org/web/20210715144141/https://item.taobao.com/item.htm?spm=a230r.1.14.87.42b915f765wP7M&id=650844830905&ns=1&abbucket=18
 
