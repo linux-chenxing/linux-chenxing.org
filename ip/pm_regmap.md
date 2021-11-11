@@ -94,3 +94,9 @@ The vendor pm suspend code does something here but the bootrom and ipl don't tou
 | 0x40   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | 0x0010 when booted, can write 0x00F9           |
 | 0x44   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | 0x0001 when booted, can write 0xFFFF           |
 | 0x48   |      |    |    |    |    |    |    |   |   |   | x | x |   |   |   |   |   | 0x0000 when booted, writing locks up processor |
+
+
+### DRAM boot script findings
+
+- 0x1cf8 - 0xff -- comment says "skip password"
+- 0x1ca6 - 0x40??
