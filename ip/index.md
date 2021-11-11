@@ -110,7 +110,7 @@ There is some fabric between the CPU, other bus masters and the memory.
 Some magic bits in here are used to flush pending cpu writes to memory
 so other bus masters can see them.
 
-[Rough register descriptions](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_axi.h)
+[More info](l3bridge.md)
 
 ### MIU
 
