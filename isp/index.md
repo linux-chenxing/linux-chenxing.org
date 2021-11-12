@@ -284,3 +284,7 @@ i2c-1: Data read: 09
 i2c-1: Data read: FF
 i2c-1: Data read: FF
 ```
+
+## Booting from SDRAM
+
+https://github.com/fifteenhex/SDK_pulbic/blob/c1436fa7446457e8d6547874d27ee4e34be150cf/Mercury5/proj/sc/driver/hal/mercury/kernel/inc/kernel_chiptop.h#L1897
