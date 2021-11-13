@@ -310,9 +310,16 @@ https://github.com/fifteenhex/SDK_pulbic/blob/c1436fa7446457e8d6547874d27ee4e34b
 
 ## Command bytes
 
+- 0x10 - Seems to be set address
+- 0x34 - Seems to be exit from something
 - 0x80 - Clear channel bit 0
 - 0x81 - Set channel bit 0
 - 0x82 - Clear channel bit 1
 - 0x83 - Set channel bit 1
 - 0x84 - Clear channel bit 2
 - 0x85 - Set channel bit 2
+
+0x51 0x53 
+0x37 0x7F
+0x35
+0x71
