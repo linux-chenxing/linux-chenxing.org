@@ -138,9 +138,13 @@ Cheap solder down IoT module.
 
 - [local info](ido-sbc2d86/)
 
+##### MYZR-SSD20X-CB096
+
+- [vendor page](http://www.myzr.com.cn/public/index/index/product/id/141.html)
+
 ##### GW300
 
-GW300 is a SSD201 and the GW302 is a SSD202D
+GW300 is a SSD201 and the GW302 is a SSD202D. MYZR-SSD20X-CB096 module.
 
 - [vendor page](http://www.myzr.com.cn/public/index/index/product/id/115.html)
 - [tear down etc](gw300)
