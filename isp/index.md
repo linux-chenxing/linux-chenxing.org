@@ -295,4 +295,9 @@ https://github.com/fifteenhex/SDK_pulbic/blob/c1436fa7446457e8d6547874d27ee4e34b
   - 0 - DRAM?
   - 3 - PM registers
   - 4 - Normal registers
+- wsdr - Write a file?
+- wriu - Write a register
+  - `-b` write a byte?
+  - `-w` write a word?
+- wait - Wait for N seconds?
 
