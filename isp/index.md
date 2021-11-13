@@ -284,7 +284,10 @@ i2c-1: Data read: 09
 i2c-1: Data read: FF
 i2c-1: Data read: FF
 ```
-###
+
+### Channel select
+
+A lot of the above seems to be the sequence to select the desired channel
 
 - Channel select sequence:
   - https://github.com/jockyw2001/utopia/blob/53ee8cc121a030b8d368113ac3e966b4705770ef/UTPA2-700.0.x/modules/demodulator/hal/maldives/demod/halDMD_INTERN_common.c#L319
