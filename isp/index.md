@@ -308,3 +308,11 @@ https://github.com/fifteenhex/SDK_pulbic/blob/c1436fa7446457e8d6547874d27ee4e34b
   - `-w` write a word?
 - wait - Wait for N seconds?
 
+## Command bytes
+
+- 0x80 - Clear channel bit 0
+- 0x81 - Set channel bit 0
+- 0x82 - Clear channel bit 1
+- 0x83 - Set channel bit 1
+- 0x84 - Clear channel bit 2
+- 0x85 - Set channel bit 2
