@@ -76,3 +76,7 @@ MVX1##I3g4f6d5e0CMN_ROM######XVM
 - AM400L IP board camera module. [vendor page](https://www.xonz-cctv.com/product/hisilicon-2-0mp-ip-camera-main-board-module-hc200e/)
 - AM400L2 IP board camera module. [vendor page](https://www.xonz-cctv.com/product/hisilicon-1-3mp-ip-main-board-module-hc130e/)
 - AM500L IP board camera module. [vendor page](https://www.xonz-cctv.com/product/mstar-solution-mt200c/)
+
+#### Boot strapping
+
+- SPINAND, 
