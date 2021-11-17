@@ -328,12 +328,12 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 - SSR910Q - 2 * Cortex A53, LQFP
 - SSR920G - 2 * Cortex A53, BGA
 
-
 https://wemp.app/posts/1d5e4d06-dab5-408d-8349-7721957ca66e
 
 # MediaTek chips that contain/have some MStar heritage
 
 - MT53xx
+- MSD6886
 
 # Non-SoC chips
 
