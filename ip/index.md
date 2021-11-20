@@ -695,6 +695,12 @@ Video decoder? Chips and Media block?
 
 https://github.com/ZYCX8888/Democode-TAKOYAKI-BETA001-0312/tree/d5841ab9fde1771b72aa842fc48a01bb832d4a0a/sdk/verify/feature/vdec/cnm_sw
 
+### GE
+
+2D "GPU" for doing basic 2D graphics operations in hardware
+ 
+[More info](ge.md)
+
 ## Audio
 
 ### BACH
