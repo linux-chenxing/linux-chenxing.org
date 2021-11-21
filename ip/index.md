@@ -141,7 +141,9 @@ ports so the CPU and some perpherials are able to access the SRAM but not a lot 
 that yet.
 
 ## Timers
-Appart from the ARMv7 builtin timer, there are 3 SoC specific timer peripherals at 0x1f006040, 0x1f006080 and 0x1f0060c0. They are running at 12MHz. Each timer has its interrupt but they are not yet supported by the linux driver.
+Appart from the ARMv7 builtin timer, there are 3 SoC specific timer peripherals at `0x1f006040`, `0x1f006080` and `0x1f0060c0`.
+They are running at 12MHz on infinity3 and 432MHz on infinity2m (and newer?).
+Infinity2m have a clock divider. The IPL sets the divider of the first timer to emulate the existing 12MHz behaviour.
 
 Registermap:
 
