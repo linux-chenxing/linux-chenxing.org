@@ -284,6 +284,8 @@ Per-uart DMA controller. Present on "FUART" uarts.
 MOVEDMA is a new DMA controller that seems to have appeared in newer infinity parts.
 It seems to be used for DMA driven SPI.
 
+[More info](movedma.md)
+
 |            | u-boot | linux |
 |------------|--------|-------|
 | infinity   |        | NA?   |
