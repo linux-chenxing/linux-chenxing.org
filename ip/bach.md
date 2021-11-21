@@ -3,6 +3,7 @@
 The register listings available are for "cedric" and "infinity". The two seem totally different.
 This page is about infinity.
 
+[Infinity1 kernel driver](https://github.com/linux-chenxing/linux_mstar_3.18/tree/taobao_sdk/drivers/mstar/sound)
 [Infinity3 kernel driver](https://github.com/linux-chenxing/linux_mstar_3.18/tree/msc316sdk/drivers/mstar/sound)
 
 
