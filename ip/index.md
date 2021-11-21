@@ -145,7 +145,7 @@ Appart from the ARMv7 builtin timer, there are 3 SoC specific timer peripherals 
 They are running at 12MHz on infinity3 and 432MHz on infinity2m (and newer?).
 Infinity2m have a clock divider. The IPL sets the divider of the first timer to emulate the existing 12MHz behaviour.
 
-Registermap:
+#### Registermap
 
 | Offset | Name  | Comment |
 | ---    | ---   | ---     |
@@ -155,6 +155,14 @@ Registermap:
 | 0x10   | CNT_L | Low 16 bits of the counter |
 | 0x14   | CNT_H | High 16 bits of the counter |
 
+#### Support Matrix
+ 
+|            | u-boot | linux |
+|------------|--------|-------|
+| infinity   |        | yes   |
+| infinity2m |        | yes   |
+| infinity3  |        | yes   |
+| mercury5   |        | yes   |
 
 ## RTC
 
