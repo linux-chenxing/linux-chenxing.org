@@ -1,5 +1,14 @@
 # movedma
 
+MOVEDMA (MOVDMA in some places) seems to a generic memory to memory DMA engine.
+This is no proper DMA engine driver for it in the vendor kernel.
+
+There is a [HAL](https://github.com/linux-chenxing/linux-ssc325/tree/v4.9.84-sigmastar/drivers/sstar/movedma)
+and a [single function](https://github.com/linux-chenxing/linux-ssc325/blob/89341c7012404c72e192f198b2ea6405ec80d15d/drivers/sstar/msys/ms_msys.c#L3963) 
+that uses it in the 'msys' module that seems to be for exporting it to external modules
+
+## Register map
+
 | offset | name                       | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3                     | 2                     | 1                    | 0               | notes |
 |--------|----------------------------|----|----|----|----|----|----|---|---|---|---|---|---|-----------------------|-----------------------|----------------------|-----------------|-------|
 | 0x0    |                            |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      | en              |       |
