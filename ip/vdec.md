@@ -61,3 +61,35 @@ IPI6:          0          0  completion interrupts
 Err:          0
 / # random: crng init done
 ```
+
+```
+/ # cat /proc/interrupts 
+           CPU0       CPU1       
+ 20:      13025      12653     GIC-0  27 Level     arch_timer
+ 26:        544          0  MS_MAIN_INTC  53 Level     mi_vdec_isr
+ 27:         53          0  MS_MAIN_INTC  57 Level     mi_GE_ISR
+ 30:       1189          0  MS_MAIN_INTC  66 Level     ms_serial
+ 35:          0          0  MS_MAIN_INTC  58 Level     eth0
+ 37:          0          0  MS_MAIN_INTC  84 Level     eth1
+ 39:       4119          0  MS_MAIN_INTC  87 Level     ehci_hcd:usb2
+ 40:          0          0  MS_MAIN_INTC  65 Level     ehci_hcd:usb1
+ 42:        344          0  MS_MAIN_INTC  74 Level     aio_dma1
+ 43:          0          0  MS_MAIN_INTC  51 Level     ms_sdmmc_mie
+ 44:          0          0  MS_MAIN_INTC 119 Edge      ms_sdmmc_cdz
+ 47:          0          0  MS_MAIN_INTC  73 Level     BdmaIsr
+ 48:          0          0  MS_MAIN_INTC  93 Level     BdmaIsr
+ 49:          0          0  MS_MAIN_INTC  94 Level     BdmaIsr
+ 50:          0          0  MS_MAIN_INTC  92 Level     HalMoveDma_ISR
+ 55:          0          0  MS_MAIN_INTC  81 Level     MIU_Protect
+ 57:       7838          0  MS_MAIN_INTC  52 Level     mi_disp_isr, fbdev_dispVsync
+ 58:      23410          0  MS_MAIN_INTC  82 Level     mdisp_interisr
+ 60:         10          0  MS_GPI_INTC  58 Edge      gt911
+IPI0:          0          1  CPU wakeup interrupts
+IPI1:          0          0  Timer broadcast interrupts
+IPI2:       3533      11549  Rescheduling interrupts
+IPI3:          2         13  Function call interrupts
+IPI4:          0          0  CPU stop interrupts
+IPI5:        286       1060  IRQ work interrupts
+IPI6:          0          0  completion interrupts
+Err:          0
+```
