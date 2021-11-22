@@ -7,6 +7,10 @@ For i2m:
 - 0x1f344000 - SRAM?
 - 0x1f344800 - Registers?
 
+| offset | name    | notes |
+|--------|---------|-------|
+| 0x98   | CONFIG0 |       |
+| 0x9c   | CONFIG1 |       |
 
 ```
 / # lsmod 
