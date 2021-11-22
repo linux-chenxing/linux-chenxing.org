@@ -1,5 +1,13 @@
 # VDEC
 
+## Memory map
+
+For i2m:
+
+- 0x1f344000 - SRAM?
+- 0x1f344800 - Registers?
+
+
 ```
 / # lsmod 
 ssw101b_wifi_usb 636083 0 - Live 0xbfc81000 (O)
