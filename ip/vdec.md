@@ -2525,6 +2525,7 @@ sdk firmware
 ```
 
 cnm linux firmware firmware
+https://gitlab.collabora.com/chipsnmedia/linux-firmware/-/tree/cnm/cnm
 
 ```
 [   17.339745] vdi read 0x000000f0:0x00000001
