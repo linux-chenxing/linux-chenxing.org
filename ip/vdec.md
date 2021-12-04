@@ -2561,3 +2561,32 @@ https://gitlab.collabora.com/chipsnmedia/linux-firmware/-/tree/cnm/cnm
 [   17.462254] vdec 1f344800.video-codec: fw_version : 00000000(r230786)
 [   17.469552] mstar_pm51: probe of 1f002000.mcu failed with error -2
 ```
+
+Firmware from the working board:
+
+```
+[   16.171359] read  <-- 0x00000118:0x04625134
+[   16.175554] read  <-- 0x00000118:0x04625134
+[   16.179758] vdec 1f344800.video-codec: fw version: 0x04625134
+[   16.185526] read  <-- 0x00000124:0x80cf0980
+[   16.189734] vdec 1f344800.video-codec: fw config0: 0x80cf0980
+[   16.195497] read  <-- 0x00000128:0x08018001
+[   16.199701] vdec 1f344800.video-codec: fw config1: 0x08018001
+[   16.205466] read  <-- 0x0000012c:0x00000103
+[   16.209669] vdec 1f344800.video-codec: fw conf feature: 0x00000103
+[   16.215871] read  <-- 0x00000130:0x0133f0de
+[   16.220077] vdec 1f344800.video-codec: fw conf date: 0x0133f0de
+[   16.226014] read  <-- 0x00000134:0x00027a8a
+[   16.230216] vdec 1f344800.video-codec: fw conf revision: 0x00027a8a
+[   16.236506] read  <-- 0x00000138:0x00000102
+[   16.240708] vdec 1f344800.video-codec: fw conf type: 0x00000102
+[   16.246646] read  <-- 0x0000013c:0x00000000
+[   16.250849] vdec 1f344800.video-codec: fw product id: 0x00000000
+[   16.256873] read  <-- 0x00000140:0x00000000
+[   16.261079] vdec 1f344800.video-codec: fw customer id: 0x00000000
+[   16.267201] vdec 1f344800.video-codec: enum product_id : 00000001
+[   16.273313] vdec 1f344800.video-codec: fw_version : 00000000(r73552180)
+[   16.280407] mstar_pm51: probe of 1f002000.mcu failed with error -2
+```
+
+Values are all the same as the binary module.
