@@ -20,6 +20,13 @@ The vendor provided a copy of the SDK but no schematics or chip documentation.
 - spi0 mode5 on jp4
 - 24bit 7 inch LCD panel
 
+# Pinouts
+
+## JP4
+
+- SP_DI - gpio10
+- SP_DIO - gpio11
+
 ### lsusb
 
 ```
