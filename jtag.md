@@ -168,7 +168,16 @@ In kernel:
 devmem 0x1f203c3c 16 1
 ```
 
-ROM table
+### Cache info
+
+```
+(gdb) monitor cortex_a cache_info
+L1 I-Cache: linelen 32, associativity 2, nsets 512, cachesize 32 KBytes
+L1 D-Cache: linelen 64, associativity 4, nsets 128, cachesize 32 KBytes
+L2 D-Cache: linelen 64, associativity 8, nsets 512, cachesize 256 KBytes
+```
+
+### ROM table
 
 ```
 AP ID register 0x24770002
