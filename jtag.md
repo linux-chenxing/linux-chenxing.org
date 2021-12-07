@@ -2,6 +2,15 @@
 
 ## MSC313E
 
+### Cache info
+
+```
+(gdb) monitor cortex_a cache_info
+L1 I-Cache: linelen 32, associativity 2, nsets 256, cachesize 16 KBytes
+L1 D-Cache: linelen 64, associativity 4, nsets 64, cachesize 16 KBytes
+L2 D-Cache: linelen 64, associativity 8, nsets 256, cachesize 128 KBytes
+```
+
 ### ROM table
 
 ```
