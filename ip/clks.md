@@ -190,20 +190,12 @@ This (probably) a PLL that is used for dynamically scaling the CPU frequency.
 
 Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 
-```
- *
- * 0x100 - 15 |   13    |       12     |     11     |   10    |     9     |     8      |     3      | 2 - 0
- *         pd | en_mini | fifo_div5_en | dual_lp_en | en_fifo | en_scalar | sdiv2p5_en | sdiv3p5_en | ictrl
- *
- * 0x104 -    11 - 8    |     5 - 4    |     1 - 0
- *         loop_div_sec | loop_div_fst | input_div_fst
- *
- * 0x108 -      10 - 8  |       7 - 4    |     1 - 0
- *             fifo_div | scalar_div_sec | scalar_div_fst
- *
- * 0x10c -     4        |  2 - 0
- *       skew_en_fixclk | skew_div
- ```
+| address | name | 15              | 14 | 13      | 12           | 11           | 10           | 9            | 8            | 7              | 6              | 5              | 4              | 3          | 2        | 1              | 0              | description |
+|---------|------|-----------------|----|---------|--------------|--------------|--------------|--------------|--------------|----------------|----------------|----------------|----------------|------------|----------|----------------|----------------|-------------|
+| 0x0     |      | pd (power down) |    | en_mini | fifo_div5_en | dual_lp_en   | en_fifo      | en_scalar    | sdiv2p5_en   |                |                |                |                | sdiv3p5_en | ictrl    | ictrl          | ictrl          |             |
+| 0x4     |      |                 |    |         |              | loop_div_sec | loop_div_sec | loop_div_sec | loop_div_sec |                |                | loop_div_fst   | loop_div_fst   |            |          | input_div_fst  | input_div_fst  |             |
+| 0x8     |      |                 |    |         |              |              | fifo_div     | fifo_div     | fifo_div     | scalar_div_sec | scalar_div_sec | scalar_div_sec | scalar_div_sec |            |          | scalar_div_fst | scalar_div_fst |             |
+| 0xc     |      |                 |    |         |              |              |              |              |              |                |                |                | skew_en_fixclk |            | skew_div | skew_div       | skew_div       |             |
  
  i2m before bootlogo command on the sbc2d70:
  
