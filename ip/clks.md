@@ -196,7 +196,13 @@ Line/LCD PLL? Seems to be a PLL for generating the base clock for PNL.
 | 0x4     |      |                 |    |         |              | loop_div_sec | loop_div_sec | loop_div_sec | loop_div_sec |                |                | loop_div_fst   | loop_div_fst   |            |          | input_div_fst  | input_div_fst  |             |
 | 0x8     |      |                 |    |         |              |              | fifo_div     | fifo_div     | fifo_div     | scalar_div_sec | scalar_div_sec | scalar_div_sec | scalar_div_sec |            |          | scalar_div_fst | scalar_div_fst |             |
 | 0xc     |      |                 |    |         |              |              |              |              |              |                |                |                | skew_en_fixclk |            | skew_div | skew_div       | skew_div       |             |
- 
+| 0x10    |      |                 |    |         |              |              |              |              |              |                |                |                |                |            |          |                |                |             |
+| 0x14    |      |                 |    |         |              |              |              |              |              |                |                |                |                |            |          |                |                |             |
+| 0x18    |      |                 |    |         |              |              |              |              |              |                |                |                |                |            |          |                |                |             |
+| 0x1c    |      |                 |    |         |              |              |              |              |              |                |                |                |                |            |          |                |                |             |
+| 0x20    |      |                 |    |         |              |              |              |              |              |                |                |                |                |            |          |                |                |             |
+| 0x24    |      |                 |    |         |              |              |              |              |              |                |                |                |                |            |          |                |                |             |
+
  i2m before bootlogo command on the sbc2d70:
  
 ```
