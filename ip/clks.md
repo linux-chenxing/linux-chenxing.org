@@ -280,6 +280,8 @@ Wireless-tag# md.w 0x1f206700 0x100
 1f2068f0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
 ```
 
+https://github.com/linux-chenxing/linux-ssc325/blob/ikayaki_dlm00v014/arch/arm/boot/dts/infinity2m-clks.dtsi
+
 ## MCM
 
 "memory clock manager"?
