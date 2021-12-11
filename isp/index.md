@@ -38,6 +38,7 @@ These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and 
 - [SNANDer fork with mstarddc support](https://github.com/fifteenhex/SNANDer/tree/mstar) for SPI NOR or NAND.
   - Same deal as flashrom, very slow!
   - Good enough to write the required blobs and u-boot.
+  - `sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -i`
 
 # ISP SPI protocol
 
