@@ -113,6 +113,10 @@ Checksum OK
 
 #### Known Devices
 
+##### DongShanPi One
+
+[see](dongshanpione/)
+
 ##### SSD201_HT_V2
 
 [see](ssd201_ht_v2/)
