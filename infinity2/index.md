@@ -171,6 +171,10 @@ https://item.taobao.com/item.htm?spm=a230r.1.14.125.35d915f7J4vCkg&id=6432004640
 
 https://www.geniatech.com/product/som20x/
 
+##### Miyoo Mini
+
+- [local info](miyoomini/)
+
 ##### Pinout
 
 See [pinouts](pinouts.md).
