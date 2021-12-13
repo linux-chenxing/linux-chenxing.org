@@ -2,6 +2,11 @@
 
 ![miyoomini](miyoomini.png)
 
+## Specs
+
+- SSD202D
+- SPI NOR flash?
+- Vibration motor?
 
 ## Where to buy
 
