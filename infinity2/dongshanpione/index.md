@@ -10,6 +10,7 @@
 - XCSP1AAWH-NT 128MB SPI NAND flash
 - 1 x GPIO button
 - 2 x GPIO controlled LEDs (third LED is power)
+- RGB LCD connector
 
 ## Flashing
 
