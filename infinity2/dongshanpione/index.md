@@ -6,8 +6,8 @@
 
 - SSD202D
 - 0.9/1.0V core voltage control
-- CP2104 usb->serial
-- USB-C port (host)
+- USB-C host port (usb1)
+- CP2104 usb->serial (usb2)
 - XCSP1AAWH-NT 128MB SPI NAND flash
 - 1 x GPIO button
 - 2 x GPIO controlled LEDs (third LED is power)
