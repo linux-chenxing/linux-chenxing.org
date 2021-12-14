@@ -1,6 +1,6 @@
 # DongShanPi One
 
-![board](board.png)
+![board](board.jpg)
 
 ## Specs
 
