@@ -1,5 +1,7 @@
 # DongShanPi One
 
+![board](board.png)
+
 ## Specs
 
 - XCSP1AAWH-NT 128MB SPI NAND flash
