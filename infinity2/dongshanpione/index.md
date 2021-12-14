@@ -4,6 +4,8 @@
 
 ## Specs
 
+- SSD202D
+- 0.9/1.0V core voltage control
 - CP2104 usb->serial
 - XCSP1AAWH-NT 128MB SPI NAND flash
 
