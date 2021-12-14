@@ -4,6 +4,7 @@
 
 ## Specs
 
+- CP2104 usb->serial
 - XCSP1AAWH-NT 128MB SPI NAND flash
 
 ## Flashing
