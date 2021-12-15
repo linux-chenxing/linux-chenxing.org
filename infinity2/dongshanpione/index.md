@@ -1,6 +1,8 @@
 # DongShanPi One
 
 ![board](board.jpg)
+![board](board_red.jpg)
+![board](board_back.jpg)
 
 ## Specs
 
@@ -13,6 +15,7 @@
 - 1 x GPIO button
 - 2 x GPIO controlled LEDs (third LED is power)
 - RGB LCD connector
+- Mini PCIe format connector (NOT ACTUALLY PCIe!!)
 
 ## Flashing
 
