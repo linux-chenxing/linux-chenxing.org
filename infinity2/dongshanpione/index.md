@@ -4,8 +4,9 @@
 
 ## Specs
 
-- SSD202D
+- SigmaStar SSD202D
 - 0.9/1.0V core voltage control
+- JST SH 4p connector for PM_UART/ISP
 - USB-C host port (usb1)
 - CP2104 usb->serial (usb2)
 - Micro SD card slot
