@@ -17,6 +17,15 @@
 
 ## Flashing
 
+### Dip switches
+
+PM_UART must be connected to J2 via the dip switches.
+The dip switches should be in the off position.
+
+![switches](switches.jpg)
+
+### Flashing with SNANDer
+
 With an i2c dongle and the mstar enabled SNANDer fork:
 
 ```
