@@ -162,11 +162,20 @@ MEM-AP BASE 0x80000000
 
 ## SSD20xD
 
-In kernel:
+### FUART (mode 1)
+
+#### Enable in kernel:
 
 ```
 devmem 0x1f203c3c 16 1
 ```
+
+#### Enable in u-boot:
+
+```
+mw.w 0x1f203c3c 1
+```
+
 
 ### Cache info
 
