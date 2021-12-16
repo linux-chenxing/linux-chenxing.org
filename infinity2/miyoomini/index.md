@@ -8,6 +8,10 @@
 - SPI NOR flash?
 - Vibration motor?
 
+## Discussion threads
+
+- https://github.com/linux-chenxing/linux-chenxing.org/discussions/41#discussioncomment-1824211
+
 ## Youtube Videos
 
 - https://www.youtube.com/watch?v=lIYXE1-OPDI&ab_channel=AlwaysBeFun
