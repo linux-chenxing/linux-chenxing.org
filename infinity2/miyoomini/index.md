@@ -4,9 +4,13 @@
 
 ## Specs
 
-- SSD202D
+- SigmaStar SSD202D
 - SPI NOR flash?
 - Vibration motor?
+
+## Youtube Videos
+
+- https://www.youtube.com/watch?v=d7GXZ2wpA9U&ab_channel=TakiUdon
 
 ## Where to buy
 
