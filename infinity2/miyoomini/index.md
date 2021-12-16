@@ -10,6 +10,8 @@
 
 ## Youtube Videos
 
+- https://www.youtube.com/watch?v=lIYXE1-OPDI&ab_channel=AlwaysBeFun
+- https://www.youtube.com/watch?v=SNcezdyFg1Y&t=1s&ab_channel=AlwaysBeFun
 - https://www.youtube.com/watch?v=d7GXZ2wpA9U&ab_channel=TakiUdon
 
 ## Where to buy
