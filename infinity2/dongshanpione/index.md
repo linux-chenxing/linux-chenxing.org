@@ -16,6 +16,13 @@
 - RGB LCD connector
 - Mini PCIe format connector (NOT ACTUALLY PCIe!!)
 
+## Building u-boot
+
+- Clone https://github.com/linux-chenxing/u-boot.git
+- Check out `mstar_rebase_mainline_20211217`
+- run `make mstar_infinity2m_dongshanpione_defconfig`
+- run `make CROSS_COMPILE=arm-linux-gnueabi-`
+
 ## Flashing
 
 ### Dip switches
