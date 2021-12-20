@@ -171,6 +171,23 @@ Elapsed time: 21 seconds
 Status: OK
 ```
 
+### Loading u-boot for the first time
+
+The main u-boot binary will be inside of a UBI partition to give it good badblock handling etc.
+This means we can't directly write it to the flash.
+The u-boot SPL you just wrote will look for u-boot, not find it, and then start waiting for u-boot to be sent over serial to it.
+In minicom you need to send the u-boot.img via ymodem.
+
+```
+mtd read ret = 0, rlen 64
+UBI: Bad magic in block 01001 00000000
+UBI: Loading VolId #0
+UBI warning: LEB 0 of 1 is missing
+UBI warning: Failed to load volume 0
+UBI warning: Failed
+Trying to boot from UART
+CCC
+```
 
 
 ### Updating with SNANDer
