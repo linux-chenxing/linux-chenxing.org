@@ -32,12 +32,54 @@ The dip switches should be in the off position.
 
 ![switches](switches.jpg)
 
+## Make sure nothing is handling PM_UART
+
+If u-boot or Linux are running and responding to data on PM_UART it'll mess with flashing.
+
 ### Flashing with SNANDer
 
 With an i2c dongle and the mstar enabled SNANDer fork:
 
 ```
 sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -e
+```
+
+Example output, some erase failures are probably OK. These are probably the premarked bad blocks.
+
+```
+daniel@shiro:/media/junk/coding/SNANDer/src$ sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -e
+[sudo] password for daniel: 
+
+SNANDer - Serial Nor/nAND/Eeprom programmeR v.1.7.2 by McMCC <mcmcc@mail.ru>
+
+connection /dev/i2c-4:49
+Info: Will try to use device /dev/i2c-4 and address 0x49.
+Info: Will NOT reset the device at the end.
+here xx1
+here xx2
+spi_nand_probe: mfr_id = 0x9c, dev_id = 0x1
+Get Status Register 1: 0x00
+Get Status Register 2: 0x10
+Using Flash ECC.
+Detected SPI NAND Flash: XINCUN XCSP1AAWH-NT, Flash Size: 128 MB
+ERASE:
+Set full erase chip!
+Erase addr = 0x0000000000000000, len = 0x0000000008000000
+spi_nand_erase_block : erase block fail, block = 0x200, status = 0x4
+spi_nand_erase_internal : Erase Fail at addr = 0x4000000, len = 0x8000000, block_idx = 0x200
+spi_nand_erase_block : erase block fail, block = 0x201, status = 0x4
+spi_nand_erase_internal : Erase Fail at addr = 0x4020000, len = 0x8000000, block_idx = 0x201
+spi_nand_erase_block : erase block fail, block = 0x203, status = 0x4
+spi_nand_erase_internal : Erase Fail at addr = 0x4060000, len = 0x8000000, block_idx = 0x203
+spi_nand_erase_block : erase block fail, block = 0x300, status = 0x4
+spi_nand_erase_internal : Erase Fail at addr = 0x6000000, len = 0x8000000, block_idx = 0x300
+spi_nand_erase_block : erase block fail, block = 0x3ff, status = 0x4
+spi_nand_erase_internal : Erase Fail at addr = 0x7fe0000, len = 0x8000000, block_idx = 0x3ff
+Erase 100% [134217728] of [134217728] bytes      
+Status: BAD(-1)
+```
+
+
 sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -w GCIS.bin
 sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x140000 -l 0x54C0 -w IPL.bin
 sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x200000 -l 0xBF58 -w ~/idosom2d01-ipl
