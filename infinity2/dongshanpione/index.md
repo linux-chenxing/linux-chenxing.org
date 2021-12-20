@@ -40,6 +40,8 @@ If u-boot or Linux are running and responding to data on PM_UART it'll mess with
 
 With an i2c dongle and the mstar enabled SNANDer fork:
 
+First erase the flash.
+
 ```
 sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -e
 ```
@@ -79,11 +81,97 @@ Erase 100% [134217728] of [134217728] bytes
 Status: BAD(-1)
 ```
 
+Next write the GCIS.bin
 
-sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -w GCIS.bin
-sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x140000 -l 0x54C0 -w IPL.bin
-sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x200000 -l 0xBF58 -w ~/idosom2d01-ipl
 ```
+sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -w GCIS.bin
+```
+
+Example output:
+
+```
+daniel@shiro:/media/junk/coding/SNANDer/src$ sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -w ~/win7vmshare/ISP_5.0.18/boot/GCIS.bin 
+
+SNANDer - Serial Nor/nAND/Eeprom programmeR v.1.7.2 by McMCC <mcmcc@mail.ru>
+
+connection /dev/i2c-4:49
+Info: Will try to use device /dev/i2c-4 and address 0x49.
+Info: Will NOT reset the device at the end.
+here xx1
+here xx2
+spi_nand_probe: mfr_id = 0x9c, dev_id = 0x1
+Get Status Register 1: 0x00
+Get Status Register 2: 0x11
+Using Flash ECC.
+Detected SPI NAND Flash: XINCUN XCSP1AAWH-NT, Flash Size: 128 MB
+WRITE:
+Write addr = 0x0000000000000000, len = 0x0000000000000800
+Written 100% [2048] of [2048] bytes      
+Elapsed time: 2 seconds
+Status: OK
+```
+
+Next write the vendor IPL.bin:
+
+```
+sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x140000 -l <file len in hex> -w IPL.bin
+```
+
+example output:
+
+```
+daniel@shiro:/media/junk/coding/SNANDer/src$ sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x140000 -l 0x54C0 -w ~/win7vmshare/ISP_5.0.18/boot/IPL.bin 
+
+SNANDer - Serial Nor/nAND/Eeprom programmeR v.1.7.2 by McMCC <mcmcc@mail.ru>
+
+connection /dev/i2c-4:49
+Info: Will try to use device /dev/i2c-4 and address 0x49.
+Info: Will NOT reset the device at the end.
+here xx1
+here xx2
+spi_nand_probe: mfr_id = 0x9c, dev_id = 0x1
+Get Status Register 1: 0x00
+Get Status Register 2: 0x11
+Using Flash ECC.
+Detected SPI NAND Flash: XINCUN XCSP1AAWH-NT, Flash Size: 128 MB
+WRITE:
+Write addr = 0x0000000000140000, len = 0x00000000000054C0
+Written 100% [21696] of [21696] bytes      
+Elapsed time: 13 seconds
+Status: OK
+```
+
+Next we write the u-boot SPL in the ipl cust spot.
+
+```
+sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x200000 -l <file len in hex> -w u-boot/ipl
+```
+
+example output
+
+```
+daniel@shiro:/media/junk/coding/SNANDer/src$ sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x200000 -l 0x8B00 -w ~/coding/breadbee/breadbee_dev/u-boot/ipl 
+
+SNANDer - Serial Nor/nAND/Eeprom programmeR v.1.7.2 by McMCC <mcmcc@mail.ru>
+
+connection /dev/i2c-4:49
+Info: Will try to use device /dev/i2c-4 and address 0x49.
+Info: Will NOT reset the device at the end.
+here xx1
+here xx2
+spi_nand_probe: mfr_id = 0x9c, dev_id = 0x1
+Get Status Register 1: 0x00
+Get Status Register 2: 0x11
+Using Flash ECC.
+Detected SPI NAND Flash: XINCUN XCSP1AAWH-NT, Flash Size: 128 MB
+WRITE:
+Write addr = 0x0000000000200000, len = 0x0000000000008B00
+Written 100% [35584] of [35584] bytes      
+Elapsed time: 21 seconds
+Status: OK
+```
+
+
 
 ### Updating with SNANDer
 
