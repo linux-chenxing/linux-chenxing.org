@@ -189,6 +189,19 @@ Trying to boot from UART
 CCC
 ```
 
+### Writing u-boot into the flash
+
+- Create a parition for u-boot in the flash
+- Send u-boot again via ymodem with higher speed
+- Write u-boot into it's partition
+
+```
+ubi createvol uboot 0x100000 static
+setenv loadaddr 0x24000000; loady ${loadaddr} 460800;
+ubi writevol ${loadaddr} uboot <u-boot binary size>
+```
+
+You can now reboot and u-boot will load from local storage.
 
 ### Updating with SNANDer
 
