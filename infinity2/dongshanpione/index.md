@@ -225,3 +225,7 @@ sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x200000 -l <size> -w <path>
 ### Red version - back
 
 ![board](board_back_scaled.jpg)
+
+## Links
+
+- [Official Documentation](http://dongshanpi.com/)
