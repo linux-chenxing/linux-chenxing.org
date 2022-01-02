@@ -11,4 +11,4 @@
 | ERR_DET_ON | BUSY_DET_ON | CHK_CMD | JOB_START | ADMA_EN | JOB_DIR | DTRX_EN | CMD_EN | RSP_EN | RSPR2_EN | Result                                                                |
 |------------|-------------|---------|-----------|---------|---------|---------|--------|--------|----------|-----------------------------------------------------------------------|
 | x          |             |         |           |         |         | x       |        |        |          | Multiple error interrupts after starting transfer with no error flags |
-|            |             |         |           |         |         |         |        |        |          |                                                                       |
+|            | x           |         |           |         | x       | x       |        |        |          | Gets stuck                                                            |
