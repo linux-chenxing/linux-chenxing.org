@@ -27,3 +27,8 @@ The SSD201 and SSD202D is also availabe.
 ## Aliexpress
 
 - [IPC Board SSC335 + SC3335](https://a.aliexpress.com/_AVDErg), chip id is 0xf2
+
+## Seeedstudio
+
+Seeedstudio sells a system-on-module featuring the SSD202.
+- [Seeedstudio IDO-SOM2D02-V1-2GW](https://www.seeedstudio.com/IDO-SOM2D02-V1-2GW-with-SSD202-SoC-p-4938.html)
