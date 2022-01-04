@@ -10,6 +10,7 @@
 - waa2890 or equivalent audio amp
 - TP4056 clone? (chip marked 4051)
 - PT4103 backlight driver - http://www.micro-bridge.com/data/CRpowtech/PT4103E.pdf
+- ALPU-FA(?) security chip
 
 ## PCB photos
 
