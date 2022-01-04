@@ -7,6 +7,7 @@
 - SigmaStar SSD202D
 - SPI NOR flash?
 - Vibration motor?
+- waa2890 or equivalent audio amp
 
 ## PCB photos
 
