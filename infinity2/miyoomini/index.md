@@ -15,6 +15,10 @@
 ![front](pcb_front_scaled.jpg)
 ![back](pcb_back_scaled.jpg)
 
+## Notes
+
+- Charger detect is gpio-59
+
 ## Discussion threads
 
 - https://github.com/linux-chenxing/linux-chenxing.org/discussions/41#discussioncomment-1824211
