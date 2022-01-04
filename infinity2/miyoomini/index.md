@@ -8,6 +8,11 @@
 - SPI NOR flash?
 - Vibration motor?
 
+## PCB photos
+
+![front](pcb_front_scaled.jpg)
+![back](pcb_back_scaled.jpg)
+
 ## Discussion threads
 
 - https://github.com/linux-chenxing/linux-chenxing.org/discussions/41#discussioncomment-1824211
