@@ -8,6 +8,7 @@
 - SPI NOR flash?
 - Vibration motor?
 - waa2890 or equivalent audio amp
+- TP4056 clone? (chip marked 4051)
 
 ## PCB photos
 
