@@ -8,6 +8,8 @@
 | 0x0    |                       |            | ?          |              |              |     | ?   |           |           |      |         |   |   |     | alpha blend? |     | enable |              |
 | 0x4    |                       | ?          | ?          |              |              |     |     |           |           |      |         |   |   |     |              | ?   | ?      |              |
 | 0xc    |                       |            |            |              |              |     |     |           |           |      |         |   |   | ?   | ?            |     | ?      |              |
+| 0x14   |                       |            |            |              |              |     |     |           |           | ?    |         | ? | ? |     | ?            | ?   |        |              |
+| 0x4c   |                       | ?          | ?          | ?            | ?            | ?   | ?   | ?         | ?         | ?    | ?       | ? | ? | ?   | ?            | ?   | ?      |              |
 | 0x78   | irq                   | raw status | raw status | final status | final status | clr | clr | force irq | force irq | mask | mask    |   |   |     |              |     |        |              |
 | 0x7c   | src/dst yuv format    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0x80   | srcl                  |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
