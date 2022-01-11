@@ -17,5 +17,9 @@
 | 0xd0   | color format          |            |            |              | dst          | dst | dst | dst       | dst       |      |         |   |   | src | src          | src | src    |              |
 | 0x164  |                       |            |            |              |              |     |     |           |           |      |         |   |   |     |              | rot | rot    | GE_SetRotate |
 | 0x180  | cmd                   |            |            |              |              |     |     |           |           |      | bit blt |   |   |     |              |     |        |              |
+| 0x1a0  | x0                    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
+| 0x1a4  | y0                    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
+| 0x1a8  | x1                    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
+| 0x1ac  | y1                    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0x1b8  | bit blt source width  |            |            |              |              | x   | x   | x         | x         | x    | x       | x | x | x   | x            | x   | x      |              |
 | 0x1bc  | bit blt source height |            |            |              |              | x   | x   | x         | x         | x    | x       | x | x | x   | x            | x   | x      |              |
