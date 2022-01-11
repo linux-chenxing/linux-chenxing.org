@@ -15,8 +15,13 @@
 | 0xc0   | src pitch             |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0xcc   | dst pitch             |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0xd0   | color format          |            |            |              | dst          | dst | dst | dst       | dst       |      |         |   |   | src | src          | src | src    |              |
+| 0x154  | clip left             |            |            |              |              | x   | x   | x         | x         | x    | x       | x | x | x   | x            | x   | x      |              |
+| 0x158  | clip right            |            |            |              |              | x   | x   | x         | x         | x    | x       | x | x | x   | x            | x   | x      |              |
+| 0x15c  | clip top              |            |            |              |              | x   | x   | x         | x         | x    | x       | x | x | x   | x            | x   | x      |              |
+| 0x160  | clip bottom           |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0x164  |                       |            |            |              |              |     |     |           |           |      |         |   |   |     |              | rot | rot    | GE_SetRotate |
 | 0x180  | cmd                   |            |            |              |              |     |     |           |           |      | bit blt |   |   |     |              |     |        |              |
+| 0x188  | line ctrl?            |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0x1a0  | x0                    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0x1a4  | y0                    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
 | 0x1a8  | x1                    |            |            |              |              |     |     |           |           |      |         |   |   |     |              |     |        |              |
