@@ -98,6 +98,8 @@ Wireless-tag# md.w 0x1F206600 0x100
 
 - [0x1F225000 - DISPLAY_TOP](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L22)
 
+- https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/disp/hal/infinity2m/src/hal_disp_irq.c
+
 ``` diff
 2,3c2,3
 < 1f225000: 0100 0000 0000 0000 0000 0000 ffff 0000    ................
