@@ -110,6 +110,11 @@ Wireless-tag# md.w 0x1F206600 0x100
 > 1f206730: 0000 0000 0000 0000 8019 0000 00c0 0000    ................
 ```
 
+| offset | name | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | notes    |
+|--------|------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|----------|
+| 0x120  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | set lo   |
+| 0x124  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | set high |
+
 - [0x1F225000 - DISPLAY_TOP](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L22)
 
 - https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/disp/hal/infinity2m/src/hal_disp_irq.c
