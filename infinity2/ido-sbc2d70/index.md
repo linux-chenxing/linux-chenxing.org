@@ -8,6 +8,7 @@
 
 - som2d01 SoM
 - [Shenzhen ChenChen CC0702I50R 1024x600 panel](https://detail.1688.com/offer/610075231091.html?spm=a262i4.9164788.zhaohuo-list-offerlist.18.1031647dTg94vk)
+  - [Timing](https://github.com/wireless-tag-com/openwrt-ssd20x/blob/f5d2e51378e65dda237054e13a078d25277c34ad/18.06/package/sigmastar/sstar-init/files/CC0702I50R/config/LCM/CC0702I50R_1024X600_TTL.ini)
 - goodix gt911 ts controller
 - NS4205 amp
 
