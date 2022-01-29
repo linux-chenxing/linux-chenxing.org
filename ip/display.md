@@ -227,8 +227,10 @@ Wireless-tag# md.w 0x1F206600 0x100
 | 0xb4   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                                   |
 | 0xb8   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                                   |
 | 0xbc   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                                   |
+| 0xc0   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness en? - can write 0xffff |
 | 0xe8   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
 | 0xec   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
+| 0xf0   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness en?                    |
 | 0x118  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
 | 0x11c  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
 
