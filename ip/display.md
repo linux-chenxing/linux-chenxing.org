@@ -227,6 +227,10 @@ Wireless-tag# md.w 0x1F206600 0x100
 | 0xb4   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                         |
 | 0xb8   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                         |
 | 0xbc   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                         |
+| 0xe8   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness?             |
+| 0xec   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness?             |
+| 0x118  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness?             |
+| 0x11c  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness?             |
 
 - [0x1F2A5000 - DPHY](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L25)
 
