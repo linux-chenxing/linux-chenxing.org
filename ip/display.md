@@ -109,10 +109,9 @@ Wireless-tag# md.w 0x1F206600 0x100
 > 1f206720: c3c3 0000 0043 0000 0001 0000 0000 0000    ....C...........
 > 1f206730: 0000 0000 0000 0000 8019 0000 00c0 0000    ................
 ```
-
 | offset | name | 15     | 14 | 13 | 12 | 11   | 10   | 9    | 8    | 7    | 6    | 5    | 4    | 3    | 2    | 1    | 0    | notes                                                                                  |
 |--------|------|--------|----|----|----|------|------|------|------|------|------|------|------|------|------|------|------|----------------------------------------------------------------------------------------|
-| 0x100  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | can write 0xffcf, writing 0 doesn't change display, writing 0xffff stops the display   |
+| 0x100  |      | pd?    |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | can write 0xffcf, writing 0 doesn't change display, writing 0xffff stops the display   |
 | 0x104  |      |        |    |    |    |      | x    |      |      |      |      | x    |      |      |      |      |      | writing 0x0 causes rolling noise, writing 0xffff results in 0x0f33 value with no noise |
 | 0x108  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | writing 0x0/0xffff stops the display, 0xffff gives value 0xfff3                        |
 | 0x10c  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | writing does nothing, writing 0xffff does nothing, value 0x0037                        |
