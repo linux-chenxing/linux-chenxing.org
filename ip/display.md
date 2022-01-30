@@ -114,6 +114,7 @@ Wireless-tag# md.w 0x1F206600 0x100
 |--------|------|--------|----|----|----|------|------|------|------|------|------|------|------|------|------|------|------|----------------------------------------------------------------------------------------|
 | 0x100  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | can write 0xffcf, writing 0 doesn't change display, writing 0xffff stops the display   |
 | 0x104  |      |        |    |    |    |      | x    |      |      |      |      | x    |      |      |      |      |      | writing 0x0 causes rolling noise, writing 0xffff results in 0x0f33 value with no noise |
+| 0x108  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | writing 0x0/0xffff stops the display, 0xffff gives value 0xfff3                        |
 | 0x110  |      | x      | x  | x  | x  | x    | x    | x    | x    |      |      |      |      |      |      |      |      | set skew                                                                               |
 | 0x120  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | set lo                                                                                 |
 | 0x124  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | set high                                                                               |
