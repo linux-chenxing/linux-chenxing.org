@@ -110,13 +110,15 @@ Wireless-tag# md.w 0x1F206600 0x100
 > 1f206730: 0000 0000 0000 0000 8019 0000 00c0 0000    ................
 ```
 
-| offset | name | 15     | 14 | 13 | 12 | 11   | 10   | 9    | 8    | 7    | 6    | 5    | 4    | 3    | 2    | 1    | 0    | notes           |
-|--------|------|--------|----|----|----|------|------|------|------|------|------|------|------|------|------|------|------|-----------------|
-| 0x110  |      | x      | x  | x  | x  | x    | x    | x    | x    |      |      |      |      |      |      |      |      | set skew        |
-| 0x120  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | set lo          |
-| 0x124  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | set high        |
-| 0x138  |      | ssc en |    |    |    | step | step | step | step | step | step | step | step | step | step | step | step | ssc step ssc en |
-| 0x13c  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | ssc set span    |
+| offset | name | 15     | 14 | 13 | 12 | 11   | 10   | 9    | 8    | 7    | 6    | 5    | 4    | 3    | 2    | 1    | 0    | notes                                                                                  |
+|--------|------|--------|----|----|----|------|------|------|------|------|------|------|------|------|------|------|------|----------------------------------------------------------------------------------------|
+| 0x100  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | can write 0xffcf, writing 0 doesn't change display, writing 0xffff stops the display   |
+| 0x104  |      |        |    |    |    |      | x    |      |      |      |      | x    |      |      |      |      |      | writing 0x0 causes rolling noise, writing 0xffff results in 0x0f33 value with no noise |
+| 0x110  |      | x      | x  | x  | x  | x    | x    | x    | x    |      |      |      |      |      |      |      |      | set skew                                                                               |
+| 0x120  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | set lo                                                                                 |
+| 0x124  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | set high                                                                               |
+| 0x138  |      | ssc en |    |    |    | step | step | step | step | step | step | step | step | step | step | step | step | ssc step ssc en                                                                        |
+| 0x13c  |      |        |    |    |    |      |      |      |      |      |      |      |      |      |      |      |      | ssc set span                                                                           |
 
 - [0x1F225000 - DISPLAY_TOP](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/drivers/mstar/panel/hal/infinity2m/inc/hal_pnl_reg.h#L22)
 
