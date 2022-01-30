@@ -16,6 +16,10 @@
 - RGB LCD connector
 - Mini PCIe format connector (NOT ACTUALLY PCIe!!)
 
+### LCD module
+
+- STD7.0TFT1024600-13-F 7" LCD panel
+
 ## Building u-boot
 
 - Clone https://github.com/linux-chenxing/u-boot.git
