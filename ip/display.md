@@ -1154,11 +1154,11 @@ after
 > 1f2071c0: 0000 0000 0003 0000 0000 0000 0e42 0000    ............B...
 ```
 
-- 0x144
-- 0x150
-- 0x18c
-- 0x1bc
-- 0x1cc
+- 0x14c - disp_432
+- 0x150 - mop
+- 0x18c - sc_pixel
+- 0x1bc - mipi tx
+- 0x1cc - gate readback
 
 ## MOAR dumps
 
