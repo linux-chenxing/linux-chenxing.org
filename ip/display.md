@@ -148,8 +148,8 @@ Wireless-tag# md.w 0x1F206600 0x100
 | offset   | 15                       | 14 | 13 | 12 | 11 | 10 | 9 | 8      | 7 | 6 | 5 | 4 | 3         | 2         | 1         | 0          | notes                 |
 |----------|--------------------------|----|----|----|----|----|---|--------|---|---|---|---|-----------|-----------|-----------|------------|-----------------------|
 | 0x0      | makes display go batshit | x  | x  | x  | x  | x  | x | sw rst |   |   |   |   |           |           |           |            | resets?               |
-| 0x8      |                          |    |    |    |    |    |   |        |   |   |   |   | vsync pos |           |           |            | irq flags             |
-| 0xC      |                          |    |    |    |    |    |   |        |   |   |   |   | vsync pos |           |           |            | irq masks             |
+| 0x8      |                          |    |    |    |    |    |   |        |   | x |   | x | vsync pos | vsync neg | vde pos   | vde neg    | irq flags             |
+| 0xC      |                          |    |    |    |    |    |   |        |   | x |   | x | vsync pos | vsync neg | vde pos   | vde neg    | irq masks             |
 | 0x10     |                          |    |    |    |    |    |   |        |   |   |   |   |           |           |           |            | r/o                   |
 | 0x1c     |                          |    |    |    |    |    |   |        |   |   |   |   | patgenmd? | patgenmd? | patgenmd? | macesrc?   |                       |
 | 0x28     |                          |    |    |    |    |    |   |        |   |   |   |   |           |           |           | dacmux?    |                       |
