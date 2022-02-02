@@ -217,7 +217,7 @@ Wireless-tag# md.w 0x1F206600 0x100
 | 0x74   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | HdeEnd                            |
 | 0x78   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | VdeSt                             |
 | 0x7c   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | VdeEnd                            |
-| 0x80   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                                   |
+| 0x80   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | DispWinColor                      |
 | 0x84   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                                   |
 | 0x88   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |                                   |
 | 0x8c   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | DacHsyncSt                        |
@@ -237,6 +237,8 @@ Wireless-tag# md.w 0x1F206600 0x100
 | 0xe8   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
 | 0xec   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
 | 0xf0   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness en?                    |
+| 0xf4   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | color matrix?                     |
+| 0xf8   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | color matrix?                     |
 | 0x118  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
 | 0x11c  |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   | brightness? can't write on ssd202 |
 
