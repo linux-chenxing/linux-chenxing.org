@@ -12,6 +12,10 @@ We have 2 types of "framebuffer".
 - GOP - Seems to be able to handle higher colour depth framebuffers? One window per unit? i2m seems to have 2 GOP
 "Take the Takoyaki platform as an example. It has 2 GOPs, and each one supports the management of 1 gwin, as shown in the figure below:"
 
+- TOP - Just seems to be a gasket
+
+- OP2 - seems to do all of the hardware timing etc (vsync, hsync)
+
 ### Interesting things
 
 - [u-boot boot splash screen display init](https://github.com/linux-chenxing/uboot_msc313e/blob/8fcf8839f002607b789e04f6f51621a85c1826f1/common/cmd_bootlogo.c#L1129)
