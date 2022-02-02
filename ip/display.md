@@ -150,6 +150,7 @@ Wireless-tag# md.w 0x1F206600 0x100
 | 0x0      | makes display go batshit | x  | x  | x  | x  | x  | x | sw rst |   |   |   |   |           |           |           |            | resets?               |
 | 0x8      |                          |    |    |    |    |    |   |        |   |   |   |   | vsync pos |           |           |            | irq flags             |
 | 0xC      |                          |    |    |    |    |    |   |        |   |   |   |   | vsync pos |           |           |            | irq masks             |
+| 0x10     |                          |    |    |    |    |    |   |        |   |   |   |   |           |           |           |            | r/o                   |
 | 0x1c     |                          |    |    |    |    |    |   |        |   |   |   |   | patgenmd? | patgenmd? | patgenmd? | macesrc?   |                       |
 | 0x28     |                          |    |    |    |    |    |   |        |   |   |   |   |           |           |           | dacmux?    |                       |
 | 0x54     |                          |    |    |    |    |    |   |        |   |   |   |   |           |           |           | fpllen?    |                       |
