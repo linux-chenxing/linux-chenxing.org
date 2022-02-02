@@ -12,7 +12,7 @@ We have 2 types of "framebuffer".
 - GOP - Seems to be able to handle higher colour depth framebuffers? One window per unit? i2m seems to have 2 GOP
 "Take the Takoyaki platform as an example. It has 2 GOPs, and each one supports the management of 1 gwin, as shown in the figure below:"
 
-- TOP - Just seems to be a gasket
+- TOP - Just seems to be a gasket, toggling swrst does stop the display though
 
 - OP2 - seems to do all of the hardware timing etc (vsync, hsync)
 
