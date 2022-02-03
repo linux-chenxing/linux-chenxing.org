@@ -1844,7 +1844,15 @@ HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
 HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
 HalPnlSetClkHdmi:446 - w:2 0x002266d4:0x0004:0x000f
 HalPnlSetClkDac:469 - w:2 0x002266d8:0x0004:0x000f
+
+```
 HalPnlSetClkScPixel:528 - w:2 0x0020718c:0x0028:0x003f
+```
+
+This is setting LPLL as the pixel clock. Everything except writing 0x0 produces an image in u-boot.
+0x4 causes rolling.
+
+```
 HalPnlSetClkMipiDsi:566 - w:2 0x002071bc:0x0000:0x001f
 HalPnlSetClkMipiDsiAbp:493 - w:2 0x002266dc:0x0004:0x000f
 HalPnlGetTtlMipiDsiSupported:749 - w:2 0x0000400c:0x0000:0x0100
