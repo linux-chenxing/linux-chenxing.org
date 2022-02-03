@@ -1715,16 +1715,16 @@ do_display:2303
 _BootDispCtrl:1580
 _BootLogoDispPnlInit:1138
 HalDispMopSetClk:760 - w:2 0x00207150:0x0000:0x000f
-'''
+```
 
-'''
+```
 HalDispSetClkDisp432:293 - w:2 0x0020714c:0x0000:0x000f
-'''
+```
 
 This doesn't seem to matter, can disable this at runtime and stuff still works.
 
 
-'''
+```
 HalDispSetClkDisp216:314 - w:2 0x0020714c:0x0000:0x0f00
 HalDispSetMaceSrc:54 - w:2 0x0022501c:0x0001:0x0001
 HalDispSetFrameColor:333 - w:2 0x0022526c:0x4010:0x7fff
