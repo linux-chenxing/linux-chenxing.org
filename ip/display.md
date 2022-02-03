@@ -1693,3 +1693,189 @@ md.w 0x1f246000 0x800
 1f246fe0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
 1f246ff0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
 ```
+
+#### Vendor u-boot dump
+
+```
+SigmaStar # bootlogo 0 0 0 0 0
+do_display:2076
+do_display:2091
+do_display:2109
+do_display:2136
+
+NAND read: device 0 offset 0x4e0000, size 0x60000
+Time:78998 us, speed:4977 KB/s
+ 393216 bytes read: OK
+do_display:2153
+do_display:2174
+do_display:2297
+_BootJpdYuvCtrl:1458
+_BootLogoYuv444ToYuv420:1190
+do_display:2303
+_BootDispCtrl:1580
+_BootLogoDispPnlInit:1138
+HalDispMopSetClk:760 - w:2 0x00207150:0x0000:0x000f
+HalDispSetClkDisp432:293 - w:2 0x0020714c:0x0000:0x000f
+HalDispSetClkDisp216:314 - w:2 0x0020714c:0x0000:0x0f00
+HalDispSetMaceSrc:54 - w:2 0x0022501c:0x0001:0x0001
+HalDispSetFrameColor:333 - w:2 0x0022526c:0x4010:0x7fff
+HalDispSetDispWinColor:346 - w:2 0x00225280:0x4010:0x7fff
+HalDispSetDispWinColorForce:351 - w:2 0x00225280:0x8000:0x8000
+WriteColorMatrix:974 - w:2 0x002252f4:0x077f
+WriteColorMatrix:974 - w:2 0x002252f8:0x04a9
+WriteColorMatrix:974 - w:2 0x002252fc:0x0000
+WriteColorMatrix:974 - w:2 0x00225300:0x129c
+WriteColorMatrix:974 - w:2 0x00225304:0x04a9
+WriteColorMatrix:974 - w:2 0x00225308:0x1178
+WriteColorMatrix:974 - w:2 0x0022530c:0x1070
+WriteColorMatrix:974 - w:2 0x00225310:0x04a6
+WriteColorMatrix:974 - w:2 0x00225314:0x08bb
+SetVideoColorMatrix:1018 - w:2 0x002252f0:0x000b:0x000f
+SetBrightnessEn:1082 - w:2 0x002252f0:0x0100:0x0100
+SetBrightness:1097 - w:2 0x00225318:0x0080:0x00ff
+SetBrightness:1098 - w:2 0x00225318:0x8000:0xff00
+SetBrightness:1099 - w:2 0x0022531c:0x0080:0x00ff
+HalDispMopRotInit:1037 - w:2 0x00281a48:0x0820:0x3f3f
+HalDispMopRotInit:1038 - w:2 0x00281a4c:0xa01f:0xbfff
+HalDispMopRotInit:1039 - w:2 0x00281a58:0x0801:0x0f07
+HalDispMopRotInit:1042 - w:2 0x00281a88:0x0820:0x3f3f
+HalDispMopRotInit:1043 - w:2 0x00281a8c:0xa01f:0xbfff
+HalDispMopRotInit:1044 - w:2 0x00281a98:0x0801:0x0f07
+HalDispMopRotInit:1047 - w:2 0x00281ac8:0x0820:0x3f3f
+HalDispMopRotInit:1048 - w:2 0x00281acc:0xa01f:0xbfff
+HalDispMopRotInit:1049 - w:2 0x00281ad8:0x0801:0x0f07
+HalDispMopRotInit:1052 - w:2 0x00281b08:0x0820:0x3f3f
+HalDispMopRotInit:1053 - w:2 0x00281b0c:0xa01f:0xbfff
+HalDispMopRotInit:1054 - w:2 0x00281b18:0x0801:0x0f07
+HalDispMopRot0DbfEn:800 - w:2 0x00281a04:0x0001:0x0001
+HalDispMopRot1DbfEn:805 - w:2 0x00281a04:0x0002:0x0002
+HalMopsShadowInit:65 - r:2 0x00280c04:0x0000
+HalMopsShadowInit:67 - r:2 0x00280c44:0x0000
+HalMopsShadowInit:69 - r:2 0x00280c84:0x0000
+HalMopsShadowInit:71 - r:2 0x00280cc4:0x0000
+HalMopsShadowInit:73 - r:2 0x00280d04:0x0000
+HalMopsShadowInit:75 - r:2 0x00280d44:0x0000
+HalMopsShadowInit:77 - r:2 0x00280d84:0x0000
+HalMopsShadowInit:79 - r:2 0x00280dc4:0x0000
+HalMopsShadowInit:83 - r:2 0x00280e04:0x0000
+HalMopsShadowInit:85 - r:2 0x00280e44:0x0000
+HalMopsShadowInit:87 - r:2 0x00280e84:0x0000
+HalMopsShadowInit:89 - r:2 0x00280ec4:0x0000
+HalMopsShadowInit:91 - r:2 0x00280f04:0x0000
+HalMopsShadowInit:93 - r:2 0x00280f44:0x0000
+HalMopsShadowInit:95 - r:2 0x00280f84:0x0000
+HalMopsShadowInit:97 - r:2 0x00280fc4:0x0000
+HalMopsShadowInit:101 - r:2 0x00281144:0x8000
+HalDispMopgSwReset:337 - w:2 0x00280a00:0x0001:0x0001
+HalDispMopgSwReset:338 - w:2 0x00280a00:0x0000:0x0001
+HalDispMopgInit:360 - w:2 0x00280a04:0x0100:0x0100
+HalDispMopgInit:361 - w:2 0x00280a04:0x0200:0x0200
+HalDispMopgSetAutoStretchWinSizeEn:343 - w:2 0x00280a04:0x0400:0x0400
+HalDispMopgInit:363 - w:2 0x00280a04:0x0800:0x0800
+HalDispMopgSetPipeDelay:354 - w:2 0x00280a0c:0x000a:0x001f
+HalDispMopgInit:365 - w:2 0x00280a10:0x00f8:0x00ff
+HalDispMopgInit:366 - w:2 0x00280a14:0x00d0:0x00ff
+HalDispMopgInit:367 - w:2 0x00280a18:0x00f0:0x00ff
+HalDispMopgInit:368 - w:2 0x00280a2c:0x00f0:0x00ff
+HalDispMopgInit:369 - w:2 0x00280a54:0x0080:0x1fff
+HalDispMopgInit:371 - w:2 0x00280b00:0x0689:0x07ff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgGwinEn:386 - w:2 0x00280c00:0x0000:0x0001
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetSourceParam:517 - w:2 0x00280c2c:0x0000:0x1fff
+HalDispMopgSetSourceParam:518 - w:2 0x00280c30:0x0000:0x1fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetGwinParam:479 - w:2 0x00280c18:0x0000:0x1fff
+HalDispMopgSetGwinParam:480 - w:2 0x00280c1c:0x0000:0x1fff
+HalDispMopgSetGwinParam:481 - w:2 0x00280c20:0x0000:0x1fff
+HalDispMopgSetGwinParam:482 - w:2 0x00280c24:0x0000:0x1fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispSetFrameColor:333 - w:2 0x0022526c:0x4010:0x7fff
+HalDispSetDispWinColorForce:351 - w:2 0x00225280:0x8000:0x8000
+HalDispSetDispWinColorForce:351 - w:2 0x00225280:0x0000:0x8000
+HalDispMopgSetSourceParam:517 - w:2 0x00280c2c:0x03ff:0x1fff
+HalDispMopgSetSourceParam:518 - w:2 0x00280c30:0x0257:0x1fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetGwinParam:479 - w:2 0x00280c18:0x0000:0x1fff
+HalDispMopgSetGwinParam:480 - w:2 0x00280c1c:0x03ff:0x1fff
+HalDispMopgSetGwinParam:481 - w:2 0x00280c20:0x0000:0x1fff
+HalDispMopgSetGwinParam:482 - w:2 0x00280c24:0x0257:0x1fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetHScaleFac:533 - w:2 0x00280c34:0x1000:0x1fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetVScaleFac:548 - w:2 0x00280c38:0x1000:0x1fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetYAddr:406 - w:2 0x00280c08:0x0000:0xffff
+HalDispMopgSetYAddr:407 - w:2 0x00280c0c:0x007c:0x0fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetCAddr:450 - w:2 0x00280c10:0x9600:0xffff
+HalDispMopgSetCAddr:451 - w:2 0x00280c14:0x007c:0x0fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgSetPitch:499 - w:2 0x00280c28:0x0040:0x1fff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+_HalMopSwShadowHandler:183 - w:2 0x00280c04:0x002d:0xffff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+_HalMopSwShadowHandler:183 - w:2 0x00280c04:0x0000:0xffff
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalDispMopgGwinEn:386 - w:2 0x00280c00:0x0001:0x0001
+HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
+HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+HalPnlSetClkHdmi:446 - w:2 0x002266d4:0x0004:0x000f
+HalPnlSetClkDac:469 - w:2 0x002266d8:0x0004:0x000f
+HalPnlSetClkScPixel:528 - w:2 0x0020718c:0x0028:0x003f
+HalPnlSetClkMipiDsi:566 - w:2 0x002071bc:0x0000:0x001f
+HalPnlSetClkMipiDsiAbp:493 - w:2 0x002266dc:0x0004:0x000f
+HalPnlGetTtlMipiDsiSupported:749 - w:2 0x0000400c:0x0000:0x0100
+HalPnlGetTtlMipiDsiSupported:750 - r:2 0x00004014:0x0809
+HalPnlSetTTLPadMux:304 - w:2 0x00203c3c:0x0000:0xffff
+HalPnlSetTTLPadMux:305 - w:2 0x00203c38:0x0000:0xffff
+HalPnlSetTTLPadMux:306 - w:2 0x00203c34:0x0100:0xffff
+HalPnlSetVSyncSt:369 - w:2 0x00225254:0x0000:0x1fff
+HalPnlSetVSyncEnd:374 - w:2 0x00225258:0x0003:0x1fff
+HalPnlSetVfdeSt:379 - w:2 0x00225264:0x001b:0x1fff
+HalPnlSetVfdeEnd:384 - w:2 0x00225268:0x0272:0x1fff
+HalPnlSetVdeSt:389 - w:2 0x00225278:0x001b:0x1fff
+HalPnlSetVdeEnd:394 - w:2 0x0022527c:0x0272:0x1fff
+HalPnlSetVtt:399 - w:2 0x00225248:0x027a:0x1fff
+HalPnlSetHSyncSt:404 - w:2 0x0022524c:0x0004:0x1fff
+HalPnlSetHSyncEnd:409 - w:2 0x00225250:0x0033:0x1fff
+HalPnlSetHfdeSt:414 - w:2 0x0022525c:0x0062:0x1fff
+HalPnlSetHfdeEnd:419 - w:2 0x00225260:0x0461:0x1fff
+HalPnlSetHdeSt:424 - w:2 0x00225270:0x0062:0x1fff
+HalPnlSetHdeEnd:429 - w:2 0x00225274:0x0461:0x1fff
+HalPnlSetHtt:434 - w:2 0x00225244:0x053f:0x1fff
+HalPnlSetSwReste:636 - w:2 0x00225000:0x0100:0xff00
+HalPnlSetFifoRest:641 - w:2 0x002250c0:0x0001:0x0001
+HalPnlSetFifoRest:641 - w:2 0x002250c0:0x0000:0x0001
+HalPnlSetSwReste:636 - w:2 0x00225000:0x0000:0xff00
+HalPnlSetRgbSwap:712 - w:2 0x002253f8:0x001b:0x003f
+HalPnlSetRgbMlSwap:717 - w:2 0x002253f8:0x0100:0x0100
+HalPnlDumpLpllSetting:352 - w:2 0x00206700:0x2201
+HalPnlDumpLpllSetting:352 - w:2 0x00206704:0x0420
+HalPnlDumpLpllSetting:352 - w:2 0x00206708:0x0042
+HalPnlDumpLpllSetting:352 - w:2 0x0020670c:0x0001
+HalPnlDumpLpllSetting:352 - w:2 0x00206728:0x0001
+HalPnlDumpLpllSetting:352 - w:2 0x0020672c:0x0000
+HalPnlSetLpllSet:363 - w:2 0x00206720:0xc3c3
+HalPnlSetLpllSet:364 - w:2 0x00206724:0x0043
+HalPnlSetSscEn:722 - w:2 0x00206738:0x8000:0x8000
+HalPnlSetSscStep:732 - w:2 0x00206738:0x0019:0x0fff
+HalPnlSetSscSpan:727 - w:2 0x0020673c:0x00c0:0x3fff
+HalPnlSetRgbMode:689 - w:2 0x002253f8:0x0000:0x00c0
+HalPnlSetDitherEn:681 - w:2 0x002253d8:0x0000:0x0001
+do_display:2308
+SigmaStar #
+```
