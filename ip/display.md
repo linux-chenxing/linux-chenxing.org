@@ -1875,10 +1875,19 @@ HalPnlSetHfdeEnd:419 - w:2 0x00225260:0x0461:0x1fff
 HalPnlSetHdeSt:424 - w:2 0x00225270:0x0062:0x1fff
 HalPnlSetHdeEnd:429 - w:2 0x00225274:0x0461:0x1fff
 HalPnlSetHtt:434 - w:2 0x00225244:0x053f:0x1fff
+```
+
+```
 HalPnlSetSwReste:636 - w:2 0x00225000:0x0100:0xff00
 HalPnlSetFifoRest:641 - w:2 0x002250c0:0x0001:0x0001
 HalPnlSetFifoRest:641 - w:2 0x002250c0:0x0000:0x0001
 HalPnlSetSwReste:636 - w:2 0x00225000:0x0000:0xff00
+```
+
+These don't seem to affect timing. Toggling the software reset breaks the image (first line smeared?) but the display is still running so timing is still right?
+
+
+```
 HalPnlSetRgbSwap:712 - w:2 0x002253f8:0x001b:0x003f
 HalPnlSetRgbMlSwap:717 - w:2 0x002253f8:0x0100:0x0100
 HalPnlDumpLpllSetting:352 - w:2 0x00206700:0x2201
