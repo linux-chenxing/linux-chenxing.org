@@ -233,3 +233,8 @@ sudo ./SNANDer -p mstarddc -c /dev/i2c-4:49 -a 0x200000 -l <size> -w <path>
 ## Links
 
 - [Official Documentation](http://dongshanpi.com/)
+
+
+## Notes
+
+Fixing the screen colours: devmem 0x1f2253f8 16 0x39
