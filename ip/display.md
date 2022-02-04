@@ -1782,8 +1782,16 @@ HalMopsShadowInit:93 - r:2 0x00280f44:0x0000
 HalMopsShadowInit:95 - r:2 0x00280f84:0x0000
 HalMopsShadowInit:97 - r:2 0x00280fc4:0x0000
 HalMopsShadowInit:101 - r:2 0x00281144:0x8000
+```
+
+```
 HalDispMopgSwReset:337 - w:2 0x00280a00:0x0001:0x0001
 HalDispMopgSwReset:338 - w:2 0x00280a00:0x0000:0x0001
+```
+
+Forcing reset on makes the screen go blue in u-boot, framebuffer works in kernel though
+
+```
 HalDispMopgInit:360 - w:2 0x00280a04:0x0100:0x0100
 HalDispMopgInit:361 - w:2 0x00280a04:0x0200:0x0200
 HalDispMopgSetAutoStretchWinSizeEn:343 - w:2 0x00280a04:0x0400:0x0400
