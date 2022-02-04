@@ -1746,7 +1746,13 @@ WriteColorMatrix:974 - w:2 0x00225308:0x1178
 WriteColorMatrix:974 - w:2 0x0022530c:0x1070
 WriteColorMatrix:974 - w:2 0x00225310:0x04a6
 WriteColorMatrix:974 - w:2 0x00225314:0x08bb
+```
+```
 SetVideoColorMatrix:1018 - w:2 0x002252f0:0x000b:0x000f
+```
+Setting this to zero causes the screen to go mostly purple but the timing seems to still be correct as tux is visible.
+
+```
 SetBrightnessEn:1082 - w:2 0x002252f0:0x0100:0x0100
 SetBrightness:1097 - w:2 0x00225318:0x0080:0x00ff
 SetBrightness:1098 - w:2 0x00225318:0x8000:0xff00
