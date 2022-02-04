@@ -1873,7 +1873,15 @@ HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
 HalDispMopgGwinEn:386 - w:2 0x00280c00:0x0001:0x0001
 HalDispMopDbBfWr:781 - w:2 0x00280bfc:0x0100:0x0100
 HalDispMopDbBfWr:782 - w:2 0x00280bfc:0x0000:0x0100
+```
+
+```
 HalPnlSetClkHdmi:446 - w:2 0x002266d4:0x0004:0x000f
+```
+
+This mux is between sc_pixel and the clock for OP2 I think. You need this even for RGB despite it being called HDMI
+
+```
 HalPnlSetClkDac:469 - w:2 0x002266d8:0x0004:0x000f
 ```
 
