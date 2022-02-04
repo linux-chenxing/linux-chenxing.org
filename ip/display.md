@@ -1726,7 +1726,14 @@ This doesn't seem to matter, can disable this at runtime and stuff still works.
 
 ```
 HalDispSetClkDisp216:314 - w:2 0x0020714c:0x0000:0x0f00
+```
+```
 HalDispSetMaceSrc:54 - w:2 0x0022501c:0x0001:0x0001
+```
+
+Clearing this bit messes up the u-boot logo (even more than it already is on the dongshanpione..) but everything is fine once the kernel is going. 
+
+```
 HalDispSetFrameColor:333 - w:2 0x0022526c:0x4010:0x7fff
 HalDispSetDispWinColor:346 - w:2 0x00225280:0x4010:0x7fff
 HalDispSetDispWinColorForce:351 - w:2 0x00225280:0x8000:0x8000
