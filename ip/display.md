@@ -1737,6 +1737,9 @@ Clearing this bit messes up the u-boot logo (even more than it already is on the
 HalDispSetFrameColor:333 - w:2 0x0022526c:0x4010:0x7fff
 HalDispSetDispWinColor:346 - w:2 0x00225280:0x4010:0x7fff
 HalDispSetDispWinColorForce:351 - w:2 0x00225280:0x8000:0x8000
+```
+
+```
 WriteColorMatrix:974 - w:2 0x002252f4:0x077f
 WriteColorMatrix:974 - w:2 0x002252f8:0x04a9
 WriteColorMatrix:974 - w:2 0x002252fc:0x0000
@@ -1747,6 +1750,8 @@ WriteColorMatrix:974 - w:2 0x0022530c:0x1070
 WriteColorMatrix:974 - w:2 0x00225310:0x04a6
 WriteColorMatrix:974 - w:2 0x00225314:0x08bb
 ```
+Messing with these changes the colours but the timing is still right.
+
 ```
 SetVideoColorMatrix:1018 - w:2 0x002252f0:0x000b:0x000f
 ```
