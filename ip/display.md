@@ -1751,6 +1751,7 @@ WriteColorMatrix:974 - w:2 0x00225310:0x04a6
 WriteColorMatrix:974 - w:2 0x00225314:0x08bb
 ```
 Messing with these changes the colours but the timing is still right.
+Setting them all to zero gives a blank display.
 
 ```
 SetVideoColorMatrix:1018 - w:2 0x002252f0:0x000b:0x000f
