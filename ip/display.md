@@ -1945,3 +1945,8 @@ HalPnlSetDitherEn:681 - w:2 0x002253d8:0x0000:0x0001
 do_display:2308
 SigmaStar #
 ```
+
+## MIPI re
+
+- two clocks? ahp and tx?
+  - tx 0x1f2071BC
