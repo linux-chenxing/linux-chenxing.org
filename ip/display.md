@@ -1949,4 +1949,5 @@ SigmaStar #
 ## MIPI re
 
 - two clocks? ahp and tx?
+  - ahp 0x1F2266DC
   - tx 0x1f2071BC
