@@ -16,7 +16,8 @@
 
 - pm uart is on the test pads on the back of the board under where the SoC is on the component side.
 - [taobao item](https://item.taobao.com/item.htm?id=651889719610&ali_trackid=2:mm_117358474_33384934_118778578&spm=1101.1101.N.N.31f7266)
-
+- [vendor hardware info page](https://superv.flythings.cn/z21_sv50pd)
+- LCD connects with the connects up, stiffener down.
 ## Pinout
 
 | #  | board name | chip name      | #  | board name | chip name |
