@@ -39,7 +39,7 @@ at some point.
 - A: No.
 
 - Q: Is there an IRC channel, discord or something for discussion?
-- A: Please use github's [dicussion feature](https://github.com/linux-chenxing/linux-chenxing.org/discussions) for now.
+- A: Please use github's [discussion feature](https://github.com/linux-chenxing/linux-chenxing.org/discussions) for now.
 
 - Q: Should I upload SDKs and post links here?
 - A: Please don't. Extract the parts that are licensed in a friendly way
