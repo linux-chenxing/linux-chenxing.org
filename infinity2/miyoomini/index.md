@@ -44,3 +44,4 @@
 ## display re notes
 
 - pixel sc clock source is undocumented, 0x38
+- original bootcmd `bootcmd=gpio output 85 1; bootlogo 0 0 0 0 0; gpio output 4 1; mw 1f001cc0 11; gpio out 8 0; sf probe 0;sf read 0x22000000 ${sf_kernel_start} ${sf_kernel_size}; gpio out 8 1; bootm 0x22000000`
