@@ -72,6 +72,7 @@ This page is about infinity.
 
 - sr0 sel - src1 sel seems to control the clock for the DMA reader
 - dma test ctrl 5 - setting the sinewave gen enables cuts the playing audio but nothing audible comes out.
+  - On the miyoo mini setting the sinewave gen register while the music is playing doesn't stop the music. Maybe it doesn't actually work?
 
 ## bank 2 
 
