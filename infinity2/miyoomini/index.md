@@ -21,6 +21,7 @@
 ## Notes
 
 - Charger detect is gpio-59
+- The power control is a bit weird, a gpio controls if the battery is connected to the system. Pressing the power button overrides the control. You need to hold the power button long enough that the kernel starts booting and toggles the gpio to force the battery on. The system is always powered up if the power is connected via usb.
 
 ## Discussion threads
 
