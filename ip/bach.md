@@ -931,3 +931,42 @@ Before and after playing the weird video
 0x206820 - 0x3000
 0x206848 - 0x0000
 ```
+
+## Miyoo notes
+
+```
+devmem 0x1f206800
+0xa14, 0x10 works
+devmem 0x1f206804
+0x30
+devmem 0x1f206808
+0x80, 0 works
+devmem 0x1f20680c
+0x000001A5, 0 works
+devmem 0x1f206810
+0x00000000, 0xe1 works, setting bit 4 stops sound
+
+/ # devmem 0x1f2a0500
+0x00000496
+
+enable?
+rd level cnt live mask?
+rd lr swan en?
+sel test bus
+rd empy int en
+
+/ # devmem 0x1f2a0504
+0x0000A000
+/ # devmem 0x1f2a0508
+0x00000FE8
+/ # devmem 0x1f2a050c
+0x00002000
+/ # devmem 0x1f2a0510
+0x00000800
+/ # devmem 0x1f2a0514
+0x00000000
+/ # devmem 0x1f2a0518
+0x00001FE0
+/ # devmem 0x1f2a051c
+changes
+```
