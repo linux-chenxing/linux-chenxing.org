@@ -970,3 +970,5 @@ rd empy int en
 / # devmem 0x1f2a051c
 changes
 ```
+
+-- Clock that drive the DMA reader seems to come from upll1
