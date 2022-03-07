@@ -225,6 +225,10 @@ ones.
 
 - [MSO9810]() - Quad Core ARM Cortex-A9
 
+### Messi
+
+- MSD338(S/ST?) - 1.5GHz Dual Core Cortex A7
+
 ### Cedric Family
 
 - [MST786](cedric#mst786) - Dual core Cortex A9 automotive (head unit) SoC
