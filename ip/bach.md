@@ -76,6 +76,8 @@ This page is about infinity.
 - dma test ctrl 5 - setting the sinewave gen enables cuts the playing audio but nothing audible comes out.
   - On the miyoo mini setting the sinewave gen register while the music is playing doesn't stop the music. Maybe it doesn't actually work?
 
+- mmc1 dpga cfg2 doesn't seem to control the gain for line out
+
 ## bank 2 
 
 | offset | name          | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1      | 0      |
