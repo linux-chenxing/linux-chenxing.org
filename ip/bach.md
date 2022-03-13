@@ -6,6 +6,11 @@ This page is about infinity.
 - [Infinity1 kernel driver](https://github.com/linux-chenxing/linux_mstar_3.18/tree/taobao_sdk/drivers/mstar/sound)
 - [Infinity3 kernel driver](https://github.com/linux-chenxing/linux_mstar_3.18/tree/msc316sdk/drivers/mstar/sound)
 
+## Misc notes
+
+- The basic flow for the DMA is straight forward: Setup the buffer address etc, enable the dma channel, enable the reader or writer, load some data into the buffer, set the amount of data and trigger. The hardware will start stepping through the buffer.
+  - In reality it's not that easy. For some reason it is easy to get the hardware into a state were either it ignores the trigger for data being loaded or it registers the trigger but it doesn't run.
+
 
 ## Bank address for infinity3/mercury5
 
