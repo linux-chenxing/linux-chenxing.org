@@ -11,8 +11,11 @@ Thiny ssd202d based board with a 4 inch screen.
   - FRD720X720BK 4 inch LCD
   - Goodix touchpanel controller
   - [Init code](https://github.com/wireless-tag-com/openwrt-ssd20x/blob/ad8305b3234bdb2b3207c5c8c3a07696cb3a18df/18.06/package/sigmastar/sstar-init/files/FRD720X720BK/config/LCM/FRD720x720BK_MIPI.ini)
-- HYM8563 RTC
-- ES7243 - "High Performance Stereo Audio ADC"
+- HYM8563 RTC, connected to i2c0
+  - On the boards I have at least this requires rework to make work:
+    - The RTC battery is shorted, it needs to be removed and replaced
+    - i2c sda and scl signals are swapped.
+- ES7243 - "High Performance Stereo Audio ADC", connected to i2c0
 - Unisound US516P6
   - LPA4871(?) mono amp
 - FS35ND02G - SPI NAND
@@ -32,7 +35,7 @@ Thiny ssd202d based board with a 4 inch screen.
 
 ## Connectors
 
-- J4 i2c is i2c0, shared with RTC.
+- J4 i2c is i2c0, shared with RTC and ES7243
 
 ## Notes
 
