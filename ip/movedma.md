@@ -7,6 +7,8 @@ There is a [HAL](https://github.com/linux-chenxing/linux-ssc325/tree/v4.9.84-sig
 and a [single function](https://github.com/linux-chenxing/linux-ssc325/blob/89341c7012404c72e192f198b2ea6405ec80d15d/drivers/sstar/msys/ms_msys.c#L3963) 
 that uses it in the 'msys' module that seems to be for exporting it to external modules
 
+For i2m SPI can also be driven by movedma: https://github.com/linux-chenxing/linux-ssc325/blob/979122be45d470e959c2245c996fa93dea10069b/drivers/sstar/spi/infinity2m/mspi.c#L1141
+
 ## Register map
 
 | offset | name                       | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3                     | 2                     | 1                    | 0               | notes |
