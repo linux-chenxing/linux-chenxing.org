@@ -16,6 +16,8 @@ The SDK family is `ikayaki`.
 
 ### QFN 68 Pinout
 
+[pad mux table](https://github.com/linux-chenxing/linux-ssc325/blob/e53dccbcd926a883a2859695a6b8839e12daf321/drivers/sstar/gpio/pioneer3/mhal_pinmux.c#L441)
+
 | #  | name           | alt functions           | power domain | #  | name        | alt functions                                | power domain | #  | name        | alt functions                              | power domain | #  | name        | alt functions | power domain |
 |----|----------------|-------------------------|--------------|----|-------------|----------------------------------------------|--------------|----|-------------|--------------------------------------------|--------------|----|-------------|---------------|--------------|
 | 1  | AUD_LINEOUT_L0 |                         |              | 18 | SR_IO09     | bt656_dout[6] </br> pspi1_clk                | VDDP_1       | 35 | TTL6        | ttl_dout[13]</br>ttl_dout[8]</br>spi0_mosi | VDDP_2       | 52 | VDD         |               |              |
