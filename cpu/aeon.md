@@ -1,6 +1,6 @@
 # AEON
 
-AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is acutally an Little-endian version of the [OpenRISC](cpu/or1k.md) arch
+AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is acutally an Little-endian version of the [OpenRISC](or1k.md) arch
 that also has the fixed 32-bit instructions replaced to the variable 24/32-bit ones (as well as the instruction encoding being changed)
 
 It is used as an main ("HouseKeeping"?) CPU in families such as **Macaw12** (TSUMV59...), **Music**, **Nasa**, etc.
@@ -12,7 +12,7 @@ and seem to have some other changes related to caches, etc.
 
 So far it seems like that this arch was developed when MStar had 8051-based SoCs, since this arch has seen only "Non-OS" firmwares,
 and anyway if you want to run Linux on your SoCs,
-then it makes sense to use "mainstream" arches like [MIPS](cpu/mips.md) or [ARM](cpu/arm.md), althrough they need to be licensed.
+then it makes sense to use "mainstream" arches like [MIPS](mips.md) or [ARM](arm.md), althrough they need to be licensed.
 But they save you from also caring about adding support to Linux, libc, and whatever other stuff that needs to make Linux systems go. 
 
 ## Memory map
@@ -25,7 +25,7 @@ But they save you from also caring about adding support to Linux, libc, and what
 
 Because of the roots of this arch, the MIU and SPI flash needs to start from the same address
 since the vector addresses are fixed, and is starting from the beginning of the address space.
-And so, when the secondary part of sboot needs to be loaded, it is done through [BDMA](ip/bdma.md)
+And so, when the secondary part of sboot needs to be loaded, it is done through [BDMA](/ip/bdma.md)
 because maybe it's not possible to write into the SPI flash map, where the write is directed to the MIU instead.
 
 And the switch from SPI flash into the MIU is done by [configuring some regs](https://github.com/neuschaefer/mstar-mboot/blob/962e8b8258378dded694883a9f9acb7058d34631/sboot/src/macaw12/bootaeonsysinit.c#L155)
