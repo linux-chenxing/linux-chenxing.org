@@ -20,6 +20,11 @@ Do you know the effort that needs to be put to port Linux to it?
 You need to have gcc, libc, and all other stuff so that it does make more sense to use already supported arches instead.
 Also the average clock speed of 216 MHz might tell something...
 
+**Maybe actually AEON did came in after 8051 SoCs instead, and then MIPS came in
+when they did want to run more complex stuff e.g. Linux on their SoCs?
+And the switch 8051->AEON was made because the Digital TV came in, and so
+managing all of that under full featured 32-bit arch was more pleasant?**
+
 ## Memory map
 
 -  `0x00000000` - MIU (or also SPI flash)
