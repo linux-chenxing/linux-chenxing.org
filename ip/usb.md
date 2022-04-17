@@ -2,6 +2,9 @@
 
 ## MStar FUSBH200 notes
 
+- Patch series that added support to Linux (later removed..):
+  - https://lore.kernel.org/all/1366969040-28892-1-git-send-email-yhchen@faraday-tech.com/
+
 - Patch series that added support to u-boot:
   - https://www.mail-archive.com/u-boot@lists.denx.de/msg113338.html
 
