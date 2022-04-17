@@ -61,4 +61,45 @@ It is possible to connect the UART pads into the AEON's UART by configuring the 
 
 ## Arch details
 
-====== TODO ======
+### Instructions
+
+Conventions:
+-  The bits specified there are stored in big endian, and the first bit is the MSB
+   -  i.e. `11001000101001100100011101110111` is `C8 A6 47 77`.
+-  The caps letter denotes the MSB, then any following or preceding letter is bit that goes down to LSB.
+-  Bit letters follow the OpenRISC specs at least where it's possible
+
+**For details on instructions refer to the OpenRISC specs, unless otherwise specified.**
+
+```
+
+000000000000000000000000                l.nop
+000010DddddAaaaa00000001                l.lhz                 rD, 0(rA)
+000011BbbbbAaaaa00000000                l.sw                  0(rA), rB
+000111DddddAaaaaKkkkkkkk                l.addi                rD, rA, K
+00100000Nnnnnnnnnnnnnnnn                l.bf                  N
+001101100000000000000001                l.movhi               r1, ???
+010001DddddAaaaaBbbbb100                l.and                 rD, rA, rB
+010100AaaaaBbbbbKkkkkkkk                l.ori                 rA, rB, K
+010111AaaaaIiiii00000001                l.sfeqi               rA, I
+010111AaaaaBbbbb00001101                l.sfne                rA, rB
+010111BbbbbAaaaa00010111                l.sfgeu               rA, rB
+100100Nnnnnnnnnnnnnnnnnn                l.j                   N
+
+... TODO ...
+
+110000DddddKkkkkkkkkkkkkkkkk0001        l.movhi               rD, K
+110000BbbbbAaaaaKkkkkkkkkkkk1101        l.mtspr               rA, rB, K
+110000DddddAaaaaKkkkkkkkkkkk1111        l.mfspr               rD, rA, K
+110001DddddAaaaaKkkkkkkkkkkkkkkk        l.andi                rD, rA, K
+110010DddddAaaaaKkkkkkkkkkkkkkkk        l.ori                 rD, rA, K
+111010Nnnnnnnnnnnnnnnnnnnnnnnnnn        l.j                   N
+111011BbbbbAaaaaIiiiiiiiiiiiiiii        l.sw                  I(rA), rB
+11110100000Aaaaa00000000000J0001        l.invalidate_line     0(rA), J    ***1
+111111DddddAaaaaKkkkkkkkkkkkkkkk        l.addi                rA, rB, K
+
+... TODO ...
+
+***1: Not in OpenRISC spec?
+
+```
