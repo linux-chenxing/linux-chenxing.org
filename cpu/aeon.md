@@ -1,8 +1,7 @@
 # AEON
 
 AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is acutally an Little-endian version of the [OpenRISC](cpu/or1k.md) arch
-that also has the fixed 32-bit instructions replaced to the variable 16/24-bit ones.
-(as well as any possible archeticurical change that was made because of this new instruction format)
+that also has the fixed 32-bit instructions replaced to the variable 24/32-bit ones (as well as the instruction encoding being changed)
 
 It is used as an main ("HouseKeeping"?) CPU in families such as **Macaw12** (TSUMV59...), **Music**, **Nasa**, etc.
 
@@ -11,19 +10,10 @@ Also in families such as **Titania4** it is used as a coprocessor core (where in
 This arch also has an second revision ("R2") that apparenly has an branch delay slot (an optional feature in or1k),
 and seem to have some other changes related to caches, etc.
 
-However it is unknown whether it has the MMU implemented.
-Maybe it's not because the only thing this arch officialy has is firmwares without any kind of OS ("Non-OS" in mstar vocab),
-and it might be becuase MStar intended to use the [MIPS](cpu/mips.md)/[ARM](cpu/arm.md) cores
-for possible running of some OSes like Linux or an RTOS like eCos/etc.
-
-Do you know the effort that needs to be put to port Linux to it?
-You need to have gcc, libc, and all other stuff so that it does make more sense to use already supported arches instead.
-Also the average clock speed of 216 MHz might tell something...
-
-**Maybe actually AEON did came in after 8051 SoCs instead, and then MIPS came in
-when they did want to run more complex stuff e.g. Linux on their SoCs?
-And the switch 8051->AEON was made because the Digital TV came in, and so
-managing all of that under full featured 32-bit arch was more pleasant?**
+So far it seems like that this arch was developed when MStar had 8051-based SoCs, since this arch has seen only "Non-OS" firmwares,
+and anyway if you want to run Linux on your SoCs,
+then it makes sense to use "mainstream" arches like [MIPS](cpu/mips.md) or [ARM](cpu/arm.md), althrough they need to be licensed.
+But they save you from also caring about adding support to Linux, libc, and whatever other stuff that needs to make Linux systems go. 
 
 ## Memory map
 
@@ -44,6 +34,8 @@ the instructions to switch and reset will be (of course) lost.
 
 **Wait, the reg1002B4 sets some "reset vector base", does it also affect other vectors as well and so my assumpions are wrong??
 But at least, the fact about the impossibility to write MIU by CPU while being in SPI flash map might be true...**
+
+It also seems that SRAM could be [mapped to arbitrary location?](https://github.com/neuschaefer/mstar-mboot/blob/962e8b8258378dded694883a9f9acb7058d34631/sboot/src/macaw12/reset.S#L100)
 
 The coprocessor of course doesn't need to do all of that because how it is going to be mapped is decided by other CPU. (because it's a coprocessor!)
 
