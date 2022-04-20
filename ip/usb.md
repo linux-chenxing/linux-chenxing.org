@@ -1,5 +1,11 @@
 # USB
 
+## USBC
+
+| offset | name | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | notes |
+|--------|------|----|----|----|----|----|----|---|---|---|---|---|---|---|---|---|---|-------|
+|        |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+
 ## MStar FUSBH200 notes
 
 - Patch series that added support to Linux (later removed..):
