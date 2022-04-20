@@ -380,6 +380,8 @@ This seems to be a way of presenting the right resistor values on the data lines
 ### USBC
 
 This seems to be essentially a mux that sits between the UTMI and the UHC and OTG blocks so that UTMI can be connected to the right block for the current role the port is in.
+ 
+[More details](usb.md)
 
 |            | u-boot | linux |
 |------------|--------|-------|
@@ -396,6 +398,8 @@ Seems to be called "FUSBH200".
 According to this commit on the Faraday usb controller PORTSC is at 0x30 instead of 0x44 which matches the register descriptions in the datahsheets we have with registers.
 https://github.com/linux-chenxing/u-boot/commit/e82a316d7f9425943d86c1ed61c5cf57b0d5b188#diff-7d35a95a303a716a610d53273a2cf3a8d3e0093b3fbfb3ce470285df7ff0ac2a
 
+[More details](usb.md)
+ 
 |            | u-boot | linux |
 |------------|--------|-------|
 | infinity   |        | yes   |
