@@ -1,6 +1,6 @@
 # BDMA
 
-BDMA (Byte DMA) is a generic DMA engine that can transfer one memory location to another, with configurable source/dest access width and source/dest memory type.
+BDMA (Byte DMA) is a generic DMA engine that can transfer one memory location to another, with configurable source/dest access width (1/2/4/8/etc bytes) and source/dest memory type (MIU/QSPI/etc).
 It can also calculate CRC32 with configurable polynomial and shift register initial state.
 
 ## Registers
