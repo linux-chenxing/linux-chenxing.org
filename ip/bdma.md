@@ -1,5 +1,71 @@
 # BDMA
 
+BDMA is a generic DMA that transfers from one memory location to another.
+It can also calculate CRC32 with configurable polynomial and shift register initial state.
+
+## Registers
+
+```
+reg00: control
+    b0 = start
+    b4 = stop
+
+reg02: status
+    b0 = queued
+    b1 = busy
+    b2 = int
+    b3 = done
+    b4 = res0
+    b14 = ?
+
+reg04: source control
+    b0~b3 = src:
+      0=MIU
+      1=IMI?
+      4=Fill?
+      5=QSPI (higher width is faster)
+    b4~b6 = src width:
+      0=1 byte
+      1=2 bytes
+      2=4 bytes
+      3=8 bytes
+      4=16 bytes?
+
+reg05: dest control
+    b0~b3 = dest:
+      0=MIU (width should be at least 8 bytes)
+      3=CRC (width should be 1 byte)
+      B=FSP?
+    b4~b6 = dest width:
+      0=1 byte
+      1=2 bytes
+      2=4 bytes
+      3=8 bytes
+      4=16 bytes?
+
+reg06: misc ctrl
+    b0 = direction (0:addr increment, 1:addr decrement) -- affects both source and dest
+    b1 = int enable
+    b4~b11 = ?
+
+reg08: source address
+    b0~b31 = src addr
+
+reg0C: dest address
+    b0~b31 = dst addr
+
+reg10: transfer length
+    b0~b31 = length
+
+reg14: crc polynomial
+    b0~b31 = crc polynom
+
+reg18: crc shift register
+    b0~b31 = crc shift reg
+
+```
+
+----
 ```
 /*
  * MStar BDMA controller - B seems to be for byte
