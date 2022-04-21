@@ -1,7 +1,9 @@
 # BDMA
 
 BDMA (Byte DMA) is a generic DMA engine that can transfer one memory location to another, with configurable source/dest access width (1/2/4/8/etc bytes) and source/dest memory type (MIU/QSPI/etc).
-It can also calculate CRC32 with configurable polynomial and shift register initial state.
+
+It can also calculate CRC32 with configurable polynomial and shift register initial state, as well as the input byte bit order (regular or reversed).
+However XORing the register back or reversing the bit order is then left over to you.
 
 ## Registers
 
@@ -46,7 +48,11 @@ reg05: dest control
 reg06: misc ctrl
     b0 = direction (0:addr increment, 1:addr decrement) -- affects both source and dest
     b1 = int enable
-    b4~b11 = ?
+    b4~b7 = crc32 config?
+      0 => input byte is not reversed (e.g. 0x47 is 0x47)
+      1 => input byte is reversed (e.g. 0x47 is 0xe2)
+      X => same as 0
+    b8~b11 = ? "dmywrcnt"?
 
 reg08: source address
     b0~b31 = src addr
@@ -58,7 +64,7 @@ reg10: transfer length
     b0~b31 = length
 
 reg14: crc polynomial
-    b0~b31 = crc polynom
+    b0~b31 = crc polynomial (note: first bit is always set to 1 internally)
 
 reg18: crc shift register
     b0~b31 = crc shift reg
