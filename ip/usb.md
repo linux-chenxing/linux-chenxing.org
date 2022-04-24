@@ -1,5 +1,8 @@
 # USB
 
+ - [EHCI spec from Intel](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/ehci-specification-for-usb.pdf)
+
+
 ## USBC
 
 | offset | name | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 | notes |
