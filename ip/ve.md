@@ -376,11 +376,23 @@ reg20:
     b0~b3 = ?
     b4~b5 = <changes something in SECAM...>
 
+reg24:
+    b0~b31 = SECAM B-Y subcarrier frequency (phase accumulator step)
+       [Fby = val * 2^32 / Fve<27MHz>]
+
+reg28:
+    b0~b31 = SECAM R-Y subcarrier frequency (phase accumulator step)
+       [Fry = val * 2^32 / Fve<27MHz>]
+
 reg38:
     b0~b8 = SECAM B-Y component deviation factor?
 
 reg3A:
     b0~b8 = SECAM R-Y component deviation factor?
+
+reg44:
+    b0~b31 = some 350khz clock? for SECAM? (phase accumulator step)
+       [Fxxx = val * 2^32 / Fve<27MHz>]
 
 regEE:
     b0~b15 = ?
