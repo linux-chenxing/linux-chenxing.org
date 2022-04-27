@@ -1975,3 +1975,7 @@ SigmaStar #
 | 0x8c   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |       |
 | 0x94   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |       |
 | 0xd4   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |       |
+
+# HDMI TX
+
+https://github.com/linux-chenxing/uboot_msc313e/blob/6bf9b364ea16d79444c4a9c6f99bacc266b17a12/drivers/mstar/hdmitx/hal/infinity2m/hdmitx/include/regHDMITx.h
