@@ -598,3 +598,5 @@ gpiochip0: GPIOs 0-90, gpio:
  gpio-26  (                    |sysfs               ) out hi    
  gpio-72  (                    |                    ) out lo
  ```
+
+- gpio-26 is the LED
