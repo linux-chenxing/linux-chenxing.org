@@ -587,3 +587,14 @@ main_1654_0
 !!!getStr line 231 error: string(name=usbconnstatus, subname=fail) not found in xml file
 !!!show_text2 line 475 strl null
 ```
+
+### GPIO
+
+```
+/ # cat /sys/kernel/debug/gpio 
+gpiochip0: GPIOs 0-90, gpio:
+ gpio-12  (                    |sysfs               ) out hi    
+ gpio-25  (                    |sysfs               ) out lo    
+ gpio-26  (                    |sysfs               ) out hi    
+ gpio-72  (                    |                    ) out lo
+ ```
