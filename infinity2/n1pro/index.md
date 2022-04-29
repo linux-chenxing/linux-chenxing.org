@@ -1,5 +1,7 @@
 # N1PRO
 
+![n1pro](n1pro_small.jpg)
+
 ## Specs
 
 - SSD203D
