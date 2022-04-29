@@ -1975,3 +1975,20 @@ SigmaStar #
 | 0x8c   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |       |
 | 0x94   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |       |
 | 0xd4   |      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |    |       |
+
+# HDMI TX
+
+https://github.com/linux-chenxing/uboot_msc313e/blob/6bf9b364ea16d79444c4a9c6f99bacc266b17a12/drivers/mstar/hdmitx/hal/infinity2m/hdmitx/include/regHDMITx.h
+
+## dtop
+
+| offset | name        | 15 | 14      | 13         | 12         | 11               | 10               | 9                | 8                  | 7                  | 6                  | 5                  | 4                  | 3                  | 2                  | 1                  | 0                  | notes                          |
+|--------|-------------|----|---------|------------|------------|------------------|------------------|------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------------------|
+| 0x0    |             |    |         |            |            |                  |                  |                  |                    |                    |                    |                    |                    |                    |                    | rst                | pd                 |                                |
+| 0x4    |             |    | av mute | video mute | audio mute | audio sub packet | audio sub packet | audio sub packet | audio sub packet   |                    |                    |                    |                    |                    |                    | audio layout       | mode               | mode = 0 - DVI mode = 1 - HDMI |
+| 0x14   |             |    |         |            |            |                  |                  |                  |                    |                    |                    | ch2 mute           | ch1 mute           | ch0 mute           |                    |                    |                    |                                |
+| 0x18   |             |    |         |            |            |                  |                  |                  |                    |                    |                    |                    |                    | csc sel            | csc sel            | csc sel            | csc sel            |                                |
+| 0x20   |             |    |         |            |            |                  |                  |                  | data period island | data period island | data period island | data period island | data period island | data period island | data period island | data period island | data period island |                                |
+| 0x3C   |             |    |         |            |            |                  |                  |                  |                    |                    |                    |                    |                    | hsync out pol      | vsync out pol      |                    |                    |                                |
+| 0x6C   | pkt en      |    |         |            |            |                  |                  |                  |                    |                    |                    |                    |                    |                    |                    |                    |                    |                                |
+| 0x74   | pkt rdy sel |    |         |            |            |                  |                  |                  |                    |                    |                    |                    |                    |                    |                    |                    |                    |                                |

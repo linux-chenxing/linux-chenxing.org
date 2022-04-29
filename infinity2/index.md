@@ -175,6 +175,10 @@ https://www.geniatech.com/product/som20x/
 
 - [local info](miyoomini/)
 
+##### N1Pro
+
+- [local info](n1pro/)
+
 ##### Pinout
 
 See [pinouts](pinouts.md).

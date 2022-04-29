@@ -42,6 +42,9 @@
 | 31 | PM_SPI_WPZ   |                      | 63 | DM_P1                                      |                                                                                              | 95 | SD_CMD<sup>1</sup> | i2c1_sda<sup>5</sup> i2s_sdi<sup>3</sup>                                                                                                | 127 | GPIO10                               | spi0_di<sup>5</sup>                       |
 | 32 | PM_IRIN      |                      | 64 | AVDD_USB                                   |                                                                                              | 96 | SD_D3<sup>1</sup>  | i2s_sdo<sup>3</sup>                                                                                                                     | 128 | GPIO11                               | spi0_do<sup>5</sup>                       |
 
+## 128 QFN SSD203D
+
+https://lceda.cn/component/9d7bb03e05594e07adf6cb0825ab3f3e
 
 ## Boot strap pins
 
