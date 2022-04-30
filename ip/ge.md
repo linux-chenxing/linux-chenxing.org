@@ -55,7 +55,7 @@ reg0E: status
     b0 = GE is busy
     b1 = BLT is bust
     b7 = CMQ fifo is empty
-    b11~b15 = CMQ fifo remainig count
+    b11~b15 = CMQ fifo remaining count
 
 reg20: rop2
     b0~b3 = ROP operation
@@ -172,11 +172,11 @@ reg54: vcmq_size
       8 => 1024k
 
 reg5A: p256_[0|1]
-    b0~b31 = 256-entry palette color value (see pri_[gb|ar]_st)
+    b0~b31 = 256-color palette value (see pri_[gb|ar]_st)
 
 reg5E: p256_idx
-    b0~b7 = 256-entry palette color index
-    b8 = 256-entry palette write
+    b0~b7 = 256-color palette index
+    b8 = 256-color palette write
 
 reg60: sb_pit
     b0~b15 = Source bitmap stride
@@ -187,10 +187,10 @@ reg66: db_pit
 reg68: b_fm
     b0~b3 = Source bitmap format:
     b8~b11 = Dest bitmap format:
-      0 => I1 (1 bpp, 2 colors palette)
-      1 => I2 (2 bpp, 4 colors palette)
-      2 => I4 (4 bpp, 16 colors palette)
-      3 => I8 (8 bpp, 256 colors palette)
+      0 => I1 (1 bpp, 2-color palette)
+      1 => I2 (2 bpp, 4-color palette)
+      2 => I4 (4 bpp, 16-color palette)
+      3 => I8 (8 bpp, 256-color palette)
       8 => RGB565
       9 => ARGB1555
       A => ARGB4444
@@ -201,52 +201,52 @@ reg68: b_fm
       F => ARGB8888
 
 reg6A: i0_c[0|1]
-    b0~b31 = 16-entry palette color value 0 (see pri_[gb|ar]_st)
+    b0~b31 = 16-color palette value 0 (see pri_[gb|ar]_st)
 
 reg6E: i1_c[0|1]
-    b0~b31 = 16-entry palette color value 1
+    b0~b31 = 16-color palette value 1
 
 reg72: i2_c[0|1]
-    b0~b31 = 16-entry palette color value 2
+    b0~b31 = 16-color palette value 2
 
 reg76: i3_c[0|1]
-    b0~b31 = 16-entry palette color value 3
+    b0~b31 = 16-color palette value 3
 
 reg7A: i4_c[0|1]
-    b0~b31 = 16-entry palette color value 4
+    b0~b31 = 16-color palette value 4
 
 reg7E: i5_c[0|1]
-    b0~b31 = 16-entry palette color value 5
+    b0~b31 = 16-color palette value 5
 
 reg82: i6_c[0|1]
-    b0~b31 = 16-entry palette color value 6
+    b0~b31 = 16-color palette value 6
 
 reg86: i7_c[0|1]
-    b0~b31 = 16-entry palette color value 7
+    b0~b31 = 16-color palette value 7
 
 reg8A: i8_c[0|1]
-    b0~b31 = 16-entry palette color value 8
+    b0~b31 = 16-color palette value 8
 
 reg8E: i9_c[0|1]
-    b0~b31 = 16-entry palette color value 9
+    b0~b31 = 16-color palette value 9
 
 reg92: i10_c[0|1]
-    b0~b31 = 16-entry palette color value 10
+    b0~b31 = 16-color palette value 10
 
 reg96: i11_c[0|1]
-    b0~b31 = 16-entry palette color value 11
+    b0~b31 = 16-color palette value 11
 
 reg9A: i12_c[0|1]
-    b0~b31 = 16-entry palette color value 12
+    b0~b31 = 16-color palette value 12
 
 reg9E: i13_c[0|1]
-    b0~b31 = 16-entry palette color value 13
+    b0~b31 = 16-color palette value 13
 
 regA2: i14_c[0|1]
-    b0~b31 = 16-entry palette color value 14
+    b0~b31 = 16-color palette value 14
 
 regA6: i15_c[0|1]
-    b0~b31 = 16-entry palette color value 15
+    b0~b31 = 16-color palette value 15
 
 regAA: clip left
     b0~b15 = clip window left
@@ -301,11 +301,11 @@ regC0: cmd
     b15 = STBB patch mode (Repeat the last row/column when going out off image size)
 
 regC2: line
-    b1~b14 = Line delta (bias 4096, twos complement)    
+    b1~b14 = Line delta Y/X (bias 0x1000, twos complement)    
     b15 = Swap X/Y coordinates
 
 regC4: lpt
-    b0~b5 = line pattern (bit pattern)
+    b0~b5 = line pattern bits
     b6~b7 = line pattern period:
       0 => 1 pixel
       1 => 2 pixels
@@ -378,7 +378,7 @@ regE8: pri_r_dy[0|1]
 
 regEC: pri_g_dx[0|1]
     b0~b19 = Green gradient delta X
-      [ val = (Rend - Rbegin) * 0x1000 / width ]
+      [ val = (Gend - Gbegin) * 0x1000 / width ]
 
 regF0: pri_g_dy[0|1]
     b0~b19 = Green gradient delta Y
