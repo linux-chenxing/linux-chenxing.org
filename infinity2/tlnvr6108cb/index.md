@@ -7,3 +7,5 @@ Shell login: root/slpmstar
 - GPIOs:
   - Green LED TTL7
   - Red LED TTL8
+
+pin 24 is core voltage control?
