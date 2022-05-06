@@ -46,6 +46,10 @@
 
 https://lceda.cn/component/9d7bb03e05594e07adf6cb0825ab3f3e
 
+## 128 QFN SSR261
+
+- TTL7 and TTL8 are the same as SSD202D?
+
 ## Boot strap pins
 
 | boot device | PM_SPI_CK |
