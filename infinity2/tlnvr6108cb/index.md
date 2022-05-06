@@ -5,5 +5,5 @@ Shell login: root/slpmstar
 # Notes
 
 - GPIOs:
-  - Green led 26 (vendor number..)
-  - 
+  - Green LED TTL7
+  - Red LED TTL8
