@@ -48,7 +48,6 @@ https://lceda.cn/component/9d7bb03e05594e07adf6cb0825ab3f3e
 
 ## 128 QFN SSR261
 
-- SATA data 11, 12, 14, 15
 - TTL7 and TTL8 are the same as SSD202D?
 
 | #  | name | #  | name | #  | name | #  | name |
@@ -63,11 +62,11 @@ https://lceda.cn/component/9d7bb03e05594e07adf6cb0825ab3f3e
 | 8  |      |    |      |    |      |    |      |
 | 9  |      |    |      |    |      |    |      |
 | 10 |      |    |      |    |      |    |      |
-| 11 |      |    |      |    |      |    |      |
-| 12 |      |    |      |    |      |    |      |
+| 11 | SATA |    |      |    |      |    |      |
+| 12 | SATA |    |      |    |      |    |      |
 | 13 |      |    |      |    |      |    |      |
-| 14 |      |    |      |    |      |    |      |
-| 15 |      |    |      |    |      |    |      |
+| 14 | SATA |    |      |    |      |    |      |
+| 15 | SATA |    |      |    |      |    |      |
 | 16 |      |    |      |    |      |    |      |
 | 17 |      |    |      |    |      |    |      |
 | 18 |      |    |      |    |      |    |      |
