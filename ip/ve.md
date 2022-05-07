@@ -1,6 +1,12 @@
 # VE
 
-pal ntsc secam encoder with ... svideo and cvbs outputs! (also can do ypbpr and rgb!)
+VE (Video Encoder) encodes an PAL/NTSC/SECAM (the latter seems to be not always present, e.g. in Titania4).
+
+It can also put VBIs like CC (Closed Caption), WSS (Wide Screen Signalling), VPS (Video Programme System) and Teletext.
+
+Apart of the CVBS and S-Video signals it can output YPbPr and RGB as well.
+
+For the input part it can downscale it (but can't upscale!), and it seems to have multiple input sources?
 
 ## Registers
 
@@ -65,12 +71,12 @@ reg2A:
     b0~b11 = capture window HEnd
 
 reg2C:
-    b0~b10 = horizontal scaling ratio (bias 0x800)
-       [ val = dstw * 0x800 / srcw ]
+    b0~b10 = horizontal scaling ratio (bias 0x400)
+       [ val = dstw * 0x400 / srcw ]
 
 reg2E:
-    b0~b10 = vertical scaling ratio (bias 0x800)
-       [ val = dsth * 0x800 / srch ]
+    b0~b10 = vertical scaling ratio (bias 0x400)
+       [ val = dsth * 0x400 / srch ]
 
 reg40:
     b0 = FRC enable
@@ -254,6 +260,18 @@ reg5C:
     b2 = enable WSS
     b3 = enable Teletext
     b7 = VBI stuff master enable? enable VBI?
+
+reg68:
+    b0~b31 = VPS data [0..31]
+
+reg6C:
+    b0~b31 = VPS data [32..63]
+
+reg70:
+    b0~b31 = VPS data [64..95]
+
+reg74:
+    b0~b7 = VPS data [96..103]
 
 reg76:
     b0~b13 = WSS data
