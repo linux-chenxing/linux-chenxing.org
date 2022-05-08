@@ -393,6 +393,10 @@ Silan MEMs accelerometers seem to be used for a lot of the dash cam devices.
 
 - [Silan chips](silan/)
 
+# CPU blocks
+
+See [CPU](cpu).
+
 # IP blocks
 
 See [IP](ip).

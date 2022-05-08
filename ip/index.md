@@ -744,6 +744,8 @@ Also known as "Cleveland Haydn" or Haydn
 Seems to be AHCI.
  
 https://github.com/linux-chenxing/linux-ssc325/tree/takoyaki_dls00v017/drivers/sstar/sata_host
+ 
+[SATA](sata.md)
 
 ## Misc
 
