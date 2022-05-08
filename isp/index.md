@@ -41,9 +41,8 @@ Then you will be able to send these commands:
 - 0x25 = ? **(the ISP slave disappears and the SPI bus seems to be locked and trying to access it locks up the system, maybe it's the real ISP exit cmd? MSB123xC also pulls down its SDA line)**
 
 The CRC shift register uses the polynomial 0x8005 (x16 + x15 + x2 + 1), and its initial state is 0xffff.
-Its contents seem to change only when byte are transferred out of SPI bus, and the value that the crc 
-is calculated against is either an *previously sent byte* or an *prefetched received byte*
-(after the 0x11 cmd is sent and also after any read byte the byte gets read from spi to be then sent over i2c).
+Its contents seem to change only when the bytes are transferred out of SPI bus, and the value that gets into CRC
+is either an **previously sent byte** or an **prefetched receive byte**.
 
 ```py
 with MStarISP(vgaddc_bus, 0x49) as isp:
@@ -87,7 +86,6 @@ with MStarISP(vgaddc_bus, 0x49) as isp:
 	print("%02x:%02x" % (isp.bus_xfer(b'\x22', 1)[0], isp.bus_xfer(b'\x23', 1)[0]))
 	
 	isp.spi_stop()
-	
 	
 	print("=======")
 	
@@ -194,6 +192,27 @@ Then you will be able to send these commands:
 - 0x83 = set bus channel no. bit 1
 - 0x84 = clear bus channel no. bit 2
 - 0x85 = set bus channel no. bit 2
+
+### Protocol variations
+
+#### The "older" one
+
+This variant uses 2 bytes for bus addressing and does not have channel switching,
+thus it only can access 8051 XDATA. (because MStar was making 8051-based chips at the time)
+
+In SoCs where the PM and Non-PM did split (after Saturn?)
+the Non-PM part is accessed by writing the bits 16-23 of the RIU address (0x10/0x11/etc) into address 0x0000 and then access with address bits 0-15.
+(i.e. to access 0x101ecc write 0x10 into 0x0000 then access 0x1ecc)
+
+#### The "newer" one
+
+This variant now uses 4 bytes for bus addressing, and also introduced bus channel switching.
+
+| channel | accessed bus |
+|---------|--------------|
+|   0     |  8051 XDATA  |
+|   3     |  PM RIU      |
+|   4     |  Non-PM RIU  |
 
 ----
 

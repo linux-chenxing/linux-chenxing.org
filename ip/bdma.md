@@ -5,6 +5,8 @@ BDMA (Byte DMA) is a generic DMA engine that can transfer one memory location to
 It can also calculate CRC32 with configurable polynomial and shift register initial state, as well as the input byte bit order (regular or reversed).
 However XORing the register back or reversing the bit order is then left over to you.
 
+Also it can fill with a preset 32-bit (4 byte) value, and search for a 32-bit value?
+
 ## Registers
 
 ```
@@ -17,33 +19,40 @@ reg02: status
     b1 = busy
     b2 = int
     b3 = done
-    b4 = res0
+    b4 = res0 / pattern found
     b14 = ?
 
 reg04: source control
     b0~b3 = src:
-      0=MIU
-      1=IMI?
-      4=Fill?
-      5=QSPI (higher width is faster)
+      0 => MIU
+      1 => MIU1 / IMI?
+      4 => Fill
+      5 => QSPI (higher width is faster)
     b4~b6 = src width:
-      0=1 byte
-      1=2 bytes
-      2=4 bytes
-      3=8 bytes
-      4=16 bytes?
+      0 => 1 byte
+      1 => 2 bytes
+      2 => 4 bytes
+      3 => 8 bytes
+      4 => 16 bytes?
 
 reg05: dest control
     b0~b3 = dest:
-      0=MIU (width should be at least 8 bytes)
-      3=CRC (width should be 1 byte)
-      B=FSP?
+      0 => MIU (width should be (at least) 8 bytes)
+      1 => MIU1 (same as previously)
+      2 => Pattern search
+      3 => CRC (width should be 1 byte)
+      4 => DMDMCU?
+      5 => VDMCU?
+      6 => DSP?
+      7 => TSP?
+      8 => 1k XDATA SRAM of HK51/PM51?
+      B => FSP?
     b4~b6 = dest width:
-      0=1 byte
-      1=2 bytes
-      2=4 bytes
-      3=8 bytes
-      4=16 bytes?
+      0 => 1 byte
+      1 => 2 bytes
+      2 => 4 bytes
+      3 => 8 bytes
+      4 => 16 bytes?
 
 reg06: misc ctrl
     b0 = direction (0:addr increment, 1:addr decrement) -- affects both source and dest
@@ -63,11 +72,14 @@ reg0C: dest address
 reg10: transfer length
     b0~b31 = length
 
-reg14: crc polynomial
+reg14: crc polynomial / fill value / pattern search value / "cmd0"
     b0~b31 = crc polynomial (note: first bit is always set to 1 internally)
+    b0~b31 = fill value (little endian)
+    b0~b31 = pattern search value (little endian)
 
-reg18: crc shift register
+reg18: crc shift register / pattern search exclude bits / "cmd1"
     b0~b31 = crc shift reg
+    b0~b31 = pattern search exclude bits (little endian)
 
 ```
 
