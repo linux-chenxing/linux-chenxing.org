@@ -25,8 +25,8 @@ reg00:
     b5 = reg load
     b6 = enable ccir656 (2)
     b7 = ..?
-    b8 = disable h scaling
-    b9 = disable v scaling
+    b8 = disable h downscaling
+    b9 = disable v downscaling
     b10 = set test pattern <?>
 
 reg02:
@@ -71,12 +71,12 @@ reg2A:
     b0~b11 = capture window HEnd
 
 reg2C:
-    b0~b10 = horizontal scaling ratio (bias 0x400)
-       [ val = dstw * 0x400 / srcw ]
+    b0~b10 = horizontal downscale ratio (bias 0x800)
+       [ val = dstw * 0x800 / srcw ]
 
 reg2E:
-    b0~b10 = vertical scaling ratio (bias 0x400)
-       [ val = dsth * 0x400 / srch ]
+    b0~b10 = vertical downscale ratio (bias 0x800)
+       [ val = dsth * 0x800 / srch ]
 
 reg40:
     b0 = FRC enable
