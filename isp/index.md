@@ -200,9 +200,10 @@ Then you will be able to send these commands:
 This variant uses 2 bytes for bus addressing and does not have channel switching,
 thus it only can access 8051 XDATA. (because MStar was making 8051-based chips at the time)
 
-In SoCs where the PM and Non-PM did split (after Saturn?)
+In SoCs where the RIU was split into PM and Non-PM parts (after Saturn?)
 the Non-PM part is accessed by writing the bits 16-23 of the RIU address (0x10/0x11/etc) into address 0x0000 and then access with address bits 0-15.
-(i.e. to access 0x101ecc write 0x10 into 0x0000 then access 0x1ecc)
+
+(i.e. to access 0x101ecc write 0x10 into 0x0000 then access 0x1ecc, and to access 0x110c32 write 0x11 into 0x0000 then access 0x0c32)
 
 #### The "newer" one
 
