@@ -51,5 +51,6 @@ For i2m SPI can also be driven by movedma: https://github.com/linux-chenxing/lin
 | 0x10c  | dma_cmdq_irq_select        |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |                       |
 | 0x110  | dma_cmdq_irq_final_status  |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |                       |
 | 0x114  | dma_cmdq_irq_raw_status    |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |                       |
+| 0x140  | dma direction              |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |                       |
 | 0x144  | dma mode                   |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      |                 |                       |
 | 0x148  | dev sel                    |    |    |    |    |    |    |   |   |   |   |   |   |                       |                       |                      | x               | 0 == mspi0 1 == mspi1 |
