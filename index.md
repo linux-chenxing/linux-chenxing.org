@@ -180,34 +180,34 @@ carried forward to the later ARM chips so any datasheets that can be found
 for the MIPS SoCs might help with reverse engineering the current ARM based
 ones.
 
-### Titania4
+### [Titania4](titania4)
 
 - MSD306PT
-- MSD309PX - 312 MHz MIPS 34K in BGA
+- [MSD309PX](titania4#msd309px) - 312 MHz MIPS 34K in BGA
 - MSD318QT
 
 ### Milan
 
-- MSD3463GU - MIPS 34K with 64 MiB DDR2 (probably) in eLQFP128
+- MSD3463GU - MIPS 34K with (probably) 64 MiB DDR2 in eLQFP128
 
 ### Marlon
 
-- MSD3663LUA - MIPS 34K with 64 MiB DDR2 (probably) in eLQFP128
+- MSD3663LUA - MIPS 34K with (probably) 64 MiB DDR2 in eLQFP128
 
-### Kronus
+### [Kronus](kronus)
 
 - MSD5043 - 552 MHz MIPS 34Kf in BGA
-- MSD7816 - 552 MHz MIPS 34Kf in eLQFP128
-- MSD7818 - mostly same as MSD7816 but with integrated demod
+- [MSD7816](kronus#msd7816) - 552 MHz MIPS 34Kf in eLQFP128
+- [MSD7818](kronus#msd7818) - mostly same as MSD7816 but with integrated demod
 
 ### Kappa
 
 - MSD7802 - 600 MHz MIPS 34Kf in eLQFP128
 
-### Kriti
+### [Kriti](kriti)
 
-- MSD7T01 - 576 MHz MIPS 34Kf + 64 MiB DDR2 in eLQFP128
-- MSD7T03 - same as MSD7T01 but with 128 MiB DDR3 instead
+- [MSD7T01](kriti#msd7t01) - 576 MHz MIPS 34Kf + 64 MiB DDR2 in eLQFP128
+- [MSD7T03](kriti#msd7t03) - same as MSD7T01 but with 128 MiB DDR3 instead
 
 ### K5AP
 
