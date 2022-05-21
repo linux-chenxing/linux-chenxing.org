@@ -101,7 +101,7 @@
 | 23   | VDMCU2HK               |
 | 24   | VE_DONE_TT             |
 | 25   | INT_CCFL               |
-| 26   | INt                    |
+| 26   | INT                    |
 | 27   | IR                     |
 | 28   |                        |
 | 29   | DEC_DSP2UP             |
