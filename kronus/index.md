@@ -16,3 +16,9 @@
 ### Boards
 
 -  [KLF7816_T2_02](klf7816_t2_02)
+
+## MSD7818
+
+-  Chip ID: 0x2f? | ?? ?? ??
+-  [Pinout](pinouts.md#msd7818)
+-  CPU clock speed: 552 MHz
