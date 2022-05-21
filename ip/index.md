@@ -149,7 +149,7 @@ Infinity2m have a clock divider. The IPL sets the divider of the first timer to 
 
 | Offset | Name  | Comment |
 | ---    | ---   | ---     |
-| 0x00   | CTRL  | bit0 - ~oe <BR> bit1 - trig <BR> bit3 - clear <BR> bit4 - capture <BR> bit8 - int |
+| 0x00   | CTRL  | bit0 - ~oe <br> bit1 - trig <br> bit3 - clear <br> bit4 - capture <br> bit8 - int |
 | 0x08   | MAX_L | Low 16 bits of the max value |
 | 0x0c   | MAX_H | High 16 bits of the max value |
 | 0x10   | CNT_L | Low 16 bits of the counter |
@@ -230,16 +230,16 @@ https://github.com/linux-chenxing/linux-ssc325/blob/pudding_clc03v002/drivers/ss
 | 0x4c   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |           |           |              |                                                                                     |
 | 0x50   |              |         |         |         |         |         |         |         |         |        |         |         |          |            |           |           |              |                                                                                     |
 | 0x54   | testbus      |         |         |         |         |         |         |         |         |        |         | clk_1k  |          |            |           |           | iso_en       |                                                                                     |
- 
+
 - Some of the vendor code says that the internal `sw0` and `sw1` registers are used for the resume address when resuming. These seem to be 16bits each, so you need both to get a 32bit address. 
- 
+
 |            | u-boot | linux        |
 |------------|--------|--------------|
 | infinity   |        | no hardware? |
 | infinity2m |        | wip          |
 | infinity3  |        | no hardware? |
 | mercury5   |        | no hardware? |
- 
+
 ## DMA
 
 ### BDMA
@@ -247,7 +247,7 @@ https://github.com/linux-chenxing/linux-ssc325/blob/pudding_clc03v002/drivers/ss
 BDMA or "Byte DMA" is a simple A -> B DMA engine. It's mainly used to
 move data from the memory mapped SPI NOR into main memory so the CPU
 doesn't have to do it. It also apparently supports doing CRC calculations.
- 
+
 [more info](bdma.md)
 
 #### Support Matrix
@@ -380,7 +380,7 @@ This seems to be a way of presenting the right resistor values on the data lines
 ### USBC
 
 This seems to be essentially a mux that sits between the UTMI and the UHC and OTG blocks so that UTMI can be connected to the right block for the current role the port is in.
- 
+
 [More details](usb.md)
 
 |            | u-boot | linux |
@@ -394,12 +394,12 @@ This seems to be essentially a mux that sits between the UTMI and the UHC and OT
 
 This is a usb host controller that seems to be based on a Faraday design. It's a broken-EHCI controller.
 Seems to be called "FUSBH200".
- 
+
 According to this commit on the Faraday usb controller PORTSC is at 0x30 instead of 0x44 which matches the register descriptions in the datahsheets we have with registers.
 https://github.com/linux-chenxing/u-boot/commit/e82a316d7f9425943d86c1ed61c5cf57b0d5b188#diff-7d35a95a303a716a610d53273a2cf3a8d3e0093b3fbfb3ce470285df7ff0ac2a
 
 [More details](usb.md)
- 
+
 |            | u-boot | linux |
 |------------|--------|-------|
 | infinity   |        | yes   |
@@ -418,9 +418,9 @@ This seems to be an musb USB device controller.
 | mercury5  |        | wip   |
 
 ### USB3
- 
- Seems to be DWC3
- 
+
+Seems to be DWC3
+
 ## ADC
 
 ### SAR
@@ -520,9 +520,9 @@ There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0
 [Rough register descriptions](https://github.com/fifteenhex/linux_mstar_3.18/blob/e424e92e5442490e2f19b6d18464be3730e0678c/drivers/mstar/i2c/infinity/mhal_iic_reg.h#L208)
 
 ## spi
- 
+
 ## pspi
- 
+
 Pixel(?) SPI. New in pioneer3
 
 ## pwm
@@ -561,7 +561,7 @@ Pixel(?) SPI. New in pioneer3
     4    |
 polarity |
  */
- ```
+```
 
 ## spi-nor
 
@@ -693,9 +693,9 @@ This is a frontend for the ISP that allows it to interface with a MIPI CSI senso
 
 - Infinity1 is apparently "mfe5"
 - Infinity3 is apparently "mfe6"
- 
+
 [Rough register descriptions](https://github.com/fifteenhex/SDK_pulbic/blob/master/Mercury5/proj/sc/driver/hal/mercury/mfe/inc/hal_mfe_reg.h)
- 
+
 ### VFE 
 
 - Infinity1 is apparently "h2v1"
@@ -717,7 +717,7 @@ https://github.com/ZYCX8888/Democode-TAKOYAKI-BETA001-0312/tree/d5841ab9fde1771b
 ### GE
 
 2D "GPU" for doing basic 2D graphics operations in hardware
- 
+
 [More info](ge.md)
 
 ## Audio
@@ -737,14 +737,14 @@ Also known as "Cleveland Haydn" or Haydn
 | infinity  | n/a    | wip   |
 | infinity3 | n/a    | wip   |
 | mercury5  | n/a    | wip   |
- 
- 
+
+
 ## SATA
- 
+
 Seems to be AHCI.
- 
+
 https://github.com/linux-chenxing/linux-ssc325/tree/takoyaki_dls00v017/drivers/sstar/sata_host
- 
+
 [SATA](sata.md)
 
 ## Misc
@@ -825,6 +825,28 @@ And m5:
 1f2008f0: 0d71 0000 0d71 0000 0d71 0000 0d71 0000    q...q...q...q...
 ```
 
+And kronus:
+
+```
+<< MStar >># md.w bf206700 80
+BF206700: 0019 0000 F009 0000 FFFF 0000 FFFF 0000    ................
+BF206710: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206720: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206730: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206740: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206750: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206760: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206770: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206780: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF206790: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF2067A0: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF2067B0: FFFF 0000 FFFF 0000 FFFF 0000 FFFF 0000    ................
+BF2067C0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
+BF2067D0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
+BF2067E0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
+BF2067F0: 0000 0000 0000 0000 0000 0000 0000 0000    ................
+```
+
 ### AI/NN
 
 Some chips seem to contain a [CEVA XM6](https://www.ceva-dsp.com/product/ceva-xm6/).
@@ -849,7 +871,7 @@ the reset line of the second core and lets it go.
 ### Version 1
 
 - 0x1f207800
- 
+
 |            | u-boot | linux     |
 |------------|--------|-----------|
 | infinity   |        | mainlined |
@@ -863,22 +885,22 @@ the reset line of the second core and lets it go.
  *  5   |  4  | 3 | 2 | 1 | 0
  * ~OEN | OUT | 0 | 0 | 0 | IN
  */
- ```
- 
- ### Version 2
+```
+
+### Version 2
 
 - 0x1f207c00
- 
+
 Pioneer3 has a slightly different GPIO that is in a new location.
 This new version apparently supports setting pull down, drive strength etc.
- 
+
 | bit      | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7              | 6 | 5               | 4           | 3 | 2             | 1   | 0  |
 |----------|----|----|----|----|----|----|---|---|----------------|---|-----------------|-------------|---|---------------|-----|----|
 | function |    |    |    |    |    |    |   |   | drive strength |   | pull something? | pull enable |   | output enable | out | in |
- 
+
 |            | u-boot | linux     |
 |------------|--------|-----------|
 | pioneer3   | n/a    | wip       |
 
 
- 
+
