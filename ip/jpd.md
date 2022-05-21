@@ -1,11 +1,11 @@
 # JPD
 
-JPD (JPeg Decoder)
+JPD (JPeg Decoder) is an hardware JPEG decoder...
 
 -  ROI (Region Of Interest)
--  RCSM
--  MRC
--  MWC
+-  RCSM -- set to the data after the FF-DA (SOS) marker
+-  MRC -- input jpeg file data
+-  MWC -- output framebuffer
 
 ## Registers
 
@@ -14,9 +14,14 @@ reg00: s config
     b0~b6
     b8~b15
     
+    b7 = ?? <set at the last moment when decoding>
+    b10 = enable downscale?
+    b11 = enable ROI?
     b13 = ?? <clr then set after reset>
+    b14 = ?? <set on decode>
 
 reg02: m config
+    b0~b1
     b2~b15
     
     b3 = reset?
@@ -44,37 +49,37 @@ reg10: roi height
     b0~b10 = ROI height
 
 reg12: int en
-    b0~b15
+    b0~b6
 
 reg14: event flag
-    b0~b15
+    b0~b6
 
 reg16: rcsm addr
-    b0~b31
+    b0~b27 = RCSM "MRC start" MIU address [0..27]
 
 reg1A: mrc buff floor
-    b0~b31
+    b0~b24 = MRC "Read buffer" buffer MIU start address [3..27]
 
 reg1E: mrc buff ceil
-    b0~b31
+    b0~b24 = MRC "Read buffer" buffer MIU end address [3..27]
 
 reg22: mwc buff start addr
-    b0~b31
+    b0~b24 = MWC "Output frame buffer" buffer MIU address [3..27]
 
 reg26: mw buff line num
-    b0~b15
+    b0~b13 = MWC "Output frame buffer" buffer line count
 
 reg28: cur mrc addr
-    b0~b31
+    b0~b27 = Current MRC buffer MIU address [0..27]
 
 reg2C: cur row
-    b0~b10
+    b0~b10 = Current row [3..13?]
 
 reg2E: cur col
-    b0~b10
+    b0~b10 = Current column [3..13?]
 
 reg30: cur vidx
-    b0~b10
+    b0~b10 = Current line
 
 reg38: spare
     b0~b15
