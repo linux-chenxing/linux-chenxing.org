@@ -239,7 +239,7 @@ This variant now uses 4 bytes for bus addressing, and also introduced bus channe
 
 # ISP SPI protocol
 
-Some details on the SPI over i2c protocol are [here](http://boeglin.org/blog/index.php?entry=Flashing-a-BenQ-Z-series-for-free%40dom%40). The same windows tool is used for all MStar chips it seems so this is probably valid across the board.
+Some details on the SPI over i2c protocol are [here](http://boeglin.org/blog/index.php?entry=Flashing-a-BenQ-Z-series-for-free). The same windows tool is used for all MStar chips it seems so this is probably valid across the board.
 
 The 0x49 i2c slave is the SPI bridge to the flash.
 
