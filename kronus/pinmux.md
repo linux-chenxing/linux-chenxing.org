@@ -74,7 +74,9 @@ reg06:
       3 => hsync_out/vsync_out [?]
 
 reg08:
-    b4~b6 = 
+    b4~b6 = [tms/tdo/tdi/tck]_mcu:
+      0 => none
+      1 => ts1_[clk/d7/vld/sync]
 
 reg0A:
     b0~b2 = spdif_in: [..?]
