@@ -521,3 +521,202 @@ https://github.com/fifteenhex/SDK_pulbic/blob/c1436fa7446457e8d6547874d27ee4e34b
 0x37 0x7F
 0x35
 0x71
+
+----
+## Appendix
+
+Python classes to interface ISP/SERDB protocols.
+
+```py
+from periphery import I2C, I2CError
+
+class MStarISP():
+	def __init__(self, bus, addr):
+		self.bus = bus
+		self.addr = addr
+
+	def __enter__(self):
+		self.enter()
+		return self
+
+	def __exit__(self, etype, evalue, trace):
+		self.exit()
+	
+	## bus related ##
+	def bus_xfer(self, send, recv=0):
+		msgs = [I2C.Message(send)]
+		if recv > 0: msgs.append(I2C.Message(bytes(recv),read=True))
+		self.bus.transfer(self.addr, msgs)
+		if recv > 0: return msgs[1].data
+
+	## protocol related ##
+	def enter(self):
+		try:
+			self.bus_xfer(b'MSTAR')
+		except I2CError:
+			# try again, maybe the interface is still active?
+			self.exit()
+			self.bus_xfer(b'MSTAR')
+
+	def exit(self):
+		self.bus_xfer(b'\x24')
+
+	def spi_send(self, data):
+		self.bus_xfer(b'\x10' + data)
+
+	def spi_recv(self, size):
+		return self.bus_xfer(b'\x11', size)
+
+	def spi_stop(self):
+		self.bus_xfer(b'\x12')
+	
+	def get_isp_status(self):
+		return self.bus_xfer(b'\x20', 1)[0]
+	
+	def do_cmd21(self): # resets CRC and may also break SPI
+		self.bus_xfer(b'\x21')
+	
+	def get_isp_crc16(self):
+		val = self.bus_xfer(b'\x22', 1) + self.bus_xfer(b'\x23', 1)
+		return int.from_bytes(val, 'big')
+	
+	def do_cmd25(self): # this kills ISP
+		self.bus_xfer(b'\x25')
+
+class MStarSERDB():
+	def __init__(self, bus, addr, new_proto=True):
+		self.bus = bus
+		self.addr = addr
+		self.new_proto = new_proto
+
+	def __enter__(self):
+		self.enter()
+		return self
+
+	def __exit__(self, etype, evalue, trace):
+		self.exit()
+	
+	## bus related ##
+	def bus_xfer(self, send, recv=0):
+		#print("BUS XFER: ", send, recv)
+		msgs = [I2C.Message(send)]
+		if recv > 0: msgs.append(I2C.Message(bytes(recv),read=True))
+		self.bus.transfer(self.addr, msgs)
+		if recv > 0: return msgs[1].data
+
+	## protocol related ##
+	def enter(self):
+		self.curr_ch = -1
+		self.curr_bank = -1
+		
+		try:
+			self.bus_xfer(b'SERDB')
+		except I2CError:
+			# try again, maybe the interface is still active?
+			self.exit()
+			self.bus_xfer(b'SERDB')
+
+	def exit(self):
+		try:
+			self.bus_xfer(b'\x45')
+		except I2CError:
+			# it always NAKs
+			pass
+
+	def set_channel(self, ch):
+		self.bus_xfer(b'\x81' if (ch & 1) else b'\x80')
+		self.bus_xfer(b'\x83' if (ch & 2) else b'\x82')
+		self.bus_xfer(b'\x85' if (ch & 4) else b'\x84')
+	
+	def i2c_reshape(self):
+		self.bus_xfer(b'\x71')
+	
+	def cmd_53(self):
+		self.bus_xfer(b'\x53')
+	
+	def cmd_7F(self):
+		self.bus_xfer(b'\x7f')
+
+	def stop_mcu(self, stop):
+		self.bus_xfer(b'\x37' if stop else b'\x36')
+
+	def bus_enable(self, en):
+		self.bus_xfer(b'\x35' if en else b'\x34')
+
+	def bus_write(self, addr, data):
+		self.bus_xfer(b'\x10' + int.to_bytes(addr, 4 if self.new_proto else 2, 'big') + data)
+
+	def bus_read(self, addr, size):
+		return self.bus_xfer(b'\x10' + int.to_bytes(addr, 4 if self.new_proto else 2, 'big'), size)
+
+	## higher level protocol ##
+	def swch(self, ch):
+		if (ch < 0) or (ch > 7): return
+		if self.curr_ch == ch: return
+		self.curr_ch = ch
+		
+		# only new proto can do that
+		if not self.new_proto: return
+		
+		self.i2c_reshape()
+		self.set_channel(ch)
+		self.cmd_53()
+		self.cmd_7F()
+	
+	# read
+	def read(self, addr, size):
+		self.bus_enable(True)
+		
+		if not self.new_proto:
+			bank = addr >> 16
+			if self.curr_bank != bank:
+				self.curr_bank = bank
+				self.bus_write(0x0000, bytes([bank]))
+			addr &= 0xffff
+		
+		data = self.bus_read(addr, size)
+		self.bus_enable(False)
+		return data
+	
+	def read8(self, addr):
+		return int.from_bytes(self.read(addr, 1), 'little')
+
+	def read16(self, addr):
+		return int.from_bytes(self.read(addr, 2), 'little')
+
+	def read32(self, addr):
+		return int.from_bytes(self.read(addr, 4), 'little')
+
+	# write
+	def write(self, addr, data):
+		self.bus_enable(True)
+		
+		if not self.new_proto:
+			bank = addr >> 16
+			if self.curr_bank != bank:
+				self.curr_bank = bank
+				self.bus_write(0x0000, bytes([bank]))
+			addr &= 0xffff
+		
+		self.bus_write(addr, data)
+		self.bus_enable(False)
+	
+	def write8(self, addr, val):
+		self.write(addr, int.to_bytes(val & 0xff, 1, 'little'))
+
+	def write16(self, addr, val):
+		self.write(addr, int.to_bytes(val & 0xffff, 2, 'little'))
+
+	def write32(self, addr, val):
+		self.write(addr, int.to_bytes(val & 0xffffffff, 4, 'little'))
+
+	def wmask8(self, addr, mask, val):
+		self.write8(addr, (self.read8(addr) & ~mask) | (val & mask))
+
+	def wmask16(self, addr, mask, val):
+		self.write16(addr, (self.read16(addr) & ~mask) | (val & mask))
+
+	def wmask32(self, addr, mask, val):
+		self.write32(addr, (self.read32(addr) & ~mask) | (val & mask))
+
+```
