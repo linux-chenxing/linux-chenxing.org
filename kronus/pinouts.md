@@ -78,11 +78,11 @@
 |  69 | TS1_D5                | I2CM1_SCL                               |
 |  70 | TS1_D4                | I2S_OUT_MUTE                            |
 |  71 | TS1_D3                | I2S_OUT_BCK                             |
-|  72 | TS1_D2                | I2S_OUT_D0, SPI_CLK, **MPIF_CLK?**                      |
-|  73 | TS1_D1                | I2S_OUT_WS, SPI_IRQ,                                    |
-|  74 | TS1_D0                | I2S_OUT_D1, SPI_CSZ, **MPIF_CS0Z?**                     |
-|  75 | TS1_VLD               | I2S_OUT_D2, SPI_MOSI, TDI_MCU, **MPIF_D0?**             |
-|  76 | TS1_SYNC              | I2S_OUT_MCK, SPI_MISO, TCK_MCU, EJ_DINT, **MPIF_BUSY?** |
+|  72 | TS1_D2                | I2S_OUT_D0, SPI_CLK, MPIF_CLK           |
+|  73 | TS1_D1                | I2S_OUT_WS, SPI_IRQ                     |
+|  74 | TS1_D0                | I2S_OUT_D1, SPI_CSZ, MPIF_CS0Z          |
+|  75 | TS1_VLD               | I2S_OUT_D2, SPI_MOSI, TDI_MCU, MPIF_D0  |
+|  76 | TS1_SYNC              | I2S_OUT_MCK, SPI_MISO, TCK_MCU, EJ_DINT, MPIF_BUSY |
 |  77 | VDDP_3                |                                         |
 |  78 | VDDC                  |                                         |
 |  79 | S_GPIO3               | UART1_RX, EJ_RSTZ                       |
