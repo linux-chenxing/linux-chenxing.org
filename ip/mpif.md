@@ -11,7 +11,7 @@ And there seem to be no way to hold CS low on the end of the transaction!
 Also note that when DMA writes into memory, when the transfer length is not aligned to 8 byte boundary,
 the remaining bytes is written with 0x00. (i.e. the dma buffer length needs to be aligned).
 
-Accesses to the local data buffers should be done 16 bit-wise.
+The bus clock is the incoming module clock divided by 2, e.g. ~62 MHz for ~123 MHz or 13.5 MHz for 27 MHz.
 
 ## Registers
 
