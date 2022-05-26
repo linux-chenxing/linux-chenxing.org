@@ -11,6 +11,8 @@ And there seem to be no way to hold CS low on the end of the transaction!
 Also note that when DMA writes into memory, when the transfer length is not aligned to 8 byte boundary,
 the remaining bytes is written with 0x00. (i.e. the dma buffer length needs to be aligned).
 
+Accesses to the local data buffers should be done 16 bit-wise.
+
 ## Registers
 
 ```
@@ -170,7 +172,7 @@ reg5A: interrupt status
     b13 = Error
 
 reg60:
-    b0 = soft reset (set then clear)
+    b0 = soft reset (clear then set)
     b2~b3 = MPIF channel 1A/2A/2B turnaround cycle count [0..1]
     b4~b5 = MPIF ACK/NAK wait cycle count
     b6~b7 = MPIF slave 0 data width:
