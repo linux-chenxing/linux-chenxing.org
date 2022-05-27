@@ -9,7 +9,7 @@
 
 ## MSD7816
 
--  Chip ID: 0x2f | 0x00 0x00 0x06
+-  Chip ID: 0x2f / 0x00 0x00 0x06
 -  [Pinout](pinouts.md#msd7816)
 -  CPU clock speed: 552 MHz
 
@@ -19,6 +19,6 @@
 
 ## MSD7818
 
--  Chip ID: 0x2f? | ?? ?? ??
+-  Chip ID: 0x2f? / ?? ?? ??
 -  [Pinout](pinouts.md#msd7818)
 -  CPU clock speed: 552 MHz
