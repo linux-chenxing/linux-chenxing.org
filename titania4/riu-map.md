@@ -3,6 +3,7 @@
 **Note: it's an assumption right now**
 
 ## PM
+
 | riu addr |  phy addr  |             name              |
 |----------|------------|-------------------------------|
 | 0x000100 | 0x1f000200 | PM_RIU_DBG                    |
@@ -29,6 +30,7 @@
 | 0x003D80 | 0x1f007b00 | IR (nec/etc)                  |
 
 ## Non-PM
+
 | riu addr |  phy addr  |             name              |
 |----------|------------|-------------------------------|
 | 0x100100 | 0x1f200200 | RIU_DBG                       |
