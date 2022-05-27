@@ -8,14 +8,14 @@
 
 ## MSD7T01
 
--  Chip ID: ?? | ?? ?? ??
+-  Chip ID: ?? / ?? ?? ??
 -  [Pinout](pinouts.md#msd7t0x)
 -  CPU clock speed: 576 MHz
 -  Integrated 64 MiB DDR2 DRAM
 
 ## MSD7T03
 
--  Chip ID: ?? | ?? ?? ??
+-  Chip ID: ?? / ?? ?? ??
 -  [Pinout](pinouts.md#msd7t0x)
 -  CPU clock speed: 576 MHz
 -  Integrated 128 MiB DDR3 DRAM
