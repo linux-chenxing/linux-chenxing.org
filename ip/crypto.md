@@ -1,5 +1,7 @@
 [rough register descriptions](https://github.com/fifteenhex/linux-ssc325/blob/v4.9.84-sigmastar/drivers/sstar/crypto/hal/infinity3/halAESDMA.h)
 
+https://github.com/linux-chenxing/linux-ssc325/blob/takoyaki_dls00v050/drivers/sstar/crypto/halAESDMA.c
+
 ### RNG
 
 RNG block registermap:
