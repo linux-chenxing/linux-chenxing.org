@@ -60,6 +60,14 @@ Z - 0xC0
 
 LEN - Apparently defaults to 0x3f if the hardware key is selected.
 
+
+Debugging notes:
+- 0x0 - Can't write anything, always read 0
+- 0x4 - Can write all bits
+- 0x8 - Can write all bits
+- 0xc - Can write all bits
+- 0x10 - Can't write anything, alaways read 0
+
 ### AESDMA
 
 For infinity2m and infinity6 seem to support 256 bit keys. Everything else seems to only support 128 bit keys.
