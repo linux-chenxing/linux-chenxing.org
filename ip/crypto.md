@@ -68,6 +68,8 @@ Debugging notes:
 - 0xc - Can write all bits
 - 0x10 - Can't write anything, alaways read 0
 
+https://github.com/linux-chenxing/uboot_msc313e/blob/tiramisu_dls00V007/drivers/mstar/aesdma/cmd_sigauth.c
+
 ### AESDMA
 
 For infinity2m and infinity6 seem to support 256 bit keys. Everything else seems to only support 128 bit keys.
