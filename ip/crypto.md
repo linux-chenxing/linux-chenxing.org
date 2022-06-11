@@ -69,6 +69,7 @@ Debugging notes:
 - 0x10 - Can't write anything, alaways read 0
 
 https://github.com/linux-chenxing/uboot_msc313e/blob/tiramisu_dls00V007/drivers/mstar/aesdma/cmd_sigauth.c
+https://github.com/linux-chenxing/uboot_msc313e/blob/tiramisu_dls00V007/drivers/mstar/aesdma/drvAESDMA.c
 
 ### AESDMA
 
