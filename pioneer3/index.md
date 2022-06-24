@@ -13,9 +13,16 @@ The SDK family is `ikayaki`.
 - 0x0000000 - cis
 - 0x0000800 - partition table
 - 0x0001000 - flash table
-- 0x0014000 - IPL copy 0
-- 0x0034000 - IPL copy 1
-- 0x0054000 - IPL copy 2
+- 0x0140000 - IPL copy 0
+- 0x0340000 - IPL copy 1
+- 0x0540000 - IPL copy 2
+
+- 0x01a0000 - IPLN copy 0
+- 0x01c0000 - IPLN copy 1
+- 0x01e0000 - IPLN copy 2
+
+- 0x0200000 - u-boot 0
+- 
 
 ## SSD210
 
