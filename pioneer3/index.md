@@ -6,6 +6,17 @@ This seems to be a family that have both video capture hardware and display hard
 
 The SDK family is `ikayaki`.
 
+## Flash Layout
+
+### SPI NAND
+
+0x0000000 - cis
+0x0000800 - partition table
+0x0001000 - flash table
+0x0014000 - IPL copy 0
+0x0034000 - IPL copy 1
+0x0054000 - IPL copy 2
+
 ## SSD210
 
 - Dual Cortex A7
