@@ -28,7 +28,7 @@ The SDK family is `ikayaki`.
 
 - Dual Cortex A7
 - 64MB DDR2
-- 64KB SRAM (based on usb loader IPL size)
+- 57KB SRAM (Previously thought this was 64KB based on the USB loader binary size and the i2m having 64KB, seems they made it even smaller!!)
 - .35mm pitch (?) 68 (+ exposed pad) pin QFN
 - xx KB Boot ROM with support for booting from SPI NOR, SPI NAND, USB 
 
