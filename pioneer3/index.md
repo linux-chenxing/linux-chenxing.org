@@ -104,6 +104,74 @@ Yes, the PM_SPI_CK seems weird.
 
 # DDR RE
 
+Original  IPL output:
+
+```
+IPL g6b146fc
+D-06
+HW Reset
+49104282 00871044
+Resume? N, addr 00871044
+miupll_200MHz
+SPI 54M
+64MB
+BIST0_0001-OK
+SPI 108M
+[BBT] Found table @ 0x00020000
+ 
+Checksum OK
+
+IPL_CUST gd2b1bc7
+[FLASH] SNI not match device, need to find correct SNI!
+[FLASH] bad block 0x0000
+[FLASH] Not found device id in SNI.
+[FLASH] top/buttom = 0x0004
+[FLASH] block = 0x0000
+[FLASH] SRP0 = 0x0000
+[FLASH] SRP1 = 0x0000
+[FLASH] Found ext SNI @ 0xa0007850
+[SPINAND] RFC use command 0xeb with 0x04 dummy clock.
+[SPINAND] Setup timeout 0x0000c350 us.
+[FLASH] Unlock all block.
+Got BBT
+load part: UBOOT00
+load part: UBOOT00
+Load BL from flash
+total time 87358 us, size:280452 bytes 
+
+
+U-Boot 2015.01farts (Jun 25 2022 - 09:24:27)
+
+Version: P3g#######
+I2C:   ready
+DRAM:  
+WARNING: Caches not enabled
+SPINAND_I:  [FLASH] Found SNI in block 0.
+[FLASH] dev_id = 0xee
+[FLASH] mfr_id = 0xcd, dev_id= 0xea id_len = 0x3
+[SPINAND] RFC ues command 0xeb with 0x04 dummy clock.
+[FLASH] Unlock all block.
+[FLASH] Use BDMA.
+128 MiB
+MMC:   MStar SD/MMC: 0
+ENV: offset = 0x440000 size = 0x60000
+ENV1: offset = 0x0 size = 0x0
+ENV1 partition size set error!
+*** Warning - ENV1 size error, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   MAC Address 00:30:1B:BA:02:DB
+Auto-Negotiation...
+AN failLink Status Speed:10 Full-duplex:0
+Status Error!
+sstar_emac
+Warning: sstar_emac using MAC address from net device
+
+SigmaStar # 
+```
+
 MIU settings in vendor u-boot: 
 
 ```
