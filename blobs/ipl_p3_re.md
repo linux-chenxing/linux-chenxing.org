@@ -205,7 +205,7 @@ RIU Register unhandled write:	0x00206728 -> 0x00000001, write size 1
 RIU Register unhandled write:	0x00206729 -> 0x00000000, write size 1
 RIU Register unhandled write:	0x0020672c -> 0x00000000, write size 1
 RIU Register unhandled write:	0x0020672d -> 0x00000000, write size 1
-RIU Register unhandled read:	0x00284000, size 1
+RIU Register read:	0x00284000 = 0x00000000, size 1
 RIU Register read:	0x00221028 = 0x00000060, size 1
 RIU Register write:	0x00221000: 0x00000000 -> 0x00000030, write size 1
 RIU Register read:	0x00221028 = 0x00000060, size 1
