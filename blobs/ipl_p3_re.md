@@ -9,6 +9,9 @@ RIU Register unhandled write:	0x00223624 -> 0x00000000, write size 1
 RIU Register write - mpll:	0x00206005: 0x00000000 -> 0x00000000, write size 1
 New check point 0x0000b002
 New check point 0x00000b12
+```
+
+```
 RIU Register write - clkgen:	0x00207080: 0x00000000 -> 0x00000004, write size 1
 RIU Register write - clkgen:	0x00207004: 0x00000000 -> 0x00000030, write size 1
 RIU Register write - clkgen:	0x00207180: 0x00000000 -> 0x00000010, write size 1
@@ -16,6 +19,16 @@ RIU Register write - clkgen:	0x002070c8: 0x00000000 -> 0x00000004, write size 1
 RIU Register read - clkgen:	0x002070c8 = 0x00000000, size 1
 RIU Register write - clkgen:	0x002070c8: 0x00000000 -> 0x00000020, write size 1
 New check point 0x00000b13
+```
+
+Configuring clocks
+
+- what is 0x80?
+- 0x4 is riubrdg
+- 0x180 is BDMA
+- 0xc8 is SPI
+
+```
 RIU Register read - pmsleep:	0x00001c7c = 0x00000000, size 2
 RIU Register write - pmsleep:	0x00001c81: 0x00000000 -> 0x00000400, write size 1
 RIU Register read - pmsleep:	0x00001c81 = 0x00000000, size 1
@@ -24,8 +37,14 @@ New check point 0x0000b012
 RIU Register read - chiptop_ssd210:	0x00203d20 = 0x00000006, size 1
 RIU Register unhandled read:	0x0020025c, size 2
 RIU Register unhandled write:	0x0020025c -> 0x00000001, write size 2
+```
+
+```
 RIU Register write - clkgen:	0x002070c4: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - clkgen:	0x002070c4: 0x00000000 -> 0x00000000, write size 1
+```
+
+```
 RIU Register read - pmsleep:	0x00001c24 = 0x00000000, size 2
 RIU Register write - pmsleep:	0x00001c24: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - chiptop_ssd210:	0x00203d4c: 0x00000000 -> 0x00003210, write size 2
