@@ -6,7 +6,14 @@ New check point 0x0000a001
 New check point 0x0000a002
 New check point 0x0000b001
 RIU Register unhandled write:	0x00223624 -> 0x00000000, write size 1
+```
+```
 RIU Register write - mpll:	0x00206005: 0x00000000 -> 0x00000000, write size 1
+```
+
+Turn on MPLL, this is used for the UART clock and everything else so I guess they do it first.
+
+```
 New check point 0x0000b002
 New check point 0x00000b12
 ```
