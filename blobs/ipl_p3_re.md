@@ -353,7 +353,8 @@ RIU Register read - clkgen:	0x0020705c = 0x00000000, size 1
 RIU Register write - clkgen:	0x0020705c: 0x00000000 -> 0x00000010, write size 1
 RIU Register write - clkgen:	0x00207080: 0x00000000 -> 0x00000004, write size 1
 RIU Register unhandled write:	0x002041f0 -> 0x00000001, write size 1
-RIU Register unhandled write:	0x00204404 -> 0x00000084, write size 1
+RIU Register write - l3bridge:	0x00204404: 0x00000000 -> 0x00000084, write size 1
+mcu_req_max_miu0: 84
 RIU Register write - clkgen:	0x002070c4: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - clkgen:	0x00207180: 0x00000000 -> 0x00000010, write size 1
 RIU Register write - pmsleep:	0x00001c81: 0x00000000 -> 0x00001000, write size 1
@@ -402,5 +403,4 @@ RIU Register read - efuse:	0x00004074 = 0x00000000, size 2
 Memory read: 0x00000000 = 0x00000000
 Memory write: 0x00000000 -> 0x11111111
 MstarEmu.java> Finished!
-
 ```
