@@ -23,7 +23,7 @@ New check point 0x00000b13
 
 Configuring clocks
 
-- what is 0x80?
+- 0x20 MIU boot clock
 - 0x4 is riubrdg
 - 0x180 is BDMA
 - 0xc8 is SPI
@@ -43,6 +43,8 @@ RIU Register unhandled write:	0x0020025c -> 0x00000001, write size 2
 RIU Register write - clkgen:	0x002070c4: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - clkgen:	0x002070c4: 0x00000000 -> 0x00000000, write size 1
 ```
+
+- UART0 clock
 
 ```
 RIU Register read - pmsleep:	0x00001c24 = 0x00000000, size 2
@@ -365,21 +367,42 @@ RIU Register write - miudig:	0x002023d8: 0x00000000 -> 0x00000002, write size 1
 RIU Register write - miudig:	0x002023d9: 0x00000000 -> 0x00000200, write size 1
 RIU Register write - miudig:	0x002023f0: 0x00000000 -> 0x000000e1, write size 1
 RIU Register write - miudig:	0x002023f1: 0x00000000 -> 0x0000ff00, write size 1
+```
+
+```
 RIU Register read - clkgen:	0x0020705c = 0x00000000, size 1
 RIU Register write - clkgen:	0x0020705c: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - clkgen:	0x0020705c: 0x00000000 -> 0x00000008, write size 1
 RIU Register read - clkgen:	0x0020705c = 0x00000000, size 1
 RIU Register write - clkgen:	0x0020705c: 0x00000000 -> 0x00000010, write size 1
 RIU Register write - clkgen:	0x00207080: 0x00000000 -> 0x00000004, write size 1
+```
+
+- MIU clock
+- MIU boot clock
+
+```
 RIU Register unhandled write:	0x002041f0 -> 0x00000001, write size 1
 RIU Register write - l3bridge:	0x00204404: 0x00000000 -> 0x00000084, write size 1
 mcu_req_max_miu0: 84
+```
+
+```
 RIU Register write - clkgen:	0x002070c4: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - clkgen:	0x00207180: 0x00000000 -> 0x00000010, write size 1
+```
+
+- 0xc4 - UART0 clock
+- 0x180 - BDMA
+
+```
 RIU Register write - pmsleep:	0x00001c81: 0x00000000 -> 0x00001000, write size 1
 RIU Register read - pmsleep:	0x00001c81 = 0x00000000, size 1
 RIU Register write - pmsleep:	0x00001c81: 0x00000000 -> 0x00004000, write size 1
 UART TX: SPI 54M
+```
+
+```
 RIU Register write - clkgen:	0x002070c8: 0x00000000 -> 0x00000010, write size 1
 RIU Register read - clkgen:	0x002070c8 = 0x00000000, size 1
 RIU Register write - clkgen:	0x002070c8: 0x00000000 -> 0x00000020, write size 1
@@ -388,6 +411,13 @@ RIU Register write - clkgen:	0x002071c4: 0x00000000 -> 0x00000003, write size 1
 RIU Register write - clkgen:	0x002071c5: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - clkgen:	0x00207184: 0x00000000 -> 0x00000004, write size 1
 RIU Register write - clkgen:	0x00207184: 0x00000000 -> 0x00000014, write size 1
+```
+
+- 0xc8 - SPI
+- 0x1c4/1c5 - pll gates
+- 0x184 - ISP
+
+```
 RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miudig:	0x002024cc: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miudig:	0x0020250c: 0x00000000 -> 0x00000000, write size 2
