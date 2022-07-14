@@ -85,6 +85,9 @@ RIU Register read - wdt:	0x00006008 = 0x00000000, size 2
 RIU Register read - pmpor:	0x00000c04 = 0x00000000, size 2
 UART TX: 
 HW Reset
+```
+
+```
 RIU Register write - lpll:	0x00206720: 0x0000ffff -> 0x0000ffa3, write size 1
 RIU Register write - lpll:	0x00206721: 0x0000ffff -> 0x00008bff, write size 1
 RIU Register write - lpll:	0x00206724: 0x0000ffff -> 0x0000ff2e, write size 1
@@ -103,6 +106,11 @@ RIU Register write - lpll:	0x00206728: 0x0000ffff -> 0x0000ff01, write size 1
 RIU Register write - lpll:	0x00206729: 0x0000ffff -> 0x000000ff, write size 1
 RIU Register write - lpll:	0x0020672c: 0x0000ffff -> 0x0000ff00, write size 1
 RIU Register write - lpll:	0x0020672d: 0x0000ffff -> 0x000000ff, write size 1
+```
+
+LPLL setup
+
+```
 RIU Register read - upll0:	0x00284000 = 0x00000000, size 1
 UART TX: 00000000 00000000
 UART TX: Resume? N, addr 00000000
