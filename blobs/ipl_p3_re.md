@@ -112,6 +112,13 @@ LPLL setup
 
 ```
 RIU Register read - upll0:	0x00284000 = 0x00000000, size 1
+```
+
+Turn on UPLL
+
+--- Up to here we might resume so DDR could be alive already ---
+
+```
 UART TX: 00000000 00000000
 UART TX: Resume? N, addr 00000000
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c00, write size 2
