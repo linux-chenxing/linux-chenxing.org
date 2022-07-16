@@ -137,6 +137,9 @@ RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c00, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c00, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c00, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c01, write size 2
+```
+
+```
 RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x0000fffe, write size 2
 RIU Register write - miudig:	0x002024cc: 0x00000000 -> 0x0000ffff, write size 2
 RIU Register write - miudig:	0x0020250c: 0x00000000 -> 0x0000ffff, write size 2
@@ -144,6 +147,11 @@ RIU Register write - miudig:	0x0020254c: 0x00000000 -> 0x0000ffff, write size 2
 RIU Register write - miudig:	0x0020220c: 0x00000000 -> 0x0000ffff, write size 2
 RIU Register write - miudig:	0x0020224c: 0x00000000 -> 0x0000ffff, write size 2
 RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x0000fffe, write size 2
+```
+
+-- Disable access from other clients?
+
+```
 RIU Register write - miuana:	0x002020f0: 0x00000000 -> 0x00000001, write size 2
 RIU Register write - miuana:	0x00202048: 0x00000000 -> 0x00001000, write size 2
 RIU Register write - miuana:	0x00202048: 0x00000000 -> 0x00000000, write size 2
