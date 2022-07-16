@@ -154,17 +154,19 @@ RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x0000fffe, write size 2 
 -- Disable access from other clients?
 
 ```
-RIU Register write - miuana:	0x002020f0: 0x00000000 -> 0x00000001, write size 2
-RIU Register write - miuana:	0x00202048: 0x00000000 -> 0x00001000, write size 2
-RIU Register write - miuana:	0x00202048: 0x00000000 -> 0x00000000, write size 2
-RIU Register write - miuana:	0x0020206c: 0x00000000 -> 0x00000400, write size 2
-RIU Register write - miuana:	0x00202068: 0x00000000 -> 0x00002004, write size 2
-RIU Register write - miuana:	0x00202114: 0x00000000 -> 0x00000001, write size 2
-RIU Register write - miuana:	0x00202060: 0x00000000 -> 0x00008000, write size 2
-RIU Register write - miuana:	0x00202064: 0x00000000 -> 0x00000029, write size 2
-RIU Register write - miuana:	0x00202044: 0x00000000 -> 0x00000004, write size 2
-RIU Register write - miuana:	0x00202058: 0x00000000 -> 0x00000114, write size 2
+RIU Register write - miuana:	0x002020f0: 0x00000000 -> 0x00000001, write size 2 - 0x3c
+RIU Register write - miuana:	0x00202048: 0x00000000 -> 0x00001000, write size 2 - 0x12 - ddrat
+RIU Register write - miuana:	0x00202048: 0x00000000 -> 0x00000000, write size 2 -
+RIU Register write - miuana:	0x0020206c: 0x00000000 -> 0x00000400, write size 2 - 0x1b ddrpll
+RIU Register write - miuana:	0x00202068: 0x00000000 -> 0x00002004, write size 2 - 0x1a ddrpll
+RIU Register write - miuana:	0x00202114: 0x00000000 -> 0x00000001, write size 2 - 0x45 - ??
+RIU Register write - miuana:	0x00202060: 0x00000000 -> 0x00008000, write size 2 - 0x18 - ddfset
+RIU Register write - miuana:	0x00202064: 0x00000000 -> 0x00000029, write size 2 - 0x1c - ddfset
+RIU Register write - miuana:	0x00202044: 0x00000000 -> 0x00000004, write size 2 - 0x11 - ddrat
+RIU Register write - miuana:	0x00202058: 0x00000000 -> 0x00000114, write size 2 - 0x16
 ```
+
+DDRPLL config?
 
 ```
 RIU Register write - miudig:	0x00202404: 0x00000000 -> 0x00000292, write size 2
