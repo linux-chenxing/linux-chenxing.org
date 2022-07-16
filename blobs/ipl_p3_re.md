@@ -139,6 +139,8 @@ RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c00, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c01, write size 2
 ```
 
+MIU digital reset?
+
 ```
 RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x0000fffe, write size 2
 RIU Register write - miudig:	0x002024cc: 0x00000000 -> 0x0000ffff, write size 2
@@ -162,6 +164,9 @@ RIU Register write - miuana:	0x00202060: 0x00000000 -> 0x00008000, write size 2
 RIU Register write - miuana:	0x00202064: 0x00000000 -> 0x00000029, write size 2
 RIU Register write - miuana:	0x00202044: 0x00000000 -> 0x00000004, write size 2
 RIU Register write - miuana:	0x00202058: 0x00000000 -> 0x00000114, write size 2
+```
+
+```
 RIU Register write - miudig:	0x00202404: 0x00000000 -> 0x00000292, write size 2
 RIU Register write - miudig:	0x00202408: 0x00000000 -> 0x00000051, write size 2
 RIU Register write - miudig:	0x0020240c: 0x00000000 -> 0x00001b50, write size 2
@@ -196,6 +201,9 @@ RIU Register write - miudig:	0x002022c4: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miudig:	0x002022c8: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miudig:	0x002022cc: 0x00000000 -> 0x00000030, write size 2
 RIU Register write - miudig:	0x002022d0: 0x00000000 -> 0x00005000, write size 2
+```
+
+```
 RIU Register write - miuana:	0x00202004: 0x00000000 -> 0x0000aaaa, write size 2
 RIU Register write - miuana:	0x00202008: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miuana:	0x00202014: 0x00000000 -> 0x00000000, write size 2
@@ -256,6 +264,9 @@ RIU Register write - miuana:	0x00202130: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miuana:	0x00202134: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miuana:	0x00202120: 0x00000000 -> 0x0000f0f1, write size 2
 RIU Register write - miuana:	0x002020e0: 0x00000000 -> 0x00000800, write size 2
+```
+
+```
 RIU Register write - miudig:	0x00202458: 0x00000000 -> 0x00008021, write size 2
 RIU Register write - miudig:	0x002025f8: 0x00000000 -> 0x0000951a, write size 2
 RIU Register write - miudig:	0x002024a4: 0x00000000 -> 0x0000ffff, write size 2
@@ -270,6 +281,9 @@ RIU Register write - miudig:	0x00202500: 0x00000000 -> 0x00008015, write size 2
 RIU Register write - miudig:	0x00202540: 0x00000000 -> 0x00008015, write size 2
 RIU Register write - miudig:	0x00202200: 0x00000000 -> 0x00008015, write size 2
 RIU Register write - miudig:	0x00202240: 0x00000000 -> 0x00008015, write size 2
+```
+
+```
 RIU Register write - miuana:	0x00202114: 0x00000000 -> 0x00000001, write size 2
 RIU Register write - miuana:	0x002020e0: 0x00000000 -> 0x00000800, write size 2
 RIU Register write - miuana:	0x002020b0: 0x00000000 -> 0x00000a0a, write size 2
@@ -282,8 +296,14 @@ RIU Register write - miuana:	0x00202010: 0x00000000 -> 0x0000003f, write size 2
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x0000000f, write size 2
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
+```
+
+```
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00008c01, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00008c00, write size 2
+```
+
+```
 RIU Register write - miuana:	0x00202000: 0x00000000 -> 0x00002010, write size 2
 RIU Register write - miuana:	0x00202000: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miuana:	0x00202030: 0x00000000 -> 0x00000000, write size 2
@@ -293,14 +313,23 @@ RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x0000000f, write size 2
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
 RIU Register write - miuana:	0x00202000: 0x00000000 -> 0x00000001, write size 2
+```
+
+```
 RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x00000008, write size 2
 RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x0000000c, write size 2
 RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x0000000e, write size 2
 RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x0000000f, write size 2
+```
+
+```
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x0000000f, write size 2
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
+```
+
+```
 RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x00007ffe, write size 2
 RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x0000fffa, write size 2
 RIU Register write - miudig:	0x002025fc: 0x00000000 -> 0x0000a0e1, write size 2
@@ -314,6 +343,9 @@ RIU Register read - efuse:	0x0000402c = 0x00000000, size 2
 RIU Register read - miuana:	0x00202064 = 0x00000029, size 2
 RIU Register read - miuana:	0x00202060 = 0x00008000, size 2
 RIU Register read - miudig:	0x00202404 = 0x00000000, size 2
+```
+
+```
 UART TX: miupll_200MHz
 RIU Register write - miupll:	0x00206208: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - miupll:	0x00206209: 0x00000000 -> 0x00000000, write size 1
@@ -322,6 +354,9 @@ RIU Register write - miupll:	0x0020620d: 0x00000000 -> 0x00000100, write size 1
 RIU Register write - miupll:	0x00206210: 0x00000000 -> 0x00000010, write size 1
 RIU Register write - miupll:	0x00206211: 0x00000000 -> 0x00000000, write size 1
 RIU Register write - miupll:	0x00206205: 0x00000000 -> 0x00000000, write size 1
+```
+
+```
 RIU Register write - miudig:	0x00202480: 0x00000000 -> 0x00000015, write size 1
 RIU Register write - miudig:	0x00202481: 0x00000000 -> 0x00008000, write size 1
 RIU Register write - miudig:	0x00202484: 0x00000000 -> 0x00000008, write size 1
