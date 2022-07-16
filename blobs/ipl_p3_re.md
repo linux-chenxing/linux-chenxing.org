@@ -139,16 +139,16 @@ RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c00, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c01, write size 2
 ```
 
-MIU digital reset?
+MIU digital software reset. 0xc00 is the default value. bit 0 is the reset bit.
 
 ```
-RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x0000fffe, write size 2
-RIU Register write - miudig:	0x002024cc: 0x00000000 -> 0x0000ffff, write size 2
-RIU Register write - miudig:	0x0020250c: 0x00000000 -> 0x0000ffff, write size 2
-RIU Register write - miudig:	0x0020254c: 0x00000000 -> 0x0000ffff, write size 2
-RIU Register write - miudig:	0x0020220c: 0x00000000 -> 0x0000ffff, write size 2
-RIU Register write - miudig:	0x0020224c: 0x00000000 -> 0x0000ffff, write size 2
-RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x0000fffe, write size 2
+RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x0000fffe, write size 2 - req 0 mask
+RIU Register write - miudig:	0x002024cc: 0x00000000 -> 0x0000ffff, write size 2 - req 1 mask
+RIU Register write - miudig:	0x0020250c: 0x00000000 -> 0x0000ffff, write size 2 - req 2 mask
+RIU Register write - miudig:	0x0020254c: 0x00000000 -> 0x0000ffff, write size 2 - req 3 mask
+RIU Register write - miudig:	0x0020220c: 0x00000000 -> 0x0000ffff, write size 2 - ??
+RIU Register write - miudig:	0x0020224c: 0x00000000 -> 0x0000ffff, write size 2 - ??
+RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x0000fffe, write size 2 - ??
 ```
 
 -- Disable access from other clients?
