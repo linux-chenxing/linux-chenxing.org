@@ -342,9 +342,9 @@ RIU Register write - efuse:	0x0000400c: 0x00000000 -> 0x00000000, write size 2
 RIU Register read - efuse:	0x0000402c = 0x00000000, size 2
 RIU Register read - efuse:	0x00004024 = 0x00000000, size 2
 RIU Register read - efuse:	0x0000402c = 0x00000000, size 2
-RIU Register read - miuana:	0x00202064 = 0x00000029, size 2
-RIU Register read - miuana:	0x00202060 = 0x00008000, size 2
-RIU Register read - miudig:	0x00202404 = 0x00000000, size 2
+RIU Register read - miuana:	0x00202064 = 0x00000029, size 2 - 0x19 - ddfset
+RIU Register read - miuana:	0x00202060 = 0x00008000, size 2 - 0x18 - ddfset
+RIU Register read - miudig:	0x00202404 = 0x00000000, size 2 
 ```
 
 ```
