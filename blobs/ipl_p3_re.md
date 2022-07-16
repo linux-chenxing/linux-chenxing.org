@@ -88,11 +88,16 @@ RIU Register write - pmsleep:	0x00001cc0: 0x00000000 -> 0x00000010, write size 1
 UART TX: 
 UART TX: IPL g6b146fc
 UART TX: D-06
+```
+
+```
 RIU Register read - wdt:	0x00006008 = 0x00000000, size 2
 RIU Register read - pmpor:	0x00000c04 = 0x00000000, size 2
 UART TX: 
 HW Reset
 ```
+
+- Reset cause
 
 ```
 RIU Register write - lpll:	0x00206720: 0x0000ffff -> 0x0000ffa3, write size 1
