@@ -505,6 +505,11 @@ RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x00000000, write size 2
 
 ```
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00008c08, write size 2
+```
+
+- Wha is this?
+
+```
 RIU Register read - efuse:	0x0000400c = 0x00000000, size 2
 RIU Register write - efuse:	0x0000400c: 0x00000000 -> 0x00000000, write size 2
 RIU Register read - efuse:	0x00004010 = 0x00000000, size 2
