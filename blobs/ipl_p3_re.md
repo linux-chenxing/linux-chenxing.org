@@ -169,8 +169,8 @@ RIU Register write - miuana:	0x00202058: 0x00000000 -> 0x00000114, write size 2 
 DDRPLL config?
 
 ```
-RIU Register write - miudig:	0x00202404: 0x00000000 -> 0x00000292, write size 2
-RIU Register write - miudig:	0x00202408: 0x00000000 -> 0x00000051, write size 2
+RIU Register write - miudig:	0x00202404: 0x00000000 -> 0x00000292, write size 2 - 0x1 - DDR config
+RIU Register write - miudig:	0x00202408: 0x00000000 -> 0x00000051, write size 2 - 0x2
 RIU Register write - miudig:	0x0020240c: 0x00000000 -> 0x00001b50, write size 2
 RIU Register write - miudig:	0x00202410: 0x00000000 -> 0x00001e99, write size 2
 RIU Register write - miudig:	0x00202414: 0x00000000 -> 0x00002777, write size 2
