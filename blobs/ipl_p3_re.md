@@ -305,6 +305,8 @@ RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00008c01, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00008c00, write size 2
 ```
 
+Release MIU dig reset
+
 ```
 RIU Register write - miuana:	0x00202000: 0x00000000 -> 0x00002010, write size 2
 RIU Register write - miuana:	0x00202000: 0x00000000 -> 0x00000000, write size 2
