@@ -280,15 +280,15 @@ RIU Register write - miudig:	0x00202524: 0x00000000 -> 0x0000ffff, write size 2 
 RIU Register write - miudig:	0x00202564: 0x00000000 -> 0x00000000, write size 2 - 0x59 - rq3 deadline
 RIU Register write - miudig:	0x00202224: 0x00000000 -> 0x0000ffff, write size 2 - 0x9 - rq4 deadline?
 RIU Register write - miudig:	0x00202264: 0x00000000 -> 0x0000ffff, write size 2 - 0x19 - rq5 deadline?
-RIU Register write - miudig:	0x00202480: 0x00000000 -> 0x00008015, write size 2
-RIU Register write - miudig:	0x002024c0: 0x00000000 -> 0x00008015, write size 2
-RIU Register write - miudig:	0x00202500: 0x00000000 -> 0x00008015, write size 2
-RIU Register write - miudig:	0x00202540: 0x00000000 -> 0x00008015, write size 2
-RIU Register write - miudig:	0x00202200: 0x00000000 -> 0x00008015, write size 2
-RIU Register write - miudig:	0x00202240: 0x00000000 -> 0x00008015, write size 2
+RIU Register write - miudig:	0x00202480: 0x00000000 -> 0x00008015, write size 2 - 0x20 rq0 settings
+RIU Register write - miudig:	0x002024c0: 0x00000000 -> 0x00008015, write size 2 - 0x30 rq1 settings
+RIU Register write - miudig:	0x00202500: 0x00000000 -> 0x00008015, write size 2 - 0x40 rq2 settings
+RIU Register write - miudig:	0x00202540: 0x00000000 -> 0x00008015, write size 2 - 0x50 rq3 settings
+RIU Register write - miudig:	0x00202200: 0x00000000 -> 0x00008015, write size 2 - 0x0 rq4 settings ?
+RIU Register write - miudig:	0x00202240: 0x00000000 -> 0x00008015, write size 2 - 0x10 rq5 settings ?
 ```
 
-Request group deadlines
+Request group deadlines/settings
 
 ```
 RIU Register write - miuana:	0x00202114: 0x00000000 -> 0x00000001, write size 2
