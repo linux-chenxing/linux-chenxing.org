@@ -346,11 +346,16 @@ RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
 ```
 
 ```
-RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x00007ffe, write size 2
+RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x00007ffe, write size 2 - rq0 mask
 RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x0000fffa, write size 2
-RIU Register write - miudig:	0x002025fc: 0x00000000 -> 0x0000a0e1, write size 2
-RIU Register write - miudig:	0x002025fc: 0x00000000 -> 0x000080e1, write size 2
-RIU Register write - miudig:	0x002025e0: 0x00000000 -> 0x00000000, write size 2
+RIU Register write - miudig:	0x002025fc: 0x00000000 -> 0x0000a0e1, write size 2 - read crc
+RIU Register write - miudig:	0x002025fc: 0x00000000 -> 0x000080e1, write size 2 - 
+RIU Register write - miudig:	0x002025e0: 0x00000000 -> 0x00000000, write size 2 - 0x78 - miu sel0 
+```
+
+???
+
+```
 RIU Register read - efuse:	0x0000400c = 0x00000000, size 2
 RIU Register write - efuse:	0x0000400c: 0x00000000 -> 0x00000000, write size 2
 RIU Register read - efuse:	0x0000402c = 0x00000000, size 2
