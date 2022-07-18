@@ -170,18 +170,21 @@ DDRPLL config?
 
 ```
 RIU Register write - miudig:	0x00202404: 0x00000000 -> 0x00000292, write size 2 - 0x1 - DDR config
-RIU Register write - miudig:	0x00202408: 0x00000000 -> 0x00000051, write size 2 - 0x2
-RIU Register write - miudig:	0x0020240c: 0x00000000 -> 0x00001b50, write size 2
-RIU Register write - miudig:	0x00202410: 0x00000000 -> 0x00001e99, write size 2
-RIU Register write - miudig:	0x00202414: 0x00000000 -> 0x00002777, write size 2
-RIU Register write - miudig:	0x00202418: 0x00000000 -> 0x000095a8, write size 2
-RIU Register write - miudig:	0x0020241c: 0x00000000 -> 0x0000404c, write size 2
-RIU Register write - miudig:	0x00202420: 0x00000000 -> 0x00000003, write size 2
-RIU Register write - miudig:	0x00202424: 0x00000000 -> 0x00004004, write size 2
-RIU Register write - miudig:	0x00202428: 0x00000000 -> 0x00008000, write size 2
-RIU Register write - miudig:	0x0020242c: 0x00000000 -> 0x0000c000, write size 2
-RIU Register write - miudig:	0x00202450: 0x00000000 -> 0x00000070, write size 2
-RIU Register write - miudig:	0x002025a4: 0x00000000 -> 0x00006000, write size 2
+RIU Register write - miudig:	0x00202408: 0x00000000 -> 0x00000051, write size 2 - 0x2 - RD timing etc
+RIU Register write - miudig:	0x0020240c: 0x00000000 -> 0x00001b50, write size 2 - 0x3 - ODT etc
+RIU Register write - miudig:	0x00202410: 0x00000000 -> 0x00001e99, write size 2 - 0x4 - moar timing
+RIU Register write - miudig:	0x00202414: 0x00000000 -> 0x00002777, write size 2 - 0x5 - moar timing
+RIU Register write - miudig:	0x00202418: 0x00000000 -> 0x000095a8, write size 2 - 0x6 - moar timing
+RIU Register write - miudig:	0x0020241c: 0x00000000 -> 0x0000404c, write size 2 - 0x7 - moar timing
+RIU Register write - miudig:	0x00202420: 0x00000000 -> 0x00000003, write size 2 - 0x8 - mode register 0
+RIU Register write - miudig:	0x00202424: 0x00000000 -> 0x00004004, write size 2 - 0x9 - mode register 1
+RIU Register write - miudig:	0x00202428: 0x00000000 -> 0x00008000, write size 2 - 0xa - mode register 2
+RIU Register write - miudig:	0x0020242c: 0x00000000 -> 0x0000c000, write size 2 - 0xb - mode register 3
+RIU Register write - miudig:	0x00202450: 0x00000000 -> 0x00000070, write size 2 - 0x14 - multi act ctrl?
+RIU Register write - miudig:	0x002025a4: 0x00000000 -> 0x00006000, write size 2 - 0x69 - protection 2 start
+```
+
+```
 RIU Register unhandled write:	0x00202644 -> 0x00000003, write size 2
 RIU Register unhandled write:	0x0020267c -> 0x00000000, write size 2
 RIU Register unhandled write:	0x00202680 -> 0x00000909, write size 2
