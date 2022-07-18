@@ -331,12 +331,11 @@ RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x0000000f, write size 2
 ```
 
 - Initial cycle?
-
-- clear
-- dram reset
-- cs
-- cke
-- init miu
+  - clear
+  - dram reset
+  - cs
+  - cke
+  - init miu
 
 ```
 RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
