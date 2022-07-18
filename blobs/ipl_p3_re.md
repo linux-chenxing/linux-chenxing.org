@@ -501,6 +501,7 @@ RIU Register write - miudig:	0x002023cc: 0x00000000 -> 0x00000000, write size 2
 ``` 
 
 -- Enable other client access?
+-- Why isn't 0x0020220c updated here??
 
 
 ```
