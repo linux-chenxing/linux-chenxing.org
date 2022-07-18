@@ -327,6 +327,8 @@ RIU Register write - miuana:	0x0020203c: 0x00000000 -> 0x00000005, write size 2
 RIU Register write - miuana:	0x00202000: 0x00000000 -> 0x00000001, write size 2
 ```
 
+ANA power up
+
 ```
 RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miudig:	0x00202400: 0x00000000 -> 0x00000008, write size 2
