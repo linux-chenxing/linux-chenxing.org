@@ -462,46 +462,46 @@ RIU Register write - miudig:	0x002023f1: 0x00000000 -> 0x0000ff00, write size 1
 
 Bizzare use of byte writes.
 
-RIU Register write - miudig:	0x00202480: 0x00000000 -> 0x00008015
-RIU Register write - miudig:	0x00202484: 0x00000000 -> 0x00002008
-RIU Register write - miudig:	0x00202488: 0x00000000 -> 0x00000400
-RIU Register write - miudig:	0x00202490: 0x00000000 -> 0x0000ffff
-RIU Register write - miudig:	0x00202494: 0x00000000 -> 0x00003210
-RIU Register write - miudig:	0x00202498: 0x00000000 -> 0x00007654
-RIU Register write - miudig:	0x0020249c: 0x00000000 -> 0x0000ba98
-RIU Register write - miudig:	0x002024a0: 0x00000000 -> 0x0000fedc
-RIU Register write - miudig:	0x002024b8: 0x00000000 -> 0x00000000
-RIU Register write - miudig:	0x002024c0: 0x00000000 -> 0x00008015
-RIU Register write - miudig:	0x002024c4: 0x00000000 -> 0x00002008
-RIU Register write - miudig:	0x002024c8: 0x00000000 -> 0x00000400
-RIU Register write - miudig:	0x002024d0: 0x00000000 -> 0x0000ffff
-RIU Register write - miudig:	0x002024d4: 0x00000000 -> 0x00003210
-RIU Register write - miudig:	0x002024d8: 0x00000000 -> 0x00007654
-RIU Register write - miudig:	0x002024dc: 0x00000000 -> 0x0000ba98
-RIU Register write - miudig:	0x002024e0: 0x00000000 -> 0x0000fedc
-RIU Register write - miudig:	0x00202500: 0x00000000 -> 0x00008015
-RIU Register write - miudig:	0x00202504: 0x00000000 -> 0x00002008
-RIU Register write - miudig:	0x00202508: 0x00000000 -> 0x00000400
-RIU Register write - miudig:	0x00202510: 0x00000000 -> 0x0000ffff
-RIU Register write - miudig:	0x00202514: 0x00000000 -> 0x00003210
-RIU Register write - miudig:	0x00202518: 0x00000000 -> 0x00007654
-RIU Register write - miudig:	0x0020251c: 0x00000000 -> 0x0000ba98
-RIU Register write - miudig:	0x00202520: 0x00000000 -> 0x0000fedc
-RIU Register write - miudig:	0x00202540: 0x00000000 -> 0x00008015
-RIU Register write - miudig:	0x00202544: 0x00000000 -> 0x00002008
-RIU Register write - miudig:	0x00202548: 0x00000000 -> 0x00000400
-RIU Register write - miudig:	0x00202550: 0x00000000 -> 0x0000ffff
-RIU Register write - miudig:	0x00202554: 0x00000000 -> 0x00003210
-RIU Register write - miudig:	0x00202558: 0x00000000 -> 0x00007654
-RIU Register write - miudig:	0x0020255c: 0x00000000 -> 0x0000ba98
-RIU Register write - miudig:	0x00202560: 0x00000000 -> 0x0000fedc
-RIU Register write - miudig:	0x002025fc: 0x00000000 -> 0x000080e1
-RIU Register write - miudig:	0x002023c0: 0x00000000 -> 0x00000002
-RIU Register write - miudig:	0x002023c4: 0x00000000 -> 0x0000001e
-RIU Register write - miudig:	0x002023d0: 0x00000000 -> 0x00000018
-RIU Register write - miudig:	0x002023d4: 0x00000000 -> 0x00004008
-RIU Register write - miudig:	0x002023d8: 0x00000000 -> 0x00000202
-RIU Register write - miudig:	0x002023f0: 0x00000000 -> 0x0000ffe1
+- RIU Register write - miudig:	0x00202480: 0x00000000 -> 0x00008015
+- RIU Register write - miudig:	0x00202484: 0x00000000 -> 0x00002008
+- RIU Register write - miudig:	0x00202488: 0x00000000 -> 0x00000400
+- RIU Register write - miudig:	0x00202490: 0x00000000 -> 0x0000ffff
+- RIU Register write - miudig:	0x00202494: 0x00000000 -> 0x00003210
+- RIU Register write - miudig:	0x00202498: 0x00000000 -> 0x00007654
+- RIU Register write - miudig:	0x0020249c: 0x00000000 -> 0x0000ba98
+- RIU Register write - miudig:	0x002024a0: 0x00000000 -> 0x0000fedc
+- RIU Register write - miudig:	0x002024b8: 0x00000000 -> 0x00000000
+- RIU Register write - miudig:	0x002024c0: 0x00000000 -> 0x00008015
+- RIU Register write - miudig:	0x002024c4: 0x00000000 -> 0x00002008
+- RIU Register write - miudig:	0x002024c8: 0x00000000 -> 0x00000400
+- RIU Register write - miudig:	0x002024d0: 0x00000000 -> 0x0000ffff
+- RIU Register write - miudig:	0x002024d4: 0x00000000 -> 0x00003210
+- RIU Register write - miudig:	0x002024d8: 0x00000000 -> 0x00007654
+- RIU Register write - miudig:	0x002024dc: 0x00000000 -> 0x0000ba98
+- RIU Register write - miudig:	0x002024e0: 0x00000000 -> 0x0000fedc
+- RIU Register write - miudig:	0x00202500: 0x00000000 -> 0x00008015
+- RIU Register write - miudig:	0x00202504: 0x00000000 -> 0x00002008
+- RIU Register write - miudig:	0x00202508: 0x00000000 -> 0x00000400
+- RIU Register write - miudig:	0x00202510: 0x00000000 -> 0x0000ffff
+- RIU Register write - miudig:	0x00202514: 0x00000000 -> 0x00003210
+- RIU Register write - miudig:	0x00202518: 0x00000000 -> 0x00007654
+- RIU Register write - miudig:	0x0020251c: 0x00000000 -> 0x0000ba98
+- RIU Register write - miudig:	0x00202520: 0x00000000 -> 0x0000fedc
+- RIU Register write - miudig:	0x00202540: 0x00000000 -> 0x00008015
+- RIU Register write - miudig:	0x00202544: 0x00000000 -> 0x00002008
+- RIU Register write - miudig:	0x00202548: 0x00000000 -> 0x00000400
+- RIU Register write - miudig:	0x00202550: 0x00000000 -> 0x0000ffff
+- RIU Register write - miudig:	0x00202554: 0x00000000 -> 0x00003210
+- RIU Register write - miudig:	0x00202558: 0x00000000 -> 0x00007654
+- RIU Register write - miudig:	0x0020255c: 0x00000000 -> 0x0000ba98
+- RIU Register write - miudig:	0x00202560: 0x00000000 -> 0x0000fedc
+- RIU Register write - miudig:	0x002025fc: 0x00000000 -> 0x000080e1
+- RIU Register write - miudig:	0x002023c0: 0x00000000 -> 0x00000002
+- RIU Register write - miudig:	0x002023c4: 0x00000000 -> 0x0000001e
+- RIU Register write - miudig:	0x002023d0: 0x00000000 -> 0x00000018
+- RIU Register write - miudig:	0x002023d4: 0x00000000 -> 0x00004008
+- RIU Register write - miudig:	0x002023d8: 0x00000000 -> 0x00000202
+- RIU Register write - miudig:	0x002023f0: 0x00000000 -> 0x0000ffe1
 
 ```
 RIU Register read - clkgen:	0x0020705c = 0x00000000, size 1
