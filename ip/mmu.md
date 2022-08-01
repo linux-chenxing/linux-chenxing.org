@@ -17,3 +17,11 @@
 | 0x16c  | ACCESS            |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
 | 0x170  | INVALID_ENTRY     |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
 | 0x174  | INVALID_CLIENT_ID |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x180  | PROTECT0_START    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x184  | PROTECT0_END      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x188  | PROTECT1_START    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x18c  | PROTECT1_END      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x190  | PROTECT2_START    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x194  | PROTECT2_END      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x198  | PROTECT3_START    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x19c  | PROTECT3_END      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
