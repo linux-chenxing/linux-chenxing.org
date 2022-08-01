@@ -25,3 +25,6 @@
 | 0x194  | PROTECT2_END      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
 | 0x198  | PROTECT3_START    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
 | 0x19c  | PROTECT3_END      |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x1BC  | PROTECT_STATUS    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x1D4  | PROTECT_LOADDR    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
+| 0x1d8  | PROTECT_HIADDR    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |       |
