@@ -119,6 +119,10 @@ and DMA capable perpherials like USB, Ethernet and so on.
 
 [More info](miu.md)
 
+### MMU
+
+[More info](mmu.md)
+
 ### RIU
 
 RIU or "register interface unit" is a brige between the CPU and perpherial registers.
