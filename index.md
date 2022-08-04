@@ -227,6 +227,10 @@ ones.
 
 ### Messi
 
+**I (kagaimiq) suspect that this might not be really MStar because**
+**e.g. the "MSD368V3.0" board actually contains an MediaTek MT9255 chip,**
+**so this might fall into the "MediaTek chips containing MStar heritage" group instead...**
+
 - MSD338(S/ST?) - 1.5GHz Dual Core Cortex A7
 
 ### Cedric Family
