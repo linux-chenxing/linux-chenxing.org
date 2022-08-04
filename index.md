@@ -183,16 +183,16 @@ ones.
 ### [Titania4](titania4)
 
 - MSD306PT
-- [MSD309PX](titania4#msd309px) - 312 MHz MIPS 34K in BGA
+- [MSD309PX](titania4#msd309px) - 312 MHz MIPS 34Kc in 536-ball BGA
 - MSD318QT
 
 ### Milan
 
-- MSD3463GU - MIPS 34K with (probably) 64 MiB DDR2 in eLQFP128
+- MSD3463GU - MIPS 34Kf with (probably) 64 MiB DDR2 in eLQFP128
 
 ### Marlon
 
-- MSD3663LUA - MIPS 34K with (probably) 64 MiB DDR2 in eLQFP128
+- MSD3663LUA - MIPS 34Kf with (probably) 64 MiB DDR2 in eLQFP128
 
 ### [Kronus](kronus)
 
@@ -212,8 +212,8 @@ ones.
 ### K5AP
 
 - MSA7T00 - 750 MHz MIPS 34Kf + 64 MiB DDR2 in QFN80
-- MSA7T00E - same as MSA7T00 but with Ethernet
-- MSA7T10E - same as MSA7T00E but it also can decode HEVC
+- MSA7T00E - same as MSA7T00, but with Ethernet MAC/PHY
+- MSA7T10E - same as MSA7T00E, but with HEVC decoder
 
 ### something else
 
