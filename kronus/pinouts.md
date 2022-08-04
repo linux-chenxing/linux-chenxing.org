@@ -218,7 +218,7 @@
 |  72 | TS1_SYNC<sup>1</sup>  | EJ_TRSTN, TCK_MCU<sup>1</sup>           |
 |  73 | VDDP_3                |                                         |
 |  74 | VDDC                  |                                         |
-|  75 | I2CM0_SDA<sup>1</sup>  | UART1_RX<sup>2</sup>                    |
+|  75 | I2CM0_SDA<sup>1</sup> | UART1_RX<sup>2</sup>                    |
 |  76 | I2CM0_SCL<sup>1</sup> | UART1_TX<sup>2</sup>                    |
 |  77 | AVDD33_ADC            |                                         |
 |  78 | IM_I                  |                                         |
