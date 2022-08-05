@@ -183,21 +183,21 @@ ones.
 ### [Titania4](titania4)
 
 - MSD306PT
-- [MSD309PX](titania4#msd309px) - 312 MHz MIPS 34Kc in 536-ball BGA
+- [MSD309PX](titania4#msd309px) - 312 MHz MIPS 34Kc in a 536-ball BGA
 - MSD318QT
 
 ### Milan
 
-- MSD3463GU - MIPS 34Kf with (probably) 64 MiB DDR2 in eLQFP128
+- MSD3463GU - MIPS 34Kf with 64 MiB DDR2 in a eLQFP128
 
 ### Marlon
 
-- MSD3663LUA - MIPS 34Kf with (probably) 64 MiB DDR2 in eLQFP128
+- MSD3663LUA - MIPS 34Kf with 64 MiB DDR2 in a eLQFP128
 
 ### [Kronus](kronus)
 
 - MSD5043 - 552 MHz MIPS 34Kf in BGA
-- [MSD7816](kronus#msd7816) - 552 MHz MIPS 34Kf in eLQFP128
+- [MSD7816](kronus#msd7816) - 552 MHz MIPS 34Kf in a eLQFP128
 - [MSD7818](kronus#msd7818) - mostly same as MSD7816 but with integrated demod
 
 ### Kappa
@@ -206,12 +206,12 @@ ones.
 
 ### [Kriti](kriti)
 
-- [MSD7T01](kriti#msd7t01) - 576 MHz MIPS 34Kf + 64 MiB DDR2 in eLQFP128
+- [MSD7T01](kriti#msd7t01) - 576 MHz MIPS 34Kf + 64 MiB DDR2 in a eLQFP128
 - [MSD7T03](kriti#msd7t03) - same as MSD7T01 but with 128 MiB DDR3 instead
 
 ### K5AP
 
-- MSA7T00 - 750 MHz MIPS 34Kf + 64 MiB DDR2 in QFN80
+- MSA7T00 - 750 MHz MIPS 34Kf + 64 MiB DDR2 in a QFN80
 - MSA7T00E - same as MSA7T00, but with Ethernet MAC/PHY
 - MSA7T10E - same as MSA7T00E, but with HEVC decoder
 
@@ -227,7 +227,9 @@ ones.
 
 ### Messi
 
-- MSD338(S/ST?) - 1.5 GHz Dual core Cortex-A7
+- MSD6A338S (aka MSD338S) - 1.5 GHz Dual Cortex-A7 in a BGA
+  - MSD6A338ST - 512 MiB DDR3
+  - MSD6A338SXG - 1 GiB DDR3
 
 ### Cedric Family
 
@@ -372,6 +374,10 @@ https://wemp.app/posts/1d5e4d06-dab5-408d-8349-7721957ca66e
 
 - MT53xx
 - MSD6886
+
+- MT9255 (aka MSD368) - Quad Cortex-A53 in a 156-pin QFN
+  - MT9255A - 512 MiB RAM
+  - MT9255B - 1 GiB RAM
 
 # Non-SoC chips
 
