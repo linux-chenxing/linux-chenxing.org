@@ -279,11 +279,11 @@ regB8: stbb_sck_[bg|ar]
 
 regBC: stbb_ini_dx
     b0~b12 = STBB stretch delta x init
-        [ val = (srcw - dstw) * 0x1000 / (dstw / 2) ]
+        [ val = (srcw - dstw) * 0x1000 / (dstw * 2) ]
 
 regBE: stbb_ini_dy
     b0~b12 = STBB stretch delta y init
-        [ val = (srch - dsth) * 0x1000 / (dsth / 2) ]
+        [ val = (srch - dsth) * 0x1000 / (dsth * 2) ]
 
 regC0: cmd
     b4~b6 = command:
@@ -394,11 +394,11 @@ regF8: pri_b_dy[0|1]
 
 regFC: pri_a_dx0
     b0~b15 = Alpha gradient delta X
-      [ val = (Aend - Abegin) * ??? / width ]
+      [ val = (Aend - Abegin) * 0x800 / width ]
 
 regFE: pri_a_dy0
     b0~b15 = Alpha gradient delta Y
-      [ val = (Aend - Abegin) * ??? / height ]
+      [ val = (Aend - Abegin) * 0x800 / height ]
 ```
 
 ----
