@@ -227,7 +227,7 @@ ones.
 
 ### Messi
 
-- MSD338(S/ST?) - 1.5 GHz Dual core Cortex-A7 **might be MediaTek, idk**
+- MSD338(S/ST?) - 1.5 GHz Dual core Cortex-A7
 
 ### Cedric Family
 
