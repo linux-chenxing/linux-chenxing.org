@@ -2,45 +2,67 @@
 
 JPD (JPeg Decoder) is an hardware JPEG decoder...
 
--  ROI (Region Of Interest)
--  RCSM -- set to the data after the FF-DA (SOS) marker
--  MRC -- input jpeg file data
--  MWC -- output framebuffer
+- ROI (Region Of Interest)
+- RCSM -- the data after the SOS (FF-DA) marker
+- MRC -- input jpeg file data
+- MWC -- output framebuffer
+- TID -- internal data stuff with huffman tables/idct quantize tables/etc
 
 ## Registers
 
+**Note, except for lines, the coordinates and sizes are specified in 8-pixel blocks!**
+
 ```
 reg00: s config
+    b0~b1 = [Comp_H_sampling]
+    b2 = [Comp_V_sampling - 1]
+    b3 = Color format
+      0 => Y (grayscale)
+      1 => YCbCr
+    b4~b5 = Downscale ratio
+      0 => 1/1
+      1 => 1/2
+      2 => 1/4
+      3 => 1/8
+    b6 = Enable restart interval
+    b7 = Start decoding
+    b10 = Progressive mode
+    b11 = Enable ROI
+    b13 = ?? when set, accessing reg80/reg82 does not lock up RIU
+
     b0~b6
     b8~b15
-    
-    b7 = ?? <set at the last moment when decoding>
-    b10 = enable downscale?
-    b11 = enable ROI?
-    b13 = ?? <clr then set after reset>
-    b14 = ?? <set on decode>
+
+    b8 = ?? always set to 1...
+    b9 = ?? jpd_suvq -> set when there is more than two IDCT quant tables
+    b10 = enable downscale? progressive mode?
+    b14 = ??
 
 reg02: m config
+    b3 = Reset
+
     b0~b1
     b2~b15
-    
-    b3 = reset?
+
+    b0 = ?? should be set otherwise decoding won't go
+    b1 = ??
+    b7 = ??
     b8 = write protect
 
 reg04: rst intv
-    b0~b15
+    b0~b15 = Restart interval (-1)
 
 reg06: pic h
-    b0~b10 = pic h [3..13]
+    b0~b10 = Picture width
 
 reg08: pic v
-    b0~b10 = pic v [3..13]
+    b0~b10 = Picture height
 
 reg0A: roi h
-    b0~b10 = ROI h
+    b0~b10 = ROI start column
 
 reg0C: roi v
-    b0~b10 = ROI v
+    b0~b10 = ROI start row
 
 reg0E: roi width
     b0~b10 = ROI width
@@ -49,21 +71,21 @@ reg10: roi height
     b0~b10 = ROI height
 
 reg12: int en
-    b0~b6
+    b0~b6 = interrupt enable bits
 
 reg14: event flag
-    b0~b6
+    b0~b6 = interrupt pending bits
 
-reg16: rcsm addr
+reg16-19: rcsm addr
     b0~b27 = RCSM "MRC start" MIU address [0..27]
 
-reg1A: mrc buff floor
+reg1A-1D: mrc buff floor
     b0~b24 = MRC "Read buffer" buffer MIU start address [3..27]
 
-reg1E: mrc buff ceil
+reg1E-21: mrc buff ceil
     b0~b24 = MRC "Read buffer" buffer MIU end address [3..27]
 
-reg22: mwc buff start addr
+reg22-25: mwc buff start addr
     b0~b24 = MWC "Output frame buffer" buffer MIU address [3..27]
 
 reg26: mw buff line num
@@ -73,10 +95,10 @@ reg28: cur mrc addr
     b0~b27 = Current MRC buffer MIU address [0..27]
 
 reg2C: cur row
-    b0~b10 = Current row [3..13?]
+    b0~b10 = Current row
 
 reg2E: cur col
-    b0~b10 = Current column [3..13?]
+    b0~b10 = Current column
 
 reg30: cur vidx
     b0~b10 = Current line
@@ -87,52 +109,15 @@ reg38: spare
 ... ? ...
 
 reg80: tid addr
-    **Note: Accessing locks up RIU bus**
-    b0~b15
+    b0~b11 = TID address
+    * Address is auto incremented by 1 after read-accessing the top 8 bits
+    * The RIU bus will lock up if the bit13 in reg00 is not set
 
 reg82: tid dat
-    **Note: Accessing locks up RIU bus**
-    b0~b15
+    b0~b15 = TID data
+    * Address is auto incremented by 2 or 1 (depending on access width)
+    * The RIU bus will lock up if the bit13 in reg00 is not set
 
 ... alias of 04~7F ...
 
-```
-
-```
-<< MStar >># md bf202e00
-BF202E00: 00002109 00000000 00000000 0000005A    .!..........Z...
-BF202E10: 00000048 00000000 00000000 00000000    H...............
-BF202E20: 00000000 0000007F 00000001 000001EF    ................
-BF202E30: 00000000 00000000 00000000 0000FFFF    ................
-BF202E40: 00000001 00006000 0000000E 00000000    .....`..........
-BF202E50: 00005AB2 00000001 00000000 00000000    .Z..............
-BF202E60: 00000240 0000017F 00000000 00000000    @...............
-BF202E70: 0000007B 00000000 00000000 00000000    {...............
-BF202E80: 00000000 00000000 00000000 00000000    ................
-BF202E90: 00000000 00000000 00000000 00000000    ................
-BF202EA0: 00000001 00000000 00000000 00000000    ................
-BF202EB0: 00000000 00000000 00000000 00000000    ................
-BF202EC0: 00000000 00000000 00000000 00000000    ................
-BF202ED0: 00000000 00000000 00000000 00000000    ................
-BF202EE0: 00000000 00000000 00000000 00000000    ................
-BF202EF0: 00000000 00000000 00000000 00000000    ................
-<< MStar >># md bf202f08
-BF202F08: 00000000 0000005A 00000048 00000000    ....Z...H.......
-BF202F18: 00000000 00000000 00000000 0000007F    ................
-BF202F28: 00000001 000001EF 00000000 00000000    ................
-BF202F38: 00000000 0000FFFF 00000001 00006000    .............`..
-BF202F48: 0000000E 00000000 00005AB2 00000001    .........Z......
-BF202F58: 00000000 00000000 00000240 0000017F    ........@.......
-BF202F68: 00000000 00000000 0000007B 00000000    ........{.......
-BF202F78: 00000000 00000000 00000000 00000000    ................
-BF202F88: 00000000 00000000 00000000 00000000    ................
-BF202F98: 00000000 00000000 00000001 00000000    ................
-BF202FA8: 00000000 00000000 00000000 00000000    ................
-BF202FB8: 00000000 00000000 00000000 00000000    ................
-BF202FC8: 00000000 00000000 00000000 00000000    ................
-BF202FD8: 00000000 00000000 00000000 00000000    ................
-BF202FE8: 00000000 00000000 00000000 00000000    ................
-BF202FF8: 00000000 00000000 00000000 00000000    ................
-<< MStar >># md bf202f00
-BF202F00:
 ```
