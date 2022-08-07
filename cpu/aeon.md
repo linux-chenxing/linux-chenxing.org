@@ -1,63 +1,80 @@
 # AEON
 
-AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is acutally an Little-endian version of the [OpenRISC](or1k.md) arch
-that also has the fixed 32-bit instructions replaced to the variable 24/32-bit ones (as well as the instruction encoding being changed)
+AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is an 32-bit CPU architecture that is in fact, an Little-endian version of [OpenRISC](or1k.md)
+with different instruction coding (fixed 32-bit ones in or1k vs variable 24/32-bit ones),
+and it seems like there is also some additional custom instructions for caches, etc.
 
-It is used as an main ("HouseKeeping"?) CPU in families such as **Macaw12** (TSUMV59...), **Music**, **Nasa**, etc.
+It could be seen as the housekeeping (i.e. main) CPU in families such as **Macaw12**, **Music**, **Nasa**, etc.
 
-Also in families such as **Titania4** it is used as a coprocessor core (where in Chakra it is in charge of playing video and decoding pictures).
+Also in some families it acts as an coprocessor in the MHEG5/VD_MHEG5 blocks,
+and it seems to be used as an additional DSP in the audio subsystem (seems to be called "R2" there).
 
-This arch also has an second revision ("R2") that apparenly has an branch delay slot (an optional feature in or1k),
-and seem to have some other changes related to caches, etc.
+There is an second revison (apparently called "R2"/"AEONR2"), that seem to have the branch delay slots
+(as in the assembly sources the branches are guarded with #ifdefs that changes the instruction order
+from something->branch to branch->something, implying that there is indeed a branch delay slot).
 
-So far it seems like that this arch was developed when MStar had 8051-based SoCs, since this arch has seen only "Non-OS" firmwares,
-and anyway if you want to run Linux on your SoCs,
-then it makes sense to use "mainstream" arches like [MIPS](mips.md) or [ARM](arm.md), althrough they need to be licensed.
-But they save you from also caring about adding support to Linux, libc, and whatever other stuff that needs to make Linux systems go. 
+This arch was most likely developed to replace the 8-bit [8051](8051.md) MCU, to a more featured 32-bit CPU,
+thus making possible to run directly from DRAM, instead of fetching the code from the SPI flash (this only happens at bootup),
+have direct access to DRAM, thus also having a lot more of code/data space, etc.
+while 8051-based ones were limited to 256 bytes IDATA and 1k XDATA SRAMs, 64k banked code space and 
+4k/64k windowed accesses to the DRAM through XDMIU (if the DRAM was ever used back then).
 
 ## Memory map
 
--  `0x00000000` - MIU (or also SPI flash)
--  `0x90000000` - UART
--  `0xA0000000` - RIU
--  `0xB0000000` - SRAM (4k of it?)
--  `0xC0000000` - SRAM (the Titania2 variant or the pre-Titania3 one?)
+- `0x00000000` - MIU (or also SPI flash)
+- `0x90000000` - Local UART
+- `0xA0000000` - RIU
+- `0xB0000000` - SRAM (4k of it?)
+- `0xC0000000` - SRAM (the Titania2 variant or the pre-Titania3 one?)
 
-Because of the roots of this arch, the MIU and SPI flash needs to start from the same address
-since the vector addresses are fixed, and is starting from the beginning of the address space.
-And so, when the secondary part of sboot needs to be loaded, it is done through [BDMA](/ip/bdma.md)
-because maybe it's not possible to write into the SPI flash map, where the write is directed to the MIU instead.
+### MIU/SPI flash
 
-And the switch from SPI flash into the MIU is done by [configuring some regs](https://github.com/neuschaefer/mstar-mboot/blob/962e8b8258378dded694883a9f9acb7058d34631/sboot/src/macaw12/bootaeonsysinit.c#L155)
+Since this is an OpenRISC clone, it also inherits the fact that the exception vectors are starting from a fixed memory address
+0x00000000, with offset 0x100 being **Reset**, 0x800 being **External interrupt**, etc.
+
+#### Housekeeping deal
+
+For a housekeeper it is important because you are the only one who runs now, and so you start from the SPI flash mapping.
+
+And since the MIU and SPI flash mappings should start at the same address (to have the reset vector point to a valid startup code, and to be able to handle exceptions&interrupts in a app),
+to copy data from the SPI flash the [BDMA](/ip/bdma.md) should be used as the MIU is totally inaccessible when the SPI flash is mapped there.
+
+The switch from SPI flash into the MIU is done by [configuring some regs](https://github.com/neuschaefer/mstar-mboot/blob/962e8b8258378dded694883a9f9acb7058d34631/sboot/src/macaw12/bootaeonsysinit.c#L155)
 and then resetting the CPU so that it now boots into the MIU map instead. And so during the switch, the icache is needed because otherwise
 the instructions to switch and reset will be (of course) lost.
 
 **Wait, the reg1002B4 sets some "reset vector base", does it also affect other vectors as well and so my assumpions are wrong??
 But at least, the fact about the impossibility to write MIU by CPU while being in SPI flash map might be true...**
 
-It also seems that SRAM could be [mapped to arbitrary location?](https://github.com/neuschaefer/mstar-mboot/blob/962e8b8258378dded694883a9f9acb7058d34631/sboot/src/macaw12/reset.S#L100)
+#### Coprocessor deal
 
-The coprocessor of course doesn't need to do all of that because how it is going to be mapped is decided by other CPU. (because it's a coprocessor!)
+The coprocessors of course does not need to care about that because the code is already loaded by something else in right places.
 
-The RIU is mapped in same insane way as everywhere (i.e. one 32-bit word only contains 16 bits of RIU).
+### Local UART
+
+There is an "tigthly coupled" 8250 UART that is mapped with one byte per register (i.e. `reg-shift = <0>'`).
+
+Basically this might be a convention from the 8051 MCU as it is not only the CPU itself,
+but also the additional peripherals it has (e.g. Timers, GPIOs, UART, etc.)
+
+Nevertheless, this is convenient for the coprocessors as in this case to output something into UART you can use
+local UART interface rather than using the "generic"/"shared" UARTs in the RIU, as the 8051 ones do (PM51/VD51/DMD51/etc).
+
+### RIU
+
+There is nothing special for it compared to other SoCs (MIPS/ARM ones, of course), it's the same deal with that insane 16-bit RIU in a 32-bit word.
+
+### SRAM
+
+It seems that SRAM could be [mapped to arbitrary location?](https://github.com/neuschaefer/mstar-mboot/blob/962e8b8258378dded694883a9f9acb7058d34631/sboot/src/macaw12/reset.S#L100)
 
 ## Interrupt map
 
-Since or1k has an PIC, AEON has it too.
+The local interrupt controller is of course, the OpenRISC one (guess why).
 
--  IRQ#2 => Non-PM intc FIQ
--  IRQ#3 => Non-PM intc IRQ
--  IRQ#19 => UART
-
-## UART
-
-The AEON also has its own UART (which is 8250/16550-compatible).
-It is mapped in with one byte per register (i.e. `reg-shift = <0>;`)
-
-Don't know whether it exists in SoCs with the AEON working as HK, but the coprocessor does have it because it has to write something into UART,
-and so to not put all of that into the main PIU UART, it does that into its own UART instead.
-
-It is possible to connect the UART pads into the AEON's UART by configuring the UART mux.
+- 2 => Non-PM intc FIQ (Host 2)
+- 3 => Non-PM intc IRQ (Host 2)
+- 19 => Local UART
 
 ## Arch details
 
