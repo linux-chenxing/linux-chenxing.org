@@ -1,23 +1,23 @@
 # GE
 
 GE (Graphics Engine) is an 2D graphics accelerator that can do many things:
--  Draw rectangles
-   -  with gradients in two dimensions
--  Draw lines
-   -  with gradients
-   -  and pattern
--  Bitblit
-    -  Stretching with nearest neightbor or with some smoothing
-    -  Offset within source image (Tiled copy)
-    -  "Patch" mode (repeat last row/column when going off set image size)
-    -  Color space conversion (YUV->RGB and RGB->YUV)
-    -  Rotate (in fixed 0/90/180/270 angles?)
--  Do source and dest color keying
--  Various raster operations
--  Various alpha blending stuff
--  Dithering
--  Italic font thing (slant/shear/wtw)
--  maybe many more...
+- Draw rectangles
+  - with gradients in two dimensions
+- Draw lines
+  - with gradients
+  - and pattern
+- Bitblit
+   - Stretching with nearest neightbor or with some smoothing
+   - Offset within source image (Tiled copy)
+   - "Patch" mode (repeat last row/column when going off set image size)
+   - Color space conversion (YUV->RGB and RGB->YUV)
+   - Rotate (in fixed 0/90/180/270 angles?)
+- Do source and dest color keying
+- Various raster operations
+- Various alpha blending stuff
+- Dithering
+- Italic font thing (slant/shear/wtw)
+- maybe many more...
 
 ## Registers
 -  0x1f205000 [0x102800]: GE
@@ -53,7 +53,7 @@ reg06: stbb
 
 reg0E: status
     b0 = GE is busy
-    b1 = BLT is bust
+    b1 = BLT is busy
     b7 = CMQ fifo is empty
     b11~b15 = CMQ fifo remaining count
 
@@ -98,7 +98,23 @@ reg22: abl_coef
       F => src xor dst  [(1 - Adst) * Csrc * Asrc * Aconst + Adst * Cdst * (1 - Asrc * Aconst)]
 
 reg24: db_abl
-    ??
+    b8~b11 = Destination alpha value:
+      0 => Aconst
+      1 => Asrc
+      2 => Adst
+      3 => Asrc * Aconst
+      4 => Asrc * Aconst * Adst
+      5 => Adst * (1 - Asrc * Aconst)
+      6 => Asrc * Aconst * (1 - Adst)
+      7 => Asrc * Aconst * (1 - Adst) + Adst
+      8 => 1 - Aconst
+      9 => 1 - Asrc
+      A => 1 - Adst
+      B => Adst * Asrc * Aconst + Adst * (1 - Asrc * Aconst)
+      C => Asrc * Aconst * Adst + Asrc * Aconst * (1 - Adst)
+      D => (1 - Adst) * Asrc * Aconst + Adst * (1 - Asrc * Aconst)
+      E => Asrc * Asrc * Aconst + Adst * (1 - Asrc * Aconst) ???
+      F => Asrc * (1 - Asrc * Aconst) + Adst * Asrc * Aconst
 
 reg26: abl_const
     b0~b7 = ABL Aconst
@@ -182,11 +198,11 @@ reg60: sb_pit
     b0~b15 = Source bitmap stride
 
 reg66: db_pit
-    b0~b15 = Dest bitmap stride
+    b0~b15 = Destination bitmap stride
 
 reg68: b_fm
     b0~b3 = Source bitmap format:
-    b8~b11 = Dest bitmap format:
+    b8~b11 = Destination bitmap format:
       0 => I1 (1 bpp, 2-color palette)
       1 => I2 (2 bpp, 4-color palette)
       2 => I4 (4 bpp, 16-color palette)
@@ -195,7 +211,7 @@ reg68: b_fm
       9 => ARGB1555
       A => ARGB4444
       B => 1BAAFgBg123433 (some GOP blinking format)
-      C => RGB888 / ARGB1555_DST? (seems to be latter)
+      C => ARGB1555_DST (for dest, the A bit sets when the alpha is nonzero)
       D => ARGB6666
       E => YUV422
       F => ARGB8888
