@@ -75,7 +75,7 @@ reg3C:
     b0~b15 = clkgen
 
 reg54:
-    b0~b3 = tm atop power down <0x0 on power on, 0xf on power down>
+    b0~b3 = TMDS atop power down <0x0 on power on, 0xf on power down>
     set to 000f on init
 
 reg56:
@@ -89,7 +89,7 @@ reg5A:
     b5 = ?
 
 reg5C:
-    b0~b3 = tm atop enable <0xf on power on, 0x0 on power down>
+    b0~b3 = TMDS atop enable <0xf on power on, 0x0 on power down>
     b4~b7 = ?
     b8~b11 = ?
     set to 0000 on video init
@@ -310,18 +310,18 @@ dispaddr = 0x1000000
 
 #==================================================#
 
-#--- disable ints
+#--- disable all ints
 riu.write16(0x113018, 0xffff)
 riu.write16(0x11301a, 0xffff)
-#--- clear ints
-riu.write16(0x11301c, 0x0000)
-riu.write16(0x11301e, 0x0005)
+#--- clear all ints
+riu.write16(0x11301c, 0xffff)
+riu.write16(0x11301e, 0xffff)
 
 riu.write16(0x113054, 0x000f)
 
-riu.write16(0x103350, 0x0000)
+riu.write16(0x103350, 0x0000) # clkgen2
 
-riu.write16(0x11303c, 0xffff) # clkgen
+riu.write16(0x11303c, 0xffff) # hdmi clkgen
 riu.write16(0x11308a, 0x0000)
 riu.write16(0x113066, 0x0000)
 riu.write16(0x113056, 0x0003)
@@ -336,21 +336,16 @@ riu.write16(0x1130b0, 0x0003)
 riu.write16(0x113082, 0x1010)
 riu.write16(0x113068, 0x1010)
 
-#--- enable ints
-riu.write16(0x113018, 0xffff)
-riu.write16(0x11301a, 0xfffa)
-
 #--- video init
-riu.write16(0x113066, 0x0000)
 riu.write16(0x11305c, 0x0000)
 riu.wmask16(0x113202, 0x30, 0x30)
 riu.wmask16(0x113224, 0xf, 0x8)
 
 #--- audio init
-riu.wmask16(0x11300a, 0x1087, 0x1003)
+riu.wmask16(0x113300, 0x1087, 0x1003)
 
 #---------- Video On/OFF
-riu.wmask16(0x113216, 1<<6, 1<<0)
+riu.wmask16(0x113216, 1<<6, 0<<6)
 
 #-------- set hdmitx mode
 
@@ -484,7 +479,7 @@ riu.write32(0x113020, int((108000000 / vm_pclk) * 0x10000000))
 
 #------- HDMI video mode & syncs -------
 
-riu.wmask16(0x113200, 0x4f, 0x4e) # ?
+riu.wmask16(0x113200, 0x4f, 0x4e)
 
 riu.wmask16(0x113202, 1<<2, vm_vspos<<2) # vsync polarity
 riu.wmask16(0x113202, 1<<1, vm_hspos<<1) # hsync polarity
