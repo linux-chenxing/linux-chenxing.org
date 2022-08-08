@@ -2,6 +2,8 @@
 
 # Kronus variant
 
+HDMI TX variant in [Kronus](/kronus) family (e.g. **MSD7816**)
+
 ## Registers
 
 - 0x1f226000 [0x113000] -- Bank 0 (main)
@@ -18,9 +20,10 @@ reg00:
 reg02:
     b0 = SDA pin
     b4 = SCL pin
+    b15 = ?? i2c driver clears it together with chiptop.regA0 (set all pad in)
 
 reg0A:
-    b0~b2 = DAC_CLK_OUT divider:
+    b0~b2 = TXPLL out second divider:
       0 => 1/1
       1 => 3/4
       2 => 4/5
@@ -48,9 +51,6 @@ reg0A:
       6 => 
       7 => 
 
-    431 <- 396 MHz ==> 576 MHz
-    863 <- 216 MHz ==> 288 MHz, Reset
-
 reg14:
     b5 = Hotplug status [0: plugged, 1: unplugged]
 
@@ -62,15 +62,14 @@ reg1A:
     b0 = Hotplug
 
 reg1C:
-    b0~b15 = Interrupt pending
+    b0~b15 = Interrupt pending, set to clear
 
 reg1E:
-    b0~b15 = Interrupt pending
+    b0~b15 = Interrupt pending, set to clear
     b0 = Hotplug
 
 reg20:
-    b0~b31 = DAC_CLK_OUT another divider (bias 0x10000000) ...
-             or MAYBE a loop divider relative to the MPLL (432 MHz) ??!
+    b0~b31 = TXPLL out divider (bias 0x10000000)
 
 reg3C:
     b0~b15 = clkgen
@@ -260,67 +259,54 @@ This clock comes from the HDMITX's TXPLL.
 
 #### TXPLL's clock frequency
 
-The TXPLL runs at frequency of 576 MHz (1.33333333 times compared to 432 MHz MPLL and 48 times compared to 12 MHz XTAL, 
-but changing the MPLL frequency seems to make it change too so this might be relative to the MPLL)
+The TXPLL runs at frequency of 576 MHz (1.33333333 times faster compared to 432 MHz MPLL and 48 times compared to 12 MHz XTAL,
+but changing the MPLL frequency seems to make it change too so this is relative to the MPLL)
 
-1.333333 in hex is 1.5555555, which multipled by 0x10000000 means 0x15555555 --- the reg113020 value after reset!
+The 1.3333333 factor is exactly 1.5555555 in HEX, which miltiplied by 0x10000000 gives 0x15555555 -- the Bank0.reg20 reset value,
+but this is not the case because if we write a bigger value there then the frequency should go higher rather than lower.
 
-The reg11300A after reset is 863 --> meaning something + 1/2 divider == 432 * 1.3333 / 2 => 288 MHz
-
-Although setting reg113020 to 0x10000000 (1.0 div) and reg11300A to 431 (3/4 div) gives => 432 * 1.0 * 3 / 4 => 324 MHz,
-which divides to 108 MHz only by 3 while i have it set to 4, meaning i should get 81 MHz!!
-
-This is not how it works apparently...
-
-The base clock where the TXPLL is used is 396 MHz -> reg113020 is 0x1745D174 -> Compared to 576 MHz this is exactly 1.454545 times slower -- exactly 0x1745d174 in HEX..
-Judging by that logic the TXPLL base freq should be even bigger!! (432 * 1.454545 = ~628 MHz)
-So this is incorrect..
-
-Where then the 1.333333 divider ever comes from?? Is it hardwired??
-But OK, this is not really a deal for now.
-
-#### Jitter
-
-a jitter writeup...
+This is also exactly 4/3 factor for divison and 3/4 factor for multiplication.
+Maybe this factor is hardwired, but OK, this is not really a problem,
+since at least now it could be _derived_ (i.e. Ftxpll = Fmpll * 4 / 3) rather than _assumed_ (i.e. Ftxpll = 576 MHz).
 
 ### Init code
 
-This code inits the HDMITX and the video subsystem at 1280x1024@60Hz mode.
-
-I know this is a real mess, serves no purpose (especially the second part, that should go into the [GE](ge.md) page i guess)
-and whatever you might say, but you know...
+This code inits the HDMITX and the display subsystem at 1280x1024@60Hz mode.
 
 ```py
-vm_hactive = 1280   # 1280
-vm_hbporch = 48     # 90
-vm_hsync   = 112    # 40
-vm_hfporch = 248    # 240
-vm_vactive = 1024   # 720
-vm_vbporch = 1      # 5
-vm_vsync   = 3      # 5
-vm_vfporch = 38     # 20
+vm_hactive = 1280
+vm_hbporch = 48
+vm_hsync   = 112
+vm_hfporch = 248
+vm_vactive = 1024
+vm_vbporch = 1
+vm_vsync   = 3
+vm_vfporch = 38
 vm_pclk    = 108000000
 vm_hspos   = True
 vm_vspos   = True
 
-vm_hsend  = vm_hsync-1                                  #39
-vm_vsst   = vm_vactive+vm_vbporch                       #725
-vm_vsend  = vm_vactive+vm_vbporch+vm_vsync-1            #729
-vm_hstart = vm_hsync+vm_hfporch                         #260
-vm_hend   = vm_hsync+vm_hfporch+vm_hactive-1            #1539
-vm_vstart = 0                                           #0
-vm_vend   = vm_vactive-1                                #719
-vm_htotal = vm_hactive+vm_hbporch+vm_hsync+vm_hfporch-1 #1649
-vm_vtotal = vm_vactive+vm_vbporch+vm_vsync+vm_vfporch-1 #749
+vm_hsend  = vm_hsync-1
+vm_vsst   = vm_vactive+vm_vbporch
+vm_vsend  = vm_vactive+vm_vbporch+vm_vsync-1
+vm_hstart = vm_hsync+vm_hfporch
+vm_hend   = vm_hsync+vm_hfporch+vm_hactive-1
+vm_vstart = 0
+vm_vend   = vm_vactive-1
+vm_htotal = vm_hactive+vm_hbporch+vm_hsync+vm_hfporch
+vm_vtotal = vm_vactive+vm_vbporch+vm_vsync+vm_vfporch
 
 print('hsync:    0-%d' % (vm_hsend))
 print('vsync: %4d-%4d' % (vm_vsst, vm_vsend))
 print('hact:  %4d-%4d' % (vm_hstart, vm_hend))
 print('vact:  %4d-%4d' % (vm_vstart, vm_vend))
 print('total: %4d, %4d' % (vm_htotal, vm_vtotal))
+print('hfreq: %.3f kHz' % (vm_pclk / 1000 / vm_htotal))
+print('vfreq: %.3f Hz' % (vm_pclk / vm_htotal / vm_vtotal))
 
-dispw = vm_hactive #1280
-disph = vm_vactive #1024
+dispw = vm_hactive
+disph = vm_vactive
+dispaddr = 0x1000000
 
 #==================================================#
 
@@ -369,7 +355,7 @@ riu.wmask16(0x113216, 1<<6, 1<<0)
 #-------- set hdmitx mode
 
 #--- color depth
-riu.wmask16(0x11322E, 0x07, 0x00)
+riu.wmask16(0x11322E, 7<<0, 0<<0)
 riu.wmask16(0x113100, 0xff, 0x04)
 
 '''
@@ -383,7 +369,7 @@ riu.write16(0x113104, 0x0005)
 '''
 
 '''
-# ======= Datas 0x14e ======= #
+# ======= 0x81 Infoframe ======= #
 #riu.read16(0x11314e) #=> 0x0c03
 riu.write16(0x11314e, 0x0c03)
 #riu.read16(0x11314e) #=> 0x0c03
@@ -404,7 +390,7 @@ riu.write16(0x11316a, 0x547d)
 '''
 
 '''
-# ======= Datas 0x12a ======= #
+# ======= 0x83 Infoframe ======= #
 #riu.read16(0x11312a) #=> 0x0000
 riu.write16(0x11312a, 0x534d)
 #riu.read16(0x11312c) #=> 0x0000
@@ -447,14 +433,14 @@ riu.write16(0x113142, 0x0001)
 riu.write16(0x113144, 0x687d)
 '''
 
-#-------- set color format
+#-------- set color format (YUV -> YUV444)
 riu.wmask16(0x113202, 1<<8, 0<<8) # convert yuv to rgb
 riu.wmask16(0x113230, 1<<0, 0<<0) # out chroma subsampling
 
 '''
-# ======= AVI InfroFrame ======= #
+# ======= AVI InfoFrame ======= #
 #riu.read16(0x113112) #=> 0x0000
-riu.write16(0x113112, 0x58d0)
+riu.write16(0x113112, 0x58d0) # b5~b6 => color format: 10 = YUV444, 00 = RGB
 #riu.read16(0x113114) #=> 0x0000
 riu.write16(0x113114, 0x0200)
 #riu.read16(0x113116) #=> 0x0000
@@ -472,42 +458,42 @@ riu.write16(0x113120, 0xc505)
 
 #-------- pixel clock
 
+#b2~b4:
+#  1 => clk_out_dac/2
+#  2 => clk_out_dac/4
+#  3 => clk_out_dac/8
+#  4 => clk_out_dac
+#  6 => 27MHz
+#  7 => XTAL [LPLL?]
+#b5~b6:
+#  0 => 1/1
+#  1 => 1/2
+#  2 => 1/3
+riu.write16(0x100ba6, (0<<5)|(2<<2)|0)
+
 #
 # 576 MHz * 3/4 / 4 => 108 MHz / <div>
 # >>> No jitter
 #
 # 576 MHz * 1/2 / 2 => 144 MHz / <div>
 # >>> Jitter
-# 
-
-#odclk:
-#  0=n/c
-#  1=clk_out_dac/2
-#  2=clk_out_dac/4
-#  3=clk_out_dac/8
-#  4=clk_out_dac
-#  5=n/c
-#  6=27MHz
-#  7=XTAL [LPLL?]
-riu.write16(0x100ba6, (0<<5)|(2<<2)|0)
+#
 
 riu.write16(0x11300a, 0x0430 | (1<<0))
-
 riu.write32(0x113020, int((108000000 / vm_pclk) * 0x10000000))
 
 #------- HDMI video mode & syncs -------
 
 riu.wmask16(0x113200, 0x4f, 0x4e) # ?
 
-riu.wmask16(0x113202, 1<<8, 0<<8) # ?
 riu.wmask16(0x113202, 1<<2, vm_vspos<<2) # vsync polarity
 riu.wmask16(0x113202, 1<<1, vm_hspos<<1) # hsync polarity
-riu.wmask16(0x113202, 1<<0, 1<<0) # ?
+riu.wmask16(0x113202, 1<<0, 1<<0) # enable sync polarity control
 
-riu.wmask16(0x113070, 0x000c, 0x0004)
-riu.wmask16(0x113066, 0x0070, 0x0050)
-riu.wmask16(0x11305A, 0x0020, 0x0000)
-riu.wmask16(0x113056, 0x0002, 0x0002)
+riu.wmask16(0x113070, 3<<6, 1<<6)
+riu.wmask16(0x113066, 7<<4, 5<<4)
+riu.wmask16(0x11305A, 1<<5, 0<<5)
+riu.wmask16(0x113056, 1<<1, 1<<1)
 riu.wmask16(0x11305C, 0xf<<4, 0x0<<4)
 riu.wmask16(0x11305C, 0xf<<8, 0x0<<8)
 riu.wmask16(0x11305E, 0xf<<0, 0x0<<0)
@@ -516,19 +502,19 @@ riu.wmask16(0x11305E, 0xf<<4, 0x0<<4)
 riu.write16(0x113204, vm_vsync)   # vsync
 riu.write16(0x113206, vm_vfporch) # vdelay
 riu.write16(0x113208, vm_vactive) # vactive
-riu.write16(0x11320a, 0x0001) # vertical offset thing
+riu.write16(0x11320a, 0x0000) # vertical offset thing
 riu.write16(0x11320c, 0x0000)
 riu.write16(0x11320e, vm_hsync)   # hsync
 riu.write16(0x113210, vm_hfporch) # hdelay
 riu.write16(0x113212, vm_hactive) # hactive
 riu.write16(0x113214, 0x0000) # horizontal offset thing
-riu.write16(0x113226, vm_hactive+vm_hbporch+vm_hactive+vm_hfporch) # vtotal
-riu.write16(0x113228, vm_vactive+vm_vbporch+vm_vactive+vm_vfporch) # htotal
+riu.write16(0x113226, vm_vtotal) # vtotal
+riu.write16(0x113228, vm_htotal) # htotal
 
 #-------- set overscan afd
 
 '''
-# ======= AVI InfroFrame ======= #
+# ======= AVI InfoFrame ======= #
 #riu.read16(0x113112) #=> 0x58d0
 riu.write16(0x113112, 0xaad0)
 #riu.read16(0x113114) #=> 0x0200
@@ -554,7 +540,7 @@ riu.wmask16(0x11305c, 0xf, 0xf) # enable
 #----------------------------------------------------
 
 riu.write16(0x103000, 0x0001)
-riu.write16(0x103002, 0x000f) # ...fix hdmi...
+riu.write16(0x103002, 0x000f) # ...fix hdmi... b1 matters
 
 #============================================================================#
 
@@ -574,15 +560,15 @@ riu.wmask16(0x102F4E, 1<<0, 1<<0) # ---> gop is displayed!!
 ##########################
 
 riu.write8(0x102F00, 0x10) # xc bank 0x10
-riu.write16(0x102F02, vm_hsend)  # vop_hsend_width
-riu.write16(0x102F04, vm_vsst)   # vop_vsst
-riu.write16(0x102F06, vm_vsend)  # vop_vsend
-riu.write16(0x102F08, vm_hstart) # vop_de_hstart
-riu.write16(0x102F0A, vm_hend)   # vop_de_hend
-riu.write16(0x102F0C, vm_vstart) # vop_de_vstart
-riu.write16(0x102F0E, vm_vend)   # vop_de_vend
-riu.write16(0x102F18, vm_htotal) # vop_hdtot
-riu.write16(0x102F1A, vm_vtotal) # vop_vdtot
+riu.write16(0x102F02, vm_hsend)    # vop_hsend_width
+riu.write16(0x102F04, vm_vsst)     # vop_vsst
+riu.write16(0x102F06, vm_vsend)    # vop_vsend
+riu.write16(0x102F08, vm_hstart)   # vop_de_hstart
+riu.write16(0x102F0A, vm_hend)     # vop_de_hend
+riu.write16(0x102F0C, vm_vstart)   # vop_de_vstart
+riu.write16(0x102F0E, vm_vend)     # vop_de_vend
+riu.write16(0x102F18, vm_htotal-1) # vop_hdtot
+riu.write16(0x102F1A, vm_vtotal-1) # vop_vdtot
 
 riu.write8(0x102F00, 0x00) # xc bank 0x00
 riu.write16(0x102F0C, 0x8000) # enable GOP MUX0
@@ -608,7 +594,7 @@ riu.write8(0x101FFF, 0)
 
 riu.write8(0x101FFE, 0x1) # gop bank 0x1
 riu.write16(0x101F00, 0x3F51)           # gwin_ctrl
-riu.write32(0x101F02, 0x1000000 >> 3)   # dram_rblk_[l|h]
+riu.write32(0x101F02, dispaddr >> 3)    # dram_rblk_[l|h]
 riu.write16(0x101F08, 0)                # hstr
 riu.write16(0x101F0A, (dispw * 4) >> 3) # hend
 riu.write16(0x101F0C, 0)                # vstr
@@ -633,7 +619,7 @@ riu.write16(0x102822, 0x2) # asrc
 riu.write16(0x102824, 0x0<<8)
 riu.write16(0x102826, 0xff00) # aconst
 
-riu.write32(0x10284C, 0x1000000)
+riu.write32(0x10284C, dispaddr)
 riu.write16(0x102866, dispw * 4)
 riu.wmask16(0x102868, 0xf<<8, 0xf<<8)
 
