@@ -24,7 +24,7 @@ These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and 
 
 The ISP (In System Programmer) slave exposes the SPI bus where the SPI flash is connected.
 
-- on MSB123xC it is at address 0x52
+- on MSB123xC it is at address 0x51
 - elsewhere it is at 0x49
 
 When the interface is not active, the string "MSTAR" (0x4d 0x53 0x54 0x41 0x52) needs to be sent to activate the interface.
