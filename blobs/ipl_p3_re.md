@@ -139,7 +139,7 @@ RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c00, write size 2
 RIU Register write - miudig:	0x0020243c: 0x00000000 -> 0x00000c01, write size 2
 ```
 
-MIU digital software reset. 0xc00 is the default value. bit 0 is the reset bit.
+MIU digital software reset. Reset value is 8004. bit 0 is the reset bit.
 
 ```
 RIU Register write - miudig:	0x0020248c: 0x00000000 -> 0x0000fffe, write size 2 - req 0 mask
@@ -217,6 +217,8 @@ RIU Register write - miudig:	0x002022c8: 0x00000000 -> 0x00000000, write size 2
 RIU Register write - miudig:	0x002022cc: 0x00000000 -> 0x00000030, write size 2
 RIU Register write - miudig:	0x002022d0: 0x00000000 -> 0x00005000, write size 2
 ```
+
+Mystery "ARB" code.
 
 ```
 RIU Register write - miuana:	0x00202004: 0x00000000 -> 0x0000aaaa, write size 2
