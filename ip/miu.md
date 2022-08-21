@@ -12,9 +12,11 @@ For SSC8336N the value is 0xf
 
 ## Analog
 
-| offset | name          | 15              | 14              | 13              | 12              | 11              | 10              | 9               | 8               | 7            | 6            | 5            | 4            | 3            | 2            | 1            | 0            | notes                         |
-|--------|---------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|-------------------------------|
-| 0x4    | clk waveforms | DQS_WAVEFORM[7] | DQS_WAVEFORM[6] | DQS_WAVEFORM[5] | DQS_WAVEFORM[4] | DQS_WAVEFORM[3] | DQS_WAVEFORM[2] | DQS_WAVEFORM[1] | DQS_WAVEFORM[0] | CKO_STATE[7] | CKO_STATE[6] | CKO_STATE[5] | CKO_STATE[4] | CKO_STATE[3] | CKO_STATE[2] | CKO_STATE[1] | CKO_STATE[0] | 8x mode - 0xAA 4x mode - 0xCC |
+| offset | name            | 15              | 14              | 13              | 12              | 11              | 10              | 9               | 8               | 7            | 6            | 5            | 4            | 3            | 2            | 1            | 0            | notes                         |
+|--------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|-------------------------------|
+| 0x4    | clk waveforms   | DQS_WAVEFORM[7] | DQS_WAVEFORM[6] | DQS_WAVEFORM[5] | DQS_WAVEFORM[4] | DQS_WAVEFORM[3] | DQS_WAVEFORM[2] | DQS_WAVEFORM[1] | DQS_WAVEFORM[0] | CKO_STATE[7] | CKO_STATE[6] | CKO_STATE[5] | CKO_STATE[4] | CKO_STATE[3] | CKO_STATE[2] | CKO_STATE[1] | CKO_STATE[0] | 8x mode - 0xAA 4x mode - 0xCC |
+| 0x8    | reserved        |                 |                 |                 |                 |                 |                 |                 |                 |              |              |              |              |              |              |              |              |                               |
+| 0x14   | rd_phase_timing |                 |                 |                 |                 |                 |                 |                 |                 |              |              |              |              |              |              |              |              |                               |
 
 ## Digital
 
