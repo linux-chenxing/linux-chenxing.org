@@ -7,9 +7,6 @@
   - 8 KiB I/D caches
   - Clock speed: 312 MHz
 - 2x External 16-bit DDR2 up to 64 MiB (128 MiB total)
-- 2x USB 2.0 Host ports
-- 2x TS interfaces (out & input?)
-- ...
 
 [Pinouts](pinouts.md) | [RIU map](riu-map.md) | [Interrupt map](int-map.md)
 

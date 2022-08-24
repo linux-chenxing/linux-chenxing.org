@@ -12,9 +12,6 @@
   - Some MIPS code that looks to do something with hashing, etc
   - Some hashes (presumeably for the Audio Decoder IP hash key auth)
 - External 16-bit DDR2/DDR3 SDRAM, up to 128 MiB
-- 1x USB 2.0 Host port
-- 1x TS interface (input?)
-- ...
 
 [Pinouts](pinouts.md) | [RIU map](riu-map.md) | [Interrupt map](int-map.md)
 
