@@ -1,23 +1,23 @@
 # AEON
 
-AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is an 32-bit CPU architecture that is in fact, an Little-endian version of [OpenRISC](or1k.md)
+AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is a 32-bit CPU architecture that is in fact, a Little-endian version of [OpenRISC](or1k.md)
 with different instruction coding (fixed 32-bit ones in or1k vs variable 24/32-bit ones),
-and it seems like there is also some additional custom instructions for caches, etc.
+as well with any archetictural changes caused by that, and some custom instructions for caches, etc.
 
 It could be seen as the housekeeping (i.e. main) CPU in families such as **Macaw12**, **Music**, **Nasa**, etc.
 
 Also in some families it acts as an coprocessor in the MHEG5/VD_MHEG5 blocks,
 and it seems to be used as an additional DSP in the audio subsystem (seems to be called "R2" there).
 
-There is an second revison (apparently called "R2"/"AEONR2"), that seem to have the branch delay slots
+There is an second revison (apparently called "R2"/"AEONR2"), that **lacks** the branch delay slots
 (as in the assembly sources the branches are guarded with #ifdefs that changes the instruction order
-from something->branch to branch->something, implying that there is indeed a branch delay slot).
+from branch->something to something->branch, implying that the delay slots were removed).
 
 This arch was most likely developed to replace the 8-bit [8051](8051.md) MCU, to a more featured 32-bit CPU,
 thus making possible to run directly from DRAM, instead of fetching the code from the SPI flash (this only happens at bootup),
 have direct access to DRAM, thus also having a lot more of code/data space, etc.
 while 8051-based ones were limited to 256 bytes IDATA and 1k XDATA SRAMs, 64k banked code space and 
-4k/64k windowed accesses to the DRAM through XDMIU (if the DRAM was ever used back then).
+4k/64k windowed accesses to the DRAM through XDMIU.
 
 ## Memory map
 
@@ -29,12 +29,12 @@ while 8051-based ones were limited to 256 bytes IDATA and 1k XDATA SRAMs, 64k ba
 
 ### MIU/SPI flash
 
-Since this is an OpenRISC clone, it also inherits the fact that the exception vectors are starting from a fixed memory address
-0x00000000, with offset 0x100 being **Reset**, 0x800 being **External interrupt**, etc.
+Same as in OpenRISC, the exception vectors are fixed at memory address 0x00000000.
 
 #### Housekeeping deal
 
-For a housekeeper it is important because you are the only one who runs now, and so you start from the SPI flash mapping.
+For a housekeeper it is important because you are the only one who runs now (a scenario when the PM51 runs **earlier** is not counted),
+and so the SPI flash is mapped in by default.
 
 And since the MIU and SPI flash mappings should start at the same address (to have the reset vector point to a valid startup code, and to be able to handle exceptions&interrupts in a app),
 to copy data from the SPI flash the [BDMA](/ip/bdma.md) should be used as the MIU is totally inaccessible when the SPI flash is mapped there.
@@ -55,14 +55,15 @@ The coprocessors of course does not need to care about that because the code is 
 There is an "tigthly coupled" 8250 UART that is mapped with one byte per register (i.e. `reg-shift = <0>'`).
 
 Basically this might be a convention from the 8051 MCU as it is not only the CPU itself,
-but also the additional peripherals it has (e.g. Timers, GPIOs, UART, etc.)
+but also the additional peripherals it has (e.g. Timers, GPIO, UART, etc.)
 
 Nevertheless, this is convenient for the coprocessors as in this case to output something into UART you can use
-local UART interface rather than using the "generic"/"shared" UARTs in the RIU, as the 8051 ones do (PM51/VD51/DMD51/etc).
+local UART interface rather than using the "generic"/"shared" UARTs in the RIU.
 
 ### RIU
 
-There is nothing special for it compared to other SoCs (MIPS/ARM ones, of course), it's the same deal with that insane 16-bit RIU in a 32-bit word.
+There is nothing special for it compared to other SoCs (MIPS/ARM ones, of course),
+it's the same insanity where the 16-bit RIU word is mapped in a 32-bit word.
 
 ### SRAM
 
