@@ -12,8 +12,6 @@
 
 ## MSD309PX
 
-![MSD309PX top side](msd309px.jpg)
-
 - Chip ID: 0x18 / 0x00 0x00 0x03
 - 536-ball BGA package (20x20 mm); [Pinout (or ball map, if you will)](pinouts.md#msd309px)
 - overclocks to 480/504 MHz when heat up --more testing needed

@@ -17,15 +17,12 @@
 
 ## MSD7816
 
-![MSD7816 top side](msd7816.jpg)
-
 - Chip ID: 0x2f / 0x00 0x00 0x06
 - eLQFP128 package; [Pinout](pinouts.md#msd7816)
 
 ### Boards
 
 - [KLF7816_T2_02](klf7816_t2_02/index.md)
-- KLF7816_T2_03
 
 ## MSD7818
 
