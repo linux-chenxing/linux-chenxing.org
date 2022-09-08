@@ -8,7 +8,7 @@ Just a random board from a random DVB-T2 set top box.
 
 ![Board front](board-front-thumb.jpg)
 
-[Schematic](https://static.wikia.nocookie.net/mstar/images/e/ee/KLF7816_T2_03_schematic.pdf)
+[Schematic](KLF7816_T2_03_schematic.pdf)
 for a slightly different version of it (seems to be called "KLF7816_T2_03").
 
 ## Specs
