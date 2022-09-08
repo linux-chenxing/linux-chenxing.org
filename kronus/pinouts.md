@@ -2,9 +2,9 @@
 
 ## MSD7816
 
--  Package: eLQFP128
--  Exposed pad is GND
--  Superscript is the function's mux value
+- Package: eLQFP128
+- Exposed pad is GND
+- Superscript is the function's mux value
 
 |  #  |         name          |              alt functions              |
 |-----|-----------------------|-----------------------------------------|
@@ -139,8 +139,9 @@
 
 ## MSD7818
 
--  Package: eLQFP128
--  Exposed pad is GND
+- Package: eLQFP128
+- Exposed pad is GND
+- Superscript is the function's mux value
 
 |  #  |         name          |              alt functions              |
 |-----|-----------------------|-----------------------------------------|
