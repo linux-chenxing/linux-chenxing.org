@@ -72,7 +72,7 @@ These slaves utilize a command-based protocol, which basically follows this:
 
 ## ISP slave
 
-The ISP (**I**n-**s**ystem **p**rogrammer) slave exposes the SPI bus which is used by the onboard SPI flash
+The ISP (In-System Programmer) slave exposes the SPI bus which is used by the onboard SPI flash
 (the one that is on the PM\_SPI\_* pins).
 
 ### Commands
@@ -153,7 +153,7 @@ ff:ff <- crc reset
 
 ## SERDB slave
 
-The SERDB (**Ser**ial **D**e**b**ug) slave basically exposes internal chip busses (mainly RIU),
+The SERDB (SERial DeBug) slave basically exposes internal chip busses (mainly RIU),
 as well as some other misc control for doing some kind of debugging or e.g. bringing up a chip.
 
 ### Commands
@@ -181,26 +181,17 @@ as well as some other misc control for doing some kind of debugging or e.g. brin
 
 #### The "older" one
 
-This variant uses 16 bit bus addressing, and could only access only bus type (8051 XDATA),
-althrough one its property makes it not really be the one from 8051 itself.
+This variant uses 16 bit bus addressing, and accesses only the 8051 XDATA bus
+(since MStar was making 8051-based chips at that time).
 
-That property is the fact that when the RIU was split into PM and Non-PM parts,
-each starting from 0x000000 and 0x100000 respectively,
-the 8051 side has to use the **P2** register to select the RIU "superbank".
+In SoCs where the PM and Non-PM parts were split,
+the address 0x0000 now is used to store the address bits 16..23.
 
-But this is not seen on the SERDB side at all.
+For example, to access 0x101FFE, you write 0x10 to 0x0000, then access 0x1FFE.
+To access 0x110C32, write 0x11 to 0x0000, then access 0x0C32.
+And to access 0x001ECC, write 0x00 to 0x0000, then access 0x1ECC.
 
-The SERDB side also has a way to select that "superbank": by writing to address 0x0000.
-This also is not seen on the 8051 side.
-
-What is "superbank" you might ask?
-This is how i called the address bits 16..23,
-to not confuse with the "bank" term that is used to refer to the address bits 8..15.
-
-Basically to access 0x101FFE - you write 0x10 to 0x0000, and then access 0x1FFE,
-and similarly, to access 0x110C32 - write 0x11 to 0x0000, then access 0x0C32.
-
-That simple.
+It's that simple.
 
 #### The "newer" one
 
@@ -211,6 +202,7 @@ thus making the 8051 XDATA mapping useful mostly in accessing DRAM via XDMIU.
 The bus channels is listed below:
 
 | ch |     Bus      |
+|----|--------------|
 | 0  | 8051 XDATA   |
 | 1  |              |
 | 2  |              |
