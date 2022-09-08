@@ -9,6 +9,7 @@ The capacitor is tied to 3.3v and the resistor to ground. So the capacitor shoul
 charged at 3.3v and get discharged via the resistor.
 
 ## PM_UART_TX
+
 ## PM_UART_RX
 
 This is the default UART that is used by the internal boot rom, u-boot and the kernel.
@@ -19,16 +20,23 @@ These pins can also be mux'd between uart0 and "hk uart" which should be the uar
 micro controller.
 
 ## PM_LED0
+
 ## PM_LED1
 
 These are generally used for the ethernet indicator LEDs.
 
 ## PWM0
+
 ## PWM1
+
 ## PWM3
+
 ## PWM4
+
 ## PWM5
+
 ## PWM6
+
 ## PWM7
 
 PWM pins.
@@ -38,6 +46,9 @@ PWM pins.
 ## UART1_TX
 
 ## SPI0_CZ
+
 ## SPI0_CK
+
 ## SPI0_DI
+
 ## SPI0_DO
