@@ -172,10 +172,10 @@ as well as some other misc control for doing some kind of debugging or e.g. brin
 - **0x71**: "i2c reshape"
 - **0x80**: Channel no. bit 0 clear
 - **0x81**: Channel no. bit 0 set
-- **0x82**: Channel no. bit 2 clear
-- **0x83**: Channel no. bit 2 set
-- **0x84**: Channel no. bit 3 clear
-- **0x85**: Channel no. bit 3 set
+- **0x82**: Channel no. bit 1 clear
+- **0x83**: Channel no. bit 1 set
+- **0x84**: Channel no. bit 2 clear
+- **0x85**: Channel no. bit 2 set
 
 ### Variants
 
