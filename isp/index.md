@@ -51,7 +51,7 @@ Before anything could be done with these slaves, a special string should be sent
 in order to activate the corresponding interface.
 
 - For ISP: "MSTAR" (0x4D 0x53 0x54 0x41 0x52)
-- For SERDB: "SERDB" (0x52 0x45 0x52 0x44 0x42)
+- For SERDB: "SERDB" (0x53 0x45 0x52 0x44 0x42)
 
 After sending an exit command (0x24 in ISP and 0x45 in SERDB),
 the interface needs to be activated again by sending these strings.
