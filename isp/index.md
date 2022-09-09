@@ -33,12 +33,12 @@ These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and 
 - Adafruit 5v trinket.
 - [i2c-tiny-usb](https://github.com/harbaum/I2C-Tiny-USB/tree/master/digispark)
 
-- [flashrom](https://github.com/flashrom/flashrom) for SPI NOR.
+- [flashrom](https://github.com/flashrom/flashrom) - If you have SPI NOR flash.
   - If configured correctly flashrom has a driver that can talk via i2c to the flash very slowly.
   - `make CONFIG_MSTARDDC_SPI=yes`
   - `./flashrom -p mstarddc_spi:dev=/dev/i2c-1:0x49`
 
-- [SNANDer fork with mstarddc support](https://github.com/fifteenhex/SNANDer/tree/mstar) for SPI NAND or NOR.
+- [SNANDer fork with mstarddc support](https://github.com/fifteenhex/SNANDer/tree/mstar) - If you have SPI NAND flash, can be also used for SPI NOR.
   - Same deal as flashrom, very slow!
   - Good enough to write the required blobs and u-boot.
   - `./SNANDer -p mstarddc -c /dev/i2c-4:49 -i`
@@ -47,33 +47,26 @@ These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and 
 
 ### Interface activation
 
-Before anything could be done with these slaves, a special string should be sent (as a single I2C transfer)
-in order to activate the corresponding interface.
+By default (after reset or an exit command), these interfaces are deactivated,
+and in order to activate them, a special synchronization string should be sent as a single transfer.
 
 - For ISP: "MSTAR" (0x4D 0x53 0x54 0x41 0x52)
 - For SERDB: "SERDB" (0x53 0x45 0x52 0x44 0x42)
 
-After sending an exit command (0x24 in ISP and 0x45 in SERDB),
-the interface needs to be activated again by sending these strings.
-
 ### Command protocol
 
-These slaves utilize a command-based protocol, which basically follows this:
+The protocol is command-based, and basically it looks like this:
 
-- **1**. Send start condition
-- **2**. Send slave address (write)
-- **3**. Send a command byte
-- **4**. Send any data that needs to be sent for that command
-- If no data is going to be received, go straight to **8**.
-- **5**. Send restart condition
-- **6**. Send slave address (read)
-- **7**. Receive any data that needs to be received from that command
-- **8**. Send stop condition
+- Each command starts with an write transfer to (obviously) send a *command byte*.
+- If the command has some arguments/tx data, then it follows the command byte in the same transfer.
+- If the command has some response/rx data, then it is received with an read transfer.
 
-## ISP slave
+It's that simple.
 
-The ISP (In-System Programmer) slave exposes the SPI bus which is used by the onboard SPI flash
-(the one that is on the PM\_SPI\_* pins).
+## ISP interface
+
+The ISP (In-System Programmer) interface exposes the SPI bus which is used by the onboard SPI flash
+(the one that is on the PM\_SPI\_xxx pins).
 
 ### Commands
 
@@ -94,8 +87,8 @@ It uses the polynomial 0x8005 (x16 + x15 + x2 + 1), and it is somewhat weird.
 It updates only when data is transferred out of the SPI bus (by using 0x10 command),
 and the value which it uses to calculate it goes from weird internal state register.
 
-Basically it could be accessed by reading past the length that the command returns
-(i.e. command 0x20/0x22/0x23 has one byte of data, command 0x11/0x21 has no data, etc).
+That internal state register can be accessed by reading past the length that the command returns
+(e.g. for 0x20/0x22/0x23 it's 1 byte, for 0x21 it's 0 bytes)
 
 The value it has is either a "next" byte that is *going* to be received on SPI,
 or a *last* byte that has been sent over SPI (not the byte you sent that triggered this exact CRC update!)
@@ -151,9 +144,9 @@ ff:ff <- crc reset
 12:18 <- nothing changed as well
 ```
 
-## SERDB slave
+## SERDB interface
 
-The SERDB (SERial DeBug) slave basically exposes internal chip busses (mainly RIU),
+The SERDB (SERial DeBug) interface basically exposes internal chip busses (mainly RIU),
 as well as some other misc control for doing some kind of debugging or e.g. bringing up a chip.
 
 ### Commands
@@ -198,6 +191,11 @@ It's that simple.
 This variant uses 32 bit bus addressing, and introduced bus channel switching,
 which also introducted direct access to both parts of RIU (PM and Non-PM),
 thus making the 8051 XDATA mapping useful mostly in accessing DRAM via XDMIU.
+
+However, it seems like there is also an intermediate variant where the addressing
+is still 16 bit but it does have channel switching and all the stuff the newer variant has...
+[clues](https://github.com/flashrom/flashrom/blob/c8b23a0902790d0cf1420a2c4a090b9fa8810c30/mediatek_i2c_spi.c)
+... yes, this is basically mstarddc_spi but with hardcoded i2c addresses and it also uses SERDB to control the WP pin...
 
 The bus channels is listed below:
 
