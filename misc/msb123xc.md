@@ -1,7 +1,7 @@
 # MSB123xC
 
-MSB123xC is a family of the DVB-T/T2/C demodulator chips, which take a raw IF from tuner,
-demodulates it and outputs that though the MPEG2-TS interface. That simple.
+MSB123xC is a family of the DVB-T/T2/C demodulator chips, which take raw IF from the tuner,
+demodulates it and then outputs the demodulated stream through the MPEG-TS interface.
 
 This page mostly talks about **MSB1236C**, althrough it might apply to other chips as well.
 
@@ -32,7 +32,7 @@ This page mostly talks about **MSB1236C**, althrough it might apply to other chi
 |  19 | GPIO0             |  43 | TS_VLD            |
 |  20 | I2CM_SCL          |  44 | TS_SYNC           |
 |  21 | I2CM_SDA          |  45 | VDD33             |
-|  22 | SS                |  46 | VSS               |
+|  22 | VSS               |  46 | VSS               |
 |  23 | VDD33             |  47 | VDD               |
 |  24 | TS_ERR            |  48 | I2CS_SDA          |
 
