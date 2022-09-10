@@ -68,6 +68,10 @@ It's that simple.
 The ISP (In-System Programmer) interface exposes the SPI bus which is used by the onboard SPI flash
 (the one that is on the PM\_SPI\_xxx pins).
 
+It lives on these I2C addresses:
+- 0x49
+- 0x51 on MSB123xC
+
 ### Commands
 
 - **0x10**: Send data over SPI
@@ -148,6 +152,12 @@ ff:ff <- crc reset
 
 The SERDB (SERial DeBug) interface basically exposes internal chip busses (mainly RIU),
 as well as some other misc control for doing some kind of debugging or e.g. bringing up a chip.
+
+It lives on these I2C addresses:
+- 0x59
+- 0x5A on Kronus
+- 0x62 on MSG2138
+- 0x69 on MSB123xC
 
 ### Commands
 
