@@ -96,22 +96,30 @@
 
 #### PWM
 
-| Ball | Name     | Ball | Name     | Ball | Name     | Ball | Name     |
-|------|----------|------|----------|------|----------|------|----------|
-| AB25 | PAD_PWM0 | AB24 | PAD_PWM1 | E6   | PAD_PWM2 | D6   | PAD_PWM3 |
-
+| Ball | Name     |
+|------|----------|
+| AB25 | PAD_PWM0 |
+| AB24 | PAD_PWM1 |
+| E6   | PAD_PWM2 |
+| D6   | PAD_PWM3 |
 
 #### SAR
 
-| Ball | Name     | Ball | Name     | Ball | Name     | Ball | Name     |
-|------|----------|------|----------|------|----------|------|----------|
-| J5   | PAD_SAR0 | G4   | PAD_SAR1 | B4   | PAD_SAR2 | AA7  | PAD_SAR3 |
+| Ball | Name     |
+|------|----------|
+| J5   | PAD_SAR0 |
+| G4   | PAD_SAR1 |
+| B4   | PAD_SAR2 |
+| AA7  | PAD_SAR3 |
 
 #### SPI
 
-| Ball | Name       | Ball | Name       | Ball | Name       | Ball | Name       |
-|------|------------|------|------------|------|------------|------|------------|
-| A4   | PAD_SPI_CZ | A2   | PAD_SPI_CK | B3   | PAD_SPI_DI | A3   | PAD_SPI_DO |
+| Ball | Name       |
+|------|------------|
+| A4   | PAD_SPI_CZ |
+| A2   | PAD_SPI_CK |
+| B3   | PAD_SPI_DI |
+| A3   | PAD_SPI_DO |
 
 #### I2CS/UART
 
