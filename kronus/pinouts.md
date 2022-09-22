@@ -101,8 +101,8 @@
 |  91 | SAR3                  |                                         |
 |  92 | AVDD_NODIE            |                                         |
 |  93 | DVDD_NODIE            |                                         |
-|  94 | [UART_RX](/ip/commonpins.md#pm_uart_rx) |                       |
-|  95 | [UART_TX](/ip/commonpins.md#pm_uart_tx) |                       |
+|  94 | [UART_RX](../ip/commonpins.md#pm_uart_rx) |                     |
+|  95 | [UART_TX](../ip/commonpins.md#pm_uart_tx) |                     |
 |  96 | GPIO_PM9              |                                         |
 |  97 | SPI_CLK               |                                         |
 |  98 | SPI_DI                |                                         |
@@ -112,7 +112,7 @@
 | 102 | GPIO_PM4              |                                         |
 | 103 | IRIN                  |                                         |
 | 104 | CEC                   |                                         |
-| 105 | [RESET](/ip/commonpins.md#pm_reset) |                           |
+| 105 | [RESET](../ip/commonpins.md#pm_reset) |                         |
 | 106 | VDDC                  |                                         |
 | 107 | TESTPIN               |                                         |
 | 108 | SPDIF_OUT<sup>4</sup> | UART1_TX<sup>1</sup>, EJ_TDI            |
@@ -238,8 +238,8 @@
 |  91 | SAR3                  |                                         |
 |  92 | AVDD_NODIE            |                                         |
 |  93 | DVDD_NODIE            |                                         |
-|  94 | [UART_RX](/ip/commonpins.md#pm_uart_rx) |                       |
-|  95 | [UART_TX](/ip/commonpins.md#pm_uart_tx) |                       |
+|  94 | [UART_RX](../ip/commonpins.md#pm_uart_rx) |                     |
+|  95 | [UART_TX](../ip/commonpins.md#pm_uart_tx) |                     |
 |  96 | GPIO_PM9              |                                         |
 |  97 | SPI_CLK               |                                         |
 |  98 | SPI_DI                |                                         |
@@ -249,7 +249,7 @@
 | 102 | GPIO_PM4              |                                         |
 | 103 | IRIN                  |                                         |
 | 104 | CEC                   |                                         |
-| 105 | [RESET](/ip/commonpins.md#pm_reset) |                           |
+| 105 | [RESET](../ip/commonpins.md#pm_reset) |                         |
 | 106 | VDDC                  |                                         |
 | 107 | TESTPIN               |                                         |
 | 108 | SPDIF_OUT<sup>4</sup> | UART1_TX<sup>1</sup>                    |

@@ -13,8 +13,8 @@ for a slightly different version of it (seems to be called "KLF7816_T2_03").
 
 ## Specs
 
-- SoC: [MStar MSD7816](/kronus/index.md#msd7816)
-- Demodulator: [MStar MSB1236C](/misc/msb123xc.md)
+- SoC: [MSD7816](../index.md#msd7816)
+- Demodulator: [MSB1236C](../../misc/msb123xc.md)
 - Tuner: NM120AA
 - 64 MiB 16-bit DDR2 @ 1066 MHz
 - 4 MiB SPI Flash

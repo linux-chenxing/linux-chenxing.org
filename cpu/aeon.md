@@ -37,7 +37,7 @@ For a housekeeper it is important because you are the only one who runs now (a s
 and so the SPI flash is mapped in by default.
 
 And since the MIU and SPI flash mappings should start at the same address (to have the reset vector point to a valid startup code, and to be able to handle exceptions&interrupts in a app),
-to copy data from the SPI flash the [BDMA](/ip/bdma.md) should be used as the MIU is totally inaccessible when the SPI flash is mapped there.
+to copy data from the SPI flash the [BDMA](../ip/bdma.md) should be used as the MIU is totally inaccessible when the SPI flash is mapped there.
 
 The switch from SPI flash into the MIU is done by [configuring some regs](https://github.com/neuschaefer/mstar-mboot/blob/962e8b8258378dded694883a9f9acb7058d34631/sboot/src/macaw12/bootaeonsysinit.c#L155)
 and then resetting the CPU so that it now boots into the MIU map instead. And so during the switch, the icache is needed because otherwise

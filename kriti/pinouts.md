@@ -37,17 +37,17 @@
 |  28 | TM_GPIO0              |                                         |
 |  29 | TM_GPIO1              |                                         |
 |  30 | VDDC                  |                                         |
-|  31 | [RESET](/ip/commonpins.md#pm_reset) |                           |
+|  31 | [RESET](../ip/commonpins.md#pm_reset) |                         |
 |  32 | PWR_CTRL              |                                         |
 |  33 | VSYNC                 |                                         |
 |  34 | HSYNC                 |                                         |
-|  35 | I2CS_SCK              | [UART_RX](/ip/commonpins.md#pm_uart_rx) |
-|  36 | I2CS_SDA              | [UART_TX](/ip/commonpins.md#pm_uart_tx) |
+|  35 | I2CS_SCK              | [UART_RX](../ip/commonpins.md#pm_uart_rx) |
+|  36 | I2CS_SDA              | [UART_TX](../ip/commonpins.md#pm_uart_tx) |
 |  37 | IRIN                  |                                         |
-|  38 | [PWM0](/ip/commonpins.md#pwm0) |                                |
-|  39 | [PWM1](/ip/commonpins.md#pwm1) |                                |
+|  38 | [PWM0](../ip/commonpins.md#pwm0) |                              |
+|  39 | [PWM1](../ip/commonpins.md#pwm1) |                              |
 |  40 | VDDP                  |                                         |
-|  41 | [PWM2](/ip/commonpins.md#pwm2) |                                |
+|  41 | [PWM2](../ip/commonpins.md#pwm2) |                              |
 |  42 | SM0_Switch            |                                         |
 |  43 | SM0_IO                |                                         |
 |  44 | SM0_CLK               |                                         |
