@@ -1,5 +1,50 @@
 # Kronus Interrupt map
 
+## PM intc
+
+### part1
+
+| line |        name        |    notes                                  |
+|------|--------------------|-------------------------------------------|
+| 0    | TIMER0             |                                           |
+| 1    | TIMER1             |                                           |
+| 2    |                    |                                           |
+| 3    |                    |                                           |
+| 4    |                    |                                           |
+| 5    |                    |                                           |
+| 6    |                    |                                           |
+| 7    |                    |                                           |
+| 8    |                    |                                           |
+| 9    |                    |                                           |
+| 10   |                    |                                           |
+| 11   |                    |                                           |
+| 12   |                    |                                           |
+| 13   |                    |                                           |
+| 14   |                    |                                           |
+| 15   |                    |                                           |
+
+### part2
+
+| line |        name        |    notes                                  |
+|------|--------------------|-------------------------------------------|
+| 0    | ???                |                                           |
+| 1    | part1 irq          |                                           |
+| 2    |                    |                                           |
+| 3    |                    |                                           |
+| 4    |                    |                                           |
+| 5    |                    |                                           |
+| 6    |                    |                                           |
+| 7    |                    |                                           |
+| 8    |                    |                                           |
+| 9    |                    |                                           |
+| 10   |                    |                                           |
+| 11   |                    |                                           |
+| 12   |                    |                                           |
+| 13   |                    |                                           |
+| 14   |                    |                                           |
+| 15   |                    |                                           |
+
+
 ## Non-PM intc
 
 ### IRQ
@@ -30,7 +75,7 @@
 | 21   | PCM                |                                           |
 | 22   | IIC0               |                                           |
 | 23   | RTC                |                                           |
-| 24   | KEYPAD             |                                           |
+| 24   | KEYPAD             | probably SAR irq                          |
 | 25   | PM                 |                                           |
 | 26   | DDC2BI             |                                           |
 | 27   | UP_EMM_ECM         |                                           |
@@ -56,8 +101,8 @@
 | 47   | CA_TSP_CHKSUM_FAIL |                                           |
 | 48   | BDMA0              |                                           |
 | 49   | BDMA1              |                                           |
-| 50   | UART2MCU           |                                           |
-| 51   | URDMA2MCU          |                                           |
+| 50   | UART2MCU           | FUART interrupt                           |
+| 51   | URDMA2MCU          | URDMA interrupt                           |
 | 52   | DVI_HDMI_HDCP      |                                           |
 | 53   | CEC                |                                           |
 | 54   | HDMITX_LEVEL       |                                           |
@@ -69,7 +114,7 @@
 | 60   | RASP1              |                                           |
 | 61   | RASP0              |                                           |
 | 62   |                    |                                           |
-| 63   | FRM_PM             | "FRoM PM"? Comes from PM intc's IRQ part  |
+| 63   | FRM_PM             | "FRoM PM"? Comes from PM intc's part2     |
 
 ### FIQ
 
@@ -96,10 +141,10 @@
 | 18   | DSP_MIU_PROT           |                                           |
 | 19   | XIU_TIMEOUT            |                                           |
 | 20   | DMDMCU2HK_INT          |                                           |
-| 21   | VSYNC_VE4VBI           |                                           |
-| 22   | FIELD_VE4VBI           |                                           |
+| 21   | VSYNC_VE4VBI           | VE vsync interrupt                        |
+| 22   | FIELD_VE4VBI           | VE field interrupt                        |
 | 23   | VDMCU2HK               |                                           |
-| 24   | VE_DONE_TT             |                                           |
+| 24   | VE_DONE_TT             | VE teletext done interrupt                |
 | 25   | INT_CCFL               |                                           |
 | 26   | INT                    |                                           |
 | 27   | IR                     |                                           |
@@ -111,21 +156,21 @@
 | 33   | AU_DMA_BUF_INT         |                                           |
 | 34   | VE_SW_WR2BUF           |                                           |
 | 35   | UP_EMM_ECM             |                                           |
-| 36   | 8051_TO_MIPS_VPE0      |                                           |
-| 37   | 8051_TO_MIPS_VPE1      |                                           |
-| 38   | 8051_TO_AEON           |                                           |
+| 36   | 8051_TO_MIPS_VPE0      | INTR_CPUINT host0 int0                    |
+| 37   | 8051_TO_MIPS_VPE1      | INTR_CPUINT host0 int1                    |
+| 38   | 8051_TO_AEON           | INTR_CPUINT host0 int2                    |
 | 39   |                        |                                           |
-| 40   | AEON_TO_MIPS_VPE0      |                                           |
-| 41   | AEON_TO_MIPS_VPE1      |                                           |
-| 42   | AEON_TO_8051           |                                           |
+| 40   | AEON_TO_MIPS_VPE0      | INTR_CPUINT host1 int0                    |
+| 41   | AEON_TO_MIPS_VPE1      | INTR_CPUINT host1 int1                    |
+| 42   | AEON_TO_8051           | INTR_CPUINT host1 int2                    |
 | 43   |                        |                                           |
-| 44   | MIPS_VPE1_TO_MIPS_VPE0 |                                           |
-| 45   | MIPS_VPE1_TO_AEON      |                                           |
-| 46   | MIPS_VPE1_TO_8051      |                                           |
+| 44   | MIPS_VPE1_TO_MIPS_VPE0 | INTR_CPUINT host2 int0                    |
+| 45   | MIPS_VPE1_TO_AEON      | INTR_CPUINT host2 int1                    |
+| 46   | MIPS_VPE1_TO_8051      | INTR_CPUINT host2 int2                    |
 | 47   |                        |                                           |
-| 48   | MIPS_VPE0_TO_MIPS_VPE1 |                                           |
-| 49   | MIPS_VPE0_TO_AEON      |                                           |
-| 50   | MIPS_VPE0_TO_8051      |                                           |
+| 48   | MIPS_VPE0_TO_MIPS_VPE1 | INTR_CPUINT host3 int0                    |
+| 49   | MIPS_VPE0_TO_AEON      | INTR_CPUINT host3 int1                    |
+| 50   | MIPS_VPE0_TO_8051      | INTR_CPUINT host3 int2                    |
 | 51   |                        |                                           |
 | 52   |                        |                                           |
 | 53   |                        |                                           |
@@ -138,4 +183,4 @@
 | 60   |                        |                                           |
 | 61   |                        |                                           |
 | 62   |                        |                                           |
-| 63   | FRM_PM                 | "FRoM PM"? Comes from PM intc's FIQ part  |
+| 63   | FRM_PM                 | "FRoM PM"? .... part1?                    |
