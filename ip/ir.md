@@ -1,125 +1,136 @@
 # IR
 
-Seems to be located at 0x1f007a00 on i3, i2m
+Seems to be located at 0x1f007a00 on i3, i2m & every MIPS chip & etc
 
 https://github.com/linux-chenxing/linux-ssc325/blob/takoyaki_dls00v050/drivers/sstar/ir/reg_ir.h
 
-----
+------------------------------------------------
+
+# NEC part
+
+This part decodes the pulse-distance based protocols such as NEC.
 
 ## Registers
 
-### NEC part
-
 ```
 reg00: ir_ctrl
-    b0 = en
-    b1 = ldcchk en
-    b2 = ccode chk en
-    b3 = dcode pchk en
-    b4 = lg01h chk en
-    b5 = rpcode en
-    b6 = int mask
-    b7 = inv
-    b8 = timeout chk en
-    b9 = sepr en
+    b0 = Enable
+    b1 = Enable Header "leader?" code check
+    b2 = Enable Customer code check (Full decode mode)
+    b3 = Enable Data code "polarity?" check (Full decode mode)
+    b4 = Enable logic 0/1 header check
+    b5 = Enable repeat code
+    b6 = Interrupt mask
+    b7 = Invert incoming signal
+    b8 = Enable timeout check
+    b9 = Enable separator
+    b14~b15 = ? set to 3 after reset
 
 reg02: hdc_upb
-    header code upper bound
+    b0~b13 = Header code upper bound
 
 reg04: hdc_lob
-    header code lower bound
+    b0~b13 = Header code lower bound
 
 reg06: ofc_upb
-    offset code upper bound
+    b0~b13 = Offset code upper bound
 
 reg08: ofc_lob
-    offset code lower bound
+    b0~b13 = Offset code lower bound
 
 reg0A: ofc_rp_upb
-    offset code (repeat) upper bound
+    b0~b13 = Offset code (repeat) upper bound
 
 reg0C: ofc_rp_lob
-    offset code (repeat) lower bound
+    b0~b13 = Offset code (repeat) lower bound
 
 reg0E: lg01h_upb
-    logic 0/1 header upper bound
+    b0~b13 = Logic 0/1 header upper bound
 
 reg10: lg01h_lob
-    logic 0/1 header lower bound
+    b0~b13 = Logic 0/1 header lower bound
 
 reg12: lg0_upb
-    logic 0 upper bound
+    b0~b13 = Logic 0 upper bound
 
 reg14: lg0_lob
-    logic 0 lower bound
+    b0~b13 = Logic 0 lower bound
 
 reg16: lg1_upb
-    logic 1 upper bound
+    b0~b13 = Logic 1 upper bound
 
 reg18: lg1_lob
-    logic 1 lower bound
+    b0~b13 = Logic 1 lower bound
 
 reg1A: sepr_upb
-    separator upper bound
+    b0~b13 = Separator upper bound
 
 reg1C: sepr_lob
-    separator lower bound
+    b0~b13 = Separator lower bound
 
 reg1E: timeout_cyc_l
-    b0~b19 = timeout cycle count [0..15]
+    b0~b19 = Timeout cycle count [0..15]
 
 reg20: timeout_cyc_h / code byte
-    b0~b3 = timeout cycle count [16..19]
+    b0~b3 = Timeout cycle count [16..19]
     b4~b7 = ? -- set to 3
-    b8~b15 = ? -- set to 9F "ir_ccode_byte:1 + ir_code_bit_num:32"
+    b8~b14 = Code total bit count (n-1)
+    b15 = Customer code byte count (n-1)
 
 reg22: sepr_bit
     b6 = ? set for swdecode
 
 reg23: fifo_ctrl
-    b0~b2 = FIFO depth (n-1 ?)
-    b3 = enable FIFO full (if cleared, then if FIFO becomes full, it clears itself)
+    b0~b2 = FIFO depth (n-8-1)
+    b3 = Enable FIFO full
     b4~b5 = ?
       0 => raw data / full decode
       1 => sw decode rcmm type
       2 => sw decode 
       3 => sw decode - int np edge trig
     b6 = ? set for swdecode
-    b7 = clear FIFO
+    b7 = Clear FIFO
 
 reg24: ccode
-    b0~b15 = customer code (e.g. NEC address bytes)
+    b0~b15 = Customer code (e.g. NEC address bytes)
 
 reg26: glhrm_num
     b0~b11 = ? set to 804
-    b12~b13 = ? mode?
-      1 => for swdecode
-      2 => for raw data
-      3 => for full decode
+    b12~b13 = Mode?
+      1 => SW decode
+      2 => Raw data
+      3 => Full decode
 
 reg28: ckdiv_num
-    b0~b7 = clock divider (n-1)
+    b0~b7 = Clock divider (n-1)
 
 reg29: key_data
     b0~b7 = FIFO read data
 
 reg2A: shot_cnt_[l|h]
-    b0~b23 = shot count
+    b0~b23 = Count of ticks that has been passed in between signal changes.
+                  (for SW decode mode)
 
 reg2D: fifo_status
-    b0 = repeat flag
-    b1 = fifo empty
-    b2 = fifo ready ?? briefly cleared when a key is received
-    b3 = fifo full
+    b0 = Repeat flag
+    b1 = FIFO empty
+    b2 = ? briefly cleared when the key is received
+    b3 = FIFO full
     b4 = ?
 
 reg30: fifo_rd_pulse
-    b0 = fifo read
+    b0 = FIFO read
     b5 = "wakeup key sel"
 
 ```
 
-### RC5/RC6 part
+--------------------------------------------------------
+
+# RC5/RC6 part
+
+This part decodes the Philips' RC5/RC6 protocols.
+
+## Registers
 
 ```
 reg00: ctrl
@@ -147,9 +158,9 @@ reg0C: key_command_add
 reg0E: key_misc
 
 reg10: key_fifo_status
-    b2 = fifo full
-    b1 = timeout flag
     b0 = fifo empty
+    b1 = timeout flag
+    b2 = fifo full
 
 reg12: fifo_rd_pulse
 
