@@ -1,5 +1,7 @@
 # Kronus pinouts
 
+[pinmux registers](pinmux.md)
+
 ## MSD7816
 
 - Package: eLQFP128
@@ -73,17 +75,17 @@
 |  63 | D3_CASZ/D2_BA1        |                                         |
 |  64 | VDDC                  |                                         |
 |  65 | VDDP_3                |                                         |
-|  66 | TS1_CLK<sup>1</sup>   | I2S_IN_BCK<sup>1/3</sup>, TMS_MCU<sup>1</sup>                        |
-|  67 | TS1_D7<sup>1</sup>    | I2S_IN_WS<sup>1/3</sup>, TDO_MCU<sup>1</sup>, UART2_TX<sup>1</sup>   |
-|  68 | TS1_D6<sup>1</sup>    | I2S_IN_D0<sup>1/3</sup>, I2CM1_SDA<sup>4</sup>, UART2_RX<sup>1</sup> |
-|  69 | TS1_D5<sup>1</sup>    | I2CM1_SCL<sup>4</sup>                   |
-|  70 | TS1_D4<sup>1</sup>    | I2S_OUT_MUTE<sup>1/3</sup>              |
-|  71 | TS1_D3<sup>1</sup>    | I2S_OUT_BCK<sup>1/3</sup>               |
-|  72 | TS1_D2<sup>1</sup>    | I2S_OUT_D0<sup>1/3</sup>, SPI_CLK<sup>1/3/5/7 (MPIF)</sup> |
-|  73 | TS1_D1<sup>1</sup>    | I2S_OUT_WS<sup>1/3</sup>, SPI_IRQ<sup>?</sup>              |
-|  74 | TS1_D0<sup>1</sup>    | I2S_OUT_D1<sup>1/3</sup>, SPI_CSZ<sup>1/3/5/7 (MPIF)</sup> |
-|  75 | TS1_VLD<sup>1</sup>   | I2S_OUT_D2<sup>1/3</sup>, SPI_MOSI<sup>1/3/5/7 (MPIF)</sup>, TDI_MCU<sup>1</sup>           |
-|  76 | TS1_SYNC<sup>1</sup>  | I2S_OUT_MCK<sup>1/3</sup>, SPI_MISO<sup>1/3/5/7 (MPIF)</sup>, TCK_MCU<sup>1</sup>, EJ_DINT |
+|  66 | TS1_CLK<sup>1/2/3/5/6/7</sup>  | I2S_IN_BCK<sup>1/3</sup>, TMS_MCU<sup>1</sup>                        |
+|  67 | TS1_D7<sup>1/2/5/6</sup>       | I2S_IN_WS<sup>1/3</sup>, TDO_MCU<sup>1</sup>, UART2_TX<sup>1</sup>   |
+|  68 | TS1_D6<sup>1/2/5/6</sup>       | I2S_IN_D0<sup>1/3</sup>, I2CM1_SDA<sup>4</sup>, UART2_RX<sup>1</sup> |
+|  69 | TS1_D5<sup>1/2/5/6</sup>       | I2CM1_SCL<sup>4</sup>                   |
+|  70 | TS1_D4<sup>1/2/5/6</sup>       | I2S_OUT_MUTE<sup>1/3</sup>              |
+|  71 | TS1_D3<sup>1/2/5/6</sup>       | I2S_OUT_BCK<sup>1/3</sup>               |
+|  72 | TS1_D2<sup>1/2/5/6</sup>       | I2S_OUT_D0<sup>1/3</sup>, SPI_CLK<sup>1/3/5/7 (MPIF)</sup> |
+|  73 | TS1_D1<sup>1/2/5/6</sup>       | I2S_OUT_WS<sup>1/3</sup>, SPI_IRQ<sup>?</sup>              |
+|  74 | TS1_D0<sup>1/2/3/5/6/7</sup>   | I2S_OUT_D1<sup>1/3</sup>, SPI_CSZ<sup>1/3/5/7 (MPIF)</sup> |
+|  75 | TS1_VLD<sup>1/2/3/5/6/7</sup>  | I2S_OUT_D2<sup>1/3</sup>, SPI_MOSI<sup>1/3/5/7 (MPIF)</sup>, TDI_MCU<sup>1</sup>           |
+|  76 | TS1_SYNC<sup>1/2/3/5/6/7</sup> | I2S_OUT_MCK<sup>1/3</sup>, SPI_MISO<sup>1/3/5/7 (MPIF)</sup>, TCK_MCU<sup>1</sup>, EJ_DINT |
 |  77 | VDDP_3                |                                         |
 |  78 | VDDC                  |                                         |
 |  79 | S_GPIO3               | UART1_RX<sup>3</sup>, EJ_RSTZ           |
@@ -210,13 +212,13 @@
 |  63 | D3_CASZ/D2_BA1        |                                         |
 |  64 | VDDC                  |                                         |
 |  65 | VDDP_3                |                                         |
-|  66 | TS1_CLK<sup>1</sup>   | EJ_DINT, I2S_IN_BCK<sup>1/3</sup>, TMS_MCU<sup>1</sup>                        |
+|  66 | TS1_CLK<sup>1/2/3/5/6/7</sup>  | EJ_DINT, I2S_IN_BCK<sup>1/3</sup>, TMS_MCU<sup>1</sup>                        |
 |  67 | GPIO                  | EJ_RSTZ, I2S_IN_WS<sup>1/3</sup>, UART2_TX<sup>1</sup>, TDO_MCU<sup>1</sup>   |
 |  68 | GPIO                  | EJ_TCK, I2S_IN_D0<sup>1/3</sup>, UART2_RX<sup>1</sup>, I2CM1_SDA<sup>4</sup>  |
 |  69 | GPIO                  | EJ_TMS, I2CM1_SCL<sup>4</sup>           |
-|  70 | TS1_D0<sup>1</sup>    | EJ_TDO                                  |
-|  71 | TS1_VLD<sup>1</sup>   | EJ_TDI, TDI_MCU<sup>1</sup>             |
-|  72 | TS1_SYNC<sup>1</sup>  | EJ_TRSTN, TCK_MCU<sup>1</sup>           |
+|  70 | TS1_D0<sup>1/2/3/5/6/7</sup>   | EJ_TDO                         |
+|  71 | TS1_VLD<sup>1/2/3/5/6/7</sup>  | EJ_TDI, TDI_MCU<sup>1</sup>    |
+|  72 | TS1_SYNC<sup>1/2/3/5/6/7</sup> | EJ_TRSTN, TCK_MCU<sup>1</sup>  |
 |  73 | VDDP_3                |                                         |
 |  74 | VDDC                  |                                         |
 |  75 | I2CM0_SDA<sup>1</sup> | UART1_RX<sup>2</sup>                    |

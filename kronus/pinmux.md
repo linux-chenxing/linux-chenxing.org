@@ -22,21 +22,22 @@ reg50:
 reg6A:
     b0 = spi bus is gpio
     b1 = spi cz is gpio
-    b2 = gpio_pm6 is gpio
+    b2 = gpio_pm6 is gpio (otherwise it's spi cz1)
 ```
 
 ### CHIPTOP
 
 ```
 reg04:
-    b0~b2 = ts0:
+    b0~b2 = ts0_[clk/vld/sync/d0-d7]:
       0 => none
-      1 => ts0_[clk/...]
-      2 => ts0_d7 [?!]
-      3 => ts0_d0 [?!]
-      4 => ci_d3 [?!]
-      5 => ci_d2 [?!]
-      6 => ci_a14 [?!]
+      1 => ts0_[clk/vld/sync/d0-d7]
+      2 => ts0_d7 [?!] || same as 1
+      3 => ts0_[clk/vld/sync/d0]
+      4 => ci_d3 [?!] || same as 0
+      5 => ci_d2 [?!] || same as 1
+      6 => ci_a14 [?!] || same as 2
+      7 => || same as 3
     
     b4~b7 = ts1:
       0 => none
