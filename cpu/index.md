@@ -30,6 +30,12 @@ The MIPS architectures...
 - MIPS 34Kc
 - MIPS 34Kf
 
+[More info](mips.md)
+
 ## ARM
 
 The ARM architectures...
+
+A higher performance, feature, and etc architecture.
+
+Used in all SigmaStar SoCs, many MStar SoCs, and basically chips made on this arch is the main scope of this project.
