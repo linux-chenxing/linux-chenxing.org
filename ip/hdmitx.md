@@ -608,10 +608,10 @@ riu.write8(GOP+0xFE, 0x1) # gop bank 0x1
 riu.write16(GOP+0x00, 0x3F11)           # gwin_ctrl
 riu.write32(GOP+0x02, dispaddr >> 3)    # dram_rblk_[l|h]
 riu.write16(GOP+0x08, 0)                # hstr
-riu.write16(GOP+0x0A, (dispw * 4) >> 3) # hend
+riu.write16(GOP+0x0A, (dispw * 2) >> 3) # hend
 riu.write16(GOP+0x0C, 0)                # vstr
 riu.write16(GOP+0x10, disph)            # vend
-riu.write16(GOP+0x12, (dispw * 4) >> 3) # dram_rblk_hsize
+riu.write16(GOP+0x12, (dispw * 2) >> 3) # dram_rblk_hsize
 riu.write16(GOP+0x14, 0x3)              # gwin_alpha_01
 riu.write32(GOP+0x18, 0)                # dram_vstr
 riu.write16(GOP+0x1C, 0)                # dram_hstr
