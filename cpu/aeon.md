@@ -21,11 +21,13 @@ while 8051-based ones were limited to 256 bytes IDATA and 1k XDATA SRAMs, 64k ba
 
 ## Memory map
 
-- `0x00000000` - MIU (or also SPI flash)
-- `0x90000000` - Local UART
-- `0xA0000000` - RIU
-- `0xB0000000` - SRAM (4k of it?)
-- `0xC0000000` - SRAM (the Titania2 variant or the pre-Titania3 one?)
+| Address    | Usage                                                |
+|------------|------------------------------------------------------|
+| 0x00000000 | MIU (or also SPI flash)                              |
+| 0x90000000 | Local UART                                           |
+| 0xA0000000 | RIU                                                  |
+| 0xB0000000 | SRAM (4k?)                                           |
+| 0xC0000000 | SRAM (the Titania2 variant or the pre-Titania3 one?) |
 
 ### MIU/SPI flash
 
@@ -73,9 +75,11 @@ It seems that SRAM could be [mapped to arbitrary location?](https://github.com/n
 
 The local interrupt controller is of course, the OpenRISC one (guess why).
 
-- 2 => Non-PM intc FIQ (Host 2)
-- 3 => Non-PM intc IRQ (Host 2)
-- 19 => Local UART
+| Line | Usage                    |
+|------|--------------------------|
+| 2    | Non-PM intc FIQ (Host 2) |
+| 3    | Non-PM intc IRQ (Host 2) |
+| 19   | Local UART               |
 
 ## Arch details
 
