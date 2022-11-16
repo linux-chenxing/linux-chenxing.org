@@ -28,7 +28,7 @@ at some point.
 
 - Q: Is this the official support site for MStar/SigmaStar?
 - A: No. There is no relationship between this site and the vendor. This is a
-     "community" (community meaning one fat guy with a multimeter right now) research
+     "community" (community meaning one guy with a multimeter right now) research
      effort.
      
 - Q: Have you reached out to the vendor to get more information?
