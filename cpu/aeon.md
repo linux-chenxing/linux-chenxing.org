@@ -2,7 +2,7 @@
 
 AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is a 32-bit CPU architecture that is in fact, a Little-endian version of [OpenRISC](or1k.md)
 with different instruction coding (fixed 32-bit ones in or1k vs variable 24/32-bit ones),
-as well with any archetictural changes caused by that, and some custom instructions for caches, etc.
+as well with any architectural changes caused by that, and some custom instructions for caches, etc.
 
 It could be seen as the housekeeping (i.e. main) CPU in families such as **Macaw12**, **Music**, **Nasa**, etc.
 
