@@ -350,18 +350,18 @@ The pclk that's setup by the DAC driver:
 
 ### Init code
 
-This code inits the HDMITX and the display subsystem at 1280x1024@60Hz mode, the HDMI outputs video in YUV444 format.
+This code inits the HDMITX and the display subsystem at 1280x720@60Hz mode, the HDMI outputs video in YUV444 format.
 
 ```py
 vm_hactive = 1280
-vm_hbporch = 48
-vm_hsync   = 112
-vm_hfporch = 248
-vm_vactive = 1024
-vm_vbporch = 1
-vm_vsync   = 3
-vm_vfporch = 38
-vm_pclk    = 108
+vm_hbporch = 1650-1280-40-220
+vm_hsync   = 40
+vm_hfporch = 220
+vm_vactive = 720
+vm_vbporch = 750-720-5-20
+vm_vsync   = 5
+vm_vfporch = 20
+vm_pclk    = 74.25
 vm_hspos   = True
 vm_vspos   = True
 
@@ -380,12 +380,12 @@ print('vsync: %4d-%4d' % (vm_vsst, vm_vsend))
 print('hact:  %4d-%4d' % (vm_hstart, vm_hend))
 print('vact:  %4d-%4d' % (vm_vstart, vm_vend))
 print('total: %4d, %4d' % (vm_htotal, vm_vtotal))
-print('hfreq: %.3f kHz' % (vm_pclk / 1000 / vm_htotal))
-print('vfreq: %.3f Hz' % (vm_pclk / vm_htotal / vm_vtotal))
+print('hfreq: %.3f kHz' % (vm_pclk * 1000 / vm_htotal))
+print('vfreq: %.3f Hz' % (vm_pclk * 1000000 / vm_htotal / vm_vtotal))
 
 dispw = vm_hactive
 disph = vm_vactive
-dispaddr = 0x1000000
+dispaddr = 0x3800000
 
 #==================================================#
 
@@ -605,7 +605,7 @@ riu.write8(GOP+0xFF, 1) # write_force
 riu.write8(GOP+0xFF, 0)
 
 riu.write8(GOP+0xFE, 0x1) # gop bank 0x1
-riu.write16(GOP+0x00, 0x3F51)           # gwin_ctrl
+riu.write16(GOP+0x00, 0x3F11)           # gwin_ctrl
 riu.write32(GOP+0x02, dispaddr >> 3)    # dram_rblk_[l|h]
 riu.write16(GOP+0x08, 0)                # hstr
 riu.write16(GOP+0x0A, (dispw * 4) >> 3) # hend
