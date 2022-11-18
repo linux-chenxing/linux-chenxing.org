@@ -20,7 +20,7 @@ reg00:
 reg02:
     b0 = HDMI_SCL pin
     b4 = HDMI_SDA pin
-    b15 = Connects the HDMI_[SDA/SCL] to I2CM_[SDA/SCL] (overrides the pinmux!)
+    b15 = Connects the HDMI_[SDA/SCL] to I2CM0_[SDA/SCL] (overrides the pinmux!)
 
 reg0A:
     b0~b2 = TXPLL out second divider:
