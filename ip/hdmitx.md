@@ -20,7 +20,7 @@ reg00:
 reg02:
     b0 = HDMI_SCL pin
     b4 = HDMI_SDA pin
-    b15 = ?? i2c driver clears it together with chiptop.regA0 (set all pad in)
+    b15 = Connects the HDMI_[SDA/SCL] to I2CM_[SDA/SCL] (overrides the pinmux!)
 
 reg0A:
     b0~b2 = TXPLL out second divider:
@@ -234,7 +234,7 @@ reg28:
     b0~b11 = htotal
 
 reg2E:
-    b0~b2 = color depth:
+    b0~b2 = color channel depth:
       0 => 8 bits (24 bpp)
       1 => 10 bits (30 bpp)
       2 => 12 bits (36 bpp)
