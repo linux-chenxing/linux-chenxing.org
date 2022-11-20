@@ -1,17 +1,17 @@
 # HDMI TX
 
-# Kronus variant
-
-HDMI TX variant in [Kronus](../kronus/index.md) family (e.g. **MSD7816**)
-
 ## Registers
 
-- 0x1f226000 [0x113000] -- Bank 0 (main)
-- 0x1f226200 [0x113100] -- Bank 1 (infoframes)
-- 0x1f226400 [0x113200] -- Bank 2 (video)
-- 0x1f226600 [0x113300] -- Bank 3 (audio)
+In kronus:
 
-### Bank 0
+- 0x1f226000 [0x113000] -- atop
+- 0x1f226200 [0x113100] -- dtop
+- 0x1f226400 [0x113200] -- video
+- 0x1f226600 [0x113300] -- audio
+
+### atop
+
+May be specific to kronus (and similar), but i doubt
 
 ```
 reg00:
@@ -124,134 +124,351 @@ regB0:
     set to 0003 on init
 ```
 
-### Bank 1
+### dtop
 
 ```
 reg00:
-    b0~b7 = color depth hint?:
-      01 => 8 bits (24 bpp)
-      44 => 10 bits (30 bpp)
-      84 => 12 bits (36 bpp)
-
-reg12-1F:
-    AVI InfoFrame [0x82-0x02] data bytes (14 bytes)
-
-reg20:
-    b0~b4 = 
-    b5~b7 = 
-    b8~b15 =
-
-reg22-27:
-    Audio InfoFrame [0x84-0x01] data bytes (6 bytes)
-
-reg28:
-    b0~b4 = 
-    b5~b7 = 
-    b8~b15 =
-
-reg2A-43:
-    Some infoframe [0x83] data bytes (26 bytes)
-
-reg44:
-    b0~b4 = 
-    b5~b7 = 
-    b8~b15 =
-
-reg4E-69:
-    HDMI Vendor Specific InfoFrame [0x81-0x01] data bytes (28 bytes)
-
-reg6A:
-    b0~b4 = 
-    b5~b7 = 
-    b8~b15 = 
-
-regA6:
-    set to 0300 on init
-
-```
-
-### Bank 2
-
-```
-reg00:
-    b0 = ? set on interlaced modes
-    b1~b3 = ?
-    b6 = ? 
-    b10 = swap R/B channels
-
-    * for everything progressive,             it's set to 0x004E |1.00.111.0|
-    * for everything interlaced upto 1080i60, it's set to 0x000D |0.00.110.1|
-    *                           for everything else, it's 0x004F |1.00.111.1|
+    b0 = dvi_mode -- Mode [0: HDMI|1: DVI]
+    b2 = packet_enable -- Enable packet generation
+    b3 = user_enable -- Enable user packet
+    b4 = pkt_manual_mode -- Send packets within each blank
+    b6~b7 = dc_mode -- Deep color mode:
+      0 => 8 bit (24 bpp)
+      1 => 10 bit (30 bpp)
+      2 => 12 bit (36 bpp)
+    b8~b9 = start_de_ph -- Video data period (DE) start phase:
+      0 => 10P0/12P0
+      1 => 10P1/12P1
+      2 => 10P2/12P0
+    b10 = dc_fifo_rst -- Deep color FIFO reset
+    b11 = hpll_lock_chk -- Check HPLL lock status before enabling deep color FIFO
+    b12 = bypass_dc_fifo -- Bypass deep color FIFO
 
 reg02:
-    b0 = enable sync polarity control (when disabled, syncs are positive)
-    b1 = hsync polarity [0: negative, 1: positive]
-    b2 = vsync polarity [0: negative, 1: positive]
-    b4~b5 = ?? set to 3 on video init
-    b8 = Convert YUV to RGB
-    b9 = ?
+    b0 = act_gcp_cmd
+    b1 = act_acr_cmd
+    b2 = act_avi_cmd
+    b3 = act_aud_cmd
+    b4 = act_spd_cmd
+    b5 = act_mpg_cmd
+    b6 = act_vsp_cmd
+    b7 = act_null_cmd
+    b8 = act_acp_cmd
+    b9 = act_isp_cmd
+    b10 = act_gcp_dc_cmd
+    b11 = act_gmp_cmd
 
-reg04: vs_width
-    b0~b7 = VSync width
+reg04:
+    b0 = null_send_cmd
+    b2 = null_cfg
+    b3~b7 = null_fcnt
 
-reg06: vs_bporch
-    b0~b8 = Vertical back porch
+reg06:
+    b0 = gc_send_cmd
+    b1~b2 = avmute_mode
+    b3 = gc_cfg
+    b4 = gc_fcnt
+    b5 = gc_follow_spec
+    b6 = en_gc_dc_req
+    b8 = gc_dc_send_cmd
+    b9 = gc_dc_cfg
+    b12~b15 = gc_dc_fcnt
 
-reg08: vde_width
-    b0~b11 = Active area height
+reg08:
+    b0~b3 = cd_val
+    b4~b7 = pp_val
+    b8 = default_phase
 
-reg0A: vs_delayline
-    b0~b7 = VSync delay (line)
+------ ACR (Audio clock regeneration) packet? ------
 
-reg0C: vs_delaypixel
-    b0~b9 = VSync delay (pixel)
+reg0A:
+    b0~b15 = cts_0
 
-reg0E: hs_width
-    b0~b9 = HSync width
+reg0C:
+    b0~b3 = cts_1
+    b8~b11 = n_1
 
-reg10: hs_bporch
-    b0~b9 = Horizontal back porch
+reg0E:
+    b0~b15 = n_0
 
-reg12: hde_width
-    b0~b11 = Active area width
+reg10:
+    b0 = acr_send_cmd
+    b2 = acr_cfg
+    b3 = sel_cts_gen
+    b4~b7 = acr_fcnt
 
-reg14: hs_delay
-    b0~b9 = HSync delay
+------ AVI infoframe ------
 
-reg16:
-    b6 = Disable video output
+reg12-1F:
+    AVI infoframe data (13 bytes)
 
-reg22:
-    b0~b5 = ?? set to 3 when disabling video output, not changed when enabling
+reg20:
+    b0 = avi_send_cmd
+    b2 = avi_cfg
+    b3~b7 = avi_fcnt
+    b8~b15 = avi_chk_sum -- Checksum
 
-reg24:
-    b0~b3 = ?? set to 8 on video init
+------ Audio infoframe ------
 
-reg26:
-    b0~b11 = vtotal
+reg22-27:
+    Audio infoframe data (5 bytes)
 
 reg28:
-    b0~b11 = htotal
+    b0 = aud_send_cmd
+    b2 = aud_cfg
+    b3~b7 = aud_fcnt
+    b8~b15 = aud_chk_sum -- Checksum
 
-reg2E:
-    b0~b2 = color channel depth:
-      0 => 8 bits (24 bpp)
-      1 => 10 bits (30 bpp)
-      2 => 12 bits (36 bpp)
+------ SPD (Source product) infoframe ------
 
-reg30:
-    b0 = Output chroma subsampling [0: 444, 1: 422]
+reg2A-43:
+    SPD infoframe data (25 bytes)
 
+reg44:
+    b0 = spd_send_cmd
+    b2 = spd_cfg
+    b3~b7 = spd_fcnt
+    b8~b15 = spd_chk_sum -- Checksum
+
+------ MPEG infoframe ------
+
+reg46-4A:
+    MPEG infoframe data (5 bytes)
+
+reg4C:
+    b0 = mpg_send_cmd
+    b2 = mpg_cfg
+    b3~b7 = mpg_fcnt
+    b8~b15 = mpg_chk_sum -- Checksum
+
+------ Vendor specific infoframe ------
+
+reg4E-69:
+    Vendor specific infoframe data (28 bytes)
+
+reg6A:
+    b0 = vs_send_cmd
+    b2 = vs_cfg
+    b3~b7 = vs_fcnt
+    b8~b15 = vs_chk_sum -- Checksum
+
+------ User defined packet ------
+
+reg6C:
+    b0~b7 = user_type -- User defined packet header byte 0
+    b8~b15 = user_hb1 -- User defined packet header byte 1
+
+reg6E:
+    b0~b7 = user_hb2 -- User defined packet header byte 2
+
+------ ACP (Audio copy protection) infoframe ------
+
+reg70-7F:
+    ACP infoframe data (16 bytes)
+
+reg80:
+    b0 = acp_send_cmd
+    b2 = acp_cfg
+    b3~b7 = acp_fcnt
+    b8~b15 = acp_hb1
+
+------ ISRC (Input source) infoframe ------
+
+reg82-A1:
+    ISRC infoframe data (32 bytes)
+
+regA2:
+    b0 = isrc_send_cmd
+    b2 = isrc_cfg
+    b3~b7 = isrc_fcnt
+    b8~b15 = isrc_hb1
+
+regA4:
+    b0~b11 = tmds_de_cnt
+
+regA6:
+    b0~b15 = hpll_lock_cnt
+
+    * set to 0300 on init
+
+regA8:
+    b0 = gm_send_cmd
+    b2 = gm_cfg
+    b4~b7 = gm_fcnt
+    b8~b15 = gm_hb1 -- GM packet header byte 1
+
+regAA:
+    b0~b7 = gm_hb2 -- GM packet header byte 2
+
+regAB-BF:
+    GBD data (21 bytes)
 ```
 
-### Bank 3
+### video
 
 ```
 reg00:
-    b0~b2 = ?? set to 3 on audio init
-    b7 = ?? set to 0 on audio init
-    b12 = ?? set to 1 on audio init
+    b0 = interlace -- Interlaced mode               [0: progressive|1: interlaced]
+    b1 = field_pol -- Field input signal polarity   [0: invert|1: normal]
+    b2 = hs_pol -- HSync input signal polarity      [0: invert|1: normal]
+    b3 = vs_pol -- VSync input signal polarity      [0: invert|1: normal]
+    b4 = field_sel -- Field signal source           [0: external|1: internal]
+    b5 = vs_gen_se -- VSync signal source           [0: external|1: vblank_earlyV - 1 line earlier]
+    b6 = bypass_md -- DE signal source              [0: internal|1: external]
+    b7 = bypass_md_656 -- BT.656 data regenerator   [0: enable|1: disable]
+    b8 = bt656 -- Input is in BT.656 format         [0: no|1: yes]
+    b10 = rb_swap -- Swap R/B channels
+
+    * for everything progressive,             it's set to 0x004E |1 0 0 1 1 1 0|
+    * for everything interlaced upto 1080i60, it's set to 0x000D |0 0 0 1 1 0 1|
+    *                           for everything else, it's 0x004F |1 0 0 1 1 1 1|
+
+reg02:
+    b0 = vh_gen_en -- Enable sync generation from video engine
+    b1 = hs_gen_pol -- Generated HSync polarity [0: neg|1: pos]
+    b2 = vs_gen_pol -- Generated VSync polarity [0: neg|1: pos]
+    b3 = ve_tmgen_en -- Enable timing generation from video engine
+    b4~b5 = ?? set to 3 on video init
+    b8 = v2r_en -- Convert YCbCr to RGB
+    b9 = inv_gamma_en
+    b10~b11 = dith_sel_gamma
+    b12~b13 = dith_sel_csc
+    b14 = hdtv_en
+
+reg04:
+    b0~b7 = vs_width -- VSync width
+
+reg06:
+    b0~b8 = vs_bporch -- Vertical back porch
+
+reg08:
+    b0~b11 = vde_length -- Active area height
+
+reg0A:
+    b0~b7 = vs_delay_line -- VSync delay (line)
+
+reg0C:
+    b0~b9 = vs_delay_pixel -- VSync delay (pixel)
+
+reg0E:
+    b0~b9 = hs_width -- HSync width
+
+reg10:
+    b0~b9 = hs_bporch -- Horizontal back porch
+
+reg12:
+    b0~b11 = de_width -- Active area width
+
+reg14:
+    b0~b9 = hs_delay -- HSync delay
+
+reg16:
+    b0~b1 = pg_vmd -- Pixel pattern gen mode (vertical):
+    b2~b3 = pg_hmd -- Pixel pattern gen mode (horizontal):
+        0 => Gradient
+        1 => Inversion
+        2 => Line
+        3 => Line
+    b4 = pg_vrep2 -- Repeat pattern two times vertically
+    b5 = pg_hrep2 -- Repeat pattern two times horizontally
+    b6 = ve_pg_en -- Enable pixel pattern gen
+
+reg18:
+    b0~b15 = pix_ini -- Pattern gen initial value
+
+reg1A:
+    b0~b15 = pix_hinc -- Pattern gen value increase (horizontal)
+
+reg1C:
+    b0~b15 = pix_vinc -- Pattern gen value increase (vertical)
+
+reg1E:
+    b0~b7 = pix_hstep -- Pattern gen horizontal step (n-1)
+
+reg20:
+    b0~b7 = pix_vstep -- Pattern gen vertical step (n-1)
+
+reg22:
+    b0~b1 = pg_col_sel -- B channel value:
+    b2~b3 = pg_col_sel -- G channel value:
+    b4~b5 = pg_col_sel -- R channel value:
+      0 => From pattern generator
+      1 => const 00
+      2 => const 80
+      3 => const FF
+
+reg24:
+    b0~b2 = pix_rp_sel -- HDMI pixel repetition (n-1)
+    b3 = manual_pix_rp -- Enable manual HDMI pixel repetition control
+
+reg26:
+    b0~b11 = ve_tmgen_vtotal -- Total height
+
+reg28:
+    b0~b11 = ve_tmgen_htotal -- Total width
+
+reg2A:
+    b0~b11 = vtotal -- Autodetected total height
+
+reg2C:
+    b0~b12 = htotal -- Autodetected total width
+
+reg2E:
+    b0 = bit10 -- Enable 10-bit data width
+    b1 = bit12 -- Enable 12-bit data width
+    b2 = bit16 -- Enable 16-bit data width
+
+reg30:
+    b0 = hdmi422_b12 -- Output chroma subsampling [0: 444 (8-bit), 1: 422 (12-bit)]
+
 ```
+
+### audio
+
+```
+reg00:
+    b0~b7 = aff_ch0 -- SPDIF input channel status [0..7]
+
+reg02:
+    b0~b7 = aff_ch1 -- SPDIF input channel status [8..15]
+
+reg04:
+    b0~b7 = aff_ch2 -- SPDIF input channel status [16..23]
+
+reg06:
+    b0~b7 = aff_ch3 -- SPDIF input channel status [24..31]
+
+reg08:
+    b0~b7 = aff_ch4 -- SPDIF input channel status [32..39]
+
+reg0A:
+    b0 = aff_cfg_flush -- Audio FIFO flush
+    b1 = aff_cfg_bs_auto -- Auto block start
+      0 => SPDIF block
+      1 => Auto block
+    b2 = aff_cfg_cts_gen_en -- Enable CTS generator
+    b4 = aff_cfg_layout_format -- Layout format:
+      0 => 2 ch
+      1 => 3~8 ch
+    b5~b6 = aff_cfg_ch_en -- Channel select:
+      0 => ch1
+      1 => ch12
+      2 => ch123
+      3 => ch1234
+
+reg0C:
+    b0 = aff_full -- Audio FIFO full
+    b1 = aff_empty -- Audio FIFO empty
+    b2 = aff_overflow -- Audio FIFO overflow
+    b8~b9 = aff_status_wr_fsm
+    b12~b15 = aff_status_fifo_sel
+
+reg0E:
+    b0~b6 = aff_ptr_wr -- Audio FIFO write pointer
+    b8~b14 = aff_ptr_rd -- Audio FIFO read pointer
+```
+
+-----------------------------------------------------------
 
 ## Random stuff
 
@@ -557,6 +774,7 @@ riu.write16(SC2_HDGEN+0x02, 0x000f) # ...fix hdmi... b1 matters
 #============================================================================#
 
 riu.write8(SC1_XC+0x00, 0x0F) # xc bank 0x0F
+riu.wmask16(SC1_XC+0x8C, 0xf<<4, 0x2<<4) # ve gop mux: mux0+mux1+mux2 ... MST786:"capture stage: vip output"
 riu.wmask16(SC1_XC+0xAE, 1<<11, 1<<11) # ---> ve is receiving image!! MST786:"capture image to ip enable"
 
 riu.write8(SC1_XC+0x00, 0x10) # xc bank 0x10
@@ -583,7 +801,7 @@ riu.write16(SC1_XC+0x18, vm_htotal-1) # vop_hdtot
 riu.write16(SC1_XC+0x1A, vm_vtotal-1) # vop_vdtot
 
 riu.write8(SC1_XC+0x00, 0x00) # xc bank 0x00
-riu.write16(SC1_XC+0x0C, 0x8000) # enable GOP MUX0
+riu.write16(SC1_XC+0x0C, 0x8000) # only enable GOP MUX0
 
 riu.write16(GOP+0xFC, (0<<0)|(1<<3)|(2<<6)|(3<<9))
 
@@ -632,8 +850,8 @@ riu.write16(GE0+0x24, 0x0<<8)
 riu.write16(GE0+0x26, 0xff00) # aconst
 
 riu.write32(GE0+0x4C, dispaddr)
-riu.write16(GE0+0x66, dispw * 4)
-riu.wmask16(GE0+0x68, 0xf<<8, 0xf<<8)
+riu.write16(GE0+0x66, dispw * 2)
+riu.wmask16(GE0+0x68, 0xf<<8, 0x8<<8)
 
 riu.write16(GE0+0xAA, 0)
 riu.write16(GE0+0xAC, dispw - 1)
