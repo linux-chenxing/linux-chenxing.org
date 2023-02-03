@@ -529,6 +529,8 @@ There seems to be some unknown register at offset 0x70, the bootROM zeroes bit 0
 
 Pixel(?) SPI. New in pioneer3
 
+[more details](pspi.md)
+
 ## pwm
 
 |            | u-boot | linux | channels |
