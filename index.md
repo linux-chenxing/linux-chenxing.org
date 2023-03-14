@@ -370,6 +370,11 @@ According to the code that is in the wild and SigmaStars page there are some Cor
 
 https://wemp.app/posts/1d5e4d06-dab5-408d-8349-7721957ca66e
 
+# RISC-V?
+  - https://github.com/prplz/MounRiver-templates/tree/1e09dc588f59762e6ce0ffdbb68ddcd449fb9b6d/SSTAR/RISC-V/SSU/FreeRTOS
+  - SSU9383
+  - SSU9386
+
 # MediaTek chips that contain/have some MStar heritage
 
 - MT53xx
