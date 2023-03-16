@@ -20,10 +20,11 @@
 | 7   | 6   | 5   | 4   | 3      | 2      | 1      | 0      |   |
 |     |     |     |     |        |        |        |        |   |
 
-cmd - 0x0 - nop
-      0x1 - write
-      0x2 - wait bus trigger
-      0x3 - poll eq
-      0xb - poll neq
+* cmd
+  - 0x0 : nop
+  - 0x1 : write
+  - 0x2 : wait bus trigger
+  - 0x3 : poll eq
+  - 0xb : poll neq
 
-sw int - interrupt number to trigger?
+* sw int - interrupt number to trigger?
