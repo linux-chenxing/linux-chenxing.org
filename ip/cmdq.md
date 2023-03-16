@@ -29,7 +29,7 @@
   - 0x3 : poll eq
   - 0xb : poll neq
 
-* sw int - interrupt number to trigger?
+* sw int - interrupt bit to trigger?
 
 ## Poll/write commands
 
@@ -50,3 +50,7 @@
 | mask h     | mask h     | mask h     | mask h     | mask h     | mask h     | mask h     | mask h     |   |
 | 7          | 6          | 5          | 4          | 3          | 2          | 1          | 0          |   |
 | mask l     | mask l     | mask l     | mask l     | mask l     | mask l     | mask l     | mask l     |   |
+
+# Bus trigger wait
+
+# NOP
