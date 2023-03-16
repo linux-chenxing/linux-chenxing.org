@@ -272,6 +272,8 @@ so that the CPU doesn't need to be involved.
 Note: This seems to live in the "RIU" register address space and maybe can't see
 the system memory.
 
+[more info](cmdq.md)
+
 #### Support Matrix
 
 |           | u-boot | linux |
