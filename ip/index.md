@@ -285,7 +285,7 @@ the system memory.
 
 Per-uart DMA controller. Present on "FUART" uarts.
 
-[more info][(urdma.md)
+[more info](urdma.md)
 
 ### MOVEDMA
 
