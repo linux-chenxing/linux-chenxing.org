@@ -416,3 +416,8 @@ https://github.com/linux-chenxing/linux-ssc325/blob/ikayaki_dlm00v014/arch/arm/b
 ## MCM
 
 "memory clock manager"?
+
+
+## Clock register listings
+
+- pioneer3: https://github.com/linux-chenxing/linux-ssc325/blob/ikayaki_dlm00v014/drivers/sstar/include/pioneer3/reg_clks.h

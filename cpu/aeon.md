@@ -1,7 +1,7 @@
 # AEON
 
 AEON (or "RISC32", "R2", "AEONR2", "BEON"?) is a 32-bit CPU architecture that is in fact, a Little-endian version of [OpenRISC](or1k.md)
-with different instruction coding (fixed 32-bit ones in or1k vs variable 24/32-bit ones),
+with different instruction coding (fixed 32-bit ones in or1k vs variable 16/24/32-bit ones),
 as well with any architectural changes caused by that, and some custom instructions for caches, etc.
 
 It could be seen as the housekeeping (i.e. main) CPU in families such as **Macaw12**, **Music**, **Nasa**, etc.
@@ -45,9 +45,6 @@ The switch from SPI flash into the MIU is done by [configuring some regs](https:
 and then resetting the CPU so that it now boots into the MIU map instead. And so during the switch, the icache is needed because otherwise
 the instructions to switch and reset will be (of course) lost.
 
-**Wait, the reg1002B4 sets some "reset vector base", does it also affect other vectors as well and so my assumpions are wrong??
-But at least, the fact about the impossibility to write MIU by CPU while being in SPI flash map might be true...**
-
 #### Coprocessor deal
 
 The coprocessors of course does not need to care about that because the code is already loaded by something else in right places.
@@ -81,47 +78,7 @@ The local interrupt controller is of course, the OpenRISC one (guess why).
 | 3    | Non-PM intc IRQ (Host 2) |
 | 19   | Local UART               |
 
-## Arch details
+## Some tools
 
-### Instructions
-
-Conventions:
--  The bits specified there are stored in big endian, and the first bit is the MSB
-   -  i.e. `11001000101001100100011101110111` is `C8 A6 47 77`.
--  The caps letter denotes the MSB, then any following or preceding letter is bit that goes down to LSB.
--  Bit letters follow the OpenRISC specs at least where it's possible
-
-**For details on instructions refer to the OpenRISC specs, unless otherwise specified.**
-
-```
-
-000000000000000000000000                l.nop
-000010DddddAaaaa00000001                l.lhz                 rD, 0(rA)
-000011BbbbbAaaaa00000000                l.sw                  0(rA), rB
-000111DddddAaaaaKkkkkkkk                l.addi                rD, rA, K
-00100000Nnnnnnnnnnnnnnnn                l.bf                  N
-001101100000000000000001                l.movhi               r1, ???
-010001DddddAaaaaBbbbb100                l.and                 rD, rA, rB
-010100AaaaaBbbbbKkkkkkkk                l.ori                 rA, rB, K
-010111AaaaaIiiii00000001                l.sfeqi               rA, I
-010111AaaaaBbbbb00001101                l.sfne                rA, rB
-010111BbbbbAaaaa00010111                l.sfgeu               rA, rB
-100100Nnnnnnnnnnnnnnnnnn                l.j                   N
-
-... TODO ...
-
-110000DddddKkkkkkkkkkkkkkkkk0001        l.movhi               rD, K
-110000BbbbbAaaaaKkkkkkkkkkkk1101        l.mtspr               rA, rB, K
-110000DddddAaaaaKkkkkkkkkkkk1111        l.mfspr               rD, rA, K
-110001DddddAaaaaKkkkkkkkkkkkkkkk        l.andi                rD, rA, K
-110010DddddAaaaaKkkkkkkkkkkkkkkk        l.ori                 rD, rA, K
-111010Nnnnnnnnnnnnnnnnnnnnnnnnnn        l.j                   N
-111011BbbbbAaaaaIiiiiiiiiiiiiiii        l.sw                  I(rA), rB
-11110100000Aaaaa00000000000J0001        l.invalidate_line     0(rA), J    ***1
-111111DddddAaaaaKkkkkkkkkkkkkkkk        l.addi                rA, rB, K
-
-... TODO ...
-
-***1: Not in OpenRISC spec?
-
-```
+- Ghidra [processor module](https://github.com/shinyquagsire23/ghidra-aeon)
+- [Reko](https://github.com/uxmal/reko), which has some support for the AEON architecture
