@@ -913,4 +913,6 @@ This new version apparently supports setting pull down, drive strength etc.
 | pioneer3   | n/a    | wip       |
 
 
+# POR - power on reset?
 
+Present on i2m and p3. Seems to be a block of NVRAM.
