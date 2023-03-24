@@ -636,7 +636,7 @@ Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blo
 
 HDMI Transmitter
 
-[more info](hdmi.md)
+[more info](hdmitx.md)
 
 ### GOP
 
