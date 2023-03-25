@@ -20,6 +20,12 @@ $ i2cdetect -y 0
 
 These i2c slaves are present on infinity, infinity3, infinity2m, pioneer3.. and probably everything else.
 
+## Disabling PM_UART RX for easier access to ISP
+
+Clear the PM_UART rx enable bit
+
+`mw.w 0x1f001c24 0x0`
+
 ## Debug tool
 
 ![isp tool front](debugtool_front_thumb.jpg)
