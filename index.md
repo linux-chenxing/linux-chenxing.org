@@ -340,8 +340,9 @@ This seems to be an evolution of the infinity2m chips.
 - [SSC8339D](mercury5#ssc8339d) - Probably in this family, Cortex A7 + 128MB(?) DDR3(?) in a 268 ball BGA
 
 #### [Mercury6](mercury6)
-
+SDK name: TIRAMISU
 - SSD268G - 2 * Cortex A53
+- SSC359G - 2 * Cortex A53, 64bit, BGA, Ext. RAM, BROM signature MVX4######ga2f5884M6_ROM#####XVM
 
 ### Misc
 
