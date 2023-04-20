@@ -15,6 +15,7 @@ There seem to be some strap pins to tell the boot rom which media to boot from. 
 ## Tags
 
 At the end of the Boot ROM for infinity 3 forward there seems to be an ASCII tag that contains the git hash the ROM was built from.
+BROM Tag/Signature can be viewed by using the u-boot command `md.b 0x3fe0 0x20` or `md.b 0x7fe0 0x20`.
 
 ## Messages
 
