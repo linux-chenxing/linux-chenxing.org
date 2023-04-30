@@ -18,3 +18,9 @@ Bus 001 Device 100: ID 1b20:0300 MStar Semiconductor, Inc.
 [15471430.241948] sd 3:0:0:0: [sdc] Media removed, stopped polling
 [15471430.242567] sd 3:0:0:0: [sdc] Attached SCSI removable disk
 ```
+
+## usb_updater.bin
+
+This is an IPL that implements memory configuration and loading a u-boot legacy image via USB.
+
+Load address for the uploaded u-boot image seems to be `23c00000`
