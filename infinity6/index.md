@@ -26,7 +26,7 @@ The vendor kernel for these seems to be 4.9.84.
 
 ### BootROM tag
 
-```MVX1##I6g4d97980CMN_ROM######XVM```
+`MVX1##I6g4d97980CMN_ROM######XVM`
 
 ## SSC326D
 
@@ -76,9 +76,7 @@ The vendor kernel for these seems to be 4.9.84.
 
 - Infinity6e 
 
-<details>
-<summary>Boot log:</summary>
- 
+Boot log:
 
 ```
 IPL 1fb0433
@@ -341,5 +339,3 @@ Registering SWP/SWPB emulation handler
 ms_rtcpwc 1f006800.rtcpwc: setting system clock to 1970-01-04 12:36:05 UTC (304565)
 This architecture does not have kernel memory protection.`
 ```
-
-</details>
