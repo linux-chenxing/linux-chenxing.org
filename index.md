@@ -143,6 +143,8 @@ when each type of chip was produced.
 |                           | ssc338g  |            | 22nm         |                        |                 |                 |              |                                       |                                          |
 | [infinity6e](#infinity6e) |          |            |              |                        |                 |                 |              |                                       |                                          |
 |                           | ssc339g  |            | 22nm         |                        |                 |                 |              |                                       |                                          |
+|                           | ssc9351q | 2114j      |              | yes                    | yes             |                 |              | [yes](infinity6/ssc9351d-q_pb.pdf)    |                                          |
+|                           | ssc9351d |            |              |                        |                 |                 |              | [yes](infinity6/ssc9351d-q_pb.pdf)    |                                          |
 | [mercury2](#mercury2)     |          |            |              | yes                    |                 |                 |              |                                       |                                          |
 |                           | msc8328  | 1744       |              |                        |                 | yes             |              |                                       |                                          |
 | [mercury5](#mercury5)     |          |            |              |                        |                 |                 |              |                                       |                                          |
@@ -313,6 +315,8 @@ These seem to be i6e based on the build tag found in a kernel image for the SSC8
   - 70mai A800S https://fccid.io/2AOK9-A800S/Internal-Photos/Internal-Photos-5061810
   - VIA M360-M800 https://fccid.io/NCI-M360-M800/
 - SSC8629Q
+- [SSC9351Q](infinity6#ssc9351Q) - Webcam SoC + Dual Cortex A7 + 256MB DDR3 + QFN128
+- [SSC9351D](infinity6#ssc9351D) - Webcam SoC + Dual Cortex A7 + 128MB DDR3 + QFN128
 
 ### [Pioneer3](pioneer3)
 

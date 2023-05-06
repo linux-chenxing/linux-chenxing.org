@@ -26,7 +26,7 @@ The vendor kernel for these seems to be 4.9.84.
 
 ### BootROM tag
 
-```MVX1##I6g4d97980CMN_ROM######XVM```
+`MVX1##I6g4d97980CMN_ROM######XVM`
 
 ## SSC326D
 
@@ -76,9 +76,7 @@ The vendor kernel for these seems to be 4.9.84.
 
 - Infinity6e 
 
-<details>
-<summary>Boot log:</summary>
- 
+Boot log:
 
 ```
 IPL 1fb0433
@@ -342,4 +340,25 @@ ms_rtcpwc 1f006800.rtcpwc: setting system clock to 1970-01-04 12:36:05 UTC (3045
 This architecture does not have kernel memory protection.`
 ```
 
-</details>
+## SSC9351
+
+[Databrief](ssc9351d-q_pb.pdf)
+
+### SSC9351Q
+
+- Infinity6e
+- Chip id: 0xf1
+- dual core cortex A7
+- RAM 256MB
+- QFN with 128 pins
+- Machine model: INFINITY6E SSC012B-S01A
+- BROM (32Kb) Tag MVX4######gce02feaI6e_ROM####XVM
+
+### SSC9351D
+
+- Infinity6e
+- Chip id: 0xf1
+- dual core cortex A7
+- RAM 128MB
+- QFN with 128 pins
+- Machine model: INFINITY6E SSC012B-S01A
