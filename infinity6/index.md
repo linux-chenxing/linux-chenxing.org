@@ -339,3 +339,26 @@ Registering SWP/SWPB emulation handler
 ms_rtcpwc 1f006800.rtcpwc: setting system clock to 1970-01-04 12:36:05 UTC (304565)
 This architecture does not have kernel memory protection.`
 ```
+
+## SSC9351
+
+[Databrief](ssc9351d-q_pb.pdf)
+
+### SSC9351Q
+
+- Infinity6e
+- Chip id: 0xf1
+- dual core cortex A7
+- RAM 256MB
+- QFN with 128 pins
+- Machine model: INFINITY6E SSC012B-S01A
+- BROM (32Kb) Tag MVX4######gce02feaI6e_ROM####XVM
+
+### SSC9351D
+
+- Infinity6e
+- Chip id: 0xf1
+- dual core cortex A7
+- RAM 128MB
+- QFN with 128 pins
+- Machine model: INFINITY6E SSC012B-S01A
