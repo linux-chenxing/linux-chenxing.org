@@ -342,7 +342,7 @@ This architecture does not have kernel memory protection.`
 
 ## SSC9351
 
-[Databrief](ssc9351d-q_pb.pdf)
+[Databrief](ssc9351d-q_pb_v10.pdf)
 
 ### SSC9351Q
 
