@@ -302,6 +302,11 @@ Doesn't seem to exist.
 - [SSC337DE](infinity6#ssc337) - probably Cortex A7 +  128MB DDR3 + in a QFN128
 -- MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
 
+#### [Infinity 6c](infinity6)
+
+- SSC377 - Cortex A35, QFN88, 64MB DDR2 Internal, BROM signature MVX4##I6C#gd11293fROM########XVM
+-- Anjoy vision MC-J40:
+
 #### [Infinity 6e](infinity6)
 
 - Infinity 6e seems to be a dual core variation in this family
