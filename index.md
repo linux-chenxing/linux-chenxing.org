@@ -304,7 +304,7 @@ Doesn't seem to exist.
 
 #### [Infinity 6c](infinity6)
 
-- SSC377 - Cortex A7, QFN88, DDR 64MB Int., BROM signature MVX4##I6C#gd11293fROM########XVM
+- SSC377 - Cortex A35, QFN88, 64MB DDR2 Internal, BROM signature MVX4##I6C#gd11293fROM########XVM
 -- Anjoy vision MC-J40:
 
 #### [Infinity 6e](infinity6)
