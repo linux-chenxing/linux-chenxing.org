@@ -211,6 +211,10 @@ ones.
 - [MSD7T01](kriti#msd7t01) - 576 MHz MIPS 34Kf + 64 MiB DDR2 in a eLQFP128
 - [MSD7T03](kriti#msd7t03) - same as MSD7T01 but with 128 MiB DDR3 instead
 
+### [Kirin](kirin)
+
+- [MSD7T75](kirin#msd7t75) - 1000 MHz(?) MIPS 74Kf
+
 ### K5AP
 
 - MSA7T00 - 750 MHz MIPS 34Kf + 64 MiB DDR2 in a QFN80
