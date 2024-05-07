@@ -278,9 +278,21 @@
 
 ## Bootstrap pins
 
-| SPI_CSZ | SPI_DI |            mode             |
-|---------|--------|-----------------------------|
-|    1    |    0   | Normal boot (without EJTAG) |
-|    1    |    1   | Normal boot (with EJTAG)    |
-|    0    |    0   | SBUS1                       |
-|    0    |    1   | DBUS1                       |
+| SPI_CSZ | SPI_DI |             mode             |
+|---------|--------|------------------------------|
+|    1    |    0   | Normal boot (EJTAG disabled) |
+|    1    |    1   | Normal boot (EJTAG enabled)  |
+|    0    |    0   | SBUS1                        |
+|    0    |    1   | DBUS1                        |
+
+## EJTAG pins
+
+| Signal  | MSD7816         | MSD7818       |
+|---------|-----------------|---------------|
+| EJ_DINT | 76 (TS1_SYNC)   | 66 (TS1_CLK)  |
+| EJ_RSTZ | 79 (S_GPIO3)    | 67 (GPIO)     |
+| EJ_TCK  | 80 (S_GPIO4)    | 68 (GPIO)     |
+| EJ_TMS  | 86 (GPIO)       | 69 (GPIO)     |
+| EJ_TDO  | 87 (GPIO)       | 70 (TS1_D0)   |
+| EJ_TDI  | 108 (SPDIF_OUT) | 71 (TS1_VLD)  |
+| EJ_TRST | 109 (HDMI_HPD)  | 72 (TS1_SYNC) |
