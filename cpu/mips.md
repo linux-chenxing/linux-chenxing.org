@@ -39,12 +39,17 @@ Probably present in all MIPS 4Kc-based SoCs. Or whatever, but feels like that's 
 MIPS cores have a local interrupt controller which handles 8 interrupts,
 where the first two are software interrupts, and the last one is connected to the MIPS' internal timer.
 
+The Non-PM intc in question is either the third or the fourth one.
+Usually it's the latter but sometimes the third one seems to be wired up instead.
+
+Sometimes the fourth one is used for VPE0, while the third one is used for VPE1. (presumeably)
+
 | Line | Usage                    |
 |------|--------------------------|
 | 0    | Software interrupt       |
 | 1    | Software interrupt       |
-| 2    | Non-PM intc IRQ (Host 3) |
-| 3    | Non-PM intc FIQ (Host 3) |
+| 2    | Non-PM intc IRQ          |
+| 3    | Non-PM intc FIQ          |
 | 4    |                          |
 | 5    |                          |
 | 6    |                          |
