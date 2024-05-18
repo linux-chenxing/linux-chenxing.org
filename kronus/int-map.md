@@ -4,7 +4,7 @@
 
 ### IRQ
 
-| line |        name        |    notes                                  |
+| Line | Name               | Notes                                     |
 |------|--------------------|-------------------------------------------|
 | 0    | UART0              |                                           |
 | 1    | IIC1               |                                           |
@@ -60,7 +60,7 @@
 | 51   | URDMA2MCU          | URDMA interrupt                           |
 | 52   | DVI_HDMI_HDCP      |                                           |
 | 53   | CEC                |                                           |
-| 54   | HDMITX_LEVEL       |                                           |
+| 54   | HDMITX_LEVEL       | HDMITX's level triggered interrupts       |
 | 55   |                    |                                           |
 | 56   | HDCP               |                                           |
 | 57   | DMAWADR_ERR        |                                           |
@@ -73,7 +73,7 @@
 
 ### FIQ
 
-| line |          name          |    notes                                  |
+| Line | Name                   | Notes                                     |
 |------|------------------------|-------------------------------------------|
 | 0    | EXTIMER0               |                                           |
 | 1    | EXTIMER1               |                                           |
@@ -96,8 +96,8 @@
 | 18   | DSP_MIU_PROT           |                                           |
 | 19   | XIU_TIMEOUT            |                                           |
 | 20   | DMDMCU2HK_INT          |                                           |
-| 21   | VSYNC_VE4VBI           | VE vsync interrupt                        |
-| 22   | FIELD_VE4VBI           | VE field interrupt                        |
+| 21   | VSYNC_VE4VBI           | VE "vsync" output                         |
+| 22   | FIELD_VE4VBI           | VE "field" output                         |
 | 23   | VDMCU2HK               |                                           |
 | 24   | VE_DONE_TT             | VE teletext done interrupt                |
 | 25   | INT_CCFL               |                                           |
@@ -129,7 +129,7 @@
 | 51   |                        |                                           |
 | 52   |                        |                                           |
 | 53   |                        |                                           |
-| 54   | HDMITX_EDGE            |                                           |
+| 54   | HDMITX_EDGE            | HDMITX's edge triggered interrupts        |
 | 55   |                        |                                           |
 | 56   | PVR2MI0                |                                           |
 | 57   | PVR2MI1                |                                           |
@@ -144,9 +144,9 @@
 
 ### IRQ
 
-| line |          name          |    notes                                  |
+| Line | Name                   | Notes                                     |
 |------|------------------------|-------------------------------------------|
-| 0    | ?                      | Comes from Non-PM intc's host 0 FIQ part  |
+| 0    | ?                      | Comes from first Non-PM intc's FIQ part   |
 | 1    | ?                      | Comes from PM intc's FIQ part             |
 | 2    | ?                      |                                           |
 | 3    |                        |                                           |
@@ -165,7 +165,7 @@
 
 ### FIQ
 
-| line |          name          |    notes                                  |
+| Line | Name                   | Notes                                     |
 |------|------------------------|-------------------------------------------|
 | 0    | TIMER0                 |                                           |
 | 1    | TIMER1                 |                                           |
