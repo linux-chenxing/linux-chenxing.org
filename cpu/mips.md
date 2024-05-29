@@ -4,8 +4,6 @@
 
 ### Old MIPS
 
-Probably present in all MIPS 4Kc-based SoCs. Or whatever, but feels like that's an early design.
-
 | Address                 | Usage                               |
 |-------------------------|-------------------------------------|
 | 0x00000000 - 0x0FFFFFFF | MIU0                                |
@@ -36,21 +34,22 @@ Probably present in all MIPS 4Kc-based SoCs. Or whatever, but feels like that's 
 
 ## Interrupt map
 
-MIPS cores have a local interrupt controller which handles 8 interrupts,
-where the first two are software interrupts, and the last one is connected to the MIPS' internal timer.
+MIPS cores have a local interrupt controller that handles 8 interrupts in total,
+out of which the first two interrupts are the software-generated interrupts,
+and the fifth hardware interrupt input (the 7th interrupt) is wired to the
+MIPS' internal timer.
 
-The Non-PM intc in question is either the third or the fourth one.
-Usually it's the latter but sometimes the third one seems to be wired up instead.
+The [Non-PM intc](../ip/intc.md) host used for the MIPS CPU is usually the 4th one, but sometimes
+the 3rd one is used instead. I believe the 3rd host is also used for the 2nd VPE
+but I haven't yet verified that.
 
-Sometimes the fourth one is used for VPE0, while the third one is used for VPE1. (presumeably)
-
-| Line | Usage                    |
-|------|--------------------------|
-| 0    | Software interrupt       |
-| 1    | Software interrupt       |
-| 2    | Non-PM intc IRQ          |
-| 3    | Non-PM intc FIQ          |
-| 4    |                          |
-| 5    |                          |
-| 6    |                          |
-| 7    | MIPS timer               |
+| Input   | Usage                    |
+|---------|--------------------------|
+| 0 (SW0) | Software interrupt       |
+| 1 (SW1) | Software interrupt       |
+| 2 (HW0) | Non-PM intc IRQ          |
+| 3 (HW1) | Non-PM intc FIQ          |
+| 4 (HW2) |                          |
+| 5 (HW3) |                          |
+| 6 (HW4) |                          |
+| 7 (HW5) | MIPS timer               |
