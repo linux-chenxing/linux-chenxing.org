@@ -347,3 +347,13 @@ miupll reg 0x00fc - 0x0000
 
 
 https://www.diffchecker.com/nFuNXkf0
+
+# JTAG
+
+From u-boot: `mw.w 0x1f207980 0x200`
+
+- TMS - SR_IO1
+- TCK - SR_IO0
+- TDO - SR_IO2
+- TDI - SR_IO3
+

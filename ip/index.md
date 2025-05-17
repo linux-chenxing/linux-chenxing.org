@@ -632,6 +632,12 @@ For a mipi display on the m5 the pipeline seems to look like this:
 
 Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/mediatek/mtk_dsi.c) based on [this header](https://github.com/fifteenhex/linux_mstar_3.18/blob/another_codedrop/drivers/mstar/driver/hal/infinity2/mipi_dsi/inc/reg_mipi_dsi.h).
 
+### HDMI TX
+
+HDMI Transmitter
+
+[more info](hdmitx.md)
+
 ### GOP
 
 "Graphics Output Path". This is a simple framebuffer that uses a chunk of system memory.
@@ -913,4 +919,6 @@ This new version apparently supports setting pull down, drive strength etc.
 | pioneer3   | n/a    | wip       |
 
 
+# POR - power on reset?
 
+Present on i2m and p3. Seems to be a block of NVRAM.

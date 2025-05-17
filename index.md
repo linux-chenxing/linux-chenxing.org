@@ -143,6 +143,8 @@ when each type of chip was produced.
 |                           | ssc338g  |            | 22nm         |                        |                 |                 |              |                                       |                                          |
 | [infinity6e](#infinity6e) |          |            |              |                        |                 |                 |              |                                       |                                          |
 |                           | ssc339g  |            | 22nm         |                        |                 |                 |              |                                       |                                          |
+|                           | ssc9351q | 2114j      | 22nm         | yes                    | yes             | yes             |              | [yes](infinity6/ssc9351d-q_pb_v10.pdf)|                                          |
+|                           | ssc9351d |            | 22nm         |                        |                 |                 |              | [yes](infinity6/ssc9351d-q_pb_v10.pdf)|                                          |
 | [mercury2](#mercury2)     |          |            |              | yes                    |                 |                 |              |                                       |                                          |
 |                           | msc8328  | 1744       |              |                        |                 | yes             |              |                                       |                                          |
 | [mercury5](#mercury5)     |          |            |              |                        |                 |                 |              |                                       |                                          |
@@ -208,6 +210,10 @@ ones.
 
 - [MSD7T01](kriti#msd7t01) - 576 MHz MIPS 34Kf + 64 MiB DDR2 in a eLQFP128
 - [MSD7T03](kriti#msd7t03) - same as MSD7T01 but with 128 MiB DDR3 instead
+
+### [Kirin](kirin)
+
+- [MSD7T75](kirin#msd7t75) - 1000 MHz(?) MIPS 74Kf
 
 ### K5AP
 
@@ -300,6 +306,11 @@ Doesn't seem to exist.
 - [SSC337DE](infinity6#ssc337) - probably Cortex A7 +  128MB DDR3 + in a QFN128
 -- MC-F50: https://item.taobao.com/item.htm?id=619778901522&spm=1101.1101.N.N.e3dd64c
 
+#### [Infinity 6c](infinity6)
+
+- SSC377 - Cortex A35, QFN88, 64MB DDR2 Internal, BROM signature MVX4##I6C#gd11293fROM########XVM
+-- Anjoy vision MC-J40:
+
 #### [Infinity 6e](infinity6)
 
 - Infinity 6e seems to be a dual core variation in this family
@@ -313,6 +324,8 @@ These seem to be i6e based on the build tag found in a kernel image for the SSC8
   - 70mai A800S https://fccid.io/2AOK9-A800S/Internal-Photos/Internal-Photos-5061810
   - VIA M360-M800 https://fccid.io/NCI-M360-M800/
 - SSC8629Q
+- [SSC9351Q](infinity6#ssc9351Q) - Webcam SoC + Dual Cortex A7 + 256MB DDR3 + QFN128
+- [SSC9351D](infinity6#ssc9351D) - Webcam SoC + Dual Cortex A7 + 128MB DDR3 + QFN128
 
 ### [Pioneer3](pioneer3)
 
@@ -340,8 +353,9 @@ This seems to be an evolution of the infinity2m chips.
 - [SSC8339D](mercury5#ssc8339d) - Probably in this family, Cortex A7 + 128MB(?) DDR3(?) in a 268 ball BGA
 
 #### [Mercury6](mercury6)
-
+SDK name: TIRAMISU
 - SSD268G - 2 * Cortex A53
+- SSC359G - 2 * Cortex A53, 64bit, BGA, Ext. RAM, BROM signature MVX4######ga2f5884M6_ROM#####XVM
 
 ### Misc
 
