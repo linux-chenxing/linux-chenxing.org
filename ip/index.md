@@ -626,8 +626,13 @@ For a mipi display on the m5 the pipeline seems to look like this:
 | PNL | -> | MIPI DSI | -> | DPHY |
  -----      ----------      ------
 ```
+### LVDS
 
+Some mstar chip is known to support LVDS However it is unknown how lvds work on those mstar chips
 
+Downsteam :
+
+https://github.com/jockyw2001/mboot/tree/master/MstarCore/src/drivers/panel
 ### MIPI DSI
 
 Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/mediatek/mtk_dsi.c) based on [this header](https://github.com/fifteenhex/linux_mstar_3.18/blob/another_codedrop/drivers/mstar/driver/hal/infinity2/mipi_dsi/inc/reg_mipi_dsi.h).
