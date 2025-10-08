@@ -626,8 +626,13 @@ For a mipi display on the m5 the pipeline seems to look like this:
 | PNL | -> | MIPI DSI | -> | DPHY |
  -----      ----------      ------
 ```
+### LVDS
 
+Some mstar chip is known to support LVDS However it is unknown how lvds work on those mstar chips
 
+Downsteam :
+
+https://github.com/jockyw2001/mboot/tree/master/MstarCore/src/drivers/panel
 ### MIPI DSI
 
 Seems to be the same as the [mediatek one](https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/mediatek/mtk_dsi.c) based on [this header](https://github.com/fifteenhex/linux_mstar_3.18/blob/another_codedrop/drivers/mstar/driver/hal/infinity2/mipi_dsi/inc/reg_mipi_dsi.h).
@@ -726,9 +731,21 @@ https://github.com/github188/sdk-2/blob/master/mhal/i2/jpe/hal/pub/hal_jpe_ios.h
 
 ### VPU
 
-Video decoder? Chips and Media block?
+Not much has been known for this. It seemed be a Video decoder? Chips and Media block?
 
-https://github.com/ZYCX8888/Democode-TAKOYAKI-BETA001-0312/tree/d5841ab9fde1771b72aa842fc48a01bb832d4a0a/sdk/verify/feature/vdec/cnm_sw
+Downsteam (Sigmastar) :
+
+- https://github.com/ZYCX8888/Democode-TAKOYAKI-BETA001-0312/tree/d5841ab9fde1771b72aa842fc48a01bb832d4a0a/sdk/verify/feature/vdec/cnm_sw
+
+Downsteam (Mstar) :
+
+- https://github.com/jockyw2001/utopia/tree/53ee8cc121a030b8d368113ac3e966b4705770ef/UTPA2-700.0.x/modules/vdec_lite
+
+- https://github.com/jockyw2001/utopia/tree/53ee8cc121a030b8d368113ac3e966b4705770ef/UTPA2-700.0.x/modules/vdec_v1
+
+- https://github.com/jockyw2001/utopia/tree/53ee8cc121a030b8d368113ac3e966b4705770ef/UTPA2-700.0.x/modules/vdec_v2
+
+- https://github.com/jockyw2001/utopia/tree/53ee8cc121a030b8d368113ac3e966b4705770ef/UTPA2-700.0.x/modules/vdec_v3
 
 ### GE
 

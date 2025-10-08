@@ -22,3 +22,4 @@ msd6a358ax : 512MB Ram
 - [Dangbei D1](https://baike.baidu.com/item/%E5%BD%93%E8%B4%9DD1/56867291)
 - [Acer AV10A DLP](https://fccid.io/HLZAV10A/User-Manual/User-manual-4992100.pdf)
 - [Ceker A2](https://web.archive.org/web/20250930233145/https://news.qq.com/rain/a/20210510A04IE100)
+- [Cultraview CV358H-T42](CV358H-T42.pdf)
