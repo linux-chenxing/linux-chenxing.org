@@ -4,7 +4,7 @@ This seems to be a tv soc family and the kernel seem to refer it as mainz
 
 
 ## msd6a358
-![Dieshot](https://wiki.postmarketos.org/images/7/72/Mstarmsd6a358.jpeg)
+![Dieshot](./Dieshot.jpeg)
 ![diagram block](diagramblock.jpg)
 - Chip ID: 0xCA
 - Bootrom : [Here](bootrom.bin)
