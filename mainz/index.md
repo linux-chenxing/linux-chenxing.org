@@ -23,3 +23,5 @@ msd6a358ax : 512MB Ram
 - [Acer AV10A DLP](https://fccid.io/HLZAV10A/User-Manual/User-manual-4992100.pdf)
 - [Ceker A2](https://web.archive.org/web/20250930233145/https://news.qq.com/rain/a/20210510A04IE100)
 - [Cultraview CV358H-T42](CV358H-T42.pdf)
+- [风行电视 F40S](https://web.archive.org/web/20210506044240/https://www.shafa.com/product/tv/AWBMU0cEPMaTKmvh/params.html)
+- [ViewSonic M1](ViewSonicM1.pdf)
