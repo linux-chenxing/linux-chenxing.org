@@ -10,10 +10,11 @@ This seems to be a tv soc family and the kernel seem to refer it as mainz
 - Bootrom : [Here](bootrom.bin)
 - 4x 1.5GHz Cortex-A35
 - Mali-400MP2
-### Variants
-msd6a358at : 1GB Ram,seem to lack of PCMCIA support
 
-msd6a358ax : 512MB Ram
+## Variants
+
+- msd6a358at : 1GB Ram,seem to lack of PCMCIA support
+- msd6a358ax : 512MB Ram
 
 # Known devices
 
