@@ -86,6 +86,7 @@ Yes, the PM_SPI_CK seems weird.
 
 - [Widora](https://sns.widora.io/topic/767/ssd210-demo%E6%9D%BF-%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%87%86%E5%A4%87%E7%82%B9%E5%B1%8F)
 - [qfn68demo](qfn68demo)
+- [Ulanzi D200](https://github.com/Malvineous/ulanzi-d200-reverse-engineering/blob/main/d200/README.md) (plain D200, not D200H or D200X)
 
 ## SSD212
 
